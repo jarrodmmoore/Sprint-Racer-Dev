@@ -6,13 +6,13 @@ scoreboard players set @e[tag=w,type=armor_stand] realmsMode 0
 
 
 #change the "0" to a "1" to enable COPPA mode
-scoreboard players set @e[tag=w,type=armor_stand] COPPA 1
+scoreboard players set @e[tag=w,type=armor_stand] COPPA 0
 
 #COPPA mode makes Casino Chase inaccessible.
 
 
 
 #change the "0" to a "1" to enable autoFix mode
-scoreboard players set #autoFix value 1
+scoreboard players set #autoFix value 0
 
 #autoFix mode makes the map reset itself if something goes wrong with "w".
