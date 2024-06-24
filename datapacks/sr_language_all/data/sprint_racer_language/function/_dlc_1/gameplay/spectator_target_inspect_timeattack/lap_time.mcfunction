@@ -1,0 +1,6 @@
+#"@a[tag=self]" is the spectator who told this player to run the function
+
+execute if entity @s[scores={lapFake=2..,taLapSec=..9}] run title @a[tag=self] actionbar ["",{"translate":"sr.game.lap","color":"white","bold":true},{"text":" "},{"score":{"name":"@s","objective":"lap"},"color":"white","bold":true},{"text":": ","color":"white","bold":true},{"score":{"name":"@s","objective":"taLapMin"},"color":"white"},{"text":":0","color":"white"},{"score":{"name":"@s","objective":"taLapSec"},"color":"white"},{"text":":","color":"white"},{"score":{"name":"@s","objective":"taLapMsec"},"color":"white"}]
+execute if entity @s[scores={lapFake=2..,taLapSec=10..}] run title @a[tag=self] actionbar ["",{"translate":"sr.game.lap","color":"white","bold":true},{"text":" "},{"score":{"name":"@s","objective":"lap"},"color":"white","bold":true},{"text":": ","color":"white","bold":true},{"score":{"name":"@s","objective":"taLapMin"},"color":"white"},{"text":":","color":"white"},{"score":{"name":"@s","objective":"taLapSec"},"color":"white"},{"text":":","color":"white"},{"score":{"name":"@s","objective":"taLapMsec"},"color":"white"}]
+
+execute if entity @s[scores={lapFake=..1}] run title @a[tag=self] actionbar [""]

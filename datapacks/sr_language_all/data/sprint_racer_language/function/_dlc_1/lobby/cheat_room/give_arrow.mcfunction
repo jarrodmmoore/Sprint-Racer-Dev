@@ -1,0 +1,1 @@
+item replace entity @s hotbar.5 with minecraft:arrow[custom_name='{"translate":"sr.cheats.arrow_of_cheating","color":"light_purple","bold":false,"italic":true}',custom_data={cheatarrow:1b}] 1

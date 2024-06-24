@@ -1,0 +1,1 @@
+tellraw @s ["",{"translate":"sr.game.cannot_count_above_25","color":"yellow","italic":true}]

@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Sedove Isle ==\\/==","bold":true,"color":"light_purple"}]

@@ -1,0 +1,2 @@
+summon item ~ ~.3 ~ {Tags:["capsuleItem","capsuleSummon","itemcontainer"],PickupDelay:32767,Age:-32768,NoGravity:1,Invulnerable:1,Item:{id:"minecraft:slime_block",count:4,components:{"minecraft:custom_name":'{"translate":"sr.item.slime_trap","color":"green","bold":true,"italic":false}',"minecraft:custom_data":{no13:1b,stay:1b,item:1b,normalitem:1b,groundDeploy:1b,rightclick:1b}}}}
+data merge entity @e[limit=1,tag=cSETME] {CustomNameVisible:1,CustomName:'{"translate":"sr.item.slime_trap","color":"green","bold":false,"italic":false}'}

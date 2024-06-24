@@ -1,0 +1,1 @@
+function sprint_racer_language:_dlc_3/join_messages/in_grand_prix_setup

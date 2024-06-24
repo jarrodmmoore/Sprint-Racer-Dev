@@ -1,0 +1,9 @@
+execute if entity @s[tag=ai1] unless entity @s[scores={validAI1=1..}] run kill @s
+execute if entity @s[tag=ai2] unless entity @s[scores={validAI2=1..}] run kill @s
+execute if entity @s[tag=ai3] unless entity @s[scores={validAI3=1..}] run kill @s
+execute if entity @s[tag=ai4] unless entity @s[scores={validAI4=1..}] run kill @s
+execute if entity @s[tag=ai5] unless entity @s[scores={validAI5=1..}] run kill @s
+execute if entity @s[tag=ai6] unless entity @s[scores={validAI6=1..}] run kill @s
+execute if entity @s[tag=ai7] unless entity @s[scores={validAI7=1..}] run kill @s
+execute if entity @s[tag=ai8] unless entity @s[scores={validAI8=1..}] run kill @s
+execute if entity @s[tag=ai9] unless entity @s[scores={validAI9=1..}] run kill @s

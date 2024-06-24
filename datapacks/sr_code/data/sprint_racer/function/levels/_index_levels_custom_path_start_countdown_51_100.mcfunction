@@ -1,0 +1,54 @@
+execute if score @s customCodePath matches 51 run function sr_c:track51/start_countdown
+execute if score @s customCodePath matches 52 run function sr_c:track52/start_countdown
+execute if score @s customCodePath matches 53 run function sr_c:track53/start_countdown
+execute if score @s customCodePath matches 54 run function sr_c:track54/start_countdown
+execute if score @s customCodePath matches 55 run function sr_c:track55/start_countdown
+execute if score @s customCodePath matches 56 run function sr_c:track56/start_countdown
+execute if score @s customCodePath matches 57 run function sr_c:track57/start_countdown
+execute if score @s customCodePath matches 58 run function sr_c:track58/start_countdown
+execute if score @s customCodePath matches 59 run function sr_c:track59/start_countdown
+execute if score @s customCodePath matches 60 run function sr_c:track60/start_countdown
+
+execute if score @s customCodePath matches 61 run function sr_c:track61/start_countdown
+execute if score @s customCodePath matches 62 run function sr_c:track62/start_countdown
+execute if score @s customCodePath matches 63 run function sr_c:track63/start_countdown
+execute if score @s customCodePath matches 64 run function sr_c:track64/start_countdown
+execute if score @s customCodePath matches 65 run function sr_c:track65/start_countdown
+execute if score @s customCodePath matches 66 run function sr_c:track66/start_countdown
+execute if score @s customCodePath matches 67 run function sr_c:track67/start_countdown
+execute if score @s customCodePath matches 68 run function sr_c:track68/start_countdown
+execute if score @s customCodePath matches 69 run function sr_c:track69/start_countdown
+execute if score @s customCodePath matches 70 run function sr_c:track70/start_countdown
+
+execute if score @s customCodePath matches 71 run function sr_c:track71/start_countdown
+execute if score @s customCodePath matches 72 run function sr_c:track72/start_countdown
+execute if score @s customCodePath matches 73 run function sr_c:track73/start_countdown
+execute if score @s customCodePath matches 74 run function sr_c:track74/start_countdown
+execute if score @s customCodePath matches 75 run function sr_c:track75/start_countdown
+execute if score @s customCodePath matches 76 run function sr_c:track76/start_countdown
+execute if score @s customCodePath matches 77 run function sr_c:track77/start_countdown
+execute if score @s customCodePath matches 78 run function sr_c:track78/start_countdown
+execute if score @s customCodePath matches 79 run function sr_c:track79/start_countdown
+execute if score @s customCodePath matches 80 run function sr_c:track80/start_countdown
+
+execute if score @s customCodePath matches 81 run function sr_c:track81/start_countdown
+execute if score @s customCodePath matches 82 run function sr_c:track82/start_countdown
+execute if score @s customCodePath matches 83 run function sr_c:track83/start_countdown
+execute if score @s customCodePath matches 84 run function sr_c:track84/start_countdown
+execute if score @s customCodePath matches 85 run function sr_c:track85/start_countdown
+execute if score @s customCodePath matches 86 run function sr_c:track86/start_countdown
+execute if score @s customCodePath matches 87 run function sr_c:track87/start_countdown
+execute if score @s customCodePath matches 88 run function sr_c:track88/start_countdown
+execute if score @s customCodePath matches 89 run function sr_c:track89/start_countdown
+execute if score @s customCodePath matches 90 run function sr_c:track90/start_countdown
+
+execute if score @s customCodePath matches 91 run function sr_c:track91/start_countdown
+execute if score @s customCodePath matches 92 run function sr_c:track92/start_countdown
+execute if score @s customCodePath matches 93 run function sr_c:track93/start_countdown
+execute if score @s customCodePath matches 94 run function sr_c:track94/start_countdown
+execute if score @s customCodePath matches 95 run function sr_c:track95/start_countdown
+execute if score @s customCodePath matches 96 run function sr_c:track96/start_countdown
+execute if score @s customCodePath matches 97 run function sr_c:track97/start_countdown
+execute if score @s customCodePath matches 98 run function sr_c:track98/start_countdown
+execute if score @s customCodePath matches 99 run function sr_c:track99/start_countdown
+execute if score @s customCodePath matches 100 run function sr_c:track100/start_countdown

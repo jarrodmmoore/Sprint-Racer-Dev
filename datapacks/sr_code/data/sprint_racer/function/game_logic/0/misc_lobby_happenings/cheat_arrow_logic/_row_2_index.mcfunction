@@ -1,0 +1,10 @@
+execute if entity @s[scores={coord_x=1585}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/q
+execute if entity @s[scores={coord_x=1584}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/w
+execute if entity @s[scores={coord_x=1583}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/e
+execute if entity @s[scores={coord_x=1582}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/r
+execute if entity @s[scores={coord_x=1581}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/t
+execute if entity @s[scores={coord_x=1580}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/y
+execute if entity @s[scores={coord_x=1579}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/u
+execute if entity @s[scores={coord_x=1578}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/i
+execute if entity @s[scores={coord_x=1577}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/o
+execute if entity @s[scores={coord_x=1576}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/p

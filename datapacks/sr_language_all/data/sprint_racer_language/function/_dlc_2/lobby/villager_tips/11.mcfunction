@@ -1,0 +1,2 @@
+tellraw @s ["",{"text":"<","color":"white"},{"translate":"entity.minecraft.villager","color":"gray"},{"text":"> ","color":"white"},{"translate":"sr.lobby.villager_tip.11","color":"white"}]
+playsound minecraft:entity.evoker.prepare_attack master @s ~ ~ ~ 2 1.1

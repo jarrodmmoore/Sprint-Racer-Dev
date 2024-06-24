@@ -1,0 +1,6 @@
+execute if entity @e[tag=w,type=armor_stand,x=1550,y=150,z=406,sort=nearest,scores={itemBlockState=25}] as @e[tag=lobbyprop,tag=chestdisplay] run data merge entity @s {DisabledSlots:2039583,Pose:{Head:[0.0f,255.0f,0.0f]}}
+execute if entity @e[tag=w,type=armor_stand,x=1550,y=150,z=406,sort=nearest,scores={itemBlockState=26}] as @e[tag=lobbyprop,tag=chestdisplay] run data merge entity @s {DisabledSlots:2039583,Pose:{Head:[0.0f,265.0f,0.0f]}}
+execute if entity @e[tag=w,type=armor_stand,x=1550,y=150,z=406,sort=nearest,scores={itemBlockState=27}] as @e[tag=lobbyprop,tag=chestdisplay] run data merge entity @s {DisabledSlots:2039583,Pose:{Head:[0.0f,275.0f,0.0f]}}
+execute if entity @e[tag=w,type=armor_stand,x=1550,y=150,z=406,sort=nearest,scores={itemBlockState=28}] as @e[tag=lobbyprop,tag=chestdisplay] run data merge entity @s {DisabledSlots:2039583,Pose:{Head:[0.0f,285.0f,0.0f]}}
+execute if entity @e[tag=w,type=armor_stand,x=1550,y=150,z=406,sort=nearest,scores={itemBlockState=29}] as @e[tag=lobbyprop,tag=chestdisplay] run data merge entity @s {DisabledSlots:2039583,Pose:{Head:[0.0f,295.0f,0.0f]}}
+execute if entity @e[tag=w,type=armor_stand,x=1550,y=150,z=406,sort=nearest,scores={itemBlockState=30}] as @e[tag=lobbyprop,tag=chestdisplay] run data merge entity @s {DisabledSlots:2039583,Pose:{Head:[0.0f,305.0f,0.0f]}}

@@ -1,0 +1,2 @@
+execute if score @s customCodePath matches 1..50 run function sprint_racer:levels/_index_levels_custom_path_go_1_50
+execute if score @s customCodePath matches 51..100 run function sprint_racer:levels/_index_levels_custom_path_go_51_100

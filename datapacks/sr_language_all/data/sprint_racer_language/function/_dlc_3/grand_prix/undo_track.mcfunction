@@ -1,0 +1,1 @@
+tellraw @a ["",{"translate":"sr.grand_prix.previous_track_removed","bold":false,"color":"red"}]

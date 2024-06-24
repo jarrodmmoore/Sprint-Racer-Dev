@@ -1,0 +1,3 @@
+#I'm cutting this in half to make this a LITTLE less performance intensive...
+execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{normalitem:1b}}}}] run function sprint_racer:ai/general/item_logic/pick_up/_index_normal
+execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{eliteitem:1b}}}}] run function sprint_racer:ai/general/item_logic/pick_up/_index_elite

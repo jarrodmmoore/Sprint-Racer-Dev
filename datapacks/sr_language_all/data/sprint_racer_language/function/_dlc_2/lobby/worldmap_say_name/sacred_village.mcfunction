@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== The Sacred Village ==\\/==","bold":true,"color":"light_purple"}]

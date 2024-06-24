@@ -1,0 +1,1 @@
+item replace entity @a[scores={hp=1..},gamemode=!creative,tag=!hasExit,tag=!playerVote1] hotbar.8 with minecraft:structure_void[custom_name='{"translate":"sr.grand_prix.return_to_setup_room","color":"aqua","bold":true,"italic":false}',custom_data={exit:1b,notitle:1b}] 1

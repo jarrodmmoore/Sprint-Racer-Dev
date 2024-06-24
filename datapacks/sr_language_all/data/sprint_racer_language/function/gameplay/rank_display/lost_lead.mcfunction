@@ -1,0 +1,1 @@
+execute if entity @e[tag=w,scores={gameState=3,gameTime=300..99999}] run tellraw @s ["",{"text":"You've lost the lead!","color":"red"}]

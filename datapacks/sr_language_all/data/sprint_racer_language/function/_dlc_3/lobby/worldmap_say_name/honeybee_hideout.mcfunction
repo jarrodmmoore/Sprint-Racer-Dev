@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Honeybee Hideout ==\\/==","bold":true,"color":"light_purple"}]

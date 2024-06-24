@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Hidden Garden ==\\/==","bold":true,"color":"light_purple"}]

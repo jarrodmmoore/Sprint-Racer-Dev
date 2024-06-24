@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Petra Resort ==\\/==","bold":true,"color":"light_purple"}]

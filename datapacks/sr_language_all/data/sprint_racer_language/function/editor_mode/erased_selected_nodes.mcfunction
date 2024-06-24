@@ -1,0 +1,1 @@
+tellraw @s ["",{"translate":"sr.editor.erased_selected_nodes","color":"green"}]

@@ -1,0 +1,2 @@
+execute if entity @s[scores={rot_pitch=-25..25}] rotated ~ 0 run summon marker ^ ^ ^0.00075 {Tags:["lookinghere"]}
+execute unless entity @s[scores={rot_pitch=-25..25}] run summon marker ^ ^ ^0.00075 {Tags:["lookinghere"]}

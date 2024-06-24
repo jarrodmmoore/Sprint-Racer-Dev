@@ -1,0 +1,1 @@
+item replace entity @s hotbar.8 with minecraft:barrier[custom_name='{"translate":"sr.lobby.return_to_custom_track_manager","color":"red","bold":true,"italic":false}',custom_data={exit:1b,notitle:1b}] 1

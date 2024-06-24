@@ -1,0 +1,1 @@
+item replace entity @s hotbar.4 with minecraft:structure_block[custom_name='{"translate":"sr.lobby.set_coordinates_to_current_location","color":"light_purple","bold":true,"italic":false}',custom_data={setlocation:1b}] 1

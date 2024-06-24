@@ -1,0 +1,2 @@
+tellraw @a[tag=!minChat] ["",{"text":" "}]
+tellraw @a[tag=!minChat] ["",{"translate":"sr.lobby.race_track","bold":true},{"text":" "},{"text":"#","color":"aqua"},{"score":{"name":"@e[tag=w,limit=1]","objective":"trackSequenceR"},"bold":true,"color":"aqua"}]

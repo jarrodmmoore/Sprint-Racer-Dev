@@ -1,0 +1,2 @@
+scoreboard players remove @e[tag=displayViable] leadDisplayDelay 1
+execute if entity @e[tag=displayViable] unless entity @e[tag=displayViable,scores={leadDisplayDelay=..0}] run function sprint_racer:game_logic/3/lead_display_find_next

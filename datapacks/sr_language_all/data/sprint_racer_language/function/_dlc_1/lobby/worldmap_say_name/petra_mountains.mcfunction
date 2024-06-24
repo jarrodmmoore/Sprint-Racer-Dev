@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Petra Mountains ==\\/==","bold":true,"color":"light_purple"}]

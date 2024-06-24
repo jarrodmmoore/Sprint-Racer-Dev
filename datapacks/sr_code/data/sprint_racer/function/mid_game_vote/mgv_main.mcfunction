@@ -1,0 +1,2 @@
+execute if entity @e[tag=w,type=armor_stand,scores={mgVoteMode=0}] as @a[scores={mgVoteTrigger=1..2}] run function sprint_racer_language:_dlc_2/mid_game_vote/call_vote_start
+execute if entity @e[tag=w,type=armor_stand,scores={mgVoteMode=1..}] run function sprint_racer:mid_game_vote/listen_for_votes

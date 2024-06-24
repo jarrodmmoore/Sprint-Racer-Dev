@@ -1,0 +1,1 @@
+execute unless entity @e[tag=finishline,scores={nodeState=1..},type=marker,tag=posCalc,distance=..100] run function sprint_racer_language:_dlc_2/gameplay/generate_pos_calc/finishline

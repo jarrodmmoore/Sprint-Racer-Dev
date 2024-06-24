@@ -1,0 +1,1 @@
+item replace entity @s hotbar.5 with minecraft:tnt[custom_name='{"translate":"sr.lobby.delete_current_track","color":"red","bold":true,"italic":false}',custom_data={deletetrack:1b}] 1

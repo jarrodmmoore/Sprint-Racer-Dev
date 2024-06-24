@@ -1,0 +1,76 @@
+execute if entity @s[tag=01a] run scoreboard players add global math 1
+execute if entity @s[tag=02a] run scoreboard players add global math 1
+execute if entity @s[tag=03a] run scoreboard players add global math 1
+execute if entity @s[tag=04a] run scoreboard players add global math 1
+execute if entity @s[tag=05a] run scoreboard players add global math 1
+execute if entity @s[tag=06a] run scoreboard players add global math 1
+execute if entity @s[tag=07a] run scoreboard players add global math 1
+execute if entity @s[tag=08a] run scoreboard players add global math 1
+execute if entity @s[tag=09a] run scoreboard players add global math 1
+execute if entity @s[tag=10a] run scoreboard players add global math 1
+
+execute if entity @s[tag=11a] run scoreboard players add global math 1
+execute if entity @s[tag=12a] run scoreboard players add global math 1
+execute if entity @s[tag=13a] run scoreboard players add global math 1
+execute if entity @s[tag=14a] run scoreboard players add global math 1
+execute if entity @s[tag=15a] run scoreboard players add global math 1
+execute if entity @s[tag=16a] run scoreboard players add global math 1
+execute if entity @s[tag=17a] run scoreboard players add global math 1
+execute if entity @s[tag=18a] run scoreboard players add global math 1
+execute if entity @s[tag=19a] run scoreboard players add global math 1
+execute if entity @s[tag=20a] run scoreboard players add global math 1
+
+execute if entity @s[tag=21a] run scoreboard players add global math 1
+execute if entity @s[tag=22a] run scoreboard players add global math 1
+execute if entity @s[tag=23a] run scoreboard players add global math 1
+execute if entity @s[tag=24a] run scoreboard players add global math 1
+execute if entity @s[tag=25a] run scoreboard players add global math 1
+execute if entity @s[tag=26a] run scoreboard players add global math 1
+execute if entity @s[tag=27a] run scoreboard players add global math 1
+execute if entity @s[tag=28a] run scoreboard players add global math 1
+execute if entity @s[tag=29a] run scoreboard players add global math 1
+execute if entity @s[tag=30a] run scoreboard players add global math 1
+
+execute if entity @s[tag=31a] run scoreboard players add global math 1
+execute if entity @s[tag=32a] run scoreboard players add global math 1
+execute if entity @s[tag=33a] run scoreboard players add global math 1
+execute if entity @s[tag=34a] run scoreboard players add global math 1
+execute if entity @s[tag=35a] run scoreboard players add global math 1
+execute if entity @s[tag=36a] run scoreboard players add global math 1
+execute if entity @s[tag=37a] run scoreboard players add global math 1
+execute if entity @s[tag=38a] run scoreboard players add global math 1
+execute if entity @s[tag=39a] run scoreboard players add global math 1
+execute if entity @s[tag=40a] run scoreboard players add global math 1
+
+execute if entity @s[tag=41a] run scoreboard players add global math 1
+execute if entity @s[tag=42a] run scoreboard players add global math 1
+execute if entity @s[tag=43a] run scoreboard players add global math 1
+execute if entity @s[tag=44a] run scoreboard players add global math 1
+execute if entity @s[tag=45a] run scoreboard players add global math 1
+execute if entity @s[tag=46a] run scoreboard players add global math 1
+execute if entity @s[tag=47a] run scoreboard players add global math 1
+execute if entity @s[tag=48a] run scoreboard players add global math 1
+execute if entity @s[tag=49a] run scoreboard players add global math 1
+execute if entity @s[tag=50a] run scoreboard players add global math 1
+
+execute if entity @s[tag=51a] run scoreboard players add global math 1
+execute if entity @s[tag=52a] run scoreboard players add global math 1
+execute if entity @s[tag=53a] run scoreboard players add global math 1
+execute if entity @s[tag=54a] run scoreboard players add global math 1
+execute if entity @s[tag=55a] run scoreboard players add global math 1
+execute if entity @s[tag=56a] run scoreboard players add global math 1
+execute if entity @s[tag=57a] run scoreboard players add global math 1
+execute if entity @s[tag=58a] run scoreboard players add global math 1
+execute if entity @s[tag=59a] run scoreboard players add global math 1
+execute if entity @s[tag=60a] run scoreboard players add global math 1
+
+execute if entity @s[tag=61a] run scoreboard players add global math 1
+execute if entity @s[tag=62a] run scoreboard players add global math 1
+execute if entity @s[tag=63a] run scoreboard players add global math 1
+execute if entity @s[tag=64a] run scoreboard players add global math 1
+execute if entity @s[tag=65a] run scoreboard players add global math 1
+execute if entity @s[tag=66a] run scoreboard players add global math 1
+execute if entity @s[tag=67a] run scoreboard players add global math 1
+execute if entity @s[tag=68a] run scoreboard players add global math 1
+execute if entity @s[tag=69a] run scoreboard players add global math 1
+execute if entity @s[tag=70a] run scoreboard players add global math 1

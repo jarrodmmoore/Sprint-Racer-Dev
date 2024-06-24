@@ -1,0 +1,2 @@
+execute unless score global gameState matches 3 run data merge entity @s {HandItems:[{},{}]}
+execute if score global gameState matches 3 run data merge entity @s {HandItems:[{id:"minecraft:wooden_sword",count:1,components:{"minecraft:custom_model_data":1111111}},{}]}

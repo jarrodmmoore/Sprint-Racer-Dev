@@ -1,0 +1,2 @@
+execute unless entity @e[tag=w,type=armor_stand,tag=teamplay,scores={gameState=1..3}] run function sprint_racer:items/item_tick/explosive_trap_no_teams
+execute if entity @e[tag=w,type=armor_stand,tag=teamplay,scores={gameState=1..3}] run function sprint_racer:items/item_tick/explosive_trap_teams

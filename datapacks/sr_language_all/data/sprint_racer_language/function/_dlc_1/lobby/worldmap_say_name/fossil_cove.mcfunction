@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Fossil Cove ==\\/==","bold":true,"color":"light_purple"}]

@@ -1,0 +1,54 @@
+execute if score @s customCodePath matches 1 run function sr_c:track1/main
+execute if score @s customCodePath matches 2 run function sr_c:track2/main
+execute if score @s customCodePath matches 3 run function sr_c:track3/main
+execute if score @s customCodePath matches 4 run function sr_c:track4/main
+execute if score @s customCodePath matches 5 run function sr_c:track5/main
+execute if score @s customCodePath matches 6 run function sr_c:track6/main
+execute if score @s customCodePath matches 7 run function sr_c:track7/main
+execute if score @s customCodePath matches 8 run function sr_c:track8/main
+execute if score @s customCodePath matches 9 run function sr_c:track9/main
+execute if score @s customCodePath matches 10 run function sr_c:track10/main
+
+execute if score @s customCodePath matches 11 run function sr_c:track11/main
+execute if score @s customCodePath matches 12 run function sr_c:track12/main
+execute if score @s customCodePath matches 13 run function sr_c:track13/main
+execute if score @s customCodePath matches 14 run function sr_c:track14/main
+execute if score @s customCodePath matches 15 run function sr_c:track15/main
+execute if score @s customCodePath matches 16 run function sr_c:track16/main
+execute if score @s customCodePath matches 17 run function sr_c:track17/main
+execute if score @s customCodePath matches 18 run function sr_c:track18/main
+execute if score @s customCodePath matches 19 run function sr_c:track19/main
+execute if score @s customCodePath matches 20 run function sr_c:track20/main
+
+execute if score @s customCodePath matches 21 run function sr_c:track21/main
+execute if score @s customCodePath matches 22 run function sr_c:track22/main
+execute if score @s customCodePath matches 23 run function sr_c:track23/main
+execute if score @s customCodePath matches 24 run function sr_c:track24/main
+execute if score @s customCodePath matches 25 run function sr_c:track25/main
+execute if score @s customCodePath matches 26 run function sr_c:track26/main
+execute if score @s customCodePath matches 27 run function sr_c:track27/main
+execute if score @s customCodePath matches 28 run function sr_c:track28/main
+execute if score @s customCodePath matches 29 run function sr_c:track29/main
+execute if score @s customCodePath matches 30 run function sr_c:track30/main
+
+execute if score @s customCodePath matches 31 run function sr_c:track31/main
+execute if score @s customCodePath matches 32 run function sr_c:track32/main
+execute if score @s customCodePath matches 33 run function sr_c:track33/main
+execute if score @s customCodePath matches 34 run function sr_c:track34/main
+execute if score @s customCodePath matches 35 run function sr_c:track35/main
+execute if score @s customCodePath matches 36 run function sr_c:track36/main
+execute if score @s customCodePath matches 37 run function sr_c:track37/main
+execute if score @s customCodePath matches 38 run function sr_c:track38/main
+execute if score @s customCodePath matches 39 run function sr_c:track39/main
+execute if score @s customCodePath matches 40 run function sr_c:track40/main
+
+execute if score @s customCodePath matches 41 run function sr_c:track41/main
+execute if score @s customCodePath matches 42 run function sr_c:track42/main
+execute if score @s customCodePath matches 43 run function sr_c:track43/main
+execute if score @s customCodePath matches 44 run function sr_c:track44/main
+execute if score @s customCodePath matches 45 run function sr_c:track45/main
+execute if score @s customCodePath matches 46 run function sr_c:track46/main
+execute if score @s customCodePath matches 47 run function sr_c:track47/main
+execute if score @s customCodePath matches 48 run function sr_c:track48/main
+execute if score @s customCodePath matches 49 run function sr_c:track49/main
+execute if score @s customCodePath matches 50 run function sr_c:track50/main

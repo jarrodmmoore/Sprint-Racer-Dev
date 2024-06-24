@@ -1,0 +1,5 @@
+summon item ~ ~.3 ~ {Tags:["giveVelocity"],PickupDelay:40,Age:0,Item:{id:"minecraft:golden_sword",count:1,components:{"minecraft:custom_name":'{"translate":"sr.item.sword","color":"red","bold":true,"italic":false}',"minecraft:repair_cost":999999,"minecraft:damage":32,"minecraft:enchantments":{levels:{"minecraft:knockback":10,"minecraft:sweeping":3},show_in_tooltip:0b},"minecraft:attribute_modifiers":{modifiers:[{id:"forcesworddamage",operation:"add_value",type:"generic.attack_damage",amount:6,slot:"mainhand"},{id:"swordinstantattack",operation:"add_value",type:"generic.attack_speed",amount:5,slot:"mainhand"}],show_in_tooltip:0b},"minecraft:enchantment_glint_override":0b,"minecraft:custom_data":{no4:1b,stay:1b,item:1b,normalitem:1b,stronk:1b}}}}
+
+scoreboard players remove @s aiHasItem4 1
+
+execute if entity @s[scores={aiHasItem4=1..}] run function sprint_racer_language:gameplay/ai_drop_item/4

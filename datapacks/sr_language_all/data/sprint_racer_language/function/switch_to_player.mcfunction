@@ -1,0 +1,1 @@
+tellraw @s[tag=!minChat] ["",{"translate":"sr.you_are_now_a_player","color":"aqua","italic":true}]

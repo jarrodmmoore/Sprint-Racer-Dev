@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Highlight Resort ==\\/==","bold":true,"color":"light_purple"}]

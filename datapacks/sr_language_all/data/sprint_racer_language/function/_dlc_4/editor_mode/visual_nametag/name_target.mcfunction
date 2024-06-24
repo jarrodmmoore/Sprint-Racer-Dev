@@ -1,0 +1,2 @@
+execute if entity @s[tag=!targetImpossible] run summon area_effect_cloud ~ ~ ~ {Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:'{"translate":"sr.editor.display.target","color":"white","bold":true,"italic":false}'}
+execute if entity @s[tag=targetImpossible] run summon area_effect_cloud ~ ~ ~ {Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:'{"translate":"sr.editor.display.target_pickups","color":"white","bold":true,"italic":false}'}

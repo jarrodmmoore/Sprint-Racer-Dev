@@ -1,0 +1,1 @@
+execute if entity @s[scores={invisibility=..0}] run scoreboard players set @s aiHoldingItem 0

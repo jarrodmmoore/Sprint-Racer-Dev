@@ -1,0 +1,1 @@
+execute unless entity @s[scores={elytraTimer=1..}] run function sprint_racer:ai/general/behaviors/follow_breadcrumb/create_new_target/target_nearest_instead_success

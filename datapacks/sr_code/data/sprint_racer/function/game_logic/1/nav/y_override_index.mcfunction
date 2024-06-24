@@ -1,0 +1,22 @@
+#for checkpoints 6+
+execute if entity @s[scores={check=5}] positioned ~ 6 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=6}] positioned ~ 7 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=7}] positioned ~ 8 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=8}] positioned ~ 9 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=9}] positioned ~ 10 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=10}] positioned ~ 11 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=11}] positioned ~ 12 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=12}] positioned ~ 13 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=13}] positioned ~ 14 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=14}] positioned ~ 15 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=15}] positioned ~ 16 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=16}] positioned ~ 17 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=17}] positioned ~ 18 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=18}] positioned ~ 19 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=19}] positioned ~ 20 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=20}] positioned ~ 21 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=21}] positioned ~ 22 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=22}] positioned ~ 23 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=23}] positioned ~ 24 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=24}] positioned ~ 25 ~ run function sprint_racer:game_logic/1/nav/y_override
+execute if entity @s[scores={check=25}] positioned ~ 26 ~ run function sprint_racer:game_logic/1/nav/y_override

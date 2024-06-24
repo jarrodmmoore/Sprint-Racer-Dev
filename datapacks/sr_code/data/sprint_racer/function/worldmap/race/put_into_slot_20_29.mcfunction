@@ -1,0 +1,10 @@
+execute if score #rQuickCycle value matches 20 run item replace block 2464 99 271 container.20 from entity 000003e7-0000-03e7-0000-03e700000001 armor.head
+execute if score #rQuickCycle value matches 21 run item replace block 2464 99 271 container.21 from entity 000003e7-0000-03e7-0000-03e700000001 armor.head
+execute if score #rQuickCycle value matches 22 run item replace block 2464 99 271 container.22 from entity 000003e7-0000-03e7-0000-03e700000001 armor.head
+execute if score #rQuickCycle value matches 23 run item replace block 2464 99 271 container.23 from entity 000003e7-0000-03e7-0000-03e700000001 armor.head
+execute if score #rQuickCycle value matches 24 run item replace block 2464 99 271 container.24 from entity 000003e7-0000-03e7-0000-03e700000001 armor.head
+execute if score #rQuickCycle value matches 25 run item replace block 2464 99 271 container.25 from entity 000003e7-0000-03e7-0000-03e700000001 armor.head
+execute if score #rQuickCycle value matches 26 run item replace block 2464 99 271 container.26 from entity 000003e7-0000-03e7-0000-03e700000001 armor.head
+execute if score #rQuickCycle value matches 27 run item replace block 2464 99 270 container.0 from entity 000003e7-0000-03e7-0000-03e700000001 armor.head
+execute if score #rQuickCycle value matches 28 run item replace block 2464 99 270 container.1 from entity 000003e7-0000-03e7-0000-03e700000001 armor.head
+execute if score #rQuickCycle value matches 29 run item replace block 2464 99 270 container.2 from entity 000003e7-0000-03e7-0000-03e700000001 armor.head

@@ -1,0 +1,1 @@
+title @s actionbar ["",{"translate":"sr.lobby.use_key_to_ban_1","color":"white"},{"keybind":"key.use","color":"yellow","bold":false},{"translate":"sr.lobby.use_key_to_ban_2","color":"white"}]

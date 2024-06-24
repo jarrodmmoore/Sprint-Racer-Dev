@@ -1,0 +1,1 @@
+tellraw @a ["",{"translate":"sr.grand_prix.50_rounds_maximum","color":"red","bold":true}]

@@ -1,0 +1,2 @@
+execute unless entity @e[tag=w,limit=1,type=armor_stand,tag=endlessMode] run function sprint_racer:game_logic/4/_initialize_for_real
+execute if entity @e[tag=w,limit=1,type=armor_stand,tag=endlessMode] run function sprint_racer:game_logic/4/skip_podium_sequence

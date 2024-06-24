@@ -1,0 +1,2 @@
+tag @e[limit=1,sort=nearest,tag=aiTarget9,tag=secondaryTarget] add myCHILDtarget
+execute unless entity @e[tag=aiTarget9,tag=secondaryTarget] run tag @e[tag=aiTarget9,limit=1,sort=nearest] add myCHILDtarget

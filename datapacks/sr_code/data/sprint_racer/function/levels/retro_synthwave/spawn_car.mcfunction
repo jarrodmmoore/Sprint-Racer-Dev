@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=retroCarSpawn,limit=1,sort=random,tag=!retroCarLast] at @s run function sprint_racer:levels/retro_synthwave/spawn_car_go

@@ -1,0 +1,2 @@
+summon item ~ ~.3 ~ {Tags:["capsuleItem","capsuleSummon","itemcontainer"],PickupDelay:32767,Age:-32768,NoGravity:1,Invulnerable:1,Item:{id:"minecraft:tnt",count:2,components:{"minecraft:custom_name":'{"translate":"sr.item.tnt","color":"red","bold":true,"italic":false}',"minecraft:custom_data":{no3:1b,stay:1b,item:1b,normalitem:1b,groundDeploy:1b,rightclick:1b}}}}
+data merge entity @e[limit=1,tag=cSETME] {CustomNameVisible:1,CustomName:'{"translate":"sr.item.tnt","color":"red","bold":false,"italic":false}'}

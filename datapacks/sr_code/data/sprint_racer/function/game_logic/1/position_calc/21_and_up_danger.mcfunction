@@ -1,0 +1,8 @@
+execute as @a[tag=playing,tag=nextelimination,tag=!finished,scores={racePosDisplay=21,subtitleDelay=..0}] run function sprint_racer_language:_dlc_1/gameplay/position_display_danger/21
+execute as @a[tag=playing,tag=nextelimination,tag=!finished,scores={racePosDisplay=22,subtitleDelay=..0}] run function sprint_racer_language:_dlc_1/gameplay/position_display_danger/22
+execute as @a[tag=playing,tag=nextelimination,tag=!finished,scores={racePosDisplay=23,subtitleDelay=..0}] run function sprint_racer_language:_dlc_1/gameplay/position_display_danger/23
+execute as @a[tag=playing,tag=nextelimination,tag=!finished,scores={racePosDisplay=24..30,subtitleDelay=..0}] run function sprint_racer_language:_dlc_1/gameplay/position_display_danger/24_30
+execute as @a[tag=playing,tag=nextelimination,tag=!finished,scores={racePosDisplay=31,subtitleDelay=..0}] run function sprint_racer_language:_dlc_1/gameplay/position_display_danger/31
+execute as @a[tag=playing,tag=nextelimination,tag=!finished,scores={racePosDisplay=32,subtitleDelay=..0}] run function sprint_racer_language:_dlc_1/gameplay/position_display_danger/32
+execute as @a[tag=playing,tag=nextelimination,tag=!finished,scores={racePosDisplay=33,subtitleDelay=..0}] run function sprint_racer_language:_dlc_1/gameplay/position_display_danger/33
+execute as @a[tag=playing,tag=nextelimination,tag=!finished,scores={racePosDisplay=34..,subtitleDelay=..0}] run function sprint_racer_language:_dlc_1/gameplay/position_display_danger/34_plus

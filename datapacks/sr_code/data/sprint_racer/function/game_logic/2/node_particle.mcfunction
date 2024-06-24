@@ -1,0 +1,20 @@
+execute if entity @s[tag=playerstart] run particle dust{color:[0.0,1.0,1.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=finishline] run particle dust{color:[1.0,1.0,1.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=finishline] run particle dust{color:[0.0,0.0,0.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=checkpoint] run particle dust{color:[1.0,1.0,1.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=hasVisualLine] run function sprint_racer:game_logic/1/checkpoint_visual/start_editor
+execute if entity @s[tag=speedboost,tag=!superSpeed] run particle dust{color:[1.0,1.0,0.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=speedboost,tag=superSpeed] run particle dust{color:[0.7,0.7,1.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=resistance] run particle dust{color:[1.0,1.0,1.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=elytrajump] run particle dust{color:[0.0,0.0,1.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=activator] run particle dust{color:[1.0,1.0,1.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=itemchest] run particle dust{color:[1.0,0.5,0.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=jumpboost] run particle dust{color:[0.5,1.0,0.5],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=teleporter] run particle dust{color:[1.0,0.5,1.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=scriptmove] run particle dust{color:[1.0,0.5,1.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=posCalc] run particle dust{color:[0.5,0.5,1.0],scale:2} ~ ~1 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=AIBC] run particle dust{color:[1.0,0.0,0.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+
+#dlc
+execute if entity @s[tag=tatarget] run particle dust{color:[1.0,1.0,1.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=tatarget] run particle dust{color:[1.0,0.0,0.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]

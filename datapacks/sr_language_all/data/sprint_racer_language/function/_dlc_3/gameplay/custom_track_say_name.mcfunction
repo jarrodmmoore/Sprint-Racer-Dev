@@ -1,0 +1,2 @@
+#this is used when we're away from the world map
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== ","bold":true,"color":"light_purple"},{"selector":"@s","color":"light_purple","bold":true},{"text":" ==\\/==","bold":true,"color":"light_purple"}]

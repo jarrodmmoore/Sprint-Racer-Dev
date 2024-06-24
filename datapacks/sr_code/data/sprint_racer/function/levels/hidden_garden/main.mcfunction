@@ -1,0 +1,1 @@
+function sprint_racer:levels/hidden_garden/map

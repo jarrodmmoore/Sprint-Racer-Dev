@@ -1,0 +1,110 @@
+execute if entity @s[scores={customLapOffset=1}] run setblock 1627 ~ 442 orange_wool
+execute if entity @s[scores={customLapOffset=2}] run setblock 1627 ~ 442 magenta_wool
+execute if entity @s[scores={customLapOffset=3}] run setblock 1627 ~ 442 light_blue_wool
+execute if entity @s[scores={customLapOffset=4}] run setblock 1627 ~ 442 yellow_wool
+execute if entity @s[scores={customLapOffset=5}] run setblock 1627 ~ 442 lime_wool
+execute if entity @s[scores={customLapOffset=6}] run setblock 1627 ~ 442 pink_wool
+execute if entity @s[scores={customLapOffset=7}] run setblock 1627 ~ 442 gray_wool
+execute if entity @s[scores={customLapOffset=8}] run setblock 1627 ~ 442 light_gray_wool
+execute if entity @s[scores={customLapOffset=9}] run setblock 1627 ~ 442 cyan_wool
+execute if entity @s[scores={customLapOffset=10}] run setblock 1627 ~ 442 purple_wool
+
+execute if entity @s[scores={customLapOffset=11}] run setblock 1627 ~ 442 blue_wool
+execute if entity @s[scores={customLapOffset=12}] run setblock 1627 ~ 442 brown_wool
+execute if entity @s[scores={customLapOffset=13}] run setblock 1627 ~ 442 green_wool
+execute if entity @s[scores={customLapOffset=14}] run setblock 1627 ~ 442 red_wool
+execute if entity @s[scores={customLapOffset=15}] run setblock 1627 ~ 442 black_wool
+execute if entity @s[scores={customLapOffset=16}] run setblock 1627 ~ 442 white_terracotta
+execute if entity @s[scores={customLapOffset=17}] run setblock 1627 ~ 442 orange_terracotta
+execute if entity @s[scores={customLapOffset=18}] run setblock 1627 ~ 442 magenta_terracotta
+execute if entity @s[scores={customLapOffset=19}] run setblock 1627 ~ 442 light_blue_terracotta
+execute if entity @s[scores={customLapOffset=20}] run setblock 1627 ~ 442 yellow_terracotta
+
+execute if entity @s[scores={customLapOffset=21}] run setblock 1627 ~ 442 lime_terracotta
+execute if entity @s[scores={customLapOffset=22}] run setblock 1627 ~ 442 pink_terracotta
+execute if entity @s[scores={customLapOffset=23}] run setblock 1627 ~ 442 gray_terracotta
+execute if entity @s[scores={customLapOffset=24}] run setblock 1627 ~ 442 light_gray_terracotta
+execute if entity @s[scores={customLapOffset=25}] run setblock 1627 ~ 442 cyan_terracotta
+execute if entity @s[scores={customLapOffset=26}] run setblock 1627 ~ 442 purple_terracotta
+execute if entity @s[scores={customLapOffset=27}] run setblock 1627 ~ 442 blue_terracotta
+execute if entity @s[scores={customLapOffset=28}] run setblock 1627 ~ 442 brown_terracotta
+execute if entity @s[scores={customLapOffset=29}] run setblock 1627 ~ 442 green_terracotta
+execute if entity @s[scores={customLapOffset=30}] run setblock 1627 ~ 442 red_terracotta
+
+execute if entity @s[scores={customLapOffset=31}] run setblock 1627 ~ 442 black_terracotta
+execute if entity @s[scores={customLapOffset=32}] run setblock 1627 ~ 442 white_concrete
+execute if entity @s[scores={customLapOffset=33}] run setblock 1627 ~ 442 orange_concrete
+execute if entity @s[scores={customLapOffset=34}] run setblock 1627 ~ 442 magenta_concrete
+execute if entity @s[scores={customLapOffset=35}] run setblock 1627 ~ 442 light_blue_concrete
+execute if entity @s[scores={customLapOffset=36}] run setblock 1627 ~ 442 yellow_concrete
+execute if entity @s[scores={customLapOffset=37}] run setblock 1627 ~ 442 lime_concrete
+execute if entity @s[scores={customLapOffset=38}] run setblock 1627 ~ 442 pink_concrete
+execute if entity @s[scores={customLapOffset=39}] run setblock 1627 ~ 442 gray_concrete
+execute if entity @s[scores={customLapOffset=40}] run setblock 1627 ~ 442 light_gray_concrete
+
+execute if entity @s[scores={customLapOffset=41}] run setblock 1627 ~ 442 cyan_concrete
+execute if entity @s[scores={customLapOffset=42}] run setblock 1627 ~ 442 purple_concrete
+execute if entity @s[scores={customLapOffset=43}] run setblock 1627 ~ 442 blue_concrete
+execute if entity @s[scores={customLapOffset=44}] run setblock 1627 ~ 442 brown_concrete
+execute if entity @s[scores={customLapOffset=45}] run setblock 1627 ~ 442 green_concrete
+execute if entity @s[scores={customLapOffset=46}] run setblock 1627 ~ 442 red_concrete
+execute if entity @s[scores={customLapOffset=47}] run setblock 1627 ~ 442 black_concrete
+execute if entity @s[scores={customLapOffset=48}] run setblock 1627 ~ 442 white_concrete_powder
+execute if entity @s[scores={customLapOffset=49}] run setblock 1627 ~ 442 orange_concrete_powder
+execute if entity @s[scores={customLapOffset=50}] run setblock 1627 ~ 442 magenta_concrete_powder
+
+
+execute if entity @s[scores={customLapOffset=-1}] run setblock 1627 ~ 442 light_blue_concrete_powder
+execute if entity @s[scores={customLapOffset=-2}] run setblock 1627 ~ 442 yellow_concrete_powder
+execute if entity @s[scores={customLapOffset=-3}] run setblock 1627 ~ 442 lime_concrete_powder
+execute if entity @s[scores={customLapOffset=-4}] run setblock 1627 ~ 442 pink_concrete_powder
+execute if entity @s[scores={customLapOffset=-5}] run setblock 1627 ~ 442 gray_concrete_powder
+execute if entity @s[scores={customLapOffset=-6}] run setblock 1627 ~ 442 light_gray_concrete_powder
+execute if entity @s[scores={customLapOffset=-7}] run setblock 1627 ~ 442 cyan_concrete_powder
+execute if entity @s[scores={customLapOffset=-8}] run setblock 1627 ~ 442 purple_concrete_powder
+execute if entity @s[scores={customLapOffset=-9}] run setblock 1627 ~ 442 blue_concrete_powder
+execute if entity @s[scores={customLapOffset=-10}] run setblock 1627 ~ 442 brown_concrete_powder
+
+execute if entity @s[scores={customLapOffset=-11}] run setblock 1627 ~ 442 green_concrete_powder
+execute if entity @s[scores={customLapOffset=-12}] run setblock 1627 ~ 442 red_concrete_powder
+execute if entity @s[scores={customLapOffset=-13}] run setblock 1627 ~ 442 black_concrete_powder
+execute if entity @s[scores={customLapOffset=-14}] run setblock 1627 ~ 442 white_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-15}] run setblock 1627 ~ 442 orange_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-16}] run setblock 1627 ~ 442 magenta_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-17}] run setblock 1627 ~ 442 light_blue_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-18}] run setblock 1627 ~ 442 yellow_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-19}] run setblock 1627 ~ 442 lime_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-20}] run setblock 1627 ~ 442 pink_glazed_terracotta
+
+execute if entity @s[scores={customLapOffset=-21}] run setblock 1627 ~ 442 gray_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-22}] run setblock 1627 ~ 442 light_gray_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-23}] run setblock 1627 ~ 442 cyan_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-24}] run setblock 1627 ~ 442 purple_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-25}] run setblock 1627 ~ 442 blue_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-26}] run setblock 1627 ~ 442 brown_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-27}] run setblock 1627 ~ 442 green_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-28}] run setblock 1627 ~ 442 red_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-29}] run setblock 1627 ~ 442 black_glazed_terracotta
+execute if entity @s[scores={customLapOffset=-30}] run setblock 1627 ~ 442 white_stained_glass
+
+execute if entity @s[scores={customLapOffset=-31}] run setblock 1627 ~ 442 orange_stained_glass
+execute if entity @s[scores={customLapOffset=-32}] run setblock 1627 ~ 442 magenta_stained_glass
+execute if entity @s[scores={customLapOffset=-33}] run setblock 1627 ~ 442 light_blue_stained_glass
+execute if entity @s[scores={customLapOffset=-34}] run setblock 1627 ~ 442 yellow_stained_glass
+execute if entity @s[scores={customLapOffset=-35}] run setblock 1627 ~ 442 lime_stained_glass
+execute if entity @s[scores={customLapOffset=-36}] run setblock 1627 ~ 442 pink_stained_glass
+execute if entity @s[scores={customLapOffset=-37}] run setblock 1627 ~ 442 gray_stained_glass
+execute if entity @s[scores={customLapOffset=-38}] run setblock 1627 ~ 442 light_gray_stained_glass
+execute if entity @s[scores={customLapOffset=-39}] run setblock 1627 ~ 442 cyan_stained_glass
+execute if entity @s[scores={customLapOffset=-40}] run setblock 1627 ~ 442 purple_stained_glass
+
+execute if entity @s[scores={customLapOffset=-41}] run setblock 1627 ~ 442 blue_stained_glass
+execute if entity @s[scores={customLapOffset=-42}] run setblock 1627 ~ 442 brown_stained_glass
+execute if entity @s[scores={customLapOffset=-43}] run setblock 1627 ~ 442 green_stained_glass
+execute if entity @s[scores={customLapOffset=-44}] run setblock 1627 ~ 442 white_stained_glass_pane
+execute if entity @s[scores={customLapOffset=-45}] run setblock 1627 ~ 442 orange_stained_glass_pane
+execute if entity @s[scores={customLapOffset=-46}] run setblock 1627 ~ 442 magenta_stained_glass_pane
+execute if entity @s[scores={customLapOffset=-47}] run setblock 1627 ~ 442 light_blue_stained_glass_pane
+execute if entity @s[scores={customLapOffset=-48}] run setblock 1627 ~ 442 yellow_stained_glass_pane
+execute if entity @s[scores={customLapOffset=-49}] run setblock 1627 ~ 442 lime_stained_glass_pane
+execute if entity @s[scores={customLapOffset=-50}] run setblock 1627 ~ 442 pink_stained_glass_pane

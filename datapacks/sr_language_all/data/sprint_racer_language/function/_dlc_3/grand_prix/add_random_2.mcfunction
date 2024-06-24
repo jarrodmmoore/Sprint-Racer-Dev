@@ -1,0 +1,1 @@
+tellraw @a ["",{"text":"==\\/==","bold":true,"color":"red"},{"text":" "},{"translate":"sr.grand_prix.random_battle","bold":true,"color":"red"},{"text":" "},{"text":"==\\/==","bold":true,"color":"red"}]

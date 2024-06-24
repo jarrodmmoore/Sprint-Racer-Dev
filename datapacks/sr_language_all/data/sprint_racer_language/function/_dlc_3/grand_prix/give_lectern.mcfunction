@@ -1,0 +1,1 @@
+item replace entity @s hotbar.0 with minecraft:lectern[custom_name='{"translate":"sr.grand_prix.track_settings","color":"yellow","bold":true,"italic":false}',custom_data={gpSettings:1b}] 1

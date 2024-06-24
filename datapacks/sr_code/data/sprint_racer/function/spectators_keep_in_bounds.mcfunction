@@ -1,0 +1,2 @@
+execute at @s facing entity @e[limit=1,sort=nearest,tag=node,tag=activator,type=marker,scores={nodeState=1..}] feet run tp @s ^ ^ ^10
+execute if entity @e[limit=1,sort=nearest,tag=node,type=marker,tag=activator,scores={nodeState=1..}] unless entity @e[limit=1,sort=nearest,tag=node,distance=..500,tag=activator,scores={nodeState=1..}] run tp @s @e[limit=1,sort=nearest,tag=node,type=marker,tag=activator,scores={nodeState=1..}]

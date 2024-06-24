@@ -1,0 +1,2 @@
+title @s[scores={inputCooldown=..0}] actionbar ["",{"translate":"sr.lobby.use_key_to_choose_1","color":"white"},{"keybind":"key.use","color":"yellow","bold":false},{"translate":"sr.lobby.use_key_to_choose_2","color":"white"}]
+title @s[scores={inputCooldown=1..}] actionbar ["",{"translate":"sr.lobby.wait_before_making_input","color":"white"}]

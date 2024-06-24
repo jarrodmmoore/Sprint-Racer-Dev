@@ -1,0 +1,1 @@
+scoreboard objectives add displayLivesA dummy ["",{"translate":"sr.game.lives","color":"white","bold":true}]

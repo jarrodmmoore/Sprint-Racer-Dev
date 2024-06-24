@@ -1,0 +1,3 @@
+execute if items entity @s weapon.mainhand filled_map[custom_data~{mapv1:1b}] run title @s actionbar ["",{"translate":"sr.lobby.custom_track","color":"white","bold":true},{"selector":"@e[tag=vote1,limit=1]"}]
+execute if items entity @s weapon.mainhand filled_map[custom_data~{mapv2:1b}] run title @s actionbar ["",{"translate":"sr.lobby.custom_track","color":"white","bold":true},{"selector":"@e[tag=vote2,limit=1]"}]
+execute if items entity @s weapon.mainhand filled_map[custom_data~{mapv3:1b}] run title @s actionbar ["",{"translate":"sr.lobby.custom_track","color":"white","bold":true},{"selector":"@e[tag=vote3,limit=1]"}]

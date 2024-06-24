@@ -1,0 +1,54 @@
+execute if entity @s[scores={rNumber=1}] run setblock 1618 ~ 449 red_wool
+execute if entity @s[scores={rNumber=2}] run setblock 1617 ~ 449 red_wool
+execute if entity @s[scores={rNumber=3}] run setblock 1616 ~ 449 red_wool
+execute if entity @s[scores={rNumber=4}] run setblock 1615 ~ 449 red_wool
+execute if entity @s[scores={rNumber=5}] run setblock 1614 ~ 449 red_wool
+execute if entity @s[scores={rNumber=6}] run setblock 1613 ~ 449 red_wool
+execute if entity @s[scores={rNumber=7}] run setblock 1612 ~ 449 red_wool
+execute if entity @s[scores={rNumber=8}] run setblock 1611 ~ 449 red_wool
+execute if entity @s[scores={rNumber=9}] run setblock 1610 ~ 449 red_wool
+execute if entity @s[scores={rNumber=10}] run setblock 1609 ~ 449 red_wool
+
+execute if entity @s[scores={rNumber=11}] run setblock 1618 ~ 448 red_wool
+execute if entity @s[scores={rNumber=12}] run setblock 1617 ~ 448 red_wool
+execute if entity @s[scores={rNumber=13}] run setblock 1616 ~ 448 red_wool
+execute if entity @s[scores={rNumber=14}] run setblock 1615 ~ 448 red_wool
+execute if entity @s[scores={rNumber=15}] run setblock 1614 ~ 448 red_wool
+execute if entity @s[scores={rNumber=16}] run setblock 1613 ~ 448 red_wool
+execute if entity @s[scores={rNumber=17}] run setblock 1612 ~ 448 red_wool
+execute if entity @s[scores={rNumber=18}] run setblock 1611 ~ 448 red_wool
+execute if entity @s[scores={rNumber=19}] run setblock 1610 ~ 448 red_wool
+execute if entity @s[scores={rNumber=20}] run setblock 1609 ~ 448 red_wool
+
+execute if entity @s[scores={rNumber=21}] run setblock 1618 ~ 447 red_wool
+execute if entity @s[scores={rNumber=22}] run setblock 1617 ~ 447 red_wool
+execute if entity @s[scores={rNumber=23}] run setblock 1616 ~ 447 red_wool
+execute if entity @s[scores={rNumber=24}] run setblock 1615 ~ 447 red_wool
+execute if entity @s[scores={rNumber=25}] run setblock 1614 ~ 447 red_wool
+execute if entity @s[scores={rNumber=26}] run setblock 1613 ~ 447 red_wool
+execute if entity @s[scores={rNumber=27}] run setblock 1612 ~ 447 red_wool
+execute if entity @s[scores={rNumber=28}] run setblock 1611 ~ 447 red_wool
+execute if entity @s[scores={rNumber=29}] run setblock 1610 ~ 447 red_wool
+execute if entity @s[scores={rNumber=30}] run setblock 1609 ~ 447 red_wool
+
+execute if entity @s[scores={rNumber=31}] run setblock 1618 ~ 446 red_wool
+execute if entity @s[scores={rNumber=32}] run setblock 1617 ~ 446 red_wool
+execute if entity @s[scores={rNumber=33}] run setblock 1616 ~ 446 red_wool
+execute if entity @s[scores={rNumber=34}] run setblock 1615 ~ 446 red_wool
+execute if entity @s[scores={rNumber=35}] run setblock 1614 ~ 446 red_wool
+execute if entity @s[scores={rNumber=36}] run setblock 1613 ~ 446 red_wool
+execute if entity @s[scores={rNumber=37}] run setblock 1612 ~ 446 red_wool
+execute if entity @s[scores={rNumber=38}] run setblock 1611 ~ 446 red_wool
+execute if entity @s[scores={rNumber=39}] run setblock 1610 ~ 446 red_wool
+execute if entity @s[scores={rNumber=40}] run setblock 1609 ~ 446 red_wool
+
+execute if entity @s[scores={rNumber=41}] run setblock 1618 ~ 445 red_wool
+execute if entity @s[scores={rNumber=42}] run setblock 1617 ~ 445 red_wool
+execute if entity @s[scores={rNumber=43}] run setblock 1616 ~ 445 red_wool
+execute if entity @s[scores={rNumber=44}] run setblock 1615 ~ 445 red_wool
+execute if entity @s[scores={rNumber=45}] run setblock 1614 ~ 445 red_wool
+execute if entity @s[scores={rNumber=46}] run setblock 1613 ~ 445 red_wool
+execute if entity @s[scores={rNumber=47}] run setblock 1612 ~ 445 red_wool
+execute if entity @s[scores={rNumber=48}] run setblock 1611 ~ 445 red_wool
+execute if entity @s[scores={rNumber=49}] run setblock 1610 ~ 445 red_wool
+execute if entity @s[scores={rNumber=50}] run setblock 1609 ~ 445 red_wool

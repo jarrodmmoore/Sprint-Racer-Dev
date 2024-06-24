@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"It looks like cheats are enabled.","italic":true,"color":"light_purple"},{"text":" ","color":"light_purple"},{"text":"[View Active Cheats]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger viewCheats set 1"},"hoverEvent":{"action":"show_text","contents":"View active cheats"}}]

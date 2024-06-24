@@ -1,0 +1,2 @@
+execute if entity @e[tag=node,tag=finishline,tag=selectCheck,type=marker] run function sprint_racer_language:_dlc_2/editor_mode/config/edit_finishline
+execute if entity @e[tag=node,tag=checkpoint,tag=selectCheck,type=marker] run function sprint_racer_language:_dlc_2/editor_mode/config/edit_checkpoint

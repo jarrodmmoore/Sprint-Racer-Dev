@@ -1,0 +1,1 @@
+item replace entity @s[scores={hp=1..}] weapon.offhand with minecraft:carrot_on_a_stick[lore=['"This is used to detect right clicks!"'],custom_name='{"translate":"sr.input_detector","bold":true,"italic":false,"color":"light_purple"}'] 1

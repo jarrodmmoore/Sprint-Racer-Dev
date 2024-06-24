@@ -1,0 +1,2 @@
+execute if entity @e[tag=w,scores={tvPoolMode=1}] run function sprint_racer:game_logic/10/controls/create_new_race
+execute if entity @e[tag=w,scores={tvPoolMode=2}] run function sprint_racer:game_logic/10/controls/create_new_battle

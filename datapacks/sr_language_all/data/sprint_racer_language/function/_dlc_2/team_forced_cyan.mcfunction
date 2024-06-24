@@ -1,0 +1,1 @@
+tellraw @s ["",{"translate":"sr.lobby.team_forced_to_cyan","color":"dark_aqua"}]

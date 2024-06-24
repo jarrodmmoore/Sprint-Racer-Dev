@@ -1,0 +1,2 @@
+execute positioned ^ ^ ^ run particle dust{color:[1.0,0.0,0.0],scale:1.75} ^ ^ ^ .3 .3 .3 100 10 force @s
+execute positioned ^ ^ ^ run particle dust{color:[1.0,1.0,1.0],scale:1.75} ^ ^ ^ .3 .3 .3 100 5 force @s

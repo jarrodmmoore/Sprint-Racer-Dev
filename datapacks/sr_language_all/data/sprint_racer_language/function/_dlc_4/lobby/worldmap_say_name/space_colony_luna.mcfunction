@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Space Colony Luna ==\\/==","bold":true,"color":"light_purple"}]

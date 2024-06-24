@@ -1,0 +1,2 @@
+function sprint_racer_language:_dlc_2/join_messages/join_offer_expired
+scoreboard players reset @s specJoin

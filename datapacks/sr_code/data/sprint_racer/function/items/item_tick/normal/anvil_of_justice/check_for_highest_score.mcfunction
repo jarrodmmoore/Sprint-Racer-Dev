@@ -1,0 +1,1 @@
+execute if score @s value > #highest value run scoreboard players operation #highest value = @s value

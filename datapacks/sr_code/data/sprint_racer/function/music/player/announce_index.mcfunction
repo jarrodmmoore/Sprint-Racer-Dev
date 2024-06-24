@@ -1,0 +1,2 @@
+execute if score @s soundtrack matches 1 run function sprint_racer:music/player/announce_index_stock
+execute if score @s soundtrack matches 2 run function sprint_racer:music/player/announce_index_custom

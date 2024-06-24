@@ -1,0 +1,12 @@
+tellraw @s ["",{"text":"\nai","color":"#005544","bold":true}]
+tellraw @s ["",{"text":"[disable ai]","color":"#990088","bold":false,"clickEvent":{"action":"run_command","value":"/function sprint_racer:ai/general/ai_disable_all"},"hoverEvent":{"action":"show_text","value":"disable ai"}}]
+tellraw @s ["",{"text":"[tryhard mode]","color":"#990088","bold":false,"clickEvent":{"action":"run_command","value":"/tag @e[tag=ai] add tryhard"},"hoverEvent":{"action":"show_text","value":"tryhard mode"}}]
+tellraw @s ["",{"text":"[no finish]","color":"#990088","bold":false,"clickEvent":{"action":"run_command","value":"/scoreboard players set @e[tag=ai] lap -100"},"hoverEvent":{"action":"show_text","value":"no finish"}}]
+tellraw @s ["",{"text":"[give elytra]","color":"#990088","bold":false,"clickEvent":{"action":"run_command","value":"/execute as @e[tag=ai] run function sprint_racer_language:gameplay/give_item/no12"},"hoverEvent":{"action":"show_text","value":"give elytra"}}]
+tellraw @s ["",{"text":"[give elytra+firework]","color":"#990088","bold":false,"clickEvent":{"action":"run_command","value":"/execute as @e[tag=ai] run function sprint_racer_language:gameplay/give_item/elite12"},"hoverEvent":{"action":"show_text","value":"give elytra+firework"}}]
+tellraw @s ["",{"text":"[give jump boost]","color":"#990088","bold":false,"clickEvent":{"action":"run_command","value":"/execute as @e[tag=ai] run function sprint_racer_language:gameplay/give_item/no9"},"hoverEvent":{"action":"show_text","value":"give jump boost"}}]
+tellraw @s ["",{"text":"[give ender pearl]","color":"#990088","bold":false,"clickEvent":{"action":"run_command","value":"/execute as @e[tag=ai] run function sprint_racer_language:gameplay/give_item/no11"},"hoverEvent":{"action":"show_text","value":"give ender pearl"}}]
+tellraw @s ["",{"text":"[fast forward]","color":"#990088","bold":false,"clickEvent":{"action":"run_command","value":"/tag @e[tag=ai] add gtgfast"},"hoverEvent":{"action":"show_text","value":"fast forward"}}]
+tellraw @s ["",{"text":"[slow down]","color":"#990088","bold":false,"clickEvent":{"action":"run_command","value":"/tag @e[tag=ai] remove gtgfast"},"hoverEvent":{"action":"show_text","value":"slow down"}}]
+
+tellraw @s ["",{"text":"[Back]","color":"#FF7777","bold":false,"clickEvent":{"action":"run_command","value":"/function sprint_racer:__dev_tools/_menu"},"hoverEvent":{"action":"show_text","value":"Back"}}]

@@ -1,0 +1,1 @@
+item replace entity @s hotbar.6 with tnt[custom_name='{"bold":true,"color":"red","italic":false,"translate":"sr.lobby.delete_current_track"}',custom_data={deletetrack:1b}] 1

@@ -1,0 +1,1 @@
+item replace entity @s hotbar.3 with minecraft:lectern[custom_name='{"translate":"sr.lobby.track_config","color":"yellow","bold":true,"italic":false}',custom_data={trackconfig:1b}] 1

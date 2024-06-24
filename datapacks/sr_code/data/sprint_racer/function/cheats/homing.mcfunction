@@ -1,0 +1,1 @@
+execute facing entity @e[limit=1,tag=activeplayer,sort=nearest] feet run tp @s ^ ^ ^.6

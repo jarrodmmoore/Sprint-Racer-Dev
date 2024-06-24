@@ -1,0 +1,8 @@
+Copy and paste folder "track1" to give yourself more level folders to work with.
+
+The folder name must be "track2", "track3", ... "track99", etc in order for the custom track system to accept it.
+
+For those unfamiliar with functions:
+- File names for folders and .mcfunction files must be all lower-case with no spaces.
+- You can call functions by doing "function sr_c:foldername/functionname"
+- To debug your functions, select "Open output log when Minecraft: Java Edition starts" in the Minecraft launcher and keep an eye out for errors.

@@ -1,0 +1,9 @@
+execute if entity @e[tag=projectTarget,tag=ai1] facing entity @e[limit=1,sort=nearest,tag=aiTarget1] feet rotated ~ 0 run function sprint_racer:ai/general/item_logic/lead_projectile
+execute if entity @e[tag=projectTarget,tag=ai2] facing entity @e[limit=1,sort=nearest,tag=aiTarget2] feet rotated ~ 0 run function sprint_racer:ai/general/item_logic/lead_projectile
+execute if entity @e[tag=projectTarget,tag=ai3] facing entity @e[limit=1,sort=nearest,tag=aiTarget3] feet rotated ~ 0 run function sprint_racer:ai/general/item_logic/lead_projectile
+execute if entity @e[tag=projectTarget,tag=ai4] facing entity @e[limit=1,sort=nearest,tag=aiTarget4] feet rotated ~ 0 run function sprint_racer:ai/general/item_logic/lead_projectile
+execute if entity @e[tag=projectTarget,tag=ai5] facing entity @e[limit=1,sort=nearest,tag=aiTarget5] feet rotated ~ 0 run function sprint_racer:ai/general/item_logic/lead_projectile
+execute if entity @e[tag=projectTarget,tag=ai6] facing entity @e[limit=1,sort=nearest,tag=aiTarget6] feet rotated ~ 0 run function sprint_racer:ai/general/item_logic/lead_projectile
+execute if entity @e[tag=projectTarget,tag=ai7] facing entity @e[limit=1,sort=nearest,tag=aiTarget7] feet rotated ~ 0 run function sprint_racer:ai/general/item_logic/lead_projectile
+execute if entity @e[tag=projectTarget,tag=ai8] facing entity @e[limit=1,sort=nearest,tag=aiTarget8] feet rotated ~ 0 run function sprint_racer:ai/general/item_logic/lead_projectile
+execute if entity @e[tag=projectTarget,tag=ai9] facing entity @e[limit=1,sort=nearest,tag=aiTarget9] feet rotated ~ 0 run function sprint_racer:ai/general/item_logic/lead_projectile

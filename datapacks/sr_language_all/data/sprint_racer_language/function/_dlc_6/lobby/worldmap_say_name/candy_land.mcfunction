@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Candy Land ==\\/==","bold":true,"color":"light_purple"}]

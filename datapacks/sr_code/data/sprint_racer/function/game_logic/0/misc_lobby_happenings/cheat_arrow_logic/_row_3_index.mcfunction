@@ -1,0 +1,10 @@
+execute if entity @s[scores={coord_x=1585}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/a
+execute if entity @s[scores={coord_x=1584}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/s
+execute if entity @s[scores={coord_x=1583}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/d
+execute if entity @s[scores={coord_x=1582}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/f
+execute if entity @s[scores={coord_x=1581}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/g
+execute if entity @s[scores={coord_x=1580}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/h
+execute if entity @s[scores={coord_x=1579}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/j
+execute if entity @s[scores={coord_x=1578}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/k
+execute if entity @s[scores={coord_x=1577}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/l
+execute if entity @s[scores={coord_x=1576}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/exclamation

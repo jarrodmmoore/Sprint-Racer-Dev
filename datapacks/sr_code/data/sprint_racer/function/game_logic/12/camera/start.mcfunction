@@ -1,0 +1,1 @@
+execute as @a[gamemode=spectator] run spectate @e[limit=1,sort=nearest,tag=c_cam_start,type=armor_stand] @s

@@ -1,0 +1,9 @@
+execute if entity @s[tag=ai1] run function sprint_racer:ai/general/behaviors/move_toward_itemchest/ai1
+execute if entity @s[tag=ai2] run function sprint_racer:ai/general/behaviors/move_toward_itemchest/ai2
+execute if entity @s[tag=ai3] run function sprint_racer:ai/general/behaviors/move_toward_itemchest/ai3
+execute if entity @s[tag=ai4] run function sprint_racer:ai/general/behaviors/move_toward_itemchest/ai4
+execute if entity @s[tag=ai5] run function sprint_racer:ai/general/behaviors/move_toward_itemchest/ai5
+execute if entity @s[tag=ai6] run function sprint_racer:ai/general/behaviors/move_toward_itemchest/ai6
+execute if entity @s[tag=ai7] run function sprint_racer:ai/general/behaviors/move_toward_itemchest/ai7
+execute if entity @s[tag=ai8] run function sprint_racer:ai/general/behaviors/move_toward_itemchest/ai8
+execute if entity @s[tag=ai9] run function sprint_racer:ai/general/behaviors/move_toward_itemchest/ai9

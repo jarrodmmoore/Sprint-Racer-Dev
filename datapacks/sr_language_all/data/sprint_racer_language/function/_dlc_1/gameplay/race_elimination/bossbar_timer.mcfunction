@@ -1,0 +1,3 @@
+execute if entity @s[scores={timeUntilElim=201..}] run bossbar set minecraft:timeremaining name ["",{"translate":"sr.game.next_elimination","bold":true,"color":"white"},{"selector":"@e[limit=1,tag=nextelimination]"},{"text":" "},{"text":"[","bold":true,"color":"white"},{"score":{"name":"@s","objective":"countTimeMsec"},"color":"white","bold":true},{"text":"s]","bold":true,"color":"white"}]
+
+execute if entity @s[scores={timeUntilElim=..200}] run bossbar set minecraft:timeremaining name ["",{"translate":"sr.game.next_elimination","bold":true,"color":"red"},{"selector":"@e[limit=1,tag=nextelimination]"},{"text":" "},{"text":"[","bold":true,"color":"red"},{"score":{"name":"@s","objective":"countTimeMsec"},"color":"red","bold":true},{"text":"s]","bold":true,"color":"red"}]

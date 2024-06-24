@@ -1,0 +1,9 @@
+execute if entity @s[tag=ai1] run function sprint_racer:ai/general/confirm_move_target/1
+execute if entity @s[tag=ai2] run function sprint_racer:ai/general/confirm_move_target/2
+execute if entity @s[tag=ai3] run function sprint_racer:ai/general/confirm_move_target/3
+execute if entity @s[tag=ai4] run function sprint_racer:ai/general/confirm_move_target/4
+execute if entity @s[tag=ai5] run function sprint_racer:ai/general/confirm_move_target/5
+execute if entity @s[tag=ai6] run function sprint_racer:ai/general/confirm_move_target/6
+execute if entity @s[tag=ai7] run function sprint_racer:ai/general/confirm_move_target/7
+execute if entity @s[tag=ai8] run function sprint_racer:ai/general/confirm_move_target/8
+execute if entity @s[tag=ai9] run function sprint_racer:ai/general/confirm_move_target/9

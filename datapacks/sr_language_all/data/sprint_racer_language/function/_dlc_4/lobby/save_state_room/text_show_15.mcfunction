@@ -1,0 +1,3 @@
+#team auto balancing
+execute if score global value matches 1 run summon armor_stand ~ ~ ~ {Tags:["save_state_text","save_state_scrolling","lobbyprop"],Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Invisible:1,Marker:1b,CustomName:'[{"translate":"sr.lobby.save_state.team_auto_balance"},{"translate":"sr.basic.on_l"}]',CustomNameVisible:1b,DisabledSlots:2039583}
+execute if score global value matches 2 run summon armor_stand ~ ~ ~ {Tags:["save_state_text","save_state_scrolling","lobbyprop"],Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Invisible:1,Marker:1b,CustomName:'[{"translate":"sr.lobby.save_state.team_auto_balance"},{"translate":"sr.basic.off_l"}]',CustomNameVisible:1b,DisabledSlots:2039583}

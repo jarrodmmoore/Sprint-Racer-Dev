@@ -1,0 +1,26 @@
+scoreboard players operation #temp2 visualLength = #temp visualLength
+execute if score @s check matches 1 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/1
+execute if score @s check matches 2 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/2
+execute if score @s check matches 3 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/3
+execute if score @s check matches 4 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/4
+execute if score @s check matches 5 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/5
+execute if score @s check matches 6 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/6
+execute if score @s check matches 7 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/7
+execute if score @s check matches 8 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/8
+execute if score @s check matches 9 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/9
+execute if score @s check matches 10 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/10
+execute if score @s check matches 11 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/11
+execute if score @s check matches 12 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/12
+execute if score @s check matches 13 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/13
+execute if score @s check matches 14 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/14
+execute if score @s check matches 15 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/15
+execute if score @s check matches 16 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/16
+execute if score @s check matches 17 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/17
+execute if score @s check matches 18 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/18
+execute if score @s check matches 19 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/19
+execute if score @s check matches 20 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/20
+execute if score @s check matches 21 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/21
+execute if score @s check matches 22 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/22
+execute if score @s check matches 23 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/23
+execute if score @s check matches 24 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/24
+execute if score @s check matches 25 run function sprint_racer:game_logic/1/checkpoint_visual/draw_good/25

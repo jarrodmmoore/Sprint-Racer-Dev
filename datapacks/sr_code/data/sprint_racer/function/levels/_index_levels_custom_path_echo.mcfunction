@@ -1,0 +1,1 @@
+execute as @e[tag=chosenTrack,tag=customtrack] run function sprint_racer:levels/_index_levels_custom_path_go

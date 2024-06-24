@@ -1,0 +1,1 @@
+tellraw @s[tag=!minChat] ["",{"text":"You were ","color":"white"},{"text":"deducted 1 KO","color":"red"},{"text":" for self-destructing!","color":"white"}]

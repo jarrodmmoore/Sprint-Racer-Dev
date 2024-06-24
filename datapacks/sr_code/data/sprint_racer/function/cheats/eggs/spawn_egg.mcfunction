@@ -1,0 +1,2 @@
+#manually run function
+summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomName:'{"text":"0TO60","bold":true,"italic":false}'}

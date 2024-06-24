@@ -1,0 +1,1 @@
+data merge entity @s {CustomName:'{"text":"Activator","color":"white","bold":true,"italic":false}'}

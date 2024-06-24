@@ -1,0 +1,5 @@
+bossbar set minecraft:readyprogress color green
+bossbar set minecraft:readyprogress style progress
+execute if entity @e[tag=w,scores={oTimer=..100}] run bossbar set minecraft:readyprogress name ["",{"translate":"sr.lobby.waiting_for_players_to_ready_up","color":"green","bold":true}]
+execute if entity @e[tag=w,scores={oTimer=101..}] if entity @e[tag=w,scores={readyRequired=..1}] run bossbar set minecraft:readyprogress name ["",{"score":{"name":"@e[limit=1,tag=w]","objective":"readyRequired"},"color":"green","bold":true},{"translate":"sr.lobby.player_must_ready_to_start","color":"green","bold":true}]
+execute if entity @e[tag=w,scores={oTimer=101..}] unless entity @e[tag=w,scores={readyRequired=..1}] run bossbar set minecraft:readyprogress name ["",{"score":{"name":"@e[limit=1,tag=w]","objective":"readyRequired"},"color":"green","bold":true},{"translate":"sr.lobby.players_must_ready_to_start","color":"green","bold":true}]

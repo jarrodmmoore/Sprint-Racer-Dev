@@ -1,0 +1,26 @@
+data merge entity @s {CustomName:'{"text":"Teleport Destination (ERROR, INVALID NUMBER)","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=1}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 1","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=2}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 2","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=3}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 3","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=4}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 4","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=5}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 5","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=6}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 6","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=7}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 7","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=8}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 8","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=9}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 9","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=10}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 10","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=11}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 11","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=12}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 12","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=13}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 13","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=14}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 14","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=15}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 15","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=16}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 16","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=17}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 17","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=18}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 18","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=19}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 19","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=20}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 20","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=21}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 21","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=22}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 22","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=23}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 23","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=24}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 24","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=25}] run data merge entity @s {CustomName:'{"text":"Teleport Destination 25","color":"light_purple","bold":true,"italic":false}'}

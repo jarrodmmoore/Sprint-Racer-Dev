@@ -1,0 +1,2 @@
+tellraw @s ["",{"translate":"sr.tutorial.tutorial","color":"aqua","bold":true},{"text":" "},{"translate":"sr.tutorial.cps_1","color":"white","bold":false},{"translate":"sr.tutorial.cps_2","color":"light_purple"},{"translate":"sr.tutorial.cps_3","color":"white","bold":false}]
+scoreboard players set @s tutorProgress 11

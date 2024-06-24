@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Praia de Abril ==\\/==","bold":true,"color":"light_purple"}]

@@ -1,0 +1,1 @@
+execute unless entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{elite3:1b}}}]}] run function sprint_racer_language:gameplay/give_item/elite3

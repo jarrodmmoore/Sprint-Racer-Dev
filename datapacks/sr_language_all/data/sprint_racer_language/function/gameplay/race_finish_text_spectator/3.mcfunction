@@ -1,0 +1,1 @@
+tellraw @a[tag=!playing] ["",{"selector":"@s","color":"aqua"},{"text":" >> ","color":"gold","bold":true},{"translate":"sr.game.finished","color":"gold","bold":true},{"text":" "},{"text":"[3rd]","color":"gold","bold":true}]

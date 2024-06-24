@@ -1,0 +1,11 @@
+tellraw @s ["",{"text":"\ngameplay","color":"#005544","bold":true}]
+tellraw @s ["",{"text":"[no time limit]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/scoreboard players set @e[tag=w,type=armor_stand] timeRemaining 999999999"},"hoverEvent":{"action":"show_text","value":"no time limit"}}]
+tellraw @s ["",{"text":"[end time limit]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/scoreboard players set @e[tag=w,type=armor_stand] timeRemaining 1"},"hoverEvent":{"action":"show_text","value":"end time limit"}}]
+tellraw @s ["",{"text":"[no time limit - gauntlet]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/scoreboard players set @e[tag=w,type=armor_stand] timeRemaining2 999999999"},"hoverEvent":{"action":"show_text","value":"no time limit (gauntlet track)"}}]
+tellraw @s ["",{"text":"[end time limit - gauntlet]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/scoreboard players set @e[tag=w,type=armor_stand] timeRemaining2 1"},"hoverEvent":{"action":"show_text","value":"end time limit (gauntlet track)"}}]
+tellraw @s ["",{"text":"[enable halftick]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/tag @e[tag=w,type=armor_stand] add halftick"},"hoverEvent":{"action":"show_text","value":"enable halftick"}}]
+tellraw @s ["",{"text":"[disable halftick]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/tag @e[tag=w,type=armor_stand] remove halftick"},"hoverEvent":{"action":"show_text","value":"disable halftick"}}]
+tellraw @s ["",{"text":"[restart]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/function sprint_racer_language:_dlc_2/mid_game_vote/pass_restart"},"hoverEvent":{"action":"show_text","value":"restart"}}]
+tellraw @s ["",{"text":"[back to lobby]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/function sprint_racer_language:_dlc_2/mid_game_vote/pass_lobby"},"hoverEvent":{"action":"show_text","value":"back to lobby"}}]
+
+tellraw @s ["",{"text":"[Back]","color":"#FF7777","bold":false,"clickEvent":{"action":"run_command","value":"/function sprint_racer:__dev_tools/_menu"},"hoverEvent":{"action":"show_text","value":"Back"}}]

@@ -1,0 +1,2 @@
+execute if entity @e[tag=cheats,type=armor_stand,tag=33a] run function sprint_racer:cheats/play_stal
+execute if entity @e[tag=cheats,type=armor_stand,tag=44a] run function sprint_racer:cheats/play_pigstep

@@ -1,0 +1,1 @@
+scoreboard players set @e[tag=node,tag=itemchest,x=1610,y=87,z=406,distance=..125] itemBlockState 90

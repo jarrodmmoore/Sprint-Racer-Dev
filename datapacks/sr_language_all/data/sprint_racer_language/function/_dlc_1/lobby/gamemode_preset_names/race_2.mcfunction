@@ -1,0 +1,1 @@
+summon armor_stand ~ ~ ~ {CustomName:'{"translate":"sr.lobby.last_place_elimination","color":"white","bold":false}',CustomNameVisible:0b,Marker:1b,Invulnerable:1,Invisible:1,Tags:["setme"]}

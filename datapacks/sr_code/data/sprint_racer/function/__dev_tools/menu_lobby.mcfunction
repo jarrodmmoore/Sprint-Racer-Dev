@@ -1,0 +1,12 @@
+tellraw @s ["",{"text":"\nlobby","color":"#005544","bold":true}]
+tellraw @s ["",{"text":"[set to 5s]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/execute if entity @e[tag=w,scores={gameState=0}] run function sprint_racer_language:lobby/options/set_5s"},"hoverEvent":{"action":"show_text","value":"set to 5s"}}]
+tellraw @s ["",{"text":"[tracks]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/function sprint_racer:game_logic/0/options_signs/tracks"},"hoverEvent":{"action":"show_text","value":"tracks"}}]
+tellraw @s ["",{"text":"[no cheats]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/function sprint_racer:game_logic/0/options_signs/disable_all_cheats"},"hoverEvent":{"action":"show_text","value":"no cheats"}}]
+tellraw @s ["",{"text":"[admin mode]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/function sprint_racer:game_logic/0/options_signs/admin_mode"},"hoverEvent":{"action":"show_text","value":"admin mode"}}]
+tellraw @s ["",{"text":"[race ai]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/function sprint_racer:game_logic/0/options_signs/ai_context_race"},"hoverEvent":{"action":"show_text","value":"race ai"}}]
+tellraw @s ["",{"text":"[battle ai]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/function sprint_racer:game_logic/0/options_signs/ai_context_battle"},"hoverEvent":{"action":"show_text","value":"battle ai"}}]
+tellraw @s ["",{"text":"[resummon props]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/function sprint_racer:game_logic/0/props/summon_props"},"hoverEvent":{"action":"show_text","value":"resummon props"}}]
+tellraw @s ["",{"text":"[prepare map for release]","color":"#009988","bold":false,"clickEvent":{"action":"suggest_command","value":"/function sprint_racer:__dev_tools/prepare_map_to_ship"},"hoverEvent":{"action":"show_text","value":"prepare map to ship"}}]
+
+tellraw @s ["",{"text":"[down please]","color":"#FFFF44","bold":false,"clickEvent":{"action":"run_command","value":"/function sprint_racer:__dev_tools/menu_lobby"},"hoverEvent":{"action":"show_text","value":"down please"}}]
+tellraw @s ["",{"text":"[Back]","color":"#FF7777","bold":false,"clickEvent":{"action":"run_command","value":"/function sprint_racer:__dev_tools/_menu"},"hoverEvent":{"action":"show_text","value":"Back"}}]

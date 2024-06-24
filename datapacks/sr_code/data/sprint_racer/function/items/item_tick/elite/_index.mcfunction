@@ -1,0 +1,16 @@
+execute if items entity @s weapon.mainhand *[custom_data~{elite1:1b}] run function sprint_racer:items/item_tick/elite/launch_fireball
+execute if items entity @s weapon.mainhand *[custom_data~{elite2:1b}] run function sprint_racer:items/item_tick/elite/launch_homing_missile
+execute if items entity @s weapon.mainhand *[custom_data~{elite3:1b}] run function sprint_racer:items/item_tick/elite/shotgun_tnt
+execute if items entity @s weapon.mainhand *[custom_data~{elite6:1b}] run function sprint_racer:items/item_tick/elite/turn_invisible_dagger
+execute if items entity @s weapon.mainhand *[custom_data~{elite7:1b}] run function sprint_racer:items/item_tick/elite/apply_invincibility
+execute if items entity @s weapon.mainhand *[custom_data~{elite8:1b}] run function sprint_racer:items/item_tick/elite/totem_healing
+execute if items entity @s weapon.mainhand *[custom_data~{elite9:1b}] run function sprint_racer:items/item_tick/elite/apply_jump_boost_super
+execute if items entity @s weapon.mainhand *[custom_data~{elite10:1b}] run function sprint_racer:items/item_tick/elite/apply_speed_boost_super
+execute if items entity @s weapon.mainhand *[custom_data~{elite11:1b}] run function sprint_racer:items/item_tick/elite/warp/_index
+execute if items entity @s weapon.mainhand *[custom_data~{elite13:1b}] run function sprint_racer:items/item_tick/elite/set_magma_trap
+execute if items entity @s weapon.mainhand *[custom_data~{elite15:1b}] run function sprint_racer:items/item_tick/elite/set_hyper_chicken_mine
+execute if items entity @s weapon.mainhand *[custom_data~{elite16:1b}] run function sprint_racer:items/item_tick/elite/set_land_mine
+execute if items entity @s weapon.mainhand *[custom_data~{elite17:1b}] run function sprint_racer:items/item_tick/elite/anvil_of_injustice
+execute if items entity @s weapon.mainhand *[custom_data~{elite18:1b}] run function sprint_racer:items/item_tick/elite/deploy_enderman_stronk
+execute if items entity @s weapon.mainhand *[custom_data~{elite19:1b}] run function sprint_racer:items/item_tick/elite/deploy_squid_angry
+execute if items entity @s weapon.mainhand *[custom_data~{elite20:1b}] run function sprint_racer:items/item_tick/elite/cast_storm

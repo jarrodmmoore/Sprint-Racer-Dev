@@ -1,0 +1,54 @@
+execute if entity @s[scores={gpNumber=1}] run tag @e[tag=gpNo1] remove gpNo1
+execute if entity @s[scores={gpNumber=2}] run tag @e[tag=gpNo2] remove gpNo2
+execute if entity @s[scores={gpNumber=3}] run tag @e[tag=gpNo3] remove gpNo3
+execute if entity @s[scores={gpNumber=4}] run tag @e[tag=gpNo4] remove gpNo4
+execute if entity @s[scores={gpNumber=5}] run tag @e[tag=gpNo5] remove gpNo5
+execute if entity @s[scores={gpNumber=6}] run tag @e[tag=gpNo6] remove gpNo6
+execute if entity @s[scores={gpNumber=7}] run tag @e[tag=gpNo7] remove gpNo7
+execute if entity @s[scores={gpNumber=8}] run tag @e[tag=gpNo8] remove gpNo8
+execute if entity @s[scores={gpNumber=9}] run tag @e[tag=gpNo9] remove gpNo9
+execute if entity @s[scores={gpNumber=10}] run tag @e[tag=gpNo10] remove gpNo10
+
+execute if entity @s[scores={gpNumber=11}] run tag @e[tag=gpNo11] remove gpNo11
+execute if entity @s[scores={gpNumber=12}] run tag @e[tag=gpNo12] remove gpNo12
+execute if entity @s[scores={gpNumber=13}] run tag @e[tag=gpNo13] remove gpNo13
+execute if entity @s[scores={gpNumber=14}] run tag @e[tag=gpNo14] remove gpNo14
+execute if entity @s[scores={gpNumber=15}] run tag @e[tag=gpNo15] remove gpNo15
+execute if entity @s[scores={gpNumber=16}] run tag @e[tag=gpNo16] remove gpNo16
+execute if entity @s[scores={gpNumber=17}] run tag @e[tag=gpNo17] remove gpNo17
+execute if entity @s[scores={gpNumber=18}] run tag @e[tag=gpNo18] remove gpNo18
+execute if entity @s[scores={gpNumber=19}] run tag @e[tag=gpNo19] remove gpNo19
+execute if entity @s[scores={gpNumber=20}] run tag @e[tag=gpNo20] remove gpNo20
+
+execute if entity @s[scores={gpNumber=21}] run tag @e[tag=gpNo21] remove gpNo21
+execute if entity @s[scores={gpNumber=22}] run tag @e[tag=gpNo22] remove gpNo22
+execute if entity @s[scores={gpNumber=23}] run tag @e[tag=gpNo23] remove gpNo23
+execute if entity @s[scores={gpNumber=24}] run tag @e[tag=gpNo24] remove gpNo24
+execute if entity @s[scores={gpNumber=25}] run tag @e[tag=gpNo25] remove gpNo25
+execute if entity @s[scores={gpNumber=26}] run tag @e[tag=gpNo26] remove gpNo26
+execute if entity @s[scores={gpNumber=27}] run tag @e[tag=gpNo27] remove gpNo27
+execute if entity @s[scores={gpNumber=28}] run tag @e[tag=gpNo28] remove gpNo28
+execute if entity @s[scores={gpNumber=29}] run tag @e[tag=gpNo29] remove gpNo29
+execute if entity @s[scores={gpNumber=30}] run tag @e[tag=gpNo30] remove gpNo30
+
+execute if entity @s[scores={gpNumber=31}] run tag @e[tag=gpNo31] remove gpNo31
+execute if entity @s[scores={gpNumber=32}] run tag @e[tag=gpNo32] remove gpNo32
+execute if entity @s[scores={gpNumber=33}] run tag @e[tag=gpNo33] remove gpNo33
+execute if entity @s[scores={gpNumber=34}] run tag @e[tag=gpNo34] remove gpNo34
+execute if entity @s[scores={gpNumber=35}] run tag @e[tag=gpNo35] remove gpNo35
+execute if entity @s[scores={gpNumber=36}] run tag @e[tag=gpNo36] remove gpNo36
+execute if entity @s[scores={gpNumber=37}] run tag @e[tag=gpNo37] remove gpNo37
+execute if entity @s[scores={gpNumber=38}] run tag @e[tag=gpNo38] remove gpNo38
+execute if entity @s[scores={gpNumber=39}] run tag @e[tag=gpNo39] remove gpNo39
+execute if entity @s[scores={gpNumber=40}] run tag @e[tag=gpNo40] remove gpNo40
+
+execute if entity @s[scores={gpNumber=41}] run tag @e[tag=gpNo41] remove gpNo41
+execute if entity @s[scores={gpNumber=42}] run tag @e[tag=gpNo42] remove gpNo42
+execute if entity @s[scores={gpNumber=43}] run tag @e[tag=gpNo43] remove gpNo43
+execute if entity @s[scores={gpNumber=44}] run tag @e[tag=gpNo44] remove gpNo44
+execute if entity @s[scores={gpNumber=45}] run tag @e[tag=gpNo45] remove gpNo45
+execute if entity @s[scores={gpNumber=46}] run tag @e[tag=gpNo46] remove gpNo46
+execute if entity @s[scores={gpNumber=47}] run tag @e[tag=gpNo47] remove gpNo47
+execute if entity @s[scores={gpNumber=48}] run tag @e[tag=gpNo48] remove gpNo48
+execute if entity @s[scores={gpNumber=49}] run tag @e[tag=gpNo49] remove gpNo49
+execute if entity @s[scores={gpNumber=50}] run tag @e[tag=gpNo50] remove gpNo50

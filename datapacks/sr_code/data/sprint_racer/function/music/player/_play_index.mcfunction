@@ -1,0 +1,2 @@
+execute if score #cheatMusic value matches 0 run function sprint_racer:music/player/_play_index_no_cheats
+execute if score #cheatMusic value matches 1 run function sprint_racer:music/player/_play_index_cheats

@@ -1,0 +1,6 @@
+execute if entity @e[tag=w,type=armor_stand,x=1550,y=150,z=406,sort=nearest,scores={itemBlockState=19}] as @e[tag=itemcontainer,type=armor_stand] run data merge entity @s {DisabledSlots:2039583,Pose:{Head:[0.0f,190.0f,0.0f]}}
+execute if entity @e[tag=w,type=armor_stand,x=1550,y=150,z=406,sort=nearest,scores={itemBlockState=20}] as @e[tag=itemcontainer,type=armor_stand] run data merge entity @s {DisabledSlots:2039583,Pose:{Head:[0.0f,200.0f,0.0f]}}
+execute if entity @e[tag=w,type=armor_stand,x=1550,y=150,z=406,sort=nearest,scores={itemBlockState=21}] as @e[tag=itemcontainer,type=armor_stand] run data merge entity @s {DisabledSlots:2039583,Pose:{Head:[0.0f,210.0f,0.0f]}}
+execute if entity @e[tag=w,type=armor_stand,x=1550,y=150,z=406,sort=nearest,scores={itemBlockState=22}] as @e[tag=itemcontainer,type=armor_stand] run data merge entity @s {DisabledSlots:2039583,Pose:{Head:[0.0f,220.0f,0.0f]}}
+execute if entity @e[tag=w,type=armor_stand,x=1550,y=150,z=406,sort=nearest,scores={itemBlockState=23}] as @e[tag=itemcontainer,type=armor_stand] run data merge entity @s {DisabledSlots:2039583,Pose:{Head:[0.0f,230.0f,0.0f]}}
+execute if entity @e[tag=w,type=armor_stand,x=1550,y=150,z=406,sort=nearest,scores={itemBlockState=24}] as @e[tag=itemcontainer,type=armor_stand] run data merge entity @s {DisabledSlots:2039583,Pose:{Head:[0.0f,240.0f,0.0f]}}

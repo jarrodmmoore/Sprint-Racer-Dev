@@ -1,0 +1,2 @@
+#time attack target
+item replace entity @s inventory.12 with minecraft:chicken_spawn_egg[custom_name='{"translate":"sr.editor.give.target","color":"white","bold":true,"italic":false}',entity_data={id:"minecraft:chicken",NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:1b,PersistenceRequired:1b,NoAI:1b,Tags:["killme"],CustomName:'{"text":"Time Attack Traget","bold":true,"color":"white"}'}] 64

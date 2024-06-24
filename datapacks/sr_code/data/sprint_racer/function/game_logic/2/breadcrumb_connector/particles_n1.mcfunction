@@ -1,0 +1,9 @@
+execute unless entity @e[limit=1,type=marker,tag=AIBC,sort=nearest,scores={pathSource=1},distance=..1] run particle dust{color:[1.0,1.0,1.0],scale:1} ^ ^ ^1 0 0 0 1 1
+execute unless entity @e[limit=1,type=marker,tag=AIBC,sort=nearest,scores={pathSource=1},distance=..2] run particle dust{color:[1.0,1.0,1.0],scale:1} ^ ^ ^1.5 0 0 0 1 1
+execute unless entity @e[limit=1,type=marker,tag=AIBC,sort=nearest,scores={pathSource=1},distance=..2] run particle dust{color:[1.0,1.0,1.0],scale:1} ^ ^ ^2 0 0 0 1 1
+execute unless entity @e[limit=1,type=marker,tag=AIBC,sort=nearest,scores={pathSource=1},distance=..3] run particle dust{color:[1.0,1.0,1.0],scale:1} ^ ^ ^2.5 0 0 0 1 1
+execute unless entity @e[limit=1,type=marker,tag=AIBC,sort=nearest,scores={pathSource=1},distance=..3] run particle dust{color:[1.0,1.0,1.0],scale:1} ^ ^ ^3 0 0 0 1 1
+execute unless entity @e[limit=1,type=marker,tag=AIBC,sort=nearest,scores={pathSource=1},distance=..4] run particle dust{color:[1.0,1.0,1.0],scale:1} ^ ^ ^3.5 0 0 0 1 1
+execute unless entity @e[limit=1,type=marker,tag=AIBC,sort=nearest,scores={pathSource=1},distance=..4] run particle dust{color:[1.0,1.0,1.0],scale:1} ^ ^ ^4 0 0 0 1 1
+execute unless entity @e[limit=1,type=marker,tag=AIBC,sort=nearest,scores={pathSource=1},distance=..5] run particle dust{color:[1.0,1.0,1.0],scale:1} ^ ^ ^4.5 0 0 0 1 1
+execute unless entity @e[limit=1,type=marker,tag=AIBC,sort=nearest,scores={pathSource=1},distance=..5] run particle dust{color:[1.0,1.0,1.0],scale:1} ^ ^ ^5 0 0 0 1 1

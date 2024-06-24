@@ -1,0 +1,1 @@
+item replace entity @a[scores={hp=1..},tag=playing,tag=tempTarget] hotbar.0 with minecraft:filled_map[map_id=34,custom_name='{"text":"Hot Air Docks (Race)","color":"aqua","bold":true,"italic":false}',map_color=43775,custom_data={wmPreview:1b,itemhastitle:1b}] 1

@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Nether Castle ==\\/==","bold":true,"color":"light_purple"}]

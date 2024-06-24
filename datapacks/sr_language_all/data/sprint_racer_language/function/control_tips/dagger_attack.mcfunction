@@ -1,0 +1,1 @@
+bossbar set minecraft:control_daggerattack name ["",{"translate":"sr.control_tip.dagger_attack_1","color":"white"},{"text":" "},{"translate":"sr.control_tip.dagger_attack_2","color":"aqua","bold":true}]

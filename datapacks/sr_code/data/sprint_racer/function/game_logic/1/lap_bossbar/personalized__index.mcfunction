@@ -1,0 +1,10 @@
+execute if score @s bbLapDisplay matches 1 run function sprint_racer:game_logic/1/lap_bossbar/personalized_1
+execute if score @s bbLapDisplay matches 2 run function sprint_racer:game_logic/1/lap_bossbar/personalized_2
+execute if score @s bbLapDisplay matches 3 run function sprint_racer:game_logic/1/lap_bossbar/personalized_3
+execute if score @s bbLapDisplay matches 4 run function sprint_racer:game_logic/1/lap_bossbar/personalized_4
+execute if score @s bbLapDisplay matches 5 run function sprint_racer:game_logic/1/lap_bossbar/personalized_5
+execute if score @s bbLapDisplay matches 6 run function sprint_racer:game_logic/1/lap_bossbar/personalized_6
+execute if score @s bbLapDisplay matches 7 run function sprint_racer:game_logic/1/lap_bossbar/personalized_7
+execute if score @s bbLapDisplay matches 8 run function sprint_racer:game_logic/1/lap_bossbar/personalized_8
+execute if score @s bbLapDisplay matches 9 run function sprint_racer:game_logic/1/lap_bossbar/personalized_9
+execute if score @s bbLapDisplay matches 10 run function sprint_racer:game_logic/1/lap_bossbar/personalized_10

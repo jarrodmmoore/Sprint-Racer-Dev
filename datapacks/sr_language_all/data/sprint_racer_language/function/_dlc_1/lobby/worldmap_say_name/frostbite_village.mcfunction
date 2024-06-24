@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Frostbite Village ==\\/==","bold":true,"color":"light_purple"}]

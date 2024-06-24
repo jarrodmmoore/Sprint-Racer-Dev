@@ -1,0 +1,15 @@
+execute if items entity @s weapon.mainhand *[custom_data~{no2:1b}] run function sprint_racer:items/item_tick/normal/launch_missile
+execute if items entity @s weapon.mainhand *[custom_data~{no3:1b}] run function sprint_racer:items/item_tick/normal/throw_tnt
+execute if items entity @s weapon.mainhand *[custom_data~{no5:1b}] run function sprint_racer:items/item_tick/normal/eat_apple
+execute if items entity @s weapon.mainhand *[custom_data~{no6:1b}] run function sprint_racer:items/item_tick/normal/turn_invisible
+execute if items entity @s weapon.mainhand *[custom_data~{no7:1b}] run function sprint_racer:items/item_tick/normal/apply_resistance
+execute if items entity @s weapon.mainhand *[custom_data~{no8:1b}] run function sprint_racer:items/item_tick/normal/totem_something
+execute if items entity @s weapon.mainhand *[custom_data~{no9:1b}] run function sprint_racer:items/item_tick/normal/apply_jump_boost
+execute if items entity @s weapon.mainhand *[custom_data~{no10:1b}] run function sprint_racer:items/item_tick/normal/apply_speed_boost
+execute if items entity @s weapon.mainhand *[custom_data~{no13:1b}] run function sprint_racer:items/item_tick/normal/set_slime_trap
+execute if items entity @s weapon.mainhand *[custom_data~{no15:1b}] run function sprint_racer:items/item_tick/normal/set_chicken_mine
+execute if items entity @s weapon.mainhand *[custom_data~{no16:1b}] run function sprint_racer:items/item_tick/normal/set_trapped_chest
+execute if items entity @s weapon.mainhand *[custom_data~{no17:1b}] run function sprint_racer:items/item_tick/normal/anvil_of_justice/_index
+execute if items entity @s weapon.mainhand *[custom_data~{no18:1b}] run function sprint_racer:items/item_tick/normal/deploy_enderman
+execute if items entity @s weapon.mainhand *[custom_data~{no19:1b}] run function sprint_racer:items/item_tick/normal/deploy_squid
+execute if items entity @s weapon.mainhand *[custom_data~{no20:1b}] run function sprint_racer:items/item_tick/normal/cast_lightning

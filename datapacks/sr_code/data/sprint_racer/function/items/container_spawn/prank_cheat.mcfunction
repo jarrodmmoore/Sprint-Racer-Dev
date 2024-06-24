@@ -1,0 +1,2 @@
+scoreboard players operation global math2 = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..20}] rNumber
+execute if score global math2 matches 1 run scoreboard players set @e[tag=cSETME] itemBlockState 12

@@ -1,0 +1,2 @@
+scoreboard players set @s inputCooldown 10
+function sprint_racer_language:gameplay/misc_item_text/error_no_gamemode

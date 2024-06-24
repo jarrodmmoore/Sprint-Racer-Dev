@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Sakura City ==\\/==","bold":true,"color":"light_purple"}]

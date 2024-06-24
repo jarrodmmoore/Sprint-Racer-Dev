@@ -1,0 +1,36 @@
+#respawn AT the correct checkpoint or finish line, provided it's in a loaded chunk
+#if the node isn't loaded, just do nothing until it's loaded again
+
+execute if entity @s[scores={check=0,lastTeleport=..0}] if entity @e[tag=node,tag=finishline,scores={nodeState=1..},tag=posCalc] at @e[limit=1,tag=node,tag=finishline,scores={nodeState=1..},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+
+execute if entity @s[scores={check=1,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=1},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=1},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=2,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=2},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=2},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=3,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=3},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=3},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=4,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=4},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=4},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=5,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=5},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=5},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+
+execute if entity @s[scores={check=6,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=6},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=6},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=7,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=7},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=7},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=8,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=8},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=8},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=9,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=9},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=9},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=10,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=10},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=10},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+
+execute if entity @s[scores={check=11,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=11},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=11},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=12,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=12},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=12},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=13,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=13},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=13},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=14,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=14},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=14},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=15,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=15},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=15},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+
+execute if entity @s[scores={check=16,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=16},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=16},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=17,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=17},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=17},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=18,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=18},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=18},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=19,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=19},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=19},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=20,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=20},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=20},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+
+execute if entity @s[scores={check=21,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=21},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=21},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=22,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=22},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=22},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=23,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=23},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=23},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=24,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=24},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=24},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+execute if entity @s[scores={check=25,lastTeleport=..0}] if entity @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=25},tag=posCalc] at @e[tag=node,tag=checkpoint,scores={nodeState=1..,check=25},tag=posCalc] run function sprint_racer:ai/general/respawn/_index_entity
+
+execute if entity @s[scores={lastTeleport=1..}] run function sprint_racer:ai/general/respawn/_index_find_respawn_race_teleporter

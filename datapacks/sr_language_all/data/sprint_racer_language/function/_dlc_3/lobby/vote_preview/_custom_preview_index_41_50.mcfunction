@@ -1,0 +1,10 @@
+execute if entity @s[scores={customPreview=11041}] run function sprint_racer_language:_dlc_3/lobby/vote_preview/_custom_preview/41
+execute if entity @s[scores={customPreview=11042}] run function sprint_racer_language:_dlc_3/lobby/vote_preview/_custom_preview/42
+execute if entity @s[scores={customPreview=11043}] run function sprint_racer_language:_dlc_3/lobby/vote_preview/_custom_preview/43
+execute if entity @s[scores={customPreview=11044}] run function sprint_racer_language:_dlc_3/lobby/vote_preview/_custom_preview/44
+execute if entity @s[scores={customPreview=11045}] run function sprint_racer_language:_dlc_3/lobby/vote_preview/_custom_preview/45
+execute if entity @s[scores={customPreview=11046}] run function sprint_racer_language:_dlc_3/lobby/vote_preview/_custom_preview/46
+execute if entity @s[scores={customPreview=11047}] run function sprint_racer_language:_dlc_3/lobby/vote_preview/_custom_preview/47
+execute if entity @s[scores={customPreview=11048}] run function sprint_racer_language:_dlc_3/lobby/vote_preview/_custom_preview/48
+execute if entity @s[scores={customPreview=11049}] run function sprint_racer_language:_dlc_3/lobby/vote_preview/_custom_preview/49
+execute if entity @s[scores={customPreview=11050}] run function sprint_racer_language:_dlc_3/lobby/vote_preview/_custom_preview/50

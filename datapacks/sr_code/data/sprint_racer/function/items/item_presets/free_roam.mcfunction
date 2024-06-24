@@ -1,0 +1,1 @@
+tag @e[tag=random,scores={rNumber=1..50}] remove banChest

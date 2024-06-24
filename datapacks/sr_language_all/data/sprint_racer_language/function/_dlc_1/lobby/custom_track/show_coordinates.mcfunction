@@ -1,0 +1,2 @@
+title @s subtitle ["",{"text":"[x=","color":"gold","bold":false},{"score":{"name":"@s","objective":"mvmt_coord_x"},"color":"gold","bold":false},{"text":", z=","color":"gold","bold":false},{"score":{"name":"@s","objective":"mvmt_coord_z"},"color":"gold","bold":false},{"text":"]","color":"gold","bold":false}]
+title @s title [""]

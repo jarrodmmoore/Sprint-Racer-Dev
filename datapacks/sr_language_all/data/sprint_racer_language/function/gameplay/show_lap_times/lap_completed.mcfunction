@@ -1,0 +1,1 @@
+tellraw @s ["",{"translate":"sr.game.lap_completed","color":"yellow","bold":true}]

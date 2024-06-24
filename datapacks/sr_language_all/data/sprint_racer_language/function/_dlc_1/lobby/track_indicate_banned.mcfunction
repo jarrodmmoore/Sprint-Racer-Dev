@@ -1,0 +1,1 @@
+execute as @e[tag=trackStatus] run data merge entity @s {CustomName:'{"translate":"sr.lobby.track_banned","color":"gray","bold":true}',CustomNameVisible:1b}

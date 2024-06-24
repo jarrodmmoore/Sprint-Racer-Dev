@@ -1,0 +1,1 @@
+clear @a[scores={hp=1..},tag=playing,tag=tempTarget] filled_map[custom_data~{wmPreview:1b}]

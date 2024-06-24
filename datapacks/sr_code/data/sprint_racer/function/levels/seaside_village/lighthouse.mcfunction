@@ -1,0 +1,2 @@
+execute if block 185 83 587 minecraft:hopper{Items:[{Slot:0b,id:"minecraft:red_wool"}]} run summon item 184 85 587 {tag:{Tags:["stay"]},Motion:[0.0d,-0.5d,0.0d],Item:{id:"minecraft:red_wool",count:1,components:{"minecraft:custom_name":'{"text":"broncofan9798","color":"red","italic":false}'}}}
+execute if block 185 83 587 minecraft:hopper{Items:[{Slot:0b,id:"minecraft:red_wool"}]} run setblock 185 83 587 minecraft:hopper

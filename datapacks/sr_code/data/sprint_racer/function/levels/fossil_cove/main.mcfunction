@@ -1,0 +1,1 @@
+function sprint_racer:levels/fossil_cove/map

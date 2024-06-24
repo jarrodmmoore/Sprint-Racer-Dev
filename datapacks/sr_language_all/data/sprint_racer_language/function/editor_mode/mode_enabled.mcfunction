@@ -1,0 +1,1 @@
+tellraw @s ["",{"translate":"sr.editor.enabled","color":"green"}]

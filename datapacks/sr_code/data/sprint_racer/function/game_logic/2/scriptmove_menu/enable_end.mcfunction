@@ -1,0 +1,8 @@
+tag @s add scriptEnd
+execute if entity @s run playsound minecraft:block.note_block.hat master @s
+scoreboard players set @s dropEndermiteEgg 1
+
+tag @s remove scriptStart
+
+scoreboard players remove @s scriptMove 1
+execute if entity @s[scores={scriptMove=..0}] run scoreboard players set @s scriptMove 4

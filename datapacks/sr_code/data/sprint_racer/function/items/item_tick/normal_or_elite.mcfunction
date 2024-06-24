@@ -1,0 +1,2 @@
+execute if items entity @s weapon.mainhand *[custom_data~{normalitem:1b}] at @s run function sprint_racer:items/item_tick/normal/_index
+execute if items entity @s weapon.mainhand *[custom_data~{eliteitem:1b}] at @s run function sprint_racer:items/item_tick/elite/_index

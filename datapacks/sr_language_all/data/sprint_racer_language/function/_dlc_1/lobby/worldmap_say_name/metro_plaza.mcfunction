@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Metro Plaza ==\\/==","bold":true,"color":"light_purple"}]

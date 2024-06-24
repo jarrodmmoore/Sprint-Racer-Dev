@@ -1,0 +1,4 @@
+clear @s book[custom_data~{tutor:1b}]
+
+item replace entity @s[tag=!noTutorial] hotbar.0 with minecraft:book[enchantments={levels:{"minecraft:lure":1},show_in_tooltip:0b},custom_name='["",{"translate":"sr.tutorial.mode","color":"white","bold":true,"italic":false},{"translate":"sr.basic.on","color":"green","bold":true,"italic":false}]',custom_data={rightclick:1b,tutor:1b,tutorON:1b}] 1
+item replace entity @a[tag=noTutorial] hotbar.0 with minecraft:book[custom_name='["",{"translate":"sr.tutorial.mode","color":"white","bold":true,"italic":false},{"translate":"sr.basic.off","color":"red","bold":true,"italic":false}]',custom_data={rightclick:1b,tutor:1b,tutorOFF:1b}] 1

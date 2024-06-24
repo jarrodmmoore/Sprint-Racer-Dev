@@ -1,0 +1,1 @@
+tellraw @a ["",{"translate":"sr.grand_prix.lap_count_set_to","bold":false,"color":"aqua"},{"score":{"name":"@e[tag=w,limit=1,type=armor_stand]","objective":"lap"},"color":"aqua"},{"text":".","bold":false,"color":"aqua"}]

@@ -1,0 +1,1 @@
+item replace entity @s hotbar.1 with chain_command_block[custom_name='{"bold":true,"color":"green","italic":false,"translate":"sr.lobby.test_current_track"}',custom_data={testtrack:1b}] 1

@@ -1,0 +1,5 @@
+execute if entity @s[scores={aiHoldingItem=36}] run data merge entity @s {HandItems:[{id:"minecraft:smooth_stone_slab",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
+execute if entity @s[scores={aiHoldingItem=37}] run data merge entity @s {HandItems:[{id:"minecraft:anvil",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
+execute if entity @s[scores={aiHoldingItem=38}] run data merge entity @s {HandItems:[{id:"minecraft:black_terracotta",count:1,components:{"minecraft:custom_model_data":1111111,"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
+execute if entity @s[scores={aiHoldingItem=39}] run data merge entity @s {HandItems:[{id:"minecraft:blue_terracotta",count:1,components:{"minecraft:custom_model_data":1111111,"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
+execute if entity @s[scores={aiHoldingItem=40}] run data merge entity @s {HandItems:[{id:"minecraft:blaze_rod",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}

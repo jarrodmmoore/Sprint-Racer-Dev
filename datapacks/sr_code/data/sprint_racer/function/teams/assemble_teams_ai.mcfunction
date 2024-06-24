@@ -1,0 +1,1 @@
+execute as @e[tag=AImaster,type=armor_stand,sort=random] run function sprint_racer:teams/pick_team_ai

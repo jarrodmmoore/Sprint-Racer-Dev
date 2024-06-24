@@ -1,0 +1,1 @@
+execute if score @s value < #lowest value run scoreboard players operation #lowest value = @s value

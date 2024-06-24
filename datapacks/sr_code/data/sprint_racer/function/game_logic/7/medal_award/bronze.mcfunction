@@ -1,0 +1,4 @@
+execute unless entity @e[tag=w,tag=customTesting] if entity @e[tag=w,scores={medalWon=1..}] if entity @e[tag=chosenTrack,scores={medalRace=1..}] run function sprint_racer_language:_dlc_1/gameplay/announce_medals/bronze_duplicate
+execute unless entity @e[tag=w,tag=customTesting] if entity @e[tag=w,scores={medalWon=1..}] unless entity @e[tag=chosenTrack,scores={medalRace=1..}] run function sprint_racer_language:_dlc_1/gameplay/announce_medals/bronze_new
+
+execute if entity @e[tag=w,tag=customTesting] if entity @e[tag=w,scores={medalWon=1..}] run function sprint_racer_language:_dlc_1/gameplay/announce_medals/bronze_duplicate

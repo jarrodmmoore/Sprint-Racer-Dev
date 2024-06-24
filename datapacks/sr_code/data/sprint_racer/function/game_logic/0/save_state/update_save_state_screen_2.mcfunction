@@ -1,0 +1,13 @@
+execute if block ~ ~ ~ lime_wool if block ~ ~ ~1 light_gray_terracotta run data merge entity @e[limit=1,tag=save_frame_1,type=item_frame] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":99115}}}
+execute if block ~ ~ ~ lime_wool if block ~ ~ ~1 orange_concrete run data merge entity @e[limit=1,tag=save_frame_1,type=item_frame] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":99116}}}
+execute if block ~ ~ ~ lime_wool if block ~ ~ ~1 magenta_concrete run data merge entity @e[limit=1,tag=save_frame_1,type=item_frame] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":99117}}}
+execute if block ~ ~ ~ lime_wool if block ~ ~ ~1 light_blue_concrete run data merge entity @e[limit=1,tag=save_frame_1,type=item_frame] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":99118}}}
+execute if block ~ ~ ~ lime_wool if block ~ ~ ~1 yellow_concrete run data merge entity @e[limit=1,tag=save_frame_1,type=item_frame] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":99119}}}
+execute if block ~ ~ ~ lime_wool if block ~ ~ ~1 lime_concrete run data merge entity @e[limit=1,tag=save_frame_1,type=item_frame] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":99120}}}
+execute if block ~ ~ ~ lime_wool if block ~ ~ ~1 pink_concrete run data merge entity @e[limit=1,tag=save_frame_1,type=item_frame] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":99121}}}
+execute if block ~ ~ ~ lime_wool if block ~ ~ ~1 gray_concrete run data merge entity @e[limit=1,tag=save_frame_1,type=item_frame] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":99122}}}
+execute if block ~ ~ ~ lime_wool if block ~ ~ ~1 light_gray_concrete run data merge entity @e[limit=1,tag=save_frame_1,type=item_frame] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":99123}}}
+execute if block ~ ~ ~ lime_wool if block ~ ~ ~1 cyan_concrete run data merge entity @e[limit=1,tag=save_frame_1,type=item_frame] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":99124}}}
+
+#empty
+execute unless block ~ ~ ~ lime_wool run data merge entity @e[limit=1,tag=save_frame_1,type=item_frame] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":99114}}}

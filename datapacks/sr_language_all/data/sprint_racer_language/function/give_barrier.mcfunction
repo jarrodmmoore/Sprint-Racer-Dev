@@ -1,0 +1,1 @@
+item replace entity @s hotbar.8 with minecraft:barrier[lore=['{"text":"Stuck? Use this to snap back to the last checkpoint you hit!"}'],custom_name='{"translate":"sr.reset","bold":false,"italic":false,"color":"red"}',custom_data={reset:1b,rightclick:1b}] 1

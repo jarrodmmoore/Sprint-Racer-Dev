@@ -1,0 +1,15 @@
+execute if score #random1 value matches 1 run data merge entity @s {Rotation:[300.0f,0.0f]}
+execute if score #random1 value matches 2 run data merge entity @s {Rotation:[302.0f,0.0f]}
+execute if score #random1 value matches 3 run data merge entity @s {Rotation:[304.0f,0.0f]}
+execute if score #random1 value matches 4 run data merge entity @s {Rotation:[306.0f,0.0f]}
+execute if score #random1 value matches 5 run data merge entity @s {Rotation:[308.0f,0.0f]}
+execute if score #random1 value matches 6 run data merge entity @s {Rotation:[310.0f,0.0f]}
+execute if score #random1 value matches 7 run data merge entity @s {Rotation:[312.0f,0.0f]}
+execute if score #random1 value matches 8 run data merge entity @s {Rotation:[314.0f,0.0f]}
+execute if score #random1 value matches 9 run data merge entity @s {Rotation:[316.0f,0.0f]}
+execute if score #random1 value matches 10 run data merge entity @s {Rotation:[318.0f,0.0f]}
+execute if score #random1 value matches 11 run data merge entity @s {Rotation:[320.0f,0.0f]}
+execute if score #random1 value matches 12 run data merge entity @s {Rotation:[322.0f,0.0f]}
+execute if score #random1 value matches 13 run data merge entity @s {Rotation:[324.0f,0.0f]}
+execute if score #random1 value matches 14 run data merge entity @s {Rotation:[326.0f,0.0f]}
+execute if score #random1 value matches 15 run data merge entity @s {Rotation:[328.0f,0.0f]}

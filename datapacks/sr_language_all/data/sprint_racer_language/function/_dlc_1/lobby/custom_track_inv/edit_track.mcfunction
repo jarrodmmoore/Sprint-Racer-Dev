@@ -1,0 +1,1 @@
+item replace entity @s hotbar.2 with minecraft:structure_block[custom_name='{"translate":"sr.lobby.warp_and_edit_track","color":"light_purple","bold":true,"italic":false}',custom_data={edittrack:1b}] 1

@@ -1,0 +1,1 @@
+summon area_effect_cloud ~ ~ ~ {Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:'{"translate":"sr.editor.display.pos_calc_point","color":"#AA55FF","bold":false,"italic":true}'}

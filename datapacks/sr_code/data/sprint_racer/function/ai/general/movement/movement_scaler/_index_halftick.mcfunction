@@ -1,0 +1,3 @@
+execute if entity @s[tag=!slowAir,tag=!inWater,tag=!gtgfast,scores={moveState=..2}] run function sprint_racer:ai/general/movement/movement_scaler/normal_halftick/_index
+execute if entity @s[tag=slowAir,tag=!inWater,tag=!gtgfast,scores={moveState=..2}] run function sprint_racer:ai/general/movement/movement_scaler/slow_air_halftick/standard
+execute if entity @s[tag=inWater,tag=!gtgfast,scores={moveState=..2}] run function sprint_racer:ai/general/movement/movement_scaler/in_water_halftick/_index

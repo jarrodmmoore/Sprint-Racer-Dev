@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Retro Synthwave ==\\/==","bold":true,"color":"light_purple"}]

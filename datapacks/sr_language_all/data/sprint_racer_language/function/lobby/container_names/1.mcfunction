@@ -1,0 +1,1 @@
+summon armor_stand ~ ~ ~ {CustomName:'{"translate":"sr.lobby.container_name.random","color":"white","bold":false}',CustomNameVisible:0b,Marker:1b,Invulnerable:1,Invisible:1,Tags:["setme"]}

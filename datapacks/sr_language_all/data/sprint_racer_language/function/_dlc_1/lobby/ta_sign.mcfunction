@@ -1,0 +1,2 @@
+execute unless score @s worldmapID matches 9999 run item replace entity @s hotbar.1 with minecraft:jungle_sign[custom_name='["",{"translate":"sr.lobby.view_times","color":"light_purple","bold":true,"italic":false}]',custom_data={TASign:1b}]
+execute if score @s worldmapID matches 9999 run item replace entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:filled_map",components:{"minecraft:custom_data":{wmPreview:1b}}}]}] hotbar.1 with air

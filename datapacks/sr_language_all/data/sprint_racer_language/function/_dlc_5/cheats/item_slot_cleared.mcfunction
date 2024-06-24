@@ -1,0 +1,2 @@
+tellraw @s ["",{"translate":"sr.cheats.item_slot_cleared","color":"red","bold":true,"with":[{"score":{"name":"#cheatSlotLimit","objective":"value"},"color":"red","bold":true}]}]
+playsound minecraft:block.lava.extinguish master @s ~ 100000 ~ 100000 2

@@ -1,0 +1,4 @@
+tellraw @s ["",{"translate":"sr.lobby.need_admin_tag_to_enter_1","color":"red","bold":true},{"text":"\"","color":"red","bold":false},{"text":"admin","color":"red","bold":true},{"text":"\"","color":"red","bold":false},{"translate":"sr.lobby.need_admin_tag_to_enter_2","color":"red","bold":true}]
+execute at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1.8
+
+tp @s 1588 88 454 93 -29

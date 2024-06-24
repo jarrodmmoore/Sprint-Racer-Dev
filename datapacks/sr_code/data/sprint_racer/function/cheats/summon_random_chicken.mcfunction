@@ -1,0 +1,13 @@
+#8/15 chance of spawning a chicken mine
+#1/15 chance of making a hyper chicken mine
+scoreboard players set @s math 0
+scoreboard players operation @s math = @e[limit=1,type=armor_stand,sort=random,tag=random,scores={rNumber=1..15}] rNumber
+
+execute if entity @s[scores={math=7..14}] run summon chicken ~ ~ ~ {PersistenceRequired:1b,EggLayTime:1999980,Tags:["chickenmine","cmineactive","trap","giveID","getrevenge"],Passengers:[{id:"minecraft:zombified_piglin",PersistenceRequired:1b,Silent:1b,Health:1.0f,IsBaby:1b,CanPickUpLoot:0b,Tags:["cminezombie","trap"],Invulnerable:1,ArmorItems:[{},{},{},{id:"minecraft:tnt",Count:1b}],ArmorDropChances:[0.85f,0.85f,0.85f,0.0f],active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:1999980,show_particles:0b}],attributes:[{id:"generic.max_health",base:1},{id:"generic.follow_range",base:120},{id:"generic.attack_damage",base:0}]}],attributes:[{id:"generic.movement_speed",base:0.5d}]}
+execute if entity @s[scores={math=15..}] run summon chicken ~ ~ ~ {Glowing:1b,PersistenceRequired:1b,Health:12.0f,EggLayTime:199980,Tags:["chickenmine","cmineactive","hyper","trap","giveID","getrevenge"],Passengers:[{id:"minecraft:zombified_piglin",PersistenceRequired:1b,Silent:1b,Invulnerable:1b,CanPickUpLoot:0b,IsBaby:1b,Tags:["cminezombie","trap"],ArmorItems:[{},{},{},{id:"minecraft:tnt",Count:1b,tag:{Enchantments:[{id:"minecraft:mending",lvl:1}]}}],ArmorDropChances:[0.85f,0.85f,0.85f,0.0f],active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:199980,show_particles:0b}],attributes:[{id:"generic.follow_range",base:200},{id:"zombie.spawn_reinforcements",base:0}]}],active_effects:[{id:"minecraft:jump_boost",amplifier:5,duration:199980,show_particles:1b},{id:"minecraft:regeneration",amplifier:1,duration:199980,show_particles:1b},{id:"minecraft:resistance",amplifier:1,duration:199980,show_particles:1b}],attributes:[{id:"generic.max_health",base:12},{id:"generic.knockback_resistance",base:1},{id:"generic.movement_speed",base:0.55d}]}
+scoreboard players set @e[limit=1,sort=nearest,tag=giveID] playerID 0
+tag @e[tag=giveID] remove giveID
+
+execute if entity @s[scores={math=7..}] run playsound minecraft:entity.chicken.hurt master @a ~ ~ ~ 1 .65
+execute if entity @s[scores={math=7..}] run playsound minecraft:entity.illusioner.prepare_mirror master @a ~ ~ ~ 2 1
+execute if entity @s[scores={math=7..}] run particle large_smoke ~ ~ ~ .2 .2 .2 .05 20

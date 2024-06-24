@@ -1,0 +1,1 @@
+execute if entity @s[scores={timeSinceCheck=400..}] run function sprint_racer:game_logic/1/charity_item/give_1

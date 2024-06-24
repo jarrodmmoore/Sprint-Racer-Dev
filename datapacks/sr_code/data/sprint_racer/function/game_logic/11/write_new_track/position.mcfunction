@@ -1,0 +1,54 @@
+execute if entity @s[scores={gpNumber=1}] positioned ~ ~ ~1 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=2}] positioned ~ ~ ~2 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=3}] positioned ~ ~ ~3 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=4}] positioned ~ ~ ~4 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=5}] positioned ~ ~ ~5 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=6}] positioned ~ ~ ~6 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=7}] positioned ~ ~ ~7 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=8}] positioned ~ ~ ~8 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=9}] positioned ~ ~ ~9 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=10}] positioned ~ ~ ~10 run function sprint_racer:game_logic/11/write_new_track/go
+
+execute if entity @s[scores={gpNumber=11}] positioned ~ ~ ~11 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=12}] positioned ~ ~ ~12 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=13}] positioned ~ ~ ~13 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=14}] positioned ~ ~ ~14 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=15}] positioned ~ ~ ~15 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=16}] positioned ~ ~ ~16 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=17}] positioned ~ ~ ~17 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=18}] positioned ~ ~ ~18 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=19}] positioned ~ ~ ~19 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=20}] positioned ~ ~ ~20 run function sprint_racer:game_logic/11/write_new_track/go
+
+execute if entity @s[scores={gpNumber=21}] positioned ~ ~ ~21 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=22}] positioned ~ ~ ~22 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=23}] positioned ~ ~ ~23 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=24}] positioned ~ ~ ~24 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=25}] positioned ~ ~ ~25 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=26}] positioned ~ ~ ~26 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=27}] positioned ~ ~ ~27 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=28}] positioned ~ ~ ~28 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=29}] positioned ~ ~ ~29 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=30}] positioned ~ ~ ~30 run function sprint_racer:game_logic/11/write_new_track/go
+
+execute if entity @s[scores={gpNumber=31}] positioned ~ ~ ~31 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=32}] positioned ~ ~ ~32 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=33}] positioned ~ ~ ~33 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=34}] positioned ~ ~ ~34 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=35}] positioned ~ ~ ~35 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=36}] positioned ~ ~ ~36 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=37}] positioned ~ ~ ~37 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=38}] positioned ~ ~ ~38 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=39}] positioned ~ ~ ~39 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=40}] positioned ~ ~ ~40 run function sprint_racer:game_logic/11/write_new_track/go
+
+execute if entity @s[scores={gpNumber=41}] positioned ~ ~ ~41 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=42}] positioned ~ ~ ~42 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=43}] positioned ~ ~ ~43 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=44}] positioned ~ ~ ~44 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=45}] positioned ~ ~ ~45 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=46}] positioned ~ ~ ~46 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=47}] positioned ~ ~ ~47 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=48}] positioned ~ ~ ~48 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=49}] positioned ~ ~ ~49 run function sprint_racer:game_logic/11/write_new_track/go
+execute if entity @s[scores={gpNumber=50}] positioned ~ ~ ~50 run function sprint_racer:game_logic/11/write_new_track/go

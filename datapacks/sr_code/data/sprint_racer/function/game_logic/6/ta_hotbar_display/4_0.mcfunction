@@ -1,0 +1,1 @@
+clear @s light_blue_concrete[custom_data~{medal4_1:1b}]

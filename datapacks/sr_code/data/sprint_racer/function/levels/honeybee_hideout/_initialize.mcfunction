@@ -1,0 +1,16 @@
+tp @a[tag=!dontWarp,tag=!dontSetGamemode] -1000 115 -725
+tp @a[tag=!dontWarp,tag=dontSetGamemode] -995 137 -722
+
+scoreboard players set @e[tag=w,type=armor_stand] startType 3
+
+gamerule doDaylightCycle false
+time set 9000
+
+#night vision is we're playing in free roam mode
+tag @a[tag=dontSetGamemode] add fr_nightvision
+
+######
+#MUSIC
+tag @e[tag=random,type=armor_stand,scores={rNumber=9}] add musicViable
+tag @e[tag=random,type=armor_stand,scores={rNumber=14}] add musicViable
+######

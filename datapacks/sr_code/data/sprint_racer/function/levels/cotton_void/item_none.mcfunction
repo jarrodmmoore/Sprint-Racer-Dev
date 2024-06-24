@@ -1,0 +1,1 @@
+execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{item:1b}}}]}] run clear @s

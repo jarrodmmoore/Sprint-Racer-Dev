@@ -1,0 +1,5 @@
+execute if entity @s[scores={aiHoldingItem=26}] run data merge entity @s {HandItems:[{id:"minecraft:white_stained_glass",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
+execute if entity @s[scores={aiHoldingItem=27}] run data merge entity @s {HandItems:[{id:"minecraft:iron_ingot",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
+execute if entity @s[scores={aiHoldingItem=28}] run data merge entity @s {HandItems:[{id:"minecraft:totem_of_undying",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
+execute if entity @s[scores={aiHoldingItem=29}] run data merge entity @s {HandItems:[{id:"minecraft:emerald",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
+execute if entity @s[scores={aiHoldingItem=30}] run data merge entity @s {HandItems:[{id:"minecraft:diamond",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}

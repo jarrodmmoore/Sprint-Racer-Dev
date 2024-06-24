@@ -1,0 +1,1 @@
+execute if entity @s[scores={aiHoldingItem=41}] run data merge entity @s {HandItems:[{id:"minecraft:iron_sword",count:1,components:{"minecraft:damage":250,"minecraft:enchantments":{levels:{"minecraft:sharpness":2}}}},{}]}

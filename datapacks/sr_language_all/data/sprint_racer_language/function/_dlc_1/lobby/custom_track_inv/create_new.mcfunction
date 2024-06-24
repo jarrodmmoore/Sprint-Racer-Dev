@@ -1,0 +1,1 @@
+item replace entity @s hotbar.0 with minecraft:crafting_table[custom_name='{"translate":"sr.lobby.create_new_track","color":"gold","bold":true,"italic":false}',custom_data={createnew:1b}] 1

@@ -1,0 +1,2 @@
+tellraw @s ["",{"translate":"sr.tutorial.tutorial","color":"aqua","bold":true},{"text":" "},{"text":"Effects can be combined! Use a well-timed jump to clear gaps like this one.","color":"white","bold":false}]
+scoreboard players set @s tutorProgress 5

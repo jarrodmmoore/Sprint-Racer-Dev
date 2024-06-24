@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Coastal Avenue ==\\/==","bold":true,"color":"light_purple"}]

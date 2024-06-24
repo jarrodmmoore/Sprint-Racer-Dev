@@ -1,0 +1,2 @@
+execute as @e[tag=node,type=marker,tag=itemchest] unless entity @s[scores={itemchestSeedA=1..}] at @s run function sprint_racer:items/ta_seed_random_assign_race_go
+execute as @e[tag=node,type=marker,tag=itemchest] unless entity @s[scores={itemchestSeedB=1..}] at @s run function sprint_racer:items/ta_seed_random_assign_battle_go

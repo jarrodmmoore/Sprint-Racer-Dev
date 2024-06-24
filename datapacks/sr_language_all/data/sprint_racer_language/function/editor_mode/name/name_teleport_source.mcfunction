@@ -1,0 +1,26 @@
+data merge entity @s {CustomName:'{"text":"Teleport Source (ERROR, INVALID NUMBER)","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=1}] run data merge entity @s {CustomName:'{"text":"Teleport Source 1","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=2}] run data merge entity @s {CustomName:'{"text":"Teleport Source 2","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=3}] run data merge entity @s {CustomName:'{"text":"Teleport Source 3","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=4}] run data merge entity @s {CustomName:'{"text":"Teleport Source 4","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=5}] run data merge entity @s {CustomName:'{"text":"Teleport Source 5","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=6}] run data merge entity @s {CustomName:'{"text":"Teleport Source 6","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=7}] run data merge entity @s {CustomName:'{"text":"Teleport Source 7","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=8}] run data merge entity @s {CustomName:'{"text":"Teleport Source 8","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=9}] run data merge entity @s {CustomName:'{"text":"Teleport Source 9","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=10}] run data merge entity @s {CustomName:'{"text":"Teleport Source 10","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=11}] run data merge entity @s {CustomName:'{"text":"Teleport Source 11","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=12}] run data merge entity @s {CustomName:'{"text":"Teleport Source 12","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=13}] run data merge entity @s {CustomName:'{"text":"Teleport Source 13","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=14}] run data merge entity @s {CustomName:'{"text":"Teleport Source 14","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=15}] run data merge entity @s {CustomName:'{"text":"Teleport Source 15","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=16}] run data merge entity @s {CustomName:'{"text":"Teleport Source 16","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=17}] run data merge entity @s {CustomName:'{"text":"Teleport Source 17","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=18}] run data merge entity @s {CustomName:'{"text":"Teleport Source 18","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=19}] run data merge entity @s {CustomName:'{"text":"Teleport Source 19","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=20}] run data merge entity @s {CustomName:'{"text":"Teleport Source 20","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=21}] run data merge entity @s {CustomName:'{"text":"Teleport Source 21","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=22}] run data merge entity @s {CustomName:'{"text":"Teleport Source 22","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=23}] run data merge entity @s {CustomName:'{"text":"Teleport Source 23","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=24}] run data merge entity @s {CustomName:'{"text":"Teleport Source 24","color":"light_purple","bold":true,"italic":false}'}
+execute if entity @s[scores={teleport=25}] run data merge entity @s {CustomName:'{"text":"Teleport Source 25","color":"light_purple","bold":true,"italic":false}'}

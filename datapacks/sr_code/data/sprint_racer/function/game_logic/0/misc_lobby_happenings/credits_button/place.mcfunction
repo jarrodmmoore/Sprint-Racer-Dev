@@ -1,0 +1,2 @@
+setblock 1652 89 418 command_block[facing=up]{Command:"function sprint_racer:game_logic/0/misc_lobby_happenings/credits_button/try",powered:0b}
+setblock 1652 90 418 minecraft:lever[powered=false,face=floor]

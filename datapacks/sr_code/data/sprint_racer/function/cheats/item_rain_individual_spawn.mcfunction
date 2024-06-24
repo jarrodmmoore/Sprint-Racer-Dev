@@ -1,0 +1,2 @@
+execute if block ~ ~9 ~ air positioned ~ ~9 ~ run function sprint_racer:cheats/item_rain_spawn_for_real
+execute unless block ~ ~9 ~ air positioned ~ ~1 ~ run function sprint_racer:cheats/item_rain_spawn_for_real

@@ -1,0 +1,1 @@
+item replace entity @a[scores={hp=1..},tag=playing,gamemode=!creative,tag=!hasMap3] hotbar.5 with minecraft:filled_map[map_id=9998,custom_name='{"translate":"sr.grand_prix.select_random_gamemode","color":"white","bold":true,"italic":false}',custom_data={map_random3:1b,itemhastitle:1b}] 1

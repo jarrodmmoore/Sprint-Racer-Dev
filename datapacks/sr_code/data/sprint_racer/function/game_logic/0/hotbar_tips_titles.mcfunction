@@ -1,0 +1,6 @@
+execute if items entity @s weapon.mainhand *[custom_data~{readyup:1b,red:1b}] run function sprint_racer_language:lobby/actionbar_control_tips/ready
+execute if items entity @s weapon.mainhand *[custom_data~{readyup:1b,green:1b}] run function sprint_racer_language:lobby/actionbar_control_tips/not_ready
+execute if items entity @s weapon.mainhand filled_map[custom_data~{mapv:1b}] unless items entity @s weapon.mainhand filled_map[custom_data~{custommap:1b}] run function sprint_racer_language:lobby/actionbar_control_tips/vote
+execute if items entity @s weapon.mainhand filled_map[custom_data~{mapv:1b,custommap:1b}] run function sprint_racer_language:_dlc_1/lobby/actionbar_control_tips/custom_track_name
+execute if items entity @s weapon.mainhand filled_map[custom_data~{wmPreview:1b}] unless items entity @s weapon.mainhand filled_map[custom_data~{wmcustommap:1b}] run function sprint_racer_language:lobby/actionbar_control_tips/choose
+execute if items entity @s weapon.mainhand filled_map[custom_data~{wmcustommap:1b}] run function sprint_racer_language:_dlc_1/lobby/actionbar_control_tips/worldmap_custom_track_name

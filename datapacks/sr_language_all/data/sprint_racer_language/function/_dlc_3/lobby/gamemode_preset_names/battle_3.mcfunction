@@ -1,0 +1,1 @@
+summon armor_stand ~ ~ ~ {CustomName:'{"translate":"sr.gamemode_info.resource_control_1","color":"white","bold":false}',CustomNameVisible:0b,Marker:1b,Invulnerable:1,Invisible:1,Tags:["setme"]}

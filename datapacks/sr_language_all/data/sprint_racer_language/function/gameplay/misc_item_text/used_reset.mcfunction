@@ -1,0 +1,1 @@
+tellraw @s[tag=!minChat] ["",{"translate":"sr.game.used_reset","color":"aqua"}]

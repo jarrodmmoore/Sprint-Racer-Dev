@@ -1,0 +1,12 @@
+execute if entity @s[scores={finishPos=1}] run function sprint_racer_language:gameplay/race_finish_text_ai_spectator/1
+execute if entity @s[scores={finishPos=2}] run function sprint_racer_language:gameplay/race_finish_text_ai_spectator/2
+execute if entity @s[scores={finishPos=3}] run function sprint_racer_language:gameplay/race_finish_text_ai_spectator/3
+execute if entity @s[scores={finishPos=4..20}] run function sprint_racer_language:gameplay/race_finish_text_ai_spectator/4_20
+execute if entity @s[scores={finishPos=21}] run function sprint_racer_language:gameplay/race_finish_text_ai_spectator/21
+execute if entity @s[scores={finishPos=22}] run function sprint_racer_language:gameplay/race_finish_text_ai_spectator/22
+execute if entity @s[scores={finishPos=23}] run function sprint_racer_language:gameplay/race_finish_text_ai_spectator/23
+execute if entity @s[scores={finishPos=24..30}] run function sprint_racer_language:gameplay/race_finish_text_ai_spectator/24_30
+execute if entity @s[scores={finishPos=31}] run function sprint_racer_language:gameplay/race_finish_text_ai_spectator/31
+execute if entity @s[scores={finishPos=32}] run function sprint_racer_language:gameplay/race_finish_text_ai_spectator/32
+execute if entity @s[scores={finishPos=33}] run function sprint_racer_language:gameplay/race_finish_text_ai_spectator/33
+execute if entity @s[scores={finishPos=34..}] run function sprint_racer_language:gameplay/race_finish_text_ai_spectator/34_plus

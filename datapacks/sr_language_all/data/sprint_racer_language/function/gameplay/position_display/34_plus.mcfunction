@@ -1,0 +1,2 @@
+title @s[tag=!darkHUD] subtitle ["",{"score":{"name":"@s","objective":"racePosDisplay"},"color":"white","bold":true}]
+title @s[tag=darkHUD] subtitle ["",{"score":{"name":"@s","objective":"racePosDisplay"},"color":"gray","bold":true}]

@@ -1,0 +1,1 @@
+execute if entity @s[scores={aiHoldingItem=41}] run function sprint_racer:ai/general/item_logic/dagger/think

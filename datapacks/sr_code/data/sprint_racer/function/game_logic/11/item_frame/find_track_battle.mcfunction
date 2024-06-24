@@ -1,0 +1,54 @@
+execute if entity @s[scores={gpNumber=1}] as @e[type=armor_stand,limit=1,tag=gpNo1] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=2}] as @e[type=armor_stand,limit=1,tag=gpNo2] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=3}] as @e[type=armor_stand,limit=1,tag=gpNo3] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=4}] as @e[type=armor_stand,limit=1,tag=gpNo4] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=5}] as @e[type=armor_stand,limit=1,tag=gpNo5] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=6}] as @e[type=armor_stand,limit=1,tag=gpNo6] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=7}] as @e[type=armor_stand,limit=1,tag=gpNo7] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=8}] as @e[type=armor_stand,limit=1,tag=gpNo8] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=9}] as @e[type=armor_stand,limit=1,tag=gpNo9] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=10}] as @e[type=armor_stand,limit=1,tag=gpNo10] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+
+execute if entity @s[scores={gpNumber=11}] as @e[type=armor_stand,limit=1,tag=gpNo11] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=12}] as @e[type=armor_stand,limit=1,tag=gpNo12] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=13}] as @e[type=armor_stand,limit=1,tag=gpNo13] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=14}] as @e[type=armor_stand,limit=1,tag=gpNo14] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=15}] as @e[type=armor_stand,limit=1,tag=gpNo15] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=16}] as @e[type=armor_stand,limit=1,tag=gpNo16] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=17}] as @e[type=armor_stand,limit=1,tag=gpNo17] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=18}] as @e[type=armor_stand,limit=1,tag=gpNo18] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=19}] as @e[type=armor_stand,limit=1,tag=gpNo19] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=20}] as @e[type=armor_stand,limit=1,tag=gpNo20] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+
+execute if entity @s[scores={gpNumber=21}] as @e[type=armor_stand,limit=1,tag=gpNo21] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=22}] as @e[type=armor_stand,limit=1,tag=gpNo22] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=23}] as @e[type=armor_stand,limit=1,tag=gpNo23] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=24}] as @e[type=armor_stand,limit=1,tag=gpNo24] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=25}] as @e[type=armor_stand,limit=1,tag=gpNo25] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=26}] as @e[type=armor_stand,limit=1,tag=gpNo26] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=27}] as @e[type=armor_stand,limit=1,tag=gpNo27] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=28}] as @e[type=armor_stand,limit=1,tag=gpNo28] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=29}] as @e[type=armor_stand,limit=1,tag=gpNo29] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=30}] as @e[type=armor_stand,limit=1,tag=gpNo30] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+
+execute if entity @s[scores={gpNumber=31}] as @e[type=armor_stand,limit=1,tag=gpNo31] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=32}] as @e[type=armor_stand,limit=1,tag=gpNo32] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=33}] as @e[type=armor_stand,limit=1,tag=gpNo33] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=34}] as @e[type=armor_stand,limit=1,tag=gpNo34] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=35}] as @e[type=armor_stand,limit=1,tag=gpNo35] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=36}] as @e[type=armor_stand,limit=1,tag=gpNo36] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=37}] as @e[type=armor_stand,limit=1,tag=gpNo37] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=38}] as @e[type=armor_stand,limit=1,tag=gpNo38] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=39}] as @e[type=armor_stand,limit=1,tag=gpNo39] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=40}] as @e[type=armor_stand,limit=1,tag=gpNo40] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+
+execute if entity @s[scores={gpNumber=41}] as @e[type=armor_stand,limit=1,tag=gpNo41] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=42}] as @e[type=armor_stand,limit=1,tag=gpNo42] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=43}] as @e[type=armor_stand,limit=1,tag=gpNo43] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=44}] as @e[type=armor_stand,limit=1,tag=gpNo44] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=45}] as @e[type=armor_stand,limit=1,tag=gpNo45] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=46}] as @e[type=armor_stand,limit=1,tag=gpNo46] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=47}] as @e[type=armor_stand,limit=1,tag=gpNo47] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=48}] as @e[type=armor_stand,limit=1,tag=gpNo48] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=49}] as @e[type=armor_stand,limit=1,tag=gpNo49] run function sprint_racer:game_logic/11/item_frame/return_track_battle
+execute if entity @s[scores={gpNumber=50}] as @e[type=armor_stand,limit=1,tag=gpNo50] run function sprint_racer:game_logic/11/item_frame/return_track_battle

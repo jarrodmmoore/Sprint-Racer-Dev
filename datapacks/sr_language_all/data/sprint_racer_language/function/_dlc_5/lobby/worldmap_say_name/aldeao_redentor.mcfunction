@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Aldeão Redentor ==\\/==","bold":true,"color":"light_purple"}]

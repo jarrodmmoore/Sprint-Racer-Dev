@@ -1,0 +1,1 @@
+function sprint_racer_language:_dlc_3/lobby/sidebar/grand_prix

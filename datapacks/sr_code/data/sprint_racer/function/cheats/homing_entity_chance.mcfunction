@@ -1,0 +1,2 @@
+scoreboard players operation @e[tag=w,type=armor_stand] math2 = @e[limit=1,sort=random,tag=random,scores={rNumber=1..3}] rNumber
+execute if entity @e[tag=w,scores={math2=3}] run tag @s[tag=!player,type=!marker] add homer

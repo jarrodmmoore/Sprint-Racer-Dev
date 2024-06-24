@@ -1,0 +1,2 @@
+tellraw @s ["",{"translate":"sr.tutorial.tutorial","color":"aqua","bold":true},{"text":" "},{"text":"That's your first lap completed! Your slowness effect has been removed.","color":"white","bold":false}]
+scoreboard players set @s tutorProgress 9

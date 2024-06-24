@@ -1,0 +1,2 @@
+scoreboard players add #temp visualLength 1
+execute unless entity @a[tag=self_f,distance=..1] if score #temp visualLength matches ..50 positioned ^ ^ ^1 run function sprint_racer:game_logic/2/checkpoint_menu_edit/visual_line/find_length_recursion

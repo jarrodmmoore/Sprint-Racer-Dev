@@ -1,0 +1,10 @@
+execute if score global saveState matches 1 positioned 1627 71 460 run function sprint_racer:game_logic/0/misc_lobby_happenings/save_state_room/scrolling_text
+execute if score global saveState matches 2 positioned 1627 72 460 run function sprint_racer:game_logic/0/misc_lobby_happenings/save_state_room/scrolling_text
+execute if score global saveState matches 3 positioned 1627 73 460 run function sprint_racer:game_logic/0/misc_lobby_happenings/save_state_room/scrolling_text
+execute if score global saveState matches 4 positioned 1627 74 460 run function sprint_racer:game_logic/0/misc_lobby_happenings/save_state_room/scrolling_text
+execute if score global saveState matches 5 positioned 1627 75 460 run function sprint_racer:game_logic/0/misc_lobby_happenings/save_state_room/scrolling_text
+execute if score global saveState matches 6 positioned 1627 76 460 run function sprint_racer:game_logic/0/misc_lobby_happenings/save_state_room/scrolling_text
+execute if score global saveState matches 7 positioned 1627 77 460 run function sprint_racer:game_logic/0/misc_lobby_happenings/save_state_room/scrolling_text
+execute if score global saveState matches 8 positioned 1627 78 460 run function sprint_racer:game_logic/0/misc_lobby_happenings/save_state_room/scrolling_text
+execute if score global saveState matches 9 positioned 1627 79 460 run function sprint_racer:game_logic/0/misc_lobby_happenings/save_state_room/scrolling_text
+execute if score global saveState matches 10 positioned 1627 80 460 run function sprint_racer:game_logic/0/misc_lobby_happenings/save_state_room/scrolling_text

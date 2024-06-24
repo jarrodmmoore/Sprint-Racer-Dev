@@ -1,0 +1,1 @@
+scoreboard players set @e[tag=activeplayer] itemLuck 6

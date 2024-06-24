@@ -1,0 +1,9 @@
+execute if entity @s[scores={speedlevel=1}] run bossbar set minecraft:speedo name {"text":"18.7 kph"}
+execute if entity @s[scores={speedlevel=2}] run bossbar set minecraft:speedo name {"text":"21.8 kph"}
+execute if entity @s[scores={speedlevel=3}] run bossbar set minecraft:speedo name {"text":"24.9 kph"}
+execute if entity @s[scores={speedlevel=4}] run bossbar set minecraft:speedo name {"text":"28.0 kph"}
+execute if entity @s[scores={speedlevel=5}] run bossbar set minecraft:speedo name {"text":"31.1 kph"}
+execute if entity @s[scores={speedlevel=6}] run bossbar set minecraft:speedo name {"text":"34.2 kph"}
+execute if entity @s[scores={speedlevel=7}] run bossbar set minecraft:speedo name {"text":"37.3 kph"}
+execute if entity @s[scores={speedBoost=1..20}] run bossbar set minecraft:speedo name {"text":"77.7 kph"}
+execute if entity @s[scores={speedBoost=31..50}] run bossbar set minecraft:speedo name {"text":"108.7 kph"}

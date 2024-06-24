@@ -1,0 +1,9 @@
+execute if entity @s[tag=ai1] as @e[tag=elytraG1] at @s run tp @s ~ ~ ~ ~ -175
+execute if entity @s[tag=ai2] as @e[tag=elytraG2] at @s run tp @s ~ ~ ~ ~ -175
+execute if entity @s[tag=ai3] as @e[tag=elytraG3] at @s run tp @s ~ ~ ~ ~ -175
+execute if entity @s[tag=ai4] as @e[tag=elytraG4] at @s run tp @s ~ ~ ~ ~ -175
+execute if entity @s[tag=ai5] as @e[tag=elytraG5] at @s run tp @s ~ ~ ~ ~ -175
+execute if entity @s[tag=ai6] as @e[tag=elytraG6] at @s run tp @s ~ ~ ~ ~ -175
+execute if entity @s[tag=ai7] as @e[tag=elytraG7] at @s run tp @s ~ ~ ~ ~ -175
+execute if entity @s[tag=ai8] as @e[tag=elytraG8] at @s run tp @s ~ ~ ~ ~ -175
+execute if entity @s[tag=ai9] as @e[tag=elytraG9] at @s run tp @s ~ ~ ~ ~ -175

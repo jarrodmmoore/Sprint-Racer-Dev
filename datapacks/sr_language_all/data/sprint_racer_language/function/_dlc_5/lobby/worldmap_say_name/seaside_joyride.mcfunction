@@ -1,0 +1,1 @@
+tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Seaside Joyride ==\\/==","bold":true,"color":"light_purple"}]

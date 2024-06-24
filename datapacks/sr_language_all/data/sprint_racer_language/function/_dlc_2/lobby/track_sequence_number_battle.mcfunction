@@ -1,0 +1,2 @@
+tellraw @a[tag=!minChat] ["",{"text":" "}]
+tellraw @a[tag=!minChat] ["",{"translate":"sr.lobby.battle_arena","bold":true},{"text":" "},{"text":"#","color":"red"},{"score":{"name":"@e[tag=w,limit=1]","objective":"trackSequenceB"},"bold":true,"color":"red"}]

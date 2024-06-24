@@ -1,0 +1,1 @@
+tellraw @a ["",{"translate":"sr.lobby.laps","color":"white","bold":true},{"score":{"name":"@e[tag=w,limit=1]","objective":"lap"},"color":"white","bold":true}]
