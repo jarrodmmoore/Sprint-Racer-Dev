@@ -8,8 +8,6 @@ time set 6000
 
 weather rain
 
-scoreboard players set @e[tag=w,type=armor_stand,tag=realms,tag=RAIautocount] optRAIcount 3
-
 ######
 #MUSIC
 tag @e[tag=random,type=armor_stand,scores={rNumber=4}] add musicViable

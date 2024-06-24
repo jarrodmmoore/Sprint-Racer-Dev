@@ -275,6 +275,9 @@ execute if block 1611 ~ 450 red_wool run tag @e[limit=1,tag=trackStandR,tag=rand
 execute if block 1610 ~ 450 red_wool run tag @e[limit=1,tag=trackStandR,tag=random,type=armor_stand,scores={rNumber=59}] add rtBlacklist
 execute if block 1609 ~ 450 red_wool run tag @e[limit=1,tag=trackStandR,tag=random,type=armor_stand,scores={rNumber=60}] add rtBlacklist
 
+#COPPA mode: Casino Chase always banned no matter what
+execute if entity @e[tag=w,type=armor_stand,tag=COPPA] run tag @e[tag=random,scores={rNumber=46}] add rtBlacklist
+
 #################################
 #BANNED BATTLE TRACKS
 execute as @e[tag=trackStandB,type=armor_stand,tag=random] run tag @s remove btBlacklist

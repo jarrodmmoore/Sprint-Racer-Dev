@@ -1,6 +1,10 @@
 #world spawn
 setworldspawn 1634 90 406
 
+#don't let the map freak out
+scoreboard players set #wExists value 100
+scoreboard players set #wHasScore value 100
+
 #fix duplicate w problem that may happen with bad worldspawn or fussy plugins
 scoreboard players set global math 0
 execute as @e[tag=w,type=armor_stand] run scoreboard players add global math 1

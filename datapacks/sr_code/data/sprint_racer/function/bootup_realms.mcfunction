@@ -14,7 +14,4 @@ tag @e[tag=w,type=armor_stand] add noMusicReset
 #tag @e[tag=w,type=armor_stand] add nospeedo
 #bossbar set minecraft:speedo players
 
-#in compliance with COPPA, "Casino Chase" track is banned on Minecraft Realms!
-tag @e[tag=random,scores={rNumber=46}] add rtBlacklist
-
 function sprint_racer:game_logic/0/props/remove_options_signs

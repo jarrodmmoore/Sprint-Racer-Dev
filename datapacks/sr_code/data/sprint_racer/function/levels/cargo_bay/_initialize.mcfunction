@@ -8,8 +8,6 @@ execute if entity @e[type=armor_stand,tag=51a,tag=cheats] run scoreboard players
 
 time set 23500
 
-scoreboard players set @e[tag=w,type=armor_stand,tag=realms,tag=RAIautocount] optRAIcount 3
-
 ######
 #MUSIC
 tag @e[tag=random,type=armor_stand,scores={rNumber=5}] add musicViable

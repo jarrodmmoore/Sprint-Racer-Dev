@@ -183,7 +183,8 @@ scoreboard objectives add trans_x dummy
 scoreboard objectives add trans_y dummy
 scoreboard objectives add trans_z dummy
 scoreboard objectives add bounceCount dummy
-
+#v1.5.10
+scoreboard objectives add COPPA dummy
 
 
 #some gamerules?
@@ -209,7 +210,10 @@ execute unless block 1550 83 406 redstone_block run tag @e[tag=w,type=armor_stan
 
 tag @e[tag=w,type=armor_stand] remove taNoItems
 
-execute if entity @e[tag=w,tag=realms] run function sprint_racer:bootup_realms
-execute unless entity @e[tag=w,tag=realms] run function sprint_racer_language:_dlc_4/lobby/options/restore_options_signs
+execute if entity @e[tag=w,type=armor_stand,tag=realms] run function sprint_racer:bootup_realms
+execute unless entity @e[tag=w,type=armor_stand,tag=realms] run function sprint_racer_language:_dlc_4/lobby/options/restore_options_signs
+
+#in compliance with COPPA, "Casino Chase" track is banned on Minecraft Realms!
+execute if entity @e[tag=w,type=armor_stand,tag=COPPA] run tag @e[tag=random,scores={rNumber=46}] add rtBlacklist
 
 worldborder set 20000000 0

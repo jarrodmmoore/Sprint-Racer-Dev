@@ -239,3 +239,6 @@ execute if score #halftick value matches 1 run scoreboard players remove @e[scor
 #kill all unwanted item drops
 execute as @e[type=item] run function sprint_racer:validate_dropped_item
 kill @e[type=experience_orb,tag=!stay]
+
+#need to make sure "w" exists.
+execute if score #autoFix value matches 1 run function sprint_racer:verify_w_exists

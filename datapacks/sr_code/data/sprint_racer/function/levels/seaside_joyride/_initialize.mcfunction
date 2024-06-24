@@ -5,8 +5,6 @@ scoreboard players set #listenForEndgame value 1
 scoreboard players set @e[tag=w,type=armor_stand] lap 3
 scoreboard players set @e[tag=w,type=armor_stand] check 5
 
-scoreboard players set @e[tag=w,type=armor_stand,tag=realms,tag=RAIautocount] optRAIcount 3
-
 #longer time limit for this track (5 min)
 scoreboard players set @e[tag=w,type=armor_stand] timeRemaining 6209
 

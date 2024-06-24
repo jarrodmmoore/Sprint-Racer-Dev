@@ -3,8 +3,8 @@ execute if score #egg_help value matches 12.. run scoreboard players set #egg_he
 
 tellraw @s ["",{"text":"\n\nCheat Eggs:","bold":true}]
 
-execute if score #egg_help value matches 1 if entity @e[tag=w,type=armor_stand,tag=!realms] run tellraw @s ["",{"translate":"sr.cheats.help.lobby"},{"text":" -- 6"}]
-execute if score #egg_help value matches 1 if entity @e[tag=w,type=armor_stand,tag=realms] run tellraw @s ["",{"translate":"sr.cheats.help.lobby"},{"text":" -- 7"}]
+execute if score #egg_help value matches 1 if entity @e[tag=w,type=armor_stand,tag=!COPPA] run tellraw @s ["",{"translate":"sr.cheats.help.lobby"},{"text":" -- 6"}]
+execute if score #egg_help value matches 1 if entity @e[tag=w,type=armor_stand,tag=COPPA] run tellraw @s ["",{"translate":"sr.cheats.help.lobby"},{"text":" -- 7"}]
 execute if score #egg_help value matches 1 run tellraw @s ["",{"text":"River Valley","color":"aqua"},{"text":" -- 2"}]
 execute if score #egg_help value matches 1 run tellraw @s ["",{"text":"Highlight Stadium","color":"aqua"},{"text":" -- 1"}]
 execute if score #egg_help value matches 1 run tellraw @s ["",{"text":"Sakura City","color":"aqua"},{"text":" -- 1"}]

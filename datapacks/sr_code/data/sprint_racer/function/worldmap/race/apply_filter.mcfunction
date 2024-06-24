@@ -1,7 +1,7 @@
 tag @e[tag=random,type=armor_stand,tag=rSortSelect] remove rSortSelect
 
 ###hidden tracks don't show up. EVER. unless they're unlocked ;)
-execute if entity @e[tag=w,type=armor_stand,tag=realms] run tag @e[type=armor_stand,tag=random,scores={rNumber=46}] add rSortSelect
+execute if entity @e[tag=w,type=armor_stand,tag=COPPA] run tag @e[type=armor_stand,tag=random,scores={rNumber=46}] add rSortSelect
 execute unless entity @e[type=armor_stand,tag=cheats,tag=38] run tag @e[type=armor_stand,tag=random,scores={rNumber=50}] add rSortSelect
 execute unless entity @e[type=armor_stand,tag=cheats,tag=56] run tag @e[type=armor_stand,tag=random,scores={rNumber=37}] add rSortSelect
 

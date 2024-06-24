@@ -4,8 +4,6 @@ scoreboard players set @e[tag=w,type=armor_stand] lap 3
 scoreboard players set @e[tag=w,type=armor_stand] check 4
 time set 6000
 
-scoreboard players set @e[tag=w,type=armor_stand,tag=realms,tag=RAIautocount] optRAIcount 3
-
 #switch is off by default
 tag @e[tag=w,type=armor_stand] remove switchON
 

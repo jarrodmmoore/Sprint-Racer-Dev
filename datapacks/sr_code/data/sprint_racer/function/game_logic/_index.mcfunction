@@ -3,6 +3,10 @@ scoreboard players operation global gameState = @s gameState
 execute if entity @s[scores={gameState=0..4}] run function sprint_racer:game_logic/_index_0_4
 execute if entity @s[scores={gameState=5..}] run function sprint_racer:game_logic/_index_5_plus
 
+#w exists!
+scoreboard players set #wExists value 100
+execute if score @s gameState matches 0..12 run scoreboard players set #wHasScore value 100
+
 #LEGEND OF THE GAMESTATES
 # + their sub states
 ###game_logic/0 -> lobby
