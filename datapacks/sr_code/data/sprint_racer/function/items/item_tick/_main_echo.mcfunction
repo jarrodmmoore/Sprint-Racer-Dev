@@ -42,8 +42,8 @@ scoreboard players remove @e[scores={lightningSafe=1..}] lightningSafe 1
 
 
 #slime and magma traps
-execute if entity @e[tag=slimetrap] run function sprint_racer:items/item_tick/slime_trap
-execute if entity @e[tag=magmatrap] run function sprint_racer:items/item_tick/magma_trap
+execute as @e[tag=slimetrap,type=armor_stand] at @s run function sprint_racer:items/item_tick/slime_trap
+execute as @e[tag=magmatrap,type=armor_stand] at @s run function sprint_racer:items/item_tick/magma_trap
 
 #generic "electrocution" effect
 execute if entity @e[type=!marker,type=!armor_stand,limit=1,scores={electrocute=..999}] as @e[type=!marker,type=!armor_stand,scores={electrocute=..999}] at @s run function sprint_racer:items/item_tick/electrocute
