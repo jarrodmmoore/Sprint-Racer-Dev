@@ -22,13 +22,16 @@ function sprint_racer:_check_lang_folder_version
 #FROM CONFIG FILES
 
 function sprint_racer_config:realms_mode
-execute if entity @e[tag=w,scores={realmsMode=1..}] run setblock 1550 83 406 redstone_block
-execute unless entity @e[tag=w,scores={realmsMode=1..}] run setblock 1550 83 406 air
-execute if entity @e[tag=w,scores={realmsMode=1..}] run scoreboard players set @e[tag=w,type=armor_stand] adminMode 0
+execute if entity @e[tag=w,type=armor_stand,scores={realmsMode=1..}] run setblock 1550 83 406 redstone_block
+execute unless entity @e[tag=w,type=armor_stand,scores={realmsMode=1..}] run setblock 1550 83 406 air
+execute if entity @e[tag=w,type=armor_stand,scores={realmsMode=1..}] run scoreboard players set @e[tag=w,type=armor_stand] adminMode 0
 
-execute unless entity @e[tag=w,scores={realmsMode=1..}] run function sprint_racer_config:admin_mode
-tag @e[tag=w,scores={realmsMode=..0,adminMode=1..}] add requireAdmin
-execute if entity @e[tag=w,scores={adminMode=1..}] run function sprint_racer_config:admin_player_list
+execute unless entity @e[tag=w,type=armor_stand,scores={realmsMode=1..}] run function sprint_racer_config:admin_mode
+tag @e[tag=w,type=armor_stand,scores={realmsMode=..0,adminMode=1..}] add requireAdmin
+execute if entity @e[tag=w,type=armor_stand,scores={adminMode=1..}] run function sprint_racer_config:admin_player_list
+
+execute if entity @e[tag=w,type=armor_stand,scores={COPPA=1}] run tag @e[tag=w,type=armor_stand] add COPPA
+execute unless entity @e[tag=w,type=armor_stand,scores={COPPA=1}] run tag @e[tag=w,type=armor_stand] remove COPPA
 
 #this one is now a setting in the lobby
 #function sprint_racer_config:difficulty_ramp
