@@ -1,6 +1,6 @@
 scoreboard players set @s targetData 1
 
-summon minecraft:magma_cube ~ ~ ~ {Tags:["setme","taTargetEnt","targetStay","taTargetCore"],NoGravity:1b,Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Health:1000.0f,Size:0,attributes:[{id:"generic.max_health",base:1000},{id:"generic.knockback_resistance",base:1},{id:"generic.attack_damage",base:0},{id:"generic.attack_knockback",base:0}]}
+summon minecraft:magma_cube ~ ~ ~ {Tags:["setme","taTargetEnt","targetStay","taTargetCore"],NoGravity:1b,Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Health:1000.0f,Size:0,attributes:[{id:"max_health",base:1000},{id:"knockback_resistance",base:1},{id:"attack_damage",base:0},{id:"attack_knockback",base:0}]}
 
 #custom model for targets, only visible with resource pack
 summon snowball ~ ~.5 ~ {Tags:["targetVisual","setlife"],NoGravity:1,Invulnerable:1,Glowing:1b,Item:{id:"snowball",count:1,components:{"minecraft:custom_model_data":1234567}}}

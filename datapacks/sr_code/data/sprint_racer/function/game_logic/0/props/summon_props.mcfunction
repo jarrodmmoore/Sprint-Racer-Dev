@@ -196,7 +196,7 @@ summon villager 1608 97 348 {Tags:["stationary_v","lobbyprop","facenorth"],Villa
 summon villager 1593 97 465 {Tags:["stationary_v","lobbyprop","facesouth"],VillagerData:{profession:"shepherd",level:99,type:"taiga"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
 summon villager 1592 97 465 {Tags:["stationary_v","lobbyprop","facesouth"],VillagerData:{profession:"toolsmith",level:99,type:"savanna"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
 #diamond guy
-summon villager 1584 97 351 {Tags:["stationary_v","lobbyprop"],Rotation:[15.0f,-25.0f],HandItems:[{id:"minecraft:diamond",count:1,components:{"minecraft:enchantment_glint_override":1b,"minecraft:attribute_modifiers":{modifiers:[{id:"theforbiddendiamond",operation:"add_multiplied_total",type:"generic.movement_speed",amount:2,slot:"mainhand"}]}}},{}],HandDropChances:[0.0f,0.085f],VillagerData:{profession:"minecraft:librarian",type:"minecraft:taiga"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1,Offers:{}}
+summon villager 1584 97 351 {Tags:["stationary_v","lobbyprop"],Rotation:[15.0f,-25.0f],HandItems:[{id:"minecraft:diamond",count:1,components:{"minecraft:enchantment_glint_override":1b,"minecraft:attribute_modifiers":{modifiers:[{id:"theforbiddendiamond",operation:"add_multiplied_total",type:"movement_speed",amount:2,slot:"mainhand"}]}}},{}],HandDropChances:[0.0f,0.085f],VillagerData:{profession:"minecraft:librarian",type:"minecraft:taiga"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1,Offers:{}}
 
 #assign a text message to each villager
 scoreboard players set global villagerTip 1

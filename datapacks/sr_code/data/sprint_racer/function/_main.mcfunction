@@ -42,8 +42,8 @@
 
 #SPRINT_RACER_LANGUAGE AND TRANSLATION:
 #For the longest time I was unaware that the lang files in a resource pack could be used for translation with the help of the "translate" json component.
-#So to make things "easier" for people translating Sprint Racer, I isolated all functions that involve text shown to the player into a seperate datapack.
-#I've since changed all this isolated text to use the "translate" component so it can be translated via resource pack. The seperate datapack is still there, but its segregation from everything else is pointless now.
+#So to make things "easier" for people translating Sprint Racer, I isolated all functions that involve text shown to the player into a separate datapack.
+#I've since changed all this isolated text to use the "translate" component so it can be translated via resource pack. The separate datapack is still there, but its segregation from everything else is pointless now.
 
 ######################################################
 

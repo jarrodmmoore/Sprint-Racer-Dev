@@ -23,9 +23,9 @@ execute if entity @s[tag=inWater,tag=swimup] run function sprint_racer:ai/genera
 #possibly avoid traps, unless the trap is the target
 execute unless entity @e[tag=myCHILDtarget,tag=trap] facing entity @e[limit=1,sort=nearest,tag=myCHILDtarget] feet positioned ^ ^ ^5 if entity @e[tag=trap,distance=..3] run function sprint_racer:ai/general/movement/possibly_dodge_trap
 
-execute as @e[tag=lookinghere,limit=1,sort=nearest,type=marker] store result score @e[tag=self,sort=nearest,limit=1] mvmt_coord_dx run data get entity @s Pos[0] 100000
-execute as @e[tag=lookinghere,limit=1,sort=nearest,type=marker] store result score @e[tag=self,sort=nearest,limit=1] mvmt_coord_dy run data get entity @s Pos[1] 100000
-execute as @e[tag=lookinghere,limit=1,sort=nearest,type=marker] store result score @e[tag=self,sort=nearest,limit=1] mvmt_coord_dz run data get entity @s Pos[2] 100000
+execute as @e[tag=lookinghere,limit=1,sort=nearest,type=marker,distance=..1] store result score @e[tag=self,sort=nearest,limit=1,distance=..1] mvmt_coord_dx run data get entity @s Pos[0] 100000
+execute as @e[tag=lookinghere,limit=1,sort=nearest,type=marker,distance=..1] store result score @e[tag=self,sort=nearest,limit=1,distance=..1] mvmt_coord_dy run data get entity @s Pos[1] 100000
+execute as @e[tag=lookinghere,limit=1,sort=nearest,type=marker,distance=..1] store result score @e[tag=self,sort=nearest,limit=1,distance=..1] mvmt_coord_dz run data get entity @s Pos[2] 100000
 
 scoreboard players operation @s mvmt_coord_dx -= @s mvmt_coord_x
 scoreboard players operation @s mvmt_coord_dy -= @s mvmt_coord_y

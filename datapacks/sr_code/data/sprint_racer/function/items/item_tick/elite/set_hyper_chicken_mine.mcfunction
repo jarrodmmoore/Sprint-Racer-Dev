@@ -1,8 +1,8 @@
 clear @s chicken_spawn_egg[custom_data~{elite15:1b}] 1
 clear @s bricks[custom_data~{elite15:1b}] 1
 
-execute unless entity @s[scores={moveState=3}] run summon chicken ~ ~ ~ {Tags:["chickenmine","cmineset","hyper","trap","giveID"],attributes:[{id:"generic.movement_speed",base:0}]}
-execute if entity @s[scores={moveState=3}] run summon chicken ~ ~1 ~ {Tags:["chickenmine","cmineset","hyper","trap","giveID"],attributes:[{id:"generic.movement_speed",base:0}]}
+execute unless entity @s[scores={moveState=3}] run summon chicken ~ ~ ~ {Tags:["chickenmine","cmineset","hyper","trap","giveID"],attributes:[{id:"movement_speed",base:0}]}
+execute if entity @s[scores={moveState=3}] run summon chicken ~ ~1 ~ {Tags:["chickenmine","cmineset","hyper","trap","giveID"],attributes:[{id:"movement_speed",base:0}]}
 scoreboard players operation @e[tag=giveID] playerID = @s playerID
 execute if entity @s[tag=playerCyan] run tag @e[tag=giveID,limit=1,sort=nearest] add itemCyan
 

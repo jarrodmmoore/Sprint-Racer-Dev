@@ -23,7 +23,7 @@ scoreboard players set #hitsound value -1000
 execute if score @s hitsound matches -999.. run scoreboard players operation #hitsound value = @s hitsound
 
 #swim fastly always
-attribute @s minecraft:generic.water_movement_efficiency base set 1
+attribute @s minecraft:water_movement_efficiency base set 1
 
 #RESET ALL SCORES
 scoreboard players reset @s

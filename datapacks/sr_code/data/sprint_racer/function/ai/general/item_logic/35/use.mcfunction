@@ -1,5 +1,5 @@
 #deploy a hyper chicken mine
-summon chicken ~ ~ ~ {Tags:["chickenmine","cmineset","hyper","trap","giveID"],attributes:[{id:"generic.movement_speed",base:0}]}
+summon chicken ~ ~ ~ {Tags:["chickenmine","cmineset","hyper","trap","giveID"],attributes:[{id:"movement_speed",base:0}]}
 scoreboard players operation @e[tag=giveID] playerID = @s playerID
 execute if entity @s[tag=playerCyan] run tag @e[tag=giveID,limit=1] add itemCyan
 tag @e[tag=giveID] remove giveID
