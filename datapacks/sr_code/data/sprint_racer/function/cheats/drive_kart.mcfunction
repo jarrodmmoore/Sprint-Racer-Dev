@@ -41,8 +41,8 @@ tag @s remove self
 kill @e[tag=lookinghere]
 #========================================
 
-tp @e[tag=mykart,limit=1,sort=nearest] @s
-execute as @e[tag=mykart,limit=1,sort=nearest] at @s rotated ~90 0 run tp @s ~ ~ ~ ~ ~
+#tp @e[tag=mykart,limit=1,sort=nearest] @s
+execute as @e[tag=mykart,limit=1,sort=nearest] rotated ~90 0 run rotate @s ~ ~
 
 execute positioned ~ ~0.7 ~ rotated ~ 0 run particle large_smoke ^ ^ ^-1.5 .05 .05 .05 0 1
 execute if entity @s[scores={hitstun=1..}] if entity @e[tag=mykartpig,nbt={OnGround:1b}] run playsound minecraft:entity.shulker.close master @a ~ ~ ~ .7 .8

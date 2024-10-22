@@ -21,7 +21,8 @@ execute if entity @s[tag=fireball] at @s unless block ~ ~1 ~ water run function 
 
 #run physics
 execute at @s run function sprint_racer:items/item_tick/missile_physics
-execute if entity @s[tag=missile] at @s unless block ~ ~ ~ water unless block ~ ~ ~ light[waterlogged=true] run function sprint_racer:items/item_tick/missile_physics
+execute if entity @s[tag=missile] at @s run function sprint_racer:items/item_tick/missile_physics
+execute if entity @s[tag=missile,tag=fireball] at @s unless block ~ ~ ~ water unless block ~ ~ ~ light[waterlogged=true] run function sprint_racer:items/item_tick/missile_physics
 
 #check for collision with stuff
 #don't explode on our owner if we haven't bounced yet

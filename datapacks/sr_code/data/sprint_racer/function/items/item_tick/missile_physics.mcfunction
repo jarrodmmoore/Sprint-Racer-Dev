@@ -5,7 +5,7 @@ scoreboard players set #hit value 0
 #keep passenger alive
 execute on passengers run scoreboard players set @s lifespan 3
 #sync rotation with self
-execute on passengers run tp @s ~ ~ ~ ~ ~
+execute on passengers run rotate @s ~ ~
 
 #get coordinates with high accuracy
 execute store result score @s coord_x run data get entity @s Pos[0] 100
