@@ -79,7 +79,7 @@ execute as @a[scores={elytraTimer=1..}] at @s run function sprint_racer:items/it
 execute as @a[scores={inputCooldown=..0,carrotInput=..999}] if items entity @s weapon.mainhand *[custom_data~{item:1b}] at @s run function sprint_racer:items/item_tick/normal_or_elite
 
 #kill invalid chickens
-kill @e[type=chicken,tag=!chickenmine,tag=!chickenstay]
+kill @e[type=chicken,tag=!chickenmine,tag=!chickenstay,tag=!killme]
 
 #chicken mine
 execute as @e[tag=chickenmine,type=chicken] at @s run function sprint_racer:items/item_tick/chicken_mine_teams
