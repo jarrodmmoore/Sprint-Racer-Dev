@@ -11,12 +11,12 @@ execute if entity @e[tag=w,type=armor_stand,tag=!NOPARTICLE,scores={tvPoolMode=2
 execute if entity @e[tag=w,type=armor_stand,tag=!NOPARTICLE,scores={tvPoolMode=2}] run particle dust{color:[1.0,0.3,0.3],scale:2} 1594 82 372 0 .8 .8 1 15
 
 #race tracks
-execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=1}] if entity @e[tag=customtrack,tag=customrace] run function sprint_racer:game_logic/10/update_display/race_custom
-execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=1}] unless entity @e[tag=customtrack,tag=customrace] run function sprint_racer:game_logic/10/update_display/empty
+execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=1}] if entity @e[type=armor_stand,tag=customtrack,tag=customrace] run function sprint_racer:game_logic/10/update_display/race_custom
+execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=1}] unless entity @e[type=armor_stand,tag=customtrack,tag=customrace] run function sprint_racer:game_logic/10/update_display/empty
 
 #battle tracks
-execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=2}] if entity @e[tag=customtrack,tag=custombattle] run function sprint_racer:game_logic/10/update_display/battle_custom
-execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=2}] unless entity @e[tag=customtrack,tag=custombattle] run function sprint_racer:game_logic/10/update_display/empty
+execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=2}] if entity @e[type=armor_stand,tag=customtrack,tag=custombattle] run function sprint_racer:game_logic/10/update_display/battle_custom
+execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=2}] unless entity @e[type=armor_stand,tag=customtrack,tag=custombattle] run function sprint_racer:game_logic/10/update_display/empty
 
 #custom preview will override the generic one
 execute as @e[limit=1,type=armor_stand,tag=focusT,tag=customtrack,tag=customPreview] run function sprint_racer:game_logic/10/update_display/custom_preview/__track_manager

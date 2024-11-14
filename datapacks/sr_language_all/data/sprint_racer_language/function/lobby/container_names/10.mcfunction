@@ -1,1 +1,1 @@
-summon armor_stand ~ ~ ~ {CustomName:'{"translate":"sr.lobby.container_name.ender_chests_only","color":"white","bold":false}',CustomNameVisible:0b,Marker:1b,Invulnerable:1,Invisible:1,Tags:["setme"]}
+summon armor_stand ~ ~ ~ {CustomName:'{"translate":"sr.lobby.container_name.ender_chests_only","color":"white","bold":false}',CustomNameVisible:0b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setme"]}

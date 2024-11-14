@@ -5,8 +5,8 @@ execute if entity @s[tag=AImaster] as @e[tag=ai] if score @s playerID = #getPlay
 scoreboard players add @s playerLives 1
 
 #1UP text
-execute if entity @s[type=player,gamemode=adventure] unless block ~ -64 ~ wither_rose run summon armor_stand ~ ~2.2 ~ {CustomName:'{"translate":"sr.game.1up","color":"white","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1,Invisible:1,Tags:["setscore","floatup"]}
-execute if entity @s[tag=AImaster] as @e[tag=show1UP] at @s unless block ~ -64 ~ wither_rose run summon armor_stand ~ ~2.2 ~ {CustomName:'{"translate":"sr.game.1up","color":"white","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1,Invisible:1,Tags:["setscore","floatup"]}
+execute if entity @s[type=player,gamemode=adventure] unless block ~ -64 ~ wither_rose run summon armor_stand ~ ~2.2 ~ {CustomName:'{"translate":"sr.game.1up","color":"white","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
+execute if entity @s[tag=AImaster] as @e[tag=show1UP] at @s unless block ~ -64 ~ wither_rose run summon armor_stand ~ ~2.2 ~ {CustomName:'{"translate":"sr.game.1up","color":"white","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
 scoreboard players set @e[tag=setscore] lifespan 16
 tag @e[tag=setscore] remove setscore
 tellraw @s[type=player,tag=!minChat] ["",{"translate":"sr.game.reached_ko_goal","color":"green"},{"text":" "},{"text":" "},{"text":"+1","color":"red","bold":true},{"text":"\uE013","color":"red"}]

@@ -15,6 +15,7 @@ scoreboard players set @e[tag=w,type=armor_stand] specJoinTime 0
 
 tag @e[type=armor_stand,tag=chosenTrack] remove chosenTrack
 
+#need to reload custom tracks at earliest convenience
 tag @e[tag=w,type=armor_stand] add wmCustomReload
 clear @a
 
@@ -64,8 +65,11 @@ gamemode adventure @a
 
 scoreboard players set @e[tag=w,type=armor_stand] gameState 10
 
+#new in v1.6: all custom tracks should have an associated custom tagline
+#so for any old worlds that got datapack-updated, generate that data right now
+execute as @e[type=armor_stand,tag=customtrack] unless score @s customTagLine matches -2147483648..2147483647 run function sprint_racer:game_logic/10/assign_custom_tagline_storage
 
-
+#kill lobby props
 kill @e[tag=lobbyprop]
 kill @e[tag=roundDisplay,type=armor_stand]
 kill @e[tag=cDisplay,type=armor_stand]
@@ -81,5 +85,5 @@ summon minecraft:item_frame 1594 81 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tag
 #update display
 function sprint_racer:game_logic/10/update_display/_index
 
-summon armor_stand 1593 79 370 {Invisible:1,NoGravity:1,Invulnerable:1,Marker:1b,Tags:["lobbyprop","trackStatus"]}
+summon armor_stand 1593 79 370 {Invisible:1b,NoGravity:1b,Invulnerable:1b,Marker:1b,Tags:["lobbyprop","trackStatus"]}
 execute as @e[tag=trackStatus] at @s run tp @s ~ ~ ~.5

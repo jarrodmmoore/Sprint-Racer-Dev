@@ -1,4 +1,4 @@
-execute if entity @s[tag=customtrack,scores={customCodePath=1..}] run function sprint_racer:levels/_index_levels_custom_path
+execute if entity @s[tag=customtrack] run function sprint_racer:levels/_custom_battle/main
 
 execute if entity @s[scores={rNumber=50}] run function sprint_racer:levels/underworld/main
 execute if entity @s[scores={rNumber=1}] run function sprint_racer:levels/windy_watch/main

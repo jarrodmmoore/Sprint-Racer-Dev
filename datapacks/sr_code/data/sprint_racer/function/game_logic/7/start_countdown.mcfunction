@@ -18,7 +18,7 @@ execute if entity @s[scores={gameTime=40}] run kill @e[type=item,nbt={Item:{comp
 execute if entity @s[scores={gameTime=160}] run kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{item:1b}}}}]
 
 #keep players from flying about while the track loads
-execute if entity @s[scores={gameTime=-40}] at @s as @a[limit=1,sort=furthest] at @s run summon armor_stand ~ ~ ~ {NoGravity:1,Invisible:1,Invulnerable:1,Marker:1b,Tags:["RHoldPlayers"]}
+execute if entity @s[scores={gameTime=-40}] at @s as @a[limit=1,sort=furthest] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["RHoldPlayers"]}
 execute if entity @s[scores={gameTime=-40}] run gamemode adventure @a
 execute if entity @s[scores={gameTime=-40}] as @a at @s run spawnpoint @s ~ ~ ~
 execute if entity @s[scores={gameTime=-40..49}] run function sprint_racer:hold_players_in_place
@@ -41,9 +41,11 @@ execute if entity @s[scores={gameTime=50}] as @a[tag=playing] at @s run function
 execute if entity @s[scores={gameTime=140..160}] run scoreboard players set @e[tag=activeplayer] resetCooldown 80
 execute if entity @s[scores={gameTime=160}] as @a[gamemode=adventure] at @s run spawnpoint @s ~ ~1 ~
 execute if entity @s[scores={gameTime=180}] run scoreboard objectives setdisplay sidebar medalsTR
+#hide sidebar if there's nothing to show on it
+execute if entity @s[scores={gameTime=180}] unless score @s bronzeTR matches 1.. unless score @s silverTR matches 1.. unless score @s goldTR matches 1.. unless score @s diamondTR matches 1.. unless score @s bestTR matches 1.. run scoreboard objectives setdisplay sidebar
 
 #show special starting countdown based on the value of "startType"
-execute if entity @s[scores={startType=..0,gameTime=90..}] run function sprint_racer_language:gameplay/start_countdown/0
+execute if entity @s[scores={startType=0,gameTime=90..}] run function sprint_racer_language:gameplay/start_countdown/0
 execute if entity @s[scores={startType=1,gameTime=90..}] run function sprint_racer_language:gameplay/start_countdown/1
 execute if entity @s[scores={startType=2,gameTime=90..}] run function sprint_racer_language:gameplay/start_countdown/2
 execute if entity @s[scores={startType=3,gameTime=90..}] run function sprint_racer_language:gameplay/start_countdown/3

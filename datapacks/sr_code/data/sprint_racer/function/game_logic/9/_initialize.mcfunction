@@ -63,5 +63,5 @@ function sprint_racer:game_logic/9/update_display/_index
 fill 1595 79 369 1595 82 372 light_blue_concrete
 
 
-summon armor_stand 1593 79 370 {Invisible:1,NoGravity:1,Invulnerable:1,Marker:1b,Tags:["lobbyprop","trackStatus"]}
+summon armor_stand 1593 79 370 {Invisible:1b,NoGravity:1b,Invulnerable:1b,Marker:1b,Tags:["lobbyprop","trackStatus"]}
 execute as @e[tag=trackStatus] at @s run tp @s ~ ~ ~.5

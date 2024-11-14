@@ -14,8 +14,10 @@
 
 
 #tp happens once in a while
-scoreboard players add #chestSpin value 1
+#scoreboard players add #chestSpin value 1
 
 #new spin method
-execute if score #chestSpin value matches 3.. as @e[tag=itemcontainer,type=armor_stand] at @s run tp @s ~ ~ ~ ~18 ~
-execute if score #chestSpin value matches 3.. run scoreboard players remove #chestSpin value 3
+#execute if score #chestSpin value matches 3.. as @e[tag=itemcontainer,type=armor_stand] at @s run tp @s ~ ~ ~ ~18 ~
+#execute if score #chestSpin value matches 3.. run scoreboard players remove #chestSpin value 3
+
+execute as @e[tag=itemcontainer,type=armor_stand] at @s run rotate @s ~6 ~

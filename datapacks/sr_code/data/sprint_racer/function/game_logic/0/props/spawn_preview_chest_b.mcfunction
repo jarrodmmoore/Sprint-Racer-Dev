@@ -63,7 +63,7 @@ execute as @e[tag=tpNudge] at @s run tp @s ~.5 ~ ~
 execute as @e[tag=tpNudge2] at @s run tp @s ~ ~ ~.5
 execute as @e[tag=tpMeUp] at @s run tp @s ~ ~1 ~
 
-#execute as @e[tag=cdB,tag=enchtable] at @s run summon item ~ ~1.9 ~ {Tags:["lobbyprop","cdB"],PickupDelay:32767,Age:-32768,NoGravity:1,Invulnerable:1,Item:{id:"minecraft:book",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
+#execute as @e[tag=cdB,tag=enchtable] at @s run summon item ~ ~1.9 ~ {Tags:["lobbyprop","cdB"],PickupDelay:32767,Age:-32768,NoGravity:1b,Invulnerable:1b,Item:{id:"minecraft:book",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
 
 tag @e[tag=tpMeUp] remove tpMeUp
 tag @e[tag=tpNudge] remove tpNudge

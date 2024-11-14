@@ -1,8 +1,8 @@
-execute if entity @s[type=player] run summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1,Invulnerable:1,DisabledSlots:2039583,NoGravity:1,Tags:["explosion","boom"]}
-#execute if entity @s[type=player] run summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1,Invulnerable:1,DisabledSlots:2039583,NoGravity:1,Tags:["explosion","killcloud","setme"]}
+execute if entity @s[type=player] run summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Invulnerable:1b,DisabledSlots:2039583,NoGravity:1b,Tags:["explosion","boom"]}
+#execute if entity @s[type=player] run summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Invulnerable:1b,DisabledSlots:2039583,NoGravity:1b,Tags:["explosion","killcloud","setme"]}
 
-execute if entity @s[type=!player] run summon armor_stand ~ ~.2 ~ {Marker:1b,Invisible:1,Invulnerable:1,DisabledSlots:2039583,NoGravity:1,Tags:["explosion","boom"]}
-#execute if entity @s[type=!player] run summon armor_stand ~ ~.2 ~ {Marker:1b,Invisible:1,Invulnerable:1,DisabledSlots:2039583,NoGravity:1,Tags:["explosion","killcloud","setme"]}
+execute if entity @s[type=!player] run summon armor_stand ~ ~.2 ~ {Marker:1b,Invisible:1b,Invulnerable:1b,DisabledSlots:2039583,NoGravity:1b,Tags:["explosion","boom"]}
+#execute if entity @s[type=!player] run summon armor_stand ~ ~.2 ~ {Marker:1b,Invisible:1b,Invulnerable:1b,DisabledSlots:2039583,NoGravity:1b,Tags:["explosion","killcloud","setme"]}
 
 execute at @s run tag @e[distance=..3,tag=slimetrap] add dissolve
 execute at @s run tag @e[distance=..3,tag=magmatrap] add dissolve

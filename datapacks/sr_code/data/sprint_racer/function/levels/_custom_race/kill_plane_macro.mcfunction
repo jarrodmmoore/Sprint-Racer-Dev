@@ -1,0 +1,1 @@
+$function sprint_racer:levels/_custom_race/kill_plane_macro_2 with storage sprint_racer:custom_track_storage_$(custom_uid)

@@ -1,4 +1,4 @@
-execute unless block ~ -64 ~ wither_rose run summon armor_stand ~ ~2.2 ~ {CustomName:'{"translate":"sr.idle","color":"white","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1,Invisible:1,Tags:["setlife"]}
+execute unless block ~ -64 ~ wither_rose run summon armor_stand ~ ~2.2 ~ {CustomName:'{"translate":"sr.idle","color":"white","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setlife"]}
 scoreboard players set @e[tag=setlife] lifespan 2
 tag @e[tag=setlife] remove setlife
 

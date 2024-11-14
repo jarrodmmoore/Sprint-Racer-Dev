@@ -4,7 +4,11 @@ execute as @a at @s if entity @s[x=1581,y=76,z=365,dx=12,dy=12,dz=12] run tp @s 
 #force creative mode
 gamemode creative @a[gamemode=adventure]
 
+#bossbar
 bossbar set freeroam players @a
+
+#night vision?
+execute as @e[type=armor_stand,tag=focusT,limit=1] if entity @s[tag=nightVision] run effect give @a night_vision 14 1 true
 
 #give proper tags to players and spectators
 tag @a[tag=!forcespectate,tag=!afk] add playing
@@ -41,8 +45,8 @@ execute as @e[tag=node,tag=speedboost,tag=superSpeed,type=marker] at @s run scor
 
 #exit item
 tag @a[tag=hasBarrier] remove hasBarrier
-tag @a[nbt={Inventory:[{Slot:8b,id:"minecraft:barrier",components:{"minecraft:custom_data":{exit:1b}}}]}] add hasBarrier
-clear @a[tag=!hasBarrier,scores={playerState=..1}] barrier
+tag @a[nbt={Inventory:[{Slot:8b,id:"minecraft:structure_void",components:{"minecraft:custom_data":{exit:1b}}}]}] add hasBarrier
+clear @a[tag=!hasBarrier,scores={playerState=..1}] structure_void
 execute as @a[tag=!hasBarrier,scores={playerState=..1}] run function sprint_racer_language:_dlc_2/lobby/custom_track/back_to_menu_item
 
 #back to menu

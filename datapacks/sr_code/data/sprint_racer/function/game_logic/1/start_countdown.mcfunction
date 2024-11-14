@@ -17,7 +17,7 @@ execute if entity @s[scores={gameTime=40}] run kill @e[tag=trap]
 execute if entity @s[scores={gameTime=40}] run kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{item:1b}}}}]
 
 #keep players from flying about while the track loads
-execute if entity @s[scores={gameTime=-40}] at @s as @a[limit=1,sort=furthest] at @s run summon armor_stand ~ ~ ~ {NoGravity:1,Invisible:1,Invulnerable:1,Marker:1b,Tags:["RHoldPlayers"]}
+execute if entity @s[scores={gameTime=-40}] at @s as @a[limit=1,sort=furthest] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["RHoldPlayers"]}
 execute if entity @s[scores={gameTime=-40}] run gamemode adventure @a
 execute if entity @s[scores={gameTime=-40}] as @a at @s run spawnpoint @s ~ ~ ~
 execute if entity @s[scores={gameTime=-40..49}] run function sprint_racer:hold_players_in_place
@@ -51,7 +51,7 @@ execute if entity @s[scores={gameTime=160}] as @a[gamemode=adventure] at @s run 
 execute if entity @s[scores={gameTime=180}] run scoreboard objectives setdisplay sidebar racePosDisplay2
 
 #show special starting countdown based on the value of "startType"
-execute if entity @s[scores={startType=..0,gameTime=90..}] run function sprint_racer_language:gameplay/start_countdown/0
+execute if entity @s[scores={startType=0,gameTime=90..}] run function sprint_racer_language:gameplay/start_countdown/0
 execute if entity @s[scores={startType=1,gameTime=90..}] run function sprint_racer_language:gameplay/start_countdown/1
 execute if entity @s[scores={startType=2,gameTime=90..}] run function sprint_racer_language:gameplay/start_countdown/2
 execute if entity @s[scores={startType=3,gameTime=90..}] run function sprint_racer_language:gameplay/start_countdown/3

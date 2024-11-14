@@ -1,5 +1,10 @@
 execute if entity @s[scores={BGMtrack=-1}] run tag @e[tag=random,type=armor_stand,scores={rNumber=3..14}] add musicViable
 
+#specific track? clear any queued music
+execute if score @s BGMtrack matches 1.. run tag @e[tag=random,type=armor_stand,tag=setBGM] remove setBGM
+
+#play specific song
+
 #stock
 execute if entity @s[scores={BGMtrack=1}] run tag @e[tag=random,type=armor_stand,scores={rNumber=1}] add setBGM
 execute if entity @s[scores={BGMtrack=2}] run tag @e[tag=random,type=armor_stand,scores={rNumber=2}] add setBGM

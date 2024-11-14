@@ -40,6 +40,7 @@ function sprint_racer_config:secret_lobby
 ##################################
 
 #add some objectives if they aren't here
+scoreboard objectives add value dummy
 scoreboard objectives add loadAttempts dummy
 scoreboard objectives add resetAttempts dummy
 scoreboard objectives add itemSplitTime dummy
@@ -188,6 +189,12 @@ scoreboard objectives add trans_z dummy
 scoreboard objectives add bounceCount dummy
 #v1.5.10
 scoreboard objectives add COPPA dummy
+#v1.6.0
+scoreboard objectives add customTagLine dummy
+scoreboard objectives add optRAIdiff dummy
+scoreboard objectives add optBAIdiff dummy
+scoreboard players add @e[tag=w,type=armor_stand] optRAIdiff 0
+scoreboard players add @e[tag=w,type=armor_stand] optBAIdiff 0
 
 
 #some gamerules?
@@ -213,8 +220,12 @@ execute unless block 1550 83 406 redstone_block run tag @e[tag=w,type=armor_stan
 
 tag @e[tag=w,type=armor_stand] remove taNoItems
 
+#realms and options signs
 execute if entity @e[tag=w,type=armor_stand,tag=realms] run function sprint_racer:bootup_realms
 execute unless entity @e[tag=w,type=armor_stand,tag=realms] run function sprint_racer_language:_dlc_4/lobby/options/restore_options_signs
+
+#make sure dlc 6 options signs exist
+function sprint_racer_language:_dlc_6/lobby/options/restore_options_signs
 
 #in compliance with COPPA, "Casino Chase" track is banned on Minecraft Realms!
 execute if entity @e[tag=w,type=armor_stand,tag=COPPA] run tag @e[tag=random,scores={rNumber=46}] add rtBlacklist

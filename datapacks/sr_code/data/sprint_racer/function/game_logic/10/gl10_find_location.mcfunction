@@ -53,8 +53,8 @@ execute as @a[scores={carrotInput=1..,inputCooldown=..0}] if items entity @s wea
 #exit item
 tag @e[tag=hasExit] remove hasExit
 tag @a[tag=hasBarrier] remove hasBarrier
-tag @a[nbt={Inventory:[{Slot:8b,id:"minecraft:barrier",components:{"minecraft:custom_data":{exit:1b}}}]}] add hasBarrier
-clear @a[tag=!hasBarrier] barrier
+tag @a[nbt={Inventory:[{Slot:8b,id:"minecraft:structure_void",components:{"minecraft:custom_data":{exit:1b}}}]}] add hasBarrier
+clear @a[tag=!hasBarrier] structure_void
 function sprint_racer_language:_dlc_1/lobby/custom_track/back_to_menu_item
 
 

@@ -18,10 +18,10 @@ execute if entity @s[tag=ai] run function sprint_racer:ko_logic/ai_sync_kos_with
 execute if entity @s[tag=ai,tag=sa_villager] run function sprint_racer_language:_dlc_3/gameplay/villager_ai/chat_get_ko
 execute if entity @s[tag=ai] run function sprint_racer_language:gameplay/got_ko
 execute if entity @s[type=player,gamemode=!spectator] run function sprint_racer_language:gameplay/got_ko
-execute if entity @s[scores={hp=..16}] run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+4","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1,Invisible:1,Tags:["setscore","floatup"]}
-execute if entity @s[scores={hp=17}] run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+3","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1,Invisible:1,Tags:["setscore","floatup"]}
-execute if entity @s[scores={hp=18}] run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+2","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1,Invisible:1,Tags:["setscore","floatup"]}
-execute if entity @s[scores={hp=19}] run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+1","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1,Invisible:1,Tags:["setscore","floatup"]}
+execute if entity @s[scores={hp=..16}] run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+4","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
+execute if entity @s[scores={hp=17}] run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+3","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
+execute if entity @s[scores={hp=18}] run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+2","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
+execute if entity @s[scores={hp=19}] run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+1","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
 
 #deduct KO for team kills
 scoreboard players set #team_ko value 0

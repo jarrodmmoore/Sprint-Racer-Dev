@@ -1,4 +1,4 @@
-summon armor_stand ~ ~ ~ {Tags:["slimetrap","trap","giveID"],Motion:[0.0d,0.0d,0.0d],Silent:1b,Invisible:1,Small:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:slime_block",count:1}]}
+summon armor_stand ~ ~ ~ {Tags:["slimetrap","trap","giveID"],Motion:[0.0d,0.0d,0.0d],Silent:1b,Invisible:1b,Small:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:slime_block",count:1}]}
 scoreboard players operation @e[tag=giveID,limit=1] playerID = @s playerID
 
 execute if entity @s[tag=itemCyan] run tag @e[tag=giveID,limit=1] add itemCyan

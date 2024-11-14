@@ -216,7 +216,7 @@ tag @e[tag=w,type=armor_stand,tag=showroundnum] remove showroundnum
 #======================================
 #DEFAULTS, these can be overwritten by a specific track's initialization function
 tag @e[tag=w,type=armor_stand] remove noAItrack
-scoreboard players set @e[tag=w,type=armor_stand,tag=RAIautocount] optRAIcount 3
+#scoreboard players set @e[tag=w,type=armor_stand,tag=RAIautocount] optRAIcount 4
 scoreboard players set @e[tag=w,type=armor_stand] startType 0
 scoreboard players set @e[tag=w,type=armor_stand] lap 3
 scoreboard players set @e[tag=w,type=armor_stand] check 3

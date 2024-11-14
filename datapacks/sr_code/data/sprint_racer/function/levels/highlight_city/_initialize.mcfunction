@@ -10,7 +10,7 @@ scoreboard players operation @e[tag=w,type=armor_stand] math = @e[limit=1,sort=r
 execute if entity @e[tag=w,type=armor_stand,scores={math=..2}] run time set 2500
 execute if entity @e[tag=w,type=armor_stand,scores={math=3..}] run time set 18000
 
-#night vision is we're playing in free roam mode
+#night vision if we're playing in free roam mode
 execute if entity @e[tag=w,type=armor_stand,scores={math=3..}] run tag @a[tag=dontSetGamemode] add fr_nightvision
 
 ######

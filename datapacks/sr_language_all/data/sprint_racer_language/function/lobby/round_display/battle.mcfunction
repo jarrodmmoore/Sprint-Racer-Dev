@@ -1,15 +1,15 @@
 #round number icons
-summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundNo1","roundNoTP","particleB"],CustomName:'{"text":"➀","color":"red","bold":true}',NoGravity:1,Invisible:1,Invulnerable:1,Marker:1,CustomNameVisible:1}
-summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundNo2","roundNoTP","particleB"],CustomName:'{"text":"➁","color":"red","bold":true}',NoGravity:1,Invisible:1,Invulnerable:1,Marker:1,CustomNameVisible:1}
-summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundNo3","roundNoTP","particleB"],CustomName:'{"text":"➂","color":"red","bold":true}',NoGravity:1,Invisible:1,Invulnerable:1,Marker:1,CustomNameVisible:1}
+summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundNo1","roundNoTP","particleB"],CustomName:'{"text":"➀","color":"red","bold":true}',NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,CustomNameVisible:1}
+summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundNo2","roundNoTP","particleB"],CustomName:'{"text":"➁","color":"red","bold":true}',NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,CustomNameVisible:1}
+summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundNo3","roundNoTP","particleB"],CustomName:'{"text":"➂","color":"red","bold":true}',NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,CustomNameVisible:1}
 
 #"Round [N/5]"
-execute if entity @e[tag=w,scores={roundNumber2=1}] run summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundText1"],CustomName:'{"translate":"sr.lobby.round_1_of_3","color":"white","bold":true}',NoGravity:1,Invisible:1,Invulnerable:1,Marker:1,CustomNameVisible:1}
-execute if entity @e[tag=w,scores={roundNumber2=2}] run summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundText1"],CustomName:'{"translate":"sr.lobby.round_2_of_3","color":"white","bold":true}',NoGravity:1,Invisible:1,Invulnerable:1,Marker:1,CustomNameVisible:1}
-execute if entity @e[tag=w,scores={roundNumber2=3}] run summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundText1"],CustomName:'{"translate":"sr.lobby.round_3_of_3","color":"white","bold":true}',NoGravity:1,Invisible:1,Invulnerable:1,Marker:1,CustomNameVisible:1}
+execute if entity @e[tag=w,scores={roundNumber2=1}] run summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundText1"],CustomName:'{"translate":"sr.lobby.round_1_of_3","color":"white","bold":true}',NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,CustomNameVisible:1}
+execute if entity @e[tag=w,scores={roundNumber2=2}] run summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundText1"],CustomName:'{"translate":"sr.lobby.round_2_of_3","color":"white","bold":true}',NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,CustomNameVisible:1}
+execute if entity @e[tag=w,scores={roundNumber2=3}] run summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundText1"],CustomName:'{"translate":"sr.lobby.round_3_of_3","color":"white","bold":true}',NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,CustomNameVisible:1}
 
 #"Gamemode: X"
-summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundText2"],CustomName:'["",{"translate":"sr.lobby.gamemode","color":"white","bold":false},{"translate":"sr.lobby.battle","color":"red","bold":false}]',NoGravity:1,Invisible:1,Invulnerable:1,Marker:1,CustomNameVisible:1}
+summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundText2"],CustomName:'["",{"translate":"sr.lobby.gamemode","color":"white","bold":false},{"translate":"sr.lobby.battle","color":"red","bold":false}]',NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,CustomNameVisible:1}
 
 #it looks cool if these get tp'd upward from the same spot
 execute as @e[tag=roundNo1,tag=roundDisplay] at @s run tp @s ~ ~4.5 ~

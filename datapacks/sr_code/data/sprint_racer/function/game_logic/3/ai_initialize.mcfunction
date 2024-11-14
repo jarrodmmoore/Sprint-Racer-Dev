@@ -27,10 +27,13 @@ execute if entity @e[tag=w,type=armor_stand,tag=noAItrack] run tag @s remove ago
 #most servers cannot handle the full power of the AI so we'll enter "half tick" mode for performance sake
 execute if entity @e[tag=w,type=armor_stand,tag=autotick] if entity @s[tag=agogo] run tag @e[tag=w,type=armor_stand] add halftick
 
-#auto ai count? add ais until there are 4 total players
-execute if entity @e[tag=w,type=armor_stand,tag=BAIautocount] run scoreboard players set @e[tag=w,type=armor_stand] optBAIcount 4
-execute if entity @e[tag=w,type=armor_stand,tag=BAIautocount] run scoreboard players operation @e[tag=w,type=armor_stand] optBAIcount -= @e[tag=w,type=armor_stand] playerCount
+#store desired bot count in temp variable
+scoreboard players operation #test value = @e[tag=w,type=armor_stand] optBAIcount
 
+#auto ai count? only add ais until we meet the desired player count
+execute if entity @e[tag=w,type=armor_stand,tag=BAIautocount] run scoreboard players operation #test value -= @e[tag=w,type=armor_stand] playerCount
+
+#cleanup before we re-add some tags
 tag @e[tag=AImaster,type=armor_stand] remove AImaster
 tag @e[tag=random,type=armor_stand,scores={rNumber=1..9}] remove playerOrange
 tag @e[tag=random,type=armor_stand,scores={rNumber=1..9}] remove playerCyan
@@ -38,15 +41,16 @@ tag @e[tag=random,type=armor_stand,scores={rNumber=1..9}] remove playerCyan
 #itemLuck
 scoreboard players set @e[tag=random,type=armor_stand,scores={rNumber=1..9}] itemLuck 3
 
-execute if entity @s[tag=agogo] if entity @e[tag=w,type=armor_stand,scores={optBAIcount=1}] run tag @e[tag=random,type=armor_stand,scores={rNumber=1}] add AImaster
-execute if entity @s[tag=agogo] if entity @e[tag=w,type=armor_stand,scores={optBAIcount=2}] run tag @e[tag=random,type=armor_stand,scores={rNumber=1..2}] add AImaster
-execute if entity @s[tag=agogo] if entity @e[tag=w,type=armor_stand,scores={optBAIcount=3}] run tag @e[tag=random,type=armor_stand,scores={rNumber=1..3}] add AImaster
-execute if entity @s[tag=agogo] if entity @e[tag=w,type=armor_stand,scores={optBAIcount=4}] run tag @e[tag=random,type=armor_stand,scores={rNumber=1..4}] add AImaster
-execute if entity @s[tag=agogo] if entity @e[tag=w,type=armor_stand,scores={optBAIcount=5}] run tag @e[tag=random,type=armor_stand,scores={rNumber=1..5}] add AImaster
-execute if entity @s[tag=agogo] if entity @e[tag=w,type=armor_stand,scores={optBAIcount=6}] run tag @e[tag=random,type=armor_stand,scores={rNumber=1..6}] add AImaster
-execute if entity @s[tag=agogo] if entity @e[tag=w,type=armor_stand,scores={optBAIcount=7}] run tag @e[tag=random,type=armor_stand,scores={rNumber=1..7}] add AImaster
-execute if entity @s[tag=agogo] if entity @e[tag=w,type=armor_stand,scores={optBAIcount=8}] run tag @e[tag=random,type=armor_stand,scores={rNumber=1..8}] add AImaster
-execute if entity @s[tag=agogo] if entity @e[tag=w,type=armor_stand,scores={optBAIcount=9..}] run tag @e[tag=random,type=armor_stand,scores={rNumber=1..9}] add AImaster
+#add the bots we wanted
+execute if entity @s[tag=agogo] if score #test value matches 1 run tag @e[tag=random,type=armor_stand,scores={rNumber=1}] add AImaster
+execute if entity @s[tag=agogo] if score #test value matches 2 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..2}] add AImaster
+execute if entity @s[tag=agogo] if score #test value matches 3 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..3}] add AImaster
+execute if entity @s[tag=agogo] if score #test value matches 4 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..4}] add AImaster
+execute if entity @s[tag=agogo] if score #test value matches 5 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..5}] add AImaster
+execute if entity @s[tag=agogo] if score #test value matches 6 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..6}] add AImaster
+execute if entity @s[tag=agogo] if score #test value matches 7 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..7}] add AImaster
+execute if entity @s[tag=agogo] if score #test value matches 8 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..8}] add AImaster
+execute if entity @s[tag=agogo] if score #test value matches 9.. run tag @e[tag=random,type=armor_stand,scores={rNumber=1..9}] add AImaster
 
 execute if entity @e[tag=w,type=armor_stand,tag=optBAInever] run tag @e[tag=AImaster,type=armor_stand] remove AImaster
 
@@ -54,13 +58,15 @@ execute if entity @e[tag=w,type=armor_stand,tag=optBAInever] run tag @e[tag=AIma
 execute if entity @e[tag=w,tag=teamplay,type=armor_stand] run function sprint_racer:teams/assemble_teams_ai
 function sprint_racer_language:_dlc_2/gameplay/position_display/ai_sidebar_colors
 
+#adopt race difficulty setting
+execute as @e[tag=w,type=armor_stand] run scoreboard players operation @s optAIdiff = @s optBAIdiff
 #difficulty
 scoreboard players set @e[tag=AImaster,type=armor_stand] aiSkill 2
-execute if entity @e[tag=w,type=armor_stand,scores={optAIdiff=-1}] as @e[tag=AImaster] run scoreboard players operation @s aiSkill = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..3}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={optAIdiff=0}] run scoreboard players set @e[tag=AImaster] aiSkill 0
-execute if entity @e[tag=w,type=armor_stand,scores={optAIdiff=1}] run scoreboard players set @e[tag=AImaster] aiSkill 1
-execute if entity @e[tag=w,type=armor_stand,scores={optAIdiff=2}] run scoreboard players set @e[tag=AImaster] aiSkill 2
-execute if entity @e[tag=w,type=armor_stand,scores={optAIdiff=3}] run scoreboard players set @e[tag=AImaster] aiSkill 3
+execute if entity @e[tag=w,type=armor_stand,scores={optAIdiff=-1}] as @e[tag=AImaster,type=armor_stand] run scoreboard players operation @s aiSkill = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..3}] rNumber
+execute if entity @e[tag=w,type=armor_stand,scores={optAIdiff=0}] run scoreboard players set @e[tag=AImaster,type=armor_stand] aiSkill 0
+execute if entity @e[tag=w,type=armor_stand,scores={optAIdiff=1}] run scoreboard players set @e[tag=AImaster,type=armor_stand] aiSkill 1
+execute if entity @e[tag=w,type=armor_stand,scores={optAIdiff=2}] run scoreboard players set @e[tag=AImaster,type=armor_stand] aiSkill 2
+execute if entity @e[tag=w,type=armor_stand,scores={optAIdiff=3}] run scoreboard players set @e[tag=AImaster,type=armor_stand] aiSkill 3
 
 #calculating overall "maturity" of players
 scoreboard players set @e[tag=w,type=armor_stand] maturity 0

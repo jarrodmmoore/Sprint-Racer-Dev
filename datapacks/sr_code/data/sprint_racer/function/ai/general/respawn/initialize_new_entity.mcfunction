@@ -125,9 +125,10 @@ tag @s[scores={aiSkill=0}] add very_easy_ai
 scoreboard players set @s[scores={aiSkill=0}] aiSkill 1
 
 #ai1 is the "rival" (aiLevel > 8)
-execute if score global aiLevel matches 5.. unless entity @e[tag=w,type=armor_stand,scores={optAIdiff=0..2}] run tag @s[tag=ai1] add ai_rival
-execute if score global aiLevel matches 5.. run tag @s[tag=ai1,scores={aiSkill=3}] add tryhard
-execute if score global aiLevel matches 5.. unless entity @e[tag=w,type=armor_stand,scores={optAIdiff=0..1}] run scoreboard players add @s[tag=ai1,tag=!very_easy_ai,scores={aiSkill=..2}] aiSkill 1
+execute store result score #test value run execute if entity @e[tag=w,type=armor_stand,tag=noAIrival,limit=1]
+execute if score #test value matches ..0 if score global aiLevel matches 5.. unless entity @e[tag=w,type=armor_stand,scores={optAIdiff=0..2}] run tag @s[tag=ai1] add ai_rival
+execute if score #test value matches ..0 if score global aiLevel matches 5.. run tag @s[tag=ai1,scores={aiSkill=3}] add tryhard
+execute if score #test value matches ..0 if score global aiLevel matches 5.. unless entity @e[tag=w,type=armor_stand,scores={optAIdiff=0..1}] run scoreboard players add @s[tag=ai1,tag=!very_easy_ai,scores={aiSkill=..2}] aiSkill 1
 
 #cheat code overrides difficulty at the last possible second...
 execute if entity @e[limit=1,type=armor_stand,tag=54a,tag=cheats] run function sprint_racer:ai/general/respawn/_custom_ai_difficulty

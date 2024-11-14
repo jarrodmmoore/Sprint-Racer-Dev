@@ -10,7 +10,7 @@ scoreboard players set @e[tag=w,type=armor_stand] lap 3
 scoreboard players set @e[tag=w,type=armor_stand] check 3
 time set 22000
 
-#night vision is we're playing in free roam mode
+#night vision if we're playing in free roam mode
 tag @a[tag=dontSetGamemode] add fr_nightvision
 
 ######

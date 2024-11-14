@@ -72,9 +72,9 @@ kill @e[tag=itemcontainer]
 
 #summon some props
 summon armor_stand 1595 68 440 {Tags:["lobbyprop","gp_round_show"],DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Invisible:1}
-summon armor_stand 1585 72 426 {Tags:["lobbyprop","move_down_1"],DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Invisible:1,ArmorItems:[{},{},{},{id:"minecraft:cobblestone_wall",count:1}]}
-summon armor_stand 1588 72 426 {Tags:["lobbyprop","move_down_1"],DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Invisible:1,ArmorItems:[{},{},{},{id:"minecraft:cobblestone_wall",count:1}]}
-summon armor_stand 1591 72 426 {Tags:["lobbyprop","move_down_1"],DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Invisible:1,ArmorItems:[{},{},{},{id:"minecraft:cobblestone_wall",count:1}]}
+summon armor_stand 1585 72 426 {Tags:["lobbyprop","move_down_1"],DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:cobblestone_wall",count:1}]}
+summon armor_stand 1588 72 426 {Tags:["lobbyprop","move_down_1"],DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:cobblestone_wall",count:1}]}
+summon armor_stand 1591 72 426 {Tags:["lobbyprop","move_down_1"],DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:cobblestone_wall",count:1}]}
 execute if entity @e[limit=1,tag=39,type=armor_stand,tag=cheats] positioned 1583 68 447 run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"CUSTOMLAPS","bold":true,"italic":false}'}
 execute as @e[tag=move_down_1,limit=3,type=armor_stand] at @s run tp @s ~ ~-.4 ~
 tag @e[tag=move_down_1,limit=3,type=armor_stand] remove move_down_1
@@ -85,5 +85,5 @@ function sprint_racer_language:_dlc_3/grand_prix/button_names
 fill 1598 70 439 1598 73 441 orange_concrete
 function sprint_racer:game_logic/11/update_display
 
-summon armor_stand 1592 69 440 {Invisible:1,NoGravity:1,Invulnerable:1,Marker:1b,Tags:["lobbyprop","gpTrackNo"]}
+summon armor_stand 1592 69 440 {Invisible:1b,NoGravity:1b,Invulnerable:1b,Marker:1b,Tags:["lobbyprop","gpTrackNo"]}
 execute as @e[tag=trackStatus] at @s run tp @s ~ ~ ~.5

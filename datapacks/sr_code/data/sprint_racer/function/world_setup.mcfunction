@@ -12,7 +12,7 @@ execute unless score global math matches 1 run kill @e[tag=w,type=armor_stand]
 execute unless score global math matches 1 run kill @e[name="w"]
 
 #deal with armor stands, especially "w"
-execute unless entity @e[tag=w,type=armor_stand] run summon armor_stand 1550 150 406 {CustomName:'{"text":"w"}',NoGravity:1,Invisible:1,Invulnerable:1,Marker:1b,Tags:["forceGS","w"]}
+execute unless entity @e[tag=w,type=armor_stand] run summon armor_stand 1550 150 406 {CustomName:'{"text":"w"}',NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["forceGS","w"]}
 scoreboard players set @e[tag=w,tag=forceGS] gameState 0
 tag @e[tag=forceGS] remove forceGS
 execute positioned 1550 155 406 run function sprint_racer:random/summon_stands
@@ -38,9 +38,9 @@ tag @e[tag=w,type=armor_stand] remove optBAInever
 scoreboard objectives add optAIdiff dummy
 scoreboard players set @e[tag=w,type=armor_stand] optAIdiff 0
 scoreboard objectives add optRAIcount dummy
-scoreboard players set @e[tag=w,type=armor_stand] optRAIcount 3
+scoreboard players set @e[tag=w,type=armor_stand] optRAIcount 4
 scoreboard objectives add optBAIcount dummy
-scoreboard players set @e[tag=w,type=armor_stand] optBAIcount 3
+scoreboard players set @e[tag=w,type=armor_stand] optBAIcount 4
 scoreboard objectives add allowInvis dummy
 scoreboard players set @e[tag=w,type=armor_stand] allowInvis 0
 scoreboard players set global allowInvis 0

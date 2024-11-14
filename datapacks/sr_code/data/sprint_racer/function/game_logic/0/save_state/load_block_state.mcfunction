@@ -103,7 +103,8 @@ execute if block 1616 ~ 459 magenta_wool run tag @s add optRAInever
 
 #race ai count
 tag @s remove RAIautocount
-execute if block 1615 ~ 459 white_wool run tag @s add RAIautocount
+#execute if block 1615 ~ 459 white_wool run tag @s add RAIautocount
+execute if block 1615 ~ 459 white_wool run scoreboard players set @s optRAIcount 4
 execute if block 1615 ~ 459 orange_wool run scoreboard players set @s optRAIcount 1
 execute if block 1615 ~ 459 magenta_wool run scoreboard players set @s optRAIcount 2
 execute if block 1615 ~ 459 light_blue_wool run scoreboard players set @s optRAIcount 3
@@ -124,7 +125,8 @@ execute if block 1614 ~ 459 magenta_wool run tag @s add optBAInever
 
 #battle ai count
 tag @s remove BAIautocount
-execute if block 1613 ~ 459 white_wool run tag @s add BAIautocount
+#execute if block 1613 ~ 459 white_wool run tag @s add BAIautocount
+execute if block 1613 ~ 459 white_wool run scoreboard players set @s optBAIcount 4
 execute if block 1613 ~ 459 orange_wool run scoreboard players set @s optBAIcount 1
 execute if block 1613 ~ 459 magenta_wool run scoreboard players set @s optBAIcount 2
 execute if block 1613 ~ 459 light_blue_wool run scoreboard players set @s optBAIcount 3
@@ -135,12 +137,19 @@ execute if block 1613 ~ 459 gray_wool run scoreboard players set @s optBAIcount 
 execute if block 1613 ~ 459 light_gray_wool run scoreboard players set @s optBAIcount 8
 execute if block 1613 ~ 459 cyan_wool run scoreboard players set @s optBAIcount 9
 
-#ai difficulty
-execute if block 1612 ~ 459 white_wool run scoreboard players set @s optAIdiff -1
-execute if block 1612 ~ 459 orange_wool run scoreboard players set @s optAIdiff 0
-execute if block 1612 ~ 459 magenta_wool run scoreboard players set @s optAIdiff 1
-execute if block 1612 ~ 459 light_blue_wool run scoreboard players set @s optAIdiff 2
-execute if block 1612 ~ 459 yellow_wool run scoreboard players set @s optAIdiff 3
+#ai difficulty (removed)
+#execute if block 1612 ~ 459 white_wool run scoreboard players set @s optAIdiff -1
+#execute if block 1612 ~ 459 orange_wool run scoreboard players set @s optAIdiff 0
+#execute if block 1612 ~ 459 magenta_wool run scoreboard players set @s optAIdiff 1
+#execute if block 1612 ~ 459 light_blue_wool run scoreboard players set @s optAIdiff 2
+#execute if block 1612 ~ 459 yellow_wool run scoreboard players set @s optAIdiff 3
+
+#ai rival (v1.6)
+execute if block 1612 ~ 459 white_wool run tag @s remove noAIrival
+execute if block 1612 ~ 459 orange_wool run tag @s add noAIrival
+execute if block 1612 ~ 459 magenta_wool run tag @s add noAIrival
+execute if block 1612 ~ 459 light_blue_wool run tag @s add noAIrival
+execute if block 1612 ~ 459 yellow_wool run tag @s add noAIrival
 
 #ai rubberbanding
 tag @s remove noRubberBand
@@ -203,6 +212,28 @@ execute if block 1612 ~ 458 white_wool run tag @s add noCrowdSFX
 #classic HUD
 tag @s remove classicHUD
 execute if block 1611 ~ 458 white_wool run tag @s add classicHUD
+
+#race AI difficulty
+execute if block 1610 ~ 458 white_wool run scoreboard players set @s optRAIdiff -1
+execute if block 1610 ~ 458 orange_wool run scoreboard players set @s optRAIdiff 0
+execute if block 1610 ~ 458 magenta_wool run scoreboard players set @s optRAIdiff 1
+execute if block 1610 ~ 458 light_blue_wool run scoreboard players set @s optRAIdiff 2
+execute if block 1610 ~ 458 yellow_wool run scoreboard players set @s optRAIdiff 3
+
+#race AI add type
+tag @s remove RAIautocount
+execute if block 1609 ~ 458 white_wool run tag @s add RAIautocount
+
+#battle AI difficulty
+execute if block 1618 ~ 457 white_wool run scoreboard players set @s optBAIdiff -1
+execute if block 1618 ~ 457 orange_wool run scoreboard players set @s optBAIdiff 0
+execute if block 1618 ~ 457 magenta_wool run scoreboard players set @s optBAIdiff 1
+execute if block 1618 ~ 457 light_blue_wool run scoreboard players set @s optBAIdiff 2
+execute if block 1618 ~ 457 yellow_wool run scoreboard players set @s optBAIdiff 3
+
+#battle AI add type
+tag @s remove BAIautocount
+execute if block 1617 ~ 457 white_wool run tag @s add BAIautocount
 
 #################################
 #BANNED RACE TRACKS
@@ -453,6 +484,7 @@ execute unless score #noLobbyReload value matches 1 if entity @s[scores={gameSta
 execute unless score #noLobbyReload value matches 1 if entity @s[scores={gameState=0}] run function sprint_racer:game_logic/0/sidebar/__index_main
 execute unless score #noLobbyReload value matches 1 if entity @s[scores={gameState=0}] run function sprint_racer:game_logic/0/props/summon_props
 function sprint_racer_language:_dlc_4/lobby/options/update_all_options_signs
+function sprint_racer_language:_dlc_6/lobby/options/update_all_options_signs
 
 #say what's enabled
 execute if score #noLobbyReload value matches 1 if entity @e[tag=w,type=armor_stand,tag=cheatdetected] as @a[tag=!minChat] run function sprint_racer_language:_dlc_5/join_messages/cheats_are_enabled

@@ -1,7 +1,7 @@
 scoreboard players set @s hitstun 65
 scoreboard players add @s rateDecel 130
 scoreboard players remove @s moveSpeed 6500
-execute unless block ~ -64 ~ wither_rose run summon armor_stand ~ ~2.2 ~ {CustomName:'{"text":"-13","color":"gold","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1,Invisible:1,Tags:["setscore","floatup"]}
+execute unless block ~ -64 ~ wither_rose run summon armor_stand ~ ~2.2 ~ {CustomName:'{"text":"-13","color":"gold","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
 scoreboard players set @e[tag=setscore] lifespan 20
 tag @e[tag=setscore] remove setscore
 

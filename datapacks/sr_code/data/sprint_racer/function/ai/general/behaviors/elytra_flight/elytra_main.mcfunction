@@ -1,5 +1,5 @@
 execute if entity @s[scores={elytraTimer=1}] run function sprint_racer:ai/general/clear_old_ai_targets
-execute if entity @s[scores={elytraTimer=1}] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1,Tags:["elytraGuide","gimmeTag","needsDirection"],ArmorItems:[{},{},{id:"minecraft:elytra",count:1,components:{"minecraft:unbreakable":{},"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}}}},{}]}
+execute if entity @s[scores={elytraTimer=1}] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Tags:["elytraGuide","gimmeTag","needsDirection"],ArmorItems:[{},{},{id:"minecraft:elytra",count:1,components:{"minecraft:unbreakable":{},"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}}}},{}]}
 execute if entity @s[scores={elytraTimer=1}] run function sprint_racer:ai/general/behaviors/elytra_flight/give_elytra_tag
 
 scoreboard players set @s aiStuckTime 0

@@ -4,10 +4,10 @@ summon tnt ~ ~ ~ {Tags:["centerTnt","giveID"],fuse:10000}
 scoreboard players add @e[tag=centerTnt] age 70
 tag @e[tag=centerTnt] remove centerTnt
 
-summon tnt ~.7 ~.1 ~.7 {NoGravity:1,fuse:10000,Tags:["giveID"]}
-summon tnt ~-.7 ~.1 ~.7 {NoGravity:1,fuse:10000,Tags:["giveID"]}
-summon tnt ~.7 ~.1 ~-.7 {NoGravity:1,fuse:10000,Tags:["giveID"]}
-summon tnt ~-.7 ~.1 ~-.7 {NoGravity:1,fuse:10000,Tags:["giveID"]}
+summon tnt ~.7 ~.1 ~.7 {NoGravity:1b,fuse:10000,Tags:["giveID"]}
+summon tnt ~-.7 ~.1 ~.7 {NoGravity:1b,fuse:10000,Tags:["giveID"]}
+summon tnt ~.7 ~.1 ~-.7 {NoGravity:1b,fuse:10000,Tags:["giveID"]}
+summon tnt ~-.7 ~.1 ~-.7 {NoGravity:1b,fuse:10000,Tags:["giveID"]}
 
 execute if entity @s[tag=itemCyan] run tag @e[tag=giveID,limit=5,sort=nearest] add itemCyan
 execute if entity @s[tag=itemCyan] run team join playerCyan @e[tag=giveID,limit=5,sort=nearest]

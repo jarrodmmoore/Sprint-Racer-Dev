@@ -4,7 +4,7 @@ tag @e[tag=w,type=armor_stand] remove optSetB
 tag @e[tag=w,type=armor_stand] add optSetA
 
 tag @e[tag=w,tag=optSetA,tag=optBAInever] add optSetB
-execute if entity @e[tag=w,tag=optSetB] run data merge block 1613 89 356 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_context_battle"}}','{"text":"BATTLE AI:","bold":true,"color":"black"}','{"text":"[SINGLEPLAYER]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
+execute if entity @e[tag=w,tag=optSetB] run data merge block 1613 89 356 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_context_battle"}}','{"text":"BATTLE AI","bold":true,"color":"black"}','{"text":"[SINGLEPLAYER]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] add optBAIsingle
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove optBAIalways
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove optBAInever
@@ -14,7 +14,7 @@ tag @e[tag=w,tag=optSetB] remove optSetA
 tag @e[tag=w,tag=optSetB] remove optSetB
 
 tag @e[tag=w,tag=optSetA,tag=optBAIsingle] add optSetB
-execute if entity @e[tag=w,tag=optSetB] run data merge block 1613 89 356 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_context_battle"}}','{"text":"BATTLE AI:","bold":true,"color":"black"}','{"text":"[ALWAYS ON]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
+execute if entity @e[tag=w,tag=optSetB] run data merge block 1613 89 356 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_context_battle"}}','{"text":"BATTLE AI","bold":true,"color":"black"}','{"text":"[ALWAYS ON]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove optBAIsingle
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] add optBAIalways
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove optBAInever
@@ -24,7 +24,7 @@ tag @e[tag=w,tag=optSetB] remove optSetA
 tag @e[tag=w,tag=optSetB] remove optSetB
 
 tag @e[tag=w,tag=optSetA,tag=optBAIalways] add optSetB
-execute if entity @e[tag=w,tag=optSetB] run data merge block 1613 89 356 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_context_battle"}}','{"text":"BATTLE AI:","bold":true,"color":"black"}','{"text":"[ALWAYS OFF]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
+execute if entity @e[tag=w,tag=optSetB] run data merge block 1613 89 356 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_context_battle"}}','{"text":"BATTLE AI","bold":true,"color":"black"}','{"text":"[ALWAYS OFF]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove optBAIsingle
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove optBAIalways
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] add optBAInever

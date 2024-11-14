@@ -18,7 +18,7 @@ tag @e[tag=w,type=armor_stand] add noCharity
 tag @e[tag=w,type=armor_stand] add noAItrack
 tag @e[tag=w,type=armor_stand] add gauntletTrack
 
-#night vision is we're playing in free roam mode
+#night vision if we're playing in free roam mode
 tag @a[tag=dontSetGamemode] add fr_nightvision
 
 ######

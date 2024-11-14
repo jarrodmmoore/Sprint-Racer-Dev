@@ -1,10 +1,19 @@
 #TP TO TRACK
 function sprint_racer:teleport_to_custom_track
 
+#STORAGE SETUP
+execute store result storage sprint_racer:func_args custom_uid int 1 run scoreboard players get @s customTagLine
+
 ######
 #MUSIC
 function sprint_racer:levels/_custom_general/set_music
 ######
+
+#START COUNTDOWN
+execute unless score @s startType matches 0 run scoreboard players operation @e[tag=w,type=armor_stand] startType = @s startType
+
+#NIGHT VISION -- night vision if we're playing in free roam mode
+execute if entity @s[tag=nightVision] run tag @a[tag=dontSetGamemode] add fr_nightvision
 
 #DAYLIGHT CYCLE
 execute if entity @s[tag=daylightCycle] run gamerule doDaylightCycle true
@@ -14,25 +23,8 @@ tag @e[tag=w,type=armor_stand] remove noAItrack
 execute if entity @s[tag=noAItrack] run tag @e[tag=w,type=armor_stand] add noAItrack
 
 #TIME OF DAY
-time set 0
-scoreboard players set @s math 0
-scoreboard players operation @s math = @s customTrackTime
-execute if entity @s[scores={math=12800..}] run time add 12800
-execute if entity @s[scores={math=12800..}] run scoreboard players remove @s math 12800
-execute if entity @s[scores={math=6400..}] run time add 6400
-execute if entity @s[scores={math=6400..}] run scoreboard players remove @s math 6400
-execute if entity @s[scores={math=3200..}] run time add 3200
-execute if entity @s[scores={math=3200..}] run scoreboard players remove @s math 3200
-execute if entity @s[scores={math=1600..}] run time add 1600
-execute if entity @s[scores={math=1600..}] run scoreboard players remove @s math 1600
-execute if entity @s[scores={math=800..}] run time add 800
-execute if entity @s[scores={math=800..}] run scoreboard players remove @s math 800
-execute if entity @s[scores={math=400..}] run time add 400
-execute if entity @s[scores={math=400..}] run scoreboard players remove @s math 400
-execute if entity @s[scores={math=200..}] run time add 200
-execute if entity @s[scores={math=200..}] run scoreboard players remove @s math 200
-execute if entity @s[scores={math=100..}] run time add 100
-execute if entity @s[scores={math=100..}] run scoreboard players remove @s math 100
+execute store result storage sprint_racer:func_args time int 1 run scoreboard players get @s customTrackTime
+function sprint_racer:levels/_custom_general/set_time_macro with storage sprint_racer:func_args
 
 #WEATHER
 execute if entity @s[scores={customTWeather=1}] run weather clear

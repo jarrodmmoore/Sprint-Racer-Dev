@@ -113,12 +113,16 @@ execute if entity @s[tag=!BAIautocount,scores={optBAIcount=7}] run setblock 1613
 execute if entity @s[tag=!BAIautocount,scores={optBAIcount=8}] run setblock 1613 ~ 459 light_gray_wool
 execute if entity @s[tag=!BAIautocount,scores={optBAIcount=9}] run setblock 1613 ~ 459 cyan_wool
 
-#ai difficulty
-execute if entity @s[scores={optAIdiff=-1}] run setblock 1612 ~ 459 white_wool
-execute if entity @s[scores={optAIdiff=0}] run setblock 1612 ~ 459 orange_wool
-execute if entity @s[scores={optAIdiff=1}] run setblock 1612 ~ 459 magenta_wool
-execute if entity @s[scores={optAIdiff=2}] run setblock 1612 ~ 459 light_blue_wool
-execute if entity @s[scores={optAIdiff=3}] run setblock 1612 ~ 459 yellow_wool
+#ai difficulty (removed)
+#execute if entity @s[scores={optAIdiff=-1}] run setblock 1612 ~ 459 white_wool
+#execute if entity @s[scores={optAIdiff=0}] run setblock 1612 ~ 459 orange_wool
+#execute if entity @s[scores={optAIdiff=1}] run setblock 1612 ~ 459 magenta_wool
+#execute if entity @s[scores={optAIdiff=2}] run setblock 1612 ~ 459 light_blue_wool
+#execute if entity @s[scores={optAIdiff=3}] run setblock 1612 ~ 459 yellow_wool
+
+#ai rival
+execute if entity @s[tag=!noAIrival] run setblock 1612 ~ 459 white_wool
+execute if entity @s[tag=noAIrival] run setblock 1612 ~ 459 orange_wool
 
 #ai rubberbanding
 execute if entity @s[tag=noRubberBand] run setblock 1611 ~ 459 white_wool
@@ -177,6 +181,28 @@ execute if entity @s[tag=!noCrowdSFX] run setblock 1612 ~ 458 orange_wool
 #classic HUD
 execute if entity @s[tag=classicHUD] run setblock 1611 ~ 458 white_wool
 execute if entity @s[tag=!classicHUD] run setblock 1611 ~ 458 orange_wool
+
+#race AI difficulty
+execute if entity @s[scores={optRAIdiff=-1}] run setblock 1610 ~ 458 white_wool
+execute if entity @s[scores={optRAIdiff=0}] run setblock 1610 ~ 458 orange_wool
+execute if entity @s[scores={optRAIdiff=1}] run setblock 1610 ~ 458 magenta_wool
+execute if entity @s[scores={optRAIdiff=2}] run setblock 1610 ~ 458 light_blue_wool
+execute if entity @s[scores={optRAIdiff=3}] run setblock 1610 ~ 458 yellow_wool
+
+#race AI add type
+execute if entity @s[tag=RAIautocount] run setblock 1609 ~ 458 white_wool
+execute if entity @s[tag=!RAIautocount] run setblock 1609 ~ 458 orange_wool
+
+#battle AI difficulty
+execute if entity @s[scores={optBAIdiff=-1}] run setblock 1618 ~ 457 white_wool
+execute if entity @s[scores={optBAIdiff=0}] run setblock 1618 ~ 457 orange_wool
+execute if entity @s[scores={optBAIdiff=1}] run setblock 1618 ~ 457 magenta_wool
+execute if entity @s[scores={optBAIdiff=2}] run setblock 1618 ~ 457 light_blue_wool
+execute if entity @s[scores={optBAIdiff=3}] run setblock 1618 ~ 457 yellow_wool
+
+#battle AI add type
+execute if entity @s[tag=BAIautocount] run setblock 1617 ~ 457 white_wool
+execute if entity @s[tag=!BAIautocount] run setblock 1617 ~ 457 orange_wool
 
 #################################
 #BANNED RACE TRACKS

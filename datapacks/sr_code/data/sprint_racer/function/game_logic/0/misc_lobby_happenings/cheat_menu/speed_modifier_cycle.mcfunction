@@ -2,7 +2,7 @@ scoreboard players add @s speedlevel 1
 scoreboard players set @s[scores={speedlevel=13..}] speedlevel 0
 scoreboard players set @s[tag=!01a] speedlevel 0
 
-summon armor_stand 1593 101.6 449 {Tags:["speedmodtext","lobbyprop"],Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Invisible:1,Marker:1b,DisabledSlots:2039583}
+summon armor_stand 1593 101.6 449 {Tags:["speedmodtext","lobbyprop"],Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Invisible:1b,Marker:1b,DisabledSlots:2039583}
 
 execute if entity @e[tag=cheats,scores={speedlevel=..0}] as @e[limit=1,tag=speedmodtext,type=armor_stand] run data merge entity @s {CustomName:'{"text":"1.5x","bold":true}',CustomNameVisible:1b}
 execute if entity @e[tag=cheats,scores={speedlevel=1}] as @e[limit=1,tag=speedmodtext,type=armor_stand] run data merge entity @s {CustomName:'{"text":"1.6x","bold":true}',CustomNameVisible:1b}

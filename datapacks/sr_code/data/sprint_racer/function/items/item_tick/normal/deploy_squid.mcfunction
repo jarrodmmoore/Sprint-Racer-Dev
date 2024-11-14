@@ -1,7 +1,7 @@
 clear @s *[custom_data~{no19:1b}] 1
 
 playsound minecraft:entity.chicken.egg master @a ~ ~ ~ 1.4 .9
-summon squid ^ ^1 ^5 {Invulnerable:1,NoAI:1b,Tags:["setme"]}
+summon squid ^ ^1 ^5 {Invulnerable:1b,NoAI:1b,Tags:["setme"]}
 scoreboard players set @e[tag=setme] lifespan 20
 effect give @e[tag=setme] levitation 10 10 true
 execute at @e[tag=setme] run playsound minecraft:entity.squid.ambient master @a
@@ -12,7 +12,7 @@ tag @e[tag=setme] remove setme
 execute if entity @e[tag=w,scores={gameState=1}] run function sprint_racer:items/item_tick/normal/squid/targets_race
 execute unless entity @e[tag=w,scores={gameState=1}] run function sprint_racer:items/item_tick/normal/squid/targets_not_race
 
-execute as @e[tag=squidTarget] at @s run summon squid ^ ^1.5 ^4 {Invulnerable:1,NoGravity:1,Tags:["setme","squirt"]}
+execute as @e[tag=squidTarget] at @s run summon squid ^ ^1.5 ^4 {Invulnerable:1b,NoGravity:1b,Tags:["setme","squirt"]}
 execute as @e[tag=squirt] at @s run playsound minecraft:entity.squid.squirt master @a
 execute as @e[tag=squirt] at @s run particle squid_ink ~ ~ ~ 0.3 0.3 0.3 .1 10
 scoreboard players set @e[tag=setme] lifespan 20

@@ -6,7 +6,7 @@ scoreboard players set @e[tag=w,type=armor_stand] startType 3
 gamerule doDaylightCycle false
 time set 9000
 
-#night vision is we're playing in free roam mode
+#night vision if we're playing in free roam mode
 tag @a[tag=dontSetGamemode] add fr_nightvision
 
 ######

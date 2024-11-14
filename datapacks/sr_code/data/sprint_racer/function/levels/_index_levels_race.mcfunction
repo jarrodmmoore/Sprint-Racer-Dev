@@ -1,8 +1,7 @@
-#this function was split into 3 due to performance concerns
+#this function was split into many due to performance concerns
 #since this index will be called on every tick during gameplay
 
-execute if entity @s[tag=customtrack,tag=customGauntlet] run function sprint_racer:levels/_custom_race/gauntlet_main
-execute if entity @s[tag=customtrack,scores={customCodePath=1..}] run function sprint_racer:levels/_index_levels_custom_path
+execute if entity @s[tag=customtrack] run function sprint_racer:levels/_custom_race/main
 execute if entity @s[scores={rNumber=1..5}] run function sprint_racer:levels/_index_levels_race_1_5
 execute if entity @s[scores={rNumber=6..10}] run function sprint_racer:levels/_index_levels_race_6_10
 execute if entity @s[scores={rNumber=11..15}] run function sprint_racer:levels/_index_levels_race_11_15

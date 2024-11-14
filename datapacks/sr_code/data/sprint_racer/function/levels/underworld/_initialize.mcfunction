@@ -2,7 +2,7 @@ tp @a[tag=!dontWarp] 88 25 2296
 
 time set 18000
 
-#night vision is we're playing in free roam mode
+#night vision if we're playing in free roam mode
 tag @a[tag=dontSetGamemode] add fr_nightvision
 
 ######

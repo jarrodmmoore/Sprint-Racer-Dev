@@ -17,7 +17,7 @@ execute if entity @s[scores={gameTime=40}] run kill @e[tag=trap]
 execute if entity @s[scores={gameTime=40}] run kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{item:1b}}}}]
 
 #keep players from flying about while the track loads
-execute if entity @s[scores={gameTime=-40}] as @a[limit=1,sort=nearest,x=1090,y=64,z=828] at @s run summon armor_stand ~ ~ ~ {NoGravity:1,Invisible:1,Invulnerable:1,Marker:1b,Tags:["RHoldPlayers"]}
+execute if entity @s[scores={gameTime=-40}] as @a[limit=1,sort=nearest,x=1090,y=64,z=828] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["RHoldPlayers"]}
 execute if entity @s[scores={gameTime=-40}] run gamemode adventure @a
 execute if entity @s[scores={gameTime=-40}] as @a at @s run spawnpoint @s ~ ~ ~
 execute if entity @s[scores={gameTime=-40..49}] run function sprint_racer:hold_players_in_place

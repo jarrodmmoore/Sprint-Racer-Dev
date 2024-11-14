@@ -1,5 +1,5 @@
-execute positioned 1673 88 406 run summon armor_stand ~ ~2.5 ~ {Tags:["lobbyprop"],Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Invisible:1,Marker:1b,CustomName:'{"text":"Race with us!","color":"aqua","bold":true}',CustomNameVisible:1b,DisabledSlots:2039583}
-execute positioned 1673 88 406 run summon armor_stand ~ ~2 ~ {Tags:["lobbyprop"],Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Invisible:1,Marker:1b,CustomName:'{"text":"Sprint Gang on Discord","color":"white","bold":false}',CustomNameVisible:1b,DisabledSlots:2039583}
-execute positioned 1673 88 406 run summon armor_stand ~ ~1.5 ~ {Tags:["lobbyprop"],Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Invisible:1,Marker:1b,CustomName:'{"text":"https://discord.gg/jbFWf3x","color":"aqua","underlined":true}',CustomNameVisible:1b,DisabledSlots:2039583}
+execute positioned 1673 88 406 run summon armor_stand ~ ~2.5 ~ {Tags:["lobbyprop"],Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Invisible:1b,Marker:1b,CustomName:'{"text":"Race with us!","color":"aqua","bold":true}',CustomNameVisible:1b,DisabledSlots:2039583}
+execute positioned 1673 88 406 run summon armor_stand ~ ~2 ~ {Tags:["lobbyprop"],Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Invisible:1b,Marker:1b,CustomName:'{"text":"Sprint Gang on Discord","color":"white","bold":false}',CustomNameVisible:1b,DisabledSlots:2039583}
+execute positioned 1673 88 406 run summon armor_stand ~ ~1.5 ~ {Tags:["lobbyprop"],Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Invisible:1b,Marker:1b,CustomName:'{"text":"https://discord.gg/jbFWf3x","color":"aqua","underlined":true}',CustomNameVisible:1b,DisabledSlots:2039583}
 
 #https://discord.gg/jbFWf3x

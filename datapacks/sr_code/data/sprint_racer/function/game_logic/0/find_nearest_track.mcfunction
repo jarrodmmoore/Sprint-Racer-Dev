@@ -1,5 +1,5 @@
 #DEV
-#summon armor_stand ~ ~-5 ~ {NoGravity:1,Invulnerable:1,Invisible:1,Tags:["trackminimap"]}
+#summon armor_stand ~ ~-5 ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["trackminimap"]}
 #scoreboard players set @e[limit=1,sort=nearest,tag=trackminimap] worldmapID 0
 #scoreboard players set @e[limit=1,sort=nearest,tag=wmPreview] worldmapID 0
 #
