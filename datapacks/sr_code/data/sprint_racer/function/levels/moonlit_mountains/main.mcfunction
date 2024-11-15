@@ -1,1 +1,1 @@
-function sprint_racer:levels/dead_canyon/map
+function sprint_racer:levels/moonlit_mountains/map

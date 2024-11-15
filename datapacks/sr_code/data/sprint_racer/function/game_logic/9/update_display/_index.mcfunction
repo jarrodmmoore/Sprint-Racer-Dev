@@ -61,6 +61,11 @@ execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=1,tvPoolNum=46}] 
 execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=1,tvPoolNum=47}] run function sprint_racer:game_logic/9/update_display/r47
 execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=1,tvPoolNum=48}] run function sprint_racer:game_logic/9/update_display/r48
 execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=1,tvPoolNum=49}] run function sprint_racer:game_logic/9/update_display/r49
+#v1.6
+execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=1,tvPoolNum=51}] run function sprint_racer:game_logic/9/update_display/r51
+execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=1,tvPoolNum=52}] run function sprint_racer:game_logic/9/update_display/r52
+execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=1,tvPoolNum=53}] run function sprint_racer:game_logic/9/update_display/r53
+execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=1,tvPoolNum=54}] run function sprint_racer:game_logic/9/update_display/r54
 #add more here...
 
 #battle tracks
@@ -82,4 +87,7 @@ execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=2,tvPoolNum=14}] 
 execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=2,tvPoolNum=15}] run function sprint_racer:game_logic/9/update_display/b15
 execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=2,tvPoolNum=16}] run function sprint_racer:game_logic/9/update_display/b16
 execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=2,tvPoolNum=17}] run function sprint_racer:game_logic/9/update_display/b17
+#v1.6
+execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=2,tvPoolNum=18}] run function sprint_racer:game_logic/9/update_display/b18
+execute if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=2,tvPoolNum=19}] run function sprint_racer:game_logic/9/update_display/b19
 #add more here...

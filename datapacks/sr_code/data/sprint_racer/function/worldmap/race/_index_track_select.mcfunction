@@ -9,6 +9,7 @@ execute if score #checkB value matches 1.. run function sprint_racer:worldmap/ra
 execute if score #checkC value matches 1.. run function sprint_racer:worldmap/race/_index_track_select_21_30
 execute if score #checkD value matches 1.. run function sprint_racer:worldmap/race/_index_track_select_31_40
 execute if score #checkE value matches 1.. run function sprint_racer:worldmap/race/_index_track_select_41_50
+execute if score #checkE value matches 1.. run function sprint_racer:worldmap/race/_index_track_select_51_55
 
 #now clear it
 clear @s blue_dye[custom_data~{rQuickSelect:1b}]

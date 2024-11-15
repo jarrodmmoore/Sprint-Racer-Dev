@@ -13,12 +13,13 @@ execute as @e[type=armor_stand,tag=trackStandR,tag=!rSortSelect,scores={rSortVal
 #{ArmorItems:[{},{},{},{id:"minecraft:blue_dye",Count:1b,tag:{CustomModelData:1000001}}]}
 
 #based on the ID of the lowest rSortValue track returned, set the item that will go in the desired slot.
-execute unless score #rReturnTrack value matches 1..50 run data merge entity 000003e7-0000-03e7-0000-03e700000001 {ArmorItems:[{},{},{},{}]}
+execute unless score #rReturnTrack value matches 1..60 run data merge entity 000003e7-0000-03e7-0000-03e700000001 {ArmorItems:[{},{},{},{}]}
 execute if score #rReturnTrack value matches 1..10 run function sprint_racer:worldmap/race/return_track_1_10
 execute if score #rReturnTrack value matches 11..20 run function sprint_racer:worldmap/race/return_track_11_20
 execute if score #rReturnTrack value matches 21..30 run function sprint_racer:worldmap/race/return_track_21_30
 execute if score #rReturnTrack value matches 31..40 run function sprint_racer:worldmap/race/return_track_31_40
 execute if score #rReturnTrack value matches 41..50 run function sprint_racer:worldmap/race/return_track_41_50
+execute if score #rReturnTrack value matches 51..60 run function sprint_racer:worldmap/race/return_track_51_60
 
 #selected track is kicked out of the search pool
 execute as @e[type=armor_stand,tag=trackStandR,tag=!rSortSelect] if score @s rNumber = #rReturnTrack value run tag @s add rSortSelect

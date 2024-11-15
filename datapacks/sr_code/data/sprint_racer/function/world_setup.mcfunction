@@ -701,6 +701,9 @@ scoreboard players add @e[tag=random,scores={rNumber=1..50}] medalRace 0
 scoreboard players add @e[tag=random,scores={rNumber=1..50}] medalBattle 0
 scoreboard players add @e[tag=random,scores={rNumber=1..50}] trackBestTime 0
 
+#quickly redo quick select data...
+function sprint_racer:worldmap/reset_quick_select_data
+
 scoreboard players set @a join 1
 tellraw @a ["",{"text":"World setup successful!","color":"aqua"}]
 execute unless entity @e[tag=w,type=armor_stand] run tellraw @a ["",{"text":"Critical entity \"w\" is not present.","color":"red"}]

@@ -1,1 +1,1 @@
-function sprint_racer:levels/dead_canyon/map
+function sprint_racer:levels/candy_land/map
