@@ -30,4 +30,7 @@ execute if entity @s[scores={rNumber=16}] run function sprint_racer:levels/pyram
 
 execute if entity @s[scores={rNumber=17}] run function sprint_racer:levels/aldeao_redentor/_initialize
 
+execute if entity @s[scores={rNumber=18}] run function sprint_racer:levels/toy_tussle/_initialize
+execute if entity @s[scores={rNumber=19}] run function sprint_racer:levels/minotaur_maze/_initialize
+
 #...

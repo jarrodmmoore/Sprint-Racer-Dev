@@ -124,9 +124,15 @@ tag @e[tag=random,scores={rNumber=50}] add btBlacklist
 tag @e[tag=random,scores={rNumber=50}] add trackSmall
 tag @e[tag=random,scores={rNumber=50}] add trackStandB
 
-#post v1.5 tracks
-#tag @e[tag=random,scores={rNumber=51}] add trackExpert
-#tag @e[tag=random,scores={rNumber=52}] add trackExpert
-#tag @e[tag=random,scores={rNumber=53}] add trackIntermed
-#tag @e[tag=random,scores={rNumber=53}] add r_1_only
-#tag @e[tag=random,scores={rNumber=51..53}] add trackStandR
+#v1.6 tracks
+tag @e[tag=random,scores={rNumber=51}] add trackExpert
+tag @e[tag=random,scores={rNumber=52}] add trackExpert
+tag @e[tag=random,scores={rNumber=53}] add trackIntermed
+tag @e[tag=random,scores={rNumber=54}] add trackIntermed
+tag @e[tag=random,scores={rNumber=52}] add r_1_only
+tag @e[tag=random,scores={rNumber=51..54}] add trackStandR
+
+#v1.6 battle tracks
+tag @e[tag=random,scores={rNumber=18}] add trackTiny
+tag @e[tag=random,scores={rNumber=19}] add trackLarge
+tag @e[tag=random,scores={rNumber=18..19}] add trackStandB

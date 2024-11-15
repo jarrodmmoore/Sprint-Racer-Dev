@@ -70,6 +70,7 @@ execute if entity @s[scores={worldmapID=49}] run function sprint_racer:levels/cr
 execute if entity @s[scores={worldmapID=51}] run function sprint_racer:levels/candy_land/medal_times
 execute if entity @s[scores={worldmapID=52}] run function sprint_racer:levels/gummi_gorge/medal_times
 execute if entity @s[scores={worldmapID=53}] run function sprint_racer:levels/nether_castle/medal_times
+execute if entity @s[scores={worldmapID=54}] run function sprint_racer:levels/moonlit_mountains/medal_times
 
 #add more here...
 
@@ -95,6 +96,9 @@ execute if entity @s[scores={worldmapID=1014}] run function sprint_racer:levels/
 execute if entity @s[scores={worldmapID=1015}] run function sprint_racer:levels/end_core/medal_times
 execute if entity @s[scores={worldmapID=1016}] run function sprint_racer:levels/pyramid_village/medal_times
 execute if entity @s[scores={worldmapID=1017}] run function sprint_racer:levels/aldeao_redentor/medal_times
+
+execute if entity @s[scores={worldmapID=1018}] run function sprint_racer:levels/toy_tussle/medal_times
+execute if entity @s[scores={worldmapID=1019}] run function sprint_racer:levels/minotaur_maze/medal_times
 
 #add more here...
 

@@ -26,8 +26,8 @@ execute if entity @s[scores={BGMtrack=17}] run tag @e[tag=random,type=armor_stan
 execute if entity @s[scores={BGMtrack=18}] run tag @e[tag=random,type=armor_stand,scores={rNumber=18}] add setBGM
 execute if entity @s[scores={BGMtrack=19}] run tag @e[tag=random,type=armor_stand,scores={rNumber=19}] add setBGM
 execute if entity @s[scores={BGMtrack=20}] run tag @e[tag=random,type=armor_stand,scores={rNumber=20}] add setBGM
-#custom
 execute if entity @s[scores={BGMtrack=21}] run tag @e[tag=random,type=armor_stand,scores={rNumber=21}] add setBGM
+#custom
 execute if entity @s[scores={BGMtrack=22}] run tag @e[tag=random,type=armor_stand,scores={rNumber=22}] add setBGM
 execute if entity @s[scores={BGMtrack=23}] run tag @e[tag=random,type=armor_stand,scores={rNumber=23}] add setBGM
 execute if entity @s[scores={BGMtrack=24}] run tag @e[tag=random,type=armor_stand,scores={rNumber=24}] add setBGM
@@ -42,3 +42,4 @@ execute if entity @s[scores={BGMtrack=32}] run tag @e[tag=random,type=armor_stan
 execute if entity @s[scores={BGMtrack=33}] run tag @e[tag=random,type=armor_stand,scores={rNumber=33}] add setBGM
 execute if entity @s[scores={BGMtrack=34}] run tag @e[tag=random,type=armor_stand,scores={rNumber=34}] add setBGM
 execute if entity @s[scores={BGMtrack=35}] run tag @e[tag=random,type=armor_stand,scores={rNumber=35}] add setBGM
+execute if entity @s[scores={BGMtrack=36}] run tag @e[tag=random,type=armor_stand,scores={rNumber=36}] add setBGM

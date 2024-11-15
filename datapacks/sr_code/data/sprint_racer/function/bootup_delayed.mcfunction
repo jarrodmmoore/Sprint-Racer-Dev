@@ -197,9 +197,16 @@ scoreboard players add @e[tag=w,type=armor_stand] optRAIdiff 0
 scoreboard players add @e[tag=w,type=armor_stand] optBAIdiff 0
 
 
+#make sure command blocks are enabled
+scoreboard players set #commandBlockCheck value 0
+setblock 1556 78 406 redstone_block
+schedule function sprint_racer:verify_command_blocks_enabled 5t
+
+
 #some gamerules?
 gamerule doVinesSpread false
 gamerule spawnChunkRadius 10
+gamerule disablePlayerMovementCheck true
 
 #constants
 scoreboard players set #100 value 100

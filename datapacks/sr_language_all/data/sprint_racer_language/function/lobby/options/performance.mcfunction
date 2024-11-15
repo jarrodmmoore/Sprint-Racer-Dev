@@ -4,7 +4,7 @@ tag @e[tag=w,type=armor_stand] remove optSetB
 tag @e[tag=w,type=armor_stand] add optSetA
 
 tag @e[tag=w,tag=optSetA,tag=!moretick,tag=!halftick,tag=!autotick] add optSetB
-execute if entity @e[tag=w,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/performance"}}','{"text":"PERFORMANCE:","bold":true,"color":"black"}','{"text":"[AUTO]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
+execute if entity @e[tag=w,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/performance"}}','{"text":"PERFORMANCE","bold":true,"color":"black"}','{"text":"[AUTO]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove halftick
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove moretick
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] add autotick
@@ -14,7 +14,7 @@ tag @e[tag=w,tag=optSetB] remove optSetA
 tag @e[tag=w,tag=optSetB] remove optSetB
 
 tag @e[tag=w,tag=optSetA,tag=moretick] add optSetB
-execute if entity @e[tag=w,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/performance"}}','{"text":"PERFORMANCE:","bold":true,"color":"black"}','{"text":"[QUALITY]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
+execute if entity @e[tag=w,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/performance"}}','{"text":"PERFORMANCE","bold":true,"color":"black"}','{"text":"[QUALITY]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove halftick
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove moretick
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove autotick
@@ -24,7 +24,7 @@ tag @e[tag=w,tag=optSetB] remove optSetA
 tag @e[tag=w,tag=optSetB] remove optSetB
 
 tag @e[tag=w,tag=optSetA,tag=autotick] add optSetB
-execute if entity @e[tag=w,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/performance"}}','{"text":"PERFORMANCE:","bold":true,"color":"black"}','{"text":"[FASTER]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
+execute if entity @e[tag=w,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/performance"}}','{"text":"PERFORMANCE","bold":true,"color":"black"}','{"text":"[FASTER]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] add halftick
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove moretick
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove autotick
@@ -34,7 +34,7 @@ tag @e[tag=w,tag=optSetB] remove optSetA
 tag @e[tag=w,tag=optSetB] remove optSetB
 
 tag @e[tag=w,tag=optSetA,tag=halftick] add optSetB
-execute if entity @e[tag=w,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/performance"}}','{"text":"PERFORMANCE:","bold":true,"color":"black"}','{"text":"[QUALITY+]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
+execute if entity @e[tag=w,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/performance"}}','{"text":"PERFORMANCE","bold":true,"color":"black"}','{"text":"[QUALITY+]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove halftick
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove autotick
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] add moretick

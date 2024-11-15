@@ -28,4 +28,7 @@ execute if entity @s[scores={rNumber=16}] run function sprint_racer_language:_dl
 
 execute if entity @s[scores={rNumber=17}] run function sprint_racer_language:_dlc_5/lobby/vote_preview/aldeao_redentor
 
+execute if entity @s[scores={rNumber=18}] run function sprint_racer_language:_dlc_6/lobby/vote_preview/toy_tussle
+execute if entity @s[scores={rNumber=19}] run function sprint_racer_language:_dlc_6/lobby/vote_preview/minotaur_maze
+
 #add more here...

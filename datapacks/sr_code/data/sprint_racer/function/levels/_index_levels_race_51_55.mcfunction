@@ -4,5 +4,5 @@
 execute if entity @s[scores={rNumber=51}] run function sprint_racer:levels/candy_land/main
 execute if entity @s[scores={rNumber=52}] run function sprint_racer:levels/gummi_gorge/main
 execute if entity @s[scores={rNumber=53}] run function sprint_racer:levels/nether_castle/main
-#...
+execute if entity @s[scores={rNumber=54}] run function sprint_racer:levels/moonlit_mountains/main
 #...

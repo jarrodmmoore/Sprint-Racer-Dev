@@ -4,7 +4,7 @@ execute if entity @s[scores={creditsSeq2=1}] run title @a title ["",{"text":"\uE
 
 execute if entity @s[scores={creditsSeq2=15}] run title @a times 0 45 5
 
-execute if entity @s[scores={creditsSeq2=2}] run tellraw @a ["",{"text":"SPRINT RACER","color":"white","bold":true},{"text":" (2019, 2020, 2021)"}]
+execute if entity @s[scores={creditsSeq2=2}] run tellraw @a ["",{"text":"SPRINT RACER","color":"white","bold":true},{"text":" (2019)"}]
 execute if entity @s[scores={creditsSeq2=3}] run tellraw @a ["",{"text":"Created by Flamingosaurus and AriaZeroQueen"}]
 execute if entity @s[scores={creditsSeq2=4}] run tellraw @a ["",{"text":"In association with Team Scripted"}]
 execute if entity @s[scores={creditsSeq2=5}] run tellraw @a ["",{"text":" "}]

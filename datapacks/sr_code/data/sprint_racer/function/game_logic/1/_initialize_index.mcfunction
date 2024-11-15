@@ -67,6 +67,7 @@ execute if entity @s[scores={rNumber=49}] run function sprint_racer:levels/crash
 execute if entity @s[scores={rNumber=51}] run function sprint_racer:levels/candy_land/_initialize
 execute if entity @s[scores={rNumber=52}] run function sprint_racer:levels/gummi_gorge/_initialize
 execute if entity @s[scores={rNumber=53}] run function sprint_racer:levels/nether_castle/_initialize
+execute if entity @s[scores={rNumber=54}] run function sprint_racer:levels/moonlit_mountains/_initialize
 
 
 #add more here

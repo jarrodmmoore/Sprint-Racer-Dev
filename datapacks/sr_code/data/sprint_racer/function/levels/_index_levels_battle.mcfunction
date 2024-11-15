@@ -18,3 +18,5 @@ execute if entity @s[scores={rNumber=14}] run function sprint_racer:levels/battl
 execute if entity @s[scores={rNumber=15}] run function sprint_racer:levels/end_core/main
 execute if entity @s[scores={rNumber=16}] run function sprint_racer:levels/pyramid_village/main
 execute if entity @s[scores={rNumber=17}] run function sprint_racer:levels/aldeao_redentor/main
+execute if entity @s[scores={rNumber=18}] run function sprint_racer:levels/toy_tussle/main
+execute if entity @s[scores={rNumber=19}] run function sprint_racer:levels/minotaur_maze/main

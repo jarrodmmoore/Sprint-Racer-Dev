@@ -64,5 +64,6 @@ execute if entity @s[scores={rNumber=49}] run function sprint_racer_language:_dl
 execute if entity @s[scores={rNumber=51}] run function sprint_racer_language:_dlc_6/lobby/vote_preview/candy_land
 execute if entity @s[scores={rNumber=52}] run function sprint_racer_language:_dlc_6/lobby/vote_preview/gummi_gorge
 execute if entity @s[scores={rNumber=53}] run function sprint_racer_language:_dlc_6/lobby/vote_preview/nether_castle
+execute if entity @s[scores={rNumber=54}] run function sprint_racer_language:_dlc_6/lobby/vote_preview/moonlit_mountains
 
 #add more here...

@@ -67,6 +67,7 @@ execute if entity @s[scores={worldmapID=49}] run function sprint_racer_language:
 execute if entity @s[scores={worldmapID=51}] run function sprint_racer_language:_dlc_6/lobby/worldmap/candy_land
 execute if entity @s[scores={worldmapID=52}] run function sprint_racer_language:_dlc_6/lobby/worldmap/gummi_gorge
 execute if entity @s[scores={worldmapID=53}] run function sprint_racer_language:_dlc_6/lobby/worldmap/nether_castle
+execute if entity @s[scores={worldmapID=54}] run function sprint_racer_language:_dlc_6/lobby/worldmap/moonlit_mountains
 
 #add more here...
 
@@ -95,5 +96,8 @@ execute if entity @s[scores={worldmapID=1015}] run function sprint_racer_languag
 execute if entity @s[scores={worldmapID=1016}] run function sprint_racer_language:_dlc_4/lobby/worldmap/pyramid_village
 
 execute if entity @s[scores={worldmapID=1017}] run function sprint_racer_language:_dlc_5/lobby/worldmap/aldeao_redentor
+
+execute if entity @s[scores={worldmapID=1018}] run function sprint_racer_language:_dlc_6/lobby/worldmap/toy_tussle
+execute if entity @s[scores={worldmapID=1019}] run function sprint_racer_language:_dlc_6/lobby/worldmap/minotaur_maze
 
 #add more here...

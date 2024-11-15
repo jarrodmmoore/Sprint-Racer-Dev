@@ -21,21 +21,22 @@ execute if entity @s[scores={BGMtrack=17}] run function sprint_racer_ost:alterna
 execute if entity @s[scores={BGMtrack=18}] run function sprint_racer_ost:alternate/18_gauntlet/show_title_nologo
 execute if entity @s[scores={BGMtrack=19}] run function sprint_racer_ost:alternate/03_gameplay/show_title_nologo
 execute if entity @s[scores={BGMtrack=20}] run function sprint_racer_ost:alternate/03_gameplay/show_title_nologo
+execute if entity @s[scores={BGMtrack=21}] run function sprint_racer_ost:alternate/03_gameplay/show_title_nologo
 
-execute if entity @s[scores={BGMtrack=21}] run function sprint_racer_ost:101_custom/show_title_nologo
-execute if entity @s[scores={BGMtrack=22}] run function sprint_racer_ost:102_custom/show_title_nologo
-execute if entity @s[scores={BGMtrack=23}] run function sprint_racer_ost:103_custom/show_title_nologo
-execute if entity @s[scores={BGMtrack=24}] run function sprint_racer_ost:104_custom/show_title_nologo
-execute if entity @s[scores={BGMtrack=25}] run function sprint_racer_ost:105_custom/show_title_nologo
-execute if entity @s[scores={BGMtrack=26}] run function sprint_racer_ost:106_custom/show_title_nologo
-execute if entity @s[scores={BGMtrack=27}] run function sprint_racer_ost:107_custom/show_title_nologo
-execute if entity @s[scores={BGMtrack=28}] run function sprint_racer_ost:108_custom/show_title_nologo
-execute if entity @s[scores={BGMtrack=29}] run function sprint_racer_ost:109_custom/show_title_nologo
-execute if entity @s[scores={BGMtrack=30}] run function sprint_racer_ost:110_custom/show_title_nologo
-execute if entity @s[scores={BGMtrack=31}] run function sprint_racer_ost:111_custom/show_title_nologo
-execute if entity @s[scores={BGMtrack=32}] run function sprint_racer_ost:112_custom/show_title_nologo
-execute if entity @s[scores={BGMtrack=33}] run function sprint_racer_ost:113_custom/show_title_nologo
-execute if entity @s[scores={BGMtrack=34}] run function sprint_racer_ost:114_custom/show_title_nologo
-execute if entity @s[scores={BGMtrack=35}] run function sprint_racer_ost:115_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=22}] run function sprint_racer_ost:101_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=23}] run function sprint_racer_ost:102_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=24}] run function sprint_racer_ost:103_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=25}] run function sprint_racer_ost:104_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=26}] run function sprint_racer_ost:105_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=27}] run function sprint_racer_ost:106_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=28}] run function sprint_racer_ost:107_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=29}] run function sprint_racer_ost:108_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=30}] run function sprint_racer_ost:109_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=31}] run function sprint_racer_ost:110_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=32}] run function sprint_racer_ost:111_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=33}] run function sprint_racer_ost:112_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=34}] run function sprint_racer_ost:113_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=35}] run function sprint_racer_ost:114_custom/show_title_nologo
+execute if entity @s[scores={BGMtrack=36}] run function sprint_racer_ost:115_custom/show_title_nologo
 
-execute if entity @s[scores={BGMtrack=36..}] run tellraw @s ["",{"text":" "}]
+execute if entity @s[scores={BGMtrack=37..}] run tellraw @s ["",{"text":" "}]

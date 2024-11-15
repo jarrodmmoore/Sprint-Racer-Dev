@@ -4,7 +4,7 @@ tag @e[tag=w,type=armor_stand] remove optSetB
 tag @e[tag=w,type=armor_stand] add optSetA
 
 tag @e[tag=w,tag=optSetA,tag=optRace] add optSetB
-execute if entity @e[tag=w,tag=optSetB] run data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/gamemodes"}}','{"text":"GAMEMODES:","bold":true,"color":"black"}','{"text":"[BATTLE ONLY]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
+execute if entity @e[tag=w,tag=optSetB] run data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/gamemodes"}}','{"text":"GAMEMODES","bold":true,"color":"black"}','{"text":"[BATTLE ONLY]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] add optBattle
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove optRace
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove optRnB
@@ -17,7 +17,7 @@ tag @e[tag=w,tag=optSetB] remove optSetA
 tag @e[tag=w,tag=optSetB] remove optSetB
 
 tag @e[tag=w,tag=optSetA,tag=optBattle] add optSetB
-execute if entity @e[tag=w,tag=optSetB] run data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/gamemodes"}}','{"text":"GAMEMODES:","bold":true,"color":"black"}','{"text":"[RACE & BATTLE]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
+execute if entity @e[tag=w,tag=optSetB] run data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/gamemodes"}}','{"text":"GAMEMODES","bold":true,"color":"black"}','{"text":"[RACE & BATTLE]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] add optRnB
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove optBattle
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove optRace
@@ -28,7 +28,7 @@ tag @e[tag=w,tag=optSetB] remove optSetA
 tag @e[tag=w,tag=optSetB] remove optSetB
 
 tag @e[tag=w,tag=optSetA,tag=optRnB] add optSetB
-execute if entity @e[tag=w,tag=optSetB] run data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/gamemodes"}}','{"text":"GAMEMODES:","bold":true,"color":"black"}','{"text":"[RACE ONLY]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
+execute if entity @e[tag=w,tag=optSetB] run data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/gamemodes"}}','{"text":"GAMEMODES","bold":true,"color":"black"}','{"text":"[RACE ONLY]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] add optRace
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove optRnB
 execute if entity @e[tag=w,tag=optSetB] run tag @e[tag=w,type=armor_stand] remove optBattle

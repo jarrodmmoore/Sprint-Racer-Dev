@@ -5,7 +5,7 @@ execute if entity @s[scores={rNumber=50}] run function sprint_racer:levels/under
 execute if entity @s[scores={rNumber=1}] run function sprint_racer:levels/windy_watch/start_countdown
 execute if entity @s[scores={rNumber=2}] run function sprint_racer:levels/shiver_stream_caverns/start_countdown
 execute if entity @s[scores={rNumber=3}] run function sprint_racer:levels/block_island/start_countdown
-execute if entity @s[scores={rNumber=4}] run function sprint_racer:levels/sedove_town/start_countdown
+execute if entity @s[scores={rNumber=4}] run function sprint_racer:levels/sedove_isle/start_countdown
 execute if entity @s[scores={rNumber=5}] run function sprint_racer:levels/metro_plaza/start_countdown
 execute if entity @s[scores={rNumber=6}] run function sprint_racer:levels/scorched_sands/start_countdown
 execute if entity @s[scores={rNumber=7}] run function sprint_racer:levels/greenhouse/start_countdown
@@ -19,3 +19,5 @@ execute if entity @s[scores={rNumber=14}] run function sprint_racer:levels/battl
 execute if entity @s[scores={rNumber=15}] run function sprint_racer:levels/end_core/start_countdown
 execute if entity @s[scores={rNumber=16}] run function sprint_racer:levels/pyramid_village/start_countdown
 execute if entity @s[scores={rNumber=17}] run function sprint_racer:levels/aldeao_redentor/start_countdown
+execute if entity @s[scores={rNumber=18}] run function sprint_racer:levels/toy_tussle/start_countdown
+execute if entity @s[scores={rNumber=19}] run function sprint_racer:levels/minotaur_maze/start_countdown

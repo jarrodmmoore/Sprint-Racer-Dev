@@ -280,6 +280,11 @@ summon armor_stand ~ ~ ~ {Marker:1b,NoGravity:1b,Invisible:1b,Invulnerable:1b,Ta
 scoreboard players set @e[tag=setme] rNumber 53
 tag @e[tag=setme] remove setme
 
+#54
+summon armor_stand ~ ~ ~ {Marker:1b,NoGravity:1b,Invisible:1b,Invulnerable:1b,Tags:["random","setme"],UUID:[I;0,808,0,54]}
+scoreboard players set @e[tag=setme] rNumber 54
+tag @e[tag=setme] remove setme
+
 scoreboard players set @e[tag=random,scores={rNumber=1..}] randomCooldown 0
 scoreboard players set @e[tag=random,scores={rNumber=1..}] randomCooldown2 0
 scoreboard players set @e[tag=random,scores={rNumber=1..}] trackBestTime 0

@@ -56,3 +56,4 @@ execute if entity @s[scores={rNumber=49}] run function sprint_racer:levels/crash
 execute if entity @s[scores={rNumber=51}] run function sprint_racer:levels/candy_land/start_countdown
 execute if entity @s[scores={rNumber=52}] run function sprint_racer:levels/gummi_gorge/start_countdown
 execute if entity @s[scores={rNumber=53}] run function sprint_racer:levels/nether_castle/start_countdown
+execute if entity @s[scores={rNumber=54}] run function sprint_racer:levels/moonlit_mountains/start_countdown
