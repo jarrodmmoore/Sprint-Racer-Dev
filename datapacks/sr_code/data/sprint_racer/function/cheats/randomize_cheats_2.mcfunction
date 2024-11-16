@@ -1,4 +1,4 @@
-#run by "@e[tag=cheats]"
+#run by "@e[tag=cheats,x=1550,y=148,z=406,distance=..1]"
 
 
 #let's generate some random numbers, baby

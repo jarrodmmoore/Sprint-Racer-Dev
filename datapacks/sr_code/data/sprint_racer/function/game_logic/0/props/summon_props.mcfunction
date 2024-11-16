@@ -75,7 +75,7 @@ summon armor_stand 1658 85 418 {Tags:["lobbyprop","creditstand","creditcycle","c
 summon armor_stand 1658 85 418 {Tags:["lobbyprop","creditstand","creditcycle","cc12"],Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ShowArms:1b,Rotation:[115.0f],ArmorItems:[{id:"leather_boots",count:1,components:{"minecraft:dyed_color":{rgb:10617087}}},{id:"leather_leggings",count:1,components:{"minecraft:dyed_color":{rgb:5395307}}},{id:"leather_chestplate",count:1,components:{"minecraft:dyed_color":{rgb:5720283}}},{id:"player_head",count:1,components:{"minecraft:profile":{id:[I;269213154,2053260077,-1269152836,-1074862549],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg3NWVlNTYwODU0MWExYTIwMjE0MzkzMzU2MTA5NGVlMWNjZWNlNGMwZTg4ZWY5M2U5NWJjNWQ5NzEzYjk5NCJ9fX0="}]}}}],HandItems:[{id:"wooden_axe",count:1},{}],DisabledSlots:4144959,CustomName:'{"text":"MichaelMana","color":"light_purple"}',CustomNameVisible:0b,Pose:{Head:[0.0f,0.0f,356.0f],LeftLeg:[0.0f,0.0f,354.0f],LeftArm:[201.0f,0.0f,20.0f],RightArm:[0.0f,0.0f,10.0f]}}
 summon armor_stand 1658 85 418 {Tags:["lobbyprop","creditstand","creditcycle","cc13"],Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ShowArms:1b,Rotation:[113.0f],CustomName:'{"text":"Endermity","color":"dark_purple"}',ArmorItems:[{id:"leather_boots",count:1,components:{"minecraft:dyed_color":{rgb:0}}},{id:"leather_leggings",count:1,components:{"minecraft:dyed_color":{rgb:0}}},{id:"leather_chestplate",count:1,components:{"minecraft:dyed_color":{rgb:6430950}}},{id:"player_head",count:1,components:{"minecraft:profile":{id:[I;-12545910,-2014819102,-1257731038,1120729912],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ3NjIzMTBmOWRmZTgzMjA1NTRjMDg5N2U0NzU3MjRlOThjYTVkNDgyMGM5Y2JlNmQ3NWE4YzU0MGYxOGJkMCJ9fX0="}]}}}],HandItems:[{id:"elytra",count:1},{id:"tnt",count:1}],DisabledSlots:4144959,Pose:{LeftLeg:[16.0f,8.0f,348.0f],RightLeg:[350.0f,14.0f,4.0f],LeftArm:[344.0f,32.0f,330.0f],RightArm:[271.0f,38.0f,26.0f]}}
 
-execute if entity @e[tag=cheats,type=armor_stand,tag=11a] as @e[tag=creditstand] run function sprint_racer:cheats/homing_entity_chance_rare
+execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=11a] as @e[tag=creditstand] run function sprint_racer:cheats/homing_entity_chance_rare
 
 #credits
 function sprint_racer_language:lobby/credits
@@ -84,119 +84,123 @@ tag @e[tag=up2,type=armor_stand] remove up2
 function sprint_racer_language:_dlc_2/lobby/credits
 
 #tropical fish in aquariums
-summon tropical_fish 1667 91 393 {Tags:["lobbyprop"],PersistenceRequired:1,Variant:65792}
-summon tropical_fish 1667 91 393 {Tags:["lobbyprop"],PersistenceRequired:1,Variant:151388672}
-summon tropical_fish 1667 91 393 {Tags:["lobbyprop"],PersistenceRequired:1,Variant:218825729}
-summon tropical_fish 1667 91 393 {Tags:["lobbyprop"],PersistenceRequired:1,Variant:67568896}
+summon tropical_fish 1667 91 393 {Tags:["lobbyprop"],PersistenceRequired:1b,Variant:65792}
+summon tropical_fish 1667 91 393 {Tags:["lobbyprop"],PersistenceRequired:1b,Variant:151388672}
+summon tropical_fish 1667 91 393 {Tags:["lobbyprop"],PersistenceRequired:1b,Variant:218825729}
+summon tropical_fish 1667 91 393 {Tags:["lobbyprop"],PersistenceRequired:1b,Variant:67568896}
 
-summon tropical_fish 1667 91 419 {Tags:["lobbyprop"],PersistenceRequired:1,Variant:202310144}
-summon tropical_fish 1667 91 419 {Tags:["lobbyprop"],PersistenceRequired:1,Variant:100925441}
-summon tropical_fish 1667 91 419 {Tags:["lobbyprop"],PersistenceRequired:1,Variant:984320}
-summon tropical_fish 1667 91 419 {Tags:["lobbyprop"],PersistenceRequired:1,Variant:656129}
+summon tropical_fish 1667 91 419 {Tags:["lobbyprop"],PersistenceRequired:1b,Variant:202310144}
+summon tropical_fish 1667 91 419 {Tags:["lobbyprop"],PersistenceRequired:1b,Variant:100925441}
+summon tropical_fish 1667 91 419 {Tags:["lobbyprop"],PersistenceRequired:1b,Variant:984320}
+summon tropical_fish 1667 91 419 {Tags:["lobbyprop"],PersistenceRequired:1b,Variant:656129}
+
+#clock on wall
+summon item_display 1596 90 356 {Tags:["lobbyprop"],UUID:[I;2345,54670,3450,1230],item_display:"head",item:{id:"minecraft:clock",count:1}}
+execute as 00000929-0000-d58e-0000-0d7a000004ce at @s run tp @s ~ ~.5 ~ 180 0
 
 #preview items
-summon item 1603 80 422 {Tags:["lobbyprop","itempreview","ip1"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:snowball",count:3,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1605 80 422 {Tags:["lobbyprop","itempreview","ip2"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:dispenser",count:3,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1607 80 422 {Tags:["lobbyprop","itempreview","ip3"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:tnt",count:3,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1609 80 422 {Tags:["lobbyprop","itempreview","ip4"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:golden_sword",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1611 80 422 {Tags:["lobbyprop","itempreview","ip5"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:apple",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1613 80 422 {Tags:["lobbyprop","itempreview","ip6"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:glass",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1615 80 422 {Tags:["lobbyprop","itempreview","ip7"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:iron_ingot",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1617 80 422 {Tags:["lobbyprop","itempreview","ip8"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:totem_of_undying",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1619 80 422 {Tags:["lobbyprop","itempreview","ip9"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:emerald",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1621 80 422 {Tags:["lobbyprop","itempreview","ip10"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:gold_ingot",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1603 80 422 {Tags:["lobbyprop","itempreview","ip1"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:snowball",count:3,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1605 80 422 {Tags:["lobbyprop","itempreview","ip2"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:dispenser",count:3,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1607 80 422 {Tags:["lobbyprop","itempreview","ip3"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:tnt",count:3,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1609 80 422 {Tags:["lobbyprop","itempreview","ip4"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:golden_sword",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1611 80 422 {Tags:["lobbyprop","itempreview","ip5"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:apple",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1613 80 422 {Tags:["lobbyprop","itempreview","ip6"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:glass",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1615 80 422 {Tags:["lobbyprop","itempreview","ip7"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:iron_ingot",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1617 80 422 {Tags:["lobbyprop","itempreview","ip8"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:totem_of_undying",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1619 80 422 {Tags:["lobbyprop","itempreview","ip9"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:emerald",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1621 80 422 {Tags:["lobbyprop","itempreview","ip10"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:gold_ingot",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
 
-summon item 1603 80 433 {Tags:["lobbyprop","itempreview","ip11"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:ender_pearl",count:3,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1605 80 433 {Tags:["lobbyprop","itempreview","ip12"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:elytra",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1607 80 433 {Tags:["lobbyprop","itempreview","ip13"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:slime_block",count:5,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1609 80 433 {Tags:["lobbyprop","itempreview","ip14"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:lingering_potion",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1611 80 433 {Tags:["lobbyprop","itempreview","ip15"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:bricks",count:1,components:{"minecraft:custom_model_data":1111111,"minecraft:custom_data":{stay:1b}}}}
-summon item 1613 80 433 {Tags:["lobbyprop","itempreview","ip16"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:trapped_chest",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1615 80 433 {Tags:["lobbyprop","itempreview","ip17"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:anvil",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1617 80 433 {Tags:["lobbyprop","itempreview","ip18"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:black_terracotta",count:1,components:{"minecraft:custom_model_data":1111111,"minecraft:custom_data":{stay:1b}}}}
-summon item 1619 80 433 {Tags:["lobbyprop","itempreview","ip19"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:blue_terracotta",count:1,components:{"minecraft:custom_model_data":1111111,"minecraft:custom_data":{stay:1b}}}}
-summon item 1621 80 433 {Tags:["lobbyprop","itempreview","ip20"],PickupDelay:32767,Age:-32768,NoGravity:0,Invulnerable:1b,Item:{id:"minecraft:blaze_rod",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1603 80 433 {Tags:["lobbyprop","itempreview","ip11"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:ender_pearl",count:3,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1605 80 433 {Tags:["lobbyprop","itempreview","ip12"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:elytra",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1607 80 433 {Tags:["lobbyprop","itempreview","ip13"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:slime_block",count:5,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1609 80 433 {Tags:["lobbyprop","itempreview","ip14"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:lingering_potion",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1611 80 433 {Tags:["lobbyprop","itempreview","ip15"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:bricks",count:1,components:{"minecraft:custom_model_data":1111111,"minecraft:custom_data":{stay:1b}}}}
+summon item 1613 80 433 {Tags:["lobbyprop","itempreview","ip16"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:trapped_chest",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1615 80 433 {Tags:["lobbyprop","itempreview","ip17"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:anvil",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
+summon item 1617 80 433 {Tags:["lobbyprop","itempreview","ip18"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:black_terracotta",count:1,components:{"minecraft:custom_model_data":1111111,"minecraft:custom_data":{stay:1b}}}}
+summon item 1619 80 433 {Tags:["lobbyprop","itempreview","ip19"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:blue_terracotta",count:1,components:{"minecraft:custom_model_data":1111111,"minecraft:custom_data":{stay:1b}}}}
+summon item 1621 80 433 {Tags:["lobbyprop","itempreview","ip20"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:blaze_rod",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
 
 
 #summon random lookin villagers to walk around
 scoreboard players operation @e[tag=w,type=armor_stand] rNumber = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..4}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1..2}] run summon villager 1585 97 350 {Tags:["babyVillager","lobbyprop","walk"],VillagerData:{profession:"nitwit",level:99,type:"taiga"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1b,Age:-9999999}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2..3}] run summon villager 1586 97 349 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1b,Age:-9999999}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1..2}] run summon villager 1585 97 350 {Tags:["babyVillager","lobbyprop","walk"],VillagerData:{profession:"nitwit",level:99,type:"taiga"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-9999999}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2..3}] run summon villager 1586 97 349 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-9999999}
 
 scoreboard players operation @e[tag=w,type=armor_stand] rNumber = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..5}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1..2}] run summon villager 1602 88 371 {Tags:["lobbyprop","walk"],VillagerData:{profession:"mason",level:99,type:"taiga"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2..3}] run summon villager 1617 88 433 {Tags:["lobbyprop","walk"],VillagerData:{profession:"farmer",level:99,type:"desert"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1..2}] run summon villager 1602 88 371 {Tags:["lobbyprop","walk"],VillagerData:{profession:"mason",level:99,type:"taiga"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2..3}] run summon villager 1617 88 433 {Tags:["lobbyprop","walk"],VillagerData:{profession:"farmer",level:99,type:"desert"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 
 scoreboard players operation @e[tag=w,type=armor_stand] rNumber = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..3}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1}] run summon villager 1645 88 416 {Tags:["lobbyprop","walk"],VillagerData:{profession:"cartographer",level:99,type:"plains"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2}] run summon villager 1611 88 389 {Tags:["lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1}] run summon villager 1645 88 416 {Tags:["lobbyprop","walk"],VillagerData:{profession:"cartographer",level:99,type:"plains"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2}] run summon villager 1611 88 389 {Tags:["lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 
 scoreboard players operation @e[tag=w,type=armor_stand] rNumber = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..5}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1}] run summon villager 1594 88 406 {Tags:["lobbyprop","walk"],VillagerData:{profession:"toolsmith",level:99,type:"jungle"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2}] run summon villager 1626 88 406 {Tags:["lobbyprop","run"],VillagerData:{profession:"cleric",level:99,type:"snow"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1}] run summon villager 1594 88 406 {Tags:["lobbyprop","walk"],VillagerData:{profession:"toolsmith",level:99,type:"jungle"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2}] run summon villager 1626 88 406 {Tags:["lobbyprop","run"],VillagerData:{profession:"cleric",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 
 scoreboard players operation @e[tag=w,type=armor_stand] rNumber = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..3}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1}] run summon villager 1598 97 460 {Tags:["lobbyprop","walk"],VillagerData:{profession:"toolsmith",level:99,type:"jungle"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2}] run summon villager 1598 97 464 {Tags:["lobbyprop","run"],VillagerData:{profession:"cleric",level:99,type:"snow"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1}] run summon villager 1598 97 460 {Tags:["lobbyprop","walk"],VillagerData:{profession:"toolsmith",level:99,type:"jungle"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2}] run summon villager 1598 97 464 {Tags:["lobbyprop","run"],VillagerData:{profession:"cleric",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 
 #1 in 20 chance to spawn fletcher gang
 scoreboard players operation @e[tag=w,type=armor_stand] rNumber = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..20}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1570 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1572 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1574 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1576 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1578 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1580 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1570 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1572 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1574 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1576 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1578 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1580 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 
 #1 in 100 chance to spawn Mom + kids (this can't overlap with fletcher gang)
 scoreboard players operation @e[tag=w,type=armor_stand] math2 = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..5}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1580 88 387 {Tags:["lobbyprop","run"],VillagerData:{profession:"librarian",level:99,type:"plains"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1b,CustomNameVisible:1b,CustomName:'{"text":"Mom"}'}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1578 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"swamp"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1b,Age:-6000}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1576 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"snow"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1b,Age:-12000}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1574 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"taiga"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1b,Age:-18000}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1572 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"desert"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1b,Age:-24000}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1570 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1b,Age:-30000}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1580 88 387 {Tags:["lobbyprop","run"],VillagerData:{profession:"librarian",level:99,type:"plains"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,CustomNameVisible:1b,CustomName:'{"text":"Mom"}'}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1578 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"swamp"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-6000}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1576 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-12000}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1574 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"taiga"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-18000}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1572 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"desert"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-24000}
+execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1570 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-30000}
 
-execute if entity @e[tag=cheats,type=armor_stand,tag=11a] as @e[tag=lobbyprop,tag=walk] run function sprint_racer:cheats/homing_entity_chance_rare
-execute if entity @e[tag=cheats,type=armor_stand,tag=11a] as @e[tag=lobbyprop,tag=run] run function sprint_racer:cheats/homing_entity_chance_rare
+execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=11a] as @e[tag=lobbyprop,tag=walk] run function sprint_racer:cheats/homing_entity_chance_rare
+execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=11a] as @e[tag=lobbyprop,tag=run] run function sprint_racer:cheats/homing_entity_chance_rare
 
 #stationary villagers
 #coffee shop
-summon villager 1576 88 446 {Tags:["stationary_v","lobbyprop","facenorth","lookatplayer"],VillagerData:{profession:"armorer",level:99,type:"savanna"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1588 88.5 432 {Tags:["stationary_v","lobbyprop","facenorth"],VillagerData:{profession:"nitwit",level:99,type:"plains"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1584 88.5 437 {Tags:["stationary_v","lobbyprop","facewest"],VillagerData:{profession:"nitwit",level:99,type:"swamp"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1576 88 446 {Tags:["stationary_v","lobbyprop","facenorth","lookatplayer"],VillagerData:{profession:"armorer",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1588 88.5 432 {Tags:["stationary_v","lobbyprop","facenorth"],VillagerData:{profession:"nitwit",level:99,type:"plains"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1584 88.5 437 {Tags:["stationary_v","lobbyprop","facewest"],VillagerData:{profession:"nitwit",level:99,type:"swamp"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 #bank
-summon villager 1575 88.25 368 {Tags:["stationary_v","lobbyprop","facesouth","lookatplayer"],VillagerData:{profession:"cartographer",level:99,type:"plains"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1580 88.25 368 {Tags:["stationary_v","lobbyprop","facesouth","lookatplayer"],VillagerData:{profession:"cartographer",level:99,type:"plains"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1585 88.25 368 {Tags:["stationary_v","lobbyprop","facesouth","lookatplayer"],VillagerData:{profession:"cartographer",level:99,type:"plains"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1590 88 381 {Tags:["stationary_v","lobbyprop","facenorth"],VillagerData:{profession:"nitwit",level:99,type:"desert"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1575 88.25 368 {Tags:["stationary_v","lobbyprop","facesouth","lookatplayer"],VillagerData:{profession:"cartographer",level:99,type:"plains"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1580 88.25 368 {Tags:["stationary_v","lobbyprop","facesouth","lookatplayer"],VillagerData:{profession:"cartographer",level:99,type:"plains"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1585 88.25 368 {Tags:["stationary_v","lobbyprop","facesouth","lookatplayer"],VillagerData:{profession:"cartographer",level:99,type:"plains"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1590 88 381 {Tags:["stationary_v","lobbyprop","facenorth"],VillagerData:{profession:"nitwit",level:99,type:"desert"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 #police station
-summon villager 1602 88 367 {Tags:["stationary_v","lobbyprop","facesouth","lookatplayer"],VillagerData:{profession:"weaponsmith",level:99,type:"plains"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1613 88 378 {Tags:["stationary_v","lobbyprop","facenorth"],VillagerData:{profession:"weaponsmith",level:99,type:"savanna"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1613 88 375 {Tags:["stationary_v","lobbyprop","facesouth"],VillagerData:{profession:"weaponsmith",level:99,type:"savanna"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1602 88 367 {Tags:["stationary_v","lobbyprop","facesouth","lookatplayer"],VillagerData:{profession:"weaponsmith",level:99,type:"plains"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1613 88 378 {Tags:["stationary_v","lobbyprop","facenorth"],VillagerData:{profession:"weaponsmith",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1613 88 375 {Tags:["stationary_v","lobbyprop","facesouth"],VillagerData:{profession:"weaponsmith",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 #arcade
-summon villager 1611 88 438 {Tags:["stationary_v","lobbyprop","facenorth","lookatplayer"],VillagerData:{profession:"fletcher",level:99,type:"swamp"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1612 88 439 {Tags:["stationary_v","lobbyprop","faceeast","lookatplayer"],VillagerData:{profession:"fletcher",level:99,type:"swamp"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1606 97 434 {Tags:["stationary_v","lobbyprop","faceeast","lookatplayer"],VillagerData:{profession:"fletcher",level:99,type:"swamp"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1606 97 450 {Tags:["stationary_v","lobbyprop","facesouth","lookatplayer"],VillagerData:{profession:"mason",level:99,type:"swamp"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1611 88 438 {Tags:["stationary_v","lobbyprop","facenorth","lookatplayer"],VillagerData:{profession:"fletcher",level:99,type:"swamp"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1612 88 439 {Tags:["stationary_v","lobbyprop","faceeast","lookatplayer"],VillagerData:{profession:"fletcher",level:99,type:"swamp"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1606 97 434 {Tags:["stationary_v","lobbyprop","faceeast","lookatplayer"],VillagerData:{profession:"fletcher",level:99,type:"swamp"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1606 97 450 {Tags:["stationary_v","lobbyprop","facesouth","lookatplayer"],VillagerData:{profession:"mason",level:99,type:"swamp"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 #staring at wall?
-summon villager 1623 92 368 {Tags:["stationary_v","lobbyprop","facewest","lookatplayer"],VillagerData:{profession:"nitwit",level:99,type:"snow"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1623 92 368 {Tags:["stationary_v","lobbyprop","facewest","lookatplayer"],VillagerData:{profession:"nitwit",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 #lap pool
-summon villager 1677 87.5 370 {Tags:["stationary_v","lobbyprop","facesouth"],VillagerData:{profession:"nitwit",level:99,type:"plains"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1661 87.5 370 {Tags:["stationary_v","lobbyprop","faceeast"],VillagerData:{profession:"nitwit",level:99,type:"snow"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1677 87.5 370 {Tags:["stationary_v","lobbyprop","facesouth"],VillagerData:{profession:"nitwit",level:99,type:"plains"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1661 87.5 370 {Tags:["stationary_v","lobbyprop","faceeast"],VillagerData:{profession:"nitwit",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 #lazy river
-summon villager 1658 87.5 433 {Tags:["stationary_v","lobbyprop","facenorth"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1656 87.5 440 {Tags:["stationary_v","lobbyprop","facesouth"],VillagerData:{profession:"nitwit",level:99,type:"taiga"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1663 87.5 443 {Tags:["stationary_v","lobbyprop","faceeast"],VillagerData:{profession:"nitwit",level:99,type:"desert"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1687 87.5 437 {Tags:["stationary_v","lobbyprop","facewest"],VillagerData:{profession:"nitwit",level:99,type:"desert"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1683 87.5 434 {Tags:["stationary_v","lobbyprop","facenorth"],VillagerData:{profession:"nitwit",level:99,type:"plains"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1658 87.5 433 {Tags:["stationary_v","lobbyprop","facenorth"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1656 87.5 440 {Tags:["stationary_v","lobbyprop","facesouth"],VillagerData:{profession:"nitwit",level:99,type:"taiga"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1663 87.5 443 {Tags:["stationary_v","lobbyprop","faceeast"],VillagerData:{profession:"nitwit",level:99,type:"desert"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1687 87.5 437 {Tags:["stationary_v","lobbyprop","facewest"],VillagerData:{profession:"nitwit",level:99,type:"desert"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1683 87.5 434 {Tags:["stationary_v","lobbyprop","facenorth"],VillagerData:{profession:"nitwit",level:99,type:"plains"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 #looking out on rim
-summon villager 1608 97 348 {Tags:["stationary_v","lobbyprop","facenorth"],VillagerData:{profession:"weaponsmith",level:99,type:"snow"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1608 97 348 {Tags:["stationary_v","lobbyprop","facenorth"],VillagerData:{profession:"weaponsmith",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 #lovers on the rim
-summon villager 1593 97 465 {Tags:["stationary_v","lobbyprop","facesouth"],VillagerData:{profession:"shepherd",level:99,type:"taiga"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
-summon villager 1592 97 465 {Tags:["stationary_v","lobbyprop","facesouth"],VillagerData:{profession:"toolsmith",level:99,type:"savanna"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1593 97 465 {Tags:["stationary_v","lobbyprop","facesouth"],VillagerData:{profession:"shepherd",level:99,type:"taiga"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+summon villager 1592 97 465 {Tags:["stationary_v","lobbyprop","facesouth"],VillagerData:{profession:"toolsmith",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 #diamond guy
-summon villager 1584 97 351 {Tags:["stationary_v","lobbyprop"],Rotation:[15.0f,-25.0f],HandItems:[{id:"minecraft:diamond",count:1,components:{"minecraft:enchantment_glint_override":1b,"minecraft:attribute_modifiers":{modifiers:[{id:"theforbiddendiamond",operation:"add_multiplied_total",type:"movement_speed",amount:2,slot:"mainhand"}]}}},{}],HandDropChances:[0.0f,0.085f],VillagerData:{profession:"minecraft:librarian",type:"minecraft:taiga"},PersistenceRequired:1,Silent:1,NoAI:1,Invulnerable:1b,Offers:{}}
+summon villager 1584 97 351 {Tags:["stationary_v","lobbyprop"],Rotation:[15.0f,-25.0f],HandItems:[{id:"minecraft:diamond",count:1,components:{"minecraft:enchantment_glint_override":1b,"minecraft:attribute_modifiers":{modifiers:[{id:"theforbiddendiamond",operation:"add_multiplied_total",type:"movement_speed",amount:2,slot:"mainhand"}]}}},{}],HandDropChances:[0.0f,0.085f],VillagerData:{profession:"minecraft:librarian",type:"minecraft:taiga"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Offers:{}}
 
 #assign a text message to each villager
 scoreboard players set global villagerTip 1
@@ -217,12 +221,12 @@ execute positioned 1574 98 444 positioned ~ ~ ~.5 run summon minecraft:armor_sta
 execute positioned 1594 92 461 positioned ~-.4 ~ ~-.4 run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"FRIENDLYFIRE","bold":true,"italic":false}'}
 execute positioned 1563 98 343 run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"NOAFK","bold":true,"italic":false}'}
 execute positioned 1578 97 372 run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"ALWAYSSUNNY","bold":true,"italic":false}'}
-execute if entity @e[type=armor_stand,tag=cheats,tag=17,tag=18,tag=19,tag=42,tag=43,tag=44] positioned 1580 98 438 positioned ~.5 ~ ~ run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"CUSTOMAI","bold":true,"italic":false}'}
+execute if entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=17,tag=18,tag=19,tag=42,tag=43,tag=44] positioned 1580 98 438 positioned ~.5 ~ ~ run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"CUSTOMAI","bold":true,"italic":false}'}
 execute if entity @e[tag=w,type=armor_stand,tag=COPPA] positioned 1580 98 451 positioned ~.5 ~ ~ run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"SLOTLIMIT","bold":true,"italic":false}'}
 
 #cheat help door opens if 30 eggs are discovered
 scoreboard players set #cheats_discovered value 0
-execute as @e[tag=cheats,type=armor_stand] run function sprint_racer:cheats/count_discovered_cheats
+execute as @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand] run function sprint_racer:cheats/count_discovered_cheats
 execute unless score #cheats_discovered value matches 30.. run setblock 1577 96 452 minecraft:dark_prismarine
 execute if score #cheats_discovered value matches 30.. run setblock 1577 96 452 minecraft:redstone_torch
 

@@ -5,8 +5,8 @@ scoreboard players operation @e[tag=giveID] playerID = @s playerID
 execute if entity @s[tag=playerCyan] run tag @e[tag=giveID,limit=1] add itemCyan
 
 #sneaking, throw item!
-execute if entity @s[scores={moveState=3}] unless entity @e[tag=cheats,type=armor_stand,tag=40a] at @s run function sprint_racer:items/item_tick/throw_velocity
-execute if entity @e[tag=cheats,type=armor_stand,tag=40a] at @s run function sprint_racer:items/item_tick/throw_velocity_super
+execute if entity @s[scores={moveState=3}] unless entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=40a] at @s run function sprint_racer:items/item_tick/throw_velocity
+execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=40a] at @s run function sprint_racer:items/item_tick/throw_velocity_super
 
 tag @e[tag=giveID] remove giveID
 playsound minecraft:entity.magma_cube.hurt master @a

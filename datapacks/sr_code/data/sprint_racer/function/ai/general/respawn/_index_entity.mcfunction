@@ -1,5 +1,5 @@
 #cheat code overrides for parameters
-execute if entity @e[limit=1,type=armor_stand,tag=54a,tag=cheats] run function sprint_racer:ai/general/respawn/_custom_ai_type
+execute if entity @e[limit=1,type=armor_stand,tag=54a,tag=cheats,x=1550,y=148,z=406,distance=..1] run function sprint_racer:ai/general/respawn/_custom_ai_type
 
 execute if entity @s[scores={aiEntity=1001..1009}] run function sprint_racer:ai/general/respawn/entity_type_1000s
 execute unless entity @s[scores={aiEntity=2..}] run function sprint_racer:ai/general/respawn/entity_type_1

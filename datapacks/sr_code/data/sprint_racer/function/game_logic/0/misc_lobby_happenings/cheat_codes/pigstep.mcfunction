@@ -5,9 +5,9 @@ function sprint_racer_language:_dlc_3/lobby/cheat_room/cheat_found/pigstep
 tellraw @a ["",{"text":" "}]
 
 #stuff
-tag @e[tag=cheats] add foundacheat
-tag @e[tag=cheats] add 44
+tag @e[tag=cheats,x=1550,y=148,z=406,distance=..1] add foundacheat
+tag @e[tag=cheats,x=1550,y=148,z=406,distance=..1] add 44
 
 #set display
-scoreboard players set @e[tag=cheats] aiHoldingItem 44
+scoreboard players set @e[tag=cheats,x=1550,y=148,z=406,distance=..1] aiHoldingItem 44
 function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/_index_cheat_menu

@@ -1,7 +1,7 @@
 #function is called each tick if at least one cheat is enabled
 
 #view enabled cheats via /trigger
-execute as @a[scores={viewCheats=1}] run function sprint_racer_language:_dlc_5/join_messages/cheats_are_enabled
+execute as @a[scores={viewCheats=1}] run function sprint_racer_language:_dlc_6/join_messages/cheats_are_enabled
 
 #this function is subdivided to reduce the number of condition checks happening each tick
 execute if entity @e[tag=w,type=armor_stand,tag=cheatdetected1_5] run function sprint_racer:cheats/_cheats_1_5

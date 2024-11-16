@@ -1,4 +1,4 @@
-#run by "@e[tag=cheats]"
+#run by "@e[tag=cheats,x=1550,y=148,z=406,distance=..1]"
 tag @s remove 01a
 tag @s remove 02a
 tag @s remove 03a
@@ -61,6 +61,10 @@ tag @s remove 59a
 tag @s remove 60a
 tag @s remove 61a
 tag @s remove 62a
+tag @s remove 63a
+tag @s remove 64a
+tag @s remove 65a
+tag @s remove 66a
 
 #update the cheats list
 function sprint_racer:cheats/check_for_cheats

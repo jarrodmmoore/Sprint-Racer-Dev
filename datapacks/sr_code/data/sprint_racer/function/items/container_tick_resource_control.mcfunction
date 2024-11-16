@@ -34,7 +34,7 @@ tag @e[tag=bePatient] remove bePatient
 #immediate cooldown in battle resource control because it's fun!!
 scoreboard players set @a[tag=playing,scores={itemCooldown=2..}] itemCooldown 1
 scoreboard players set @a[tag=playing,scores={itemCooldown2=..51}] itemCooldown2 51
-execute if entity @e[tag=AImaster,type=armor_stand] unless entity @e[tag=cheats,type=armor_stand,tag=35a] run scoreboard players set @e[tag=ai,scores={itemCooldown=2..}] itemCooldown 1
-execute if entity @e[tag=AImaster,type=armor_stand] unless entity @e[tag=cheats,type=armor_stand,tag=35a] run scoreboard players set @e[tag=ai,scores={itemCooldown2=..51}] itemCooldown2 51
+execute if entity @e[tag=AImaster,type=armor_stand] unless entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=35a] run scoreboard players set @e[tag=ai,scores={itemCooldown=2..}] itemCooldown 1
+execute if entity @e[tag=AImaster,type=armor_stand] unless entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=35a] run scoreboard players set @e[tag=ai,scores={itemCooldown2=..51}] itemCooldown2 51
 #found a chest? carry out
 execute as @e[tag=activeplayer,scores={itemBlockState=1..}] at @s positioned ~ ~-1 ~ run function sprint_racer:items/container_index

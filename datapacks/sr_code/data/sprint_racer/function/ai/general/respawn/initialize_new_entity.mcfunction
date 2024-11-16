@@ -131,8 +131,12 @@ execute if score #test value matches ..0 if score global aiLevel matches 5.. run
 execute if score #test value matches ..0 if score global aiLevel matches 5.. unless entity @e[tag=w,type=armor_stand,scores={optAIdiff=0..1}] run scoreboard players add @s[tag=ai1,tag=!very_easy_ai,scores={aiSkill=..2}] aiSkill 1
 
 #cheat code overrides difficulty at the last possible second...
-execute if entity @e[limit=1,type=armor_stand,tag=54a,tag=cheats] run function sprint_racer:ai/general/respawn/_custom_ai_difficulty
+execute if entity @e[limit=1,type=armor_stand,tag=54a,tag=cheats,x=1550,y=148,z=406,distance=..1] run function sprint_racer:ai/general/respawn/_custom_ai_difficulty
 
+#attributes related to cheat codes
+execute if entity @e[tag=w,type=armor_stand,tag=cheatdetected] run function sprint_racer:cheats/update_player_attributes_ai
+
+#team
 team join player @s
 
 #assign to team

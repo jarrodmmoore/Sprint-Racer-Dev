@@ -3,9 +3,9 @@
 #tag @e[tag=w,type=armor_stand] add RAIautocount
 #tag @e[tag=w,type=armor_stand] add BAIautocount
 
-tag @e[tag=w,type=armor_stand] add autotick
-tag @e[tag=w,type=armor_stand,scores={gameState=0}] add halftick
-tag @e[tag=w,type=armor_stand] remove moretick
+tag @e[tag=w,type=armor_stand] remove autotick
+tag @e[tag=w,type=armor_stand] remove halftick
+tag @e[tag=w,type=armor_stand] add moretick
 
 tag @e[tag=w,type=armor_stand] add noMusicReset
 

@@ -1,4 +1,4 @@
-execute if entity @s[tag=skip_available,scores={nCheck=2}] if entity @e[type=armor_stand,tag=50a,tag=cheats] run function sprint_racer:cheats/skip_checkpoint
+execute if entity @s[tag=skip_available,scores={nCheck=2}] if entity @e[type=armor_stand,tag=50a,tag=cheats,x=1550,y=148,z=406,distance=..1] run function sprint_racer:cheats/skip_checkpoint
 
 execute if entity @s[tag=checkIncrement] run scoreboard players operation @s storedTimeMin = @e[limit=1,tag=w,type=armor_stand] currentTimeMin
 execute if entity @s[tag=checkIncrement] run scoreboard players operation @s storedTimeSec = @e[limit=1,tag=w,type=armor_stand] currentTimeSec

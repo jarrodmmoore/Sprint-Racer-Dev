@@ -172,3 +172,9 @@ execute if block 1622 ~ 441 lime_wool run tag @s add 60a
 
 execute if block 1623 ~ 460 lime_wool run tag @s add 61a
 execute if block 1623 ~ 459 lime_wool run tag @s add 62a
+
+
+execute if block 1623 ~ 458 lime_wool run tag @s add 63a
+execute if block 1623 ~ 457 lime_wool run tag @s add 64a
+execute if block 1623 ~ 456 lime_wool run tag @s add 65a
+execute if block 1623 ~ 455 lime_wool run tag @s add 66a

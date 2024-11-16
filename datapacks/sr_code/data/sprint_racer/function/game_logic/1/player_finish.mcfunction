@@ -8,7 +8,7 @@ execute at @s run particle flash ~ ~1 ~ 0 0 0 1 1 force
 scoreboard players set @s lapShowDelay 60
 
 tag @s add finished
-execute unless entity @e[type=armor_stand,tag=cheats,tag=48a] run gamemode spectator @s
+execute unless entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=48a] run gamemode spectator @s
 clear @s
 scoreboard players set @s lap 999999
 scoreboard players set @s check 0

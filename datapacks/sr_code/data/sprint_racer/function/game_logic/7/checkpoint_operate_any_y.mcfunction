@@ -25,7 +25,7 @@ execute if entity @s[tag=checkWrongWay] run tag @a[tag=checkTarget,scores={nChec
 execute if entity @s[tag=checkText] run tag @a[tag=checkTarget,tag=checkIncrement] add checkText
 execute if entity @s[tag=checkSound] run tag @a[tag=checkTarget,tag=checkIncrement] add checkSound
 
-execute as @a[tag=checkTarget,tag=skip_available,scores={nCheck=2}] if entity @e[type=armor_stand,tag=50a,tag=cheats] at @s run function sprint_racer:cheats/skip_checkpoint
+execute as @a[tag=checkTarget,tag=skip_available,scores={nCheck=2}] if entity @e[type=armor_stand,tag=50a,tag=cheats,x=1550,y=148,z=406,distance=..1] at @s run function sprint_racer:cheats/skip_checkpoint
 
 execute as @a[tag=checkTarget] run function sprint_racer:game_logic/7/checkpoint_player_feedback
 

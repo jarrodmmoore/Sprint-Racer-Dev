@@ -1,4 +1,4 @@
-#run by "@e[tag=cheats]"
+#run by "@e[tag=cheats,x=1550,y=148,z=406,distance=..1]"
 tag @s remove 01a
 tag @s remove 02a
 tag @s remove 03a
@@ -61,6 +61,11 @@ tag @s remove 59a
 tag @s remove 60a
 tag @s remove 61a
 tag @s remove 62a
+
+tag @s remove 63a
+tag @s remove 64a
+tag @s remove 65a
+tag @s remove 66a
 
 #put on anywhere between 1 and 9 cheats (or 0? possible that attempts to activate a cheat will fail)
 scoreboard players operation @s math = @e[limit=1,sort=random,type=armor_stand,tag=random,scores={rNumber=6..50}] rNumber
@@ -141,6 +146,11 @@ execute if entity @s[tag=60] run scoreboard players add #randomRange value 1
 execute if entity @s[tag=61] run scoreboard players add #randomRange value 1
 execute if entity @s[tag=62] run scoreboard players add #randomRange value 1
 
+execute if entity @s[tag=63] run scoreboard players add #randomRange value 1
+execute if entity @s[tag=64] run scoreboard players add #randomRange value 1
+execute if entity @s[tag=65] run scoreboard players add #randomRange value 1
+execute if entity @s[tag=66] run scoreboard players add #randomRange value 1
+
 #55 possible cheats to account for
 
 execute if score #randomRange value matches 1..2 run tag @e[tag=random,type=armor_stand,scores={rNumber=1}] add rChtViable
@@ -171,7 +181,9 @@ execute if score #randomRange value matches 47..48 run tag @e[tag=random,type=ar
 execute if score #randomRange value matches 49..50 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..25}] add rChtViable
 execute if score #randomRange value matches 51..52 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..26}] add rChtViable
 execute if score #randomRange value matches 53..54 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..27}] add rChtViable
-execute if score #randomRange value matches 55.. run tag @e[tag=random,type=armor_stand,scores={rNumber=1..28}] add rChtViable
+execute if score #randomRange value matches 55..56 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..28}] add rChtViable
+execute if score #randomRange value matches 57..58 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..29}] add rChtViable
+execute if score #randomRange value matches 59.. run tag @e[tag=random,type=armor_stand,scores={rNumber=1..30}] add rChtViable
 
 ##################
 
@@ -190,7 +202,7 @@ scoreboard players operation @s math *= @s math2
 scoreboard players operation @e[tag=w,type=armor_stand] randomizerTime = @s math
 
 #say what's enabled
-execute as @a[tag=!minChat] run function sprint_racer_language:_dlc_5/join_messages/cheats_are_enabled
+execute as @a[tag=!minChat] run function sprint_racer_language:_dlc_6/join_messages/cheats_are_enabled
 
 #update the cheats list
 function sprint_racer:cheats/check_for_cheats

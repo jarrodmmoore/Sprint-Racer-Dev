@@ -23,4 +23,4 @@ execute if entity @e[tag=w,type=armor_stand,scores={medalSilver=74..}] run clone
 execute if entity @e[tag=w,type=armor_stand,scores={medalGold=74..}] run clone 1557 69 428 1557 74 436 1505 131 405
 execute if entity @e[tag=w,type=armor_stand,scores={medalDiamond=74..}] run clone 1556 69 428 1556 74 436 1505 131 405
 #netherite?
-execute if entity @e[tag=w,type=armor_stand,scores={medalDiamond=74..}] as @e[tag=cheats,type=armor_stand,tag=!00] run function sprint_racer:game_logic/0/props/time_attack_netherite_crown
+execute if entity @e[tag=w,type=armor_stand,scores={medalDiamond=74..}] as @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=!00] run function sprint_racer:game_logic/0/props/time_attack_netherite_crown

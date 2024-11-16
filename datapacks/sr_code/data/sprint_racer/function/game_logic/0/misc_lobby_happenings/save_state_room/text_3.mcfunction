@@ -4,7 +4,7 @@
 #w
 scoreboard players set global value 1
 scoreboard players set global math 0
-execute as @e[tag=cheats,type=armor_stand,limit=1] run function sprint_racer:game_logic/0/misc_lobby_happenings/save_state_room/count_cheats
+execute as @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,limit=1] run function sprint_racer:game_logic/0/misc_lobby_happenings/save_state_room/count_cheats
 
 execute positioned 1615 89 458 positioned ~.5 ~ ~.5 run function sprint_racer_language:_dlc_4/lobby/save_state_room/text_show_3
 

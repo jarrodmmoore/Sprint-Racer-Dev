@@ -1,6 +1,6 @@
-tag @e[tag=cheats] add checkforward
+tag @e[tag=cheats,x=1550,y=148,z=406,distance=..1] add checkforward
 
-execute if entity @e[tag=cheats,tag=foundacheat] run scoreboard players add @e[tag=cheats] aiHoldingItem 1
+execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=foundacheat] run scoreboard players add @e[tag=cheats,x=1550,y=148,z=406,distance=..1] aiHoldingItem 1
 
 function sprint_racer_language:_dlc_1/lobby/track_selector_buttons/next
 

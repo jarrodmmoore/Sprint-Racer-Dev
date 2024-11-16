@@ -72,3 +72,7 @@ execute if score #focusCheat value matches 60 run tag @s add 60a
 
 execute if score #focusCheat value matches 61 run tag @s add 61a
 execute if score #focusCheat value matches 62 run tag @s add 62a
+execute if score #focusCheat value matches 63 run tag @s add 63a
+execute if score #focusCheat value matches 64 run tag @s add 64a
+execute if score #focusCheat value matches 65 run tag @s add 65a
+execute if score #focusCheat value matches 66 run tag @s add 66a

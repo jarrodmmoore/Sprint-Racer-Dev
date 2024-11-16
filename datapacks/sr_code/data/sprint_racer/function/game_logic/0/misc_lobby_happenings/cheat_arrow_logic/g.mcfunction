@@ -1,7 +1,7 @@
 function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/_shift_characters
 
 #IMPORTANT, CHANGE PER CHARACTER
-scoreboard players set @e[tag=cheats] aiHasItem1 24
+scoreboard players set @e[tag=cheats,x=1550,y=148,z=406,distance=..1] aiHasItem1 24
 tellraw @a[x=1574,y=97,z=438,dx=20,dy=14,dz=13,gamemode=adventure] ["",{"text":"G","bold":true}]
 
 execute as @a[x=1574,y=97,z=438,dx=20,dy=14,dz=13,gamemode=adventure] at @s run playsound minecraft:block.dispenser.dispense master @s ~ 100000 ~ 100000

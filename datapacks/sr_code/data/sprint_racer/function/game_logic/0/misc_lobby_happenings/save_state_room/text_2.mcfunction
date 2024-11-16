@@ -8,9 +8,9 @@ execute as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=1..36}
 execute as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=38..49}] run scoreboard players add global math 1
 execute as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=51..60}] run scoreboard players add global math 1
 execute as @e[tag=random,type=armor_stand,tag=btBlacklist,scores={rNumber=1..49}] run scoreboard players add global math 1
-execute if entity @e[limit=1,tag=cheats,type=armor_stand,tag=38] as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=50}] run scoreboard players add global math 1
-execute if entity @e[limit=1,tag=cheats,type=armor_stand,tag=46] as @e[tag=random,type=armor_stand,tag=btBlacklist,scores={rNumber=50}] run scoreboard players add global math 1
-execute if entity @e[limit=1,tag=cheats,type=armor_stand,tag=56] as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=37}] run scoreboard players add global math 1
+execute if entity @e[limit=1,tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=38] as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=50}] run scoreboard players add global math 1
+execute if entity @e[limit=1,tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=46] as @e[tag=random,type=armor_stand,tag=btBlacklist,scores={rNumber=50}] run scoreboard players add global math 1
+execute if entity @e[limit=1,tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=56] as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=37}] run scoreboard players add global math 1
 
 execute positioned 1615 89 458 positioned ~.5 ~ ~.5 run function sprint_racer_language:_dlc_4/lobby/save_state_room/text_show_2
 
@@ -55,7 +55,7 @@ execute if block 1616 ~ 452 red_wool run scoreboard players add global math 1
 execute if block 1615 ~ 452 red_wool run scoreboard players add global math 1
 execute if block 1614 ~ 452 red_wool run scoreboard players add global math 1
 execute if block 1613 ~ 452 red_wool run scoreboard players add global math 1
-execute if block 1612 ~ 452 red_wool if entity @e[limit=1,tag=cheats,type=armor_stand,tag=56] run scoreboard players add global math 1
+execute if block 1612 ~ 452 red_wool if entity @e[limit=1,tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=56] run scoreboard players add global math 1
 execute if block 1611 ~ 452 red_wool run scoreboard players add global math 1
 execute if block 1610 ~ 452 red_wool run scoreboard players add global math 1
 execute if block 1609 ~ 452 red_wool run scoreboard players add global math 1
@@ -69,7 +69,7 @@ execute if block 1613 ~ 451 red_wool run scoreboard players add global math 1
 execute if block 1612 ~ 451 red_wool run scoreboard players add global math 1
 execute if block 1611 ~ 451 red_wool run scoreboard players add global math 1
 execute if block 1610 ~ 451 red_wool run scoreboard players add global math 1
-execute if block 1609 ~ 451 red_wool if entity @e[limit=1,tag=cheats,type=armor_stand,tag=38] run scoreboard players add global math 1
+execute if block 1609 ~ 451 red_wool if entity @e[limit=1,tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=38] run scoreboard players add global math 1
 
 execute if block 1618 ~ 450 red_wool run scoreboard players add global math 1
 execute if block 1617 ~ 450 red_wool run scoreboard players add global math 1
@@ -133,7 +133,7 @@ execute if block 1613 ~ 445 red_wool run scoreboard players add global math 1
 execute if block 1612 ~ 445 red_wool run scoreboard players add global math 1
 execute if block 1611 ~ 445 red_wool run scoreboard players add global math 1
 execute if block 1610 ~ 445 red_wool run scoreboard players add global math 1
-execute if block 1609 ~ 445 red_wool if entity @e[limit=1,tag=cheats,type=armor_stand,tag=46] run scoreboard players add global math 1
+execute if block 1609 ~ 445 red_wool if entity @e[limit=1,tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=46] run scoreboard players add global math 1
 
 
 execute unless block 1626 ~ 459 lime_wool run scoreboard players set global value 0

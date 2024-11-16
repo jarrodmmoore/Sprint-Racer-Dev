@@ -1,8 +1,8 @@
 attribute @s movement_speed base set 0.1
 
 scoreboard players set #setspeed value -1
-scoreboard players add @e[tag=cheats,type=armor_stand,limit=1] speedlevel 0
-execute if entity @e[tag=cheats,type=armor_stand,tag=01a] run scoreboard players operation #setspeed value = @e[tag=cheats,type=armor_stand] speedlevel
+scoreboard players add @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,limit=1] speedlevel 0
+execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=01a] run scoreboard players operation #setspeed value = @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand] speedlevel
 
 #+5% speed = 0.105 (+0.005)
 #-5% speed = 0.095 (-0.005)

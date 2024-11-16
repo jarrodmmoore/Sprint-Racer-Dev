@@ -1,4 +1,4 @@
 execute as @e[tag=cheattext2] run data merge entity @s {CustomName:'{"text":"31 - PUSHY","color":"white","bold":true,"italic":false}'}
-execute if entity @e[tag=cheats,tag=31a] as @e[tag=cheattext3] run data merge entity @s {CustomName:'{"translate":"sr.cheats.cheat_on","color":"green","bold":false,"italic":false}',CustomNameVisible:1b}
-execute unless entity @e[tag=cheats,tag=31a] as @e[tag=cheattext3] run data merge entity @s {CustomName:'{"translate":"sr.cheats.cheat_off","color":"gray","bold":false,"italic":false}',CustomNameVisible:1b}
+execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=31a] as @e[tag=cheattext3] run data merge entity @s {CustomName:'{"translate":"sr.cheats.cheat_on","color":"green","bold":false,"italic":false}',CustomNameVisible:1b}
+execute unless entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=31a] as @e[tag=cheattext3] run data merge entity @s {CustomName:'{"translate":"sr.cheats.cheat_off","color":"gray","bold":false,"italic":false}',CustomNameVisible:1b}
 execute as @e[tag=cheattext4] run data merge entity @s {CustomName:'{"translate":"sr.cheats.pushy","color":"white","bold":false,"italic":false}',CustomNameVisible:1b}

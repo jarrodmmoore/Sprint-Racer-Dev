@@ -1,4 +1,4 @@
-#run by @e[tag=cheats]
+#run by @e[tag=cheats,x=1550,y=148,z=406,distance=..1]
 
 execute unless entity @s[tag=05a] run clear @a[gamemode=adventure] command_block
 execute unless entity @s[tag=09a] run clear @a[gamemode=adventure] minecart

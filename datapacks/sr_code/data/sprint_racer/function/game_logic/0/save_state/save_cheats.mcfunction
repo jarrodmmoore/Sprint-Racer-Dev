@@ -1,4 +1,4 @@
-#executed by @e[tag=cheats]
+#executed by @e[tag=cheats,x=1550,y=148,z=406,distance=..1]
 
 execute if entity @s[tag=01a] run setblock 1620 ~ 460 white_wool
 execute if entity @s[tag=01a,scores={speedlevel=2}] run setblock 1620 ~ 460 orange_wool
@@ -91,3 +91,9 @@ execute if entity @s[tag=60a] run setblock 1622 ~ 441 lime_wool
 
 execute if entity @s[tag=61a] run setblock 1623 ~ 460 lime_wool
 execute if entity @s[tag=62a] run setblock 1623 ~ 459 lime_wool
+
+
+execute if entity @s[tag=63a] run setblock 1623 ~ 458 lime_wool
+execute if entity @s[tag=64a] run setblock 1623 ~ 457 lime_wool
+execute if entity @s[tag=65a] run setblock 1623 ~ 456 lime_wool
+execute if entity @s[tag=66a] run setblock 1623 ~ 455 lime_wool

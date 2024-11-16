@@ -245,7 +245,7 @@ execute if entity @s[tag=banNo20] run setblock 1609 ~ 442 red_wool
 #CHEATS
 
 fill 1620 ~ 441 1622 ~ 460 red_wool
-execute as @e[tag=cheats,limit=1,type=armor_stand] run function sprint_racer:game_logic/0/save_state/save_cheats
+execute as @e[tag=cheats,x=1550,y=148,z=406,distance=..1,limit=1,type=armor_stand] run function sprint_racer:game_logic/0/save_state/save_cheats
 
 #################################
 #AI

@@ -1,7 +1,7 @@
 tag @e[tag=random,type=armor_stand,tag=bSortSelect] remove bSortSelect
 
 ###hidden tracks don't show up. EVER. unless they're unlocked ;)
-execute unless entity @e[type=armor_stand,tag=cheats,tag=46] run tag @e[type=armor_stand,tag=random,scores={rNumber=50}] add bSortSelect
+execute unless entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=46] run tag @e[type=armor_stand,tag=random,scores={rNumber=50}] add bSortSelect
 
 #filter mode 0: don't apply any filters
 

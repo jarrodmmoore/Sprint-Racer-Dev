@@ -2,7 +2,7 @@ tag @s remove capsuleItem
 tag @s remove capsuleSummon
 tag @s remove itemcontainer
 
-data merge entity @s {PickupDelay:20,Age:5400,NoGravity:0,Invulnerable:0}
+data merge entity @s {PickupDelay:20,Age:5400,NoGravity:0b,Invulnerable:0}
 
 #get a random velocity
 scoreboard players operation @s rNumber = @e[limit=1,tag=random,sort=random,scores={rNumber=1..9}] rNumber

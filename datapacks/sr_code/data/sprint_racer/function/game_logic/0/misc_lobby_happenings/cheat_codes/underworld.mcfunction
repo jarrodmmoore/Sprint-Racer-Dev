@@ -5,12 +5,12 @@ function sprint_racer_language:_dlc_4/lobby/cheat_room/cheat_found/underworld
 tellraw @a ["",{"text":" "}]
 
 #stuff
-tag @e[tag=cheats] add foundacheat
-tag @e[tag=cheats] add 46
+tag @e[tag=cheats,x=1550,y=148,z=406,distance=..1] add foundacheat
+tag @e[tag=cheats,x=1550,y=148,z=406,distance=..1] add 46
 
 #un-ban the track right away now that we've discovered it
 tag @e[type=armor_stand,tag=random,scores={rNumber=50}] remove btBlacklist
 
 #set display
-scoreboard players set @e[tag=cheats] aiHoldingItem 46
+scoreboard players set @e[tag=cheats,x=1550,y=148,z=406,distance=..1] aiHoldingItem 46
 function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/_index_cheat_menu

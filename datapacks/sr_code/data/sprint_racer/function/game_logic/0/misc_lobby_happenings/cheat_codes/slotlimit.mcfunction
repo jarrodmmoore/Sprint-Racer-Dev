@@ -7,9 +7,9 @@ tellraw @a ["",{"text":" "}]
 scoreboard players set #cheatSlotLimit value 1
 
 #stuff
-tag @e[tag=cheats] add foundacheat
-tag @e[tag=cheats] add 57
+tag @e[tag=cheats,x=1550,y=148,z=406,distance=..1] add foundacheat
+tag @e[tag=cheats,x=1550,y=148,z=406,distance=..1] add 57
 
 #set display
-scoreboard players set @e[tag=cheats] aiHoldingItem 57
+scoreboard players set @e[tag=cheats,x=1550,y=148,z=406,distance=..1] aiHoldingItem 57
 function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/_index_cheat_menu

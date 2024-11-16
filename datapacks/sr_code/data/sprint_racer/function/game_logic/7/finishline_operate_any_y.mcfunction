@@ -23,7 +23,7 @@ tag @e[tag=finTarget,scores={nCheck=..0}] add finishLap
 execute if entity @s[tag=finWarn] run tag @a[tag=finTarget,scores={nCheck=1..}] add finWarn
 execute if entity @s[tag=finWrongWay] run tag @a[tag=finTarget,scores={nCheck=..-1}] add finWrongWay
 
-execute as @a[tag=finTarget,tag=skip_available,scores={nCheck=1}] if entity @e[type=armor_stand,tag=50a,tag=cheats] run function sprint_racer:cheats/skip_checkpoint_on_finishline
+execute as @a[tag=finTarget,tag=skip_available,scores={nCheck=1}] if entity @e[type=armor_stand,tag=50a,tag=cheats,x=1550,y=148,z=406,distance=..1] run function sprint_racer:cheats/skip_checkpoint_on_finishline
 
 execute as @a[tag=finTarget,tag=finWarn,gamemode=adventure] run scoreboard players set @s[scores={actionbarState=..6}] actionbarState 8
 execute as @a[tag=finTarget,tag=finWarn,gamemode=adventure] run scoreboard players set @s[scores={actionbarState=..6}] actionbarState2 40

@@ -69,7 +69,14 @@ execute if score #focusCheat value matches 60 if entity @s[tag=60] run scoreboar
 
 execute if score #focusCheat value matches 61 if entity @s[tag=61] run scoreboard players remove #roll1 value 1
 execute if score #focusCheat value matches 62 if entity @s[tag=62] run scoreboard players remove #roll1 value 1
-#beyond 63 -- nothing will happen. loop will exit eventually
+
+execute if score #focusCheat value matches 63 if entity @s[tag=63] run scoreboard players remove #roll1 value 1
+execute if score #focusCheat value matches 64 if entity @s[tag=64] run scoreboard players remove #roll1 value 1
+execute if score #focusCheat value matches 65 if entity @s[tag=65] run scoreboard players remove #roll1 value 1
+execute if score #focusCheat value matches 66 if entity @s[tag=66] run scoreboard players remove #roll1 value 1
+
+
+#beyond 67 -- nothing will happen. loop will exit eventually
 
 
 #roll = 0? THIS IS THE CHEAT! ACTIVATE IT NOW

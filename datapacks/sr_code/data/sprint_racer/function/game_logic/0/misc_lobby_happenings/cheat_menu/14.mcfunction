@@ -1,8 +1,8 @@
-execute if entity @e[tag=cheats,tag=14] run function sprint_racer_language:_dlc_2/lobby/cheat_room/floating_text/friendlyfire
-execute if entity @e[tag=cheats,tag=14] run tag @e[tag=cheats] remove checkforward
-execute if entity @e[tag=cheats,tag=14] run tag @e[tag=cheats] remove checkbackward
+execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=14] run function sprint_racer_language:_dlc_2/lobby/cheat_room/floating_text/friendlyfire
+execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=14] run tag @e[tag=cheats,x=1550,y=148,z=406,distance=..1] remove checkforward
+execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=14] run tag @e[tag=cheats,x=1550,y=148,z=406,distance=..1] remove checkbackward
 
-scoreboard players set @e[tag=cheats] aiHoldingItem 14
+scoreboard players set @e[tag=cheats,x=1550,y=148,z=406,distance=..1] aiHoldingItem 14
 
-execute if entity @e[tag=cheats,tag=checkforward] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/15
-execute if entity @e[tag=cheats,tag=checkbackward] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/13
+execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=checkforward] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/15
+execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=checkbackward] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/13
