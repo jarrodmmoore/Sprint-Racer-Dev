@@ -198,6 +198,8 @@ scoreboard players add @e[tag=w,type=armor_stand] optBAIdiff 0
 
 
 #make sure command blocks are enabled
+setblock 1555 78 406 minecraft:repeating_command_block[conditional=false,facing=west]{Command:"setblock ~1 ~ ~ air",LastExecution:113428853L,SuccessCount:1,TrackOutput:0b,UpdateLastExecution:1b,auto:0b,conditionMet:1b,powered:0b}
+setblock 1554 78 406 minecraft:chain_command_block[conditional=false,facing=west]{Command:"scoreboard players set #commandBlockCheck value 1",LastExecution:113428853L,SuccessCount:1,TrackOutput:0b,UpdateLastExecution:1b,auto:1b,conditionMet:1b,powered:0b}
 scoreboard players set #commandBlockCheck value 0
 setblock 1556 78 406 redstone_block
 schedule function sprint_racer:verify_command_blocks_enabled 5t

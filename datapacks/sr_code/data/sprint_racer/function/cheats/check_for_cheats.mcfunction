@@ -85,6 +85,11 @@ execute if entity @e[tag=cheats,type=armor_stand,tag=60a] run tag @e[tag=w,type=
 execute if entity @e[tag=cheats,type=armor_stand,tag=61a] run tag @e[tag=w,type=armor_stand] add cheatdetected61_65
 execute if entity @e[tag=cheats,type=armor_stand,tag=62a] run tag @e[tag=w,type=armor_stand] add cheatdetected61_65
 
+execute if entity @e[tag=cheats,type=armor_stand,tag=63a] run tag @e[tag=w,type=armor_stand] add cheatdetected61_65
+execute if entity @e[tag=cheats,type=armor_stand,tag=64a] run tag @e[tag=w,type=armor_stand] add cheatdetected61_65
+execute if entity @e[tag=cheats,type=armor_stand,tag=65a] run tag @e[tag=w,type=armor_stand] add cheatdetected61_65
+execute if entity @e[tag=cheats,type=armor_stand,tag=66a] run tag @e[tag=w,type=armor_stand] add cheatdetected61_65
+
 
 execute if entity @e[tag=w,type=armor_stand,tag=cheatdetected1_5] run tag @e[tag=w,type=armor_stand] add cheatdetected
 execute if entity @e[tag=w,type=armor_stand,tag=cheatdetected6_10] run tag @e[tag=w,type=armor_stand] add cheatdetected
@@ -104,5 +109,5 @@ gamerule naturalRegeneration false
 execute if entity @e[tag=cheats,type=armor_stand,tag=52a] run gamerule naturalRegeneration true
 
 scoreboard players set #cheatMusic value 0
-execute if entity @e[tag=cheats,tag=33a] run scoreboard players set #cheatMusic value 1
-execute if entity @e[tag=cheats,tag=44a] run scoreboard players set #cheatMusic value 1
+execute if entity @e[tag=cheats,type=armor_stand,tag=33a] run scoreboard players set #cheatMusic value 1
+execute if entity @e[tag=cheats,type=armor_stand,tag=44a] run scoreboard players set #cheatMusic value 1

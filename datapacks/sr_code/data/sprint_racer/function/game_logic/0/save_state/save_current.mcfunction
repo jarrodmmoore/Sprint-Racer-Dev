@@ -207,7 +207,7 @@ execute if entity @s[tag=!BAIautocount] run setblock 1617 ~ 457 orange_wool
 #################################
 #BANNED RACE TRACKS
 
-fill 1609 ~ 451 1618 ~ 455 lime_wool
+fill 1609 ~ 450 1618 ~ 455 lime_wool
 execute as @e[tag=random,type=armor_stand,tag=trackStandR,tag=rtBlacklist] run function sprint_racer:game_logic/0/save_state/save_banned_race_track
 
 #################################

@@ -5,7 +5,7 @@ execute if block ~ ~ ~ water run tag @s add inWater
 execute if block ~ ~ ~ light[waterlogged=true] run tag @s add inWater
 
 #item cooldown
-scoreboard players remove @s[scores={itemCooldown=1..}] itemCooldown 4
+scoreboard players remove @s[scores={itemCooldown=1..}] itemCooldown 2
 #scoreboard players remove @s[tag=fast_cooldown,scores={itemCooldown=1..}] itemCooldown 2
 
 

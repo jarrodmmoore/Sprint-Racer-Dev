@@ -1,11 +1,15 @@
-tp @a[tag=!dontWarp] -60 72 1695
+tp @a[tag=!dontWarp] 2120 118 3039
 
 scoreboard players set @e[tag=w,type=armor_stand] lap 3
-scoreboard players set @e[tag=w,type=armor_stand] check 2
+scoreboard players set @e[tag=w,type=armor_stand] check 4
 gamerule doDaylightCycle false
-time set 6000
+time set 18000
+weather rain
 
+scoreboard players set @e[tag=w,type=armor_stand] startType 6
 
+#night vision if we're playing in free roam mode
+tag @a[tag=dontSetGamemode] add fr_nightvision
 
 ######
 #MUSIC

@@ -98,6 +98,7 @@ execute if score global gameState matches ..2 if entity @s[scores={worldmapID=49
 execute if score global gameState matches ..2 if entity @s[scores={worldmapID=51}] run tag @e[tag=random,scores={rNumber=51}] add chosenTrack
 execute if score global gameState matches ..2 if entity @s[scores={worldmapID=52}] run tag @e[tag=random,scores={rNumber=52}] add chosenTrack
 execute if score global gameState matches ..2 if entity @s[scores={worldmapID=53}] run tag @e[tag=random,scores={rNumber=53}] add chosenTrack
+execute if score global gameState matches ..2 if entity @s[scores={worldmapID=54}] run tag @e[tag=random,scores={rNumber=54}] add chosenTrack
 
 #add more here...
 
@@ -120,6 +121,8 @@ execute if score global gameState matches 3.. if entity @s[scores={worldmapID=10
 execute if score global gameState matches 3.. if entity @s[scores={worldmapID=1015}] run tag @e[tag=random,scores={rNumber=15}] add chosenTrack
 execute if score global gameState matches 3.. if entity @s[scores={worldmapID=1016}] run tag @e[tag=random,scores={rNumber=16}] add chosenTrack
 execute if score global gameState matches 3.. if entity @s[scores={worldmapID=1017}] run tag @e[tag=random,scores={rNumber=17}] add chosenTrack
+execute if score global gameState matches 3.. if entity @s[scores={worldmapID=1018}] run tag @e[tag=random,scores={rNumber=18}] add chosenTrack
+execute if score global gameState matches 3.. if entity @s[scores={worldmapID=1019}] run tag @e[tag=random,scores={rNumber=19}] add chosenTrack
 
 #add more here...
 

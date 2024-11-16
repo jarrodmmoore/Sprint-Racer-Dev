@@ -69,4 +69,9 @@ execute if entity @s[tag=60] run scoreboard players add #cheats_discovered value
 execute if entity @s[tag=61] run scoreboard players add #cheats_discovered value 1
 execute if entity @s[tag=62] run scoreboard players add #cheats_discovered value 1
 
+execute if entity @s[tag=63] run scoreboard players add #cheats_discovered value 1
+execute if entity @s[tag=64] run scoreboard players add #cheats_discovered value 1
+execute if entity @s[tag=65] run scoreboard players add #cheats_discovered value 1
+execute if entity @s[tag=66] run scoreboard players add #cheats_discovered value 1
+
 execute if score #cheats_discovered value matches 30.. run setblock 1577 96 452 minecraft:redstone_torch

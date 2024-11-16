@@ -97,8 +97,7 @@ scoreboard players set @e[tag=w,type=armor_stand,scores={oTimerGlobal=2..}] oTim
 
 #attackedID stuff for giving KO points, resets after a while
 execute as @a[scores={hitPlayer=1..}] at @s run function sprint_racer:hit_another_player
-scoreboard players remove @e[tag=activeplayer,scores={attackTime=1..,hitstun=..0}] attackTime 1
-scoreboard players set @e[tag=activeplayer,scores={attackTime=..0,attackerID=1..}] attackerID 0
+execute as @e[tag=activeplayer] run function sprint_racer:handle_attacker_id
 #DEBUG -- execute as @a run tellraw @s ["",{"text":"attackerID = "},{"score":{"name":"@s","objective":"attackerID"}}]
 
 #make sure speedometer get placed in the right slot if its active

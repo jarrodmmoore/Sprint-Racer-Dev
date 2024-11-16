@@ -6,6 +6,7 @@ scoreboard players set global value 1
 scoreboard players set global math 0
 execute as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=1..36}] run scoreboard players add global math 1
 execute as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=38..49}] run scoreboard players add global math 1
+execute as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=51..60}] run scoreboard players add global math 1
 execute as @e[tag=random,type=armor_stand,tag=btBlacklist,scores={rNumber=1..49}] run scoreboard players add global math 1
 execute if entity @e[limit=1,tag=cheats,type=armor_stand,tag=38] as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=50}] run scoreboard players add global math 1
 execute if entity @e[limit=1,tag=cheats,type=armor_stand,tag=46] as @e[tag=random,type=armor_stand,tag=btBlacklist,scores={rNumber=50}] run scoreboard players add global math 1
@@ -69,6 +70,17 @@ execute if block 1612 ~ 451 red_wool run scoreboard players add global math 1
 execute if block 1611 ~ 451 red_wool run scoreboard players add global math 1
 execute if block 1610 ~ 451 red_wool run scoreboard players add global math 1
 execute if block 1609 ~ 451 red_wool if entity @e[limit=1,tag=cheats,type=armor_stand,tag=38] run scoreboard players add global math 1
+
+execute if block 1618 ~ 450 red_wool run scoreboard players add global math 1
+execute if block 1617 ~ 450 red_wool run scoreboard players add global math 1
+execute if block 1616 ~ 450 red_wool run scoreboard players add global math 1
+execute if block 1615 ~ 450 red_wool run scoreboard players add global math 1
+execute if block 1614 ~ 450 red_wool run scoreboard players add global math 1
+execute if block 1613 ~ 450 red_wool run scoreboard players add global math 1
+execute if block 1612 ~ 450 red_wool run scoreboard players add global math 1
+execute if block 1611 ~ 450 red_wool run scoreboard players add global math 1
+execute if block 1610 ~ 450 red_wool run scoreboard players add global math 1
+execute if block 1609 ~ 450 red_wool run scoreboard players add global math 1
 
 execute if block 1618 ~ 449 red_wool run scoreboard players add global math 1
 execute if block 1617 ~ 449 red_wool run scoreboard players add global math 1

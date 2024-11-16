@@ -67,6 +67,11 @@ execute if entity @e[tag=cheats,type=armor_stand,scores={aiHoldingItem=60}] run 
 execute if entity @e[tag=cheats,type=armor_stand,scores={aiHoldingItem=61}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/61
 execute if entity @e[tag=cheats,type=armor_stand,scores={aiHoldingItem=62}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/62
 
+execute if entity @e[tag=cheats,type=armor_stand,scores={aiHoldingItem=63}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/63
+execute if entity @e[tag=cheats,type=armor_stand,scores={aiHoldingItem=64}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/64
+execute if entity @e[tag=cheats,type=armor_stand,scores={aiHoldingItem=65}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/65
+execute if entity @e[tag=cheats,type=armor_stand,scores={aiHoldingItem=66}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/66
+
 
 
 execute unless entity @e[tag=cheats,type=armor_stand,scores={aiHoldingItem=54..55}] unless entity @e[tag=cheats,type=armor_stand,scores={aiHoldingItem=57}] run setblock 1594 101 448 air
