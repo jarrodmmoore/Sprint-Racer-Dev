@@ -34,3 +34,6 @@ execute if entity @s[scores={customAIset=25}] run scoreboard players set @s aiEn
 
 execute if entity @s[scores={customAIset=26}] run scoreboard players set @s aiEntity 6
 execute if entity @s[scores={customAIset=26}] run tag @s add force_kitty
+
+execute if entity @s[scores={customAIset=27}] run scoreboard players set @s aiEntity 6
+execute if entity @s[scores={customAIset=27}] run tag @s add force_endermity

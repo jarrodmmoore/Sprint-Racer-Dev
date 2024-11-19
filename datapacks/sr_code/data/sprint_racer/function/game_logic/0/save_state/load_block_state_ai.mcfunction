@@ -24,6 +24,7 @@ execute if block ~ ~ ~ pink_terracotta run scoreboard players set @s customAIset
 execute if block ~ ~ ~ gray_terracotta run scoreboard players set @s customAIset 24
 execute if block ~ ~ ~ light_gray_terracotta run scoreboard players set @s customAIset 25
 execute if block ~ ~ ~ cyan_terracotta run scoreboard players set @s customAIset 26
+execute if block ~ ~ ~ purple_terracotta run scoreboard players set @s customAIset 27
 
 scoreboard players set @s customAIteam 0
 execute if block ~ ~ ~-1 orange_wool run scoreboard players set @s customAIteam 1

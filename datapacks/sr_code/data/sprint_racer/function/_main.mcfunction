@@ -57,6 +57,9 @@ execute if entity @e[limit=1,tag=w,type=armor_stand,tag=halftick] run scoreboard
 scoreboard players set #adminmode value 0
 execute if entity @e[limit=1,tag=w,type=armor_stand,tag=requireAdmin] run scoreboard players set #adminmode value 1
 
+#validate nodes?
+execute unless score #skipNodeValidation value matches 1 run function sprint_racer:game_logic/2/node_update/_tick_restore
+
 #immediately run this on players who join the world
 scoreboard players add #join_tick value 1
 scoreboard players add @a join 1

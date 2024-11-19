@@ -111,6 +111,9 @@ execute if entity @s[tag=executor] if entity @e[tag=w,type=armor_stand,limit=1,t
 execute if entity @s[tag=executor] if entity @e[tag=w,type=armor_stand,limit=1,tag=halftick] as @e[tag=node,distance=..35,limit=40,sort=nearest] at @s run function sprint_racer:game_logic/2/node_nametag
 execute if entity @s[tag=executor] as @e[type=!armor_stand,tag=showDispenser,tag=node,distance=..50,limit=20,sort=nearest] at @s run function sprint_racer:game_logic/2/show_dispenser_direction
 
+#all nodes should be prepped for transfer between worlds
+execute if entity @s[tag=executor] run function sprint_racer:game_logic/2/node_update/_tick_save
+
 #show visual boundaries for checkpoints and finishlines
 #draw lines by quickly teleporting area effect cloud and showing particles
 execute if entity @s[tag=executor] as @e[tag=node,tag=visualBound,distance=..10,limit=1,sort=nearest] at @s run function sprint_racer:game_logic/2/visualize_boundaries

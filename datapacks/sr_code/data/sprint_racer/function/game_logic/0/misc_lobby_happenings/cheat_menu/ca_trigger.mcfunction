@@ -14,8 +14,8 @@ execute if entity @s[scores={ca_trigger=31}] run scoreboard players remove @e[ta
 execute if entity @s[scores={ca_trigger=32}] run scoreboard players add @e[tag=ca_focus,type=armor_stand] customAIteam 1
 
 #value limits
-scoreboard players set @e[tag=ca_focus,type=armor_stand,scores={customAIset=..0}] customAIset 26
-scoreboard players set @e[tag=ca_focus,type=armor_stand,scores={customAIset=27..}] customAIset 1
+scoreboard players set @e[tag=ca_focus,type=armor_stand,scores={customAIset=..0}] customAIset 27
+scoreboard players set @e[tag=ca_focus,type=armor_stand,scores={customAIset=28..}] customAIset 1
 
 scoreboard players set @e[tag=ca_focus,type=armor_stand,scores={customAIdiff=..-1}] customAIdiff 5
 scoreboard players set @e[tag=ca_focus,type=armor_stand,scores={customAIdiff=6..}] customAIdiff 0

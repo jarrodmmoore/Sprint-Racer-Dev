@@ -27,6 +27,7 @@ execute if entity @s[scores={customAIset=23}] run setblock ~ ~ ~ pink_terracotta
 execute if entity @s[scores={customAIset=24}] run setblock ~ ~ ~ gray_terracotta
 execute if entity @s[scores={customAIset=25}] run setblock ~ ~ ~ light_gray_terracotta
 execute if entity @s[scores={customAIset=26}] run setblock ~ ~ ~ cyan_terracotta
+execute if entity @s[scores={customAIset=27}] run setblock ~ ~ ~ purple_terracotta
 
 execute if entity @s[scores={customAIteam=0}] run setblock ~ ~ ~-1 white_wool
 execute if entity @s[scores={customAIteam=1}] run setblock ~ ~ ~-1 orange_wool
