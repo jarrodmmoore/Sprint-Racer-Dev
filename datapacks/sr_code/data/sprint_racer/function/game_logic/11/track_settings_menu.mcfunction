@@ -1,4 +1,4 @@
-scoreboard players operation @s gpRound = @e[limit=1,tag=w,type=armor_stand] gpRound
+scoreboard players operation @s gpRound = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gpRound
 
 function sprint_racer:game_logic/11/get_gamemode
 

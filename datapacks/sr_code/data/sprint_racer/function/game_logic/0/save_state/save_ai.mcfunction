@@ -1,4 +1,4 @@
-#executed by @e[tag=random,scores={rNumber=X}]
+#executed by @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=X}]
 #corresponds to 1 of 9 AI controller armor stand
 
 execute if entity @s[scores={customAIset=1}] run setblock ~ ~ ~ white_wool

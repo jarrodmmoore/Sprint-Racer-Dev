@@ -1,6 +1,6 @@
 scoreboard players set @s rNumber 0
 #pick random number between 1 and 50, excluding banned values (tag=banChest)
-scoreboard players operation @s rNumber = @e[sort=random,limit=1,type=armor_stand,tag=random,tag=!banChest,tag=!emptycategory,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s rNumber = @e[sort=random,limit=1,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,tag=!banChest,tag=!emptycategory,scores={rNumber=1..50}] rNumber
 
 #can't spawn capsules in water
 execute if entity @s[scores={rNumber=31..37}] at @s if block ~ ~ ~ water run scoreboard players set @s rNumber 0

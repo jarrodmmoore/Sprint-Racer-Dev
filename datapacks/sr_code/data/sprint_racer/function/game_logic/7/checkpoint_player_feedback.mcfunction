@@ -1,6 +1,6 @@
-execute if entity @s[tag=checkIncrement] run scoreboard players operation @s storedTimeMin = @e[limit=1,tag=w,type=armor_stand] currentTimeMin
-execute if entity @s[tag=checkIncrement] run scoreboard players operation @s storedTimeSec = @e[limit=1,tag=w,type=armor_stand] currentTimeSec
-execute if entity @s[tag=checkIncrement] run scoreboard players operation @s storedTimeMsec = @e[limit=1,tag=w,type=armor_stand] currentTimeMsec
+execute if entity @s[tag=checkIncrement] run scoreboard players operation @s storedTimeMin = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeMin
+execute if entity @s[tag=checkIncrement] run scoreboard players operation @s storedTimeSec = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeSec
+execute if entity @s[tag=checkIncrement] run scoreboard players operation @s storedTimeMsec = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeMsec
 
 execute if entity @s[tag=checkIncrement] run scoreboard players operation @s taTimeMin = @s taLapMin
 execute if entity @s[tag=checkIncrement] run scoreboard players operation @s taTimeSec = @s taLapSec

@@ -4,7 +4,7 @@ tag @s add displayFrame
 data merge entity @s {Silent:1b,Item:{id:"minecraft:air"}}
 
 #by default, show random (catches missing tracks, possible a custom track in the sequence got deleted)
-execute if entity @s[scores={gpNumber=1..50}] if score @e[tag=w,limit=1,type=armor_stand] gpNumber >= @s gpNumber run data merge entity @s {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":9998}}}
+execute if entity @s[scores={gpNumber=1..50}] if score @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand] gpNumber >= @s gpNumber run data merge entity @s {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":9998}}}
 
 #read gamemode from block sequence
 execute if entity @s[scores={gpNumber=1}] positioned 1584 39 372 positioned ~ ~ ~1 run function sprint_racer:game_logic/11/read_gamemode

@@ -8,7 +8,7 @@ function sprint_racer:game_logic/11/get_gamemode
 
 #random gamemode
 scoreboard players set @s math 0
-execute if entity @s[tag=read_random] run scoreboard players operation @s math = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..5}] rNumber
+execute if entity @s[tag=read_random] run scoreboard players operation @s math = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..5}] rNumber
 tag @s[scores={math=1..3}] add read_race
 tag @s[scores={math=4..5}] add read_battle
 

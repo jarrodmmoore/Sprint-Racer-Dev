@@ -2,7 +2,7 @@
 execute unless entity @a[gamemode=creative,scores={playerState=2}] run function sprint_racer:ai/general/__ai_main
 
 #20Hz lobby stuff
-execute if score global gameState matches 0 as @e[tag=w,type=armor_stand,limit=1] run function sprint_racer:game_logic/0/misc_lobby_happenings/20hz_stuff
+execute if score global gameState matches 0 as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] run function sprint_racer:game_logic/0/misc_lobby_happenings/20hz_stuff
 
 #scripted move sequences
 #always runs at 20Hz no matter what

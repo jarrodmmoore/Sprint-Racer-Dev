@@ -2,7 +2,7 @@ tag @s add caip_self
 
 #points sync for calculations
 scoreboard players set @e[scores={math=1..}] math 0
-execute as @e[tag=random,type=armor_stand,scores={aiPoints=1..}] run scoreboard players operation @s math = @s aiPoints
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={aiPoints=1..}] run scoreboard players operation @s math = @s aiPoints
 execute as @a[scores={points=1..}] run scoreboard players operation @s math = @s points
 
 

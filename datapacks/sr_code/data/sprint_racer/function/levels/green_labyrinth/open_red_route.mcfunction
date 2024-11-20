@@ -1,4 +1,4 @@
-scoreboard players set @e[tag=w,type=armor_stand] mapZone 3
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] mapZone 3
 
 tag @e[tag=GLcheckpoint] remove posCalc
 tag @e[tag=GLcheckpoint,tag=route3] add posCalc

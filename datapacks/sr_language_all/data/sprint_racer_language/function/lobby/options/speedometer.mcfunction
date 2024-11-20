@@ -1,6 +1,6 @@
 #tellraw @s ["",{"text":" "}]
 
-#execute if entity @e[tag=w,scores={gameState=0}] run data merge block 1573 88 383 {Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/speedometer"}}',Text2:'{"text":"SPEEDOMETER","bold":true,"color":"black"}',Text3:'{"text":"UNITS","bold":true,"color":"black"}'}
+#execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=0}] run data merge block 1573 88 383 {Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/speedometer"}}',Text2:'{"text":"SPEEDOMETER","bold":true,"color":"black"}',Text3:'{"text":"UNITS","bold":true,"color":"black"}'}
 
 tag @s remove optSetB
 tag @s add optSetA

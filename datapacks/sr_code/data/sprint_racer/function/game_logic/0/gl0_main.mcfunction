@@ -23,7 +23,7 @@ scoreboard players remove @a[scores={subtitleDelay=1..}] subtitleDelay 1
 tag @a[tag=noInventory] remove noInventory
 
 #no music playing? start a new music track
-execute unless entity @e[type=armor_stand,tag=random,tag=currentBGM] run function sprint_racer:game_logic/0/restart_music
+execute unless entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,tag=currentBGM] run function sprint_racer:game_logic/0/restart_music
 
 #fix a weird bug
 execute as @a[gamemode=spectator,tag=eliminated] run scoreboard players set @s join 1
@@ -106,7 +106,7 @@ scoreboard players set @s[scores={readyRequired=..0}] readyRequired 1
 
 #calculate ready players
 scoreboard players set @s readyDummy 0
-execute as @a[tag=playing,tag=readyup] run scoreboard players add @e[tag=w,type=armor_stand] readyDummy 1
+execute as @a[tag=playing,tag=readyup] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] readyDummy 1
 scoreboard players operation @s readyCount = @s readyDummy
 
 #take (ready players) - (required ready players)

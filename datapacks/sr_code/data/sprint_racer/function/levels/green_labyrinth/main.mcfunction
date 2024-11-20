@@ -1,7 +1,7 @@
 function sprint_racer:levels/green_labyrinth/map
 
-execute if entity @e[tag=w,type=armor_stand,scores={mapZone=1}] if entity @e[tag=activeplayer,scores={lapFake=2..}] run function sprint_racer:levels/green_labyrinth/open_yellow_route
-execute if entity @e[tag=w,type=armor_stand,scores={mapZone=2}] if entity @e[tag=activeplayer,scores={lapFake=3..}] run function sprint_racer:levels/green_labyrinth/open_red_route
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={mapZone=1}] if entity @e[tag=activeplayer,scores={lapFake=2..}] run function sprint_racer:levels/green_labyrinth/open_yellow_route
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={mapZone=2}] if entity @e[tag=activeplayer,scores={lapFake=3..}] run function sprint_racer:levels/green_labyrinth/open_red_route
 
 #fall out of bounds, get reset since it's very hard to recover after falling to the floor
 execute as @a[tag=playing,scores={recDirection=10,hp=1..},nbt={OnGround:1b},gamemode=!spectator] at @s if block ~ ~-1 ~ grass_block run function sprint_racer:levels/green_labyrinth/respawn1

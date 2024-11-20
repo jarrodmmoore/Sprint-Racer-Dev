@@ -5,4 +5,4 @@
 #gameTime=160 GO!
 
 #check if we need to make changes to accommodate time attack or modified lap counts
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=0,lap=2..}] as @e[tag=w,type=armor_stand,limit=1] run function sprint_racer:levels/the_gauntlet/added_laps
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=0,lap=2..}] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] run function sprint_racer:levels/the_gauntlet/added_laps

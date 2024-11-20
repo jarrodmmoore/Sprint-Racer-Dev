@@ -7,7 +7,7 @@ scoreboard players set #math value 0
 execute if score @s check matches ..-1 run scoreboard players set #math value 1
 execute if score #math value matches 1 run scoreboard players remove @s[scores={lapFake=1..}] lap 1
 execute if score #math value matches 1 run scoreboard players remove @s[scores={lapFake=1..}] lapFake 1
-execute if score #math value matches 1 run scoreboard players operation @s check += @e[tag=w,type=armor_stand,limit=1] check
+execute if score #math value matches 1 run scoreboard players operation @s check += @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] check
 execute if score #math value matches 1 run scoreboard players add @s check 1
 
 tag @s remove gotoFinish
@@ -16,7 +16,7 @@ tag @s remove gotWarped
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=09a] run tag @s[nbt={RootVehicle:{Entity:{id:"minecraft:pig"}}}] add ejectkart
 
 #test if we're ready to go for the finish line or not
-scoreboard players operation @s nCheck = @e[tag=w,type=armor_stand,limit=1] check
+scoreboard players operation @s nCheck = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] check
 scoreboard players operation @s nCheck -= @s check
 tag @s[scores={nCheck=..0}] add gotoFinish
 scoreboard players set @s nCheck 0

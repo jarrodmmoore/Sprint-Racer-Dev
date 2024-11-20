@@ -1,5 +1,5 @@
 tag @e[tag=counted] remove counted
-scoreboard players set @e[tag=w,type=armor_stand] math 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math 0
 
 function sprint_racer:game_logic/1/elimination/find_last_place_recursive
 tag @e[tag=counted] remove counted
@@ -9,4 +9,4 @@ tag @e[tag=lastplace] add nextelimination
 tag @e[tag=lastplace] remove lastplace
 
 #time until elimination expired? eliminate last place!
-execute if entity @e[tag=w,scores={timeUntilElim=0}] as @e[tag=nextelimination] at @s run function sprint_racer:game_logic/1/elimination/eliminate_last_place
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={timeUntilElim=0}] as @e[tag=nextelimination] at @s run function sprint_racer:game_logic/1/elimination/eliminate_last_place

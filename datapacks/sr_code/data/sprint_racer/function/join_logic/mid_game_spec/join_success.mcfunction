@@ -9,9 +9,9 @@ effect give @s minecraft:resistance 100 1 true
 team join player @s
 
 #join a team if teams are enabled
-execute if entity @e[tag=w,type=armor_stand,tag=teamplay] run function sprint_racer:teams/pick_team
-execute if entity @e[tag=w,type=armor_stand,tag=teamplay,scores={forcePlayerTeam=1}] run function sprint_racer:teams/join_orange
-execute if entity @e[tag=w,type=armor_stand,tag=teamplay,scores={forcePlayerTeam=2}] run function sprint_racer:teams/join_cyan
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run function sprint_racer:teams/pick_team
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay,scores={forcePlayerTeam=1}] run function sprint_racer:teams/join_orange
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay,scores={forcePlayerTeam=2}] run function sprint_racer:teams/join_cyan
 
 #get initialized
 tag @s add playing
@@ -109,8 +109,8 @@ scoreboard players set @s currentSplit24 0
 scoreboard players set @s currentSplit25 0
 
 #respawn
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=1}] at @s run function sprint_racer:game_logic/1/respawn
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=1}] at @s run function sprint_racer:game_logic/3/respawn
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1}] at @s run function sprint_racer:game_logic/1/respawn
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1}] at @s run function sprint_racer:game_logic/3/respawn
 
 
 #shout it from the mountain tops
@@ -124,5 +124,5 @@ clear @s
 effect clear @s minecraft:invisibility
 
 #give proper effects now...
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=..150}] run effect give @s minecraft:invisibility 15 0 true
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=151..}] run effect clear @s
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=..150}] run effect give @s minecraft:invisibility 15 0 true
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=151..}] run effect clear @s

@@ -51,11 +51,11 @@
 
 #halftick?
 scoreboard players set #halftick value 0
-execute if entity @e[limit=1,tag=w,type=armor_stand,tag=halftick] run scoreboard players set #halftick value 1
+execute if entity @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=halftick] run scoreboard players set #halftick value 1
 
 #admin mode?
 scoreboard players set #adminmode value 0
-execute if entity @e[limit=1,tag=w,type=armor_stand,tag=requireAdmin] run scoreboard players set #adminmode value 1
+execute if entity @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=requireAdmin] run scoreboard players set #adminmode value 1
 
 #validate nodes?
 execute unless score #skipNodeValidation value matches 1 run function sprint_racer:game_logic/2/node_update/_tick_restore
@@ -66,8 +66,8 @@ scoreboard players add @a join 1
 execute as @a unless score @s join = #join_tick value run function sprint_racer:join
 execute as @a[scores={hpSet=..999}] run function sprint_racer:hp_scoreboard_fix
 #execute as @a unless entity @s[scores={join=100}] run function sprint_racer:join
-#scoreboard players add @e[tag=w,type=armor_stand] join 1
-#execute if entity @e[tag=w,type=armor_stand,scores={join=1000..}] run function sprint_racer:join_objective_refresh
+#scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] join 1
+#execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={join=1000..}] run function sprint_racer:join_objective_refresh
 
 #death logic for immediate respawns
 execute as @a[scores={death=0..}] at @s run function sprint_racer:death_logic/_death_logic_main
@@ -88,15 +88,15 @@ tag @e[tag=ai,type=!marker,type=!armor_stand] add activeplayer
 execute as @e[tag=delayTP] at @s run function sprint_racer:delayed_tp_particle
 
 #inventory check cycle
-execute unless entity @e[tag=w,type=armor_stand,tag=requireAdmin] run function sprint_racer:inventory_check/global_no_admins
-execute if entity @e[tag=w,type=armor_stand,tag=requireAdmin] run function sprint_racer:inventory_check/global_admins
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=requireAdmin] run function sprint_racer:inventory_check/global_no_admins
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=requireAdmin] run function sprint_racer:inventory_check/global_admins
 
 #mid-game voting
 function sprint_racer:mid_game_vote/mgv_main
 
 #oTimerGlobal, helps run commands at half frequency when I want to
-scoreboard players add @e[tag=w,type=armor_stand] oTimerGlobal 1
-scoreboard players set @e[tag=w,type=armor_stand,scores={oTimerGlobal=2..}] oTimerGlobal 0
+scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] oTimerGlobal 1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={oTimerGlobal=2..}] oTimerGlobal 0
 
 #attackedID stuff for giving KO points, resets after a while
 execute as @a[scores={hitPlayer=1..}] at @s run function sprint_racer:hit_another_player
@@ -136,23 +136,23 @@ execute as @a at @s run function sprint_racer:head_button
 
 
 #invisibility cramming
-execute if score global allowInvis matches 1 if score global gameState matches 1 if entity @e[tag=w,type=armor_stand,scores={gameTime=161..}] run function sprint_racer:game_logic/1/invisible_nearby/main
-execute if score global allowInvis matches 2 if score global gameState matches 1 if score global playerCountM matches 5.. if entity @e[tag=w,type=armor_stand,scores={gameTime=161..}] run function sprint_racer:game_logic/1/invisible_nearby/main
+execute if score global allowInvis matches 1 if score global gameState matches 1 if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=161..}] run function sprint_racer:game_logic/1/invisible_nearby/main
+execute if score global allowInvis matches 2 if score global gameState matches 1 if score global playerCountM matches 5.. if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=161..}] run function sprint_racer:game_logic/1/invisible_nearby/main
 
 #in case multiple players are in edit mode at the same time...
 #only ONE of them will carry out important node summoning commands
 tag @a[limit=1,sort=random,scores={playerState=2}] add executor
 
 #players in creative mode get admin controls
-execute unless entity @e[tag=w,type=armor_stand,tag=realms] as @a[gamemode=creative,tag=!restricted] at @s run function sprint_racer:admin
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms] as @a[gamemode=creative,tag=!restricted] at @s run function sprint_racer:admin
 
 #get coordinates
 execute as @a at @s run function sprint_racer:coordinates
 
 #items
-execute unless entity @e[tag=w,type=armor_stand,tag=teamplay,scores={gameState=1..3}] unless entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=14a] as @e[tag=w,type=armor_stand,limit=1] run function sprint_racer:items/item_tick/_main
-execute if entity @e[tag=w,type=armor_stand,tag=teamplay,scores={gameState=1..3}] unless entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=14a] as @e[tag=w,type=armor_stand,limit=1] run function sprint_racer:items/item_tick/_main_teams
-execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=14a] as @e[tag=w,type=armor_stand,limit=1] run function sprint_racer:items/item_tick/_main
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay,scores={gameState=1..3}] unless entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=14a] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] run function sprint_racer:items/item_tick/_main
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay,scores={gameState=1..3}] unless entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=14a] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] run function sprint_racer:items/item_tick/_main_teams
+execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=14a] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] run function sprint_racer:items/item_tick/_main
 
 
 #20Hz stuff
@@ -166,18 +166,18 @@ execute as @e[scores={damage=1..}] at @s run function sprint_racer:damage_logic/
 execute as @a[gamemode=!spectator,gamemode=!creative,nbt={OnGround:1b},scores={moveState=3}] at @s run function sprint_racer:sneak_regen
 execute if score #halftick value matches 1 as @a[gamemode=!spectator,gamemode=!creative,nbt={OnGround:1b},scores={moveState=3}] at @s run function sprint_racer:sneak_regen
 scoreboard players set @a[scores={regenTimer=1..,moveState=..2}] regenTimer 0
-execute if score global gameState matches 1 if entity @e[tag=w,type=armor_stand,scores={gameTime=180..}] run bossbar set minecraft:control_holdtosprint players @a[tag=!bbarbump,tag=playing,gamemode=!spectator,scores={timeWalked=50..}]
+execute if score global gameState matches 1 if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=180..}] run bossbar set minecraft:control_holdtosprint players @a[tag=!bbarbump,tag=playing,gamemode=!spectator,scores={timeWalked=50..}]
 bossbar set minecraft:control_sneakheal players @a[tag=playing,tag=!bbarbump,gamemode=!spectator,scores={heal_aware=50..}]
 
 #count active players, show speedometer if no other players are present
-scoreboard players set @e[tag=w,type=armor_stand] playerCount 0
-scoreboard players set @e[tag=w,type=armor_stand] playerCountB 0
-execute as @a[tag=playing] run scoreboard players add @e[tag=w,type=armor_stand] playerCount 1
-execute as @a[tag=playing,gamemode=!spectator] run scoreboard players add @e[tag=w,type=armor_stand] playerCountB 1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerCount 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerCountB 0
+execute as @a[tag=playing] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerCount 1
+execute as @a[tag=playing,gamemode=!spectator] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerCountB 1
 
 
 #show speedometer if only one racer is present
-execute if entity @e[tag=w,type=armor_stand,tag=speedo,tag=!nospeedo] as @a[limit=1,tag=playing] at @s run function sprint_racer:speedometer/speedo_main
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=speedo,tag=!nospeedo] as @a[limit=1,tag=playing] at @s run function sprint_racer:speedometer/speedo_main
 
 #xp-bar speedometer
 function sprint_racer:speedometer/xp_bar_main
@@ -189,7 +189,7 @@ function sprint_racer:effects/passive
 
 ###############################################
 #GAME LOGIC (very important function call)
-execute as @e[tag=w,limit=1,type=armor_stand] run function sprint_racer:game_logic/_index
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand] run function sprint_racer:game_logic/_index
 ###############################################
 
 
@@ -197,7 +197,7 @@ execute as @e[tag=w,limit=1,type=armor_stand] run function sprint_racer:game_log
 execute as @a[scores={playerState=2}] at @s run function sprint_racer:game_logic/2/gl2_main
 
 #global cheats
-execute if entity @e[tag=w,type=armor_stand,tag=cheatdetected] run function sprint_racer:cheats/_cheats_main
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=cheatdetected] run function sprint_racer:cheats/_cheats_main
 execute as @a[limit=2,gamemode=!spectator,sort=random] at @s positioned ~ ~-1.4 ~ positioned ^ ^ ^1 if entity @e[tag=cheategg,type=armor_stand,tag=!eggshow,distance=..2] run function sprint_racer:cheats/eggs/player_show
 execute as @e[tag=eggshow,type=armor_stand] at @s run function sprint_racer:cheats/eggs/egg_hide
 
@@ -206,7 +206,7 @@ execute as @e[type=marker,scores={nodeState=1..},tag=node,tag=teleporter,tag=!te
 execute as @e[type=marker,scores={nodeState=1..},tag=node,tag=teleporter,tag=!teledest] at @s as @e[tag=activeplayer,distance=..2] run function sprint_racer:teleporter
 
 #spectator mid-game join functionality
-execute as @e[tag=w,type=armor_stand,limit=1,scores={specJoinTime=1..}] run function sprint_racer:join_logic/mid_game_spec/_mgs_main
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,scores={specJoinTime=1..}] run function sprint_racer:join_logic/mid_game_spec/_mgs_main
 execute as @a[scores={specJoin=1}] run function sprint_racer:join_logic/mid_game_spec/join_attempt
 
 #scoreboard cleanup

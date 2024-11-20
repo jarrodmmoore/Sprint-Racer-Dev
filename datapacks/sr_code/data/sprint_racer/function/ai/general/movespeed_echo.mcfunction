@@ -5,7 +5,7 @@ execute if entity @s[scores={hitstun=..0}] run scoreboard players set @s moving 
 
 
 #check if ai is stuck...
-execute if entity @e[tag=w,scores={gameTime=200..}] run scoreboard players add @s[scores={moveCheck=0,aiStuckTime=..400}] aiStuckTime 1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=200..}] run scoreboard players add @s[scores={moveCheck=0,aiStuckTime=..400}] aiStuckTime 1
 scoreboard players remove @s[scores={moveCheck=1..,aiStuckTime=1..}] aiStuckTime 1
 
 

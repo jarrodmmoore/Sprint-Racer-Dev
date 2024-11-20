@@ -7,6 +7,6 @@ setblock 1594 101 448 air
 setblock 1594 101 448 minecraft:birch_wall_sign[facing=west]{front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/custom_ai"}}','{"text":"CUSTOM AI","bold":true,"color":"black"}','{"text":"PARAMETERS","bold":true,"color":"black"}','{"text":"[SET]","color":"dark_blue"}']},is_waxed:1b}
 
 
-scoreboard players add @e[tag=random,type=armor_stand,scores={rNumber=1..9}] customAIset 0
-scoreboard players add @e[tag=random,type=armor_stand,scores={rNumber=1..9}] customAIdiff 0
-scoreboard players add @e[tag=random,type=armor_stand,scores={rNumber=1..9}] customAIteam 0
+scoreboard players add @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9}] customAIset 0
+scoreboard players add @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9}] customAIdiff 0
+scoreboard players add @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9}] customAIteam 0

@@ -1,4 +1,4 @@
-scoreboard players set @e[tag=w,type=armor_stand] mapZone 3
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] mapZone 3
 scoreboard players set @a[scores={check=..1}] mapZone 3
 
 fill 297 68 284 297 69 286 minecraft:smooth_stone_slab[type=double]

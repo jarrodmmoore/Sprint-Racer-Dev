@@ -11,8 +11,8 @@ execute if block ~ 0 ~ minecraft:black_wool run scoreboard players set @s[scores
 execute if block ~ 0 ~ minecraft:black_wool run scoreboard players set @s[tag=ai] recDirection 12
 
 
-execute if entity @s[scores={recDirection=10}] if entity @e[tag=w,scores={oTimer=0,currentTimeMsec=0}] run scoreboard players remove @s[scores={boundaryTimer=1..}] boundaryTimer 1
-execute unless entity @s[scores={recDirection=10}] if entity @e[tag=w,scores={oTimer=0,currentTimeMsec=0}] run scoreboard players add @s[scores={boundaryTimer=..9}] boundaryTimer 1
+execute if entity @s[scores={recDirection=10}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={oTimer=0,currentTimeMsec=0}] run scoreboard players remove @s[scores={boundaryTimer=1..}] boundaryTimer 1
+execute unless entity @s[scores={recDirection=10}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={oTimer=0,currentTimeMsec=0}] run scoreboard players add @s[scores={boundaryTimer=..9}] boundaryTimer 1
 
 #out of bounds
 scoreboard players set @s[scores={recDirection=10,actionbarState=..7}] actionbarState 7

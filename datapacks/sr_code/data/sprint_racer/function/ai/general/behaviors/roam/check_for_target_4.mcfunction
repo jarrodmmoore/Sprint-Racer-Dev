@@ -7,8 +7,8 @@ execute if entity @e[tag=aiTarget4,type=!area_effect_cloud] run function sprint_
 execute unless entity @e[tag=aiTarget4,type=area_effect_cloud] run summon area_effect_cloud ~ ~ ~ {Tags:["aiTarget4"],Duration:6}
 
 #turn randomly as we move (very similar to squid blindness)
-scoreboard players operation @s math = @e[limit=1,type=armor_stand,sort=random,tag=random,scores={rNumber=1..2}] rNumber
-scoreboard players operation @s math2 = @e[limit=1,type=armor_stand,sort=random,tag=random,scores={rNumber=1..3}] rNumber
+scoreboard players operation @s math = @e[limit=1,type=armor_stand,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..2}] rNumber
+scoreboard players operation @s math2 = @e[limit=1,type=armor_stand,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..3}] rNumber
 scoreboard players set @s[scores={math=1}] aiRotOffset 10
 scoreboard players set @s[scores={math=2}] aiRotOffset -10
 scoreboard players set @s aiRotOSTime 4
@@ -17,7 +17,7 @@ scoreboard players set @s aiRotOSTime 4
 execute if score @s aiAirTime matches ..4 rotated ~ 0 if block ^ ^ ^1 #sprint_racer:ai_not_solid unless block ^ ^ ^1 water if block ^ ^-1 ^1 #sprint_racer:ai_not_solid unless block ^ ^-1 ^1 water if block ^ ^-2 ^1 #sprint_racer:ai_not_solid if block ^ ^-3 ^1 #sprint_racer:ai_not_solid run scoreboard players add @s aiRotOffset 180
 
 #turn sharply if we're rubbing against a wall
-scoreboard players operation #test value = @e[limit=1,type=armor_stand,sort=random,tag=random,scores={rNumber=1..50}] rNumber
+scoreboard players operation #test value = @e[limit=1,type=armor_stand,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..50}] rNumber
 execute if score #test value matches 1 run scoreboard players add @s roamLookBias 1
 execute if score @s roamLookBias matches 2.. run scoreboard players set @s roamLookBias 0
 execute unless score @s roamLookBias matches 1 rotated ~ 0 unless block ^ ^1 ^1 #sprint_racer:ai_not_solid run scoreboard players remove @s aiRotOffset 30

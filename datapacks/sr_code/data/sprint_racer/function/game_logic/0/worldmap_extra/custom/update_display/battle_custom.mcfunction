@@ -1,7 +1,7 @@
 #identify the track we're interested in
 tag @e[tag=wmCustomT] remove wmCustomT
 execute as @e[tag=customtrack,tag=custombattle] run scoreboard players operation @s customDummyBID = @s customTrackBID
-execute as @e[tag=customtrack,tag=custombattle] run scoreboard players operation @s customDummyBID -= @e[tag=w,limit=1] wmCustomNum
+execute as @e[tag=customtrack,tag=custombattle] run scoreboard players operation @s customDummyBID -= @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] wmCustomNum
 tag @e[limit=1,sort=random,tag=customtrack,tag=custombattle,scores={customDummyBID=0}] add wmCustomT
 
 #7XXX and 9XXX get replaced for bottom text

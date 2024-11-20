@@ -1,2 +1,2 @@
-scoreboard players operation @s revengeMine = @e[tag=w,limit=1] revengeMine
-scoreboard players add @e[tag=w,type=armor_stand] revengeMine 1
+scoreboard players operation @s revengeMine = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] revengeMine
+scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] revengeMine 1

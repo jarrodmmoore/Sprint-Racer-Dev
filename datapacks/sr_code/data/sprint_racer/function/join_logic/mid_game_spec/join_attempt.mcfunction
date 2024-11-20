@@ -1,2 +1,2 @@
-execute if entity @e[tag=w,type=armor_stand,scores={specJoinTime=1..}] run function sprint_racer:join_logic/mid_game_spec/join_success
-execute unless entity @e[tag=w,type=armor_stand,scores={specJoinTime=1..}] run function sprint_racer:join_logic/mid_game_spec/join_fail
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={specJoinTime=1..}] run function sprint_racer:join_logic/mid_game_spec/join_success
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={specJoinTime=1..}] run function sprint_racer:join_logic/mid_game_spec/join_fail

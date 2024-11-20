@@ -5,7 +5,7 @@ execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,scores={aiHoldin
 execute as @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,scores={aiHoldingItem=1}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/speed_modifier_cycle
 
 #randomizer time reset
-execute as @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,scores={aiHoldingItem=37}] run scoreboard players set @e[tag=w,type=armor_stand] randomizerTime 100
+execute as @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,scores={aiHoldingItem=37}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] randomizerTime 100
 
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,scores={aiHoldingItem=1}] run tag @e[tag=cheats,x=1548,y=148,z=422,distance=..1] add 01a
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,scores={aiHoldingItem=2}] run tag @e[tag=cheats,x=1548,y=148,z=422,distance=..1] add 02a

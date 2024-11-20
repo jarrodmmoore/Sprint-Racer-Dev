@@ -1,4 +1,4 @@
-tag @e[tag=w,type=armor_stand] add suddenDeath
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add suddenDeath
 
 scoreboard players set @a[tag=playing,tag=!eliminated] playerLives 1
 scoreboard players set @e[tag=AImaster,tag=!aiDisable] playerLives 1

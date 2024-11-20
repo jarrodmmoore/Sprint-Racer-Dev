@@ -10,8 +10,8 @@ execute as @a[scores={gpMenu2=200..299}] run function sprint_racer:game_logic/11
 
 
 #force adventure mode
-execute unless entity @e[tag=w,type=armor_stand,limit=1,tag=requireAdmin] run gamemode adventure @a
-execute if entity @e[tag=w,type=armor_stand,limit=1,tag=requireAdmin] run gamemode adventure @a[tag=admin]
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=requireAdmin] run gamemode adventure @a
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=requireAdmin] run gamemode adventure @a[tag=admin]
 
 
 bossbar set freeroam players @a
@@ -51,8 +51,8 @@ scoreboard players reset @a[scores={pressJump=1..}] pressJump
 tag @e[tag=hasLectern] remove hasLectern
 tag @a[nbt={Inventory:[{Slot:0b,id:"minecraft:lectern",components:{"minecraft:custom_data":{gpSettings:1b}}}]}] add hasLectern
 clear @a[tag=!hasLectern] lectern
-execute if entity @e[limit=1,tag=w,type=armor_stand,scores={gpNumber=1..}] as @a[gamemode=!creative,tag=!hasLectern] run function sprint_racer_language:_dlc_3/grand_prix/give_lectern
-execute if entity @e[limit=1,tag=w,type=armor_stand,scores={gpNumber=..0}] run clear @a[gamemode=!creative,tag=hasLectern] lectern[custom_data~{gpSettings:1b}]
+execute if entity @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gpNumber=1..}] as @a[gamemode=!creative,tag=!hasLectern] run function sprint_racer_language:_dlc_3/grand_prix/give_lectern
+execute if entity @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gpNumber=..0}] run clear @a[gamemode=!creative,tag=hasLectern] lectern[custom_data~{gpSettings:1b}]
 execute as @a[scores={carrotInput=1..,inputCooldown=..0}] if items entity @s weapon.mainhand lectern[custom_data~{gpSettings:1b}] run function sprint_racer:game_logic/11/lectern_track_settings
 
 #exit item

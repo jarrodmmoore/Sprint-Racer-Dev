@@ -12,13 +12,13 @@ setblock 1615 81 369 stone_button[facing=north]
 setblock 1611 81 369 stone_button[facing=north]
 
 #restore gamemodePresets from before
-scoreboard players operation @e[tag=w,type=armor_stand,tag=grandprix] gamemodePresetA = @e[tag=w,type=armor_stand,limit=1] gamePresetA_save
-scoreboard players operation @e[tag=w,type=armor_stand,tag=grandprix] gamemodePresetB = @e[tag=w,type=armor_stand,limit=1] gamePresetB_save
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] gamemodePresetA = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] gamePresetA_save
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] gamemodePresetB = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] gamePresetB_save
 
-#scoreboard players set @e[tag=w,type=armor_stand] gameState 0
+#scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 0
 scoreboard players set #requestSaveState value 0
 
-tag @e[tag=w,type=armor_stand] remove grandprix
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove grandprix
 scoreboard players set grandprix gameState 0
 
 function sprint_racer:game_logic/0/_initialize

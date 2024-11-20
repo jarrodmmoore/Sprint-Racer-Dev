@@ -1,11 +1,11 @@
-tag @e[tag=w,type=armor_stand] add taValidFinish
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add taValidFinish
 
 #DEV, PRINT RAW TIME
-execute if entity @a[tag=dev] run tellraw @a ["",{"text":"[ DEV ] Raw Time: "},{"score":{"name":"@e[tag=w,limit=1]","objective":"currentTime"}}]
+execute if entity @a[tag=dev] run tellraw @a ["",{"text":"[ DEV ] Raw Time: "},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"currentTime"}}]
 
-scoreboard players operation @s storedTimeMin = @e[tag=w,type=armor_stand] currentTimeMin
-scoreboard players operation @s storedTimeSec = @e[tag=w,type=armor_stand] currentTimeSec
-scoreboard players operation @s storedTimeMsec = @e[tag=w,type=armor_stand] currentTimeMsec
+scoreboard players operation @s storedTimeMin = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeMin
+scoreboard players operation @s storedTimeSec = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeSec
+scoreboard players operation @s storedTimeMsec = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeMsec
 
 #show all previous lap times and total time (NOT USED IN TIME ATTACK DUE TO VISUAL CLUTTER)
 #scoreboard players set @s lapShowDelay 2
@@ -31,4 +31,4 @@ team join playerFinished @a
 scoreboard players set @a subtitleDelay 60
 
 scoreboard players set @a actionbarState -1
-scoreboard players set @e[tag=w,type=armor_stand] timeRemaining -1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining -1

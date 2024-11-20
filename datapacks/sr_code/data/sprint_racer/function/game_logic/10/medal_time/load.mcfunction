@@ -78,7 +78,7 @@ scoreboard players operation @s diamondTR += @s math2
 
 
 #alright, now send w the times
-scoreboard players operation @e[tag=w,limit=1,type=armor_stand] bronzeTR = @s bronzeTR
-scoreboard players operation @e[tag=w,limit=1,type=armor_stand] silverTR = @s silverTR
-scoreboard players operation @e[tag=w,limit=1,type=armor_stand] goldTR = @s goldTR
-scoreboard players operation @e[tag=w,limit=1,type=armor_stand] diamondTR = @s diamondTR
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand] bronzeTR = @s bronzeTR
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand] silverTR = @s silverTR
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand] goldTR = @s goldTR
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand] diamondTR = @s diamondTR

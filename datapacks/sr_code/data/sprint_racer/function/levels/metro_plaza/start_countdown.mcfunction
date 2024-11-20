@@ -4,4 +4,4 @@
 #gameTime=140 1..
 #gameTime=160 GO!
 
-execute if entity @e[tag=w,scores={gameTime=90}] as @e[type=item_frame,tag=fixframe] run data merge entity @s {ItemRotation:0b,Invulnerable:1b,Silent:1b}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=90}] as @e[type=item_frame,tag=fixframe] run data merge entity @s {ItemRotation:0b,Invulnerable:1b,Silent:1b}

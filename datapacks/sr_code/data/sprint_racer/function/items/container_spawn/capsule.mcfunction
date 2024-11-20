@@ -6,8 +6,8 @@ execute as @e[tag=chest3,type=armor_stand,tag=cSETME] at @s run function sprint_
 #=======================
 #item odds depend on whether we're in battle mode or not
 #(lobby and free-roam are considered "race" here)
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=3}] run function sprint_racer:items/container_spawn/capsule_category_odds/race
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=3}] run function sprint_racer:items/container_spawn/capsule_category_odds/battle
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=3}] run function sprint_racer:items/container_spawn/capsule_category_odds/race
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=3}] run function sprint_racer:items/container_spawn/capsule_category_odds/battle
 #=======================
 
 scoreboard players reset @s rNumber

@@ -9,7 +9,7 @@ tag @e[tag=cheats,x=1548,y=148,z=422,distance=..1] add foundacheat
 tag @e[tag=cheats,x=1548,y=148,z=422,distance=..1] add 46
 
 #un-ban the track right away now that we've discovered it
-tag @e[type=armor_stand,tag=random,scores={rNumber=50}] remove btBlacklist
+tag @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=50}] remove btBlacklist
 
 #set display
 scoreboard players set @e[tag=cheats,x=1548,y=148,z=422,distance=..1] aiHoldingItem 46

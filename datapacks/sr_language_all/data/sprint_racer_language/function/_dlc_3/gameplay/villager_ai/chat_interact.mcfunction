@@ -1,5 +1,5 @@
 #pick a random message to say
-scoreboard players operation @s math = @e[limit=1,sort=random,type=armor_stand,tag=random,scores={rNumber=1..15}] rNumber
+scoreboard players operation @s math = @e[limit=1,sort=random,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..15}] rNumber
 
 #no talk if we're on cooldown
 scoreboard players set @s[scores={inputCooldown=1..}] math 0

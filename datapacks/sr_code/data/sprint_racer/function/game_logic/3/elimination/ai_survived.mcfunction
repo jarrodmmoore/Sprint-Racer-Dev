@@ -6,7 +6,7 @@ scoreboard players set @s finishPos 1
 tag @s add eliminated
 
 scoreboard players set @s addPoints 0
-scoreboard players operation @s addPoints += @e[tag=w,limit=1] addPoints2
+scoreboard players operation @s addPoints += @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] addPoints2
 
 #AI stuff
 execute if entity @s[tag=AImaster,scores={rNumber=1}] run scoreboard objectives remove validAI1

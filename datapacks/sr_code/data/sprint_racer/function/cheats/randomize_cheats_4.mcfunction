@@ -1,7 +1,7 @@
 #run by the "cheats" armor stand
 
 #random speed multiplier for cheat #1 (speedlevel 0-12)
-execute if score #focusCheat value matches 1 run scoreboard players operation @s speedlevel = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..13}] rNumber
+execute if score #focusCheat value matches 1 run scoreboard players operation @s speedlevel = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..13}] rNumber
 execute if score #focusCheat value matches 1 run scoreboard players remove @s speedlevel 1
 
 execute if score #focusCheat value matches 1 run tag @s add 01a

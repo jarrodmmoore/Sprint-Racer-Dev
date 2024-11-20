@@ -7,9 +7,9 @@ scoreboard players add @s[tag=gotDirection,scores={navDirection=..-1}] navDirect
 
 ##navigation arrow cannot change instantly, instead must change incrementally until the correct orientation is reached
 ##this makes the navigator look a lot less jank and less likely to overwhelm players with wacky jumps in orientation
-#execute if entity @e[tag=w,tag=!halftick,scores={oTimerGlobal=0}] run function sprint_racer:game_logic/1/nav/nav_arrow_chase
+#execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!halftick,scores={oTimerGlobal=0}] run function sprint_racer:game_logic/1/nav/nav_arrow_chase
 ##^ Remove the hashtag above to double the refresh rate. I chose to cut the refresh rate in half since I thought it looked better.
-execute if entity @e[tag=w,tag=!halftick,scores={oTimerGlobal=1}] run function sprint_racer:game_logic/1/nav/nav_arrow_chase
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!halftick,scores={oTimerGlobal=1}] run function sprint_racer:game_logic/1/nav/nav_arrow_chase
 execute if score #halftick value matches 1 run function sprint_racer:game_logic/1/nav/nav_arrow_chase
 
 scoreboard players set @s[tag=!gotDirection] navDirection -1

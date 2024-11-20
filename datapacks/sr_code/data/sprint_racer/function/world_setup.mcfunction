@@ -7,8 +7,8 @@ scoreboard players set #wHasScore value 100
 
 #fix duplicate w problem that may happen with bad worldspawn or fussy plugins
 scoreboard players set global math 0
-execute as @e[tag=w,type=armor_stand] run scoreboard players add global math 1
-execute unless score global math matches 1 run kill @e[tag=w,type=armor_stand]
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run scoreboard players add global math 1
+execute unless score global math matches 1 run kill @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand]
 execute unless score global math matches 1 run kill @e[name="w"]
 
 #important armor stand locations
@@ -21,37 +21,37 @@ execute unless score global math matches 1 run kill @e[name="w"]
 #these armor stands are in different chunks to take advantage of chunkLimited selectors
 
 #deal with armor stands, especially "w"
-execute unless entity @e[tag=w,type=armor_stand] run summon armor_stand 1560 150 406 {CustomName:'{"text":"w"}',NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["forceGS","w"]}
-scoreboard players set @e[tag=w,tag=forceGS] gameState 0
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run summon armor_stand 1560 150 406 {CustomName:'{"text":"w"}',NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["forceGS","w"]}
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=forceGS] gameState 0
 tag @e[tag=forceGS] remove forceGS
 execute positioned 1548 155 406 run function sprint_racer:random/summon_stands
-tag @e[tag=w,type=armor_stand] add optRnB
-tag @e[tag=w,type=armor_stand] remove optRace
-tag @e[tag=w,type=armor_stand] remove optBattle
-tag @e[tag=w,type=armor_stand] add optVote
-tag @e[tag=w,type=armor_stand] remove optChoose
-tag @e[tag=w,type=armor_stand] remove optRandom
-tag @e[tag=w,type=armor_stand] add optItems
-tag @e[tag=w,type=armor_stand] remove optItemsB
-tag @e[tag=w,type=armor_stand] remove optNoItems
-tag @e[tag=w,type=armor_stand] add optBalance
-tag @e[tag=w,type=armor_stand] add nospeedo
-tag @e[tag=w,type=armor_stand] add optRAIsingle
-tag @e[tag=w,type=armor_stand] remove optRAInever
-tag @e[tag=w,type=armor_stand] remove optRAIalways
-tag @e[tag=w,type=armor_stand] add optBAIsingle
-tag @e[tag=w,type=armor_stand] remove optBAIalways
-tag @e[tag=w,type=armor_stand] remove optBAInever
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optRnB
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optRace
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optBattle
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optVote
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optChoose
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optRandom
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optItems
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optItemsB
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optNoItems
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optBalance
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add nospeedo
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optRAIsingle
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optRAInever
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optRAIalways
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optBAIsingle
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optBAIalways
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optBAInever
 
 #more options stuff
 scoreboard objectives add optAIdiff dummy
-scoreboard players set @e[tag=w,type=armor_stand] optAIdiff 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] optAIdiff 0
 scoreboard objectives add optRAIcount dummy
-scoreboard players set @e[tag=w,type=armor_stand] optRAIcount 4
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] optRAIcount 4
 scoreboard objectives add optBAIcount dummy
-scoreboard players set @e[tag=w,type=armor_stand] optBAIcount 4
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] optBAIcount 4
 scoreboard objectives add allowInvis dummy
-scoreboard players set @e[tag=w,type=armor_stand] allowInvis 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] allowInvis 0
 scoreboard players set global allowInvis 0
 
 #music stuff
@@ -634,16 +634,16 @@ scoreboard objectives add timeUntilElim dummy
 scoreboard objectives add playerLives dummy
 
 #lap display during races
-bossbar add lap1 ["",{"text":"Lap [1/","color":"green","bold":true},{"score":{"name":"@e[tag=w,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap2 ["",{"text":"Lap [2/","color":"green","bold":true},{"score":{"name":"@e[tag=w,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap3 ["",{"text":"Lap [3/","color":"green","bold":true},{"score":{"name":"@e[tag=w,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap4 ["",{"text":"Lap [4/","color":"green","bold":true},{"score":{"name":"@e[tag=w,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap5 ["",{"text":"Lap [5/","color":"green","bold":true},{"score":{"name":"@e[tag=w,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap6 ["",{"text":"Lap [6/","color":"green","bold":true},{"score":{"name":"@e[tag=w,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap7 ["",{"text":"Lap [7/","color":"green","bold":true},{"score":{"name":"@e[tag=w,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap8 ["",{"text":"Lap [8/","color":"green","bold":true},{"score":{"name":"@e[tag=w,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap9 ["",{"text":"Lap [9/","color":"green","bold":true},{"score":{"name":"@e[tag=w,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap10 ["",{"text":"Lap [10/","color":"green","bold":true},{"score":{"name":"@e[tag=w,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
+bossbar add lap1 ["",{"text":"Lap [1/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
+bossbar add lap2 ["",{"text":"Lap [2/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
+bossbar add lap3 ["",{"text":"Lap [3/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
+bossbar add lap4 ["",{"text":"Lap [4/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
+bossbar add lap5 ["",{"text":"Lap [5/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
+bossbar add lap6 ["",{"text":"Lap [6/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
+bossbar add lap7 ["",{"text":"Lap [7/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
+bossbar add lap8 ["",{"text":"Lap [8/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
+bossbar add lap9 ["",{"text":"Lap [9/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
+bossbar add lap10 ["",{"text":"Lap [10/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
 bossbar add timeremaining ["",{"text":"Time"}]
 bossbar set lap1 style progress
 bossbar set lap2 style progress
@@ -681,16 +681,16 @@ scoreboard objectives add gameTime dummy
 scoreboard objectives add voteTime dummy
 scoreboard objectives add voteCount dummy
 scoreboard objectives add defLobbyTime dummy
-scoreboard players set @e[tag=w,type=armor_stand] defLobbyTime 30
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] defLobbyTime 30
 scoreboard objectives add defVoteTime dummy
-scoreboard players set @e[tag=w,type=armor_stand] defVoteTime 25
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] defVoteTime 25
 scoreboard objectives add roundNumber dummy
 scoreboard objectives add roundNumber2 dummy
-scoreboard players set @e[tag=w,type=armor_stand] roundNumber 0
-scoreboard players set @e[tag=w,type=armor_stand] roundNumber2 0
-scoreboard players set @e[tag=w,type=armor_stand] readyState 0
-scoreboard players set @e[tag=w,type=armor_stand] itemPresetA 1
-scoreboard players set @e[tag=w,type=armor_stand] itemPresetB 1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber2 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] readyState 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemPresetA 1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemPresetB 1
 scoreboard objectives add pressJump minecraft.custom:minecraft.jump
 scoreboard objectives add lastGamemode dummy
 scoreboard objectives add creditsCycle dummy
@@ -706,14 +706,14 @@ scoreboard objectives add airTime dummy
 scoreboard objectives add GTplatTimer dummy
 scoreboard objectives add carCooldown dummy
 
-scoreboard players add @e[tag=random,scores={rNumber=1..50}] medalRace 0
-scoreboard players add @e[tag=random,scores={rNumber=1..50}] medalBattle 0
-scoreboard players add @e[tag=random,scores={rNumber=1..50}] trackBestTime 0
+scoreboard players add @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..50}] medalRace 0
+scoreboard players add @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..50}] medalBattle 0
+scoreboard players add @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..50}] trackBestTime 0
 
 #quickly redo quick select data...
 function sprint_racer:worldmap/reset_quick_select_data
 
 scoreboard players set @a join 1
 tellraw @a ["",{"text":"World setup successful!","color":"aqua"}]
-execute unless entity @e[tag=w,type=armor_stand] run tellraw @a ["",{"text":"Critical entity \"w\" is not present.","color":"red"}]
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run tellraw @a ["",{"text":"Critical entity \"w\" is not present.","color":"red"}]
 execute as @a at @s run playsound minecraft:block.note_block.chime master @s ~ 100000 ~ 100000 2 1

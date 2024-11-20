@@ -23,6 +23,6 @@ tag @s remove takeItFromHere
 #out of load distance, do a /kill
 execute unless entity @s[tag=foundCP] run kill @s
 
-execute unless entity @e[tag=w,tag=noCharity] unless entity @e[tag=w,tag=banNo10] run function sprint_racer:game_logic/1/charity_item/_index
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=noCharity] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=banNo10] run function sprint_racer:game_logic/1/charity_item/_index
 
 tag @s remove foundCP

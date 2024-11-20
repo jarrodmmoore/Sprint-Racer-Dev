@@ -3,24 +3,24 @@ scoreboard players set @s lastCatPicked 5
 tag @s add itemGetType
 tag @e[tag=tempBan,type=armor_stand] remove tempBan
 
-execute if entity @e[tag=w,type=armor_stand,tag=banNo17] run tag @e[tag=random,scores={rNumber=1..14}] add tempBan
-execute if entity @e[tag=w,type=armor_stand,tag=banNo18] run tag @e[tag=random,scores={rNumber=15..26}] add tempBan
-execute if entity @e[tag=w,type=armor_stand,tag=banNo19] run tag @e[tag=random,scores={rNumber=27..34}] add tempBan
-execute if entity @e[tag=w,type=armor_stand,tag=banNo20] run tag @e[tag=random,scores={rNumber=35..40}] add tempBan
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banNo17] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..14}] add tempBan
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banNo18] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=15..26}] add tempBan
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banNo19] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=27..34}] add tempBan
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banNo20] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=35..40}] add tempBan
 
 #don't let players have more than 1 lightning
 execute store result score #test value run clear @s blaze_rod[custom_data~{item:1b}] 0
-execute if score #test value matches 1.. unless entity @e[tag=w,type=armor_stand,tag=banNo17,tag=banNo18,tag=banNo19] run tag @e[tag=random,scores={rNumber=35..40}] add tempBan
+execute if score #test value matches 1.. unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banNo17,tag=banNo18,tag=banNo19] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=35..40}] add tempBan
 
 #cooldown on rolling squids
-execute if score #squidCooldown value matches 1.. unless entity @e[tag=w,type=armor_stand,tag=banNo17,tag=banNo18] run tag @e[tag=random,scores={rNumber=27..34}] add tempBan
+execute if score #squidCooldown value matches 1.. unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banNo17,tag=banNo18] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=27..34}] add tempBan
 
 #cooldown on rolling lightning
-execute if score #lightningCooldown value matches 1.. unless entity @e[tag=w,type=armor_stand,tag=banNo17,tag=banNo18] run tag @e[tag=random,scores={rNumber=35..40}] add tempBan
+execute if score #lightningCooldown value matches 1.. unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banNo17,tag=banNo18] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=35..40}] add tempBan
 
 #pick a random number, ignoring any banned item types
 scoreboard players set @s rNumber 0
-scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,tag=!tempBan,scores={rNumber=1..40}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=!tempBan,scores={rNumber=1..40}] rNumber
 
 execute if entity @s[scores={rNumber=1..14}] run function sprint_racer_language:gameplay/give_item/no17
 execute if entity @s[scores={rNumber=15..26}] run function sprint_racer_language:gameplay/give_item/no18

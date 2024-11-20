@@ -7,6 +7,6 @@ setblock 1594 101 448 air
 setblock 1594 101 448 minecraft:birch_wall_sign[facing=west]{front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/custom_laps"}}','{"text":"CUSTOM LAP","bold":true,"color":"black"}','{"text":"OFFSET","bold":true,"color":"black"}','{"text":"[CHANGE]","color":"dark_blue"}']},is_waxed:1b}
 
 
-scoreboard players add @e[tag=w,type=armor_stand] customLapOffset 0
-scoreboard players add @e[tag=w,type=armor_stand] customLapType 0
-scoreboard players add @e[tag=w,type=armor_stand] customLapMult 0
+scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] customLapOffset 0
+scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] customLapType 0
+scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] customLapMult 0

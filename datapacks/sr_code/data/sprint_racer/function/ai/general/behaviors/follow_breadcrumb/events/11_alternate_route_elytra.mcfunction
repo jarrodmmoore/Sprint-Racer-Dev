@@ -1,7 +1,7 @@
 tag @s remove doIt
 
 scoreboard players set @s rNumber 0
-scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..50}] rNumber
 
 #likely to take alternate route if we have elytra
 #extra likely if we're also high skill AI

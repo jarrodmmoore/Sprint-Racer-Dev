@@ -1,7 +1,7 @@
 function sprint_racer:levels/outer_spaceway/map
 
 #cannon blast
-execute unless entity @e[tag=w,tag=halftick] as @e[tag=activeplayer,scores={scriptMove=3}] at @s if block ~ 97 ~ structure_void positioned 1198 95 2835 run function sprint_racer:levels/outer_spaceway/cannon_blast
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=halftick] as @e[tag=activeplayer,scores={scriptMove=3}] at @s if block ~ 97 ~ structure_void positioned 1198 95 2835 run function sprint_racer:levels/outer_spaceway/cannon_blast
 execute if score #halftick value matches 1 as @e[tag=activeplayer,scores={scriptMove=3..4}] at @s if block ~ 97 ~ structure_void positioned 1198 95 2835 run function sprint_racer:levels/outer_spaceway/cannon_blast
 
 #navigation patch on checkpoint 6
@@ -10,9 +10,9 @@ scoreboard players set @a[x=1203,y=76,z=2849,dx=22,dy=60,dz=12,gamemode=adventur
 
 
 #create effect clouds that will produce particles for the wind tunnel
-execute if entity @e[tag=w,type=armor_stand,scores={oTimerGlobal=1}] if loaded 1229 90 2892 run summon area_effect_cloud 1229 90 2892 {Duration:50,Tags:["risingTrail","randomSpread"]}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={oTimerGlobal=1}] if loaded 1229 90 2892 run summon area_effect_cloud 1229 90 2892 {Duration:50,Tags:["risingTrail","randomSpread"]}
 spreadplayers 1229 2892 3 3 false @e[tag=risingTrail,tag=randomSpread,type=area_effect_cloud]
-scoreboard players operation @e[tag=randomSpread,type=area_effect_cloud] lifespan = @e[tag=random,limit=1,sort=random,scores={rNumber=20..50}] rNumber
+scoreboard players operation @e[tag=randomSpread,type=area_effect_cloud] lifespan = @e[tag=random,x=1548,y=155,z=406,distance=..1,limit=1,sort=random,scores={rNumber=20..50}] rNumber
 tag @e[tag=randomSpread,type=area_effect_cloud] remove randomSpread
 
 #wind tunnel sound

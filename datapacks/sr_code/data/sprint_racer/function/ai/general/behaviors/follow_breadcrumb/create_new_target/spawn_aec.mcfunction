@@ -27,10 +27,10 @@ function sprint_racer:ai/general/name_target
 # > less likely if there's other players right next to us
 # > less likely if there's a trap near the AI breadcrumb here
 tag @s add lookatmeson
-execute if entity @s[scores={aiSkill=..1}] run scoreboard players operation #spread_roll value = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..12}] rNumber
-execute if entity @s[scores={aiSkill=2}] run scoreboard players operation #spread_roll value = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..8}] rNumber
-execute if entity @s[tag=!tryhard,scores={aiSkill=3..}] run scoreboard players operation #spread_roll value = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..6}] rNumber
-execute if entity @s[tag=tryhard,scores={aiSkill=3..}] run scoreboard players operation #spread_roll value = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..4}] rNumber
+execute if entity @s[scores={aiSkill=..1}] run scoreboard players operation #spread_roll value = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..12}] rNumber
+execute if entity @s[scores={aiSkill=2}] run scoreboard players operation #spread_roll value = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..8}] rNumber
+execute if entity @s[tag=!tryhard,scores={aiSkill=3..}] run scoreboard players operation #spread_roll value = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..6}] rNumber
+execute if entity @s[tag=tryhard,scores={aiSkill=3..}] run scoreboard players operation #spread_roll value = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..4}] rNumber
 execute at @s as @e[limit=2,tag=activeplayer,tag=!lookatmeson,distance=..3] run scoreboard players add #spread_roll value 1
 execute as @e[limit=1,tag=trap,distance=..4] run scoreboard players add #spread_roll value 2
 execute if score global gameState matches 3 run scoreboard players add #spread_roll value 3

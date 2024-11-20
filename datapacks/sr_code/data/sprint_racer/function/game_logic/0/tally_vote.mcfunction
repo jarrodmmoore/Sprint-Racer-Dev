@@ -34,8 +34,8 @@ execute if entity @e[scores={voteCount=1..}] run scoreboard players remove @e[sc
 execute if entity @e[scores={voteCount=1..}] run scoreboard players remove @e[scores={voteCount=..9999}] voteCount 1
 
 #roulette mode on? only 1 player (chosen at random) determines the track
-execute if entity @e[tag=w,type=armor_stand,tag=optRoulette,tag=!grandprix] as @a[tag=playing,limit=1,sort=random] run function sprint_racer:game_logic/0/roulette_rocks_the_vote
-execute if entity @e[tag=w,type=armor_stand,tag=grandprix] if score #gpTrackSelect value matches 4 as @a[tag=playing,limit=1,sort=random] run function sprint_racer:game_logic/0/roulette_rocks_the_vote
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optRoulette,tag=!grandprix] as @a[tag=playing,limit=1,sort=random] run function sprint_racer:game_logic/0/roulette_rocks_the_vote
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] if score #gpTrackSelect value matches 4 as @a[tag=playing,limit=1,sort=random] run function sprint_racer:game_logic/0/roulette_rocks_the_vote
 
 #clear tags
 tag @a remove playerVote1
@@ -46,9 +46,9 @@ tag @a remove playerVote3
 execute as @a at @s run playsound minecraft:block.note_block.bell master @s ~ ~ ~ 2 2
 tag @e[sort=random,limit=1,scores={voteCount=0..},tag=voteOption,tag=!invalidtrack,type=armor_stand] add chosenTrack
 #if no valid track was chosen, force choose the error handler track
-execute unless entity @e[tag=chosenTrack] run tag @e[tag=random,scores={rNumber=50}] add chosenTrack
-execute if entity @e[tag=w,scores={roundNumber=..4}] as @e[limit=1,tag=chosenTrack] run function sprint_racer:game_logic/0/vote_preview/race/v_r_index_announce
-execute if entity @e[tag=w,scores={roundNumber=5..}] as @e[limit=1,tag=chosenTrack] run function sprint_racer:game_logic/0/vote_preview/battle/v_b_index_announce
+execute unless entity @e[tag=chosenTrack] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=50}] add chosenTrack
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={roundNumber=..4}] as @e[limit=1,tag=chosenTrack] run function sprint_racer:game_logic/0/vote_preview/race/v_r_index_announce
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={roundNumber=5..}] as @e[limit=1,tag=chosenTrack] run function sprint_racer:game_logic/0/vote_preview/battle/v_b_index_announce
 
 tag @e[tag=voteOption] remove voteOption
 tag @e[tag=invalidtrack] remove invalidtrack

@@ -3,9 +3,9 @@
 #customLapMult
 #cl_trigger
 
-scoreboard players operation @s customLapOffset = @e[limit=1,tag=w,type=armor_stand] customLapOffset
-scoreboard players operation @s customLapType = @e[limit=1,tag=w,type=armor_stand] customLapType
-scoreboard players operation @s customLapMult = @e[limit=1,tag=w,type=armor_stand] customLapMult
+scoreboard players operation @s customLapOffset = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] customLapOffset
+scoreboard players operation @s customLapType = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] customLapType
+scoreboard players operation @s customLapMult = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] customLapMult
 
 tellraw @s ["",{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}]
 tellraw @s ["",{"text":"==\\/==","color":"blue","bold":true},{"text":" "},{"translate":"sr.cheats.custom_lap_modifier","color":"blue","bold":true},{"text":" "},{"text":"==\\/==","color":"blue","bold":true}]

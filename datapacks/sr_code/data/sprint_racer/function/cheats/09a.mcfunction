@@ -17,7 +17,7 @@ execute as @e[tag=playerkart,scores={lifespan=..20}] at @s run function sprint_r
 execute as @e[tag=kartpig,scores={lifespan=..14}] at @s run tp @s ~ ~-10000 ~
 
 #karts move around
-execute if entity @e[tag=w,tag=!halftick,scores={oTimerGlobal=1}] as @a[nbt={RootVehicle:{Entity:{id:"minecraft:pig"}}}] at @s run function sprint_racer:cheats/drive_kart
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!halftick,scores={oTimerGlobal=1}] as @a[nbt={RootVehicle:{Entity:{id:"minecraft:pig"}}}] at @s run function sprint_racer:cheats/drive_kart
 execute if score #halftick value matches 1 as @a[nbt={RootVehicle:{Entity:{id:"minecraft:pig"}}}] at @s run function sprint_racer:cheats/drive_kart
 
 #prevent zombie pigmen due to lightning

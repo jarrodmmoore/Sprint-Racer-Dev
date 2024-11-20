@@ -5,15 +5,15 @@ tag @a[gamemode=adventure,scores={check=6..}] add darkHUD
 
 #kill players who fall down
 #most of this got cut later
-#execute unless entity @e[tag=w,scores={gameTime=100000..}] run tag @a[tag=playing,tag=grounded,nbt={OnGround:0b}] remove grounded
-#execute unless entity @e[tag=w,scores={gameState=7..8}] if entity @e[tag=w,scores={gameTime=160..}] as @a[tag=playing,gamemode=adventure] at @s if block ~ 0 ~ cyan_wool run kill @s[scores={hp=1..,airTime=15..},nbt={OnGround:1b}]
-#execute unless entity @e[tag=w,scores={gameState=7..8}] if entity @e[tag=w,scores={gameTime=160..}] as @a[tag=playing,gamemode=adventure,scores={recDirection=10}] at @s run kill @s[scores={hp=1..,airTime=15..},nbt={OnGround:1b}]
-#execute unless entity @e[tag=w,scores={gameState=7..8}] if entity @e[tag=w,scores={gameTime=160..}] as @a[tag=playing,gamemode=adventure,scores={recDirection=10}] at @s if block ~ ~ ~ water run kill @s[scores={hp=1..}]
-execute if entity @e[tag=w,scores={gameTime=..160}] run scoreboard players set @a airTime 0
-execute if entity @e[tag=w,scores={gameTime=160..}] run scoreboard players add @a airTime 1
-execute unless entity @e[tag=w,scores={gameTime=100000..}] run scoreboard players set @a[tag=playing,nbt={OnGround:1b}] airTime 0
-execute unless entity @e[tag=w,scores={gameTime=100000..}] as @a[tag=playing] at @s if block ~ ~ ~ water run scoreboard players set @s airTime 0
-#execute if entity @e[tag=w,scores={gameTime=100000..}] run tag @a[tag=grounded] remove grounded
+#execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=100000..}] run tag @a[tag=playing,tag=grounded,nbt={OnGround:0b}] remove grounded
+#execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=7..8}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160..}] as @a[tag=playing,gamemode=adventure] at @s if block ~ 0 ~ cyan_wool run kill @s[scores={hp=1..,airTime=15..},nbt={OnGround:1b}]
+#execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=7..8}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160..}] as @a[tag=playing,gamemode=adventure,scores={recDirection=10}] at @s run kill @s[scores={hp=1..,airTime=15..},nbt={OnGround:1b}]
+#execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=7..8}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160..}] as @a[tag=playing,gamemode=adventure,scores={recDirection=10}] at @s if block ~ ~ ~ water run kill @s[scores={hp=1..}]
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=..160}] run scoreboard players set @a airTime 0
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160..}] run scoreboard players add @a airTime 1
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=100000..}] run scoreboard players set @a[tag=playing,nbt={OnGround:1b}] airTime 0
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=100000..}] as @a[tag=playing] at @s if block ~ ~ ~ water run scoreboard players set @s airTime 0
+#execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=100000..}] run tag @a[tag=grounded] remove grounded
 
 #quickly reset players who fall into holes
 execute as @a[gamemode=adventure,x=791,y=58,z=800,dx=6,dy=5,dz=5,scores={check=0..1,hp=1..,airTime=..1}] at @s run function sprint_racer:levels/suspension_mountain/respawn1

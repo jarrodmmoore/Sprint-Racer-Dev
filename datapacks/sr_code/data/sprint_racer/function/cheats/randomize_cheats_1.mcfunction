@@ -68,7 +68,7 @@ tag @s remove 65a
 tag @s remove 66a
 
 #put on anywhere between 1 and 9 cheats (or 0? possible that attempts to activate a cheat will fail)
-scoreboard players operation @s math = @e[limit=1,sort=random,type=armor_stand,tag=random,scores={rNumber=6..50}] rNumber
+scoreboard players operation @s math = @e[limit=1,sort=random,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=6..50}] rNumber
 #execute if entity @s[scores={math=0..5}] run scoreboard players set @s math2 0
 execute if entity @s[scores={math=6..10}] run scoreboard players set @s math2 1
 execute if entity @s[scores={math=11..15}] run scoreboard players set @s math2 2
@@ -82,7 +82,7 @@ execute if entity @s[scores={math=49..50}] run scoreboard players set @s math2 9
 
 ##################
 
-tag @e[tag=random,type=armor_stand,tag=rChtViable] remove rChtViable
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=rChtViable] remove rChtViable
 
 scoreboard players set #randomRange value 0
 
@@ -153,37 +153,37 @@ execute if entity @s[tag=66] run scoreboard players add #randomRange value 1
 
 #55 possible cheats to account for
 
-execute if score #randomRange value matches 1..2 run tag @e[tag=random,type=armor_stand,scores={rNumber=1}] add rChtViable
-execute if score #randomRange value matches 3..4 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..2}] add rChtViable
-execute if score #randomRange value matches 5..6 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..3}] add rChtViable
-execute if score #randomRange value matches 7..8 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..4}] add rChtViable
-execute if score #randomRange value matches 9..10 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..5}] add rChtViable
-execute if score #randomRange value matches 11..12 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..6}] add rChtViable
-execute if score #randomRange value matches 13..14 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..7}] add rChtViable
-execute if score #randomRange value matches 15..16 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..8}] add rChtViable
-execute if score #randomRange value matches 17..18 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..9}] add rChtViable
-execute if score #randomRange value matches 19..20 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..10}] add rChtViable
-execute if score #randomRange value matches 21..22 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..11}] add rChtViable
-execute if score #randomRange value matches 23..24 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..12}] add rChtViable
-execute if score #randomRange value matches 25..26 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..13}] add rChtViable
+execute if score #randomRange value matches 1..2 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1}] add rChtViable
+execute if score #randomRange value matches 3..4 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..2}] add rChtViable
+execute if score #randomRange value matches 5..6 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..3}] add rChtViable
+execute if score #randomRange value matches 7..8 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..4}] add rChtViable
+execute if score #randomRange value matches 9..10 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..5}] add rChtViable
+execute if score #randomRange value matches 11..12 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..6}] add rChtViable
+execute if score #randomRange value matches 13..14 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..7}] add rChtViable
+execute if score #randomRange value matches 15..16 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..8}] add rChtViable
+execute if score #randomRange value matches 17..18 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9}] add rChtViable
+execute if score #randomRange value matches 19..20 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..10}] add rChtViable
+execute if score #randomRange value matches 21..22 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..11}] add rChtViable
+execute if score #randomRange value matches 23..24 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..12}] add rChtViable
+execute if score #randomRange value matches 25..26 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..13}] add rChtViable
 
-execute if score #randomRange value matches 27..28 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..14}] add rChtViable
-execute if score #randomRange value matches 29..30 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..15}] add rChtViable
-execute if score #randomRange value matches 31..32 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..16}] add rChtViable
-execute if score #randomRange value matches 33..34 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..17}] add rChtViable
-execute if score #randomRange value matches 35..36 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..18}] add rChtViable
-execute if score #randomRange value matches 37..38 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..19}] add rChtViable
-execute if score #randomRange value matches 39..40 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..20}] add rChtViable
-execute if score #randomRange value matches 41..42 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..21}] add rChtViable
-execute if score #randomRange value matches 43..44 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..22}] add rChtViable
-execute if score #randomRange value matches 45..46 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..23}] add rChtViable
-execute if score #randomRange value matches 47..48 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..24}] add rChtViable
-execute if score #randomRange value matches 49..50 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..25}] add rChtViable
-execute if score #randomRange value matches 51..52 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..26}] add rChtViable
-execute if score #randomRange value matches 53..54 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..27}] add rChtViable
-execute if score #randomRange value matches 55..56 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..28}] add rChtViable
-execute if score #randomRange value matches 57..58 run tag @e[tag=random,type=armor_stand,scores={rNumber=1..29}] add rChtViable
-execute if score #randomRange value matches 59.. run tag @e[tag=random,type=armor_stand,scores={rNumber=1..30}] add rChtViable
+execute if score #randomRange value matches 27..28 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..14}] add rChtViable
+execute if score #randomRange value matches 29..30 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..15}] add rChtViable
+execute if score #randomRange value matches 31..32 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..16}] add rChtViable
+execute if score #randomRange value matches 33..34 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..17}] add rChtViable
+execute if score #randomRange value matches 35..36 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..18}] add rChtViable
+execute if score #randomRange value matches 37..38 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..19}] add rChtViable
+execute if score #randomRange value matches 39..40 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..20}] add rChtViable
+execute if score #randomRange value matches 41..42 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..21}] add rChtViable
+execute if score #randomRange value matches 43..44 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..22}] add rChtViable
+execute if score #randomRange value matches 45..46 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..23}] add rChtViable
+execute if score #randomRange value matches 47..48 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..24}] add rChtViable
+execute if score #randomRange value matches 49..50 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..25}] add rChtViable
+execute if score #randomRange value matches 51..52 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..26}] add rChtViable
+execute if score #randomRange value matches 53..54 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..27}] add rChtViable
+execute if score #randomRange value matches 55..56 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..28}] add rChtViable
+execute if score #randomRange value matches 57..58 run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..29}] add rChtViable
+execute if score #randomRange value matches 59.. run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..30}] add rChtViable
 
 ##################
 
@@ -192,14 +192,14 @@ execute if score #randomRange value matches 59.. run tag @e[tag=random,type=armo
 execute if entity @s[scores={math2=1..}] run function sprint_racer:cheats/randomize_cheats_2
 
 #clean up tags
-tag @e[tag=random,type=armor_stand,tag=rChtViable] remove rChtViable
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=rChtViable] remove rChtViable
 
 
 #random delay before next choose, somewhere between 11sec and 8min
-scoreboard players operation @s math = @e[limit=1,sort=random,type=armor_stand,tag=random,scores={rNumber=1..41}] rNumber
+scoreboard players operation @s math = @e[limit=1,sort=random,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..41}] rNumber
 scoreboard players set @s math2 222
 scoreboard players operation @s math *= @s math2
-scoreboard players operation @e[tag=w,type=armor_stand] randomizerTime = @s math
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] randomizerTime = @s math
 
 #say what's enabled
 execute as @a[tag=!minChat] run function sprint_racer_language:_dlc_6/join_messages/cheats_are_enabled

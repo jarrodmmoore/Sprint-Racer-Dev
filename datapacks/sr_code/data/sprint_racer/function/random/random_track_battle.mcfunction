@@ -11,7 +11,7 @@ execute unless entity @e[tag=pickViable,scores={randomCooldown2=..0}] run scoreb
 tag @e[limit=1,sort=random,tag=pickViable,scores={randomCooldown2=..0}] add chosenTrack
 
 #in case of error
-execute unless entity @e[tag=chosenTrack] run tag @e[tag=random,scores={rNumber=50}] add chosenTrack
+execute unless entity @e[tag=chosenTrack] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=50}] add chosenTrack
 
 tag @e[tag=pickViable] remove pickViable
 
@@ -20,7 +20,7 @@ scoreboard players remove @e[tag=trackStandB,scores={randomCooldown2=1..}] rando
 scoreboard players set @e[limit=1,tag=chosenTrack] randomCooldown2 4
 
 #"in order" track mode overrides random
-execute as @e[tag=w,type=armor_stand,tag=optInOrder,tag=!grandprix] if entity @e[type=armor_stand,limit=1,tag=!btBlacklist,tag=trackStandB] run function sprint_racer:random/in_order_battle
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optInOrder,tag=!grandprix] if entity @e[type=armor_stand,limit=1,tag=!btBlacklist,tag=trackStandB] run function sprint_racer:random/in_order_battle
 
 execute as @a at @s run playsound minecraft:block.note_block.bell master @s ~ 100000 ~ 100000 2
 execute as @e[tag=chosenTrack] run function sprint_racer:game_logic/0/vote_preview/battle/v_b_index_announce

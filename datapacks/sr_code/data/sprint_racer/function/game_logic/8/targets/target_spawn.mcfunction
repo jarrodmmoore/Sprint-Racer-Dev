@@ -14,8 +14,8 @@ scoreboard players set @e[tag=setme,type=magma_cube] lifespan 50
 scoreboard players set @e[tag=setme,type=magma_cube] targetData 1
 scoreboard players set @e[tag=setme,type=magma_cube] playerID -22222
 #target immediately breaks if impossible to reach (no items mode)
-execute if entity @s[tag=targetImpossible] if entity @e[tag=w,type=armor_stand,tag=taNoItems] run tag @e[tag=setme,type=magma_cube] add target_silent
-execute if entity @s[tag=targetImpossible] if entity @e[tag=w,type=armor_stand,tag=taNoItems] run tag @e[tag=setme,type=magma_cube] add targetHit
+execute if entity @s[tag=targetImpossible] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=taNoItems] run tag @e[tag=setme,type=magma_cube] add target_silent
+execute if entity @s[tag=targetImpossible] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=taNoItems] run tag @e[tag=setme,type=magma_cube] add targetHit
 tag @e[tag=setme,type=magma_cube] remove setme
 
 scoreboard players set @e[tag=setlife] lifespan 50

@@ -11,7 +11,7 @@ execute as @e[tag=activeplayer,scores={invulTime=81..,invisibility=..0}] at @s r
 
 #convert to seconds for visual timer
 execute as @e[scores={invulTime=1..}] run scoreboard players operation @s invulTimer = @s invulTime
-execute as @e[scores={invulTime=1..}] run scoreboard players operation @s invulTimer /= @e[limit=1,tag=random,scores={rNumber=20}] rNumber
+execute as @e[scores={invulTime=1..}] run scoreboard players operation @s invulTimer /= @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=20}] rNumber
 execute as @e[scores={invulTime=1..}] run scoreboard players add @s invulTimer 1
 
 #actionbar display

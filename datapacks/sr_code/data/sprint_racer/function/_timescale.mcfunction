@@ -1,2 +1,2 @@
-execute unless entity @e[tag=w,type=armor_stand,tag=halftick,limit=1] run function sprint_racer:_main
-execute if entity @e[tag=w,type=armor_stand,tag=halftick,limit=1] run function sprint_racer:_timescale_half
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=halftick,limit=1] run function sprint_racer:_main
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=halftick,limit=1] run function sprint_racer:_timescale_half

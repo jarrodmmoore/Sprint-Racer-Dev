@@ -39,7 +39,7 @@ execute if entity @s[tag=customTesting,scores={gameTime=100110}] run function sp
 execute if entity @s[scores={gameTime=100120}] run scoreboard players set @a[tag=playing,tag=!eliminated] finishPos 1
 execute if entity @s[tag=!teamplay,scores={gameTime=100120}] run team join player @a[tag=playing]
 execute if entity @s[scores={gameTime=100120}] as @e[tag=AImaster] run scoreboard players operation @s battlePos = @s finishPos
-execute if entity @s[scores={gameTime=100120}] as @a[tag=playing,tag=!eliminated] run scoreboard players operation @s addPoints += @e[tag=w,limit=1] addPoints2
+execute if entity @s[scores={gameTime=100120}] as @a[tag=playing,tag=!eliminated] run scoreboard players operation @s addPoints += @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] addPoints2
 execute if entity @s[tag=!teamplay,scores={gameTime=100120}] run function sprint_racer:load_saved_points
 execute if entity @s[tag=!teamplay,scores={gameTime=100120}] run function sprint_racer_language:gameplay/battle_end/battle_give_points
 execute if entity @s[tag=teamplay,scores={gameTime=100120}] run function sprint_racer_language:_dlc_2/gameplay/battle_end/battle_give_points_teams

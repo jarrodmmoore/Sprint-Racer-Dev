@@ -2,7 +2,7 @@ tag @s remove totemSave
 tag @s remove ihavetotem
 
 scoreboard players set @s rNumber 1
-scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..50}] rNumber
 
 #guarenteed save if actively holding a totem of undying
 tag @s[scores={aiHoldingItem=8}] add totemSave

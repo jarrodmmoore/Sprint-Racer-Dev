@@ -1,1 +1,1 @@
-tellraw @a ["",{"translate":"sr.grand_prix.lap_count_set_to","bold":false,"color":"aqua"},{"score":{"name":"@e[tag=w,limit=1,type=armor_stand]","objective":"lap"},"color":"aqua"},{"text":".","bold":false,"color":"aqua"}]
+tellraw @a ["",{"translate":"sr.grand_prix.lap_count_set_to","bold":false,"color":"aqua"},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand]","objective":"lap"},"color":"aqua"},{"text":".","bold":false,"color":"aqua"}]

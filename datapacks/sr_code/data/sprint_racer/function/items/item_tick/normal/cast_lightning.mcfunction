@@ -6,8 +6,8 @@ tag @e[limit=8,sort=random,tag=activeplayer,tag=!self,scores={invisibility=..0,l
 tag @e[limit=5,sort=random,tag=chickenmine,nbt={OnGround:1b}] add lightningTarget
 
 #don't hit teammates!
-execute if entity @e[tag=w,type=armor_stand,tag=teamplay] if entity @s[tag=playerOrange] run tag @e[tag=lightningTarget,tag=playerOrange] remove lightningTarget
-execute if entity @e[tag=w,type=armor_stand,tag=teamplay] if entity @s[tag=playerCyan] run tag @e[tag=lightningTarget,tag=playerCyan] remove lightningTarget
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] if entity @s[tag=playerOrange] run tag @e[tag=lightningTarget,tag=playerOrange] remove lightningTarget
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] if entity @s[tag=playerCyan] run tag @e[tag=lightningTarget,tag=playerCyan] remove lightningTarget
 
 tag @s remove self
 

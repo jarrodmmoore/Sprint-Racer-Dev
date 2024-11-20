@@ -10,8 +10,8 @@ tag @e[tag=focusT] remove usingMacroPreview
 tag @e[tag=focusT] remove customPreview
 tag @e[tag=focusT,scores={customPreview=11001..}] add customPreview
 
-execute if entity @e[tag=w,scores={tvPoolMode=1}] run function sprint_racer_language:_dlc_6/lobby/custom_track/track_config_race_2
-execute if entity @e[tag=w,scores={tvPoolMode=2}] run function sprint_racer_language:_dlc_6/lobby/custom_track/track_config_battle_2
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMode=1}] run function sprint_racer_language:_dlc_6/lobby/custom_track/track_config_race_2
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMode=2}] run function sprint_racer_language:_dlc_6/lobby/custom_track/track_config_battle_2
 
-tag @e[tag=w,type=armor_stand,limit=1] add NOPARTICLE
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] add NOPARTICLE
 function sprint_racer:game_logic/10/update_display/_index

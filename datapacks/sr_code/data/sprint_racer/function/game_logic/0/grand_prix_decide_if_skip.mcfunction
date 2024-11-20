@@ -12,11 +12,11 @@ execute if entity @s[tag=gp_skip2next,tag=!noskip2next] run scoreboard players a
 function sprint_racer:game_logic/0/grand_prix_peek
 
 #go straight to track select area if using "choose" mode
-execute if entity @s[tag=gp_skip2next] if score #gpTrackSelect value matches 5 run tag @e[tag=w,type=armor_stand] add skiptochoose
+execute if entity @s[tag=gp_skip2next] if score #gpTrackSelect value matches 5 run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add skiptochoose
 
 #don't skip if we voted out
-execute if entity @e[tag=w,type=armor_stand,tag=gp_no_skip_1] run tag @e[tag=w,type=armor_stand] remove gp_skip2next
-tag @e[tag=w,type=armor_stand] remove gp_no_skip_1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=gp_no_skip_1] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove gp_skip2next
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove gp_no_skip_1
 
 #don't skip if we're using "vote", "roulette", or "choose" mode in this coming round
 execute if entity @s[tag=gp_skip2next] if score #gpTrackSelect value matches 3.. run tag @s remove gp_skip2next

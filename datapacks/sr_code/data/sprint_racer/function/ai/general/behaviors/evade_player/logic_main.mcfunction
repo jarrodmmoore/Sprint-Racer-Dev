@@ -9,7 +9,7 @@ scoreboard players set @s aiRotOSTime 5
 
 #possibly go back to following breadcrumbs after escaping the other party
 scoreboard players set @s rNumber 0
-scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..50}] rNumber
 
 execute at @s unless entity @e[tag=aiTargetG,distance=..20] if entity @s[scores={aiSkill=..1,rNumber=20..50}] run tag @s add goAway
 execute at @s unless entity @e[tag=aiTargetG,distance=..15] if entity @s[scores={aiSkill=2,rNumber=25..50}] run tag @s add goAway
@@ -38,4 +38,4 @@ tag @s remove goAway
 
 
 #randomized logic intervals
-scoreboard players operation @s aiActCCooldown = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..3}] rNumber
+scoreboard players operation @s aiActCCooldown = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..3}] rNumber

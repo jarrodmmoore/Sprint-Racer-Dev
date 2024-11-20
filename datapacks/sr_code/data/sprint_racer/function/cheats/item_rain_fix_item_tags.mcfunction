@@ -5,7 +5,7 @@ tag @s remove itemcontainer
 data merge entity @s {PickupDelay:20,Age:5400,NoGravity:0b,Invulnerable:0}
 
 #get a random velocity
-scoreboard players operation @s rNumber = @e[limit=1,tag=random,sort=random,scores={rNumber=1..9}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,scores={rNumber=1..9}] rNumber
 
 data merge entity @s[scores={rNumber=1}] {Motion:[0.0d,0.4d,0.2d]}
 data merge entity @s[scores={rNumber=2}] {Motion:[0.1d,0.4d,0.1d]}

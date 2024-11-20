@@ -1,6 +1,6 @@
-scoreboard players operation @e[tag=w,type=armor_stand] math = @e[limit=1,sort=random,tag=random,scores={rNumber=1..5}] rNumber
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..5}] rNumber
 
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160..}] run function sprint_racer:cheats/ai_has_items_wow
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..}] run function sprint_racer:cheats/ai_has_items_wow
 
 scoreboard players set @e[tag=ai] aiHasItem1 3
 scoreboard players set @e[tag=ai] aiHasItem2 3
@@ -11,25 +11,25 @@ scoreboard players set @e[tag=ai] aiHasItem6 1
 scoreboard players set @e[tag=ai] aiHasItem7 1
 
 scoreboard players set @e[tag=ai] aiHasItem8 0
-execute if entity @e[tag=w,type=armor_stand,scores={math=5}] run scoreboard players set @e[tag=ai] aiHasItem8 3
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={math=5}] run scoreboard players set @e[tag=ai] aiHasItem8 3
 
 scoreboard players set @e[tag=ai] aiHasItem9 0
-execute if entity @e[tag=w,type=armor_stand,scores={math=4}] run scoreboard players set @e[tag=ai] aiHasItem9 3
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={math=4}] run scoreboard players set @e[tag=ai] aiHasItem9 3
 
 scoreboard players set @e[tag=ai] aiHasItem10 3
 
 scoreboard players set @e[tag=ai] aiHasItem11 0
-execute if entity @e[tag=w,type=armor_stand,scores={math=1}] run scoreboard players set @e[tag=ai] aiHasItem11 3
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={math=1}] run scoreboard players set @e[tag=ai] aiHasItem11 3
 
 scoreboard players set @e[tag=ai] aiHasItem12 0
-execute if entity @e[tag=w,type=armor_stand,scores={math=2}] run scoreboard players set @e[tag=ai] aiHasItem12 3
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={math=2}] run scoreboard players set @e[tag=ai] aiHasItem12 3
 
 scoreboard players set @e[tag=ai] aiHasItem13 1
 scoreboard players set @e[tag=ai] aiHasItem14 1
 scoreboard players set @e[tag=ai] aiHasItem15 1
 
 scoreboard players set @e[tag=ai] aiHasItem16 0
-execute if entity @e[tag=w,type=armor_stand,scores={math=3}] run scoreboard players set @e[tag=ai] aiHasItem16 3
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={math=3}] run scoreboard players set @e[tag=ai] aiHasItem16 3
 
 scoreboard players set @e[tag=ai] aiHasItem17 1
 scoreboard players set @e[tag=ai] aiHasItem18 1

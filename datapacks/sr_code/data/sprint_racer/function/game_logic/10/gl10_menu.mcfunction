@@ -7,8 +7,8 @@ tag @e[tag=focusT,type=armor_stand,limit=1] add chosenTrack
 
 
 #force adventure mode
-execute unless entity @e[tag=w,type=armor_stand,limit=1,tag=requireAdmin] run gamemode adventure @a
-execute if entity @e[tag=w,type=armor_stand,limit=1,tag=requireAdmin] run gamemode adventure @a[tag=admin]
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=requireAdmin] run gamemode adventure @a
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=requireAdmin] run gamemode adventure @a[tag=admin]
 
 bossbar set freeroam players @a
 effect give @a night_vision 15 1 true

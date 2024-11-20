@@ -35,7 +35,7 @@ bossbar set minecraft:menutimer players @a[tag=lobby]
 bossbar set minecraft:readyprogress players
 bossbar set minecraft:unreadyprogress players @a[tag=playing,tag=!readyup]
 scoreboard players set @s unReadyCount 0
-execute as @a[tag=playing,tag=!readyup] run scoreboard players add @e[tag=w,type=armor_stand] unReadyCount 1
+execute as @a[tag=playing,tag=!readyup] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] unReadyCount 1
 execute store result bossbar minecraft:unreadyprogress value run scoreboard players get @s unReadyCount
 execute store result bossbar minecraft:unreadyprogress max run scoreboard players get @s readyRequired
 function sprint_racer_language:lobby/bossbar_unready_up

@@ -10,19 +10,19 @@ worldborder warning distance 0
 function sprint_racer:mid_game_vote/disable
 
 scoreboard objectives remove specJoin
-scoreboard players set @e[tag=w,type=armor_stand] specJoinTime 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] specJoinTime 0
 
 tag @e[type=armor_stand,tag=chosenTrack] remove chosenTrack
 
-tag @e[tag=w,type=armor_stand] add wmCustomReload
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add wmCustomReload
 clear @a
 
 scoreboard objectives setdisplay sidebar
 
 function sprint_racer:ai/general/ai_stop_all
-execute if entity @e[tag=w,tag=autotick] run tag @e[tag=w,type=armor_stand] remove halftick
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=autotick] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove halftick
 
-tag @e[tag=w,type=armor_stand] remove settingTracks
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove settingTracks
 
 scoreboard players set @a itemLuck 3
 execute as @a run scoreboard players operation @s itemLuck += @s cStatLuck
@@ -40,7 +40,7 @@ scoreboard players set @a invisibility 0
 scoreboard players set @a resistTime 0
 scoreboard players set @a invulTime 0
 
-scoreboard players set @e[tag=w,type=armor_stand] itemBlockState 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemBlockState 0
 
 tag @e[tag=finished] remove finished
 tag @e[tag=noInventory2] remove noInventory2
@@ -53,14 +53,14 @@ scoreboard objectives add killedByPlayer minecraft.killed_by:minecraft.player
 time set 6000
 gamerule doDaylightCycle false
 weather clear
-scoreboard players reset @e[tag=w,type=armor_stand] storm
+scoreboard players reset @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] storm
 
 function sprint_racer_language:_dlc_3/gameplay/grand_prix_bossbar
 function sprint_racer_language:_dlc_3/gameplay/grand_prix_enabled
 
 gamemode adventure @a
 
-scoreboard players set @e[tag=w,type=armor_stand] gameState 11
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 11
 
 
 

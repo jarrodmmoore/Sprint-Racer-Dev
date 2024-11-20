@@ -4,7 +4,7 @@ execute if entity @s[tag=findLocation] run function sprint_racer:game_logic/10/g
 
 execute if entity @s[tag=editingTrack] run function sprint_racer:game_logic/10/gl10_edit_track
 
-execute if entity @e[tag=w,type=armor_stand,limit=1,tag=requireAdmin,scores={gameState=1..}] run function sprint_racer:game_logic/10/spectators
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=requireAdmin,scores={gameState=1..}] run function sprint_racer:game_logic/10/spectators
 
 #stat change requests
 execute as @a unless score @s cStatRequest = @s cStatType at @s run function sprint_racer:cheats/shoes/handle_stat_request

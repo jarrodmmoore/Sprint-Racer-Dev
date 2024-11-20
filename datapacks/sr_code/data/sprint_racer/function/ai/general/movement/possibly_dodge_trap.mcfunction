@@ -1,14 +1,14 @@
 #chances of dodging depend on skill level
 
 scoreboard players set @s rNumber 0
-scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..50}] rNumber
 
 execute if entity @s[scores={aiSkill=..1,rNumber=1..2}] run tag @s add avoidtrap
 execute if entity @s[scores={aiSkill=2,rNumber=1..4}] run tag @s add avoidtrap
 execute if entity @s[scores={aiSkill=3..,rNumber=1..8}] run tag @s add avoidtrap
 execute if entity @s[scores={aiRotOSTime=1..}] run tag @s add avoidtrap
 
-scoreboard players operation @s[tag=avoidtrap] rNumber = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..8}] rNumber
+scoreboard players operation @s[tag=avoidtrap] rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..8}] rNumber
 execute if entity @s[tag=avoidtrap,scores={rNumber=1..4,aiRotOSTime=..0}] run scoreboard players set @s aiRotOffset 45
 execute if entity @s[tag=avoidtrap,scores={rNumber=5..8,aiRotOSTime=..0}] run scoreboard players set @s aiRotOffset -45
 execute if entity @s[tag=avoidtrap,scores={rNumber=1..8}] run scoreboard players set @s aiRotOSTime 3

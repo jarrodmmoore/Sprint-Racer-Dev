@@ -1,1 +1,1 @@
-tellraw @a ["",{"translate":"sr.lobby.laps","color":"white","bold":true},{"score":{"name":"@e[tag=w,limit=1]","objective":"lap"},"color":"white","bold":true}]
+tellraw @a ["",{"translate":"sr.lobby.laps","color":"white","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"white","bold":true}]

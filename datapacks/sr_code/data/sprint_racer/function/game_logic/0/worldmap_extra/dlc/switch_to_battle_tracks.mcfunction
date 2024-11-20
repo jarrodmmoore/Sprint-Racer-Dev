@@ -1,5 +1,5 @@
-scoreboard players set @e[tag=w,type=armor_stand] wmDlcNum 7
-scoreboard players set @e[tag=w,type=armor_stand] wmDlcMode 2
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] wmDlcNum 7
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] wmDlcMode 2
 
 fill 2460 100 266 2460 103 269 red_concrete
 

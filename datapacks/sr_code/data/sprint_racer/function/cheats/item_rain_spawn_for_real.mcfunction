@@ -1,10 +1,10 @@
 #make sure race capsule randomization table is loaded
-execute as @e[limit=1,tag=w,type=armor_stand,scores={gameState=3}] run function sprint_racer:items/container_spawn/capsule_category_odds/load_race_odds
-execute as @e[limit=1,tag=w,type=armor_stand] unless entity @s[scores={gameState=3}] run function sprint_racer:items/container_spawn/capsule_category_odds/load_battle_odds
+execute as @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=3}] run function sprint_racer:items/container_spawn/capsule_category_odds/load_race_odds
+execute as @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] unless entity @s[scores={gameState=3}] run function sprint_racer:items/container_spawn/capsule_category_odds/load_battle_odds
 
 #summon random item, provided it isn't banned
 scoreboard players set @s rNumber 0
-scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=!capsuleBan,tag=random,scores={rNumber=1..20}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=!capsuleBan,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..20}] rNumber
 
 execute if entity @s[scores={rNumber=1}] run function sprint_racer_language:gameplay/capsule_item/1
 execute if entity @s[scores={rNumber=2}] run function sprint_racer_language:gameplay/capsule_item/2

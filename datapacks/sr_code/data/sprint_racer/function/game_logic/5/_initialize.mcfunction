@@ -3,8 +3,8 @@ function sprint_racer:give_ids
 ######
 #MUSIC
 function sprint_racer:music/global/stop_music
-tag @e[type=armor_stand,tag=random,tag=musicViable] remove musicViable
-tag @e[type=armor_stand,tag=random,scores={rNumber=3..14}] add musicViable
+tag @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,tag=musicViable] remove musicViable
+tag @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=3..14}] add musicViable
 function sprint_racer:music/global/pick_track
 ######
 
@@ -18,11 +18,11 @@ kill @e[tag=cDisplay2,type=armor_stand]
 kill @e[type=ender_pearl]
 
 #halftick mode in realms when we have 6 or more players
-scoreboard players set @e[tag=w,type=armor_stand] playerCount 0
-execute as @a[tag=playing] run scoreboard players add @e[tag=w,type=armor_stand] playerCount 1
-tag @e[tag=w,tag=autotick,scores={playerCount=6..}] add halftick
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerCount 0
+execute as @a[tag=playing] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerCount 1
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=autotick,scores={playerCount=6..}] add halftick
 
-scoreboard players reset @e[tag=w,type=armor_stand] storm
+scoreboard players reset @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] storm
 weather clear
 
 scoreboard objectives remove nodeState
@@ -32,8 +32,8 @@ scoreboard objectives remove itemBlockState
 scoreboard objectives add itemBlockState dummy
 scoreboard players set @a itemBlockState 0
 
-scoreboard players set @e[tag=w,type=armor_stand] gameState 5
-scoreboard players set @e[tag=w,type=armor_stand] gameTime 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 5
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameTime 0
 
 team modify player seeFriendlyInvisibles false
 team modify player color green

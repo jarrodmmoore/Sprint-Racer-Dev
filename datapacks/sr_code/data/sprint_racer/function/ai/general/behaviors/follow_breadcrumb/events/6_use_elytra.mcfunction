@@ -4,7 +4,7 @@ execute if entity @s[scores={aiHasItem32=1..,inputCooldown=..0}] run tag @s add 
 
 
 scoreboard players set @s rNumber 0
-scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..50}] rNumber
 
 #non-mega shortcut
 #SKILL LV 1 = 100% CHANCE

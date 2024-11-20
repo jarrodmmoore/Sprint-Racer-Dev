@@ -1,7 +1,7 @@
 kill @e[type=armor_stand,tag=c_cam]
 
-scoreboard players set @e[tag=w,type=armor_stand] creditsSeq1 1
-scoreboard players set @e[tag=w,type=armor_stand] creditsSeq2 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] creditsSeq1 1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] creditsSeq2 0
 
 #summon camera points
 summon armor_stand 1088 63 806 {CustomNameVisible:0b,NoGravity:1b,Invisible:1b,Invulnerable:1b,Tags:["setup","c_life","c_cam","c_cam_start"]}

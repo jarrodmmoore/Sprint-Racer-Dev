@@ -18,6 +18,6 @@ execute if entity @s[tag=ai_fearful] run scoreboard players remove @s math 5
 #DEV
 #tellraw @a ["",{"score":{"name":"@s","objective":"math"}}]
 
-scoreboard players operation @s math2 = @e[limit=1,sort=random,type=armor_stand,tag=random,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s math2 = @e[limit=1,sort=random,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..50}] rNumber
 execute if score @s math >= @s math2 run function sprint_racer:ai/general/behaviors/follow_breadcrumb/stalk_player/check
 execute if score @s math >= @s math2 if score @s math matches 32.. run scoreboard players add @s AIBC_engagemt 25

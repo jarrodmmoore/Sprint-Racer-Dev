@@ -1,6 +1,6 @@
 #add the AI to the player count
 scoreboard players operation @s playerCountI = @s playerCountB
-execute as @e[tag=ai] run scoreboard players add @e[tag=w,type=armor_stand,limit=1] playerCountI 1
+execute as @e[tag=ai] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] playerCountI 1
 
 #using sub-indexes to run less commands each time around
 execute if entity @s[scores={playerCountI=..5}] run function sprint_racer:items/race_balance/_index_1_5

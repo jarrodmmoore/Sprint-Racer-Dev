@@ -4,7 +4,7 @@ tag @s add impGotItem
 function sprint_racer:ai/general/item_logic/check_for_projectile_target
 
 scoreboard players set @s rNumber 1
-scoreboard players operation @s rNumber = @e[limit=1,tag=random,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..50}] rNumber
 
 #can either shoot directly at the target or attempt to lead the shot (depends on skill)
 tag @s[scores={aiSkill=..1,rNumber=45..50}] add leadprojectile

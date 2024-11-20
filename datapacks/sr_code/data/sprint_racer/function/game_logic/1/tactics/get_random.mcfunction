@@ -1,2 +1,2 @@
 scoreboard players set @s tactics_seed 0
-scoreboard players operation @s tactics_seed = @e[limit=1,sort=random,tag=random,tag=!specialOddBan,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s tactics_seed = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=!specialOddBan,scores={rNumber=1..50}] rNumber

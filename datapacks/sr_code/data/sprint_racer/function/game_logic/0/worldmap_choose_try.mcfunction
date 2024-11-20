@@ -1,5 +1,5 @@
 tag @s remove need_admin
-execute if entity @e[tag=w,type=armor_stand,limit=1,tag=requireAdmin] run tag @s add need_admin
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=requireAdmin] run tag @s add need_admin
 
 #admin mode is NOT on, anyone can choose
 execute if entity @s[tag=!need_admin] at @s run function sprint_racer:game_logic/0/worldmap_choose

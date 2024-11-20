@@ -2,24 +2,24 @@ function sprint_racer:levels/the_gauntlet/map
 
 #screw with the navigator because it's funny
 #also this track doesn't support nav because a bunch of wool at the bottom of this track is a bad look
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160..99999,oTimerGlobal=1}] run tag @e[tag=goofNav] remove goofNav
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160..99999,oTimerGlobal=1}] run tag @e[limit=1,sort=random,tag=random,scores={rNumber=1..7}] add goofNav
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..99999,oTimerGlobal=1}] run tag @e[tag=goofNav] remove goofNav
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..99999,oTimerGlobal=1}] run tag @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..7}] add goofNav
 scoreboard players operation @a recDirection = @e[tag=goofNav,limit=1] rNumber
 scoreboard players set @a wrongWayBuffer 0
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=100000..}] run tag @e[tag=goofNav] remove goofNav
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=100000..}] run tag @e[tag=goofNav] remove goofNav
 
 #no checkpoint navigator thing
 scoreboard players set @a[tag=!showCheckNav] showCheckNav -4
 
 #this track uses its own timer and the default one is ignored
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run scoreboard players set @e[tag=w,type=armor_stand,scores={timeRemaining2=1..}] timeRemaining 4000
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run scoreboard players set @e[tag=w,type=armor_stand,scores={timeRemaining2=..0}] timeRemaining 0
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] if entity @e[tag=w,type=armor_stand,scores={timeRemaining2=..0}] run bossbar set minecraft:gauntlettime players
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={timeRemaining2=1..}] timeRemaining 4000
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={timeRemaining2=..0}] timeRemaining 0
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={timeRemaining2=..0}] run bossbar set minecraft:gauntlettime players
 
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160}] run tag @a add bbarbump
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160}] run tag @a add bbarbump
 
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160..99999}] as @e[tag=w,type=armor_stand,limit=1] unless entity @a[tag=playing,scores={playerState=2}] run function sprint_racer:levels/the_gauntlet/timer
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160..99999}] unless entity @a[tag=playing,tag=!finished] run scoreboard players set @e[tag=w,type=armor_stand] timeRemaining2 0
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..99999}] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] unless entity @a[tag=playing,scores={playerState=2}] run function sprint_racer:levels/the_gauntlet/timer
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..99999}] unless entity @a[tag=playing,tag=!finished] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining2 0
 
 
 #platforms around checkpoint no. 5 and 6
@@ -37,4 +37,4 @@ execute as @a[tag=playing,gamemode=!spectator,x=1201,y=69,z=2291,distance=..30,s
 
 
 #respawn players when they fall
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160..99999}] run function sprint_racer:levels/the_gauntlet/all_respawns
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..99999}] run function sprint_racer:levels/the_gauntlet/all_respawns

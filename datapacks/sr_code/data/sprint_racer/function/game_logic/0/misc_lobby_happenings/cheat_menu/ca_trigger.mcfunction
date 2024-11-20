@@ -2,7 +2,7 @@ execute if entity @s[scores={ca_trigger=1}] run scoreboard players remove @s cus
 execute if entity @s[scores={ca_trigger=2}] run scoreboard players add @s customAInumber 1
 
 scoreboard players operation #ai_num value = @s customAInumber
-execute as @e[type=armor_stand,tag=random] if score @s rNumber = #ai_num value run tag @s add ca_focus
+execute as @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1] if score @s rNumber = #ai_num value run tag @s add ca_focus
 
 execute if entity @s[scores={ca_trigger=11}] run scoreboard players remove @e[tag=ca_focus,type=armor_stand] customAIset 1
 execute if entity @s[scores={ca_trigger=12}] run scoreboard players add @e[tag=ca_focus,type=armor_stand] customAIset 1

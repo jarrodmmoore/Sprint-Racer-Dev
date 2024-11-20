@@ -13,5 +13,5 @@ execute if entity @s[scores={itemPosition=9..}] run tag @e[limit=8,tag=activepla
 tag @s remove self
 
 #don't blind teammates
-execute if entity @e[tag=w,type=armor_stand,tag=teamplay] if entity @s[tag=playerOrange] run tag @e[tag=squidTarget,tag=playerOrange] remove squidTarget
-execute if entity @e[tag=w,type=armor_stand,tag=teamplay] if entity @s[tag=playerCyan] run tag @e[tag=squidTarget,tag=playerCyan] remove squidTarget
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] if entity @s[tag=playerOrange] run tag @e[tag=squidTarget,tag=playerOrange] remove squidTarget
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] if entity @s[tag=playerCyan] run tag @e[tag=squidTarget,tag=playerCyan] remove squidTarget

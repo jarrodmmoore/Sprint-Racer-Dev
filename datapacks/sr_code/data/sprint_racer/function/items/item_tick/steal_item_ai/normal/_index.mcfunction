@@ -1,32 +1,32 @@
 #pick a random item, assuming we actually have it
-tag @e[tag=random,tag=igotthis] remove igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem1=1..}] run tag @e[tag=random,scores={rNumber=1}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem2=1..}] run tag @e[tag=random,scores={rNumber=2}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem3=1..}] run tag @e[tag=random,scores={rNumber=3}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem4=1..}] run tag @e[tag=random,scores={rNumber=4}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem5=1..}] run tag @e[tag=random,scores={rNumber=5}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem6=1..}] run tag @e[tag=random,scores={rNumber=6}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem7=1..}] run tag @e[tag=random,scores={rNumber=7}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem8=1..}] run tag @e[tag=random,scores={rNumber=8}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem9=1..}] run tag @e[tag=random,scores={rNumber=9}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem10=1..}] run tag @e[tag=random,scores={rNumber=10}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem11=1..}] run tag @e[tag=random,scores={rNumber=11}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem12=1..}] run tag @e[tag=random,scores={rNumber=12}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem13=1..}] run tag @e[tag=random,scores={rNumber=13}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem14=1..}] run tag @e[tag=random,scores={rNumber=14}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem15=1..}] run tag @e[tag=random,scores={rNumber=15}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem16=1..}] run tag @e[tag=random,scores={rNumber=16}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem17=1..}] run tag @e[tag=random,scores={rNumber=17}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem18=1..}] run tag @e[tag=random,scores={rNumber=18}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem19=1..}] run tag @e[tag=random,scores={rNumber=19}] add igotthis
-execute if entity @e[tag=stealTarget2,scores={aiHasItem20=1..}] run tag @e[tag=random,scores={rNumber=20}] add igotthis
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,tag=igotthis] remove igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem1=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem2=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=2}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem3=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=3}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem4=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=4}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem5=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=5}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem6=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=6}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem7=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=7}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem8=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=8}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem9=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=9}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem10=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=10}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem11=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=11}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem12=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=12}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem13=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=13}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem14=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=14}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem15=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=15}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem16=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=16}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem17=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=17}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem18=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=18}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem19=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=19}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasItem20=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=20}] add igotthis
 
 scoreboard players set @s rNumber 0
-scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,tag=igotthis,scores={rNumber=1..20}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=igotthis,scores={rNumber=1..20}] rNumber
 #DEBUG
 #tellraw @s ["",{"text":"rNumber = "},{"score":{"name":"@s","objective":"rNumber"}}]
 
-tag @e[tag=random,tag=igotthis] remove igotthis
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,tag=igotthis] remove igotthis
 
 tag @s remove gotEm
 scoreboard players set @s giveQty 0

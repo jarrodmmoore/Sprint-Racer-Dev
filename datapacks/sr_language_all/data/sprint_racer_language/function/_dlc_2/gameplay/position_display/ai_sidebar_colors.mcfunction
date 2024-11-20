@@ -11,22 +11,22 @@ team join player CPU_7
 team join player CPU_8
 team join player CPU_9
 
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=1},tag=playerOrange] run team join playerOrange CPU_1
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=2},tag=playerOrange] run team join playerOrange CPU_2
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=3},tag=playerOrange] run team join playerOrange CPU_3
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=4},tag=playerOrange] run team join playerOrange CPU_4
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=5},tag=playerOrange] run team join playerOrange CPU_5
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=6},tag=playerOrange] run team join playerOrange CPU_6
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=7},tag=playerOrange] run team join playerOrange CPU_7
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=8},tag=playerOrange] run team join playerOrange CPU_8
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=9},tag=playerOrange] run team join playerOrange CPU_9
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1},tag=playerOrange] run team join playerOrange CPU_1
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=2},tag=playerOrange] run team join playerOrange CPU_2
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=3},tag=playerOrange] run team join playerOrange CPU_3
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=4},tag=playerOrange] run team join playerOrange CPU_4
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=5},tag=playerOrange] run team join playerOrange CPU_5
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=6},tag=playerOrange] run team join playerOrange CPU_6
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=7},tag=playerOrange] run team join playerOrange CPU_7
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=8},tag=playerOrange] run team join playerOrange CPU_8
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=9},tag=playerOrange] run team join playerOrange CPU_9
 
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=1},tag=playerCyan] run team join playerCyan CPU_1
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=2},tag=playerCyan] run team join playerCyan CPU_2
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=3},tag=playerCyan] run team join playerCyan CPU_3
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=4},tag=playerCyan] run team join playerCyan CPU_4
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=5},tag=playerCyan] run team join playerCyan CPU_5
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=6},tag=playerCyan] run team join playerCyan CPU_6
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=7},tag=playerCyan] run team join playerCyan CPU_7
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=8},tag=playerCyan] run team join playerCyan CPU_8
-execute if entity @e[type=armor_stand,tag=random,scores={rNumber=9},tag=playerCyan] run team join playerCyan CPU_9
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1},tag=playerCyan] run team join playerCyan CPU_1
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=2},tag=playerCyan] run team join playerCyan CPU_2
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=3},tag=playerCyan] run team join playerCyan CPU_3
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=4},tag=playerCyan] run team join playerCyan CPU_4
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=5},tag=playerCyan] run team join playerCyan CPU_5
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=6},tag=playerCyan] run team join playerCyan CPU_6
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=7},tag=playerCyan] run team join playerCyan CPU_7
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=8},tag=playerCyan] run team join playerCyan CPU_8
+execute if entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=9},tag=playerCyan] run team join playerCyan CPU_9

@@ -3,7 +3,7 @@ scoreboard players set @a playerID 0
 
 #every active player is given a unique ID
 #spectators get ID of 0 which is null
-scoreboard players set @e[tag=w,type=armor_stand] playerID 2
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerID 2
 execute as @a[tag=playing] run function sprint_racer:give_ids2
 
 #misc scoreboard fixes JUST TO MAKE SURE EVERYTHING IS OKAY

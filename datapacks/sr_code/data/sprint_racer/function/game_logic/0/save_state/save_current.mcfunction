@@ -1,4 +1,4 @@
-#executed by @e[tag=w,type=armor_stand]
+#executed by @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand]
 
 #need to fill everything with stone to make sure command blocks get placed with the new settings stored in them
 fill 1609 ~ 441 1627 ~ 460 light_gray_terracotta
@@ -208,13 +208,13 @@ execute if entity @s[tag=!BAIautocount] run setblock 1617 ~ 457 orange_wool
 #BANNED RACE TRACKS
 
 fill 1609 ~ 450 1618 ~ 455 lime_wool
-execute as @e[tag=random,type=armor_stand,tag=trackStandR,tag=rtBlacklist] run function sprint_racer:game_logic/0/save_state/save_banned_race_track
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=trackStandR,tag=rtBlacklist] run function sprint_racer:game_logic/0/save_state/save_banned_race_track
 
 #################################
 #BANNED BATTLE TRACKS
 
 fill 1609 ~ 445 1618 ~ 449 lime_wool
-execute as @e[tag=random,type=armor_stand,tag=trackStandB,tag=btBlacklist] run function sprint_racer:game_logic/0/save_state/save_banned_battle_track
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=trackStandB,tag=btBlacklist] run function sprint_racer:game_logic/0/save_state/save_banned_battle_track
 
 #################################
 #BANNED ITEMS
@@ -249,15 +249,15 @@ execute as @e[tag=cheats,x=1548,y=148,z=422,distance=..1,limit=1,type=armor_stan
 
 #################################
 #AI
-execute as @e[limit=1,type=armor_stand,tag=random,scores={rNumber=1}] positioned 1626 ~ 455 run function sprint_racer:game_logic/0/save_state/save_ai
-execute as @e[limit=1,type=armor_stand,tag=random,scores={rNumber=2}] positioned 1626 ~ 452 run function sprint_racer:game_logic/0/save_state/save_ai
-execute as @e[limit=1,type=armor_stand,tag=random,scores={rNumber=3}] positioned 1626 ~ 449 run function sprint_racer:game_logic/0/save_state/save_ai
-execute as @e[limit=1,type=armor_stand,tag=random,scores={rNumber=4}] positioned 1626 ~ 446 run function sprint_racer:game_logic/0/save_state/save_ai
-execute as @e[limit=1,type=armor_stand,tag=random,scores={rNumber=5}] positioned 1626 ~ 443 run function sprint_racer:game_logic/0/save_state/save_ai
-execute as @e[limit=1,type=armor_stand,tag=random,scores={rNumber=6}] positioned 1627 ~ 455 run function sprint_racer:game_logic/0/save_state/save_ai
-execute as @e[limit=1,type=armor_stand,tag=random,scores={rNumber=7}] positioned 1627 ~ 452 run function sprint_racer:game_logic/0/save_state/save_ai
-execute as @e[limit=1,type=armor_stand,tag=random,scores={rNumber=8}] positioned 1627 ~ 449 run function sprint_racer:game_logic/0/save_state/save_ai
-execute as @e[limit=1,type=armor_stand,tag=random,scores={rNumber=9}] positioned 1627 ~ 446 run function sprint_racer:game_logic/0/save_state/save_ai
+execute as @e[limit=1,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1}] positioned 1626 ~ 455 run function sprint_racer:game_logic/0/save_state/save_ai
+execute as @e[limit=1,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=2}] positioned 1626 ~ 452 run function sprint_racer:game_logic/0/save_state/save_ai
+execute as @e[limit=1,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=3}] positioned 1626 ~ 449 run function sprint_racer:game_logic/0/save_state/save_ai
+execute as @e[limit=1,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=4}] positioned 1626 ~ 446 run function sprint_racer:game_logic/0/save_state/save_ai
+execute as @e[limit=1,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=5}] positioned 1626 ~ 443 run function sprint_racer:game_logic/0/save_state/save_ai
+execute as @e[limit=1,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=6}] positioned 1627 ~ 455 run function sprint_racer:game_logic/0/save_state/save_ai
+execute as @e[limit=1,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=7}] positioned 1627 ~ 452 run function sprint_racer:game_logic/0/save_state/save_ai
+execute as @e[limit=1,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=8}] positioned 1627 ~ 449 run function sprint_racer:game_logic/0/save_state/save_ai
+execute as @e[limit=1,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=9}] positioned 1627 ~ 446 run function sprint_racer:game_logic/0/save_state/save_ai
 
 #################################
 #MISC

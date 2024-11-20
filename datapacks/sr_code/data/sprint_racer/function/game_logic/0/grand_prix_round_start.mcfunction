@@ -10,7 +10,7 @@ execute unless score #gpTrackSelect value matches 3..5 run tag @e[tag=chosenTrac
 
 #random gamemode
 scoreboard players set @s math 0
-execute if entity @s[tag=read_random] unless score #gpTrackSelect value matches 3.. run scoreboard players operation @s math = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..5}] rNumber
+execute if entity @s[tag=read_random] unless score #gpTrackSelect value matches 3.. run scoreboard players operation @s math = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..5}] rNumber
 execute if entity @s[tag=read_random] if score #gpTrackSelect value matches 3.. if score #gpVoteGamemode value matches 1 run scoreboard players set @s math 1
 execute if entity @s[tag=read_random] if score #gpTrackSelect value matches 3.. if score #gpVoteGamemode value matches 3 run scoreboard players set @s math 4
 tag @s[scores={math=1..3}] add read_race
@@ -39,7 +39,7 @@ execute if entity @s[tag=!read_rtrack,tag=read_battle,tag=oops_an_accident] as @
 tag @s remove oops_an_accident
 
 #get this party started
-tag @e[tag=w,type=armor_stand,tag=needAnnounce] remove needAnnounce
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=needAnnounce] remove needAnnounce
 execute if entity @s[tag=read_race] run function sprint_racer:game_logic/1/_initialize
 execute if entity @s[tag=read_battle] run function sprint_racer:game_logic/3/_initialize
 

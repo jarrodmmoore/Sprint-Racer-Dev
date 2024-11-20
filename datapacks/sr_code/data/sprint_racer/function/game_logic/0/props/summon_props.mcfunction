@@ -20,7 +20,7 @@ function sprint_racer:game_logic/0/props/summon_nodes
 
 
 #item chests
-execute unless entity @e[tag=w,type=armor_stand,tag=halftick] run scoreboard players set @e[tag=node,tag=itemchest,x=1610,y=87,z=406,distance=..125] itemBlockState 100
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=halftick] run scoreboard players set @e[tag=node,tag=itemchest,x=1610,y=87,z=406,distance=..125] itemBlockState 100
 execute if score #halftick value matches 1 run schedule function sprint_racer:game_logic/0/props/halftick_item_chest_spawn 60t
 kill @e[tag=itemcontainer]
 
@@ -33,16 +33,16 @@ function sprint_racer_language:_dlc_3/lobby/floating_texts
 
 
 #place or remove options signs based on map mode
-execute unless entity @e[tag=w,type=armor_stand,tag=realms] run function sprint_racer_language:lobby/options/restore_options_signs
-execute unless entity @e[tag=w,type=armor_stand,tag=realms] run function sprint_racer_language:_dlc_1/lobby/options/restore_options_signs
-#execute unless entity @e[tag=w,type=armor_stand,tag=realms] run function sprint_racer_language:_dlc_3/lobby/options/restore_options_signs
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms] run function sprint_racer_language:lobby/options/restore_options_signs
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms] run function sprint_racer_language:_dlc_1/lobby/options/restore_options_signs
+#execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms] run function sprint_racer_language:_dlc_3/lobby/options/restore_options_signs
 function sprint_racer_language:_dlc_2/lobby/options/restore_options_signs
-execute if entity @e[tag=w,type=armor_stand,tag=realms] run function sprint_racer:game_logic/0/props/remove_options_signs
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms] run function sprint_racer:game_logic/0/props/remove_options_signs
 
 
 #hide the save state room when in realms mode
-execute unless block 1610 88 454 black_wool if entity @e[limit=1,tag=w,type=armor_stand,tag=realms] run fill 1610 88 454 1611 91 454 black_wool
-execute if block 1610 88 454 black_wool if entity @e[limit=1,tag=w,type=armor_stand,tag=!realms] run fill 1610 88 454 1611 91 454 air
+execute unless block 1610 88 454 black_wool if entity @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms] run fill 1610 88 454 1611 91 454 black_wool
+execute if block 1610 88 454 black_wool if entity @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!realms] run fill 1610 88 454 1611 91 454 air
 
 
 #flamingo
@@ -123,43 +123,43 @@ summon item 1621 80 433 {Tags:["lobbyprop","itempreview","ip20"],PickupDelay:327
 
 
 #summon random lookin villagers to walk around
-scoreboard players operation @e[tag=w,type=armor_stand] rNumber = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..4}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1..2}] run summon villager 1585 97 350 {Tags:["babyVillager","lobbyprop","walk"],VillagerData:{profession:"nitwit",level:99,type:"taiga"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-9999999}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2..3}] run summon villager 1586 97 349 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-9999999}
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] rNumber = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,type=armor_stand,scores={rNumber=1..4}] rNumber
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=1..2}] run summon villager 1585 97 350 {Tags:["babyVillager","lobbyprop","walk"],VillagerData:{profession:"nitwit",level:99,type:"taiga"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-9999999}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=2..3}] run summon villager 1586 97 349 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-9999999}
 
-scoreboard players operation @e[tag=w,type=armor_stand] rNumber = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..5}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1..2}] run summon villager 1602 88 371 {Tags:["lobbyprop","walk"],VillagerData:{profession:"mason",level:99,type:"taiga"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2..3}] run summon villager 1617 88 433 {Tags:["lobbyprop","walk"],VillagerData:{profession:"farmer",level:99,type:"desert"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] rNumber = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,type=armor_stand,scores={rNumber=1..5}] rNumber
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=1..2}] run summon villager 1602 88 371 {Tags:["lobbyprop","walk"],VillagerData:{profession:"mason",level:99,type:"taiga"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=2..3}] run summon villager 1617 88 433 {Tags:["lobbyprop","walk"],VillagerData:{profession:"farmer",level:99,type:"desert"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 
-scoreboard players operation @e[tag=w,type=armor_stand] rNumber = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..3}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1}] run summon villager 1645 88 416 {Tags:["lobbyprop","walk"],VillagerData:{profession:"cartographer",level:99,type:"plains"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2}] run summon villager 1611 88 389 {Tags:["lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] rNumber = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,type=armor_stand,scores={rNumber=1..3}] rNumber
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=1}] run summon villager 1645 88 416 {Tags:["lobbyprop","walk"],VillagerData:{profession:"cartographer",level:99,type:"plains"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=2}] run summon villager 1611 88 389 {Tags:["lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 
-scoreboard players operation @e[tag=w,type=armor_stand] rNumber = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..5}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1}] run summon villager 1594 88 406 {Tags:["lobbyprop","walk"],VillagerData:{profession:"toolsmith",level:99,type:"jungle"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2}] run summon villager 1626 88 406 {Tags:["lobbyprop","run"],VillagerData:{profession:"cleric",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] rNumber = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,type=armor_stand,scores={rNumber=1..5}] rNumber
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=1}] run summon villager 1594 88 406 {Tags:["lobbyprop","walk"],VillagerData:{profession:"toolsmith",level:99,type:"jungle"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=2}] run summon villager 1626 88 406 {Tags:["lobbyprop","run"],VillagerData:{profession:"cleric",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 
-scoreboard players operation @e[tag=w,type=armor_stand] rNumber = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..3}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1}] run summon villager 1598 97 460 {Tags:["lobbyprop","walk"],VillagerData:{profession:"toolsmith",level:99,type:"jungle"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=2}] run summon villager 1598 97 464 {Tags:["lobbyprop","run"],VillagerData:{profession:"cleric",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] rNumber = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,type=armor_stand,scores={rNumber=1..3}] rNumber
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=1}] run summon villager 1598 97 460 {Tags:["lobbyprop","walk"],VillagerData:{profession:"toolsmith",level:99,type:"jungle"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=2}] run summon villager 1598 97 464 {Tags:["lobbyprop","run"],VillagerData:{profession:"cleric",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 
 #1 in 20 chance to spawn fletcher gang
-scoreboard players operation @e[tag=w,type=armor_stand] rNumber = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..20}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1570 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1572 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1574 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1576 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1578 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=20}] run summon villager 1580 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] rNumber = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,type=armor_stand,scores={rNumber=1..20}] rNumber
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=20}] run summon villager 1570 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=20}] run summon villager 1572 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=20}] run summon villager 1574 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=20}] run summon villager 1576 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=20}] run summon villager 1578 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=20}] run summon villager 1580 88 389 {Tags:["lobbyprop","walk"],VillagerData:{profession:"fletcher",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1}
 
 #1 in 100 chance to spawn Mom + kids (this can't overlap with fletcher gang)
-scoreboard players operation @e[tag=w,type=armor_stand] math2 = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..5}] rNumber
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1580 88 387 {Tags:["lobbyprop","run"],VillagerData:{profession:"librarian",level:99,type:"plains"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,CustomNameVisible:1b,CustomName:'{"text":"Mom"}'}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1578 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"swamp"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-6000}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1576 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-12000}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1574 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"taiga"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-18000}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1572 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"desert"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-24000}
-execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1570 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-30000}
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math2 = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,type=armor_stand,scores={rNumber=1..5}] rNumber
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1580 88 387 {Tags:["lobbyprop","run"],VillagerData:{profession:"librarian",level:99,type:"plains"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,CustomNameVisible:1b,CustomName:'{"text":"Mom"}'}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1578 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"swamp"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-6000}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1576 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"snow"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-12000}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1574 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"taiga"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-18000}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1572 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"desert"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-24000}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1570 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-30000}
 
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=11a] as @e[tag=lobbyprop,tag=walk] run function sprint_racer:cheats/homing_entity_chance_rare
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=11a] as @e[tag=lobbyprop,tag=run] run function sprint_racer:cheats/homing_entity_chance_rare
@@ -209,7 +209,7 @@ execute positioned 1576 89 445 as @e[type=villager,tag=stationary_v,sort=nearest
 
 #moving villagers will get a random message
 #scoreboard players set @e[type=villager,tag=!stationary_v] villagerTip 27
-execute as @e[type=villager,tag=!stationary_v] run scoreboard players operation @s villagerTip = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..27}] rNumber
+execute as @e[type=villager,tag=!stationary_v] run scoreboard players operation @s villagerTip = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..27}] rNumber
 execute as @e[type=villager,tag=!stationary_v,scores={villagerTip=20}] run scoreboard players set @s villagerTip 1
 
 execute as @e[tag=facewest] at @s run tp @s ~ ~ ~ 90 ~
@@ -222,7 +222,7 @@ execute positioned 1594 92 461 positioned ~-.4 ~ ~-.4 run summon minecraft:armor
 execute positioned 1563 98 343 run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"NOAFK","bold":true,"italic":false}'}
 execute positioned 1578 97 372 run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"ALWAYSSUNNY","bold":true,"italic":false}'}
 execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=17,tag=18,tag=19,tag=42,tag=43,tag=44] positioned 1580 98 438 positioned ~.5 ~ ~ run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"CUSTOMAI","bold":true,"italic":false}'}
-execute if entity @e[tag=w,type=armor_stand,tag=COPPA] positioned 1580 98 451 positioned ~.5 ~ ~ run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"SLOTLIMIT","bold":true,"italic":false}'}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=COPPA] positioned 1580 98 451 positioned ~.5 ~ ~ run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"SLOTLIMIT","bold":true,"italic":false}'}
 
 #cheat help door opens if 30 eggs are discovered
 scoreboard players set #cheats_discovered value 0

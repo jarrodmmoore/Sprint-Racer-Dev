@@ -2,9 +2,9 @@
 #each higher state number takes priority over lower ones
 
 
-execute if entity @e[tag=w,tag=!halftick,scores={oTimerGlobal=1}] run scoreboard players add @e[tag=w,type=armor_stand] currentTimeMsec 1
-execute if score #halftick value matches 1 run scoreboard players add @e[tag=w,type=armor_stand] currentTimeMsec 1
-scoreboard players set @e[tag=w,scores={currentTimeMsec=10..}] currentTimeMsec 0
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!halftick,scores={oTimerGlobal=1}] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeMsec 1
+execute if score #halftick value matches 1 run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeMsec 1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={currentTimeMsec=10..}] currentTimeMsec 0
 
 
 #state -50, we're allowed to load saves

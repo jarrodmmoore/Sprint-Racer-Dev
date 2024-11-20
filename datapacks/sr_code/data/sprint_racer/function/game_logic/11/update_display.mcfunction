@@ -1,8 +1,8 @@
-scoreboard players set @e[tag=w,type=armor_stand] gpRound 1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gpRound 1
 
 #round display
 fill 1598 70 439 1598 73 441 orange_concrete
-execute as @e[tag=w,type=armor_stand,limit=1] run function sprint_racer_language:_dlc_3/grand_prix/round_number
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] run function sprint_racer_language:_dlc_3/grand_prix/round_number
 
 #clear any old frames
 kill @e[type=item_frame,tag=gpFrame]

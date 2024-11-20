@@ -1,5 +1,5 @@
 #night vision
-execute if entity @e[tag=w,type=armor_stand,limit=1,scores={gameTime=..100100}] run effect give @a minecraft:night_vision 35 1 true
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,scores={gameTime=..100100}] run effect give @a minecraft:night_vision 35 1 true
 
 #netherite doors opening or closing
 execute as @e[type=armor_stand,tag=sc_luna_door,scores={scl_progress=1..}] at @s run function sprint_racer:levels/space_colony_luna/doors

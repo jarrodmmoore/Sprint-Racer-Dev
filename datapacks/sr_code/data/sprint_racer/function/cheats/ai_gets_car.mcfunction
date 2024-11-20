@@ -1,4 +1,4 @@
-scoreboard players operation @s kart_model = @e[limit=1,sort=random,type=armor_stand,tag=random,scores={rNumber=11..19}] rNumber
+scoreboard players operation @s kart_model = @e[limit=1,sort=random,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=11..19}] rNumber
 
 execute if score @s kart_model matches 11 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:stone_button",count:1,components:{"minecraft:custom_model_data":2111111}}],ArmorDropChances:[0.85f,0.85f,0.85f,0.0f]}
 execute if score @s kart_model matches 12 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:stone_button",count:1,components:{"minecraft:custom_model_data":2111112}}],ArmorDropChances:[0.85f,0.85f,0.85f,0.0f]}

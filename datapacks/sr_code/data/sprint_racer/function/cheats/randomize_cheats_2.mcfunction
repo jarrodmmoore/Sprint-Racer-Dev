@@ -4,12 +4,12 @@
 #let's generate some random numbers, baby
 
 #50% chance we subtract 1 from our result
-scoreboard players operation #roll2 value = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..2}] rNumber
+scoreboard players operation #roll2 value = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..2}] rNumber
 scoreboard players remove #roll2 value 1
 
 #pick a random number
 scoreboard players set #roll1 value 0
-execute if entity @e[limit=1,tag=random,type=armor_stand,tag=rChtViable] run scoreboard players operation #roll1 value = @e[limit=1,sort=random,tag=random,type=armor_stand,tag=rChtViable] rNumber
+execute if entity @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=rChtViable] run scoreboard players operation #roll1 value = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=rChtViable] rNumber
 
 #multiply our random number by 2, then *maybe* subtract 1 from it
 scoreboard players set #2 value 2

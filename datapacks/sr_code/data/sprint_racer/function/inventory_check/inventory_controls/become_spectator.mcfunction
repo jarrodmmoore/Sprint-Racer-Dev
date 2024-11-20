@@ -1,8 +1,8 @@
 tag @s add forcespectate
 tag @s remove playing
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=1..3}] run gamemode spectator @s
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=7..8}] run gamemode spectator @s
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=0}] run team join spectator @s
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1..3}] run gamemode spectator @s
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=7..8}] run gamemode spectator @s
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=0}] run team join spectator @s
 execute at @s run playsound minecraft:block.note_block.bit master @s ~ ~ ~ 1 1
 
 title @s subtitle [""]

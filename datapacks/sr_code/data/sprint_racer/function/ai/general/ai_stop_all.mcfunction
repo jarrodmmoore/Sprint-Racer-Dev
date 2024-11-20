@@ -11,5 +11,5 @@ scoreboard objectives remove validAI9
 
 tag @e[tag=aiDisable] remove aiDisable
 
-scoreboard players reset @e[tag=random,scores={rNumber=1..9}] finishPos
-scoreboard players reset @e[tag=random,scores={rNumber=1..9}] addPoints
+scoreboard players reset @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9}] finishPos
+scoreboard players reset @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9}] addPoints

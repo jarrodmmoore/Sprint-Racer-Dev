@@ -58,8 +58,8 @@ execute if entity @s[scores={rNumber=42}] run function sprint_racer:levels/mount
 execute if entity @s[scores={rNumber=43}] run function sprint_racer:levels/frostbite_caverns/_initialize
 execute if entity @s[scores={rNumber=44}] run function sprint_racer:levels/retro_synthwave/_initialize
 execute if entity @s[scores={rNumber=45}] run function sprint_racer:levels/shroom_spring/_initialize
-execute if entity @s[scores={rNumber=46}] if entity @e[tag=w,type=armor_stand,tag=!COPPA] run function sprint_racer:levels/casino_chase/_initialize
-execute if entity @s[scores={rNumber=46}] if entity @e[tag=w,type=armor_stand,tag=COPPA] run tag @s remove chosenTrack
+execute if entity @s[scores={rNumber=46}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!COPPA] run function sprint_racer:levels/casino_chase/_initialize
+execute if entity @s[scores={rNumber=46}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=COPPA] run tag @s remove chosenTrack
 execute if entity @s[scores={rNumber=47}] run function sprint_racer:levels/seaside_joyride/_initialize
 execute if entity @s[scores={rNumber=48}] run function sprint_racer:levels/praia_de_abril_2/_initialize
 execute if entity @s[scores={rNumber=49}] run function sprint_racer:levels/crash_course_neo/_initialize

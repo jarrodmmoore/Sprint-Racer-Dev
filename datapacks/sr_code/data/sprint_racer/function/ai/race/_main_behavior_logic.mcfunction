@@ -1,5 +1,5 @@
 #rubberbanding stuff
-execute if entity @e[tag=w,type=armor_stand,scores={currentTimeMsec=1,oTimer=1,gameTime=..99999}] run function sprint_racer:ai/race/rubberbanding/_skill_index
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={currentTimeMsec=1,oTimer=1,gameTime=..99999}] run function sprint_racer:ai/race/rubberbanding/_skill_index
 
 #go after chests
 execute if entity @s[scores={aiActMCooldown=..0,itemCooldown=..0,aiStuckTime=..0,aiHasNormal=1..}] if entity @e[tag=itemcontainer,type=armor_stand,distance=..6,tag=!chest10,tag=!aiCantSee] run tag @s add newbehave

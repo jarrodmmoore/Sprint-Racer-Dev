@@ -1,7 +1,7 @@
 playsound minecraft:entity.villager.yes master @s ~ ~ ~ 2 1
 
 #pick a random message to say
-scoreboard players operation @s math = @e[limit=1,sort=random,type=armor_stand,tag=random,scores={rNumber=1..15}] rNumber
+scoreboard players operation @s math = @e[limit=1,sort=random,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..15}] rNumber
 
 #say something
 execute if entity @s[scores={math=1}] run tellraw @s ["",{"text":"<"},{"text":"Villager","color":"gray"},{"text":"> "},{"translate":"sr.villager.interact.1"}]

@@ -2,7 +2,7 @@
 #function sprint_racer:game_logic/1/record_lap/_index
 
 #testing mode, make sure we have pos calc points
-execute if entity @e[type=armor_stand,tag=w,tag=customTesting,tag=!noCalcGen] run function sprint_racer:game_logic/10/test_track/calc_gen_finishline
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=customTesting,tag=!noCalcGen] run function sprint_racer:game_logic/10/test_track/calc_gen_finishline
 
 #store the lap number for subtitle display
 scoreboard players operation @s taStoredLap = @s lap
@@ -28,7 +28,7 @@ function sprint_racer:game_logic/1/self_record_pb
 #check if that's a finish or not
 scoreboard players add @s lapCalc 0
 scoreboard players operation @s lapCalc = @s lap
-scoreboard players operation @s lapCalc -= @e[tag=w,limit=1] lap
+scoreboard players operation @s lapCalc -= @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] lap
 execute if entity @s[scores={lapCalc=..0}] run function sprint_racer:game_logic/7/next_lap
 execute if entity @s[scores={lapCalc=1..}] run function sprint_racer:game_logic/7/player_finish
 

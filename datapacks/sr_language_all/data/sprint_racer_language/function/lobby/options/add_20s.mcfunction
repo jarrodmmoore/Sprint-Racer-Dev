@@ -3,12 +3,12 @@ data merge block 1584 95 378 {Text1:'{"text":"","clickEvent":{"action":"run_comm
 data merge block 1586 95 378 {Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/set_5s"}}',Text2:'{"text":"LOBBY TIME:","bold":true,"color":"black"}',Text3:'{"text":"[SET TO 5s]","color":"dark_purple"}'}
 data merge block 1587 95 378 {Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/reset_timer"}}',Text2:'{"text":"LOBBY TIME:","bold":true,"color":"black"}',Text3:'{"text":"[RESET TIME]","color":"dark_purple"}'}
 
-tag @e[tag=w,type=armor_stand] add clearImpulse
-scoreboard players set @e[tag=w,type=armor_stand] oTimer 0
-scoreboard players add @e[tag=w,scores={gameTime=1..979}] gameTime 20
-scoreboard players set @e[tag=w,scores={gameTime=980..}] gameTime 999
-scoreboard players add @e[tag=w,scores={voteTime=1..100}] voteTime 20
-execute if entity @e[tag=w,scores={voteTime=0}] store result bossbar minecraft:menutimer max run scoreboard players get @e[tag=w,limit=1] gameTime
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add clearImpulse
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] oTimer 0
+scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=1..979}] gameTime 20
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=980..}] gameTime 999
+scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={voteTime=1..100}] voteTime 20
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={voteTime=0}] store result bossbar minecraft:menutimer max run scoreboard players get @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] gameTime
 
 execute as @a[tag=playing] at @s run playsound minecraft:block.note_block.hat master @s
 

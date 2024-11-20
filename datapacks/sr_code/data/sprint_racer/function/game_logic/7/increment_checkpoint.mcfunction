@@ -1,7 +1,7 @@
 scoreboard players add @s check 1
 
 #testing mode, make sure we have pos calc points
-execute if entity @e[type=armor_stand,tag=w,tag=customTesting,tag=!noCalcGen] run function sprint_racer:game_logic/10/test_track/calc_gen_checkpoint
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=customTesting,tag=!noCalcGen] run function sprint_racer:game_logic/10/test_track/calc_gen_checkpoint
 
 function sprint_racer:game_logic/7/record_current_split
 execute unless entity @s[tag=!checkText,tag=!checkSound] if entity @s[scores={bestSplit1=1..}] run function sprint_racer:game_logic/7/show_split_checkpoint

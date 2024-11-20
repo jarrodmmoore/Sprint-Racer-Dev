@@ -14,8 +14,8 @@ scoreboard players set #getX value 2471
 scoreboard players set #getZ value 267
 
 #get the coordinates
-execute if score @s qsTrackWarp matches 1..999 as @e[tag=random,type=armor_stand] if score @s rNumber = #targetTrack value run function sprint_racer:worldmap/qs_track_warp_race_coords
-execute if score @s qsTrackWarp matches 1000.. as @e[tag=random,type=armor_stand] if score @s rNumber = #targetTrack value run function sprint_racer:worldmap/qs_track_warp_battle_coords
+execute if score @s qsTrackWarp matches 1..999 as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand] if score @s rNumber = #targetTrack value run function sprint_racer:worldmap/qs_track_warp_race_coords
+execute if score @s qsTrackWarp matches 1000.. as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand] if score @s rNumber = #targetTrack value run function sprint_racer:worldmap/qs_track_warp_battle_coords
 
 #do warp
 effect give @s resistance 5 100 true

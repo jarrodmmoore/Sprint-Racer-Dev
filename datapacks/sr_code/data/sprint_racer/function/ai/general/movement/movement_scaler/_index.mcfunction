@@ -8,7 +8,7 @@ execute store result score @s rot_yaw100 run data get entity @s Rotation[0] 1000
 execute store result score @s rot_pitch100 run data get entity @s Rotation[1] 1000
 
 function sprint_racer:ai/general/movement/movement_scaler/_index_not_halftick
-#execute if entity @e[tag=w,type=armor_stand,tag=!halftick] run function sprint_racer:ai/general/movement/movement_scaler/_index_not_halftick
+#execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!halftick] run function sprint_racer:ai/general/movement/movement_scaler/_index_not_halftick
 #execute if score #halftick value matches 1 run function sprint_racer:ai/general/movement/movement_scaler/_index_halftick
 
 execute if entity @s[tag=gtgfast,scores={moveState=..2}] run function sprint_racer:ai/general/movement/movement_scaler/gtgfast/_index

@@ -21,7 +21,7 @@ execute as @a[scores={invisibility=2..}] at @s if block ~ ~ ~ water run tag @s r
 
 #convert to seconds for visual timer
 execute as @e[scores={invisibility=1..}] run scoreboard players operation @s invisTimer = @s invisibility
-execute as @e[scores={invisibility=1..}] run scoreboard players operation @s invisTimer /= @e[limit=1,tag=random,scores={rNumber=20}] rNumber
+execute as @e[scores={invisibility=1..}] run scoreboard players operation @s invisTimer /= @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=20}] rNumber
 execute as @e[scores={invisibility=1..}] run scoreboard players add @s invisTimer 1
 
 #dagger deals critical hits from behind

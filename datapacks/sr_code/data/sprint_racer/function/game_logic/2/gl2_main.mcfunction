@@ -107,8 +107,8 @@ execute if entity @s[tag=executor,tag=selecting] if entity @e[type=creeper,tag=k
 
 #if player is executor, cause nearby nodes to show particles
 execute if entity @s[tag=executor] as @e[tag=node,distance=..50,limit=20,sort=nearest] at @s run function sprint_racer:game_logic/2/node_particle
-execute if entity @s[tag=executor] if entity @e[tag=w,type=armor_stand,limit=1,tag=!halftick,scores={oTimerGlobal=1}] as @e[tag=node,distance=..35,limit=40,sort=nearest] at @s run function sprint_racer:game_logic/2/node_nametag
-execute if entity @s[tag=executor] if entity @e[tag=w,type=armor_stand,limit=1,tag=halftick] as @e[tag=node,distance=..35,limit=40,sort=nearest] at @s run function sprint_racer:game_logic/2/node_nametag
+execute if entity @s[tag=executor] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=!halftick,scores={oTimerGlobal=1}] as @e[tag=node,distance=..35,limit=40,sort=nearest] at @s run function sprint_racer:game_logic/2/node_nametag
+execute if entity @s[tag=executor] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=halftick] as @e[tag=node,distance=..35,limit=40,sort=nearest] at @s run function sprint_racer:game_logic/2/node_nametag
 execute if entity @s[tag=executor] as @e[type=!armor_stand,tag=showDispenser,tag=node,distance=..50,limit=20,sort=nearest] at @s run function sprint_racer:game_logic/2/show_dispenser_direction
 
 #all nodes should be prepped for transfer between worlds

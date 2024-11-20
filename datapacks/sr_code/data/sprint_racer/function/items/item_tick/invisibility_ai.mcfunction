@@ -2,8 +2,8 @@
 
 #hide button while not in water
 execute if entity @s[scores={invisibility=2..},tag=!hideButton] unless block ~ ~ ~ water run tag @s add changeButton
-execute if entity @e[tag=w,scores={gameTime=161..}] if entity @s[tag=changeButton] run data merge entity @s {IsBaby:1b,ArmorItems:[{},{},{},{}]}
-execute if entity @e[tag=w,scores={gameTime=..160}] if entity @s[tag=changeButton] run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:green_stained_glass",count:1}]}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=161..}] if entity @s[tag=changeButton] run data merge entity @s {IsBaby:1b,ArmorItems:[{},{},{},{}]}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=..160}] if entity @s[tag=changeButton] run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:green_stained_glass",count:1}]}
 tag @s[tag=changeButton] add hideButton
 tag @s[tag=changeButton] remove changeButton
 

@@ -3,7 +3,7 @@
 #also, can be given one of many different visual mines
 scoreboard players set @s rNumber 0
 #pick random number between 1 and 50, excluding banned values (tag=banChest)
-scoreboard players operation @s rNumber = @e[sort=random,limit=1,type=armor_stand,tag=random,tag=!banChest,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s rNumber = @e[sort=random,limit=1,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,tag=!banChest,scores={rNumber=1..50}] rNumber
 
 #chest
 give @s[scores={rNumber=1..27,itemLuck=..3}] minecraft:trapped_chest[custom_name='{"translate":"sr.item.trapped_chest","color":"green","bold":true,"italic":false}',custom_data={no16:1b,stay:1b,item:1b,normalitem:1b}] 1

@@ -1,13 +1,13 @@
-scoreboard players add @e[tag=w,type=armor_stand] gpRound 1
-execute as @e[tag=w,type=armor_stand,limit=1] run function sprint_racer_language:_dlc_3/grand_prix/round_number
+scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gpRound 1
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] run function sprint_racer_language:_dlc_3/grand_prix/round_number
 
-scoreboard players set @e[tag=w,type=armor_stand] math2 2
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math2 2
 
 scoreboard players remove @e[type=item_frame,tag=gpFrame] aiEntity 1
 scoreboard players set @e[type=item_frame,tag=gpFrame,scores={aiEntity=..0}] aiEntity 7
 
-scoreboard players operation @e[type=item_frame,tag=gpFrame,scores={aiEntity=6}] gpNumber = @e[tag=w,limit=1,type=armor_stand] gpRound
-scoreboard players operation @e[type=item_frame,tag=gpFrame,scores={aiEntity=6}] gpNumber += @e[tag=w,limit=1,type=armor_stand] math2
+scoreboard players operation @e[type=item_frame,tag=gpFrame,scores={aiEntity=6}] gpNumber = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand] gpRound
+scoreboard players operation @e[type=item_frame,tag=gpFrame,scores={aiEntity=6}] gpNumber += @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand] math2
 execute as @e[type=item_frame,tag=gpFrame,scores={aiEntity=6}] at @s run function sprint_racer:game_logic/11/item_frame/_display_index
 
 tp @e[type=item_frame,tag=gpFrame,scores={aiEntity=1}] 1599 71 433

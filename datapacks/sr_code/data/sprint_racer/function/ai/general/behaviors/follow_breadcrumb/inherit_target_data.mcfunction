@@ -36,7 +36,7 @@ execute if entity @s[tag=!gotdir,scores={aiDirection=1}] run function sprint_rac
 execute if entity @s[tag=!gotdir,scores={aiDirection=2}] run function sprint_racer:ai/general/behaviors/follow_breadcrumb/get_new_direction_from_2
 execute if entity @s[tag=!gotdir,scores={aiDirection=3}] run function sprint_racer:ai/general/behaviors/follow_breadcrumb/get_new_direction_from_3
 execute if entity @s[tag=!gotdir,scores={aiDirection=4}] run function sprint_racer:ai/general/behaviors/follow_breadcrumb/get_new_direction_from_4
-execute unless entity @s[scores={aiDirection=1..4}] run scoreboard players operation @s aiDirection = @e[limit=1,sort=random,tag=random,scores={rNumber=1..4}] rNumber
+execute unless entity @s[scores={aiDirection=1..4}] run scoreboard players operation @s aiDirection = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..4}] rNumber
 
 #internalize chosen direction so we can chase the right breadcrumb
 execute if entity @s[scores={aiDirection=1}] run scoreboard players operation @s AIBC_id = @s AIBC_dir1

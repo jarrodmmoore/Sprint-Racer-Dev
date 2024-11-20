@@ -27,6 +27,6 @@ execute if entity @s[scores={enderSteal=29}] at @e[tag=myEndie3,limit=1,sort=nea
 
 execute if entity @s[scores={enderSteal=50}] at @e[tag=myEndie3,limit=1,sort=nearest] run particle falling_dust{block_state:"minecraft:magenta_concrete"} ~ ~1.5 ~ 0.2 0.4 0.2 0 30
 execute if entity @s[scores={enderSteal=50}] at @e[tag=myEndie3,limit=1,sort=nearest] run playsound minecraft:entity.enderman.teleport master @a
-execute if entity @s[scores={enderSteal=50},tag=getClocked] unless entity @e[tag=w,type=armor_stand,tag=teamplay] at @e[tag=myEndie3,limit=1,sort=nearest] run summon tnt ~ ~ ~ {fuse:10000,Motion:[0.0d,0.3d,0.0d]}
+execute if entity @s[scores={enderSteal=50},tag=getClocked] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] at @e[tag=myEndie3,limit=1,sort=nearest] run summon tnt ~ ~ ~ {fuse:10000,Motion:[0.0d,0.3d,0.0d]}
 
 tag @e[tag=myEndie3,limit=1,sort=nearest,tag=!endieMoved] add endieMoved

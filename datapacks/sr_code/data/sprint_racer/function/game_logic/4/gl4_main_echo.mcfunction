@@ -4,8 +4,8 @@ execute if entity @s[scores={gameTime=95}] run function sprint_racer:game_logic/
 execute if entity @s[scores={gameTime=97}] run function sprint_racer:game_logic/4/rank_fill_holes_3rd
 
 #did the AIs make top 3?
-execute if entity @s[scores={gameTime=99}] as @e[tag=random,type=armor_stand,scores={rNumber=1..9}] run scoreboard players set @s finishPos 0
-execute if entity @s[scores={gameTime=99}] as @e[tag=random,type=armor_stand,scores={rNumber=1..9,aiPoints=1..}] run function sprint_racer:game_logic/4/check_for_ai_placements
+execute if entity @s[scores={gameTime=99}] as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9}] run scoreboard players set @s finishPos 0
+execute if entity @s[scores={gameTime=99}] as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9,aiPoints=1..}] run function sprint_racer:game_logic/4/check_for_ai_placements
 
 #once the ranks are determined, start the sequence
 execute unless entity @a[scores={dummyPoints=0..}] run scoreboard players add @s gameTime 1

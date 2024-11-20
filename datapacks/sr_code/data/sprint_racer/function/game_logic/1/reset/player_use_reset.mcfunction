@@ -6,6 +6,6 @@ execute unless entity @s[scores={resetCooldown=..0}] run function sprint_racer_l
 execute if entity @s[scores={resetCooldown=..0}] run function sprint_racer:game_logic/1/reset/look_for_checkpoint
 
 #catch bad track teleport
-execute if entity @e[tag=w,tag=!customTesting,scores={gameState=1..,gameTime=..159}] run function sprint_racer_language:_dlc_3/track_load_failed_return_to_lobby
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!customTesting,scores={gameState=1..,gameTime=..159}] run function sprint_racer_language:_dlc_3/track_load_failed_return_to_lobby
 
 scoreboard players set @s inputCooldown 15

@@ -6,5 +6,5 @@ execute positioned 1565 79 372 run data merge entity @e[type=minecraft:item_fram
 tag @e[tag=focusT] remove focusT
 
 execute as @e[tag=customtrack,tag=customrace] run scoreboard players operation @s customDummyID = @s customTrackID
-execute as @e[tag=customtrack,tag=customrace] run scoreboard players operation @s customDummyID -= @e[tag=w,limit=1] tvPoolNum
+execute as @e[tag=customtrack,tag=customrace] run scoreboard players operation @s customDummyID -= @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] tvPoolNum
 tag @e[limit=1,sort=random,tag=customtrack,tag=customrace,scores={customDummyID=0}] add focusT

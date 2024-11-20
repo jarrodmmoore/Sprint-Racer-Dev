@@ -5,13 +5,13 @@ tag @s add self
 playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 1 1.25
 
 #anvil up to 4 players
-#scoreboard players operation @s repeatCount = @e[limit=1,tag=w] playerCountI
+#scoreboard players operation @s repeatCount = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerCountI
 #scoreboard players set @s[scores={repeatCount=4..}] repeatCount 4
 scoreboard players set @s repeatCount 4
 
-execute unless entity @e[tag=w,type=armor_stand,tag=teamplay] run function sprint_racer:items/item_tick/elite/anvil_of_injustice_repeat
-execute if entity @e[tag=w,type=armor_stand,tag=teamplay] if entity @s[tag=playerCyan] run function sprint_racer:items/item_tick/elite/anvil_of_injustice_repeat_teams_cyan
-execute if entity @e[tag=w,type=armor_stand,tag=teamplay] if entity @s[tag=playerOrange] run function sprint_racer:items/item_tick/elite/anvil_of_injustice_repeat_teams_orange
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run function sprint_racer:items/item_tick/elite/anvil_of_injustice_repeat
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] if entity @s[tag=playerCyan] run function sprint_racer:items/item_tick/elite/anvil_of_injustice_repeat_teams_cyan
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] if entity @s[tag=playerOrange] run function sprint_racer:items/item_tick/elite/anvil_of_injustice_repeat_teams_orange
 execute if entity @e[tag=anvilled] as @e[limit=1,tag=anvilled] run function sprint_racer_language:gameplay/misc_item_text/anvil/injustice_is_served
 tag @e[tag=anvilled] remove anvilled
 

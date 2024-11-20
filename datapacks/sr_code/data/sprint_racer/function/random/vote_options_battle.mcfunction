@@ -29,10 +29,10 @@ function sprint_racer:random/check_for_options_battle
 
 #figure out how many players we're expecting next game (including bots)
 execute store result score #test value run execute if entity @a[tag=playing]
-execute if score #test value matches ..1 as @e[tag=w,type=armor_stand,tag=optBAIsingle,tag=!BAIautocount] run scoreboard players operation #test value += @s optBAIcount
-execute if score #test value matches ..1 as @e[tag=w,type=armor_stand,tag=optBAIsingle,tag=BAIautocount] run scoreboard players operation #test value = @s optBAIcount
-execute as @e[tag=w,type=armor_stand,tag=optBAIalways,tag=!BAIautocount] run scoreboard players operation #test value += @s optBAIcount
-execute as @e[tag=w,type=armor_stand,tag=optBAIalways,tag=BAIautocount] if score #test value < @s optBAIcount run scoreboard players operation #test value = @s optBAIcount
+execute if score #test value matches ..1 as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optBAIsingle,tag=!BAIautocount] run scoreboard players operation #test value += @s optBAIcount
+execute if score #test value matches ..1 as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optBAIsingle,tag=BAIautocount] run scoreboard players operation #test value = @s optBAIcount
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optBAIalways,tag=!BAIautocount] run scoreboard players operation #test value += @s optBAIcount
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optBAIalways,tag=BAIautocount] if score #test value < @s optBAIcount run scoreboard players operation #test value = @s optBAIcount
 #now make sure there's at least 1 track that suits our player count
 execute if score #test value matches ..2 run function sprint_racer:random/check_for_battle_1_size {size:"trackTiny"}
 execute if score #test value matches 3 run function sprint_racer:random/check_for_battle_2_sizes {size1:"trackTiny",size2:"trackSmall"}
@@ -55,6 +55,6 @@ scoreboard players set @e[tag=vote2,type=armor_stand] randomCooldown2 2
 scoreboard players set @e[tag=vote3,type=armor_stand] randomCooldown2 2
 
 #error if not all slots were filled...
-execute unless entity @e[tag=vote1,type=armor_stand] run tag @e[tag=random,type=armor_stand,limit=1,scores={rNumber=50}] add vote1
-execute unless entity @e[tag=vote2,type=armor_stand] run tag @e[tag=random,type=armor_stand,limit=1,scores={rNumber=1}] add vote2
-execute unless entity @e[tag=vote3,type=armor_stand] run tag @e[tag=random,type=armor_stand,limit=1,scores={rNumber=2}] add vote3
+execute unless entity @e[tag=vote1,type=armor_stand] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,limit=1,scores={rNumber=50}] add vote1
+execute unless entity @e[tag=vote2,type=armor_stand] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,limit=1,scores={rNumber=1}] add vote2
+execute unless entity @e[tag=vote3,type=armor_stand] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,limit=1,scores={rNumber=2}] add vote3

@@ -6,5 +6,5 @@ execute if entity @s[scores={gamemodePresetB=3}] run function sprint_racer:game_
 execute if entity @s[tag=customTesting,scores={gameTime=100..}] as @a[tag=playing,gamemode=adventure] at @s unless entity @e[type=marker,tag=activator,scores={nodeState=1..}] run function sprint_racer_language:_dlc_2/editor_mode/warn_missing_activator
 
 #give battle bat item
-execute if entity @e[limit=1,tag=w,type=armor_stand,tag=allowPVP] run effect give @a minecraft:strength 10 0 true
-execute unless entity @e[limit=1,tag=w,type=armor_stand,tag=allowPVP] as @a[gamemode=adventure,tag=playing] at @s run function sprint_racer:game_logic/3/player_check_for_battle_bat
+execute if entity @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=allowPVP] run effect give @a minecraft:strength 10 0 true
+execute unless entity @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=allowPVP] as @a[gamemode=adventure,tag=playing] at @s run function sprint_racer:game_logic/3/player_check_for_battle_bat

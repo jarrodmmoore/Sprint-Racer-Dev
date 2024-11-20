@@ -4,7 +4,7 @@ tag @s remove gotWarped
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=09a] run tag @s[nbt={RootVehicle:{Entity:{id:"minecraft:pig"}}}] add ejectkart
 
 #test if we're ready to go for the finish line or not
-scoreboard players operation @s nCheck = @e[tag=w,type=armor_stand,limit=1] check
+scoreboard players operation @s nCheck = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] check
 scoreboard players operation @s nCheck -= @s check
 tag @s[scores={nCheck=..0}] add gotoFinish
 scoreboard players set @s nCheck 0

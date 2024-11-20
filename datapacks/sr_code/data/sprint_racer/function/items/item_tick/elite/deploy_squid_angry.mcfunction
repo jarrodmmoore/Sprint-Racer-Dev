@@ -27,8 +27,8 @@ tag @s remove self
 
 
 #don't blind teammates
-execute if entity @e[tag=w,type=armor_stand,tag=teamplay] if entity @s[tag=playerOrange] run tag @e[tag=squidTarget,tag=playerOrange] remove squidTarget
-execute if entity @e[tag=w,type=armor_stand,tag=teamplay] if entity @s[tag=playerCyan] run tag @e[tag=squidTarget,tag=playerCyan] remove squidTarget
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] if entity @s[tag=playerOrange] run tag @e[tag=squidTarget,tag=playerOrange] remove squidTarget
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] if entity @s[tag=playerCyan] run tag @e[tag=squidTarget,tag=playerCyan] remove squidTarget
 
 
 execute as @e[tag=squidTarget] at @s run summon squid ^ ^1.5 ^4 {Invulnerable:1b,NoGravity:1b,Tags:["setme","squirt"]}
@@ -44,9 +44,9 @@ scoreboard players set @e[tag=squidTarget] burn 0
 scoreboard players operation @e[tag=squidTarget] attackerID = @s playerID
 scoreboard players set @e[tag=squidTarget] attackTime 100
 scoreboard players set @e[tag=squidTarget] burn 0
-execute unless entity @e[tag=w,tag=halftick] run scoreboard players set @e[tag=squidTarget] blinddelay 8
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=halftick] run scoreboard players set @e[tag=squidTarget] blinddelay 8
 execute if score #halftick value matches 1 run scoreboard players set @e[tag=squidTarget] blinddelay 4
-execute unless entity @e[tag=w,tag=halftick] run scoreboard players set @e[tag=squidTarget] blindtime 115
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=halftick] run scoreboard players set @e[tag=squidTarget] blindtime 115
 execute if score #halftick value matches 1 run scoreboard players set @e[tag=squidTarget] blindtime 56
 
 tag @e[tag=squidTarget] remove squidTarget

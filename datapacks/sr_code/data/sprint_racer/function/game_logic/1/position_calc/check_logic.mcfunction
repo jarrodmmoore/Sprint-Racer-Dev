@@ -2,8 +2,8 @@ execute as @e[tag=node,tag=checkpoint,tag=posCalc,scores={nodeState=1..}] run sc
 execute as @e[tag=node,tag=finishline,tag=posCalc,scores={nodeState=1..}] run scoreboard players operation @s checkCalc = @s nCheck
 scoreboard players add @e[tag=node,tag=finishline,tag=posCalc,scores={nodeState=1..}] checkCalc 1
 
-scoreboard players operation @e[tag=node,tag=posCalc,scores={checkCalc=1..,nodeState=1..}] checkCalc -= @e[tag=w,type=armor_stand] checkCalc
-scoreboard players operation @e[tag=pCalcTarget] checkCalc = @e[tag=w,type=armor_stand] checkCalc
+scoreboard players operation @e[tag=node,tag=posCalc,scores={checkCalc=1..,nodeState=1..}] checkCalc -= @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] checkCalc
+scoreboard players operation @e[tag=pCalcTarget] checkCalc = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] checkCalc
 execute as @e[tag=pCalcTarget] run scoreboard players operation @s checkCalc -= @s storedCheck
 #we care about checkCalc=0 for nodes
 #we care about checkCalc=1 for players
@@ -14,8 +14,8 @@ execute as @e[limit=1,tag=!gotCalc,tag=pCalcTarget,scores={checkCalc=1}] at @e[l
 
 #DEBUG
 #tellraw @a ["",{"text":" "}]
-#tellraw @a ["",{"text":"w lap is "},{"score":{"name":"@e[tag=w,limit=1]","objective":"lapCalc"}}]
-#tellraw @a ["",{"text":"w checkCalc is "},{"score":{"name":"@e[tag=w,limit=1]","objective":"checkCalc"}}]
+#tellraw @a ["",{"text":"w lap is "},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lapCalc"}}]
+#tellraw @a ["",{"text":"w checkCalc is "},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"checkCalc"}}]
 #tellraw @a ["",{"text":"C1 checkCalc is "},{"score":{"name":"@e[tag=checkpoint,limit=1,scores={check=1}]","objective":"checkCalc"}}]
 #tellraw @a ["",{"text":"C2 checkCalc is "},{"score":{"name":"@e[tag=checkpoint,limit=1,scores={check=2}]","objective":"checkCalc"}}]
 #tellraw @a ["",{"text":"C3 checkCalc is "},{"score":{"name":"@e[tag=checkpoint,limit=1,scores={check=3}]","objective":"checkCalc"}}]
@@ -23,6 +23,6 @@ execute as @e[limit=1,tag=!gotCalc,tag=pCalcTarget,scores={checkCalc=1}] at @e[l
 #tellraw @a ["",{"text":"player checkCalc is "},{"score":{"name":"@a[limit=1]","objective":"checkCalc"}}]
 #tellraw @a ["",{"text":" "}]
 
-scoreboard players remove @e[tag=w,type=armor_stand] checkCalc 1
-scoreboard players remove @e[tag=w,scores={checkCalc=0}] lapCalc 1
-tag @e[tag=w,scores={checkCalc=0,lapCalc=0}] add calcEnd
+scoreboard players remove @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] checkCalc 1
+scoreboard players remove @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={checkCalc=0}] lapCalc 1
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={checkCalc=0,lapCalc=0}] add calcEnd

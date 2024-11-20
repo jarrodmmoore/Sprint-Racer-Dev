@@ -11,7 +11,7 @@ tag @a[x=1550,y=108,z=406,distance=..150] add lobby
 execute as @a[tag=afk] at @s run function sprint_racer_language:afk_tag
 
 #no music playing? start a new music track
-execute unless entity @e[type=armor_stand,tag=random,tag=currentBGM] run function sprint_racer:game_logic/0/restart_music
+execute unless entity @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,tag=currentBGM] run function sprint_racer:game_logic/0/restart_music
 
 #execute if entity @s[scores={taLastChosen=1..}] run function sprint_racer:game_logic/6/try_to_find_previous_track
 execute if entity @s[scores={taLastChosen=1..}] run function sprint_racer:game_logic/6/teleport_to_previous_track

@@ -1,10 +1,10 @@
-scoreboard players set @e[tag=w,type=armor_stand] timeRemaining -1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining -1
 
 tag @a[tag=playing,tag=!finished] add finished
 
 #give points to 1st place
-execute as @a[tag=playing,tag=!eliminated] run scoreboard players operation @s addPoints += @e[tag=w,limit=1] addPoints2
-execute as @e[tag=ai,tag=!eliminated] run scoreboard players operation @s addPoints += @e[tag=w,limit=1] addPoints2
+execute as @a[tag=playing,tag=!eliminated] run scoreboard players operation @s addPoints += @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] addPoints2
+execute as @e[tag=ai,tag=!eliminated] run scoreboard players operation @s addPoints += @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] addPoints2
 
 #surviving players are awarded with 1st place
 scoreboard players set @a[tag=playing,tag=!eliminated] finishPos 1
@@ -37,5 +37,5 @@ execute as @e[tag=ai9,tag=!eliminated] run scoreboard players operation @e[tag=A
 
 tag @e[tag=nextelimination] remove nextelimination
 
-scoreboard players set @e[tag=w,type=armor_stand] timeUntilElim 605
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeUntilElim 605
 bossbar set minecraft:timeremaining max 600

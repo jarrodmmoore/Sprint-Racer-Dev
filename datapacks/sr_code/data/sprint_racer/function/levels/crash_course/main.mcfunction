@@ -1,10 +1,10 @@
 function sprint_racer:levels/crash_course/map
 
 #slow on the first lap to absorb information better... just kidding I commented that out nevermind
-#execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160..}] run effect give @a[tag=playing,gamemode=adventure,scores={lapFake=..1}] slowness 1 1 false
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=1}] unless entity @a[scores={lapFake=2..}] run kill @e[tag=itemcontainer,type=armor_stand]
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=1}] if score #halftick value matches 1 unless entity @a[scores={lapFake=2..}] run scoreboard players set @e[tag=node,tag=itemchest,scores={nodeState=1..}] itemBlockState 10
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=1}] unless entity @e[tag=w,type=armor_stand,tag=halftick] unless entity @a[scores={lapFake=2..}] run scoreboard players set @e[tag=node,tag=itemchest,scores={nodeState=1..}] itemBlockState 5
+#execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..}] run effect give @a[tag=playing,gamemode=adventure,scores={lapFake=..1}] slowness 1 1 false
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1}] unless entity @a[scores={lapFake=2..}] run kill @e[tag=itemcontainer,type=armor_stand]
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1}] if score #halftick value matches 1 unless entity @a[scores={lapFake=2..}] run scoreboard players set @e[tag=node,tag=itemchest,scores={nodeState=1..}] itemBlockState 10
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1}] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=halftick] unless entity @a[scores={lapFake=2..}] run scoreboard players set @e[tag=node,tag=itemchest,scores={nodeState=1..}] itemBlockState 5
 
 #no checkpoint navigator thing when using elytra, don't want to overwhelm new players with it
 scoreboard players set @a[tag=!showCheckNav] showCheckNav -4
@@ -12,7 +12,7 @@ scoreboard players set @a[tag=!showCheckNav] showCheckNav -4
 #make sure players have the book that allows them to toggle the tutorial
 tag @a remove hasTutor
 tag @a[gamemode=adventure,nbt={Inventory:[{Slot:0b,id:"minecraft:book",components:{"minecraft:custom_data":{tutor:1b}}}]}] add hasTutor
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=1,gameTime=164..}] as @a[tag=playing,tag=!noInventory,gamemode=adventure,tag=!hasTutor] run function sprint_racer_language:levels/crash_course/give_tutor_book
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gameTime=164..}] as @a[tag=playing,tag=!noInventory,gamemode=adventure,tag=!hasTutor] run function sprint_racer_language:levels/crash_course/give_tutor_book
 tag @a[tag=hasTutor] remove hasTutor
 
 #right click book to toggle tutorial mode
@@ -21,7 +21,7 @@ execute as @a[scores={inputCooldown=..0,carrotInput=1..}] if items entity @s wea
 
 #tutorial stuff
 #a bunch of these were commented out to prevent text/information overload
-execute if entity @e[tag=w,type=armor_stand,tag=halftick,scores={gameTime=200..201}] as @a[tag=!noTutorial,scores={tutorProgress=..0}] at @s run function sprint_racer_language:levels/crash_course/tutorial_sprint_gain_speed
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=halftick,scores={gameTime=200..201}] as @a[tag=!noTutorial,scores={tutorProgress=..0}] at @s run function sprint_racer_language:levels/crash_course/tutorial_sprint_gain_speed
 #execute as @a[x=1085,y=60,z=272,distance=..5,tag=!noTutorial,scores={tutorProgress=..0}] at @s run function sprint_racer_language:levels/crash_course/tutorial_gold_boost
 execute as @a[x=1046,y=60,z=287,distance=..5,tag=!noTutorial,scores={tutorProgress=..1}] at @s run function sprint_racer_language:levels/crash_course/tutorial_emerald_jump
 #execute as @a[tag=!noTutorial,scores={check=1..,tutorProgress=..2}] at @s run function sprint_racer_language:levels/crash_course/tutorial_checkpoint_and_reset_item

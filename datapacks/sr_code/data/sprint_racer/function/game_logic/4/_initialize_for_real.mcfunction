@@ -10,7 +10,7 @@ spawnpoint @a 1636 88 406
 #MUSIC
 tag @e[type=armor_stand,tag=setBGM] remove setBGM
 function sprint_racer:music/global/stop_music
-tag @e[type=armor_stand,tag=random,scores={rNumber=16}] add setBGM
+tag @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=16}] add setBGM
 function sprint_racer:music/global/pick_track
 ######
 
@@ -19,9 +19,9 @@ function sprint_racer:load_saved_points
 kill @e[tag=lobbyprop]
 kill @e[tag=roundDisplay]
 
-tag @e[tag=w,type=armor_stand] remove clearImpulse
-tag @e[tag=w,type=armor_stand] remove allowPVP
-tag @e[tag=w,type=armor_stand] remove raining
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove clearImpulse
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove allowPVP
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove raining
 
 #change the lobby for the sequence
 clone 1644 73 392 1661 81 420 1644 87 392
@@ -41,9 +41,9 @@ scoreboard players add @a dummyPoints 0
 scoreboard players reset * points
 scoreboard players reset * KOs
 execute as @a[scores={dummyPoints=1..}] run scoreboard players operation @s points = @s dummyPoints
-execute as @e[type=armor_stand,tag=random,scores={rNumber=1..9,aiPoints=1..}] run function sprint_racer_language:_dlc_3/gameplay/ai_points/display
+execute as @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9,aiPoints=1..}] run function sprint_racer_language:_dlc_3/gameplay/ai_points/display
 scoreboard objectives setdisplay sidebar points
-execute if entity @e[tag=w,tag=teamplay] run scoreboard objectives setdisplay sidebar teamPointsShow
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=teamplay] run scoreboard objectives setdisplay sidebar teamPointsShow
 scoreboard objectives setdisplay list
 
 function sprint_racer_language:gameplay/position_display/ai_sidebar_colors
@@ -54,7 +54,7 @@ team modify playerOrange color gold
 time set 6000
 gamerule doDaylightCycle false
 weather clear
-scoreboard players set @e[tag=w,type=armor_stand] scriptMove 1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] scriptMove 1
 
 tag @a add noInventory
 clear @a
@@ -75,10 +75,10 @@ scoreboard players set @a invisibility 0
 scoreboard players set @a resistTime 0
 scoreboard players set @a invulTime 0
 
-scoreboard players reset @e[tag=w,type=armor_stand] storm
+scoreboard players reset @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] storm
 
-scoreboard players set @e[tag=w,type=armor_stand] gameTime 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameTime 0
 
 bossbar set minecraft:speedo players
 
-scoreboard players set @e[tag=w,type=armor_stand] gameState 4
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 4

@@ -9,7 +9,7 @@ tag @s add finWrongWay
 tag @s remove itemBattle
 execute if score global gameState matches 3 run tag @s add itemBattle
 execute if score global gameState matches 8 run tag @s add itemBattle
-execute if score global gameState matches 10 if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=2}] run tag @s add itemBattle
+execute if score global gameState matches 10 if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={tvPoolMode=2}] run tag @s add itemBattle
 tag @s remove superSpeed
 tag @s remove elytraShort
 tag @s add elytraMed
@@ -18,7 +18,7 @@ tag @s remove resLong
 tag @s remove psBattle
 execute if score global gameState matches 3 run tag @s add psBattle
 execute if score global gameState matches 8 run tag @s add psBattle
-execute if score global gameState matches 10 if entity @e[tag=w,type=armor_stand,scores={tvPoolMode=2}] run tag @s add psBattle
+execute if score global gameState matches 10 if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={tvPoolMode=2}] run tag @s add psBattle
 tag @s remove teledest
 tag @s add teleparticle
 tag @s add telesound

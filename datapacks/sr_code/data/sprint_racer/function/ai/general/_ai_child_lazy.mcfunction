@@ -30,7 +30,7 @@ scoreboard players set @s[scores={aiAirTime=26..}] aiStuckTime2 0
 execute if entity @s[scores={aiSubBehavior=5}] run function sprint_racer:ai/general/behaviors/elytra_flight/elytra_main
 
 #alright now let's MOVE
-execute if entity @s[tag=aiRememberVelocity,tag=!aiFly] unless entity @s[scores={aiBehavior=..0}] unless entity @s[scores={aiSubBehavior=5}] if score @e[tag=w,type=armor_stand,limit=1] gameTime matches 160.. run function sprint_racer:ai/general/movement/move_at_target_echo
+execute if entity @s[tag=aiRememberVelocity,tag=!aiFly] unless entity @s[scores={aiBehavior=..0}] unless entity @s[scores={aiSubBehavior=5}] if score @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] gameTime matches 160.. run function sprint_racer:ai/general/movement/move_at_target_echo
 execute if entity @s[tag=aiRememberVelocity,tag=aiFly] unless entity @s[scores={aiBehavior=..0}] unless entity @s[scores={aiSubBehavior=5}] run function sprint_racer:ai/general/movement/fly_at_target_echo
 tag @e[tag=myCHILDtarget] remove myCHILDtarget
 

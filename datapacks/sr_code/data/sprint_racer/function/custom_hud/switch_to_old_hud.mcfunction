@@ -1,8 +1,8 @@
 bossbar set lap1 players
 
 scoreboard players set #bbPersonalize value 0
-execute if score #hudMode value matches 1 if entity @e[tag=w,type=armor_stand,tag=!hideLaps,scores={lap=1..10}] run function sprint_racer:game_logic/1/lap_bossbar/lap_bossbar_index
-execute if score #hudMode value matches 3 if entity @e[tag=w,type=armor_stand,tag=!hideLaps,scores={lap=1..10}] run function sprint_racer:game_logic/1/lap_bossbar/lap_bossbar_index
+execute if score #hudMode value matches 1 if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!hideLaps,scores={lap=1..10}] run function sprint_racer:game_logic/1/lap_bossbar/lap_bossbar_index
+execute if score #hudMode value matches 3 if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!hideLaps,scores={lap=1..10}] run function sprint_racer:game_logic/1/lap_bossbar/lap_bossbar_index
 
 bossbar set sr_node1 players
 bossbar set sr_node2 players

@@ -66,11 +66,11 @@ execute if entity @s[scores={allowSecretLob=1}] as @a[gamemode=adventure,x=1628,
 execute if entity @s[scores={allowSecretLob=1}] as @a[gamemode=adventure,x=1628,y=88,z=456,dx=16,dy=6,dz=10] at @s run function sprint_racer:game_logic/0/misc_lobby_happenings/warp_tunnels/enter_southeast
 
 #portals in extras room
-execute as @a[x=1623,y=81,z=371,dx=0,dy=2,dz=0] as @e[tag=w,type=armor_stand] at @s run schedule function sprint_racer:game_logic/6/_initialize 1t
-execute as @a[x=1627,y=81,z=371,dx=0,dy=2,dz=0] as @e[tag=w,type=armor_stand] at @s run schedule function sprint_racer:game_logic/5/_initialize 1t
-execute unless entity @s[tag=realms] as @a[x=1623,y=81,z=360,dx=0,dy=2,dz=0] as @e[tag=w,type=armor_stand] at @s run schedule function sprint_racer:game_logic/10/_initialize_def 1t
-execute as @a[x=1627,y=81,z=360,dx=0,dy=2,dz=0] as @e[tag=w,type=armor_stand] at @s run schedule function sprint_racer:game_logic/9/_initialize 1t
-execute as @a[x=1619,y=81,z=360,dx=0,dy=2,dz=0] as @e[tag=w,type=armor_stand] at @s run schedule function sprint_racer:game_logic/11/_initialize 1t
+execute as @a[x=1623,y=81,z=371,dx=0,dy=2,dz=0] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] at @s run schedule function sprint_racer:game_logic/6/_initialize 1t
+execute as @a[x=1627,y=81,z=371,dx=0,dy=2,dz=0] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] at @s run schedule function sprint_racer:game_logic/5/_initialize 1t
+execute unless entity @s[tag=realms] as @a[x=1623,y=81,z=360,dx=0,dy=2,dz=0] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] at @s run schedule function sprint_racer:game_logic/10/_initialize_def 1t
+execute as @a[x=1627,y=81,z=360,dx=0,dy=2,dz=0] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] at @s run schedule function sprint_racer:game_logic/9/_initialize 1t
+execute as @a[x=1619,y=81,z=360,dx=0,dy=2,dz=0] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] at @s run schedule function sprint_racer:game_logic/11/_initialize 1t
 
 #cheats room
 execute if entity @a[x=1574,y=97,z=438,dx=20,dy=14,dz=13,gamemode=adventure] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheats_room

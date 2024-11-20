@@ -2,14 +2,14 @@
 
 function sprint_racer_language:_dlc_1/gameplay/race_elimination/announce_elimination
 
-execute unless entity @e[tag=w,type=armor_stand,tag=teamplay] run team join playerFinished @s[type=player]
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run team join playerFinished @s[type=player]
 gamemode spectator @s[type=player]
 tag @s add eliminated
 scoreboard players operation @s finishPos = @s racePosDisplay
 
 scoreboard players set @s addPoints 0
-scoreboard players operation @s addPoints += @e[tag=w,type=armor_stand,limit=1] addPoints2
-scoreboard players add @e[tag=w,type=armor_stand] addPoints2 1
+scoreboard players operation @s addPoints += @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] addPoints2
+scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] addPoints2 1
 
 #AI stuff
 execute if entity @s[tag=ai1] run scoreboard objectives remove validAI1
@@ -81,7 +81,7 @@ effect clear @s minecraft:glowing
 clear @s
 
 #make w do some logic
-execute as @e[tag=w,type=armor_stand] at @s run function sprint_racer:game_logic/1/elimination/after_elimination
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] at @s run function sprint_racer:game_logic/1/elimination/after_elimination
 
 #ai dies
 execute if entity @s[tag=ai] run kill @s

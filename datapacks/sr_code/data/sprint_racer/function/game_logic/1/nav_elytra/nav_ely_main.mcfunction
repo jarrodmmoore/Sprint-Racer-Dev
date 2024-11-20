@@ -5,7 +5,7 @@ scoreboard players set @s navDirection2 -1
 scoreboard players set @s offCourseBuffer 0
 scoreboard players set @s wrongWayBuffer 0
 
-execute if score @s check >= @e[tag=w,limit=1,type=armor_stand] check run tag @s add point2finish
+execute if score @s check >= @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand] check run tag @s add point2finish
 
 execute if entity @s[tag=!point2finish,scores={check=..0}] if entity @e[tag=checkpoint,scores={nodeState=1..,check=1}] facing entity @e[limit=1,sort=nearest,tag=checkpoint,scores={nodeState=1..,check=1}] eyes run function sprint_racer:game_logic/1/nav_elytra/point_to_node
 execute if entity @s[tag=!point2finish,scores={check=1}] if entity @e[tag=checkpoint,scores={nodeState=1..,check=2}] facing entity @e[limit=1,sort=nearest,tag=checkpoint,scores={nodeState=1..,check=2}] eyes run function sprint_racer:game_logic/1/nav_elytra/point_to_node

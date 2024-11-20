@@ -9,7 +9,7 @@ execute if entity @s[scores={gpMenu1=103}] run setblock 1583 39 372 birch_planks
 execute if entity @s[scores={gpMenu1=104}] run setblock 1583 39 372 jungle_planks
 execute if entity @s[scores={gpMenu1=105}] run setblock 1583 39 372 acacia_planks
 
-scoreboard players operation @s gpRound = @e[tag=w,limit=1,type=armor_stand] gpRound
+scoreboard players operation @s gpRound = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand] gpRound
 
 execute if entity @s[scores={gpRound=1}] positioned 1584 39 372 positioned ~ ~ ~1 run clone 1583 39 372 1583 39 372 ~2 ~ ~
 execute if entity @s[scores={gpRound=2}] positioned 1584 39 372 positioned ~ ~ ~2 run clone 1583 39 372 1583 39 372 ~2 ~ ~

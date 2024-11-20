@@ -10,14 +10,14 @@ tag @s remove warpRace
 tag @s remove warpBattle
 tag @s remove warpBattleTA
 
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=0}] run tag @s add warpLobby
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=1}] run tag @s add warpRace
-execute if entity @e[tag=w,tag=!teamplay,type=armor_stand,scores={gameState=3}] run tag @s add warpBattle
-execute if entity @e[tag=w,tag=teamplay,type=armor_stand,scores={gameState=3}] run tag @s add warpBattleTeam
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=5}] run tag @s add warpBattle
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=7}] run tag @s add warpRace
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=8}] run tag @s add warpBattleTA
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=12}] run tag @s add warpRace
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=0}] run tag @s add warpLobby
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1}] run tag @s add warpRace
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!teamplay,type=armor_stand,scores={gameState=3}] run tag @s add warpBattle
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=teamplay,type=armor_stand,scores={gameState=3}] run tag @s add warpBattleTeam
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=5}] run tag @s add warpBattle
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=7}] run tag @s add warpRace
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=8}] run tag @s add warpBattleTA
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=12}] run tag @s add warpRace
 
 execute if entity @s[tag=warpLobby] run function sprint_racer:items/item_tick/elite/warp/lobby
 execute if entity @s[tag=warpRace] run function sprint_racer:items/item_tick/elite/warp/race

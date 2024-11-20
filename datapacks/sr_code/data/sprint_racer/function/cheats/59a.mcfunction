@@ -1,7 +1,7 @@
 #stuff only happens when in race mode or time attack (race) mode
 scoreboard players set #59aValid value 0
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=1,gameTime=160..99999}] run scoreboard players set #59aValid value 1
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=7,gameTime=160..99999}] run scoreboard players set #59aValid value 1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gameTime=160..99999}] run scoreboard players set #59aValid value 1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=7,gameTime=160..99999}] run scoreboard players set #59aValid value 1
 
 
 #give item

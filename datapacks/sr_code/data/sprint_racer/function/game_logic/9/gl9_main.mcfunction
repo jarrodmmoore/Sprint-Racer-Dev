@@ -17,7 +17,7 @@ execute as @a[tag=afk] at @s run function sprint_racer_language:afk_tag
 scoreboard players remove @a[scores={subtitleDelay=1..}] subtitleDelay 1
 tag @a[tag=noInventory] remove noInventory
 
-execute if entity @e[tag=w,type=armor_stand,limit=1,tag=requireAdmin,scores={gameState=1..}] run function sprint_racer:game_logic/9/spectators
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=requireAdmin,scores={gameState=1..}] run function sprint_racer:game_logic/9/spectators
 
 #heals for all
 effect give @a[scores={hp=..19}] instant_health 1 10 true

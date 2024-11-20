@@ -5,9 +5,9 @@ tag @s add self
 playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 1 1.25
 
 #let's anvil half of the players at random, thanos style
-scoreboard players set @e[tag=w,type=armor_stand] math 2
-scoreboard players operation @s repeatCount = @e[limit=1,tag=w] playerCountB
-scoreboard players operation @s repeatCount /= @e[limit=1,tag=w] math
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math 2
+scoreboard players operation @s repeatCount = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerCountB
+scoreboard players operation @s repeatCount /= @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math
 
 function sprint_racer:items/item_tick/elite/anvil_of_injustice_repeat
 tag @e[tag=anvilled] remove anvilled

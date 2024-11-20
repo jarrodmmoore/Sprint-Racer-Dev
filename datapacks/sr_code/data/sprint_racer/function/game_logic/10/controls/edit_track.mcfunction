@@ -1,8 +1,8 @@
 function sprint_racer_language:_dlc_1/lobby/custom_track/edit_track
 
 #set state
-tag @e[tag=w,type=armor_stand] remove findLocation
-tag @e[tag=w,type=armor_stand] add editingTrack
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove findLocation
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add editingTrack
 
 #inventory cleanup
 effect clear @a

@@ -8,7 +8,7 @@ execute as @e[tag=activeplayer,scores={resistTime=1..,invisibility=..0}] at @s r
 
 #convert to seconds for visual timer
 execute as @e[scores={resistTime=1..}] run scoreboard players operation @s resTimer = @s resistTime
-execute as @e[scores={resistTime=1..}] run scoreboard players operation @s resTimer /= @e[limit=1,tag=random,scores={rNumber=20}] rNumber
+execute as @e[scores={resistTime=1..}] run scoreboard players operation @s resTimer /= @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=20}] rNumber
 execute as @e[scores={resistTime=1..}] run scoreboard players add @s resTimer 1
 
 #actionbar display

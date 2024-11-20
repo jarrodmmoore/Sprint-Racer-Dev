@@ -10,7 +10,7 @@ scoreboard players operation @s lapTimeMsec = @s currentTime
 scoreboard players operation @s lapShowTime = @s lap
 
 
-scoreboard players operation @s math = @e[tag=w,limit=1] lap
+scoreboard players operation @s math = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] lap
 scoreboard players operation @s math -= @s lapShowTime
 
 execute if entity @s[tag=!minChat] unless entity @s[scores={math=..0}] run tellraw @s ["",{"text":" "}]

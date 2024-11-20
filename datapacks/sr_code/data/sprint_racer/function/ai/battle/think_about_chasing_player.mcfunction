@@ -1,5 +1,5 @@
 scoreboard players set @s rNumber 1
-scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..50}] rNumber
 
 #more likely to chase players when at high HP
 execute if entity @s[scores={aiSkill=..1,hitboxHP=1004..,rNumber=20..50}] run tag @s add chaseSomeone
@@ -12,7 +12,7 @@ execute if entity @s[scores={aiSkill=2,hitboxHP=..1006,rNumber=20..50,aiRunAwayT
 execute if entity @s[scores={aiSkill=3..,hitboxHP=..1010,rNumber=20..50,aiRunAwayTime=..0}] run tag @s add runAway
 
 #randomized logic intervals
-scoreboard players operation @s aiActCCooldown = @e[limit=1,sort=random,tag=random,scores={rNumber=30..50}] rNumber
+scoreboard players operation @s aiActCCooldown = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=30..50}] rNumber
 
 #need line of sight to chase or run
 execute unless entity @s[tag=!chaseSomeone,tag=!runAway] at @s run function sprint_racer:ai/battle/check_los_to_player

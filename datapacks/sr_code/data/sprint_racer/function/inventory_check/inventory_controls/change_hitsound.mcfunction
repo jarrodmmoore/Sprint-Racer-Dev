@@ -1,5 +1,5 @@
 scoreboard players add @s hitsound 1
-execute if entity @e[limit=1,tag=w,type=armor_stand,tag=realms] run scoreboard players set @s[scores={hitsound=7..}] hitsound -1
+execute if entity @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms] run scoreboard players set @s[scores={hitsound=7..}] hitsound -1
 scoreboard players set @s[scores={hitsound=8..}] hitsound -1
 
 scoreboard players set @s afkTime 0

@@ -1,9 +1,9 @@
 function sprint_racer:levels/hot_air_docks/map
 
 #jump boost on blue blimp if switch is on
-execute if entity @e[tag=w,type=armor_stand,tag=switchON] run effect give @a[x=-284,y=143,z=-1256,dx=6,dy=4,dz=10] minecraft:jump_boost 1 7
-execute if entity @e[tag=w,type=armor_stand,tag=switchON] run scoreboard players set @e[tag=ai,x=-284,y=143,z=-1256,dx=6,dy=4,dz=10] aiJBIntensity 7
-execute if entity @e[tag=w,type=armor_stand,tag=switchON] run scoreboard players set @e[tag=ai,x=-284,y=143,z=-1256,dx=6,dy=4,dz=10] aiJBTime 14
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=switchON] run effect give @a[x=-284,y=143,z=-1256,dx=6,dy=4,dz=10] minecraft:jump_boost 1 7
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=switchON] run scoreboard players set @e[tag=ai,x=-284,y=143,z=-1256,dx=6,dy=4,dz=10] aiJBIntensity 7
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=switchON] run scoreboard players set @e[tag=ai,x=-284,y=143,z=-1256,dx=6,dy=4,dz=10] aiJBTime 14
 
 effect give @a night_vision 15 1 true
 

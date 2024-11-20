@@ -14,7 +14,7 @@ scoreboard players set @s[scores={coord_dz=900..}] moveCheck 3
 
 
 #check if ai is stuck...
-execute if entity @e[tag=w,scores={gameTime=200..}] run scoreboard players add @s[scores={moveCheck=0,aiStuckTime=..400}] aiStuckTime 1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=200..}] run scoreboard players add @s[scores={moveCheck=0,aiStuckTime=..400}] aiStuckTime 1
 scoreboard players remove @s[nbt={OnGround:1b},scores={moveCheck=1..,aiStuckTime=1..}] aiStuckTime 1
 execute if score #halftick value matches 0 run scoreboard players remove @s[nbt={OnGround:1b},scores={moveCheck=1..,aiStuckTime=1..}] aiStuckTime 1
 

@@ -59,7 +59,7 @@ execute as @a[tag=playing] run scoreboard players operation @s points = @s dummy
 scoreboard objectives setdisplay sidebar points
 
 
-execute if entity @e[tag=w,type=armor_stand,tag=teamplay] run scoreboard objectives setdisplay sidebar teamPointsShow
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run scoreboard objectives setdisplay sidebar teamPointsShow
 ###############
 # "Orange" and "Cyan" can be changed to whatever you want.
 team join playerOrange Orange

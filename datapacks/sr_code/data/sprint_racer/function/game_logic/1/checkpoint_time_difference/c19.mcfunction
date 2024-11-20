@@ -2,7 +2,7 @@ tag @s remove new_split
 tag @s remove lap_behind
 
 #gameTime is used as a base. this is completely arbitrary but it works as a measure of time
-scoreboard players operation @s itemSplitTime = @e[tag=w,type=armor_stand,limit=1] gameTime
+scoreboard players operation @s itemSplitTime = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] gameTime
 
 #we're the first person to hit this checkpoint on this lap (1st), so we become the standard
 execute if score @s lap > check19 lap run tag @s add new_split

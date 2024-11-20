@@ -6,8 +6,8 @@ function sprint_racer_language:_dlc_3/grand_prix/clear_all
 #erase all
 fill 1584 39 373 1587 39 423 stone
 
-scoreboard players set @e[tag=w,type=armor_stand] gpNumber 0
-scoreboard players set @e[tag=w,type=armor_stand] gpRound 1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gpNumber 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gpRound 1
 
 tag @e[type=armor_stand,tag=gpNo1] remove gpNo1
 tag @e[type=armor_stand,tag=gpNo2] remove gpNo2

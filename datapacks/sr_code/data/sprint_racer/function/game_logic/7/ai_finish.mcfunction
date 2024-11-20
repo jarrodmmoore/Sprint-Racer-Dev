@@ -28,15 +28,15 @@ scoreboard players set @a[scores={actionbarState=..5}] actionbarState2 35
 
 execute as @a at @s run playsound minecraft:entity.firework_rocket.blast master @s ~ ~ ~ 1 1.1
 
-scoreboard players operation @e[tag=AIdaddy] finishPos = @e[tag=w,limit=1] finishPos
-scoreboard players add @e[tag=w,type=armor_stand] finishPos 1
+scoreboard players operation @e[tag=AIdaddy] finishPos = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] finishPos
+scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] finishPos 1
 
 #get assigned a "addPoints" value
 #players get a minimum of 1 point for finishing
 scoreboard players set @e[tag=AIdaddy] addPoints 0
-scoreboard players operation @e[tag=AIdaddy] addPoints = @e[tag=w,limit=1] addPoints
+scoreboard players operation @e[tag=AIdaddy] addPoints = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] addPoints
 scoreboard players set @e[tag=AIdaddy,scores={addPoints=..0}] addPoints 1
-scoreboard players remove @e[tag=w,type=armor_stand] addPoints 1
+scoreboard players remove @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] addPoints 1
 
 #bonuses are awarded for 1st and 2nd
 #scoreboard players add @e[tag=AIdaddy,scores={finishPos=1}] addPoints 2

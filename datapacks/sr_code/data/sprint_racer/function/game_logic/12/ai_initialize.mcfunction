@@ -7,27 +7,27 @@ kill @e[type=marker,tag=!node]
 #what entity are we using?
 function sprint_racer:ai/general/set_entity_type_credits
 
-tag @e[tag=random,tag=eliminated] remove eliminated
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,tag=eliminated] remove eliminated
 
-tag @e[tag=random,tag=aiDisable] remove aiDisable
-scoreboard players reset @e[tag=random,scores={finishPos=..99}] finishPos
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,tag=aiDisable] remove aiDisable
+scoreboard players reset @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={finishPos=..99}] finishPos
 
 tag @s add agogo
 
 #do NOT enter "half tick" mode. it makes the camera jerk around!
-tag @e[tag=w,type=armor_stand,tag=autotick] remove halftick
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=autotick] remove halftick
 
 tag @e[tag=AImaster] remove AImaster
-tag @e[tag=random,scores={rNumber=1..9}] remove playerOrange
-tag @e[tag=random,scores={rNumber=1..9}] remove playerCyan
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9}] remove playerOrange
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9}] remove playerCyan
 
 #we're gonna activate EVERY ai for this!
-tag @e[tag=random,scores={rNumber=1..9}] add AImaster
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9}] add AImaster
 
-execute if entity @s[tag=agogo] run scoreboard players operation global playerRequire += @e[tag=w,type=armor_stand,limit=1] optRAIcount
+execute if entity @s[tag=agogo] run scoreboard players operation global playerRequire += @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] optRAIcount
 
 #assign AI to teams if needed
-execute if entity @e[tag=w,tag=teamplay] run function sprint_racer:teams/assemble_teams_ai
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=teamplay] run function sprint_racer:teams/assemble_teams_ai
 function sprint_racer_language:_dlc_2/gameplay/position_display/ai_sidebar_colors
 
 #difficulty
@@ -47,7 +47,7 @@ scoreboard players set @e[tag=AImaster] lap 1
 scoreboard players set @e[tag=AImaster] lastTeleport 0
 execute as @e[tag=AImaster] run function sprint_racer:give_ids2
 
-execute as @e[tag=AImaster] run scoreboard players add @e[tag=w,type=armor_stand] addPoints 1
+execute as @e[tag=AImaster] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] addPoints 1
 
 scoreboard players set @e[tag=AImaster] aiJBTime 0
 scoreboard players set @e[tag=AImaster] aiJBIntensity 0

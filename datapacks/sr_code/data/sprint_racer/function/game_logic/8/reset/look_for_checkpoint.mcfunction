@@ -27,7 +27,7 @@ execute if entity @s[scores={check=14}] if entity @e[tag=checkpoint,tag=posCalc,
 execute if entity @s[scores={check=15}] if entity @e[tag=checkpoint,tag=posCalc,scores={nodeState=1..,check=15}] run function sprint_racer:game_logic/1/reset/go_to_checkpoint/15
 execute if entity @s[scores={check=16}] if entity @e[tag=checkpoint,tag=posCalc,scores={nodeState=1..,check=16}] run function sprint_racer:game_logic/1/reset/go_to_checkpoint/16
 
-execute unless entity @e[tag=w,tag=noCharity] unless entity @e[tag=w,tag=banNo10] run function sprint_racer:game_logic/1/charity_item/_index
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=noCharity] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=banNo10] run function sprint_racer:game_logic/1/charity_item/_index
 
 #if there are no checkpoints in range we can tp to, kill the player and let them repsawn at where their last checkpoint was
 execute unless entity @s[tag=foundCP] run kill @s

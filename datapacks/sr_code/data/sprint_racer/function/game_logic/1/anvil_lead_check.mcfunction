@@ -1,6 +1,6 @@
 #the larger the distance between 1st and 2nd, the more likely it is for an anvil to be forcibly rolled
 scoreboard players set #math value 0
-scoreboard players operation #math value = @e[limit=1,sort=random,type=armor_stand,tag=random,scores={rNumber=1..10}] rNumber
+scoreboard players operation #math value = @e[limit=1,sort=random,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..10}] rNumber
 #2 second lead = 10% chance
 #3 second lead = 20% chance
 #4 second lead = 30% chance
@@ -16,7 +16,7 @@ execute if score #1stPlaceLead value matches 140.. if score #math value matches 
 
 #check again in 14-19 seconds?
 scoreboard players set #math value 0
-scoreboard players operation #math value = @e[limit=1,sort=random,type=armor_stand,tag=random,scores={rNumber=1..6}] rNumber
+scoreboard players operation #math value = @e[limit=1,sort=random,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..6}] rNumber
 scoreboard players set #anvilLeadCheck value 280
 execute if score #math value matches 2 run scoreboard players set #anvilLeadCheck value 300
 execute if score #math value matches 3 run scoreboard players set #anvilLeadCheck value 320
@@ -25,4 +25,4 @@ execute if score #math value matches 5 run scoreboard players set #anvilLeadChec
 execute if score #math value matches 6 run scoreboard players set #anvilLeadCheck value 380
 
 #anvil is banned? don't ever force it
-execute if entity @e[tag=w,type=armor_stand,tag=banNo17] run scoreboard players set #nextItemIsAnvil value 0
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banNo17] run scoreboard players set #nextItemIsAnvil value 0

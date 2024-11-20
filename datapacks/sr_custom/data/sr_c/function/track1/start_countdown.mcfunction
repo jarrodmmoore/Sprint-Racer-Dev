@@ -4,4 +4,4 @@
 #gameTime=140 1..
 #gameTime=160 GO!
 
-#execute if entity @e[tag=w,scores={gameTime=100}] run <something>
+#execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=100}] run <something>

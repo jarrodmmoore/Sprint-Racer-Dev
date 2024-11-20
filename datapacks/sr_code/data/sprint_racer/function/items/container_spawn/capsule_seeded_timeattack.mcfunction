@@ -5,8 +5,8 @@ execute as @e[tag=chest3,type=armor_stand,tag=cSETME] at @s run function sprint_
 
 #spawn item based on seed
 scoreboard players set @s rNumber 0
-execute if entity @e[tag=w,scores={gameState=..7}] run scoreboard players operation @s rNumber = @s itemchestSeedA
-execute if entity @e[tag=w,scores={gameState=8..}] run scoreboard players operation @s rNumber = @s itemchestSeedB
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=..7}] run scoreboard players operation @s rNumber = @s itemchestSeedA
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=8..}] run scoreboard players operation @s rNumber = @s itemchestSeedB
 
 execute if entity @s[scores={rNumber=0..5}] run function sprint_racer:items/container_spawn/summon_item_capsule/index_0_5
 execute if entity @s[scores={rNumber=6..10}] run function sprint_racer:items/container_spawn/summon_item_capsule/index_6_10

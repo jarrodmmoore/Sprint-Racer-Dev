@@ -2,7 +2,7 @@ scoreboard players set @s enchantQty 0
 
 #pick one of four predetermined orders of priority
 scoreboard players set @s rNumber 1
-scoreboard players operation @s rNumber = @e[limit=1,tag=random,sort=random,scores={rNumber=1..4}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,scores={rNumber=1..4}] rNumber
 
 
 #smarter AI only ever picks the better orders

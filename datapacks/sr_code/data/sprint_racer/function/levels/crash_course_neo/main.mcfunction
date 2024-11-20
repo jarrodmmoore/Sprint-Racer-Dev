@@ -12,7 +12,7 @@ execute as @a at @s if block ~ ~-0.5 ~ #sprint_racer:slow_terrain run effect giv
 #make sure players have the book that allows them to toggle the tutorial
 tag @a remove hasTutor
 tag @a[gamemode=adventure,nbt={Inventory:[{Slot:0b,id:"minecraft:book",components:{"minecraft:custom_data":{tutor:1b}}}]}] add hasTutor
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=1,gameTime=164..}] as @a[tag=playing,tag=!noInventory,gamemode=adventure,tag=!hasTutor] run function sprint_racer_language:levels/crash_course/give_tutor_book
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gameTime=164..}] as @a[tag=playing,tag=!noInventory,gamemode=adventure,tag=!hasTutor] run function sprint_racer_language:levels/crash_course/give_tutor_book
 tag @a[tag=hasTutor] remove hasTutor
 
 #right click book to toggle tutorial mode
@@ -35,7 +35,7 @@ execute if score #ccneo_route value matches 2 if entity @e[tag=ccneo_leading_lap
 #tutorial stuff
 
 #sprint
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=200..}] as @a[tag=!noTutorial,scores={tutorProgress=..0}] run scoreboard players set @s tutorialMessage 1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=200..}] as @a[tag=!noTutorial,scores={tutorProgress=..0}] run scoreboard players set @s tutorialMessage 1
 #jump boost
 execute as @a[x=428,y=61,z=110,distance=..6,tag=!noTutorial,scores={tutorProgress=..1}] run scoreboard players set @s tutorialMessage 2
 #resistance

@@ -3,7 +3,7 @@
 tag @s remove doIt
 
 scoreboard players set @s rNumber 0
-scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..50}] rNumber
 
 #normal shortcut
 #SKILL LV 1 = 24% CHANCE
@@ -28,7 +28,7 @@ execute if entity @s[tag=megaShortcut,tag=tryhard,scores={rNumber=13..50}] run t
 tag @s[tag=very_easy_ai] remove doIt
 
 #the switch is off? -> we cancel the alternate route
-execute unless entity @e[tag=w,type=armor_stand,tag=switchON] run tag @s remove doIt
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=switchON] run tag @s remove doIt
 
 execute if entity @s[tag=doIt] unless score @s AIBC_id = @s AIBC_condition run scoreboard players operation @s AIBC_id = @s AIBC_condition
 

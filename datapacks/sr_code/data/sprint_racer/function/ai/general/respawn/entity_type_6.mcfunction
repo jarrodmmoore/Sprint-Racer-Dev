@@ -1,8 +1,8 @@
 #type 6 is a zombie with darkbrine (or kitty) (or endermity)'s head
 
 #use kitty when items are disabled
-execute if entity @e[tag=w,type=armor_stand,tag=optItemsB,tag=!optNoItems,scores={gameState=1}] run tag @s add force_kitty
-execute if entity @e[tag=w,type=armor_stand,tag=optNoItems,scores={gameState=1}] run tag @s add force_kitty
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optItemsB,tag=!optNoItems,scores={gameState=1}] run tag @s add force_kitty
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optNoItems,scores={gameState=1}] run tag @s add force_kitty
 execute if entity @s[tag=force_darkbrine] run tag @s remove force_kitty
 
 #if not forcing darkbrine or kitty, spawn endermity every other bot

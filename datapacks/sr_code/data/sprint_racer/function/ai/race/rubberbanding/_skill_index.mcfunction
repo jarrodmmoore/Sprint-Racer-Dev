@@ -10,7 +10,7 @@ tag @e[tag=previousPlayer] remove previousPlayer
 tag @e[tag=nextPlayer] remove nextPlayer
 
 #no rubberbanding? set all to 0 unless tryhard mode
-execute if entity @e[tag=w,type=armor_stand,tag=noRubberBand] run scoreboard players set @s[tag=!rb_ahead] aiRubberBand 0
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=noRubberBand] run scoreboard players set @s[tag=!rb_ahead] aiRubberBand 0
 execute if entity @s[tag=sa_kitty] run scoreboard players remove @s[scores={aiRubberBand=1..}] aiRubberBand 1
 
 #minimum value 1 for certain mobs

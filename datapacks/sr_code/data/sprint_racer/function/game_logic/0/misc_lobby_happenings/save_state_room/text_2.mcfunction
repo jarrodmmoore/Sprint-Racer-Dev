@@ -4,13 +4,13 @@
 #w
 scoreboard players set global value 1
 scoreboard players set global math 0
-execute as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=1..36}] run scoreboard players add global math 1
-execute as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=38..49}] run scoreboard players add global math 1
-execute as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=51..60}] run scoreboard players add global math 1
-execute as @e[tag=random,type=armor_stand,tag=btBlacklist,scores={rNumber=1..49}] run scoreboard players add global math 1
-execute if entity @e[limit=1,tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=38] as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=50}] run scoreboard players add global math 1
-execute if entity @e[limit=1,tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=46] as @e[tag=random,type=armor_stand,tag=btBlacklist,scores={rNumber=50}] run scoreboard players add global math 1
-execute if entity @e[limit=1,tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=56] as @e[tag=random,type=armor_stand,tag=rtBlacklist,scores={rNumber=37}] run scoreboard players add global math 1
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=rtBlacklist,scores={rNumber=1..36}] run scoreboard players add global math 1
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=rtBlacklist,scores={rNumber=38..49}] run scoreboard players add global math 1
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=rtBlacklist,scores={rNumber=51..60}] run scoreboard players add global math 1
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=btBlacklist,scores={rNumber=1..49}] run scoreboard players add global math 1
+execute if entity @e[limit=1,tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=38] as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=rtBlacklist,scores={rNumber=50}] run scoreboard players add global math 1
+execute if entity @e[limit=1,tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=46] as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=btBlacklist,scores={rNumber=50}] run scoreboard players add global math 1
+execute if entity @e[limit=1,tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=56] as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=rtBlacklist,scores={rNumber=37}] run scoreboard players add global math 1
 
 execute positioned 1615 89 458 positioned ~.5 ~ ~.5 run function sprint_racer_language:_dlc_4/lobby/save_state_room/text_show_2
 

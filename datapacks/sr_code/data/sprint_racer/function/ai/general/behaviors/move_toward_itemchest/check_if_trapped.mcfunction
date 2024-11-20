@@ -1,7 +1,7 @@
 execute if entity @e[tag=newTarget,type=armor_stand,scores={itemBlockState=10}] run tag @s add itsatrap
 
 scoreboard players set @s[tag=itsatrap] rNumber 0
-scoreboard players operation @s[tag=itsatrap] rNumber = @e[limit=1,sort=random,tag=random,type=armor_stand,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s[tag=itsatrap] rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..50}] rNumber
 
 #AI with higher skill are more likely to avoid the trap
 execute if entity @s[tag=itsatrap,scores={aiSkill=..1,rNumber=42..50}] run tag @s add time2stop

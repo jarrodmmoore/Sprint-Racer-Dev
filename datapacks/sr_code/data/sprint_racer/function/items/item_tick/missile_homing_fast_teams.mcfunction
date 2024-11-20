@@ -1,8 +1,8 @@
 #particle trail
 particle dust{color:[1.0,0.0,1.0],scale:2} ~ ~1.1 ~ .05 .05 .05 0 1 force
 
-execute unless entity @e[tag=w,scores={gameState=8}] if entity @s[scores={age=4..}] positioned ^ ^ ^9 run tag @e[distance=..9,sort=nearest,tag=activeplayer,scores={invisibility=..0}] add homingTarget
-execute if entity @e[tag=w,scores={gameState=8}] if entity @s[scores={age=4..}] positioned ^ ^ ^9 run tag @e[distance=..9,sort=nearest,tag=taTargetCore] add homingTarget
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=8}] if entity @s[scores={age=4..}] positioned ^ ^ ^9 run tag @e[distance=..9,sort=nearest,tag=activeplayer,scores={invisibility=..0}] add homingTarget
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=8}] if entity @s[scores={age=4..}] positioned ^ ^ ^9 run tag @e[distance=..9,sort=nearest,tag=taTargetCore] add homingTarget
 
 #missile will NOT home in on its own team
 execute if entity @s[tag=itemCyan] run tag @e[tag=homingTarget,tag=playerCyan] remove homingTarget

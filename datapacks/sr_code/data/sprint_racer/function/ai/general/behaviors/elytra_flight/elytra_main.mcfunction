@@ -50,8 +50,8 @@ execute if entity @s[scores={elytraTimer=40..}] run tag @s add elytra_new_dir
 #movement logic depends on gamemode
 execute if entity @s[tag=elytra_new_dir] run tag @e[tag=myElytra,type=armor_stand] add needsDirection
 execute if entity @s[tag=elytra_new_dir] as @e[tag=myElytra,type=armor_stand,limit=1,sort=nearest] run function sprint_racer:ai/general/behaviors/elytra_flight/elytra_store_motion_1
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=3}] run function sprint_racer:ai/general/behaviors/elytra_flight/race_pick_target
-execute if entity @e[tag=w,type=armor_stand,scores={gameState=3}] run function sprint_racer:ai/general/behaviors/elytra_flight/battle_pick_target
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=3}] run function sprint_racer:ai/general/behaviors/elytra_flight/race_pick_target
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=3}] run function sprint_racer:ai/general/behaviors/elytra_flight/battle_pick_target
 execute if entity @s[tag=elytra_new_dir,tag=!fireworkBoost] as @e[tag=myElytra,type=armor_stand,limit=1,sort=nearest] run function sprint_racer:ai/general/behaviors/elytra_flight/elytra_store_motion_2
 execute if entity @s[tag=elytra_new_dir,tag=fireworkBoost] at @s run function sprint_racer:ai/general/behaviors/elytra_flight/firework_boost
 tag @s[tag=elytra_new_dir] remove elytra_new_dir

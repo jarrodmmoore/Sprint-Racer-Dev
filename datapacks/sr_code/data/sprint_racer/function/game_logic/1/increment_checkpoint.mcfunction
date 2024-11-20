@@ -1,10 +1,10 @@
 scoreboard players add @s check 1
 
 #get time difference
-execute if entity @e[tag=w,type=armor_stand,limit=1,tag=optBalance,tag=timeBalance] run function sprint_racer:game_logic/1/checkpoint_time_difference/_index
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=optBalance,tag=timeBalance] run function sprint_racer:game_logic/1/checkpoint_time_difference/_index
 
 #testing mode, make sure we have pos calc points
-execute if entity @e[type=armor_stand,tag=w,tag=customTesting,tag=!noCalcGen,limit=1] run function sprint_racer:game_logic/10/test_track/calc_gen_checkpoint
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=customTesting,tag=!noCalcGen,limit=1] run function sprint_racer:game_logic/10/test_track/calc_gen_checkpoint
 
 function sprint_racer:game_logic/1/record_current_split
 execute unless entity @s[tag=!checkText,tag=!checkSound] if entity @s[scores={bestSplit1=1..}] run function sprint_racer:game_logic/1/show_split_checkpoint
@@ -27,7 +27,7 @@ scoreboard players set @s lastTeleport 0
 execute at @s if block ~ ~1 ~ air if block ~ ~2 ~ air run spawnpoint @s ~ ~1 ~
 
 #tactics mode, get next item
-execute if entity @e[tag=w,type=armor_stand,scores={gamemodePresetA=3}] run function sprint_racer:game_logic/1/tactics/give_1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gamemodePresetA=3}] run function sprint_racer:game_logic/1/tactics/give_1
 
 #save coords
 function sprint_racer:save_coordinates

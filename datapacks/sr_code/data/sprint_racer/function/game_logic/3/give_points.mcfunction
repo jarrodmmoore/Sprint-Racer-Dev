@@ -11,9 +11,9 @@ scoreboard players add @a[tag=playing,scores={addPoints=1..}] points 1
 scoreboard players remove @a[tag=playing,scores={addPoints=1..}] addPoints 1
 
 #AIs
-execute as @e[tag=random,type=armor_stand,scores={rNumber=1..9,addPoints=100..}] run function sprint_racer_language:_dlc_3/gameplay/ai_points/increment_x100
-execute as @e[tag=random,type=armor_stand,scores={rNumber=1..9,addPoints=11..}] run function sprint_racer_language:_dlc_3/gameplay/ai_points/increment_x11
-execute as @e[tag=random,type=armor_stand,scores={rNumber=1..9,addPoints=1..}] run function sprint_racer_language:_dlc_3/gameplay/ai_points/increment_x1
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9,addPoints=100..}] run function sprint_racer_language:_dlc_3/gameplay/ai_points/increment_x100
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9,addPoints=11..}] run function sprint_racer_language:_dlc_3/gameplay/ai_points/increment_x11
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9,addPoints=1..}] run function sprint_racer_language:_dlc_3/gameplay/ai_points/increment_x1
 
 #this will loop as long as players exist who haven't gotten their points
-execute if entity @a[tag=playing,scores={addPoints=1..}] run scoreboard players remove @e[tag=w,type=armor_stand] gameTime 4
+execute if entity @a[tag=playing,scores={addPoints=1..}] run scoreboard players remove @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameTime 4

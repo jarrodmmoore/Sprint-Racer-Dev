@@ -23,17 +23,17 @@ scoreboard players operation @s racePosDisplay = #getFinalPlacement value
 scoreboard players operation @s finishPos = #getFinalPlacement value
 
 function sprint_racer_language:_dlc_1/gameplay/race_elimination/announce_elimination
-execute unless entity @e[tag=w,type=armor_stand,tag=teamplay] run team join playerFinished @s[type=player]
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run team join playerFinished @s[type=player]
 
 #get points
 scoreboard players set @s addPoints 0
-scoreboard players operation @s addPoints += @e[tag=w,type=armor_stand,limit=1] addPoints2
-scoreboard players add @e[tag=w,type=armor_stand] addPoints2 1
+scoreboard players operation @s addPoints += @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] addPoints2
+scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] addPoints2 1
 
 #remember time of death
-scoreboard players operation @s[type=player] storedTimeMin = @e[limit=1,tag=w,type=armor_stand] currentTimeMin
-scoreboard players operation @s[type=player] storedTimeSec = @e[limit=1,tag=w,type=armor_stand] currentTimeSec
-scoreboard players operation @s[type=player] storedTimeMsec = @e[limit=1,tag=w,type=armor_stand] currentTimeMsec
+scoreboard players operation @s[type=player] storedTimeMin = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeMin
+scoreboard players operation @s[type=player] storedTimeSec = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeSec
+scoreboard players operation @s[type=player] storedTimeMsec = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeMsec
 
 #AI stuff
 execute if entity @s[tag=ai1] run scoreboard objectives remove validAI1

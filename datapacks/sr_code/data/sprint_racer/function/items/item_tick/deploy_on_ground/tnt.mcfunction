@@ -4,7 +4,7 @@ execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1
 
 execute if entity @s[tag=itemCyan] run tag @e[tag=giveID,limit=1] add itemCyan
 execute if entity @s[tag=itemCyan] run team join playerCyan @e[tag=giveID,limit=1]
-execute if entity @s[tag=!itemCyan] if entity @e[tag=w,type=armor_stand,tag=teamplay] run team join playerOrange @e[tag=giveID,limit=1]
+execute if entity @s[tag=!itemCyan] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run team join playerOrange @e[tag=giveID,limit=1]
 
 tag @e[tag=giveID,limit=1] remove giveID
 particle falling_dust{block_state:"minecraft:redstone_block"} ~ ~.5 ~ 0.4 0.4 0.4 1 40

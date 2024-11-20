@@ -12,9 +12,9 @@ team join player @a[team=!player,tag=!forcespectate]
 tag @a[tag=forcespectate] remove playing
 team join spectator @a[team=!spectator,tag=forcespectate]
 
-tag @e[tag=w,type=armor_stand] remove needAnnounce
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove needAnnounce
 
-tag @e[tag=random,scores={rNumber=1..50}] remove banChest
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..50}] remove banChest
 
 setblock 1507 116 417 light_blue_stained_glass
 setblock 1507 116 403 red_stained_glass
@@ -40,36 +40,36 @@ scoreboard objectives remove validEntity
 scoreboard objectives add validEntity dummy
 
 #prevent invalid roundNumber stuff
-execute if entity @e[tag=w,type=armor_stand,tag=!optBattle,scores={roundNumber=6..}] run scoreboard players set @e[tag=w,type=armor_stand] roundNumber 1
-execute if entity @e[tag=w,type=armor_stand,tag=optBattle] run scoreboard players set @e[tag=w,type=armor_stand] roundNumber 5
-execute if entity @e[tag=w,type=armor_stand,tag=optRace,scores={roundNumber=5..}] run scoreboard players set @e[tag=w,type=armor_stand] roundNumber 1
-execute if entity @e[tag=w,type=armor_stand,tag=optRace,scores={roundNumber2=4..}] run scoreboard players set @e[tag=w,type=armor_stand] roundNumber2 1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!optBattle,scores={roundNumber=6..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optBattle] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 5
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optRace,scores={roundNumber=5..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optRace,scores={roundNumber2=4..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber2 1
 
 clear @a
 title @a actionbar [""]
 
 tag @e[tag=chosenTrack] remove chosenTrack
-tag @e[tag=w,type=armor_stand] remove clearImpulse
-tag @e[tag=w,type=armor_stand] remove allowPVP
-tag @e[tag=w,type=armor_stand] remove raining
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove clearImpulse
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove allowPVP
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove raining
 tag @a remove playerVote1
 tag @a remove playerVote2
 tag @a remove playerVote3
 tag @a remove noInventory
-scoreboard players set @e[tag=w,type=armor_stand] scriptMove 1
-scoreboard players set @e[tag=w,type=armor_stand] dropBarrier 1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] scriptMove 1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] dropBarrier 1
 
 #optVote
 #optChoose
 #optRandom
  
-tag @e[tag=w,type=armor_stand] add showroundnum
-execute if entity @e[tag=w,type=armor_stand,tag=!grandprix,tag=optRandom,scores={roundNumber=..4}] run function sprint_racer:random/random_track_race
-execute if entity @e[tag=w,type=armor_stand,tag=!grandprix,tag=optRandom,scores={roundNumber=5..}] run function sprint_racer:random/random_track_battle
-execute if entity @e[tag=w,type=armor_stand,tag=!grandprix,scores={roundNumber=..4}] run function sprint_racer:game_logic/1/_initialize
-execute if entity @e[tag=w,type=armor_stand,tag=!grandprix,scores={roundNumber=5}] run function sprint_racer:game_logic/3/_initialize
-execute if entity @e[tag=w,type=armor_stand,tag=grandprix] as @e[tag=w,type=armor_stand,limit=1] run function sprint_racer:game_logic/0/grand_prix_round_start
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add showroundnum
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!grandprix,tag=optRandom,scores={roundNumber=..4}] run function sprint_racer:random/random_track_race
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!grandprix,tag=optRandom,scores={roundNumber=5..}] run function sprint_racer:random/random_track_battle
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!grandprix,scores={roundNumber=..4}] run function sprint_racer:game_logic/1/_initialize
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!grandprix,scores={roundNumber=5}] run function sprint_racer:game_logic/3/_initialize
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] run function sprint_racer:game_logic/0/grand_prix_round_start
 
 #remember to vote 2020 :))))
 #edit: i'm from the future. good job ;)
-execute if entity @e[tag=w,type=armor_stand,tag=remind2vote] run function sprint_racer_language:_dlc_3/remember_to_vote
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=remind2vote] run function sprint_racer_language:_dlc_3/remember_to_vote

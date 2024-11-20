@@ -104,7 +104,7 @@ execute if entity @s[tag=inWater,tag=aiswimup] at @s run function sprint_racer:a
 #execute if entity @s[tag=inWater,scores={aiStuckTime=29}] run function sprint_racer:ai/general/behaviors/follow_breadcrumb/battle_get_unstuck
 execute unless score global gameState matches 3 if entity @s[scores={aiStuckTime=40..}] run function sprint_racer:ai/general/race_get_unstuck
 execute if score global gameState matches 3 if entity @s[scores={aiStuckTime=40..}] run function sprint_racer:ai/general/battle_get_unstuck
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160..}] if entity @s[scores={moveState=..2}] run function sprint_racer:ai/general/check_if_stuck_2
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..}] if entity @s[scores={moveState=..2}] run function sprint_racer:ai/general/check_if_stuck_2
 execute unless score global gameState matches 3 if entity @s[scores={aiStuckTime2=40..}] run function sprint_racer:ai/general/race_get_unstuck
 execute if score global gameState matches 3 if entity @s[scores={aiStuckTime2=40..}] run function sprint_racer:ai/general/battle_get_unstuck
 scoreboard players add @s[tag=warpstuck] aiStuckTime 1
@@ -152,7 +152,7 @@ execute if entity @s[scores={blindtime=1..}] run function sprint_racer:ai/genera
 execute if entity @s[tag=aiStronk] run function sprint_racer:ai/general/direct_attack/_main
 
 #alright now let's MOVE
-execute if entity @s[tag=!aiFly] unless entity @s[scores={aiBehavior=..0}] unless entity @s[scores={aiSubBehavior=5}] if score @e[tag=w,type=armor_stand,limit=1] gameTime matches 160.. run function sprint_racer:ai/general/movement/move_at_target
+execute if entity @s[tag=!aiFly] unless entity @s[scores={aiBehavior=..0}] unless entity @s[scores={aiSubBehavior=5}] if score @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] gameTime matches 160.. run function sprint_racer:ai/general/movement/move_at_target
 execute if entity @s[tag=aiFly] unless entity @s[scores={aiBehavior=..0}] unless entity @s[scores={aiSubBehavior=5}] run function sprint_racer:ai/general/movement/fly_at_target
 tag @e[tag=myCHILDtarget] remove myCHILDtarget
 

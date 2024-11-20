@@ -13,15 +13,15 @@ execute if entity @s[scores={rNumber=9}] run scoreboard objectives remove validA
 #tag @e[tag=latestFinish] remove latestFinish
 #tag @s add latestFinish
 
-scoreboard players operation @s finishPos = @e[tag=w,limit=1] finishPos
-scoreboard players add @e[tag=w,type=armor_stand] finishPos 1
+scoreboard players operation @s finishPos = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] finishPos
+scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] finishPos 1
 
 #get assigned a "addPoints" value
 #players get a minimum of 1 point for finishing
 scoreboard players set @s addPoints 0
-scoreboard players operation @s addPoints = @e[tag=w,limit=1] addPoints
+scoreboard players operation @s addPoints = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] addPoints
 scoreboard players set @s[scores={addPoints=..0}] addPoints 1
-scoreboard players remove @e[tag=w,type=armor_stand] addPoints 1
+scoreboard players remove @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] addPoints 1
 
 #CUT due to imbalance
 #bonuses are awarded for 1st and 2nd

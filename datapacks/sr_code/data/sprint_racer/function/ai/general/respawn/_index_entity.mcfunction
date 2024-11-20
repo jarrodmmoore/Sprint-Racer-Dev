@@ -48,7 +48,7 @@ scoreboard players set @e[tag=set_ai_no,tag=stupid_ugly,limit=1] aiSkill 1
 #IMPORTANT, initializes scoreboard values on new entity so we can be a productive member of society
 execute as @e[tag=set_ai_no,limit=1] run function sprint_racer:ai/general/respawn/initialize_new_entity
 
-execute if entity @e[tag=w,type=armor_stand,limit=1,scores={gameState=1}] as @e[tag=set_ai_no,limit=1] run function sprint_racer:game_logic/1/charity_item/_index
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,scores={gameState=1}] as @e[tag=set_ai_no,limit=1] run function sprint_racer:game_logic/1/charity_item/_index
 tag @e[tag=set_ai_no] remove set_ai_no
 
 tag @s remove needRespawn

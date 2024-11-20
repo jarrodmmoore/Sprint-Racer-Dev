@@ -11,4 +11,4 @@ execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=09a] run function sprint_racer:cheats/09a
 
 #10a
-execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=10a] if entity @e[tag=w,scores={gameState=1}] run function sprint_racer:cheats/10a
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=10a] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=1}] run function sprint_racer:cheats/10a

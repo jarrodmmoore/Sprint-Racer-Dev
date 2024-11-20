@@ -4,11 +4,11 @@ scoreboard players set @a[tag=musicDef] musicTime 20
 
 #announce song (realms only)
 #this was cut due to chat clutter and weird text overlaying
-#execute if entity @e[tag=w,type=armor_stand,tag=realms,scores={gameState=1}] run function sprint_racer:music/global/announce_index
-#execute if entity @e[tag=w,type=armor_stand,tag=realms,scores={gameState=3}] run function sprint_racer:music/global/announce_index
+#execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms,scores={gameState=1}] run function sprint_racer:music/global/announce_index
+#execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms,scores={gameState=3}] run function sprint_racer:music/global/announce_index
 
 #mark this song as the latest one played
-execute unless entity @s[scores={rNumber=1..2}] run tag @e[type=armor_stand,tag=random,tag=lastBGM] remove lastBGM
+execute unless entity @s[scores={rNumber=1..2}] run tag @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,tag=lastBGM] remove lastBGM
 tag @e[tag=setBGM] remove setBGM
 execute unless entity @s[scores={rNumber=1..2}] run tag @s add lastBGM
 tag @s add currentBGM

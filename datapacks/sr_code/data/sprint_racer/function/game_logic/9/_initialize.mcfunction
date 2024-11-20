@@ -3,7 +3,7 @@ scoreboard players reset @a[scores={pressJump=1}] pressJump
 clear @a
 
 function sprint_racer:ai/general/ai_stop_all
-execute if entity @e[tag=w,tag=autotick] run tag @e[tag=w,type=armor_stand] remove halftick
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=autotick] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove halftick
 
 scoreboard players set @a itemLuck 3
 execute as @a run scoreboard players operation @s itemLuck += @s cStatLuck
@@ -21,7 +21,7 @@ scoreboard players set @a invisibility 0
 scoreboard players set @a resistTime 0
 scoreboard players set @a invulTime 0
 
-scoreboard players set @e[tag=w,type=armor_stand] itemBlockState 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemBlockState 0
 
 tag @e[tag=finished] remove finished
 tag @e[tag=noInventory2] remove noInventory2
@@ -34,14 +34,14 @@ scoreboard objectives add killedByPlayer minecraft.killed_by:minecraft.player
 time set 6000
 gamerule doDaylightCycle false
 weather clear
-scoreboard players reset @e[tag=w,type=armor_stand] storm
+scoreboard players reset @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] storm
 
 function sprint_racer_language:_dlc_1/gameplay/track_pool_bossbar
 function sprint_racer_language:_dlc_1/gameplay/track_pool_enabled
 
 gamemode adventure @a
 
-scoreboard players set @e[tag=w,type=armor_stand] gameState 9
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 9
 
 
 kill @e[tag=lobbyprop]
@@ -57,8 +57,8 @@ summon minecraft:item_frame 1594 81 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tag
 summon minecraft:item_frame 1594 81 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
 
 #default display value
-scoreboard players set @e[tag=w,type=armor_stand] tvPoolNum 1
-scoreboard players set @e[tag=w,type=armor_stand] tvPoolMode 1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolNum 1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolMode 1
 function sprint_racer:game_logic/9/update_display/_index
 fill 1595 79 369 1595 82 372 light_blue_concrete
 

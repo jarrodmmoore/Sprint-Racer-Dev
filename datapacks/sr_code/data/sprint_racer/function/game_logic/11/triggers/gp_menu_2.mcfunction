@@ -10,7 +10,7 @@ execute if entity @s[scores={gpMenu2=9}] run setblock 1583 39 372 light_gray_woo
 execute if entity @s[scores={gpMenu2=10}] run setblock 1583 39 372 cyan_wool
 execute if entity @s[scores={gpMenu2=11}] run setblock 1583 39 372 stone
 
-scoreboard players operation @s gpRound = @e[tag=w,limit=1,type=armor_stand] gpRound
+scoreboard players operation @s gpRound = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand] gpRound
 
 execute if entity @s[scores={gpRound=1}] positioned 1584 39 372 positioned ~ ~ ~1 run clone 1583 39 372 1583 39 372 ~3 ~ ~
 execute if entity @s[scores={gpRound=2}] positioned 1584 39 372 positioned ~ ~ ~2 run clone 1583 39 372 1583 39 372 ~3 ~ ~

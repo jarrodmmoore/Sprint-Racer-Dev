@@ -1,5 +1,5 @@
-scoreboard players operation #random1 value = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..15}] rNumber
-scoreboard players operation #random2 value = @e[limit=1,tag=random,sort=random,type=armor_stand,scores={rNumber=1..12}] rNumber
+scoreboard players operation #random1 value = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,type=armor_stand,scores={rNumber=1..15}] rNumber
+scoreboard players operation #random2 value = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,type=armor_stand,scores={rNumber=1..12}] rNumber
 
 execute if score #random2 value matches 1 run function sprint_racer:items/container_spawn/random_rotation/r2_1
 execute if score #random2 value matches 2 run function sprint_racer:items/container_spawn/random_rotation/r2_2

@@ -1,6 +1,6 @@
 #These are used by track randomization, item randomization, etc
 
-kill @e[tag=random]
+kill @e[tag=random,x=1548,y=155,z=406,distance=..1]
 
 kill @e[tag=nVote1]
 kill @e[tag=nVote2]
@@ -285,11 +285,11 @@ summon armor_stand ~ ~ ~ {Marker:1b,NoGravity:1b,Invisible:1b,Invulnerable:1b,Ta
 scoreboard players set @e[tag=setme] rNumber 54
 tag @e[tag=setme] remove setme
 
-scoreboard players set @e[tag=random,scores={rNumber=1..}] randomCooldown 0
-scoreboard players set @e[tag=random,scores={rNumber=1..}] randomCooldown2 0
-scoreboard players set @e[tag=random,scores={rNumber=1..}] trackBestTime 0
-scoreboard players set @e[tag=random,scores={rNumber=1..}] trackBestTimeB 0
-scoreboard players set @e[tag=random,scores={rNumber=1..}] medalRace 0
-scoreboard players set @e[tag=random,scores={rNumber=1..}] medalBattle 0
+scoreboard players set @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..}] randomCooldown 0
+scoreboard players set @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..}] randomCooldown2 0
+scoreboard players set @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..}] trackBestTime 0
+scoreboard players set @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..}] trackBestTimeB 0
+scoreboard players set @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..}] medalRace 0
+scoreboard players set @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..}] medalBattle 0
 
 function sprint_racer:random/give_track_tags

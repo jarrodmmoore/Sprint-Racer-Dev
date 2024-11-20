@@ -11,7 +11,7 @@ summon tnt ~-.7 ~.1 ~-.7 {NoGravity:1b,fuse:10000,Tags:["giveID"]}
 
 execute if entity @s[tag=itemCyan] run tag @e[tag=giveID,limit=5,sort=nearest] add itemCyan
 execute if entity @s[tag=itemCyan] run team join playerCyan @e[tag=giveID,limit=5,sort=nearest]
-execute if entity @s[tag=!itemCyan] if entity @e[tag=w,type=armor_stand,tag=teamplay] run team join playerOrange @e[tag=giveID,limit=5,sort=nearest]
+execute if entity @s[tag=!itemCyan] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run team join playerOrange @e[tag=giveID,limit=5,sort=nearest]
 
 scoreboard players operation @e[tag=giveID] playerID = @s playerID
 tag @e[tag=giveID] remove giveID

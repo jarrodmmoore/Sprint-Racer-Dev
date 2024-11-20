@@ -2,7 +2,7 @@ tag @s remove gotoFinish
 
 #test if we're ready to go for the finish line or not
 scoreboard players set @s nCheck 3
-scoreboard players operation @s nCheck = @e[tag=w,type=armor_stand] check
+scoreboard players operation @s nCheck = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] check
 scoreboard players operation @s nCheck -= @s check
 tag @s[scores={nCheck=..0}] add gotoFinish
 scoreboard players set @s nCheck 0

@@ -1,16 +1,16 @@
 function sprint_racer:levels/redstone_factory/map
 
 #close the front door when the race ends
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=100000..}] if block 310 57 334 redstone_block run setblock 310 57 334 air
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=100000..}] if block 310 57 334 redstone_block run setblock 310 57 334 air
 
 #change to a new route once someone hits a new lap
-execute if entity @e[tag=w,type=armor_stand,scores={mapZone=1}] if entity @e[tag=activeplayer,scores={lapFake=2..}] run function sprint_racer:levels/redstone_factory/open_emerald_route
-execute if entity @e[tag=w,type=armor_stand,scores={mapZone=2}] if entity @e[tag=activeplayer,scores={lapFake=3..}] run function sprint_racer:levels/redstone_factory/open_gold_route
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={mapZone=1}] if entity @e[tag=activeplayer,scores={lapFake=2..}] run function sprint_racer:levels/redstone_factory/open_emerald_route
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={mapZone=2}] if entity @e[tag=activeplayer,scores={lapFake=3..}] run function sprint_racer:levels/redstone_factory/open_gold_route
 
 #route 1 wind tunnel
-execute if entity @e[tag=w,type=armor_stand,scores={oTimerGlobal=1}] if loaded 326 59 275 run summon area_effect_cloud 326 59 275 {Duration:50,Tags:["risingTrail","randomSpread"]}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={oTimerGlobal=1}] if loaded 326 59 275 run summon area_effect_cloud 326 59 275 {Duration:50,Tags:["risingTrail","randomSpread"]}
 spreadplayers 326 275 3 3 false @e[tag=risingTrail,tag=randomSpread,type=area_effect_cloud]
-scoreboard players operation @e[tag=randomSpread,type=area_effect_cloud,limit=1] lifespan = @e[tag=random,limit=1,sort=random,scores={rNumber=10..40}] rNumber
+scoreboard players operation @e[tag=randomSpread,type=area_effect_cloud,limit=1] lifespan = @e[tag=random,x=1548,y=155,z=406,distance=..1,limit=1,sort=random,scores={rNumber=10..40}] rNumber
 execute as @e[tag=randomSpread,type=area_effect_cloud] at @s run tp @s ~ 59 ~
 tag @e[tag=randomSpread,type=area_effect_cloud,limit=1] remove randomSpread
 
@@ -40,8 +40,8 @@ scoreboard players set @a[tag=playing,x=241,y=60,z=334,dx=100,dy=100,dz=100] map
 scoreboard players set @a[tag=playing,x=245,y=98,z=241,dx=154,dy=100,dz=81] mapZone 0
 
 #early factory, no route has been chosen yet so default to the currently open one
-scoreboard players operation @a[tag=playing,x=310,y=61,z=328,dx=2,dy=2,dz=5] mapZone = @e[tag=w,type=armor_stand,limit=1] mapZone
-scoreboard players operation @a[tag=playing,x=268,y=68,z=275,dx=6,dy=4,dz=7] mapZone = @e[tag=w,type=armor_stand,limit=1] mapZone
+scoreboard players operation @a[tag=playing,x=310,y=61,z=328,dx=2,dy=2,dz=5] mapZone = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] mapZone
+scoreboard players operation @a[tag=playing,x=268,y=68,z=275,dx=6,dy=4,dz=7] mapZone = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] mapZone
 
 #route 1 (iron)
 scoreboard players set @a[tag=playing,x=298,y=64,z=283,dx=10,dy=9,dz=4] mapZone 1

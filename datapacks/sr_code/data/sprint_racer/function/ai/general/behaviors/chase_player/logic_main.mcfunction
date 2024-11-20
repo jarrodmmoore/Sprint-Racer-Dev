@@ -6,7 +6,7 @@
 
 #possibly run away when on low health
 scoreboard players set @s rNumber 0
-scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..50}] rNumber
 
 execute if entity @s[tag=!ai_fearful,scores={aiSkill=..1,hitboxHP=..1004,rNumber=20..50}] run tag @s add runAway
 execute if entity @s[tag=!ai_fearful,scores={aiSkill=2,hitboxHP=..1006,rNumber=20..50}] run tag @s add runAway
@@ -21,7 +21,7 @@ execute if entity @s[tag=ai_fearful,scores={aiSkill=3..,hitboxHP=..1012,rNumber=
 
 #possibly go back to following breadcrumbs after being in the player's grill for a while
 scoreboard players set @s rNumber 0
-scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..50}] rNumber
 
 execute if entity @e[tag=aiTargetG,distance=..4] if entity @s[scores={aiSkill=..1,rNumber=35..50}] run tag @s add goAway
 execute if entity @e[tag=aiTargetG,distance=..3] if entity @s[scores={aiSkill=2,rNumber=40..50}] run tag @s add goAway
@@ -44,4 +44,4 @@ tag @s remove goAway
 
 
 #randomized logic intervals
-scoreboard players operation @s aiActCCooldown = @e[limit=1,sort=random,tag=random,scores={rNumber=5..10}] rNumber
+scoreboard players operation @s aiActCCooldown = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=5..10}] rNumber

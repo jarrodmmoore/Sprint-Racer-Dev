@@ -3,8 +3,8 @@ execute if score #egg_help value matches 13.. run scoreboard players set #egg_he
 
 tellraw @s ["",{"text":"\n\nCheat Eggs:","bold":true}]
 
-execute if score #egg_help value matches 1 if entity @e[tag=w,type=armor_stand,tag=!COPPA] run tellraw @s ["",{"translate":"sr.cheats.help.lobby"},{"text":" -- 6"}]
-execute if score #egg_help value matches 1 if entity @e[tag=w,type=armor_stand,tag=COPPA] run tellraw @s ["",{"translate":"sr.cheats.help.lobby"},{"text":" -- 7"}]
+execute if score #egg_help value matches 1 if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!COPPA] run tellraw @s ["",{"translate":"sr.cheats.help.lobby"},{"text":" -- 6"}]
+execute if score #egg_help value matches 1 if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=COPPA] run tellraw @s ["",{"translate":"sr.cheats.help.lobby"},{"text":" -- 7"}]
 execute if score #egg_help value matches 1 run tellraw @s ["",{"text":"River Valley","color":"aqua"},{"text":" -- 2"}]
 execute if score #egg_help value matches 1 run tellraw @s ["",{"text":"Highlight Stadium","color":"aqua"},{"text":" -- 1"}]
 execute if score #egg_help value matches 1 run tellraw @s ["",{"text":"Sakura City","color":"aqua"},{"text":" -- 1"}]
@@ -59,7 +59,7 @@ execute if score #egg_help value matches 9 run tellraw @s ["",{"text":"Frostbite
 execute if score #egg_help value matches 9 run tellraw @s ["",{"text":"Retro Synthwave","color":"aqua"},{"text":" -- 1"}]
 
 execute if score #egg_help value matches 10 run tellraw @s ["",{"text":"Shroom Spring","color":"aqua"},{"text":" -- 1"}]
-execute if score #egg_help value matches 10 if entity @e[tag=w,type=armor_stand,tag=!realms] run tellraw @s ["",{"text":"Casino Chase","color":"aqua"},{"text":" -- 1"}]
+execute if score #egg_help value matches 10 if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!realms] run tellraw @s ["",{"text":"Casino Chase","color":"aqua"},{"text":" -- 1"}]
 execute if score #egg_help value matches 10 run tellraw @s ["",{"text":"Seaside Joyride","color":"aqua"},{"text":" -- 1"}]
 execute if score #egg_help value matches 10 run tellraw @s ["",{"text":"Praia de Abril","color":"aqua"},{"text":" -- 1"}]
 execute if score #egg_help value matches 10 run tellraw @s ["",{"text":"Cotton Void","color":"light_purple"},{"text":" -- 1"}]

@@ -1,18 +1,18 @@
 #record lap time (standard race only)
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run function sprint_racer:game_logic/1/record_lap/_index
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run function sprint_racer:game_logic/1/record_lap/_index
 
 #more than 10 laps, tell us our lap number
-execute if entity @e[tag=w,type=armor_stand,scores={lap=11..}] unless entity @e[tag=w,type=armor_stand,scores={gamemodePresetA=2}] run function sprint_racer_language:_dlc_3/gameplay/show_laps_remaining
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={lap=11..}] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gamemodePresetA=2}] run function sprint_racer_language:_dlc_3/gameplay/show_laps_remaining
 
 #testing mode, make sure we have pos calc points
-execute if entity @e[type=armor_stand,tag=w,tag=customTesting,tag=!noCalcGen] run function sprint_racer:game_logic/10/test_track/calc_gen_finishline
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=customTesting,tag=!noCalcGen] run function sprint_racer:game_logic/10/test_track/calc_gen_finishline
 
 scoreboard players add @s lap 1
 scoreboard players add @s lapFake 1
 scoreboard players set @s timeSinceCheck 0
 
 #get time difference
-execute if entity @e[tag=w,type=armor_stand,limit=1,tag=optBalance,tag=timeBalance] run function sprint_racer:game_logic/1/checkpoint_time_difference/_lap
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=optBalance,tag=timeBalance] run function sprint_racer:game_logic/1/checkpoint_time_difference/_lap
 
 #set repsawn point
 scoreboard players set @s lastTeleport 0
@@ -31,7 +31,7 @@ function sprint_racer:game_logic/1/self_record_pb
 #check if that's a finish or not
 scoreboard players add @s lapCalc 0
 scoreboard players operation @s lapCalc = @s lap
-scoreboard players operation @s lapCalc -= @e[tag=w,limit=1] lap
+scoreboard players operation @s lapCalc -= @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] lap
 execute if entity @s[scores={lapCalc=..0}] run function sprint_racer:game_logic/1/next_lap
 execute if entity @s[scores={lapCalc=1..}] run function sprint_racer:game_logic/1/player_finish
 

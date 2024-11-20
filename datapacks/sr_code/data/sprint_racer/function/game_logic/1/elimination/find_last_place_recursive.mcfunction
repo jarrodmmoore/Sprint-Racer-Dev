@@ -1,12 +1,12 @@
 tag @e[tag=notInRange] remove notInRange
 
 #check the race position value
-scoreboard players add @e[tag=w,type=armor_stand] math 1
+scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math 1
 
 #find players who's race position matches the value we're checking
 scoreboard players set @e[tag=activeplayer,tag=!eliminated,tag=!counted] math2 0
 execute as @e[tag=activeplayer,tag=!eliminated,tag=!counted] run scoreboard players operation @s math2 = @s racePosDisplay
-execute as @e[tag=activeplayer,tag=!eliminated,tag=!counted] run scoreboard players operation @s math2 -= @e[tag=w,limit=1] math
+execute as @e[tag=activeplayer,tag=!eliminated,tag=!counted] run scoreboard players operation @s math2 -= @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] math
 
 #if these are the last positioned players, tag them as the next elimination and stop repeating
 tag @e[tag=notInRange] remove notInRange

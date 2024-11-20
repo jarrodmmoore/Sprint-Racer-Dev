@@ -1,2 +1,2 @@
-execute unless entity @e[tag=w,scores={gameState=3}] run effect give @a[scores={hp=1..}] minecraft:instant_health 1 101 true
-execute unless entity @e[tag=w,scores={gameState=3}] as @e[tag=ai] run data merge entity @s {Health:1020.0f}
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=3}] run effect give @a[scores={hp=1..}] minecraft:instant_health 1 101 true
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=3}] as @e[tag=ai] run data merge entity @s {Health:1020.0f}

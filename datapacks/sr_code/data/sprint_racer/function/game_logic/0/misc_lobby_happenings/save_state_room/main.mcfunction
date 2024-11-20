@@ -17,5 +17,5 @@ scoreboard players set @e[tag=save_state_text,type=armor_stand] lifespan 5
 
 
 #tell players they can load save states
-execute if entity @e[tag=w,type=armor_stand,tag=requireAdmin,tag=anyPlayerLoadsSave] run scoreboard players set @a[x=1605,y=88,z=455,dx=10,dy=5,dz=7,gamemode=adventure,tag=!admin,scores={actionbarState=..2}] actionbarState2 5
-execute if entity @e[tag=w,type=armor_stand,tag=requireAdmin,tag=anyPlayerLoadsSave] run scoreboard players set @a[x=1605,y=88,z=455,dx=10,dy=5,dz=7,gamemode=adventure,tag=!admin,scores={actionbarState=..2}] actionbarState -50
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=requireAdmin,tag=anyPlayerLoadsSave] run scoreboard players set @a[x=1605,y=88,z=455,dx=10,dy=5,dz=7,gamemode=adventure,tag=!admin,scores={actionbarState=..2}] actionbarState2 5
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=requireAdmin,tag=anyPlayerLoadsSave] run scoreboard players set @a[x=1605,y=88,z=455,dx=10,dy=5,dz=7,gamemode=adventure,tag=!admin,scores={actionbarState=..2}] actionbarState -50

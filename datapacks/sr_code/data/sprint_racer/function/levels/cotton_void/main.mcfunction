@@ -23,30 +23,30 @@ execute as @a[gamemode=adventure,tag=playing,tag=!finished,scores={check=..0},x=
 
 #screw with the navigator because nobody is allowed to cheese the maze
 #also this track doesn't support nav because a bunch of wool at the bottom of this track is a bad look
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160..99999,oTimerGlobal=1}] run tag @e[tag=goofNav] remove goofNav
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160..99999,oTimerGlobal=1}] run tag @e[limit=1,sort=random,tag=random,scores={rNumber=1..7}] add goofNav
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..99999,oTimerGlobal=1}] run tag @e[tag=goofNav] remove goofNav
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..99999,oTimerGlobal=1}] run tag @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..7}] add goofNav
 scoreboard players operation @a recDirection = @e[tag=goofNav,limit=1] rNumber
 scoreboard players set @a wrongWayBuffer 0
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=100000..}] run tag @e[tag=goofNav] remove goofNav
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=100000..}] run tag @e[tag=goofNav] remove goofNav
 
 #no checkpoint navigator thing
 scoreboard players set @a[tag=!showCheckNav] showCheckNav -4
 
 #this track uses its own timer and the default one is ignored
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run scoreboard players set @e[tag=w,type=armor_stand,scores={timeRemaining2=1..}] timeRemaining 4000
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run scoreboard players set @e[tag=w,type=armor_stand,scores={timeRemaining2=..0}] timeRemaining 0
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run execute if entity @e[tag=w,type=armor_stand,scores={timeRemaining2=..0}] run bossbar set minecraft:gauntlettime players
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={timeRemaining2=1..}] timeRemaining 4000
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={timeRemaining2=..0}] timeRemaining 0
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={timeRemaining2=..0}] run bossbar set minecraft:gauntlettime players
 
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160}] run tag @a add bbarbump
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160}] run tag @a add bbarbump
 
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160..99999}] as @e[tag=w,type=armor_stand,limit=1] unless entity @a[tag=playing,scores={playerState=2}] run function sprint_racer:levels/the_gauntlet/timer
-execute unless entity @e[tag=w,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160..99999}] unless entity @a[tag=playing,tag=!finished] run scoreboard players set @e[tag=w,type=armor_stand] timeRemaining2 0
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..99999}] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] unless entity @a[tag=playing,scores={playerState=2}] run function sprint_racer:levels/the_gauntlet/timer
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] run execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..99999}] unless entity @a[tag=playing,tag=!finished] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining2 0
 
 
 #missiles
 #platforms around checkpoint no. 2
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160..99999}] if entity @a[tag=playing,scores={check=0..1}] run function sprint_racer:levels/cotton_void/platforms
-execute if entity @e[tag=w,type=armor_stand,tag=halftick,scores={gameTime=160..99999}] if entity @a[tag=playing,scores={check=0..1}] run function sprint_racer:levels/cotton_void/platforms
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..99999}] if entity @a[tag=playing,scores={check=0..1}] run function sprint_racer:levels/cotton_void/platforms
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=halftick,scores={gameTime=160..99999}] if entity @a[tag=playing,scores={check=0..1}] run function sprint_racer:levels/cotton_void/platforms
 
 #effects in the gold speed section
 execute as @a[tag=playing,gamemode=!spectator,scores={check=3,speedBoost=..0}] at @s if block ~ ~-1 ~ gold_ore run scoreboard players set @s speedBoost 1
@@ -54,7 +54,7 @@ execute as @a[tag=playing,gamemode=!spectator,scores={check=3,speedBoost=10..}] 
 
 
 #respawn players when they fall on pink glass
-execute if entity @e[tag=w,type=armor_stand,scores={gameTime=160..99999}] as @a[tag=playing,gamemode=adventure,nbt={OnGround:1b}] at @s run function sprint_racer:levels/cotton_void/glass_check
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..99999}] as @a[tag=playing,gamemode=adventure,nbt={OnGround:1b}] at @s run function sprint_racer:levels/cotton_void/glass_check
 
 #max speed and heals
 scoreboard players set @a[scores={check=1..}] hitstun 0

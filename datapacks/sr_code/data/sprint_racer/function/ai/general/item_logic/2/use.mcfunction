@@ -2,7 +2,7 @@
 
 #50% chance to shoot at the target's feet instead for splash damage (only if we're trying to lead the shot)
 scoreboard players set @s rNumber 1
-scoreboard players operation @s rNumber = @e[limit=1,tag=random,scores={rNumber=1..2}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..2}] rNumber
 execute if entity @s[scores={rNumber=2}] as @e[tag=looktarget,type=marker] at @s run tp @s ~ ~-.5 ~
 
 
