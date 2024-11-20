@@ -1,4 +1,4 @@
-#run by "@e[tag=cheats,x=1550,y=148,z=406,distance=..1]"
+#run by "@e[tag=cheats,x=1548,y=148,z=422,distance=..1]"
 tag @s remove 01a
 tag @s remove 02a
 tag @s remove 03a

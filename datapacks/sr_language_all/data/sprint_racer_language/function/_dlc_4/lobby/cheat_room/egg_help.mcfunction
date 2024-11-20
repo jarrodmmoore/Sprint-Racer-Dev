@@ -1,5 +1,5 @@
 scoreboard players add #egg_help value 1
-execute if score #egg_help value matches 12.. run scoreboard players set #egg_help value 1
+execute if score #egg_help value matches 13.. run scoreboard players set #egg_help value 1
 
 tellraw @s ["",{"text":"\n\nCheat Eggs:","bold":true}]
 
@@ -64,7 +64,12 @@ execute if score #egg_help value matches 10 run tellraw @s ["",{"text":"Seaside 
 execute if score #egg_help value matches 10 run tellraw @s ["",{"text":"Praia de Abril","color":"aqua"},{"text":" -- 1"}]
 execute if score #egg_help value matches 10 run tellraw @s ["",{"text":"Cotton Void","color":"light_purple"},{"text":" -- 1"}]
 
-execute if score #egg_help value matches 11 run tellraw @s ["",{"text":"???","color":"white"},{"text":" -- 2"}]
-execute if score #egg_help value matches 11 run tellraw @s ["",{"translate":"sr.cheats.help.all_battle_arenas","color":"red"},{"text":" -- 0"}]
+execute if score #egg_help value matches 11 run tellraw @s ["",{"text":"Candy Land","color":"aqua"},{"text":" -- 1"}]
+execute if score #egg_help value matches 11 run tellraw @s ["",{"text":"Gummi Gorge","color":"aqua"},{"text":" -- 1"}]
+execute if score #egg_help value matches 11 run tellraw @s ["",{"text":"Nether Castle","color":"aqua"},{"text":" -- 1"}]
+execute if score #egg_help value matches 11 run tellraw @s ["",{"text":"Moonlit Mountains","color":"aqua"},{"text":" -- 1"}]
+
+execute if score #egg_help value matches 12 run tellraw @s ["",{"text":"???","color":"white"},{"text":" -- 2"}]
+execute if score #egg_help value matches 12 run tellraw @s ["",{"translate":"sr.cheats.help.all_battle_arenas","color":"red"},{"text":" -- 0"}]
 
 tellraw @s ["",{"text":"(page ","color":"yellow","italic":true},{"score":{"name":"#egg_help","objective":"value"},"color":"yellow","italic":true},{"text":")","color":"yellow","italic":true}]

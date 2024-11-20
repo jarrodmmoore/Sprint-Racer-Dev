@@ -83,8 +83,8 @@ execute if score global aiLevel matches 8..9 if entity @e[tag=w,type=armor_stand
 execute if score global aiLevel matches 13.. if entity @e[tag=w,type=armor_stand,scores={optAIdiff=-1}] run scoreboard players set @e[tag=AImaster,type=armor_stand,scores={rNumber=1}] aiSkill 3
 
 #bossfight, rNumber 1 only, max difficulty only
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=19a,tag=!43a] run tag @e[tag=random,scores={rNumber=2..9}] remove AImaster
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=19a,tag=!43a] run scoreboard players set @e[tag=AImaster,scores={rNumber=1}] aiSkill 3
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=19a,tag=!43a] run tag @e[tag=random,scores={rNumber=2..9}] remove AImaster
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=19a,tag=!43a] run scoreboard players set @e[tag=AImaster,scores={rNumber=1}] aiSkill 3
 
 scoreboard players set @e[tag=AImaster,type=armor_stand] check 0
 scoreboard players set @e[tag=AImaster,type=armor_stand] lap 1

@@ -1,3 +1,7 @@
+#do nothing if not in proper gamestate!
+execute unless score @s gameState matches 1 run return 0
+#=====
+
 #sequence starts at gameTime=100000
 scoreboard players set @s[scores={gameTime=..99999}] gameTime 100000
 
@@ -13,10 +17,13 @@ execute if entity @s[scores={gameTime=100000}] run function sprint_racer:ai/gene
 execute if entity @s[scores={gameTime=100000}] run gamemode spectator @a
 execute if entity @s[scores={gameTime=100000..100010}] run function sprint_racer:clear_bossbars
 execute if entity @s[scores={gameTime=100000}] run function sprint_racer_language:gameplay/race_end/better_luck_next_time
+execute if score #getOnWithIt value matches 1 if score @s gameTime matches 100000 run scoreboard players set @s gameTime 100040
 
 execute if entity @s[scores={gameTime=100040}] run scoreboard objectives setdisplay sidebar
+execute if score #getOnWithIt value matches 1 if score @s gameTime matches 100040 run scoreboard players set @s gameTime 100060
 
 execute if entity @s[scores={gameTime=100060}] run function sprint_racer_language:gameplay/race_end/race_ended_text
+execute if score #getOnWithIt value matches 1 if score @s gameTime matches 100060 run scoreboard players set @s gameTime 100110
 
 #custom track testing, send back to editor
 execute if entity @s[tag=customTesting,scores={gameTime=100110}] run function sprint_racer:game_logic/10/_initialize
@@ -27,6 +34,7 @@ execute if entity @s[tag=teamplay,scores={gameTime=100120}] run function sprint_
 execute if entity @s[scores={gameTime=100120}] run function sprint_racer:ai/general/round_finish_level_shift
 
 execute if entity @s[scores={gameTime=100160}] run function sprint_racer_language:_dlc_2/gameplay/race_end/increment_points
+execute if score #getOnWithIt value matches 1 if score @s gameTime matches 100180 run scoreboard players set @s gameTime 100258
 
 execute if entity @s[scores={gameTime=100259}] run tag @s[tag=optChoose] add skiptochoose
 execute if entity @s[scores={gameTime=100259}] run scoreboard players add @s roundNumber 1

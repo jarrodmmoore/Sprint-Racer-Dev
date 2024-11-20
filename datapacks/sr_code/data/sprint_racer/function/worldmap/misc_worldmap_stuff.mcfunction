@@ -9,7 +9,7 @@ execute if score #halftick value matches 1 if block 2464 101 271 air if block 24
 
 
 #really weird bug caused by chunk loading
-kill @e[type=armor_stand,tag=floatup,x=2463,y=91,z=262,dx=17,dy=20,dz=11]
+kill @e[type=text_display,tag=health_text,x=2463,y=91,z=262,dx=17,dy=20,dz=11]
 
 
 #cotton void = cheat 38
@@ -21,16 +21,16 @@ scoreboard players add #gateCheck value 1
 execute if score #gateCheck value matches 20.. run scoreboard players set #gateCheck value 0
 
 #cotton void
-execute if score #gateCheck value matches 0 if block 2381 96 -6 smooth_stone_slab if block 2386 102 -6 smooth_stone_slab if entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=38] if entity @e[tag=wmTextCV,type=armor_stand] run function sprint_racer:worldmap/gates/cotton_void_open
-execute if score #gateCheck value matches 0 if block 2381 96 -6 air if block 2386 102 -6 air unless entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=38] if entity @e[tag=wmTextCV,type=armor_stand] run function sprint_racer:worldmap/gates/cotton_void_close
+execute if score #gateCheck value matches 0 if block 2381 96 -6 smooth_stone_slab if block 2386 102 -6 smooth_stone_slab if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=38] if entity @e[tag=wmTextCV,type=armor_stand] run function sprint_racer:worldmap/gates/cotton_void_open
+execute if score #gateCheck value matches 0 if block 2381 96 -6 air if block 2386 102 -6 air unless entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=38] if entity @e[tag=wmTextCV,type=armor_stand] run function sprint_racer:worldmap/gates/cotton_void_close
 
 #underworld
-execute if score #gateCheck value matches 5 if block 2411 96 259 smooth_stone_slab if block 2416 102 259 smooth_stone_slab if entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=46] if entity @e[tag=wmTextUW,type=armor_stand] run function sprint_racer:worldmap/gates/underworld_open
-execute if score #gateCheck value matches 5 if block 2411 96 259 air if block 2416 102 259 air unless entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=46] if entity @e[tag=wmTextUW,type=armor_stand] run function sprint_racer:worldmap/gates/underworld_close
+execute if score #gateCheck value matches 5 if block 2411 96 259 smooth_stone_slab if block 2416 102 259 smooth_stone_slab if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=46] if entity @e[tag=wmTextUW,type=armor_stand] run function sprint_racer:worldmap/gates/underworld_open
+execute if score #gateCheck value matches 5 if block 2411 96 259 air if block 2416 102 259 air unless entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=46] if entity @e[tag=wmTextUW,type=armor_stand] run function sprint_racer:worldmap/gates/underworld_close
 
 #praia de abril
-execute if score #gateCheck value matches 10 if block 2527 96 259 smooth_stone_slab if block 2532 102 259 smooth_stone_slab if entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=56] if entity @e[tag=wmTextPC,type=armor_stand] run function sprint_racer:worldmap/gates/praia_de_abril_classico_open
-execute if score #gateCheck value matches 10 if block 2527 96 259 air if block 2532 102 259 air unless entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=56] if entity @e[tag=wmTextPC,type=armor_stand] run function sprint_racer:worldmap/gates/praia_de_abril_classico_close
+execute if score #gateCheck value matches 10 if block 2527 96 259 smooth_stone_slab if block 2532 102 259 smooth_stone_slab if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=56] if entity @e[tag=wmTextPC,type=armor_stand] run function sprint_racer:worldmap/gates/praia_de_abril_classico_open
+execute if score #gateCheck value matches 10 if block 2527 96 259 air if block 2532 102 259 air unless entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=56] if entity @e[tag=wmTextPC,type=armor_stand] run function sprint_racer:worldmap/gates/praia_de_abril_classico_close
 
 #casino chase (hidden on realms)
 execute if score #gateCheck value matches 15 if block 2499 74 202 glowstone if block 2518 92 202 air if block 2529 92 202 air if block 2499 92 215 air if block 2518 92 215 air if block 2529 92 215 air if block 2499 92 228 air if block 2518 92 228 air if block 2529 92 228 air if entity @e[tag=w,type=armor_stand,tag=COPPA] run function sprint_racer:worldmap/gates/casino_chase_hide

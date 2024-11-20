@@ -70,7 +70,7 @@ execute if entity @s[tag=sa_creeper] at @s run function sprint_racer:explode
 execute if entity @s[tag=sa_villager] at @s run function sprint_racer_language:_dlc_3/gameplay/villager_ai/chat_death
 
 #permadeath cheat code
-execute if score global gameState matches 1 if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=61a] run function sprint_racer:game_logic/1/eliminate_permadeath
+execute if score global gameState matches 1 if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=61a] run function sprint_racer:game_logic/1/eliminate_permadeath
 
 #and now die
 kill @s

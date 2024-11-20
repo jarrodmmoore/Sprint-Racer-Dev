@@ -1,0 +1,1 @@
+$item replace entity @a[scores={hp=1..},tag=playing,tag=tempTarget] hotbar.0 with minecraft:filled_map[map_id=$(preview_image),custom_name='{"translate":"sr.lobby.custom_track_race","color":"aqua","bold":true,"italic":false}',map_color=43775,custom_data={wmPreview:1b,itemhastitle:1b,wmcustommap:1b}] 1

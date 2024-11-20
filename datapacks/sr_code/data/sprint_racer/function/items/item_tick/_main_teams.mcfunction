@@ -115,8 +115,8 @@ execute as @e[type=!marker,type=!armor_stand,scores={blindtime=1..}] at @s run f
 
 #some projectiles...
 execute if entity @e[type=snowball,tag=!mHitbox,tag=!targetVisual] run function sprint_racer:items/item_tick/snowball_teams
-execute unless entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=26a] as @e[tag=missile,type=armor_stand] at @s run function sprint_racer:items/item_tick/missile_teams
-execute if entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=26a] as @e[tag=missile,type=armor_stand] at @s run function sprint_racer:items/item_tick/missile_fast_teams_init
+execute unless entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=26a] as @e[tag=missile,type=armor_stand] at @s run function sprint_racer:items/item_tick/missile_teams
+execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=26a] as @e[tag=missile,type=armor_stand] at @s run function sprint_racer:items/item_tick/missile_fast_teams_init
 
 #repeat stuff if in half tick mode
 execute if entity @s[tag=halftick] run function sprint_racer:items/item_tick/_main_echo_teams

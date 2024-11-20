@@ -7,7 +7,7 @@
 #for default save state:
 #"underworld" track will be unbanned if and only if it's been discovered via cheats
 setblock 1609 70 445 red_wool
-execute if entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=46] run setblock 1609 70 445 lime_wool
+execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=46] run setblock 1609 70 445 lime_wool
 
 #gamemodes
 tag @s remove optRnB
@@ -434,8 +434,8 @@ function sprint_racer:game_logic/0/toggle_item/check_color_purple
 #################################
 #CHEATS
 
-#here we pass it over to @e[tag=cheats,x=1550,y=148,z=406,distance=..1] so we can avoid @e-ing a million times
-execute as @e[tag=cheats,x=1550,y=148,z=406,distance=..1,limit=1,type=armor_stand] run function sprint_racer:game_logic/0/save_state/load_block_state_cheats
+#here we pass it over to @e[tag=cheats,x=1548,y=148,z=422,distance=..1] so we can avoid @e-ing a million times
+execute as @e[tag=cheats,x=1548,y=148,z=422,distance=..1,limit=1,type=armor_stand] run function sprint_racer:game_logic/0/save_state/load_block_state_cheats
 function sprint_racer:cheats/check_for_cheats
 
 #################################

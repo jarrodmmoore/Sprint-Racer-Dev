@@ -9,9 +9,9 @@ kill @e[tag=nVote3]
 scoreboard objectives add rNumber dummy
 
 #voting armor stands
-summon armor_stand ~ ~ ~ {Marker:1b,NoGravity:1b,Invisible:1b,Invulnerable:1b,Tags:["nVote1"],UUID:[I;0,102,0,1]}
-summon armor_stand ~ ~ ~ {Marker:1b,NoGravity:1b,Invisible:1b,Invulnerable:1b,Tags:["nVote2"],UUID:[I;0,102,0,2]}
-summon armor_stand ~ ~ ~ {Marker:1b,NoGravity:1b,Invisible:1b,Invulnerable:1b,Tags:["nVote3"],UUID:[I;0,102,0,3]}
+summon armor_stand ~ ~ ~-16 {Marker:1b,NoGravity:1b,Invisible:1b,Invulnerable:1b,Tags:["nVote1"],UUID:[I;0,102,0,1]}
+summon armor_stand ~ ~ ~-16 {Marker:1b,NoGravity:1b,Invisible:1b,Invulnerable:1b,Tags:["nVote2"],UUID:[I;0,102,0,2]}
+summon armor_stand ~ ~ ~-16 {Marker:1b,NoGravity:1b,Invisible:1b,Invulnerable:1b,Tags:["nVote3"],UUID:[I;0,102,0,3]}
 
 #1
 summon armor_stand ~ ~ ~ {Marker:1b,NoGravity:1b,Invisible:1b,Invulnerable:1b,Tags:["random","setme"],UUID:[I;0,808,0,1]}

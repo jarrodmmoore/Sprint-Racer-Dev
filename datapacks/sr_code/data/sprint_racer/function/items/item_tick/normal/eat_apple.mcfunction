@@ -15,13 +15,14 @@ execute if score #dHP value matches 0.. run playsound minecraft:entity.player.bu
 execute if score #dHP value matches ..-1 run playsound minecraft:entity.player.burp master @a ~ ~ ~ 1 1
 
 #gain +4hp in absorption if already at full health
-execute if score #dHP value matches 0 run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+4","color":"yellow","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-execute if score #dHP value matches 1 run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+3","color":"yellow","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-execute if score #dHP value matches 2 run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+2","color":"yellow","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-execute if score #dHP value matches 3 run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+1","color":"yellow","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-execute if score #dHP value matches 4.. run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+0","color":"yellow","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-scoreboard players set @e[tag=setscore] lifespan 15
-tag @e[tag=setscore] remove setscore
+execute if score #dHP value matches 0 run summon text_display ~ ~1.8 ~ {text:'{"text":"+4","color":"yellow","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute if score #dHP value matches 1 run summon text_display ~ ~1.8 ~ {text:'{"text":"+3","color":"yellow","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute if score #dHP value matches 2 run summon text_display ~ ~1.8 ~ {text:'{"text":"+2","color":"yellow","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute if score #dHP value matches 3 run summon text_display ~ ~1.8 ~ {text:'{"text":"+1","color":"yellow","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute if score #dHP value matches 4.. run summon text_display ~ ~1.8 ~ {text:'{"text":"+0","color":"yellow","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute as @e[tag=setscore,distance=..3] run function sprint_racer:damage_logic/damage_number_entity
+
+#overheal?
 execute if score #dHP value matches 0.. run effect give @s absorption 100000 0 true
 execute if score #dHP value matches 0.. run tag @s add absorption
 
@@ -29,20 +30,17 @@ execute if score #dHP value matches 0.. run tag @s add absorption
 effect give @s instant_health 1 1 true
 
 #numbers based on #dHP
-execute if score #dHP value matches ..-8 run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+8","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-execute if score #dHP value matches -7 run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+7","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-execute if score #dHP value matches -6 run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+6","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-execute if score #dHP value matches -5 run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+5","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-execute if score #dHP value matches -4 run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+4","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-execute if score #dHP value matches -3 run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+3","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-execute if score #dHP value matches -2 run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+2","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-execute if score #dHP value matches -1 run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+1","color":"light_purple","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-#execute if score #dHP value matches 0.. run summon armor_stand ~ ~1.8 ~ {CustomName:'{"text":"+0","color":"light_purple","bold":"true"}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-scoreboard players set @e[tag=setscore] lifespan 10
-tag @e[tag=setscore] remove setscore
+execute if score #dHP value matches ..-8 run summon text_display ~ ~1.8 ~ {text:'{"text":"+8","color":"light_purple","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute if score #dHP value matches -7 run summon text_display ~ ~1.8 ~ {text:'{"text":"+7","color":"light_purple","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute if score #dHP value matches -6 run summon text_display ~ ~1.8 ~ {text:'{"text":"+6","color":"light_purple","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute if score #dHP value matches -5 run summon text_display ~ ~1.8 ~ {text:'{"text":"+5","color":"light_purple","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute if score #dHP value matches -4 run summon text_display ~ ~1.8 ~ {text:'{"text":"+4","color":"light_purple","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute if score #dHP value matches -3 run summon text_display ~ ~1.8 ~ {text:'{"text":"+3","color":"light_purple","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute if score #dHP value matches -2 run summon text_display ~ ~1.8 ~ {text:'{"text":"+2","color":"light_purple","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute if score #dHP value matches -1 run summon text_display ~ ~1.8 ~ {text:'{"text":"+1","color":"light_purple","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+#execute if score #dHP value matches 0.. run summon text_display ~ ~1.8 ~ {text:'{"text":"+0","color":"light_purple","bold":"true"}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute as @e[tag=setscore,distance=..3] run function sprint_racer:damage_logic/damage_number_entity
 
-scoreboard players set @e[tag=setscore] lifespan 10
-tag @e[tag=setscore] remove setscore
 
 scoreboard players set @s hitstun 0
 scoreboard players add @s[scores={rateAccel=..300}] rateAccel 50

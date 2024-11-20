@@ -3,5 +3,5 @@ execute if entity @e[tag=focusT,scores={timeRemaining=200..}] as @a at @s run pl
 execute if entity @e[tag=focusT,scores={timeRemaining=..199}] as @a at @s run playsound minecraft:block.note_block.hat master @s ~ 100000 ~ 100000
 execute if entity @e[tag=focusT,scores={timeRemaining=..199}] run scoreboard players add @e[tag=focusT] timeRemaining 1
 
-execute if entity @e[tag=w,scores={tvPoolMode=1}] run function sprint_racer_language:_dlc_3/lobby/custom_track/track_config_race
-execute if entity @e[tag=w,scores={tvPoolMode=2}] run function sprint_racer_language:_dlc_3/lobby/custom_track/track_config_battle
+execute if entity @e[tag=w,scores={tvPoolMode=1}] run function sprint_racer_language:_dlc_6/lobby/custom_track/track_config_race
+execute if entity @e[tag=w,scores={tvPoolMode=2}] run function sprint_racer_language:_dlc_6/lobby/custom_track/track_config_battle

@@ -11,6 +11,9 @@ execute if entity @s[tag=custombattle,tag=trackMedium] run data merge entity @e[
 execute if entity @s[tag=custombattle,tag=trackLarge] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":9995}}}
 
 
+execute if entity @s[tag=usingMacroPreview] store result storage sprint_racer:func_args id int 1 run scoreboard players get @s customTagLine
+execute if entity @s[tag=usingMacroPreview] run function sprint_racer:game_logic/11/item_frame/custom_preview_macro with storage sprint_racer:func_args
+
 execute if entity @s[tag=customPreview,scores={customPreview=11001}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":11001}}}
 execute if entity @s[tag=customPreview,scores={customPreview=11002}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":11002}}}
 execute if entity @s[tag=customPreview,scores={customPreview=11003}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":11003}}}

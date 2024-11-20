@@ -2,7 +2,7 @@ scoreboard players set @e[tag=w,type=armor_stand] customDummyID 1
 execute as @e[tag=customtrack,tag=customrace] run scoreboard players add @e[tag=w,type=armor_stand] customDummyID 1
 
 #summon new stand
-execute as @e[tag=w,type=armor_stand] at @s positioned ~ 80 ~ run summon armor_stand ~ ~ ~ {Invulnerable:1b,NoGravity:1b,Tags:["customtrack","trackStandR","rtBlacklist","imnew"]}
+execute as @e[tag=w,type=armor_stand] at @s positioned ~ 80 ~ run summon armor_stand ~ ~ ~16 {Invulnerable:1b,NoGravity:1b,Invisible:1b,Marker:1b,Tags:["customtrack","trackStandR","rtBlacklist","imnew"]}
 execute as @e[tag=imnew,type=armor_stand,limit=1] run function sprint_racer_language:_dlc_1/lobby/custom_track/give_default_name
 scoreboard players operation @e[tag=imnew,type=armor_stand,limit=1] customTrackID = @e[limit=1,tag=w] customDummyID
 tag @e[tag=imnew,type=armor_stand,limit=1] add customrace

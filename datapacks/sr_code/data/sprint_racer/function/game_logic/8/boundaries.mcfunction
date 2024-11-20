@@ -17,9 +17,9 @@ execute unless entity @s[scores={recDirection=10}] if entity @e[tag=w,scores={oT
 #out of bounds
 scoreboard players set @s[scores={recDirection=10,actionbarState=..7}] actionbarState 7
 scoreboard players set @s[scores={recDirection=10,actionbarState=..7}] actionbarState2 5
-#execute unless entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=20a] run kill @s[tag=!ai,scores={hp=1..,recDirection=10,boundaryTimer=..0}]
+#execute unless entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=20a] run kill @s[tag=!ai,scores={hp=1..,recDirection=10,boundaryTimer=..0}]
 data merge entity @s[tag=ai,scores={hitboxHP=1001..,recDirection=10,boundaryTimer=..0}] {Health:500}
 
 #get killed when super out of bounds
-execute if entity @s[tag=!ai,scores={hp=1..,recDirection=12}] unless entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=20a] run function sprint_racer:game_logic/3/boundaries_kill
+execute if entity @s[tag=!ai,scores={hp=1..,recDirection=12}] unless entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=20a] run function sprint_racer:game_logic/3/boundaries_kill
 data merge entity @s[tag=ai,scores={hitboxHP=1001..,recDirection=12}] {Health:500}

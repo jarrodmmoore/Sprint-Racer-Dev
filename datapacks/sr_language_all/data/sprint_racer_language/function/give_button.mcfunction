@@ -17,3 +17,4 @@ item replace entity @s[tag=kart_model,scores={kart_model=15}] armor.head with mi
 item replace entity @s[tag=kart_model,scores={kart_model=16}] armor.head with minecraft:stone_button[custom_model_data=2111122,custom_name='{"translate":"sr.kart_red","color":"red","bold":true,"italic":false}'] 1
 item replace entity @s[tag=kart_model,scores={kart_model=17}] armor.head with minecraft:stone_button[custom_model_data=2111124,custom_name='{"translate":"sr.kart_red","color":"red","bold":true,"italic":false}'] 1
 item replace entity @s[tag=kart_model,scores={kart_model=18}] armor.head with minecraft:stone_button[custom_model_data=2111125,custom_name='{"translate":"sr.kart_red","color":"red","bold":true,"italic":false}'] 1
+item replace entity @s[tag=kart_model,scores={kart_model=19}] armor.head with minecraft:stone_button[custom_model_data=2111127,custom_name='{"translate":"sr.kart_red","color":"red","bold":true,"italic":false}'] 1

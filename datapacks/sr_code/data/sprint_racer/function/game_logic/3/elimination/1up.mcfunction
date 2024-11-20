@@ -5,17 +5,16 @@ execute if entity @s[tag=AImaster] as @e[tag=ai] if score @s playerID = #getPlay
 scoreboard players add @s playerLives 1
 
 #1UP text
-execute if entity @s[type=player,gamemode=adventure] unless block ~ -64 ~ wither_rose run summon armor_stand ~ ~2.2 ~ {CustomName:'{"translate":"sr.game.1up","color":"white","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-execute if entity @s[tag=AImaster] as @e[tag=show1UP] at @s unless block ~ -64 ~ wither_rose run summon armor_stand ~ ~2.2 ~ {CustomName:'{"translate":"sr.game.1up","color":"white","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-scoreboard players set @e[tag=setscore] lifespan 16
-tag @e[tag=setscore] remove setscore
+execute if entity @s[type=player,gamemode=adventure] unless block ~ -64 ~ wither_rose run summon text_display ~ ~2.2 ~ {text:'{"text":"sr.game.1up","color":"white","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute if entity @s[tag=AImaster] as @e[tag=show1UP] at @s unless block ~ -64 ~ wither_rose run summon text_display ~ ~2.2 ~ {text:'{"text":"sr.game.1up","color":"white","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute as @e[tag=setscore,distance=..3] run function sprint_racer:damage_logic/damage_number_entity_slow
 tellraw @s[type=player,tag=!minChat] ["",{"translate":"sr.game.reached_ko_goal","color":"green"},{"text":" "},{"text":" "},{"text":"+1","color":"red","bold":true},{"text":"\uE013","color":"red"}]
 
 #feedback
-execute if entity @s[type=player,gamemode=!adventure] run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 2 0.75
-execute if entity @s[type=player,gamemode=adventure] run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 2 0.75
+execute if entity @s[type=player,gamemode=!adventure] run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1.75 0.75
+execute if entity @s[type=player,gamemode=adventure] run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 1.75 0.75
 execute if entity @s[type=player,gamemode=adventure] run particle heart ~ ~1 ~ 1 1 1 0 20 force
-execute if entity @s[tag=AImaster] as @e[tag=show1UP] at @s run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 2 0.75
+execute if entity @s[tag=AImaster] as @e[tag=show1UP] at @s run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 1.75 0.75
 execute if entity @s[tag=AImaster] as @e[tag=show1UP] at @s run particle heart ~ ~1 ~ 1 1 1 0 20 force
 
 #next goal is always 1 steeper than the last

@@ -6,6 +6,6 @@ scoreboard players operation @e[limit=1,tag=giveID] playerID = @s playerID
 execute if entity @s[tag=itemCyan] run tag @e[tag=giveID] add itemCyan
 execute if entity @s[tag=itemCyan] run tag @e[tag=giveID] add playerCyan
 execute if entity @s[tag=!itemCyan] run tag @e[tag=giveID] add playerOrange
-execute if entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=11a] as @e[tag=giveID] run function sprint_racer:cheats/homing_entity_chance_rare
+execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=11a] as @e[tag=giveID] run function sprint_racer:cheats/homing_entity_chance_rare
 tag @e[tag=giveID] remove giveID
 tp @s ~ ~-1000 ~

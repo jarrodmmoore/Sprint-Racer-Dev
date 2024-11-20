@@ -1,0 +1,1 @@
+$function sprint_racer_language:_dlc_6/lobby/vote_preview/_custom_preview_macro_2 with storage sprint_racer:custom_track_storage_$(id)

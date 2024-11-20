@@ -1,3 +1,6 @@
+execute if entity @s[tag=usingMacroPreview] store result storage sprint_racer:func_args id int 1 run scoreboard players get @s customTagLine
+execute if entity @s[tag=usingMacroPreview] run return run function sprint_racer:game_logic/10/update_display/custom_preview/macro with storage sprint_racer:func_args
+
 execute if entity @s[scores={customPreview=11001}] run data merge entity @e[type=minecraft:item_frame,limit=1,sort=nearest] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":11001}}}
 execute if entity @s[scores={customPreview=11002}] run data merge entity @e[type=minecraft:item_frame,limit=1,sort=nearest] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":11002}}}
 execute if entity @s[scores={customPreview=11003}] run data merge entity @e[type=minecraft:item_frame,limit=1,sort=nearest] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":11003}}}

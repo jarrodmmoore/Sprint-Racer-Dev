@@ -172,13 +172,13 @@ tag @e[tag=w,type=armor_stand] add noCharity
 execute as @e[limit=1,tag=chosenTrack,type=armor_stand] at @s run function sprint_racer:game_logic/1/_initialize_index
 
 #cheat that offsets lap count
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=55a] as @e[tag=w,type=armor_stand] unless entity @s[scores={gamemodePresetA=2}] run function sprint_racer:cheats/offset_lap_count
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=55a] as @e[tag=w,type=armor_stand] unless entity @s[scores={gamemodePresetA=2}] run function sprint_racer:cheats/offset_lap_count
 
 #cheat that allows 1 checkpoint skip
-execute if entity @e[type=armor_stand,tag=50a,tag=cheats,x=1550,y=148,z=406,distance=..1] run tag @a add skip_available
+execute if entity @e[type=armor_stand,tag=50a,tag=cheats,x=1548,y=148,z=422,distance=..1] run tag @a add skip_available
 
 #cheat that doubles lap count
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=39a] as @e[tag=w,type=armor_stand] unless entity @s[scores={gamemodePresetA=2}] run function sprint_racer:cheats/double_lap_count
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=39a] as @e[tag=w,type=armor_stand] unless entity @s[scores={gamemodePresetA=2}] run function sprint_racer:cheats/double_lap_count
 
 #initialize bossbar lap display based on the set amt of laps
 scoreboard players set #bbPersonalize value 2

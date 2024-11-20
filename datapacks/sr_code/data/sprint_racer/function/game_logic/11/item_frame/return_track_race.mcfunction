@@ -53,4 +53,15 @@ execute if entity @s[scores={rNumber=48}] run data merge entity @e[limit=1,type=
 execute if entity @s[scores={rNumber=49}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":49}}}
 execute if entity @s[scores={rNumber=50}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":50}}}
 
+execute if entity @s[scores={rNumber=51}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":100051}}}
+execute if entity @s[scores={rNumber=52}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":100052}}}
+execute if entity @s[scores={rNumber=53}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":100053}}}
+execute if entity @s[scores={rNumber=54}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":100054}}}
+execute if entity @s[scores={rNumber=55}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":100055}}}
+execute if entity @s[scores={rNumber=56}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":100056}}}
+execute if entity @s[scores={rNumber=57}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":100057}}}
+execute if entity @s[scores={rNumber=58}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":100058}}}
+execute if entity @s[scores={rNumber=59}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":100059}}}
+execute if entity @s[scores={rNumber=60}] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":100060}}}
+
 execute if entity @s[tag=customtrack] run function sprint_racer:game_logic/11/item_frame/return_track_custom

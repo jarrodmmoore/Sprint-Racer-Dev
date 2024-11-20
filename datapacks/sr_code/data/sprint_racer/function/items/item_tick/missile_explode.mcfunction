@@ -1,6 +1,6 @@
 execute if score #hit value matches 1 if entity @s[tag=missile,tag=fireball] run function sprint_racer:items/item_tick/missile_explode_fireball
 
-execute if score #hit value matches 1 positioned ^ ^1.5 ^-1.25 run function sprint_racer:explode_fake
+execute if score #hit value matches 1 run function sprint_racer:explode_fake
 execute if score #hit value matches 1 run function sprint_racer:explode
 
 scoreboard players set @s lifespan 0

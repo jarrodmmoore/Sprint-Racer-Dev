@@ -49,7 +49,7 @@ execute if score @s racePosDisplay matches 2 run scoreboard players operation #1
 execute if entity @s[tag=ai,tag=ai_rival] run scoreboard players add @s[scores={itemLuck=..5}] itemLuck 1
 
 #inverted balance cheat
-execute if entity @e[tag=22a,tag=cheats,x=1550,y=148,z=406,distance=..1,limit=1,type=armor_stand] run function sprint_racer:items/invert_balance_self
+execute if entity @e[tag=22a,tag=cheats,x=1548,y=148,z=422,distance=..1,limit=1,type=armor_stand] run function sprint_racer:items/invert_balance_self
 
 #item luck stat
 scoreboard players operation @s[type=player] itemLuck += @s cStatLuck

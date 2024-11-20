@@ -29,7 +29,7 @@ execute if entity @s[scores={gameTime=50}] run team modify player seeFriendlyInv
 execute if entity @s[scores={gameTime=50}] run function sprint_racer:game_logic/1/find_playerstart_main
 execute if entity @s[scores={gameTime=50}] run effect clear @a night_vision
 execute if entity @s[scores={gameTime=45..48}] as @a[gamemode=!spectator] at @s run gamemode spectator @s
-execute if entity @s[scores={gameTime=49..50}] if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=45a] as @a[tag=playing] at @s run gamemode adventure @s
+execute if entity @s[scores={gameTime=49..50}] if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=45a] as @a[tag=playing] at @s run gamemode adventure @s
 execute if entity @s[scores={gameTime=51..159}] as @e[tag=activeplayer] at @s run tp @s @e[limit=1,distance=..50,sort=nearest,tag=node,tag=playerstart,tag=!psBattle]
 execute if entity @s[scores={gameTime=52}] run effect clear @a blindness
 execute if entity @s[scores={gameTime=52}] run effect give @a blindness 1 10 true

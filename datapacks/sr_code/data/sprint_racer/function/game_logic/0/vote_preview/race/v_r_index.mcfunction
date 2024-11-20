@@ -2,7 +2,7 @@ execute if entity @s[tag=customrace,tag=trackNovice,tag=!customPreview] run func
 execute if entity @s[tag=customrace,tag=trackIntermed,tag=!customPreview] run function sprint_racer_language:_dlc_1/lobby/vote_preview/_custom_race_intermediate
 execute if entity @s[tag=customrace,tag=trackExpert,tag=!customPreview] run function sprint_racer_language:_dlc_1/lobby/vote_preview/_custom_race_expert
 execute if entity @s[tag=customrace,tag=trackMaster,tag=!customPreview] run function sprint_racer_language:_dlc_1/lobby/vote_preview/_custom_race_master
-execute if entity @s[tag=customrace,tag=customPreview] run function sprint_racer_language:_dlc_3/lobby/vote_preview/_custom_preview_index
+execute if entity @s[tag=customrace,tag=customPreview] run function sprint_racer_language:_dlc_6/lobby/vote_preview/_custom_preview_index
 
 execute if entity @s[scores={rNumber=50}] run function sprint_racer_language:_dlc_2/lobby/vote_preview/cotton_void
 

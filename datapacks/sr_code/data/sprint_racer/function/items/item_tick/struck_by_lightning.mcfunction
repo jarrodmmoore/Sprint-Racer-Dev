@@ -1,5 +1,5 @@
 tag @s add getStruck
-execute unless entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=11a] at @s if entity @s[nbt={OnGround:0b}] unless block ~ ~ ~ water run tag @s remove getStruck
+execute unless entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=11a] at @s if entity @s[nbt={OnGround:0b}] unless block ~ ~ ~ water run tag @s remove getStruck
 
 execute if entity @s[tag=getStruck] run effect give @a minecraft:night_vision 1 100 true
 execute if entity @s[tag=getStruck] run execute as @a at @s run playsound minecraft:entity.lightning_bolt.thunder master @s ~ 100000 ~ 100000 1

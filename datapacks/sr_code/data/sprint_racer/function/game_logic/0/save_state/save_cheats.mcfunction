@@ -1,4 +1,4 @@
-#executed by @e[tag=cheats,x=1550,y=148,z=406,distance=..1]
+#executed by @e[tag=cheats,x=1548,y=148,z=422,distance=..1]
 
 execute if entity @s[tag=01a] run setblock 1620 ~ 460 white_wool
 execute if entity @s[tag=01a,scores={speedlevel=2}] run setblock 1620 ~ 460 orange_wool

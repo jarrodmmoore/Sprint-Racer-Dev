@@ -68,7 +68,7 @@ tag @e[tag=hasMap3] remove hasMap3
 tag @a[nbt={Inventory:[{Slot:0b,id:"minecraft:crafting_table",components:{"minecraft:custom_data":{createnew:1b}}}]}] add hasMap3
 clear @a[tag=!hasMap3] crafting_table
 execute as @a[gamemode=!creative,tag=!hasMap3] run function sprint_racer_language:_dlc_1/lobby/custom_track_inv/create_new
-execute as @a[scores={carrotInput=1..,inputCooldown=..0}] if items entity @s weapon.mainhand crafting_table[custom_data~{createnew:1b}] run function sprint_racer:game_logic/10/controls/create_new_index
+execute as @a[scores={carrotInput=1..,inputCooldown=..0}] if items entity @s weapon.mainhand crafting_table[custom_data~{createnew:1b}] run function sprint_racer_language:_dlc_6/lobby/custom_track/create_track_menu
 
 #test track (SLOT 1, chain command block)
 tag @e[tag=hasChainCB] remove hasChainCB

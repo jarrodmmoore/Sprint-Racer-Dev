@@ -1,4 +1,4 @@
-scoreboard players operation @s kart_model = @e[limit=1,sort=random,type=armor_stand,tag=random,scores={rNumber=11..18}] rNumber
+scoreboard players operation @s kart_model = @e[limit=1,sort=random,type=armor_stand,tag=random,scores={rNumber=11..19}] rNumber
 
 execute if score @s kart_model matches 11 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:stone_button",count:1,components:{"minecraft:custom_model_data":2111111}}],ArmorDropChances:[0.85f,0.85f,0.85f,0.0f]}
 execute if score @s kart_model matches 12 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:stone_button",count:1,components:{"minecraft:custom_model_data":2111112}}],ArmorDropChances:[0.85f,0.85f,0.85f,0.0f]}
@@ -8,3 +8,4 @@ execute if score @s kart_model matches 15 run data merge entity @s {ArmorItems:[
 execute if score @s kart_model matches 16 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:stone_button",count:1,components:{"minecraft:custom_model_data":2111122}}],ArmorDropChances:[0.85f,0.85f,0.85f,0.0f]}
 execute if score @s kart_model matches 17 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:stone_button",count:1,components:{"minecraft:custom_model_data":2111124}}],ArmorDropChances:[0.85f,0.85f,0.85f,0.0f]}
 execute if score @s kart_model matches 18 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:stone_button",count:1,components:{"minecraft:custom_model_data":2111125}}],ArmorDropChances:[0.85f,0.85f,0.85f,0.0f]}
+execute if score @s kart_model matches 19 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:stone_button",count:1,components:{"minecraft:custom_model_data":2111126}}],ArmorDropChances:[0.85f,0.85f,0.85f,0.0f]}

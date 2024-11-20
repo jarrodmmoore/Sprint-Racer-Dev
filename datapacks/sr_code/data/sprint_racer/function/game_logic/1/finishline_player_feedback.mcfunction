@@ -1,4 +1,4 @@
-execute if entity @s[tag=skip_available,scores={nCheck=1}] if entity @e[type=armor_stand,tag=50a,tag=cheats,x=1550,y=148,z=406,distance=..1] run function sprint_racer:cheats/skip_checkpoint_on_finishline
+execute if entity @s[tag=skip_available,scores={nCheck=1}] if entity @e[type=armor_stand,tag=50a,tag=cheats,x=1548,y=148,z=422,distance=..1] run function sprint_racer:cheats/skip_checkpoint_on_finishline
 
 execute if entity @s[tag=finWarn,gamemode=adventure] run scoreboard players set @s[scores={actionbarState=..6}] actionbarState 8
 execute if entity @s[tag=finWarn,gamemode=adventure] run scoreboard players set @s[scores={actionbarState=..6}] actionbarState2 40

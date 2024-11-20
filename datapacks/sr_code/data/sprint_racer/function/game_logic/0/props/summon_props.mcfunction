@@ -75,7 +75,7 @@ summon armor_stand 1658 85 418 {Tags:["lobbyprop","creditstand","creditcycle","c
 summon armor_stand 1658 85 418 {Tags:["lobbyprop","creditstand","creditcycle","cc12"],Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ShowArms:1b,Rotation:[115.0f],ArmorItems:[{id:"leather_boots",count:1,components:{"minecraft:dyed_color":{rgb:10617087}}},{id:"leather_leggings",count:1,components:{"minecraft:dyed_color":{rgb:5395307}}},{id:"leather_chestplate",count:1,components:{"minecraft:dyed_color":{rgb:5720283}}},{id:"player_head",count:1,components:{"minecraft:profile":{id:[I;269213154,2053260077,-1269152836,-1074862549],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg3NWVlNTYwODU0MWExYTIwMjE0MzkzMzU2MTA5NGVlMWNjZWNlNGMwZTg4ZWY5M2U5NWJjNWQ5NzEzYjk5NCJ9fX0="}]}}}],HandItems:[{id:"wooden_axe",count:1},{}],DisabledSlots:4144959,CustomName:'{"text":"MichaelMana","color":"light_purple"}',CustomNameVisible:0b,Pose:{Head:[0.0f,0.0f,356.0f],LeftLeg:[0.0f,0.0f,354.0f],LeftArm:[201.0f,0.0f,20.0f],RightArm:[0.0f,0.0f,10.0f]}}
 summon armor_stand 1658 85 418 {Tags:["lobbyprop","creditstand","creditcycle","cc13"],Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ShowArms:1b,Rotation:[113.0f],CustomName:'{"text":"Endermity","color":"dark_purple"}',ArmorItems:[{id:"leather_boots",count:1,components:{"minecraft:dyed_color":{rgb:0}}},{id:"leather_leggings",count:1,components:{"minecraft:dyed_color":{rgb:0}}},{id:"leather_chestplate",count:1,components:{"minecraft:dyed_color":{rgb:6430950}}},{id:"player_head",count:1,components:{"minecraft:profile":{id:[I;-12545910,-2014819102,-1257731038,1120729912],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ3NjIzMTBmOWRmZTgzMjA1NTRjMDg5N2U0NzU3MjRlOThjYTVkNDgyMGM5Y2JlNmQ3NWE4YzU0MGYxOGJkMCJ9fX0="}]}}}],HandItems:[{id:"elytra",count:1},{id:"tnt",count:1}],DisabledSlots:4144959,Pose:{LeftLeg:[16.0f,8.0f,348.0f],RightLeg:[350.0f,14.0f,4.0f],LeftArm:[344.0f,32.0f,330.0f],RightArm:[271.0f,38.0f,26.0f]}}
 
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=11a] as @e[tag=creditstand] run function sprint_racer:cheats/homing_entity_chance_rare
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=11a] as @e[tag=creditstand] run function sprint_racer:cheats/homing_entity_chance_rare
 
 #credits
 function sprint_racer_language:lobby/credits
@@ -161,8 +161,8 @@ execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summ
 execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1572 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"desert"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-24000}
 execute if entity @e[tag=w,type=armor_stand,scores={rNumber=1,math2=5}] run summon villager 1570 88 387 {Tags:["babyVillager","lobbyprop","run"],VillagerData:{profession:"nitwit",level:99,type:"savanna"},PersistenceRequired:1b,Silent:1,NoAI:1,Invulnerable:1b,Age:-30000}
 
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=11a] as @e[tag=lobbyprop,tag=walk] run function sprint_racer:cheats/homing_entity_chance_rare
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=11a] as @e[tag=lobbyprop,tag=run] run function sprint_racer:cheats/homing_entity_chance_rare
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=11a] as @e[tag=lobbyprop,tag=walk] run function sprint_racer:cheats/homing_entity_chance_rare
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=11a] as @e[tag=lobbyprop,tag=run] run function sprint_racer:cheats/homing_entity_chance_rare
 
 #stationary villagers
 #coffee shop
@@ -221,12 +221,12 @@ execute positioned 1574 98 444 positioned ~ ~ ~.5 run summon minecraft:armor_sta
 execute positioned 1594 92 461 positioned ~-.4 ~ ~-.4 run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"FRIENDLYFIRE","bold":true,"italic":false}'}
 execute positioned 1563 98 343 run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"NOAFK","bold":true,"italic":false}'}
 execute positioned 1578 97 372 run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"ALWAYSSUNNY","bold":true,"italic":false}'}
-execute if entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=17,tag=18,tag=19,tag=42,tag=43,tag=44] positioned 1580 98 438 positioned ~.5 ~ ~ run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"CUSTOMAI","bold":true,"italic":false}'}
+execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=17,tag=18,tag=19,tag=42,tag=43,tag=44] positioned 1580 98 438 positioned ~.5 ~ ~ run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"CUSTOMAI","bold":true,"italic":false}'}
 execute if entity @e[tag=w,type=armor_stand,tag=COPPA] positioned 1580 98 451 positioned ~.5 ~ ~ run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomNameVisible:0,CustomName:'{"text":"SLOTLIMIT","bold":true,"italic":false}'}
 
 #cheat help door opens if 30 eggs are discovered
 scoreboard players set #cheats_discovered value 0
-execute as @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand] run function sprint_racer:cheats/count_discovered_cheats
+execute as @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand] run function sprint_racer:cheats/count_discovered_cheats
 execute unless score #cheats_discovered value matches 30.. run setblock 1577 96 452 minecraft:dark_prismarine
 execute if score #cheats_discovered value matches 30.. run setblock 1577 96 452 minecraft:redstone_torch
 

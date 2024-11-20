@@ -7,6 +7,6 @@ playsound minecraft:block.note_block.hat master @a
 
 execute as @a at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ 100000 ~ 100000
 
-execute as @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1] run function sprint_racer:cheats/remove_all_cheats
+execute as @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1] run function sprint_racer:cheats/remove_all_cheats
 
 tag @s remove clickSign

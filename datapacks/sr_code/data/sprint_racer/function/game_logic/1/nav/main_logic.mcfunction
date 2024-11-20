@@ -33,4 +33,4 @@ scoreboard players set @s[scores={wrongWayBuffer=20..,elytraTimer=..0,navDirecti
 
 #reset
 scoreboard players set @s[scores={hp=1..,recDirection=12}] resetCooldown 0
-execute if entity @s[scores={hp=1..,recDirection=12}] unless entity @e[tag=20a,tag=cheats,x=1550,y=148,z=406,distance=..1] at @s run function sprint_racer:game_logic/1/reset/forced_reset
+execute if entity @s[scores={hp=1..,recDirection=12}] unless entity @e[tag=20a,tag=cheats,x=1548,y=148,z=422,distance=..1] at @s run function sprint_racer:game_logic/1/reset/forced_reset

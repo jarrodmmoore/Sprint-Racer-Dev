@@ -1,7 +1,7 @@
 execute if entity @s[tag=custombattle,tag=trackSmall,tag=!customPreview] run function sprint_racer_language:_dlc_1/lobby/vote_preview/_custom_battle_small
 execute if entity @s[tag=custombattle,tag=trackMedium,tag=!customPreview] run function sprint_racer_language:_dlc_1/lobby/vote_preview/_custom_battle_medium
 execute if entity @s[tag=custombattle,tag=trackLarge,tag=!customPreview] run function sprint_racer_language:_dlc_1/lobby/vote_preview/_custom_battle_large
-execute if entity @s[tag=custombattle,tag=customPreview] run function sprint_racer_language:_dlc_3/lobby/vote_preview/_custom_preview_index
+execute if entity @s[tag=custombattle,tag=customPreview] run function sprint_racer_language:_dlc_6/lobby/vote_preview/_custom_preview_index
 
 execute if entity @s[scores={rNumber=50}] run function sprint_racer_language:_dlc_4/lobby/vote_preview/underworld
 

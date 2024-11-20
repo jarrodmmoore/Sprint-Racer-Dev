@@ -10,6 +10,7 @@ execute if entity @s[scores={gameTime=-2..-1}] unless entity @e[limit=1,type=mar
 execute if entity @s[scores={gameTime=-48..50,gameState=1}] run function sprint_racer:game_logic/1/loading_animation
 execute if entity @s[scores={gameTime=51..55}] run title @a subtitle [""]
 execute if entity @s[scores={gameTime=51..55}] run title @a title [""]
+execute if score #getOnWithIt value matches 1 if score @s gameTime matches 0 run scoreboard players set @s gameTime 40
 
 #kill any old item containers and traps that might be knocking about
 execute if entity @s[scores={gameTime=40}] run kill @e[tag=itemcontainer]
@@ -49,6 +50,7 @@ execute if entity @s[scores={gameTime=50}] as @e[tag=ai] at @s run function spri
 execute if entity @s[scores={gameTime=140..160}] run scoreboard players set @e[tag=activeplayer] resetCooldown 80
 execute if entity @s[scores={gameTime=160}] as @a[gamemode=adventure] at @s run spawnpoint @s ~ ~1 ~
 execute if entity @s[scores={gameTime=180}] run scoreboard objectives setdisplay sidebar racePosDisplay2
+execute if score #getOnWithIt value matches 1 if score @s gameTime matches 52 run scoreboard players set @s gameTime 99
 
 #show special starting countdown based on the value of "startType"
 execute if entity @s[scores={startType=0,gameTime=90..}] run function sprint_racer_language:gameplay/start_countdown/0

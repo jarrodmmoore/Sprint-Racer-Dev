@@ -1,7 +1,7 @@
 tag @s remove gotWarped
 tag @s add self
 
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=09a] run tag @s[nbt={RootVehicle:{Entity:{id:"minecraft:pig"}}}] add ejectkart
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=09a] run tag @s[nbt={RootVehicle:{Entity:{id:"minecraft:pig"}}}] add ejectkart
 
 execute if entity @s[tag=playerOrange] run tag @e[limit=1,sort=random,tag=activeplayer,tag=playerCyan,tag=!self] add warpTarget
 execute if entity @s[tag=!playerOrange] run tag @e[limit=1,sort=random,tag=activeplayer,tag=playerOrange,tag=!self] add warpTarget

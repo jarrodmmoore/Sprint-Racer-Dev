@@ -11,7 +11,7 @@ execute if entity @s[type=item,nbt={Item:{components:{"minecraft:custom_data":{g
 
 execute if entity @s[tag=aiCantSee] run tag @e[tag=cSETME] add aiCantSee
 
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=11a] run function sprint_racer:items/container_spawn/homing_cheat
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=41a] run function sprint_racer:items/container_spawn/prank_cheat
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=11a] run function sprint_racer:items/container_spawn/homing_cheat
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=41a] run function sprint_racer:items/container_spawn/prank_cheat
 
 tag @e[tag=cSETME] remove cSETME

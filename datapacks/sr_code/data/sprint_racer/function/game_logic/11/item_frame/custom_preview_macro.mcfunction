@@ -1,0 +1,1 @@
+$function sprint_racer:game_logic/11/item_frame/custom_preview_macro_2 with storage sprint_racer:custom_track_storage_$(id)

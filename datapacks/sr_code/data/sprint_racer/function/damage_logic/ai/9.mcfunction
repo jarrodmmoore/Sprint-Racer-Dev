@@ -1,9 +1,10 @@
 scoreboard players set @s hitstun 45
 scoreboard players add @s rateDecel 90
 scoreboard players remove @s moveSpeed 4500
-summon armor_stand ~ ~2.2 ~ {CustomName:'{"text":"-9","color":"red","bold":true}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-scoreboard players set @e[tag=setscore] lifespan 10
-tag @e[tag=setscore] remove setscore
+
+#summon text_display for damage number
+execute unless block ~ -64 ~ wither_rose run summon text_display ~ ~2.2 ~ {text:'{"text":"-9","color":"red","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute as @e[tag=setscore,distance=..3] run function sprint_racer:damage_logic/damage_number_entity_damage
 
 scoreboard players set #damage_done value 9
 scoreboard players operation #hit_id value = @s attackerID

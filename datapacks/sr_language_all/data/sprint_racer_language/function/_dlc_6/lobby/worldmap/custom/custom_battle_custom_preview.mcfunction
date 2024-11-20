@@ -1,3 +1,6 @@
+execute as @e[limit=1,type=armor_stand,tag=wmCustomT,tag=usingMacroPreview] run return run function sprint_racer_language:_dlc_6/lobby/worldmap/custom/custom_battle_custom_preview_macro
+#=====
+
 scoreboard players operation @s customPreview = @e[limit=1,type=armor_stand,tag=wmCustomT] customPreview
 
 execute if entity @s[scores={customPreview=11001}] run item replace entity @a[scores={hp=1..},tag=playing,tag=tempTarget] hotbar.0 with minecraft:filled_map[map_id=11001,custom_name='{"translate":"sr.lobby.custom_track_battle","color":"red","bold":true,"italic":false}',map_color=16720384,custom_data={wmPreview:1b,itemhastitle:1b,wmcustommap:1b}] 1

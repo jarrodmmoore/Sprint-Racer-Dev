@@ -12,7 +12,7 @@ execute if entity @s[scores={math=1..}] run tag @e[tag=nextPlayer] remove nextPl
 execute if entity @s[scores={math=..-1}] run tag @e[tag=nextPlayer] remove nextPlayer
 
 
-execute if entity @e[tag=nextPlayer] run scoreboard players set @s aiRubberBand 0
+scoreboard players set @s aiRubberBand 0
 execute if entity @e[tag=nextPlayer] unless entity @e[tag=nextPlayer,distance=..20] run scoreboard players set @s aiRubberBand 1
 execute if entity @e[tag=nextPlayer] unless entity @e[tag=nextPlayer,distance=..40] run scoreboard players set @s aiRubberBand 2
 
@@ -25,5 +25,6 @@ execute if entity @s[scores={racePosDisplay=1}] run scoreboard players set @s ai
 
 #tryhard:
 #also speed up if any human players are nearby
-execute if entity @a[tag=activeplayer,distance=1..20] run scoreboard players set @s[scores={aiRubberBand=..0}] aiRubberBand 1
-execute if entity @a[tag=activeplayer,distance=1..10] run scoreboard players set @s[scores={aiRubberBand=..1}] aiRubberBand 2
+#execute if entity @a[tag=activeplayer,distance=1..20] run scoreboard players set @s[scores={aiRubberBand=..0}] aiRubberBand 1
+#execute if entity @a[tag=activeplayer,distance=1..10] run scoreboard players set @s[scores={aiRubberBand=..1}] aiRubberBand 2
+execute if entity @a[tag=activeplayer,distance=1..15] run scoreboard players set @s[scores={aiRubberBand=..0}] aiRubberBand 1

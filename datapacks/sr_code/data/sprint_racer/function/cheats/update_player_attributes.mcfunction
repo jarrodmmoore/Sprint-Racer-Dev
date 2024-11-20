@@ -21,3 +21,7 @@ execute if entity @s[tag=64a] as @a run attribute @s minecraft:block_interaction
 #step height
 execute if entity @s[tag=!65a] as @a run attribute @s minecraft:step_height base set 0.6
 execute if entity @s[tag=65a] as @a run attribute @s minecraft:step_height base set 1.2
+
+
+#unrelated, but we'll also handle the getonwithit cheat in here
+execute if entity @s[tag=66a] run scoreboard players set #getOnWithIt value 1

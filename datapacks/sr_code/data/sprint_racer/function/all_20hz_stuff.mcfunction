@@ -30,5 +30,8 @@ execute if score #lightningCooldown value matches 1.. run scoreboard players rem
 #music system runs 20Hz always
 function sprint_racer:music/global/_tick
 
+#all entities with the floatup tag get tp'd up slowly
+#execute as @e[tag=floatup] at @s run tp @s ~ ~.05 ~
+
 #grand prix sfx
 execute if score grandprix gameState matches 1 run function sprint_racer:grand_prix/main

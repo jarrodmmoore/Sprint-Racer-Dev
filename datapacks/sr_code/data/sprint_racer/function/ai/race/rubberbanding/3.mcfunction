@@ -12,7 +12,7 @@ execute if entity @s[scores={math=1..}] run tag @e[tag=nextPlayer] remove nextPl
 execute if entity @s[scores={math=..-1}] run tag @e[tag=nextPlayer] remove nextPlayer
 
 
-execute if entity @e[tag=nextPlayer] run scoreboard players set @s aiRubberBand 0
+scoreboard players set @s aiRubberBand 0
 execute if entity @e[tag=nextPlayer] unless entity @e[tag=nextPlayer,distance=..20] run scoreboard players set @s aiRubberBand 1
 execute if entity @e[tag=nextPlayer] unless entity @e[tag=nextPlayer,distance=..40] run scoreboard players set @s aiRubberBand 2
 

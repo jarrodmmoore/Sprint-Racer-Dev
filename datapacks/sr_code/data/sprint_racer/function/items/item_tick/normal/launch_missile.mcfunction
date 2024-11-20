@@ -6,12 +6,12 @@ execute at @s positioned ~ ~1.6 ~ as @e[type=armor_stand,tag=aimMe] run tp @s ~ 
 
 #summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"gray_concrete",count:1,components:{"minecraft:custom_model_data":1111111}}],HandItems:[{},{}],Tags:["missile","aimMe"]}
 
-execute if entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=01a] run tag @e[tag=aimMe,limit=1] add hurryUp
+execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=01a] run tag @e[tag=aimMe,limit=1] add hurryUp
 execute if entity @s[tag=playerCyan] run tag @e[tag=aimMe,limit=1] add itemCyan
 
 #tp @e[tag=aimMe,limit=1] @s
 scoreboard players operation @e[tag=aimMe,limit=1] playerID = @s playerID
-execute if entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=11a] as @e[tag=aimMe,limit=1] run function sprint_racer:cheats/homing_entity_chance_rare
+execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=11a] as @e[tag=aimMe,limit=1] run function sprint_racer:cheats/homing_entity_chance_rare
 tag @e[tag=aimMe,limit=1] remove aimMe
 
 #rocket item_display is temporary

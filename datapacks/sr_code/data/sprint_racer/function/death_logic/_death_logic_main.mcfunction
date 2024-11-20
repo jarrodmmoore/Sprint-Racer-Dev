@@ -12,13 +12,13 @@ function sprint_racer:warp_to_saved_coords/_go
 title @s times 0 45 5
 
 #goodbye kart
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=09a] if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:pig"}}}] at @s as @e[limit=1,sort=nearest,tag=playerkart] run function sprint_racer:cheats/kart_burst
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=09a] if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:pig"}}}] at @s as @e[limit=1,sort=nearest,tag=playerkart] run function sprint_racer:cheats/kart_burst
 
 #speed attribute
 execute if entity @s[scores={death=3}] run function sprint_racer:speed_attribute
 
 #elimination cheat
-execute if entity @s[scores={death=3}] if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,type=armor_stand,tag=61a] run function sprint_racer:death_logic/elimination_after_death
+execute if entity @s[scores={death=3}] if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=61a] run function sprint_racer:death_logic/elimination_after_death
 
 #clear hitstun upon death
 execute if entity @s[scores={death=3}] run scoreboard players set @s hitstun 0

@@ -11,7 +11,7 @@ execute as @a[tag=playing,gamemode=adventure,scores={speedBoost=..29}] at @s if 
 execute as @a[tag=playing,gamemode=adventure,scores={speedBoost=..29}] at @s rotated ~ 0 positioned ^ ^ ^.75 if block ~ ~-1 ~ yellow_concrete run scoreboard players set @s speedBoost 3
 execute as @a[tag=playing,gamemode=adventure,scores={speedBoost=..29}] at @s rotated ~ 0 positioned ^ ^ ^1.5 if block ~ ~-1 ~ yellow_concrete run scoreboard players set @s speedBoost 3
 
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=09a] as @e[tag=kartpig] at @s if block ~ ~-1 ~ lime_concrete run function sprint_racer:levels/the_loop/kart_jump
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=09a] as @e[tag=kartpig] at @s if block ~ ~-1 ~ lime_concrete run function sprint_racer:levels/the_loop/kart_jump
 
 #hooray, falldamage is now a gamerule! no need for these commands
 #execute as @a[tag=playing,gamemode=adventure] at @s if block ~ ~-1 ~ structure_void run effect give @s resistance 2 254 false

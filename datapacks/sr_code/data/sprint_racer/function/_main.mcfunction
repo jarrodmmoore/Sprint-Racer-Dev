@@ -150,9 +150,9 @@ execute unless entity @e[tag=w,type=armor_stand,tag=realms] as @a[gamemode=creat
 execute as @a at @s run function sprint_racer:coordinates
 
 #items
-execute unless entity @e[tag=w,type=armor_stand,tag=teamplay,scores={gameState=1..3}] unless entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=14a] as @e[tag=w,type=armor_stand,limit=1] run function sprint_racer:items/item_tick/_main
-execute if entity @e[tag=w,type=armor_stand,tag=teamplay,scores={gameState=1..3}] unless entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=14a] as @e[tag=w,type=armor_stand,limit=1] run function sprint_racer:items/item_tick/_main_teams
-execute if entity @e[type=armor_stand,tag=cheats,x=1550,y=148,z=406,distance=..1,tag=14a] as @e[tag=w,type=armor_stand,limit=1] run function sprint_racer:items/item_tick/_main
+execute unless entity @e[tag=w,type=armor_stand,tag=teamplay,scores={gameState=1..3}] unless entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=14a] as @e[tag=w,type=armor_stand,limit=1] run function sprint_racer:items/item_tick/_main
+execute if entity @e[tag=w,type=armor_stand,tag=teamplay,scores={gameState=1..3}] unless entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=14a] as @e[tag=w,type=armor_stand,limit=1] run function sprint_racer:items/item_tick/_main_teams
+execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=14a] as @e[tag=w,type=armor_stand,limit=1] run function sprint_racer:items/item_tick/_main
 
 
 #20Hz stuff
@@ -223,9 +223,6 @@ scoreboard players reset @a[scores={carrotInput=..999}] carrotInput
 #nodes are visualized if a player is in editor mode
 execute unless entity @a[scores={playerState=2}] if entity @e[tag=node,tag=showing] as @e[tag=node,tag=showing] run function sprint_racer:node_hide
 execute if entity @a[scores={playerState=2}] if entity @e[tag=node,tag=!showing] as @e[tag=node,tag=!showing] run function sprint_racer:node_show
-
-#all entities with the floatup tag get tp'd up slowly
-execute as @e[tag=floatup] at @s run tp @s ~ ~.05 ~
 
 #all items with a lifespan score run this function and count down to death
 execute as @e[scores={lifespan=..99999}] run function sprint_racer:entity_lifespan

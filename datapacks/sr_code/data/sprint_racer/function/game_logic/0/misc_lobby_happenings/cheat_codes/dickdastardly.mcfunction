@@ -5,9 +5,9 @@ function sprint_racer_language:_dlc_4/lobby/cheat_room/cheat_found/dickdastardly
 tellraw @a ["",{"text":" "}]
 
 #stuff
-tag @e[tag=cheats,x=1550,y=148,z=406,distance=..1] add foundacheat
-tag @e[tag=cheats,x=1550,y=148,z=406,distance=..1] add 48
+tag @e[tag=cheats,x=1548,y=148,z=422,distance=..1] add foundacheat
+tag @e[tag=cheats,x=1548,y=148,z=422,distance=..1] add 48
 
 #set display
-scoreboard players set @e[tag=cheats,x=1550,y=148,z=406,distance=..1] aiHoldingItem 48
+scoreboard players set @e[tag=cheats,x=1548,y=148,z=422,distance=..1] aiHoldingItem 48
 function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/_index_cheat_menu

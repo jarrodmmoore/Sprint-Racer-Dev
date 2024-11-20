@@ -11,11 +11,20 @@ execute as @e[tag=w,type=armor_stand] run scoreboard players add global math 1
 execute unless score global math matches 1 run kill @e[tag=w,type=armor_stand]
 execute unless score global math matches 1 run kill @e[name="w"]
 
+#important armor stand locations
+#w: 1560 150 406
+#tag=random: 1548 155 406
+#votes1,2,3: 1548 155 390
+#cheats: 1548 148 422
+#customtrack: 1560 80 422
+#^
+#these armor stands are in different chunks to take advantage of chunkLimited selectors
+
 #deal with armor stands, especially "w"
-execute unless entity @e[tag=w,type=armor_stand] run summon armor_stand 1550 150 406 {CustomName:'{"text":"w"}',NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["forceGS","w"]}
+execute unless entity @e[tag=w,type=armor_stand] run summon armor_stand 1560 150 406 {CustomName:'{"text":"w"}',NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["forceGS","w"]}
 scoreboard players set @e[tag=w,tag=forceGS] gameState 0
 tag @e[tag=forceGS] remove forceGS
-execute positioned 1550 155 406 run function sprint_racer:random/summon_stands
+execute positioned 1548 155 406 run function sprint_racer:random/summon_stands
 tag @e[tag=w,type=armor_stand] add optRnB
 tag @e[tag=w,type=armor_stand] remove optRace
 tag @e[tag=w,type=armor_stand] remove optBattle

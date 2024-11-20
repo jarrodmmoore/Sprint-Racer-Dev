@@ -8,7 +8,7 @@ scoreboard players set @e[tag=setme] lifespan 20
 effect give @e[tag=setme] levitation 10 10 true
 execute at @e[tag=setme] run particle flame ~ ~ ~ 0.2 0.2 0.2 0.1 20
 execute at @e[tag=setme] run playsound minecraft:entity.squid.ambient master @a
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=11a] as @e[tag=setme] run function sprint_racer:cheats/homing_entity_chance
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=11a] as @e[tag=setme] run function sprint_racer:cheats/homing_entity_chance
 tag @e[tag=setme] remove setme
 
 #only target players ahead of the user's position
@@ -36,7 +36,7 @@ execute as @e[tag=squirt] at @s run playsound minecraft:entity.squid.squirt mast
 execute as @e[tag=squirt] at @s run particle squid_ink ~ ~ ~ 0.3 0.3 0.3 .1 10
 execute as @e[tag=squirt] at @s run particle flame ~ ~ ~ 0.2 0.2 0.2 0.1 20
 scoreboard players set @e[tag=setme] lifespan 20
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=11a] as @e[tag=setme] run function sprint_racer:cheats/homing_entity_chance
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=11a] as @e[tag=setme] run function sprint_racer:cheats/homing_entity_chance
 tag @e[tag=setme] remove setme
 
 effect give @e[tag=squidTarget] blindness 7 0 true

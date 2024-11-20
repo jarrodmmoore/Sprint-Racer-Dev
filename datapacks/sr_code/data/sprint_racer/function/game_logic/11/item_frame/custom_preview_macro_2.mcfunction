@@ -1,0 +1,1 @@
+$data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":$(preview_image)}}}

@@ -19,6 +19,7 @@ scoreboard players remove @s[scores={oTimer=20,gameTime=1..}] gameTime 1
 
 scoreboard players set @s[scores={gameTime=10000..}] voteTime 30
 scoreboard players set @s[scores={gameTime=10000..}] gameTime 40
+scoreboard players set @s[tag=choosingTrack,scores={gameTime=1..}] gameTime 0
 
 tag @s[scores={oTimer=20,voteTime=1..},tag=!clearImpulse] add clearImpulse
 execute if entity @s[tag=!grandprix,tag=optVote] run function sprint_racer:game_logic/0/lobby_vote

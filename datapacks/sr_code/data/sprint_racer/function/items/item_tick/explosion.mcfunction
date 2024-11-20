@@ -2,7 +2,7 @@ execute as @e[tag=explosion,tag=boom] at @s run effect give @e[tag=activeplayer,
 execute as @e[tag=explosion,tag=boom] at @s run effect give @e[tag=activeplayer,distance=..5,scores={resistTime=1..}] resistance 1 4 true
 
 execute as @e[tag=explosion,tag=boom] at @s run summon creeper ~ ~ ~ {Invulnerable:1b,NoGravity:1b,Silent:1b,Health:1.0f,Fuse:0,attributes:[{id:"knockback_resistance",base:1}]}
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=31a] as @e[tag=explosion,tag=boom] at @s run function sprint_racer:items/item_tick/explosion_super
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=31a] as @e[tag=explosion,tag=boom] at @s run function sprint_racer:items/item_tick/explosion_super
 execute as @e[tag=explosion,tag=boom] at @s run tag @e[distance=..4,tag=slimetrap] add dissolve
 execute as @e[tag=explosion,tag=boom] at @s run tag @e[distance=..4,tag=magmatrap] add dissolve
 kill @e[tag=explosion,tag=boom]

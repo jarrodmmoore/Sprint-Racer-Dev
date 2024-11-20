@@ -33,8 +33,8 @@ scoreboard players operation @s mvmt_coord_dx -= @s mvmt_coord_x
 scoreboard players operation @s mvmt_coord_dy -= @s mvmt_coord_y
 scoreboard players operation @s mvmt_coord_dz -= @s mvmt_coord_z
 
-execute unless entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=01a] run function sprint_racer:cheats/kart_velocity_scale_a
-execute if entity @e[tag=cheats,x=1550,y=148,z=406,distance=..1,tag=01a] run function sprint_racer:cheats/kart_velocity_scale_b
+execute unless entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=01a] run function sprint_racer:cheats/kart_velocity_scale_a
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=01a] run function sprint_racer:cheats/kart_velocity_scale_b
 
 tag @s remove self
 

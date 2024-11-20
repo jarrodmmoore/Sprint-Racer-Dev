@@ -1,4 +1,2 @@
-summon armor_stand ~ ~1.7 ~ {CustomName:'{"translate":"sr.cheats.honk","color":"#FFAA00","bold":false}',CustomNameVisible:1b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setscore","floatup"]}
-scoreboard players set @e[tag=setscore] lifespan 10
-execute if score #halftick value matches 1 run scoreboard players set @e[tag=setscore] lifespan 5
-tag @e[tag=setscore] remove setscore
+summon text_display ~ ~1.7 ~ {text:'{"translate":"sr.cheats.honk","color":"#FFAA00","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute as @e[tag=setscore,distance=..3] run function sprint_racer:damage_logic/damage_number_entity
