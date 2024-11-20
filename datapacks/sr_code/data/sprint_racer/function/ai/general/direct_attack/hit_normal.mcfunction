@@ -3,7 +3,7 @@ effect give @e[tag=hit_target,scores={resistTime=1..}] resistance 1 1 true
 
 #effect give @e[tag=hit_target,tag=!undead] instant_damage 1 0 true
 #effect give @e[tag=hit_target,tag=undead] instant_health 1 0 true
-damage @e[tag=hit_target,limit=1] 4 mob_attack by @s from @s
+damage @e[tag=hit_target,limit=1] 3 mob_attack by @s from @s
 
 scoreboard players operation @e[tag=hit_target] attackerID = @s playerID
 scoreboard players set @e[tag=hit_target] attackTime 100
