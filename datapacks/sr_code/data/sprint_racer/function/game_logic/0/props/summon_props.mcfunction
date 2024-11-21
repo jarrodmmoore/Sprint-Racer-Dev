@@ -114,11 +114,11 @@ summon item 1603 80 433 {Tags:["lobbyprop","itempreview","ip11"],PickupDelay:327
 summon item 1605 80 433 {Tags:["lobbyprop","itempreview","ip12"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:elytra",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
 summon item 1607 80 433 {Tags:["lobbyprop","itempreview","ip13"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:slime_block",count:5,components:{"minecraft:custom_data":{stay:1b}}}}
 summon item 1609 80 433 {Tags:["lobbyprop","itempreview","ip14"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:lingering_potion",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1611 80 433 {Tags:["lobbyprop","itempreview","ip15"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:bricks",count:1,components:{"minecraft:custom_model_data":1111111,"minecraft:custom_data":{stay:1b}}}}
+summon item 1611 80 433 {Tags:["lobbyprop","itempreview","ip15"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:bricks",count:1,components:{"minecraft:item_model":"sr/item/chicken_mine","minecraft:custom_data":{stay:1b}}}}
 summon item 1613 80 433 {Tags:["lobbyprop","itempreview","ip16"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:trapped_chest",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
 summon item 1615 80 433 {Tags:["lobbyprop","itempreview","ip17"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:anvil",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
-summon item 1617 80 433 {Tags:["lobbyprop","itempreview","ip18"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:black_terracotta",count:1,components:{"minecraft:custom_model_data":1111111,"minecraft:custom_data":{stay:1b}}}}
-summon item 1619 80 433 {Tags:["lobbyprop","itempreview","ip19"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:blue_terracotta",count:1,components:{"minecraft:custom_model_data":1111111,"minecraft:custom_data":{stay:1b}}}}
+summon item 1617 80 433 {Tags:["lobbyprop","itempreview","ip18"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:black_terracotta",count:1,components:{"minecraft:item_model":"sr/item/enderman_thief","minecraft:custom_data":{stay:1b}}}}
+summon item 1619 80 433 {Tags:["lobbyprop","itempreview","ip19"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:blue_terracotta",count:1,components:{"minecraft:item_model":"sr/item/blinding_squid","minecraft:custom_data":{stay:1b}}}}
 summon item 1621 80 433 {Tags:["lobbyprop","itempreview","ip20"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:blaze_rod",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
 
 

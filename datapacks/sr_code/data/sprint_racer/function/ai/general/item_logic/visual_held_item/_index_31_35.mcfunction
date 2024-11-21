@@ -2,4 +2,4 @@ execute if entity @s[scores={aiHoldingItem=31}] run data merge entity @s {HandIt
 execute if entity @s[scores={aiHoldingItem=32}] run data merge entity @s {HandItems:[{id:"minecraft:elytra",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
 execute if entity @s[scores={aiHoldingItem=33}] run data merge entity @s {HandItems:[{id:"minecraft:magma_block",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
 execute if entity @s[scores={aiHoldingItem=34}] run data merge entity @s {HandItems:[{id:"minecraft:lingering_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:poison",custom_color:16711892}}},{}]}
-execute if entity @s[scores={aiHoldingItem=35}] run data merge entity @s {HandItems:[{id:"minecraft:bricks",count:1,components:{"minecraft:custom_model_data":1111111,"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
+execute if entity @s[scores={aiHoldingItem=35}] run data merge entity @s {HandItems:[{id:"minecraft:bricks",count:1,components:{"minecraft:item_model":"sr/item/chicken_mine","minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}

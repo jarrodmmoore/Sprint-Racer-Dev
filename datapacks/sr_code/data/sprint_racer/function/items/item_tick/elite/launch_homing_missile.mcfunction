@@ -1,10 +1,8 @@
 clear @s dropper[custom_data~{elite2:1b}] 1
 
 #spawn rocket (item_display riding an armor stand)
-summon armor_stand ~ ~1 ~ {Tags:["missile","aimMe","homing"],Marker:1b,Invisible:1b,Invulnerable:1b,Passengers:[{id:"minecraft:item_display",brightness:{sky:10,block:15},Tags:["setLife"],item_display:"head",item:{id:"minecraft:light_gray_concrete",count:1b,components:{"custom_model_data":1111111}}}]}
+summon armor_stand ~ ~1 ~ {Tags:["missile","aimMe","homing"],Marker:1b,Invisible:1b,Invulnerable:1b,Passengers:[{id:"minecraft:item_display",brightness:{sky:10,block:15},Tags:["setLife"],item_display:"head",item:{id:"minecraft:light_gray_concrete",count:1b,components:{"item_model":"sr/item/purple_rocket"}}}]}
 execute at @s positioned ~ ~1.6 ~ as @e[type=armor_stand,tag=aimMe] run tp @s ~ ~ ~ ~ ~
-
-#summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Marker:1b,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"light_gray_concrete",count:1,components:{"minecraft:custom_model_data":1111111}}],HandItems:[{},{}],Tags:["missile","aimMe","homing"]}
 
 execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=01a] run tag @e[tag=aimMe,limit=1,sort=nearest] add hurryUp
 execute if entity @s[tag=playerCyan] run tag @e[tag=aimMe,limit=1,sort=nearest] add itemCyan

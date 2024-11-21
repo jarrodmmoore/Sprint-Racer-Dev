@@ -148,4 +148,4 @@ execute if entity @e[limit=1,tag=currentMaster,type=armor_stand,tag=playerCyan] 
 effect give @s resistance 1 200 true
 
 #held item in battle mode
-execute if score global gameState matches 3 run data merge entity @s {HandItems:[{id:"minecraft:wooden_sword",count:1,components:{"minecraft:custom_model_data":1111111}},{}]}
+execute if score global gameState matches 3 run data merge entity @s {HandItems:[{id:"minecraft:wooden_sword",count:1,components:{"minecraft:item_model":"sr/item/battle_bat"}},{}]}

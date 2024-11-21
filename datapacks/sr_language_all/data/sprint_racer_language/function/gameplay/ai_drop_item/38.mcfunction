@@ -1,4 +1,4 @@
-summon item ~ ~.3 ~ {Tags:["giveVelocity"],PickupDelay:40,Age:0,Item:{id:"minecraft:black_terracotta",count:1,components:{"minecraft:custom_model_data":1111111,"minecraft:enchantments":{levels:{"minecraft:lure":1},show_in_tooltip:0b},"minecraft:custom_name":'["",{"text":"↑ ","color":"dark_purple","bold":true,"italic":false},{"translate":"sr.item_elite.enderman","color":"light_purple","bold":true,"italic":false}]',"minecraft:custom_data":{elite18:1b,stay:1b,item:1b,eliteitem:1b,rightclick:1b}}}}
+summon item ~ ~.3 ~ {Tags:["giveVelocity"],PickupDelay:40,Age:0,Item:{id:"minecraft:black_terracotta",count:1,components:{"minecraft:item_model":"sr/item/enderman_thief","minecraft:enchantments":{levels:{"minecraft:lure":1},show_in_tooltip:0b},"minecraft:custom_name":'["",{"text":"↑ ","color":"dark_purple","bold":true,"italic":false},{"translate":"sr.item_elite.enderman","color":"light_purple","bold":true,"italic":false}]',"minecraft:custom_data":{elite18:1b,stay:1b,item:1b,eliteitem:1b,rightclick:1b}}}}
 scoreboard players remove @s aiHasItem38 1
 
 execute if entity @s[scores={aiHasItem38=1..}] run function sprint_racer_language:gameplay/ai_drop_item/38

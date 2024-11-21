@@ -1,11 +1,11 @@
 #give more based on item luck
-give @s[tag=!justOne,scores={itemLuck=..1}] minecraft:bricks[custom_model_data=1111111,custom_name='{"translate":"sr.item.chicken_mine","color":"green","bold":true,"italic":false}',custom_data={no15:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 1
-give @s[tag=!justOne,scores={itemLuck=2}] minecraft:bricks[custom_model_data=1111111,custom_name='{"translate":"sr.item.chicken_mine","color":"green","bold":true,"italic":false}',custom_data={no15:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 2
-give @s[tag=!justOne,scores={itemLuck=3}] minecraft:bricks[custom_model_data=1111111,custom_name='{"translate":"sr.item.chicken_mine","color":"green","bold":true,"italic":false}',custom_data={no15:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 3
-give @s[tag=!justOne,scores={itemLuck=4}] minecraft:bricks[custom_model_data=1111111,custom_name='{"translate":"sr.item.chicken_mine","color":"green","bold":true,"italic":false}',custom_data={no15:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 4
-give @s[tag=!justOne,scores={itemLuck=5..}] minecraft:bricks[custom_model_data=1111111,custom_name='{"translate":"sr.item.chicken_mine","color":"green","bold":true,"italic":false}',custom_data={no15:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 5
+give @s[tag=!justOne,scores={itemLuck=..1}] minecraft:bricks[item_model="sr/item/chicken_mine",custom_name='{"translate":"sr.item.chicken_mine","color":"green","bold":true,"italic":false}',custom_data={no15:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 1
+give @s[tag=!justOne,scores={itemLuck=2}] minecraft:bricks[item_model="sr/item/chicken_mine",custom_name='{"translate":"sr.item.chicken_mine","color":"green","bold":true,"italic":false}',custom_data={no15:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 2
+give @s[tag=!justOne,scores={itemLuck=3}] minecraft:bricks[item_model="sr/item/chicken_mine",custom_name='{"translate":"sr.item.chicken_mine","color":"green","bold":true,"italic":false}',custom_data={no15:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 3
+give @s[tag=!justOne,scores={itemLuck=4}] minecraft:bricks[item_model="sr/item/chicken_mine",custom_name='{"translate":"sr.item.chicken_mine","color":"green","bold":true,"italic":false}',custom_data={no15:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 4
+give @s[tag=!justOne,scores={itemLuck=5..}] minecraft:bricks[item_model="sr/item/chicken_mine",custom_name='{"translate":"sr.item.chicken_mine","color":"green","bold":true,"italic":false}',custom_data={no15:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 5
 
-give @s[tag=justOne] minecraft:bricks[custom_model_data=1111111,custom_name='{"translate":"sr.item.chicken_mine","color":"green","bold":true,"italic":false}',custom_data={no15:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 1
+give @s[tag=justOne] minecraft:bricks[item_model="sr/item/chicken_mine",custom_name='{"translate":"sr.item.chicken_mine","color":"green","bold":true,"italic":false}',custom_data={no15:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 1
 
 
 scoreboard players set @s[tag=ai] math 0

@@ -1,7 +1,7 @@
 #shoot fireball
 
 #summon the missle/fireball, aimed at the looktarget
-summon armor_stand ~ ~1 ~ {Tags:["missile","aimMe","fireball"],Marker:1b,Invisible:1b,Invulnerable:1b,Passengers:[{id:"minecraft:item_display",brightness:{sky:10,block:15},Tags:["setLife"],item_display:"head",item:{id:"minecraft:magma_block",count:1b,components:{"custom_model_data":5555555}}}]}
+summon armor_stand ~ ~1 ~ {Tags:["missile","aimMe","fireball"],Marker:1b,Invisible:1b,Invulnerable:1b,Passengers:[{id:"minecraft:item_display",brightness:{sky:10,block:15},Tags:["setLife"],item_display:"head",item:{id:"minecraft:magma_block",count:1b,components:{"item_model":"sr/item/better_fireball"}}}]}
 execute if entity @e[tag=looktarget] as @e[tag=aimMe] at @s run tp @s ~ ~1.6 ~ facing entity @e[limit=1,tag=looktarget] feet
 execute unless entity @e[tag=looktarget] at @s run tp @e[tag=aimMe] ~ ~1.6 ~ ~ ~
 execute if entity @s[tag=playerCyan] run tag @e[tag=aimMe,limit=1] add itemCyan
