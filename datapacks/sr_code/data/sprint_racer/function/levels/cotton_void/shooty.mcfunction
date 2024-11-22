@@ -31,3 +31,7 @@ execute as @e[tag=aimMe,limit=6,type=armor_stand] at @s run playsound minecraft:
 execute as @e[tag=aimMe,limit=6,type=armor_stand] at @s run particle explosion ^ ^1.5 ^.5 0.2 0.2 0.2 .01 1
 
 tag @e[tag=aimMe,limit=6,type=armor_stand] remove aimMe
+
+#rocket item_display is temporary
+scoreboard players set @e[tag=setLife,type=item_display] lifespan 3
+tag @e[tag=setLife,type=item_display] remove setLife

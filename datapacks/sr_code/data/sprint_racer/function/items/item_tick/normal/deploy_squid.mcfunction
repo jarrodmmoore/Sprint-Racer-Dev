@@ -20,7 +20,8 @@ scoreboard players set @e[tag=ai,tag=squidTarget] hitstun 100
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=11a] as @e[tag=setme] run function sprint_racer:cheats/homing_entity_chance
 tag @e[tag=setme] remove setme
 
-effect give @e[tag=squidTarget] blindness 4 0 true
+#effect give @e[tag=squidTarget] blindness 4 0 true
+effect give @e[tag=squidTarget] darkness 4 0 true
 execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=halftick] run scoreboard players set @e[tag=squidTarget] blinddelay 12
 execute if score #halftick value matches 1 run scoreboard players set @e[tag=squidTarget] blinddelay 6
 execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=halftick] run scoreboard players set @e[tag=squidTarget] blindtime 64

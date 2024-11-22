@@ -8,6 +8,7 @@ effect clear @a regeneration
 effect clear @a resistance
 effect clear @a invisibility
 effect clear @a blindness
+effect clear @a darkness
 effect clear @a hunger
 effect clear @a poison
 effect clear @a wither

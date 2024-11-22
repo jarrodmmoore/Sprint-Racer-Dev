@@ -20,6 +20,7 @@ scoreboard players set @s invulTime 0
 scoreboard players set @s gAppleTime 0
 
 effect clear @s blindness
+effect clear @s darkness
 
 #race will end 75 seconds after first finish
 execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={timeRemaining=..1500}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 1500

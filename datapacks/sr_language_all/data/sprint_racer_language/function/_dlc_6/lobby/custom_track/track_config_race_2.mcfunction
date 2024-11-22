@@ -57,5 +57,8 @@ execute as @e[tag=focusT,type=armor_stand] run function sprint_racer_language:_d
 #kill plane (macro)
 execute as @e[tag=focusT,type=armor_stand] run function sprint_racer_language:_dlc_6/lobby/custom_track/track_config_kill_plane_macro with storage sprint_racer:func_args
 
+#export track?
+tellraw @a ["",{"translate":"sr.custom_track.export_track_settings","color":"light_purple","clickEvent":{"action":"suggest_command","value":"/function sprint_racer:game_logic/10/storage/export_track {filename:\"trackname\"}"},"hoverEvent":{"action":"show_text","contents":"Export track settings to saves/.../data (replace \"trackname\", must be all lower-case and no spaces)"}}]
+
 tellraw @a ["",{"text":"[<<]","color":"yellow","clickEvent":{"action":"run_command","value":"/function sprint_racer:game_logic/10/custom_config/page_previous"},"hoverEvent":{"action":"show_text","contents":"Next page"}},{"text":"  "},{"text":"p. 2/2","italic":true},{"text":"  "},{"text":"[>>]","color":"dark_gray"}]
 tellraw @a ["",{"text":"===/\\=== ","color":"aqua"},{"selector":"@e[limit=1,tag=focusT,type=armor_stand]"},{"text":" ===/\\===","color":"aqua"}]

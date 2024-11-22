@@ -10,3 +10,5 @@ execute if entity @s[scores={worldmapID=-21}] run function sprint_racer_language
 execute if entity @s[scores={worldmapID=-22}] run function sprint_racer_language:_dlc_1/lobby/worldmap/custom/custom_battle_medium
 execute if entity @s[scores={worldmapID=-23}] run function sprint_racer_language:_dlc_1/lobby/worldmap/custom/custom_battle_large
 execute if entity @s[scores={worldmapID=-24}] run function sprint_racer_language:_dlc_6/lobby/worldmap/custom/custom_battle_custom_preview
+#4 years later, we finally add support for "tiny" size map generic preview images. whoop de doo
+execute if entity @s[scores={worldmapID=-25}] run function sprint_racer_language:_dlc_6/lobby/worldmap/custom/custom_battle_tiny

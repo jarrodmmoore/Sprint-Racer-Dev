@@ -13,8 +13,8 @@ execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1
 tag @e[tag=aimMe,limit=1] remove aimMe
 
 #rocket item_display is temporary
-scoreboard players set @e[tag=setLife] lifespan 3
-tag @e[tag=setLife] remove setLife
+scoreboard players set @e[tag=setLife,distance=..3,type=item_display] lifespan 3
+tag @e[tag=setLife,distance=..3,type=item_display] remove setLife
 
 execute unless entity @s[scores={speedlevel=7..,moveState=2}] run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 1.5
 execute if entity @s[scores={speedlevel=7..,moveState=2}] run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 1.7

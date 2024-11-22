@@ -6,6 +6,7 @@ execute if entity @s[tag=customrace,tag=trackIntermed] run data merge entity @e[
 execute if entity @s[tag=customrace,tag=trackExpert] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":9991}}}
 execute if entity @s[tag=customrace,tag=trackMaster] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":9992}}}
 
+execute if entity @s[tag=custombattle,tag=trackTiny] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":9988}}}
 execute if entity @s[tag=custombattle,tag=trackSmall] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":9993}}}
 execute if entity @s[tag=custombattle,tag=trackMedium] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":9994}}}
 execute if entity @s[tag=custombattle,tag=trackLarge] run data merge entity @e[limit=1,type=item_frame,tag=displayFrame] {Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":9995}}}

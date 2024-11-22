@@ -74,6 +74,10 @@ tag @s remove 60a
 
 tag @s remove 61a
 tag @s remove 62a
+tag @s remove 63a
+tag @s remove 64a
+tag @s remove 65a
+tag @s remove 66a
 
 
 #alright, now enable them again!

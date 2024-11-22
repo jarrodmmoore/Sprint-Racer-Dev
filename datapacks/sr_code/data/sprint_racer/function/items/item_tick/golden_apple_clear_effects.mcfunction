@@ -1,6 +1,7 @@
 effect clear @s poison
 effect clear @s regeneration
 effect clear @s blindness
+effect clear @s darkness
 effect clear @s wither
 effect clear @s slowness
 effect clear @s nausea

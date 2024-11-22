@@ -1,3 +1,4 @@
+execute if entity @s[tag=custombattle,tag=trackTiny,tag=!customPreview] run function sprint_racer_language:_dlc_6/lobby/vote_preview/_custom_battle_tiny
 execute if entity @s[tag=custombattle,tag=trackSmall,tag=!customPreview] run function sprint_racer_language:_dlc_1/lobby/vote_preview/_custom_battle_small
 execute if entity @s[tag=custombattle,tag=trackMedium,tag=!customPreview] run function sprint_racer_language:_dlc_1/lobby/vote_preview/_custom_battle_medium
 execute if entity @s[tag=custombattle,tag=trackLarge,tag=!customPreview] run function sprint_racer_language:_dlc_1/lobby/vote_preview/_custom_battle_large

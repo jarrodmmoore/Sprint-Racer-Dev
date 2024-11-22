@@ -29,6 +29,7 @@ scoreboard players set @s invulTime 0
 scoreboard players set @s gAppleTime 0
 
 effect clear @s blindness
+effect clear @s darkness
 
 #update HUD if needed
 #scoreboard players remove @s lapFake 1

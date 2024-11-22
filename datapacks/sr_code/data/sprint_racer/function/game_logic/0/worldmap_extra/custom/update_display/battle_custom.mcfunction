@@ -16,6 +16,11 @@ execute positioned 2480 103 269 run data merge entity @e[type=minecraft:item_fra
 execute positioned 2480 100 269 run data merge entity @e[type=minecraft:item_frame,limit=1,sort=nearest] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":9099}}}
 scoreboard players set @e[tag=wmCustomStand] worldmapID -20
 
+#"tiny" text overlay
+execute if entity @e[tag=wmCustomT,tag=trackTiny] positioned 2480 100 266 run data merge entity @e[type=minecraft:item_frame,limit=1,sort=nearest] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":7095}}}
+execute if entity @e[tag=wmCustomT,tag=trackTiny] positioned 2480 100 269 run data merge entity @e[type=minecraft:item_frame,limit=1,sort=nearest] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":9095}}}
+execute if entity @e[tag=wmCustomT,tag=trackTiny] run scoreboard players set @e[tag=wmCustomStand] worldmapID -25
+
 #"small" text overlay
 execute if entity @e[tag=wmCustomT,tag=trackSmall] positioned 2480 100 266 run data merge entity @e[type=minecraft:item_frame,limit=1,sort=nearest] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":7096}}}
 execute if entity @e[tag=wmCustomT,tag=trackSmall] positioned 2480 100 269 run data merge entity @e[type=minecraft:item_frame,limit=1,sort=nearest] {Invulnerable:1b,Silent:1b,Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":9096}}}
