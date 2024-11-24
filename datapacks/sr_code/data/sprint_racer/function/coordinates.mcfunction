@@ -30,6 +30,7 @@ scoreboard players set @s[scores={rot_yaw=328..}] faceDirection 5
 
 #not related but i'm putting this stuff here
 scoreboard players add @s timeSinceDeath 1
+execute if score #halftick value matches 1 run scoreboard players add @s timeSinceDeath 1
 scoreboard players remove @s[tag=!showCheckNav,scores={showCheckNav=1..}] showCheckNav 1
 
 tag @s[tag=poisoned] remove poisoned

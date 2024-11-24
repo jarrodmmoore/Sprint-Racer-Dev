@@ -4,4 +4,4 @@ scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand
 fill 2483 100 266 2483 103 269 light_blue_concrete
 
 function sprint_racer:game_logic/0/worldmap_extra/custom/keep_in_bounds
-function sprint_racer_language:_dlc_1/lobby/track_selector_buttons/race
+execute if loaded ~ ~ ~ run function sprint_racer_language:_dlc_1/lobby/track_selector_buttons/race

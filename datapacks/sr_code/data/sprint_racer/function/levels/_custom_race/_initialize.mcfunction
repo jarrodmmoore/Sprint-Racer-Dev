@@ -58,5 +58,7 @@ scoreboard players operation @e[type=armor_stand,tag=random,x=1548,y=155,z=406,d
 tag @e[type=armor_stand,limit=1,tag=random,x=1548,y=155,z=406,distance=..1,scores={math=0}] add setBGM
 
 #CUSTOM CODE? RUN IT
-execute if entity @s[scores={customCodePath=1..50}] run function sprint_racer:levels/_index_custom_path_init_1_50
-execute if entity @s[scores={customCodePath=51..100}] run function sprint_racer:levels/_index_custom_path_init_51_100
+execute if entity @s[tag=usingMacroCodePath] store result storage sprint_racer:func_args id int 1 run scoreboard players get @s customTagLine
+execute if entity @s[tag=usingMacroCodePath] run function sprint_racer:levels/_custom_general/init_with_macro_path with storage sprint_racer:func_args
+execute if entity @s[tag=!usingMacroCodePath,scores={customCodePath=1..50}] run function sprint_racer:levels/_index_custom_path_init_1_50
+execute if entity @s[tag=!usingMacroCodePath,scores={customCodePath=51..100}] run function sprint_racer:levels/_index_custom_path_init_51_100

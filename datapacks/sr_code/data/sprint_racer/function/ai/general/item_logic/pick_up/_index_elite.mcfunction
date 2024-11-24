@@ -22,3 +22,5 @@ execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{elite17:1b}
 execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{elite18:1b}}}}] run function sprint_racer:ai/general/item_logic/pick_up/elite18
 execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{elite19:1b}}}}] run function sprint_racer:ai/general/item_logic/pick_up/elite19
 execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{elite20:1b}}}}] run function sprint_racer:ai/general/item_logic/pick_up/elite20
+
+execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{battlebat_elite:1b}}}}] run function sprint_racer:ai/general/item_logic/pick_up/battle_basher

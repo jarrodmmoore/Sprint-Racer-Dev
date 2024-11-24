@@ -1,5 +1,6 @@
-execute if entity @s[tag=customtrack,scores={customCodePath=1..50}] run function sprint_racer:levels/_index_levels_custom_path_start_countdown_1_50
-execute if entity @s[tag=customtrack,scores={customCodePath=51..100}] run function sprint_racer:levels/_index_levels_custom_path_start_countdown_51_100
+execute if entity @s[tag=customtrack,tag=usingMacroCodePath] run function sprint_racer:levels/_custom_general/start_countdown_with_macro_path with storage sprint_racer:func_args
+execute if entity @s[tag=customtrack,tag=!usingMacroCodePath,scores={customCodePath=1..50}] run function sprint_racer:levels/_index_levels_custom_path_start_countdown_1_50
+execute if entity @s[tag=customtrack,tag=!usingMacroCodePath,scores={customCodePath=51..100}] run function sprint_racer:levels/_index_levels_custom_path_start_countdown_51_100
 
 execute if entity @s[scores={rNumber=50}] run function sprint_racer:levels/underworld/start_countdown
 execute if entity @s[scores={rNumber=1}] run function sprint_racer:levels/windy_watch/start_countdown

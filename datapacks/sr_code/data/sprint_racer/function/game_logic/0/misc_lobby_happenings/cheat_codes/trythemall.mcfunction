@@ -12,8 +12,8 @@ tag @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand] add 00
 scoreboard players set @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand] aiHoldingItem 0
 function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/_index_cheat_menu
 
-#slot limit is 9 by default
-execute unless entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=57] run scoreboard players set #cheatSlotLimit value 9
+#slot limit is 1 by default
+execute unless entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=57] run scoreboard players set #cheatSlotLimit value 1
 
 #un-ban the underworld track right away now that we've discovered it
 tag @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=50}] remove btBlacklist

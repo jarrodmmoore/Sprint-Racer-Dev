@@ -21,3 +21,4 @@ execute if items entity @s weapon.mainhand *[custom_data~{no18:1b}] run function
 execute if items entity @s weapon.mainhand *[custom_data~{no19:1b}] run function sprint_racer:items/enchant_item/19
 execute if items entity @s weapon.mainhand *[custom_data~{no20:1b}] run function sprint_racer:items/enchant_item/20
 execute if items entity @s weapon.mainhand *[custom_data~{fishing_rod:1b}] run function sprint_racer:items/enchant_item/fishing_rod
+execute if items entity @s weapon.mainhand *[custom_data~{battlebat_basic:1b}] run function sprint_racer:items/enchant_item/battle_bat

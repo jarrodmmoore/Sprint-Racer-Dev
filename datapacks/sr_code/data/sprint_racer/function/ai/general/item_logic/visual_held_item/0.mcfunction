@@ -1,2 +1,3 @@
 execute unless score global gameState matches 3 run data merge entity @s {HandItems:[{},{}]}
-execute if score global gameState matches 3 run data merge entity @s {HandItems:[{id:"minecraft:wooden_sword",count:1,components:{"minecraft:item_model":"sr/item/battle_bat"}},{}]}
+execute if score global gameState matches 3 unless score @s aiBattleBasherDurability matches 1.. run data merge entity @s {HandItems:[{id:"minecraft:wooden_sword",count:1,components:{"minecraft:item_model":"sr/item/battle_bat"}},{}]}
+execute if score global gameState matches 3 if score @s aiBattleBasherDurability matches 1.. run data merge entity @s {HandItems:[{id:"minecraft:wooden_sword",count:1,components:{"minecraft:item_model":"sr/item/battle_basher"}},{}]}

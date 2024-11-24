@@ -88,24 +88,24 @@ $data modify storage sprint_racer:custom_track_storage_$(temp_id) kill_plane set
 #--time attack medals
 #bronze
 $scoreboard players set @s customMedalB1 $(medal_bronze_digit_1)
-$scoreboard players set @s customMedalB2 $(medal_bronze_digit_1)
-$scoreboard players set @s customMedalB3 $(medal_bronze_digit_1)
-$scoreboard players set @s customMedalB4 $(medal_bronze_digit_1)
+$scoreboard players set @s customMedalB2 $(medal_bronze_digit_2)
+$scoreboard players set @s customMedalB3 $(medal_bronze_digit_3)
+$scoreboard players set @s customMedalB4 $(medal_bronze_digit_4)
 #silver
 $scoreboard players set @s customMedalS1 $(medal_silver_digit_1)
-$scoreboard players set @s customMedalS2 $(medal_silver_digit_1)
-$scoreboard players set @s customMedalS3 $(medal_silver_digit_1)
-$scoreboard players set @s customMedalS4 $(medal_silver_digit_1)
+$scoreboard players set @s customMedalS2 $(medal_silver_digit_2)
+$scoreboard players set @s customMedalS3 $(medal_silver_digit_3)
+$scoreboard players set @s customMedalS4 $(medal_silver_digit_4)
 #gold
 $scoreboard players set @s customMedalG1 $(medal_gold_digit_1)
-$scoreboard players set @s customMedalG2 $(medal_gold_digit_1)
-$scoreboard players set @s customMedalG3 $(medal_gold_digit_1)
-$scoreboard players set @s customMedalG4 $(medal_gold_digit_1)
+$scoreboard players set @s customMedalG2 $(medal_gold_digit_2)
+$scoreboard players set @s customMedalG3 $(medal_gold_digit_3)
+$scoreboard players set @s customMedalG4 $(medal_gold_digit_4)
 #diamond
 $scoreboard players set @s customMedalD1 $(medal_diamond_digit_1)
-$scoreboard players set @s customMedalD2 $(medal_diamond_digit_1)
-$scoreboard players set @s customMedalD3 $(medal_diamond_digit_1)
-$scoreboard players set @s customMedalD4 $(medal_diamond_digit_1)
+$scoreboard players set @s customMedalD2 $(medal_diamond_digit_2)
+$scoreboard players set @s customMedalD3 $(medal_diamond_digit_3)
+$scoreboard players set @s customMedalD4 $(medal_diamond_digit_4)
 
 #we did it
 scoreboard players set #success value 1

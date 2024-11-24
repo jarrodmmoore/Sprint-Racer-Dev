@@ -69,4 +69,4 @@ tag @e[tag=focusT] remove focusT
 tag @s remove focusTrackBan
 
 #back to lobby
-execute if entity @a[scores={carrotInput=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{exit:1b}}}}] run function sprint_racer:game_logic/9/exit
+execute as @a[scores={carrotInput=1..}] if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{exit:1b}}}}] run function sprint_racer:game_logic/9/exit

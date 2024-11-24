@@ -93,4 +93,4 @@ execute as @a[scores={inputCooldown=..0,carrotInput=1..}] if items entity @s wea
 
 
 #back to lobby
-execute if items entity @a[scores={carrotInput=1..}] weapon.mainhand barrier[custom_data~{exit:1b}] run function sprint_racer:game_logic/6/click_exit
+execute as @a[scores={carrotInput=1..}] if items entity @s weapon.mainhand barrier[custom_data~{exit:1b}] run function sprint_racer:game_logic/6/click_exit

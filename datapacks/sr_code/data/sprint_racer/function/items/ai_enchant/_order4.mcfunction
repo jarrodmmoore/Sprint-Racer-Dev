@@ -1,3 +1,4 @@
+execute if score global gameState matches 3 if entity @s[tag=!enchDone] unless score @s aiBattleBasherDurability matches 1.. run function sprint_racer:items/ai_enchant/battle_bat
 execute if entity @s[tag=!enchDone,scores={aiHasItem11=1..}] run function sprint_racer:items/ai_enchant/11
 execute if entity @s[tag=!enchDone,scores={aiHasItem20=1..}] run function sprint_racer:items/ai_enchant/20
 execute if entity @s[tag=!enchDone,scores={aiHasItem17=1..}] run function sprint_racer:items/ai_enchant/17

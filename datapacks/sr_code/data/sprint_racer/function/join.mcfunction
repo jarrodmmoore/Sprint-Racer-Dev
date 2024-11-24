@@ -9,6 +9,7 @@ tp @s 1556 88.5 406 90 0
 
 #get the admin tag if the sprint racer config files told us we are admin
 tag @s[scores={adminMode=1..}] add admin
+tag @s remove dev
 
 #grand prix points are saved, even on re-join
 scoreboard players add @s gpPoints 0

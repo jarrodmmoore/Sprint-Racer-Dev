@@ -195,6 +195,7 @@ scoreboard objectives add optRAIdiff dummy
 scoreboard objectives add optBAIdiff dummy
 scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] optRAIdiff 0
 scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] optBAIdiff 0
+scoreboard objectives add aiBattleBasherDurability dummy
 
 
 #make sure command blocks are enabled

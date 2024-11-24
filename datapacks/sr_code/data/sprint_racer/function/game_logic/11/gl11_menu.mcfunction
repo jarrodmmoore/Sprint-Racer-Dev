@@ -72,4 +72,4 @@ execute if block 1591 72 427 minecraft:stone_button[powered=true] run function s
 
 
 #back to lobby
-execute if entity @a[scores={inputCooldown=..0,carrotInput=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{exit:1b}}}}] run function sprint_racer:game_logic/11/exit
+execute as @a[scores={inputCooldown=..0,carrotInput=1..}] if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{exit:1b}}}}] run function sprint_racer:game_logic/11/exit

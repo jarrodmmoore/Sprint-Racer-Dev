@@ -3,7 +3,9 @@ effect give @e[tag=hit_target,scores={resistTime=1..}] resistance 1 1 true
 
 #effect give @e[tag=hit_target,tag=!undead] instant_damage 1 0 true
 #effect give @e[tag=hit_target,tag=undead] instant_health 1 0 true
-damage @e[tag=hit_target,limit=1] 3 mob_attack by @s from @s
+execute unless score @s aiBattleBasherDurability matches 1.. run damage @e[tag=hit_target,limit=1] 3 mob_attack by @s from @s
+execute if score @s aiBattleBasherDurability matches 1.. run damage @e[tag=hit_target,limit=1] 5 mob_attack by @s from @s
+scoreboard players remove @s[scores={aiBattleBasherDurability=1..}] aiBattleBasherDurability 1
 
 scoreboard players operation @e[tag=hit_target] attackerID = @s playerID
 scoreboard players set @e[tag=hit_target] attackTime 100

@@ -17,4 +17,5 @@ execute if entity @s[tag=useOverheadMap] run function sprint_racer:levels/_custo
 
 
 #custom track code?
-execute if entity @s[tag=customtrack,scores={customCodePath=1..}] run function sprint_racer:levels/_index_levels_custom_path
+execute if entity @s[tag=usingMacroCodePath] run function sprint_racer:levels/_custom_general/main_with_macro_path with storage sprint_racer:func_args
+execute if entity @s[tag=!usingMacroCodePath,scores={customCodePath=1..}] run function sprint_racer:levels/_index_levels_custom_path

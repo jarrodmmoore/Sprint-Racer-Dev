@@ -10,5 +10,6 @@ execute if entity @s[scores={giveItem=106..110}] run function sprint_racer:items
 execute if entity @s[scores={giveItem=111..115}] run function sprint_racer:items/item_tick/steal_item/hand_item_enderman/_index_give_111_115
 execute if entity @s[scores={giveItem=116..120}] run function sprint_racer:items/item_tick/steal_item/hand_item_enderman/_index_give_116_120
 execute if entity @s[scores={giveItem=121}] run function sprint_racer:items/item_tick/steal_item/hand_item_enderman/fishing_rod
+execute if entity @s[scores={giveItem=122}] run function sprint_racer:items/item_tick/steal_item/hand_item_enderman/battle_basher
 
 tag @e[tag=enderHolder] remove enderHolder

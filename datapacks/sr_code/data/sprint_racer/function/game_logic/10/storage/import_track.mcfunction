@@ -11,7 +11,7 @@ execute if score #success value matches 0 run return run tellraw @s ["",{"transl
 
 
 #storage exists? check and see if it's a duplicate track
-$function sprint_racer:game_logic/10/storage/verify_unique_track_name {filename:"$(filename)"}
+$function sprint_racer:game_logic/10/storage/verify_unique_track {filename:"$(filename)"}
 
 #kick out if it's a duplicate
 execute if score #success value matches 0 run return 0

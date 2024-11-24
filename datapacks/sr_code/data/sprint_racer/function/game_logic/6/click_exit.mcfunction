@@ -1,4 +1,5 @@
-#run by w
-tag @s remove choosingTrack
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove choosingTrack
 function sprint_racer_language:_dlc_1/gameplay/ta_ended
-function sprint_racer:game_logic/0/_initialize
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:game_logic/0/_initialize
+
+tp @s[type=player] 1629 80 365 90 0
