@@ -14,5 +14,5 @@ execute if entity @s[tag=playerCyan] unless entity @s[scores={finishPos=1..20}] 
 
 tellraw @a ["",{"text":" "}]
 
-execute as @a at @s run playsound minecraft:entity.generic.explode master @s ~ 100000 ~ .7 1.2 .7
+execute as @a at @s run playsound minecraft:custom_sfx/explode2 master @s ~ 100000 ~ .7 1.2 .7
 execute as @a at @s run playsound minecraft:entity.ender_dragon.hurt master @s ~ 100000 ~ 1000000 .6

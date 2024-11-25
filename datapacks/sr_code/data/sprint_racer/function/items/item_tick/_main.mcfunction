@@ -77,7 +77,7 @@ execute as @e[tag=chickenmine,type=chicken] at @s run function sprint_racer:item
 execute as @e[type=zombified_piglin,tag=cminezombie] at @s run function sprint_racer:items/item_tick/chicken_mine_zombie
 
 #generic explosion
-execute if entity @e[tag=explosion] run function sprint_racer:items/item_tick/explosion
+execute as @e[tag=explosion,type=armor_stand] at @s run function sprint_racer:items/item_tick/explosion
 
 #tnt (MOVED)
 #execute if entity @e[type=tnt] run function sprint_racer:items/item_tick/tnt

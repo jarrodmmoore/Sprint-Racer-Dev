@@ -25,7 +25,7 @@ execute if entity @s[scores={gameTime=-40..49}] run function sprint_racer:hold_p
 
 
 execute if entity @s[scores={gameTime=90}] run function sprint_racer:game_logic/7/setup_medal_times
-execute if entity @s[scores={gameTime=50}] run team modify player seeFriendlyInvisibles false
+execute if entity @s[scores={gameTime=50}] run team modify player seeFriendlyInvisibles true
 execute if entity @s[scores={gameTime=50}] run function sprint_racer:game_logic/7/find_playerstart_main
 execute if entity @s[scores={gameTime=50}] run effect clear @a night_vision
 execute if entity @s[scores={gameTime=51}] as @a[tag=!playing] at @s run function sprint_racer:game_logic/7/spectators_setup
@@ -60,7 +60,7 @@ execute if entity @s[scores={gameTime=0..240}] as @e[tag=chosenTrack] run functi
 #reset speeds and heal players at "GO!"
 execute if entity @s[scores={gameTime=160}] run scoreboard players set @s[scores={timeRemaining=..50}] timeRemaining 4800
 execute if entity @s[scores={gameTime=160}] run function sprint_racer:reset_speeds
-execute if entity @s[scores={gameTime=160}] run team modify player seeFriendlyInvisibles false
+execute if entity @s[scores={gameTime=160}] run team modify player seeFriendlyInvisibles true
 execute if entity @s[scores={gameTime=160}] run function sprint_racer:game_logic/1/start_clear_effects
 execute if entity @s[scores={gameTime=160}] run effect give @a resistance 1 100 true
 execute if entity @s[scores={gameTime=160}] run tag @a[tag=noInventory] remove noInventory

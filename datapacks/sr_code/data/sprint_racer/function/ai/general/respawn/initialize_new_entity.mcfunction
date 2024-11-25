@@ -133,6 +133,9 @@ execute if score #test value matches ..0 if score global aiLevel matches 5.. unl
 #cheat code overrides difficulty at the last possible second...
 execute if entity @e[limit=1,type=armor_stand,tag=54a,tag=cheats,x=1548,y=148,z=422,distance=..1] run function sprint_racer:ai/general/respawn/_custom_ai_difficulty
 
+#attribute for explosion resistance
+function sprint_racer:explosion_knockback_resistance
+
 #attributes related to cheat codes
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=cheatdetected] run function sprint_racer:cheats/update_player_attributes_ai
 

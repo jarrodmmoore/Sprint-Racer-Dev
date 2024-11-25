@@ -1,6 +1,5 @@
 #particle explosion ~ ~ ~ 1 1 1 1 5
 #particle explosion ~ ~ ~ 1 1 1 1 5 force
-#playsound minecraft:entity.generic.explode master @a ~ ~ ~ 2 1
 
 tag @e[tag=hitMe] remove hitMe
 

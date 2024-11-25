@@ -23,6 +23,9 @@ execute if score #setspeed value matches 12.. as @a run attribute @s movement_sp
 
 execute as @a unless score @s cStatTopS matches 0 run function sprint_racer:cheats/shoes/modified_top_speed
 
+#players should have explosion resistance
+execute as @a run function sprint_racer:explosion_knockback_resistance
+
 #let's also handle custom max HP while we're here
 execute as @a if score @s cStatHP matches 20 run attribute @s minecraft:max_health base set 20
 execute as @a unless score @s cStatHP matches 20 run function sprint_racer:cheats/shoes/modified_max_hp

@@ -11,8 +11,8 @@ tag @e[tag=aimMe] remove aimMe
 
 
 #particle and sound effect
-execute unless entity @s[scores={speedlevel=7..,moveState=2}] run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 1.3
-execute if entity @s[scores={speedlevel=7..,moveState=2}] run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 1.7
+execute unless entity @s[scores={speedlevel=7..,moveState=2}] run function sprint_racer:explode_sound_effect {volume:1,pitch:1.3}
+execute if entity @s[scores={speedlevel=7..,moveState=2}] run function sprint_racer:explode_sound_effect {volume:1,pitch:1.5}
 playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 1 .7
 particle explosion ^ ^1.5 ^.5 0.2 0.2 0.2 .01 1
 

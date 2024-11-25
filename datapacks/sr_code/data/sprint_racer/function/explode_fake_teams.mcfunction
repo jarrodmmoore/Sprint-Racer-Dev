@@ -1,6 +1,5 @@
 #particle explosion ~ ~ ~ 1 1 1 1 5
 #particle explosion ~ ~ ~ 1 1 1 1 5 force
-#playsound minecraft:entity.generic.explode master @a ~ ~ ~ 2 1 .1
 
 execute if entity @s[tag=itemCyan] at @s run tag @e[distance=..3,tag=slimetrap,tag=!itemCyan] add dissolve
 execute if entity @s[tag=itemCyan] at @s run tag @e[distance=..3,tag=magmatrap,tag=!itemCyan] add dissolve

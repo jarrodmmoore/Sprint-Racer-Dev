@@ -10,5 +10,5 @@ scoreboard players set @s subtitleDelay 40
 title @s[type=player] subtitle ["",{"translate":"sr.game.eliminated","color":"red","bold":true}]
 title @s[type=player] title [""]
 
-execute as @a at @s run playsound minecraft:entity.generic.explode master @s ~ 100000 ~ .7 1.2 .7
+execute as @a at @s run playsound minecraft:custom_sfx/explode2 master @s ~ 100000 ~ .7 1.2 .7
 execute as @a at @s run playsound minecraft:entity.ender_dragon.hurt master @s ~ 100000 ~ 1000000 .6
