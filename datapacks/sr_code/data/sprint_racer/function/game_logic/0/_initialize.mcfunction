@@ -39,6 +39,7 @@ scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand
 scoreboard players enable @a useCustomSoundtrack
 
 #this is for race mode...
+execute if score #clearCacheAllowed value matches 1 run scoreboard players reset * playerRequire
 scoreboard players set global playerRequire 0
 
 function sprint_racer:mid_game_vote/disable

@@ -15,12 +15,12 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scor
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160}] run fill 1334 60 817 1336 60 819 lime_glazed_terracotta
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160}] run fill 1364 61 818 1370 62 818 red_stained_glass
 
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=90}] run tag @e[tag=GLcheckpoint] remove posCalc
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=90}] run tag @e[tag=GLcheckpoint,tag=route1] add posCalc
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=100}] run tag @e[tag=GLcheckpoint] remove posCalc
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=100}] run tag @e[tag=GLcheckpoint,tag=route1] add posCalc
 
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=90}] run scoreboard players set @e[tag=GLaibcSetMe] AIBC_dir1 2
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=90}] run scoreboard players set @e[tag=GLaibcSetMe] AIBC_event 3
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=90}] run scoreboard players set @e[tag=GLaibcSetMe] AIBC_condition 20
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160}] run scoreboard players set @e[tag=GLaibcSetMe] AIBC_dir1 2
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160}] run scoreboard players set @e[tag=GLaibcSetMe] AIBC_event 3
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160}] run scoreboard players set @e[tag=GLaibcSetMe] AIBC_condition 20
 
 
 #time attack shortcut?

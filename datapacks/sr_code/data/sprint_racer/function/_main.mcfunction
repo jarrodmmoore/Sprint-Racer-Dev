@@ -65,9 +65,6 @@ scoreboard players add #join_tick value 1
 scoreboard players add @a join 1
 execute as @a unless score @s join = #join_tick value run function sprint_racer:join
 execute as @a[scores={hpSet=..999}] run function sprint_racer:hp_scoreboard_fix
-#execute as @a unless entity @s[scores={join=100}] run function sprint_racer:join
-#scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] join 1
-#execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={join=1000..}] run function sprint_racer:join_objective_refresh
 
 #death logic for immediate respawns
 execute as @a[scores={death=0..}] at @s run function sprint_racer:death_logic/_death_logic_main

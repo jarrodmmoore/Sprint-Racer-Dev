@@ -27,8 +27,8 @@ execute if entity @a[tag=playing,scores={check=5..6}] run function sprint_racer:
 execute if score #halftick value matches 1 if entity @a[tag=playing,scores={check=5..6}] run function sprint_racer:levels/the_gauntlet/platforms
 
 #guardians in the water section
-execute if entity @a[tag=playing,x=898,y=0,z=1942,dx=600,dy=35,dz=600,scores={check=10..11}] unless entity @e[tag=GTguardian] run function sprint_racer:levels/the_gauntlet/guardians
-execute if entity @e[tag=GTguardian] unless entity @a[tag=playing,scores={check=10..11}] run kill @e[tag=GTguardian]
+execute if entity @a[tag=playing,x=898,y=0,z=1942,dx=600,dy=35,dz=600,scores={check=10..11}] unless entity @e[tag=GTguardian,type=guardian] run function sprint_racer:levels/the_gauntlet/guardians
+execute if entity @e[tag=GTguardian,type=guardian] unless entity @a[tag=playing,scores={check=10..11}] run kill @e[tag=GTguardian,type=guardian]
 
 #effects in the super speed section
 execute as @a[tag=playing,gamemode=!spectator,scores={check=15..16,speedBoost=..30}] at @s if block ~ ~-1 ~ cyan_glazed_terracotta run scoreboard players set @s speedBoost 31

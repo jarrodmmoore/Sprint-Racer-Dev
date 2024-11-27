@@ -80,8 +80,8 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA] add optVote
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA] remove optSetA
 
 #reset the "in order" sequence
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] trackSequenceR 50
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] trackSequenceB 50
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] trackSequenceR 0
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] trackSequenceB 0
 
 tag @s remove clickSign
 
