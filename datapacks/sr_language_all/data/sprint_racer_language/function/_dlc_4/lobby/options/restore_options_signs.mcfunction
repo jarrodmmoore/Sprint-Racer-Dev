@@ -1,22 +1,22 @@
 #admin mode
-setblock 1602 88 369 minecraft:birch_wall_sign[facing=south]
+setblock 1602 88 369 minecraft:pale_oak_wall_sign[facing=south]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=requireAdmin] run data merge block 1602 88 369 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/admin_mode"}}','{"text":"ADMIN MODE","bold":true,"color":"black"}','{"text":"[ON]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=requireAdmin] run data merge block 1602 88 369 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/admin_mode"}}','{"text":"ADMIN MODE","bold":true,"color":"black"}','{"text":"[OFF]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 
 #performance
-setblock 1606 97 452 minecraft:birch_wall_sign[facing=south]
+setblock 1606 97 452 minecraft:pale_oak_wall_sign[facing=south]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=autotick] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/performance"}}','{"text":"PERFORMANCE","bold":true,"color":"black"}','{"text":"[AUTO]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!halftick,tag=!moretick,tag=!autotick] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/performance"}}','{"text":"PERFORMANCE","bold":true,"color":"black"}','{"text":"[QUALITY]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=halftick,tag=!autotick] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/performance"}}','{"text":"PERFORMANCE","bold":true,"color":"black"}','{"text":"[FASTER]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=moretick,tag=!autotick] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/performance"}}','{"text":"PERFORMANCE","bold":true,"color":"black"}','{"text":"[QUALITY+]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 
 #speedometer bossbar
-setblock 1580 88 370 minecraft:birch_wall_sign[facing=south]
+setblock 1580 88 370 minecraft:pale_oak_wall_sign[facing=south]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=nospeedo] run data merge block 1580 88 370 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/speedometer_enable"}}','{"text":"SPEEDOMETER","bold":true,"color":"black"}','{"text":"[OFF]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=nospeedo] run data merge block 1580 88 370 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/speedometer_enable"}}','{"text":"SPEEDOMETER","bold":true,"color":"black"}','{"text":"[ON]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 
 #in-game HUD
-setblock 1585 88 370 minecraft:birch_wall_sign[facing=south]
+setblock 1585 88 370 minecraft:pale_oak_wall_sign[facing=south]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=classicHUD] run data merge block 1585 88 370 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/in_game_hud"}}','{"text":"IN-GAME HUD","bold":true,"color":"black"}','{"text":"[CLASSIC]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=classicHUD] run data merge block 1585 88 370 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/in_game_hud"}}','{"text":"IN-GAME HUD","bold":true,"color":"black"}','{"text":"[MODERN]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 
@@ -45,9 +45,9 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={optBAIcount=9
 #execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=BAIautocount] run data merge block 1613 89 355 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_count_battle"}}','{"text":"COUNT","bold":true,"color":"black"}','{"text":"[xAUTO]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 
 #default time
-setblock 1597 88 356 birch_sign[rotation=8]
-setblock 1596 88 356 birch_sign[rotation=8]
-setblock 1595 88 356 birch_sign[rotation=8]
+setblock 1597 88 356 pale_oak_sign[rotation=8]
+setblock 1596 88 356 pale_oak_sign[rotation=8]
+setblock 1595 88 356 pale_oak_sign[rotation=8]
 data merge block 1595 88 356 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/def_time_add"}}','{"text":"DEFAULT TIME:","bold":true,"color":"black"}','{"text":"[ADD 5s]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 data merge block 1596 88 356 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/def_time"}}','{"text":"DEFAULT TIME:","bold":true,"color":"black"}','{"text":"[SET TO 30s]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 data merge block 1597 88 356 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/def_time_remove"}}','{"text":"DEFAULT TIME:","bold":true,"color":"black"}','{"text":"[REMOVE 5s]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}

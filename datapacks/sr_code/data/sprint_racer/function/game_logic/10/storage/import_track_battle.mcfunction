@@ -65,6 +65,10 @@ execute if score #read value matches 0 run tag @s remove usingMacroPreview
 execute if score #read value matches 1 run tag @s add usingMacroPreview
 #--preview image macro path string
 $data modify storage sprint_racer:custom_track_storage_$(temp_id) preview_image set from storage $(file_name):track_data preview_image
+#tag if we have custom preview
+tag @s remove customPreview
+execute unless score @s customPreview matches 11000 run tag @s add customPreview
+execute if entity @s[tag=usingMacroPreview] run tag @s add customPreview
 #--overhead map?
 $scoreboard players set #read value $(use_overhead_map)
 execute if score #read value matches 0 run tag @s remove useOverheadMap

@@ -1,6 +1,9 @@
 #prevent the AFK system from causing problems while players are held in place
 execute if entity @s[scores={gameTime=..160}] run scoreboard players set @a[tag=playing] afkTime 0
 
+#clear scoreboard cache?
+execute if score #clearCacheAllowed value matches 1 run function sprint_racer:game_logic/2/node_update/clear_scoreboard_cache
+
 #loading
 execute if entity @s[scores={gameTime=..-1}] run function sprint_racer_language:_dlc_3/gameplay/loading
 execute if entity @s[scores={gameTime=-20..-1}] at @s as @a[tag=playing,limit=1,sort=furthest] at @s run scoreboard players set @e[limit=1,sort=nearest,type=marker,tag=node,tag=activator,distance=..150] nodeState 5

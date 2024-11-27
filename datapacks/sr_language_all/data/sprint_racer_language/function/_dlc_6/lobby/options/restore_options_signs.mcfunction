@@ -1,15 +1,15 @@
 #ai race add mode
-setblock 1613 88 360 minecraft:birch_wall_sign[facing=east]
+setblock 1613 88 360 minecraft:pale_oak_wall_sign[facing=east]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=RAIautocount] run data merge block 1613 88 360 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_add_type_race"}}','{"text":"PLAYER COUNT","bold":true,"color":"black"}','{"text":"[MEET]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!RAIautocount] run data merge block 1613 88 360 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_add_type_race"}}','{"text":"PLAYER COUNT","bold":true,"color":"black"}','{"text":"[ADD TO]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 
 #ai add type battle
-setblock 1613 88 355 minecraft:birch_wall_sign[facing=east]
+setblock 1613 88 355 minecraft:pale_oak_wall_sign[facing=east]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=BAIautocount] run data merge block 1613 88 355 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_add_type_battle"}}','{"text":"PLAYER COUNT","bold":true,"color":"black"}','{"text":"[MEET]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!BAIautocount] run data merge block 1613 88 355 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_add_type_battle"}}','{"text":"PLAYER COUNT","bold":true,"color":"black"}','{"text":"[ADD TO]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 
 #ai race difficulty
-setblock 1613 88 361 minecraft:birch_wall_sign[facing=east]
+setblock 1613 88 361 minecraft:pale_oak_wall_sign[facing=east]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={optRAIdiff=-1}] run data merge block 1613 88 361 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_difficulty_race"}}','{"text":"DIFFICULTY","bold":true,"color":"black"}','{"text":"[ADAPTIVE]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={optRAIdiff=0}] run data merge block 1613 88 361 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_difficulty_race"}}','{"text":"DIFFICULTY","bold":true,"color":"black"}','{"text":"[VERY EASY]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={optRAIdiff=1}] run data merge block 1613 88 361 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_difficulty_race"}}','{"text":"DIFFICULTY","bold":true,"color":"black"}','{"text":"[EASY]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
@@ -17,7 +17,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scor
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={optRAIdiff=3}] run data merge block 1613 88 361 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_difficulty_race"}}','{"text":"DIFFICULTY","bold":true,"color":"black"}','{"text":"[HARD]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 
 #ai battle difficulty
-setblock 1613 88 356 minecraft:birch_wall_sign[facing=east]
+setblock 1613 88 356 minecraft:pale_oak_wall_sign[facing=east]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={optBAIdiff=-1}] run data merge block 1613 88 356 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_difficulty_battle"}}','{"text":"DIFFICULTY","bold":true,"color":"black"}','{"text":"[ADAPTIVE]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={optBAIdiff=0}] run data merge block 1613 88 356 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_difficulty_battle"}}','{"text":"DIFFICULTY","bold":true,"color":"black"}','{"text":"[VERY EASY]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={optBAIdiff=1}] run data merge block 1613 88 356 {front_text:{has_glowing_text:0b,messages:['{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/ai_difficulty_battle"}}','{"text":"DIFFICULTY","bold":true,"color":"black"}','{"text":"[EASY]","color":"dark_blue"}','{"text":""}']},is_waxed:1b}

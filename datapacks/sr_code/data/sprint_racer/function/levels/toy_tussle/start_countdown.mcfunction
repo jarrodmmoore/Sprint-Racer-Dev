@@ -4,3 +4,4 @@
 #gameTime=140 1..
 #gameTime=160 GO!
 
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!COPPA,scores={gameTime=160}] run scoreboard players set @a timeSinceDeath 0

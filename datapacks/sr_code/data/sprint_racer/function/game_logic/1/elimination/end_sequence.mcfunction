@@ -33,7 +33,7 @@ execute if entity @s[tag=!teamplay,scores={gameTime=100120}] run function sprint
 execute if entity @s[tag=teamplay,scores={gameTime=100120}] run function sprint_racer_language:_dlc_2/gameplay/race_end/race_give_points_teams
 execute if entity @s[scores={gameTime=100120}] run function sprint_racer:ai/general/round_finish_level_shift
 
-execute if entity @s[scores={gameTime=100060}] if score grandprix gameState matches 1 as @a at @s run function sprint_racer:grand_prix/crowd_cheer
+execute if entity @s[tag=!noCrowdSFX,scores={gameTime=100060}] if score grandprix gameState matches 1 as @a at @s run function sprint_racer:grand_prix/crowd_cheer
 
 execute if entity @s[scores={gameTime=100160}] run function sprint_racer_language:_dlc_2/gameplay/race_end/increment_points
 execute if score #getOnWithIt value matches 1 if score @s gameTime matches 100180 run scoreboard players set @s gameTime 100258

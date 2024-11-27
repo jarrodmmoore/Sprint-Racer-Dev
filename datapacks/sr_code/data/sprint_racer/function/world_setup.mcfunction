@@ -713,6 +713,14 @@ scoreboard players add @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNu
 #quickly redo quick select data...
 function sprint_racer:worldmap/reset_quick_select_data
 
+#clear unused scoreboards left over from MKMC
+function sprint_racer:game_logic/2/node_update/clear_unused_scoreboards
+
+#tell sprint racer it's ok to clear the scoreboard cache now
+#(note: you can set this to -1 to prevent this from happening)
+execute unless score #clearCacheAllowed value matches ..-1 run scoreboard players set #clearCacheAllowed value 1
+
+#it worked
 scoreboard players set @a join 1
 tellraw @a ["",{"text":"World setup successful!","color":"aqua"}]
 execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run tellraw @a ["",{"text":"Critical entity \"w\" is not present.","color":"red"}]

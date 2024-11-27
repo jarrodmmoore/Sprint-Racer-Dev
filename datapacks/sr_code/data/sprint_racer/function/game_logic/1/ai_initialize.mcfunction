@@ -1,5 +1,9 @@
 #should probably be run by "w" lol
 
+#before we start, make sure at least a few nodes are loaded
+function sprint_racer:game_logic/2/node_update/_tick_restore
+execute as @e[tag=node,tag=activator,scores={nodeState=1..}] at @s run scoreboard players set @e[tag=node,distance=..100] nodeState 1
+
 #prevent memory leak due to entities lingering in the world
 kill @e[type=minecraft:area_effect_cloud,tag=!node]
 kill @e[type=marker,tag=!node]

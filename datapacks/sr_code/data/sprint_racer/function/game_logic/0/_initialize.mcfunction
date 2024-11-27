@@ -15,15 +15,22 @@ gamemode adventure @a
 #clear night vision so it doesn't get carried between tracks by mistake
 effect clear @a night_vision
 
+#decide if we should skip lobby or not in gp mode
 execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix,limit=1] run function sprint_racer:game_logic/0/grand_prix_decide_if_skip
 
+#reset speeds
 function sprint_racer:speed_attribute
 execute as @a[scores={kart_model=10..}] run function sprint_racer:cheats/remove_car_model
 
+#misc clean up
 worldborder warning distance 0
 scoreboard players set #varyTeleport value 0
 scoreboard players set #nextItemIsAnvil value 0
 
+#clear scoreboard cache next time we load a track
+scoreboard players set #clearCacheProgress value 0
+
+#no longer testing a custom track
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove customTesting
 
 scoreboard objectives remove specJoin

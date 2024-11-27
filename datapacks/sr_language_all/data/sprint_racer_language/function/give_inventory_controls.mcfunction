@@ -13,7 +13,7 @@ item replace entity @s[tag=!navigator] inventory.14 with minecraft:compass[custo
 
 
 item replace entity @s[tag=minChat] inventory.16 with minecraft:dark_oak_sign[enchantments={levels:{"minecraft:lure":1},show_in_tooltip:0b},custom_name='["",{"text":"Minimal Chat Mode: ON","color":"gold","bold":true,"italic":false}]',lore=['{"text":"Click to toggle!","color":"yellow"}'],custom_data={invControl:1b,invSign:1b}]
-item replace entity @s[tag=!minChat] inventory.16 with minecraft:birch_sign[custom_name='["",{"text":"Minimal Chat Mode: OFF","color":"gold","bold":true,"italic":false}]',lore=['{"text":"Click to toggle!","color":"yellow"}'],custom_data={invControl:1b,invSign:1b}]
+item replace entity @s[tag=!minChat] inventory.16 with minecraft:pale_oak_sign[custom_name='["",{"text":"Minimal Chat Mode: OFF","color":"gold","bold":true,"italic":false}]',lore=['{"text":"Click to toggle!","color":"yellow"}'],custom_data={invControl:1b,invSign:1b}]
 
 
 
