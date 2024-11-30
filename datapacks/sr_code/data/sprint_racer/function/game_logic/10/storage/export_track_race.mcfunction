@@ -11,11 +11,16 @@ $data modify storage $(filename):track_data file_name set value "$(filename)"
 #(hm, yes. the floor here is made of floor)
 #--track type (race/battle)
 $data modify storage $(filename):track_data track_type set value 1
+#--UUID
+$data modify storage $(filename):track_data track_uuid_0 set from entity @s UUID[0]
+$data modify storage $(filename):track_data track_uuid_1 set from entity @s UUID[1]
+$data modify storage $(filename):track_data track_uuid_2 set from entity @s UUID[2]
+$data modify storage $(filename):track_data track_uuid_3 set from entity @s UUID[3]
+#--track name
+$data modify storage $(filename):track_data track_name set from entity @s CustomName
 #--junk... for now
 $data modify storage $(filename):track_data temp_id set value -1
 
-#--track name
-$data modify storage $(filename):track_data track_name set from entity @s CustomName
 #--use tagline?
 $execute if entity @s[tag=useTagLine] run data modify storage $(filename):track_data use_tag_line set value 1
 $execute if entity @s[tag=!useTagLine] run data modify storage $(filename):track_data use_tag_line set value 0
