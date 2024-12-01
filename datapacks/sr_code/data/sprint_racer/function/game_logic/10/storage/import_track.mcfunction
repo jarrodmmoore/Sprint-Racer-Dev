@@ -28,5 +28,14 @@ execute if score #success value matches 0 run return 0
 #still here? do it!
 #remember: #test2 holds the value dictating whether the stored track is race or battle
 scoreboard players set #success value 0
-$execute if score #test2 value matches 1 run function sprint_racer:game_logic/10/storage/import_track_race_lookup {filename:"$(filename)"}
-$execute if score #test2 value matches 2 run function sprint_racer:game_logic/10/storage/import_track_battle_lookup {filename:"$(filename)"}
+
+#may use different constructor functions depending on what version the custom track was created in
+#i figured it'd be good to give myself room to add more data to custom tracks in the future if people want that
+
+#race
+$execute if score #test2 value matches 1 if score #version_created_in value matches ..10600 run function sprint_racer:game_logic/10/storage/import_track_race_lookup {filename:"$(filename)"}
+$execute if score #test2 value matches 1 if score #version_created_in value matches 10601.. run function sprint_racer:game_logic/10/storage/import_track_race_lookup {filename:"$(filename)"}
+
+#battle
+$execute if score #test2 value matches 2 if score #version_created_in value matches ..10600 run function sprint_racer:game_logic/10/storage/import_track_battle_lookup {filename:"$(filename)"}
+$execute if score #test2 value matches 2 if score #version_created_in value matches 10601.. run function sprint_racer:game_logic/10/storage/import_track_battle_lookup {filename:"$(filename)"}
