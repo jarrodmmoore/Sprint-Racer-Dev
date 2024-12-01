@@ -43,7 +43,7 @@ execute unless score #hudRightDebt value = #hudPrev8 value run function sprint_r
 #SLOT 9
 execute unless score #hudPrev9 value matches -94 run function sprint_racer:custom_hud/misc/slot9_left_end
 #SLOT 10
-execute unless score #hudCountdownMin10 value = #hudPrev10 value run function sprint_racer:custom_hud/misc/slot10_countdown
+execute unless score #hudCountdownMin10 value = #hudPrev10 value run function sprint_racer:custom_hud/misc/slot10_countdown_gauntlet
 #SLOT 11
 execute unless score #hudCountdownMin value = #hudPrev11 value run function sprint_racer:custom_hud/misc/slot11_countdown
 #SLOT 12

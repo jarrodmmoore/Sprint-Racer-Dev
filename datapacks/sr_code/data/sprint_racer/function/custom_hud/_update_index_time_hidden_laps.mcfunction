@@ -54,7 +54,7 @@ execute unless score #hudPrev6 value matches -96 run function sprint_racer:custo
 execute unless score #hudRightDebt value = #hudPrev8 value run function sprint_racer:custom_hud/race/slot8_spaced
 
 #SLOT 9
-execute unless score #getDigit0 value = #hudPrev9 value run function sprint_racer:custom_hud/race/slot9
+execute unless score #getDigit0 value = #hudPrev9 value run function sprint_racer:custom_hud/race/slot9_time_attack
 #SLOT 10
 execute unless score #getDigit1 value = #hudPrev10 value run function sprint_racer:custom_hud/race/slot10
 #SLOT 11

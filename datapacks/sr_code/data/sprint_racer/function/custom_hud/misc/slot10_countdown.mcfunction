@@ -1,3 +1,5 @@
+#this is used in battle mode, so let's use a red timer
+
 #no extra minute slot?
 execute unless score #hudCountdownMin10 value matches 1.. run data merge entity 00000000-0000-0328-0000-00000000000a {CustomName:'{"text":"\\uE918\\uF001","italic":false}'}
 
