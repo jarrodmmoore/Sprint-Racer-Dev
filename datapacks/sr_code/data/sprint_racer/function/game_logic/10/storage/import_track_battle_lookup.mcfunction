@@ -1,5 +1,5 @@
 #summon new track armor stand
-$function sprint_racer:game_logic/10/storage/summon_stand_with_uuid with storage $(filename):track_data
+$function sprint_racer:game_logic/10/storage/summon_stand_with_uuid_battle with storage $(filename):track_data
 #execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] at @s positioned ~ 80 ~ run summon armor_stand ~ ~ ~16 {Invulnerable:1b,NoGravity:1b,Invisible:1b,Marker:1b,Tags:["customtrack","trackStandB","imnew"]}
 execute as @e[tag=imnew,type=armor_stand,limit=1] run function sprint_racer_language:_dlc_1/lobby/custom_track/give_default_name
 tag @e[tag=imnew,type=armor_stand,limit=1] add custombattle
@@ -31,7 +31,7 @@ execute as @e[tag=customtrack,tag=custombattle,tag=!imnew] run scoreboard player
 scoreboard players operation @e[tag=imnew,type=armor_stand,limit=1] customTrackBID = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] customDummyBID
 
 #announce track was made
-$function sprint_racer_language:_dlc_6/lobby/custom_track/track_created_import {filename:"$(filename)"}
+$function sprint_racer_language:_dlc_6/lobby/custom_track/track_created_import with storage $(filename):track_data
 
 #cleanup
 tag @e[tag=customtrack,type=armor_stand,tag=imnew] remove imnew

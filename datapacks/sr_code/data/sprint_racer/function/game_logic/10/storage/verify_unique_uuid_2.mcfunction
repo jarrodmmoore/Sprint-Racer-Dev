@@ -9,7 +9,7 @@ $scoreboard players set #UUID_check_2 value $(track_uuid_2)
 $scoreboard players set #UUID_check_3 value $(track_uuid_3)
 
 #something went wrong if all components are 0
-$execute if score #UUID_check_0 value matches 0 if score #UUID_check_1 value matches 0 if score #UUID_check_2 value matches 0 if score #UUID_check_3 value matches 0 if entity @s[type=player] run tellraw @a ["",{"translate":"sr.custom_track.import_failed_bad_data","color":"red","bold":true,"with":[{"text":"command_storage_$(file_name).dat","color":"white","bold":false}]}]
+$execute if score #UUID_check_0 value matches 0 if score #UUID_check_1 value matches 0 if score #UUID_check_2 value matches 0 if score #UUID_check_3 value matches 0 run tellraw @a ["",{"translate":"sr.custom_track.import_failed_bad_data","color":"red","bold":true,"with":[{"text":"command_storage_$(file_name).dat","color":"white","bold":false}]}]
 execute if score #UUID_check_0 value matches 0 if score #UUID_check_1 value matches 0 if score #UUID_check_2 value matches 0 if score #UUID_check_3 value matches 0 run return run scoreboard players set #success value -1
 #=====
 

@@ -1,0 +1,1 @@
+$function $(music_namespace):$(music_path)/show_title_nologo

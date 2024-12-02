@@ -63,6 +63,14 @@ execute if score #read value matches 0 run tag @s remove nightVision
 execute if score #read value matches 1 run tag @s add nightVision
 #--music
 $scoreboard players set @s BGMtrack $(music_track)
+#--music macro path?
+$scoreboard players set #read value $(use_macro_music_path)
+execute if score #read value matches 0 run tag @s remove useCustomSongPath
+execute if score #read value matches 1 run tag @s add useCustomSongPath
+#--music_namespace
+$data modify storage sprint_racer:custom_track_storage_$(temp_id) music_namespace set from storage $(file_name):track_data music_namespace
+#--music_path
+$data modify storage sprint_racer:custom_track_storage_$(temp_id) music_path set from storage $(file_name):track_data music_path
 #--start countdown
 $scoreboard players set @s startType $(start_countdown)
 #--preview image index

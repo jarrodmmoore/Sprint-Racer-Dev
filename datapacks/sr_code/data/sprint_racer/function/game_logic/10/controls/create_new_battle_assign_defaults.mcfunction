@@ -37,3 +37,6 @@ scoreboard players set @s customMedalD2 0
 scoreboard players set @s customMedalD3 0
 scoreboard players set @s customMedalD4 0
 function sprint_racer:game_logic/10/assign_custom_tagline_storage
+
+#same mapVersion as w
+scoreboard players operation @s mapVersion = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] mapVersion

@@ -67,6 +67,13 @@ $execute if entity @s[tag=nightVision] run data modify storage $(filename):track
 $execute if entity @s[tag=!nightVision] run data modify storage $(filename):track_data night_vision set value 0
 #--music
 $execute store result storage $(filename):track_data music_track int 1 run scoreboard players get @s BGMtrack
+#--music macro path?
+$execute if entity @s[tag=useCustomSongPath] run data modify storage $(filename):track_data use_macro_music_path set value 1
+$execute if entity @s[tag=!useCustomSongPath] run data modify storage $(filename):track_data use_macro_music_path set value 0
+#--music_namespace
+$data modify storage $(filename):track_data music_namespace set from storage sprint_racer:custom_track_storage_$(id) music_namespace
+#--music_path
+$data modify storage $(filename):track_data music_path set from storage sprint_racer:custom_track_storage_$(id) music_path
 #--start countdown
 $execute store result storage $(filename):track_data start_countdown int 1 run scoreboard players get @s startType
 #--preview image index

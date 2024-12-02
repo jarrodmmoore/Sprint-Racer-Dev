@@ -1,3 +1,8 @@
+#custom path
+execute if entity @s[tag=useCustomSongPath] run return run function sprint_racer:levels/_custom_general/set_music_macro with storage sprint_racer:func_args
+#=====
+
+#default (random)
 execute if entity @s[scores={BGMtrack=-1}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=3..14}] add musicViable
 
 #specific track? clear any queued music

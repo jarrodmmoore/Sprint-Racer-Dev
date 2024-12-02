@@ -1,6 +1,9 @@
 #player announces current playing music track to self
 tellraw @s ["",{"text":" "}]
 execute if entity @s[scores={BGMtrack=..0}] run tellraw @s ["",{"text":" "}]
+
+execute if entity @s[scores={BGMtrack=50}] run function sprint_racer:music/player/announce_macro with storage sprint_racer:func_args
+
 execute if entity @s[scores={BGMtrack=1}] run function sprint_racer_ost:01_lobby/show_title_nologo
 execute if entity @s[scores={BGMtrack=2}] run function sprint_racer_ost:02_lobby/show_title_nologo
 execute if entity @s[scores={BGMtrack=3}] run function sprint_racer_ost:03_gameplay/show_title_nologo
@@ -39,4 +42,4 @@ execute if entity @s[scores={BGMtrack=34}] run function sprint_racer_ost:113_cus
 execute if entity @s[scores={BGMtrack=35}] run function sprint_racer_ost:114_custom/show_title_nologo
 execute if entity @s[scores={BGMtrack=36}] run function sprint_racer_ost:115_custom/show_title_nologo
 
-execute if entity @s[scores={BGMtrack=37..}] run tellraw @s ["",{"text":" "}]
+execute if entity @s[scores={BGMtrack=37..49}] run tellraw @s ["",{"text":" "}]

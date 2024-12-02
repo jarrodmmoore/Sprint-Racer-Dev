@@ -1,0 +1,1 @@
+$execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] at @s positioned ~ 80 ~ run summon armor_stand ~ ~ ~16 {UUID:[I;$(track_uuid_0),$(track_uuid_1),$(track_uuid_2),$(track_uuid_3)],Invulnerable:1b,NoGravity:1b,Invisible:1b,Marker:1b,Tags:["customtrack","trackStandB","imnew"]}

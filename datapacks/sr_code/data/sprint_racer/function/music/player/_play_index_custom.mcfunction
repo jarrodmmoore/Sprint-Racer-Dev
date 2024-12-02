@@ -39,3 +39,5 @@ execute if entity @s[scores={BGMtrack=33}] run function sprint_racer_ost:112_cus
 execute if entity @s[scores={BGMtrack=34}] run function sprint_racer_ost:113_custom/play_song
 execute if entity @s[scores={BGMtrack=35}] run function sprint_racer_ost:114_custom/play_song
 execute if entity @s[scores={BGMtrack=36}] run function sprint_racer_ost:115_custom/play_song
+
+execute if entity @s[scores={BGMtrack=50}] run function sprint_racer:music/player/play_macro with storage sprint_racer:func_args
