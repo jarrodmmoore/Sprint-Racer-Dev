@@ -16,22 +16,24 @@ execute if entity @e[tag=node,tag=jumpboost,distance=..2] run function sprint_ra
 
 tag @s add self
 
-execute store result score @s mvmt_coord_x run data get entity @s Pos[0] 100000
+execute store result score @s mvmt_coord_x run data get entity @s Pos[0] 10000
 execute store result score @s mvmt_coord_y run data get entity @s Pos[1] 100000
-execute store result score @s mvmt_coord_z run data get entity @s Pos[2] 100000
+execute store result score @s mvmt_coord_z run data get entity @s Pos[2] 10000
 
 execute if entity @e[tag=mykartpig,nbt={OnGround:1b}] if entity @s[scores={speedBoost=1..}] run function sprint_racer:cheats/kart_velocity_boosted
 execute if entity @e[tag=mykartpig,nbt={OnGround:1b}] if entity @s[scores={speedBoost=..0,hitstun=..0}] run function sprint_racer:cheats/kart_velocity_grounded
 execute if entity @e[tag=mykartpig,nbt={OnGround:1b}] if entity @s[scores={speedBoost=..0,hitstun=1..}] run function sprint_racer:cheats/kart_velocity_hitstun
 execute unless entity @e[tag=mykartpig,nbt={OnGround:1b}] run function sprint_racer:cheats/kart_velocity_airborne
 
-execute as @e[tag=lookinghere] store result score @e[tag=self] mvmt_coord_dx run data get entity @s Pos[0] 100000
+execute as @e[tag=lookinghere] store result score @e[tag=self] mvmt_coord_dx run data get entity @s Pos[0] 10000
 execute as @e[tag=lookinghere] store result score @e[tag=self] mvmt_coord_dy run data get entity @s Pos[1] 100000
-execute as @e[tag=lookinghere] store result score @e[tag=self] mvmt_coord_dz run data get entity @s Pos[2] 100000
+execute as @e[tag=lookinghere] store result score @e[tag=self] mvmt_coord_dz run data get entity @s Pos[2] 10000
 
 scoreboard players operation @s mvmt_coord_dx -= @s mvmt_coord_x
 scoreboard players operation @s mvmt_coord_dy -= @s mvmt_coord_y
 scoreboard players operation @s mvmt_coord_dz -= @s mvmt_coord_z
+scoreboard players operation @s mvmt_coord_dx *= #vel10 value
+scoreboard players operation @s mvmt_coord_dz *= #vel10 value
 
 execute unless entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=01a] run function sprint_racer:cheats/kart_velocity_scale_a
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=01a] run function sprint_racer:cheats/kart_velocity_scale_b

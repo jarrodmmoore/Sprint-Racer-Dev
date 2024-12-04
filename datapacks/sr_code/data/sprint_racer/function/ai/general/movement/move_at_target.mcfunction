@@ -2,9 +2,9 @@
 
 tag @s add self
 
-execute store result score @s mvmt_coord_x run data get entity @s Pos[0] 100000
+execute store result score @s mvmt_coord_x run data get entity @s Pos[0] 10000
 execute store result score @s mvmt_coord_y run data get entity @s Pos[1] 100000
-execute store result score @s mvmt_coord_z run data get entity @s Pos[2] 100000
+execute store result score @s mvmt_coord_z run data get entity @s Pos[2] 10000
 
 #ai rotation stuff
 #when the ai rotation offset timer expires, default back to whatever our "aiRotSet" value is
@@ -23,13 +23,15 @@ execute if entity @s[tag=inWater,tag=swimup] run function sprint_racer:ai/genera
 #possibly avoid traps, unless the trap is the target
 execute unless entity @e[tag=myCHILDtarget,tag=trap] facing entity @e[limit=1,sort=nearest,tag=myCHILDtarget] feet positioned ^ ^ ^5 if entity @e[tag=trap,distance=..3] run function sprint_racer:ai/general/movement/possibly_dodge_trap
 
-execute as @e[tag=lookinghere,limit=1,sort=nearest,type=marker,distance=..1] store result score @e[tag=self,sort=nearest,limit=1,distance=..1] mvmt_coord_dx run data get entity @s Pos[0] 100000
-execute as @e[tag=lookinghere,limit=1,sort=nearest,type=marker,distance=..1] store result score @e[tag=self,sort=nearest,limit=1,distance=..1] mvmt_coord_dy run data get entity @s Pos[1] 100000
-execute as @e[tag=lookinghere,limit=1,sort=nearest,type=marker,distance=..1] store result score @e[tag=self,sort=nearest,limit=1,distance=..1] mvmt_coord_dz run data get entity @s Pos[2] 100000
+execute as @e[tag=lookinghere,limit=1,type=marker,distance=..1] store result score @e[tag=self,sort=nearest,limit=1,distance=..1] mvmt_coord_dx run data get entity @s Pos[0] 10000
+execute as @e[tag=lookinghere,limit=1,type=marker,distance=..1] store result score @e[tag=self,sort=nearest,limit=1,distance=..1] mvmt_coord_dy run data get entity @s Pos[1] 100000
+execute as @e[tag=lookinghere,limit=1,type=marker,distance=..1] store result score @e[tag=self,sort=nearest,limit=1,distance=..1] mvmt_coord_dz run data get entity @s Pos[2] 10000
 
 scoreboard players operation @s mvmt_coord_dx -= @s mvmt_coord_x
 scoreboard players operation @s mvmt_coord_dy -= @s mvmt_coord_y
 scoreboard players operation @s mvmt_coord_dz -= @s mvmt_coord_z
+scoreboard players operation @s mvmt_coord_dx *= #vel10 value
+scoreboard players operation @s mvmt_coord_dz *= #vel10 value
 
 #slow down on ice and soul sand
 execute if entity @s[scores={moveState=2}] if block ~ ~-0.5 ~ #sprint_racer:slippery run scoreboard players remove @s speedlevel 1

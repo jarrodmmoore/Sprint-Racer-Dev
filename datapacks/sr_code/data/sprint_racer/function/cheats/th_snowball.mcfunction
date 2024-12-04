@@ -2,19 +2,21 @@
 
 tag @s add self
 
-execute store result score @s mvmt_coord_x run data get entity @s Pos[0] 100000
+execute store result score @s mvmt_coord_x run data get entity @s Pos[0] 10000
 execute store result score @s mvmt_coord_y run data get entity @s Pos[1] 100000
-execute store result score @s mvmt_coord_z run data get entity @s Pos[2] 100000
+execute store result score @s mvmt_coord_z run data get entity @s Pos[2] 10000
 
 summon marker ^ ^ ^0.001 {Tags:["lookinghere"]}
 
-execute as @e[tag=lookinghere,limit=1,sort=nearest] store result score @e[tag=self,limit=1,sort=nearest] mvmt_coord_dx run data get entity @s Pos[0] 100000
+execute as @e[tag=lookinghere,limit=1,sort=nearest] store result score @e[tag=self,limit=1,sort=nearest] mvmt_coord_dx run data get entity @s Pos[0] 10000
 execute as @e[tag=lookinghere,limit=1,sort=nearest] store result score @e[tag=self,limit=1,sort=nearest] mvmt_coord_dy run data get entity @s Pos[1] 100000
-execute as @e[tag=lookinghere,limit=1,sort=nearest] store result score @e[tag=self,limit=1,sort=nearest] mvmt_coord_dz run data get entity @s Pos[2] 100000
+execute as @e[tag=lookinghere,limit=1,sort=nearest] store result score @e[tag=self,limit=1,sort=nearest] mvmt_coord_dz run data get entity @s Pos[2] 10000
 
 scoreboard players operation @s mvmt_coord_dx -= @s mvmt_coord_x
 scoreboard players operation @s mvmt_coord_dy -= @s mvmt_coord_y
 scoreboard players operation @s mvmt_coord_dz -= @s mvmt_coord_z
+scoreboard players operation @s mvmt_coord_dx *= #vel10 value
+scoreboard players operation @s mvmt_coord_dz *= #vel10 value
 
 #summon a snowball and give it the right velocity
 summon snowball ~ ~1.8 ~ {Tags:["newsnowball","touhou","sHasID"]}

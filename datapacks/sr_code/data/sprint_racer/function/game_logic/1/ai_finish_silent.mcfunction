@@ -25,5 +25,5 @@ scoreboard players remove @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_st
 
 #CUT due to imbalance
 #bonuses are awarded for 1st and 2nd
-#scoreboard players add @e[tag=AIdaddy,scores={finishPos=1}] addPoints 2
-#scoreboard players add @e[tag=AIdaddy,scores={finishPos=2}] addPoints 1
+#scoreboard players add @e[tag=AIdaddy,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={finishPos=1}] addPoints 2
+#scoreboard players add @e[tag=AIdaddy,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={finishPos=2}] addPoints 1

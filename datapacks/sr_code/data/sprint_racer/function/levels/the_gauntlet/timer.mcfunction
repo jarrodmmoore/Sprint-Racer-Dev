@@ -25,6 +25,8 @@ scoreboard players operation #hudCountdownSec10 value = @s countTimeSec
 scoreboard players operation #hudCountdownSec10 value /= #10 value
 scoreboard players operation #hudCountdownSec value = @s countTimeSec
 scoreboard players operation #hudCountdownSec value %= #10 value
+#cap at 99 minutes
+execute if score @s countTimeMin matches 100.. run scoreboard players set #hudCountdownMin value 9
 
 #show the timer
 #bossbar set gauntlettime players @a[tag=!bbarbump]

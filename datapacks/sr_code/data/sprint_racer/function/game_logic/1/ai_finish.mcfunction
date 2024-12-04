@@ -14,9 +14,9 @@ execute if entity @s[tag=ai9] run tag @e[tag=AImaster,scores={rNumber=9}] add AI
 scoreboard players set #anvilLeadCheck value 9999999
 
 #exit early (die) if we're already finished
-execute if entity @e[tag=AIdaddy,type=armor_stand,tag=aiDisable] run kill @s
+execute if entity @e[tag=AIdaddy,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=aiDisable] run kill @s
 
 #continue on if we're not disabled
-execute unless entity @e[tag=AIdaddy,type=armor_stand,tag=aiDisable] run function sprint_racer:game_logic/1/ai_finish_true
+execute unless entity @e[tag=AIdaddy,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=aiDisable] run function sprint_racer:game_logic/1/ai_finish_true
 
-tag @e[tag=AIdaddy] remove AIdaddy
+tag @e[tag=AIdaddy,x=1548,y=155,z=406,distance=..1,type=armor_stand] remove AIdaddy

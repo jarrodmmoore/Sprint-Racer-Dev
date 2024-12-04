@@ -24,7 +24,7 @@ execute unless score @s roamLookBias matches 1 rotated ~ 0 unless block ^ ^1 ^1 
 execute if score @s roamLookBias matches 1 rotated ~ 0 unless block ^ ^1 ^1 #sprint_racer:ai_not_solid run scoreboard players add @s aiRotOffset 30
 
 #jump if we need to
-execute if score @s aiAirTime matches ..4 rotated ~ 0 unless block ^ ^ ^1 #sprint_racer:ai_not_solid unless block ^ ^ ^1 #minecraft:slabs unless block ^ ^ ^1 #minecraft:stairs if block ^ ^1 ^1 #sprint_racer:ai_not_solid if block ^ ^2 ^1 #sprint_racer:ai_not_solid run tag @e[limit=1,tag=currentMaster] add aijump
+execute if score @s aiAirTime matches ..4 rotated ~ 0 unless block ^ ^ ^1 #sprint_racer:ai_not_solid unless block ^ ^ ^1 #minecraft:slabs unless block ^ ^ ^1 #minecraft:stairs if block ^ ^1 ^1 #sprint_racer:ai_not_solid if block ^ ^2 ^1 #sprint_racer:ai_not_solid run tag @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] add aijump
 
 #keep aec alive as long as this code is running
 data merge entity @e[limit=1,tag=aiTarget1,type=area_effect_cloud] {Duration:6}

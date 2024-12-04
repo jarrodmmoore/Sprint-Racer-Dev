@@ -18,6 +18,9 @@ execute unless entity @s[scores={speedlevel=7..,moveState=2}] run playsound mine
 execute if entity @s[scores={speedlevel=7..,moveState=2}] run playsound minecraft:entity.ghast.shoot master @a ~ ~ ~ 1 1.7
 particle flame ^ ^1.5 ^.5 0.2 0.2 0.2 .01 20
 
+#look at target for a moment
+scoreboard players set #setTime value 8
+execute facing entity @e[limit=1,tag=looktarget] eyes run function sprint_racer:ai/general/movement/face_direction_temporarily
 
 tag @e[tag=looktarget] remove looktarget
 

@@ -19,6 +19,6 @@ execute if entity @s[tag=avoidtrap] unless entity @s[tag=good2dodge] run scorebo
 execute if entity @s[tag=avoidtrap] unless entity @s[tag=good2dodge] run scoreboard players set @s aiRotOSTime 0
 execute if entity @s[tag=avoidtrap] run tag @s remove good2dodge
 
-execute if entity @s[scores={speedlevel=6..,aiSkill=3..}] positioned ^ ^ ^-2 if entity @e[tag=trap,distance=..2] run tag @e[tag=currentMaster] add aijump
+execute if entity @s[scores={speedlevel=6..,aiSkill=3..}] positioned ^ ^ ^-2 if entity @e[tag=trap,distance=..2] run tag @e[tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] add aijump
 
 tag @s remove avoidtrap

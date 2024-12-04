@@ -1,4 +1,4 @@
-scoreboard players operation #rememberOurPos value = @e[tag=currentMaster,type=armor_stand,limit=1] racePosDisplay
+scoreboard players operation #rememberOurPos value = @e[tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,limit=1] racePosDisplay
 
 execute if entity @s[tag=very_easy_ai,scores={aiSkill=..1}] run function sprint_racer:ai/race/rubberbanding/1_very_easy
 execute if entity @s[tag=!very_easy_ai,scores={aiSkill=..1}] run function sprint_racer:ai/race/rubberbanding/1

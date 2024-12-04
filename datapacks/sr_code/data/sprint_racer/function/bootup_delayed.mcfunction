@@ -196,6 +196,10 @@ scoreboard objectives add optBAIdiff dummy
 scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] optRAIdiff 0
 scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] optBAIdiff 0
 scoreboard objectives add aiBattleBasherDurability dummy
+scoreboard objectives add aiFaceDirTime dummy
+scoreboard objectives add aiFaceDirYaw dummy
+scoreboard objectives add aiFaceDirPitch dummy
+scoreboard players set #vel10 value 10
 
 
 #make sure command blocks are enabled

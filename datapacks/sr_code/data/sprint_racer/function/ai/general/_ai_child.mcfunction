@@ -99,7 +99,7 @@ execute if entity @s[scores={aiActICooldown=..1}] run function sprint_racer:ai/g
 
 #are we stuck? do something!
 tag @s[tag=inWater,scores={aiStuckTime=5..}] add aiswimup
-execute if entity @s[tag=!inWater,nbt={OnGround:1b},scores={aiStuckTime=6..30}] run tag @e[limit=1,tag=currentMaster] add aijump
+execute if entity @s[tag=!inWater,nbt={OnGround:1b},scores={aiStuckTime=6..30}] run tag @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] add aijump
 execute if entity @s[tag=inWater,tag=aiswimup] at @s run function sprint_racer:ai/general/swim_up
 #execute if entity @s[tag=inWater,scores={aiStuckTime=29}] run function sprint_racer:ai/general/behaviors/follow_breadcrumb/battle_get_unstuck
 execute unless score global gameState matches 3 if entity @s[scores={aiStuckTime=40..}] run function sprint_racer:ai/general/race_get_unstuck
@@ -113,20 +113,20 @@ scoreboard players add @s[tag=warpstuck] aiStuckTime 1
 execute unless entity @s[scores={aiSubBehavior=5}] run function sprint_racer:ai/race/nav_logic
 
 #jump stuff (yes, all this just to make the AI jump)
-scoreboard players operation @e[limit=1,tag=currentMaster,type=armor_stand] aiJBIntensity = @s aiJBIntensity
-scoreboard players operation @e[limit=1,tag=currentMaster,type=armor_stand] aiJBTime = @s aiJBTime
-scoreboard players remove @e[limit=1,tag=currentMaster,scores={aiJBDelay=1..}] aiJBDelay 1
-tag @e[limit=1,tag=currentMaster,scores={aiJBDelay=1}] add aijump
-scoreboard players remove @e[limit=1,tag=currentMaster,scores={aiJBDelay=1..}] aiJBDelay 1
-tag @e[limit=1,tag=currentMaster,scores={aiJBDelay=1}] add aijump
-scoreboard players remove @e[limit=1,tag=currentMaster,scores={aiJBTime=1..}] aiJBTime 1
-scoreboard players set @e[limit=1,tag=currentMaster,scores={aiJBTime=1}] aiJBIntensity 0
-scoreboard players remove @e[limit=1,tag=currentMaster,scores={aiJBTime=1..}] aiJBTime 1
-scoreboard players set @e[limit=1,tag=currentMaster,scores={aiJBTime=1}] aiJBIntensity 0
-execute if entity @s[nbt={OnGround:1b}] if entity @e[limit=1,tag=currentMaster,tag=aijump] run function sprint_racer:ai/general/jump/_index
-execute if entity @s[nbt={OnGround:1b}] run tag @e[limit=1,tag=currentMaster] remove aijump
-scoreboard players operation @s aiJBIntensity = @e[limit=1,tag=currentMaster] aiJBIntensity
-scoreboard players operation @s aiJBTime = @e[limit=1,tag=currentMaster] aiJBTime
+scoreboard players operation @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] aiJBIntensity = @s aiJBIntensity
+scoreboard players operation @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] aiJBTime = @s aiJBTime
+scoreboard players remove @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={aiJBDelay=1..}] aiJBDelay 1
+tag @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={aiJBDelay=1}] add aijump
+scoreboard players remove @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={aiJBDelay=1..}] aiJBDelay 1
+tag @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={aiJBDelay=1}] add aijump
+scoreboard players remove @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={aiJBTime=1..}] aiJBTime 1
+scoreboard players set @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={aiJBTime=1}] aiJBIntensity 0
+scoreboard players remove @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={aiJBTime=1..}] aiJBTime 1
+scoreboard players set @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={aiJBTime=1}] aiJBIntensity 0
+execute if entity @s[nbt={OnGround:1b}] if entity @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=aijump] run function sprint_racer:ai/general/jump/_index
+execute if entity @s[nbt={OnGround:1b}] run tag @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] remove aijump
+scoreboard players operation @s aiJBIntensity = @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] aiJBIntensity
+scoreboard players operation @s aiJBTime = @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] aiJBTime
 
 #movement state calculation
 scoreboard players set @s moveState 0
@@ -155,6 +155,7 @@ execute if entity @s[tag=aiStronk] run function sprint_racer:ai/general/direct_a
 execute if entity @s[tag=!aiFly] unless entity @s[scores={aiBehavior=..0}] unless entity @s[scores={aiSubBehavior=5}] if score @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] gameTime matches 160.. run function sprint_racer:ai/general/movement/move_at_target
 execute if entity @s[tag=aiFly] unless entity @s[scores={aiBehavior=..0}] unless entity @s[scores={aiSubBehavior=5}] run function sprint_racer:ai/general/movement/fly_at_target
 tag @e[tag=myCHILDtarget] remove myCHILDtarget
+scoreboard players remove @s[scores={aiFaceDirTime=1..}] aiFaceDirTime 1
 
 
 

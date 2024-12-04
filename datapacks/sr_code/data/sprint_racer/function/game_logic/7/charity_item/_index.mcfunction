@@ -1,4 +1,4 @@
-scoreboard players operation @s[tag=ai] timeSinceCheck = @e[tag=currentMaster,limit=1] timeSinceCheck
+scoreboard players operation @s[tag=ai] timeSinceCheck = @e[tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,limit=1] timeSinceCheck
 
 #absolutely no duping allowed here
 clear @s gold_ingot[custom_data~{charityitem:1b}]

@@ -24,6 +24,9 @@ execute unless entity @s[scores={speedlevel=7..,moveState=2}] run function sprin
 execute if entity @s[scores={speedlevel=7..,moveState=2}] run function sprint_racer:explode_sound_effect {volume:1,pitch:1.7}
 particle explosion ^ ^1.5 ^.5 0.2 0.2 0.2 .01 1
 
+#look at target for a moment
+scoreboard players set #setTime value 8
+execute facing entity @e[limit=1,tag=looktarget] eyes run function sprint_racer:ai/general/movement/face_direction_temporarily
 
 tag @e[tag=looktarget] remove looktarget
 

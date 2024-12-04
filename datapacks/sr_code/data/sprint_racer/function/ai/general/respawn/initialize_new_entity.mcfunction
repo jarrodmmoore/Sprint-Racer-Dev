@@ -114,11 +114,11 @@ scoreboard players set @s aiHasItem40 0
 scoreboard players set @s aiHasDagger 0
 scoreboard players set @s aiHasFirework 0
 
-scoreboard players operation @s playerLives = @e[limit=1,tag=currentMaster,type=armor_stand] playerLives
+scoreboard players operation @s playerLives = @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] playerLives
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=3,gamemodePresetB=2}] if score @s playerLives matches ..2 run tag @s add ai_fearful
 
-scoreboard players operation @s tacticsSequence = @e[limit=1,tag=currentMaster,type=armor_stand] aiTacticsA
-scoreboard players operation @s tacticsStep = @e[limit=1,tag=currentMaster,type=armor_stand] aiTacticsB
+scoreboard players operation @s tacticsSequence = @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] aiTacticsA
+scoreboard players operation @s tacticsStep = @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] aiTacticsB
 
 #skill 0 is very easy ai
 tag @s[scores={aiSkill=0}] add very_easy_ai
@@ -143,10 +143,10 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=
 team join player @s
 
 #assign to team
-execute if entity @e[limit=1,tag=currentMaster,type=armor_stand,tag=playerOrange] run tag @s add playerOrange
-execute if entity @e[limit=1,tag=currentMaster,type=armor_stand,tag=playerOrange] run team join playerOrange @s
-execute if entity @e[limit=1,tag=currentMaster,type=armor_stand,tag=playerCyan] run tag @s add playerCyan
-execute if entity @e[limit=1,tag=currentMaster,type=armor_stand,tag=playerCyan] run team join playerCyan @s
+execute if entity @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=playerOrange] run tag @s add playerOrange
+execute if entity @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=playerOrange] run team join playerOrange @s
+execute if entity @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=playerCyan] run tag @s add playerCyan
+execute if entity @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=playerCyan] run team join playerCyan @s
 
 effect give @s resistance 1 200 true
 

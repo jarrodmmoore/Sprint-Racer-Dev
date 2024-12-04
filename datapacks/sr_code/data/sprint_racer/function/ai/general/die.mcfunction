@@ -63,7 +63,7 @@ execute as @e[type=item,tag=giveVelocity] at @s run function sprint_racer:ai/gen
 
 
 #remove 1 playerLives from master
-scoreboard players remove @e[tag=currentMaster] playerLives 1
+scoreboard players remove @e[tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] playerLives 1
 
 #explode if creeper
 execute if entity @s[tag=sa_creeper] at @s run function sprint_racer:explode

@@ -1,4 +1,4 @@
-scoreboard players operation #math value = @e[limit=1,tag=currentMaster,type=armor_stand] customAIdiff
+scoreboard players operation #math value = @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] customAIdiff
 
 execute unless score #math value matches 0 run tag @s remove very_easy_ai
 execute unless score #math value matches 0 run tag @s remove tryhard

@@ -20,6 +20,10 @@ particle explosion ^ ^1.5 ^.5 0.2 0.2 0.2 .01 1
 scoreboard players set @e[tag=setLife] lifespan 3
 tag @e[tag=setLife] remove setLife
 
+#look at target for a moment
+scoreboard players set #setTime value 10
+execute facing entity @e[limit=1,tag=looktarget] eyes run function sprint_racer:ai/general/movement/face_direction_temporarily
+
 tag @e[tag=looktarget] remove looktarget
 
 scoreboard players set @s inputCooldown 15

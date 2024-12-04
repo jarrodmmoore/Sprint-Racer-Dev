@@ -46,6 +46,8 @@ execute if score #math value matches ..1199 run scoreboard players set #math val
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 209
 scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining += #math value
 #default is 4 minutes, or 5009
+#hard minimum of 1509
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={timeRemaining=..1508}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 1509
 
 #GAUNTLET?
 execute if entity @s[tag=customGauntlet] run function sprint_racer:levels/_custom_race/gauntlet_mode

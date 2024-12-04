@@ -15,8 +15,12 @@ execute if entity @s[scores={aiSkill=2}] run scoreboard players operation @s aiH
 execute if entity @s[tag=!tryhard,scores={aiSkill=3..}] run scoreboard players operation @s aiHitCooldown = @e[tag=random,x=1548,y=155,z=406,distance=..1,sort=random,type=armor_stand,limit=1,scores={rNumber=5..30}] rNumber
 execute if entity @s[tag=tryhard,scores={aiSkill=3..}] run scoreboard players operation @s aiHitCooldown = @e[tag=random,x=1548,y=155,z=406,distance=..1,sort=random,type=armor_stand,limit=1,scores={rNumber=1..20}] rNumber
 
+#look at target for a moment
+scoreboard players set #setTime value 4
+execute facing entity @e[limit=1,tag=hit_target,distance=..3] eyes run function sprint_racer:ai/general/movement/face_direction_temporarily
+
 tag @s remove hit1
 tag @s remove hit2
 tag @s remove hit3
 
-tag @e[tag=hit_target] remove hit_target
+tag @e[tag=hit_target,distance=..3] remove hit_target
