@@ -39,15 +39,13 @@ execute if entity @s[scores={customTWeather=3}] run weather thunder
 execute if entity @s[scores={customTWeather=2..3}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add raining
 
 #TIME LIMIT
-execute if entity @s[scores={timeRemaining=..2}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 2609
-execute if entity @s[scores={timeRemaining=3}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 3809
+#should have base of 209 ticks with an added 1200 for each additional minute
+scoreboard players set #math value 1200
+scoreboard players operation #math value *= @s timeRemaining
+execute if score #math value matches ..1199 run scoreboard players set #math value 1200
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 209
+scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining += #math value
 #default is 4 minutes, or 5009
-execute if entity @s[scores={timeRemaining=5}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 6209
-execute if entity @s[scores={timeRemaining=6}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 7409
-execute if entity @s[scores={timeRemaining=7}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 8609
-execute if entity @s[scores={timeRemaining=8}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 9809
-execute if entity @s[scores={timeRemaining=9}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 11009
-execute if entity @s[scores={timeRemaining=10..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 12209
 
 #GAUNTLET?
 execute if entity @s[tag=customGauntlet] run function sprint_racer:levels/_custom_race/gauntlet_mode

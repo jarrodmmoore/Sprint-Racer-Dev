@@ -32,17 +32,6 @@ execute if entity @s[scores={customTWeather=2}] run weather rain
 execute if entity @s[scores={customTWeather=3}] run weather thunder
 execute if entity @s[scores={customTWeather=2..3}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add raining
 
-#TIME LIMIT
-execute if entity @s[scores={timeRemaining=..2}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 2609
-execute if entity @s[scores={timeRemaining=3}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 3809
-#default is 4 minutes, or 5009
-execute if entity @s[scores={timeRemaining=5}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 6209
-execute if entity @s[scores={timeRemaining=6}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 7409
-execute if entity @s[scores={timeRemaining=7}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 8609
-execute if entity @s[scores={timeRemaining=8}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 9809
-execute if entity @s[scores={timeRemaining=9}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 11009
-execute if entity @s[scores={timeRemaining=10..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 12209
-
 #TARGET COUNT
 scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] targetData = @s customTTargets
 
