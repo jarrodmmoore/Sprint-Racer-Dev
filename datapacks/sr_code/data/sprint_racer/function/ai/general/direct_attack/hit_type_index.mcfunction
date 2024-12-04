@@ -17,7 +17,7 @@ execute if entity @s[tag=tryhard,scores={aiSkill=3..}] run scoreboard players op
 
 #look at target for a moment
 scoreboard players set #setTime value 4
-execute facing entity @e[limit=1,tag=hit_target,distance=..3] eyes run function sprint_racer:ai/general/movement/face_direction_temporarily
+execute facing entity @e[limit=1,tag=hit_target,distance=..3] feet run function sprint_racer:ai/general/movement/face_direction_temporarily
 
 tag @s remove hit1
 tag @s remove hit2

@@ -1,0 +1,1 @@
+$execute positioned $(teleport_x) $(teleport_y) $(teleport_z) run function sprint_racer:warp_to_saved_coords/found_location

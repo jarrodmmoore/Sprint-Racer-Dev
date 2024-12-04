@@ -32,7 +32,7 @@ tag @e[tag=newsnowball,limit=1,sort=nearest] remove newsnowball
 
 #look at target for a moment
 scoreboard players set #setTime value 8
-execute facing entity @e[limit=1,tag=looktarget] eyes run function sprint_racer:ai/general/movement/face_direction_temporarily
+execute facing entity @e[limit=1,tag=looktarget] feet run function sprint_racer:ai/general/movement/face_direction_temporarily
 
 #clean-up
 tag @e[tag=looktarget] remove looktarget
