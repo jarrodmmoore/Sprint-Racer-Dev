@@ -8,6 +8,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scor
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=7..8}] run team join spectator @s
 
 clear @s
+scoreboard players set @s hudNode -1
 
 scoreboard players reset @s points
 scoreboard players reset @s racePosDisplay

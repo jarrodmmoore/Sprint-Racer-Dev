@@ -105,7 +105,7 @@ execute as @e[type=!marker,type=!armor_stand,scores={burn=..999}] at @s run func
 execute as @e[type=!marker,type=!armor_stand,scores={blindtime=1..}] at @s run function sprint_racer:items/item_tick/blindness_visual
 
 #some projectiles...
-execute if entity @e[type=snowball,tag=!mHitbox,tag=!targetVisual] run function sprint_racer:items/item_tick/snowball
+execute as @e[type=snowball,tag=!mHitbox,tag=!targetVisual] at @s run function sprint_racer:items/item_tick/snowball
 execute unless entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=26a] as @e[tag=missile,type=armor_stand] at @s run function sprint_racer:items/item_tick/missile
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=26a] as @e[tag=missile,type=armor_stand] at @s run function sprint_racer:items/item_tick/missile_fast_init
 

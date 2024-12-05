@@ -6,7 +6,7 @@ scoreboard players set @s timeSinceDeath 0
 execute if entity @s[scores={death=2}] if score grandprix gameState matches 1 if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!noCrowdSFX,limit=1] run function sprint_racer:grand_prix/crowd_aww
 
 #warp to saved coords
-function sprint_racer:warp_to_saved_coords/_go
+execute unless score global gameState matches 0 run function sprint_racer:warp_to_saved_coords/_go
 
 #fix title times to deal with fussy plugin servers
 title @s times 0 45 5

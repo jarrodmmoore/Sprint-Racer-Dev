@@ -2,6 +2,9 @@ function sprint_racer:give_ids
 
 scoreboard players set @a storedHudNode -1
 
+#stop ambient noise
+stopsound @a ambient
+
 ######
 #MUSIC
 tag @e[type=armor_stand,tag=setBGM] remove setBGM

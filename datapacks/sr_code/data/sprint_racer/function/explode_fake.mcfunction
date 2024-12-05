@@ -22,7 +22,7 @@ execute as @e[tag=activeplayer,distance=..4] unless score @s playerID = #checkID
 execute as @e[tag=itemcontainer,tag=chest3,distance=..7] at @s run function sprint_racer:items/container_types/capsule_broken_by_explosion
 
 #blow up targets
-tag @e[distance=..4,tag=taTargetCore] add targetHit
+tag @e[distance=..4,tag=taTargetCore,type=magma_cube] add targetHit
 
 #damage chicken mines as well because that's funny
 effect give @e[tag=chickenmine,distance=..2] instant_damage 1 1 true

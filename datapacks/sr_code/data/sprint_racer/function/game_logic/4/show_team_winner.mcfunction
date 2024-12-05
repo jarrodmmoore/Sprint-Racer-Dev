@@ -3,9 +3,10 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={teamPoints=1.
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={teamPoints=..-1}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add winCyan
 
 #you da winner
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=winOrange] run tp @a[tag=playing,scores={previousTeam=1}] 1653 92 406 facing 1636 88 406
+scoreboard players set #varyTeleport value 0
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=winOrange] as @a[tag=playing,scores={previousTeam=1}] positioned 1653 92 406 facing 1636 88 406 run function sprint_racer:varied_teleport_thin
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=winOrange] as @a[tag=playing,scores={previousTeam=1}] run function sprint_racer_language:_dlc_3/lobby/award_ceremony/give_trophy_1st
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=winCyan] run tp @a[tag=playing,scores={previousTeam=2}] 1653 92 406 facing 1636 88 406
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=winCyan] as @a[tag=playing,scores={previousTeam=2}] positioned 1653 92 406 facing 1636 88 406 run function sprint_racer:varied_teleport_thin
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=winCyan] as @a[tag=playing,scores={previousTeam=2}] run function sprint_racer_language:_dlc_3/lobby/award_ceremony/give_trophy_1st
 
 #you da winner

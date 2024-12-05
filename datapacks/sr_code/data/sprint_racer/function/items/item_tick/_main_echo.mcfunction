@@ -52,5 +52,5 @@ execute if entity @e[type=!marker,type=!armor_stand,limit=1,scores={electrocute=
 execute if entity @e[type=!marker,type=!armor_stand,limit=1,scores={burn=..999}] as @e[type=!marker,type=!armor_stand,scores={burn=..999}] at @s run function sprint_racer:items/item_tick/burn
 
 #some projectiles...
-execute if entity @e[type=snowball,tag=!mHitbox] run function sprint_racer:items/item_tick/snowball
+execute as @e[type=snowball,tag=!mHitbox] at @s run function sprint_racer:items/item_tick/snowball
 execute as @e[tag=missile,type=armor_stand] at @s run function sprint_racer:items/item_tick/missile

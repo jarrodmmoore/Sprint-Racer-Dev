@@ -4,6 +4,9 @@ execute if score #temporarySave value matches 1.. run function sprint_racer:game
 
 scoreboard players reset @a[scores={pressJump=1}] pressJump
 
+#stop ambient noise
+stopsound @a ambient
+
 ######
 #MUSIC
 function sprint_racer:music/global/stop_music

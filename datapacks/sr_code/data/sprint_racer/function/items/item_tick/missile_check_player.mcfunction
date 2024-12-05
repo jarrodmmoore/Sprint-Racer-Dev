@@ -1,7 +1,7 @@
 #used with "fastmissiles" cheat
 
 tag @e[tag=activeplayer,distance=..2,scores={invisibility=..0}] add checkmyid
-execute if score global gameState matches 8 run tag @e[tag=taTargetCore,distance=..2] add checkmyid
+execute if score global gameState matches 8 run tag @e[tag=taTargetCore,type=magma_cube,distance=..2] add checkmyid
 
 scoreboard players set #hit value 0
 execute as @e[tag=checkmyid] unless score @s playerID = #missileID value run scoreboard players set #hit value 1

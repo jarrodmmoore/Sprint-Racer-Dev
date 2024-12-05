@@ -3,7 +3,7 @@ tag @s add self
 
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,tag=09a] run tag @s[nbt={RootVehicle:{Entity:{id:"minecraft:pig"}}}] add ejectkart
 
-execute at @s run tag @e[limit=1,sort=nearest,tag=taTargetCore,tag=!self] add warpTarget
+execute at @s run tag @e[limit=1,sort=nearest,tag=taTargetCore,type=magma_cube,tag=!self] add warpTarget
 execute if entity @e[tag=warpTarget] run tag @s add gotWarped
 execute if entity @e[tag=warpTarget] run function sprint_racer:items/item_tick/elite/warp/sound_effect
 execute if entity @e[tag=warpTarget] run tp @s @e[limit=1,tag=warpTarget]

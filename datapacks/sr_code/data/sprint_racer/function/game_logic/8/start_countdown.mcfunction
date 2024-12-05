@@ -54,6 +54,11 @@ execute if entity @s[scores={gameTime=90..}] run function sprint_racer_language:
 execute if entity @s[scores={gameTime=0..240}] as @e[tag=chosenTrack] run function sprint_racer:levels/_index_levels_battle_start_countdown
 
 
+#kill missiles and other lingering stuff
+execute if score @s gameTime matches ..159 run kill @e[tag=trap]
+execute if score @s gameTime matches ..159 run kill @e[type=tnt]
+execute if score @s gameTime matches ..159 run kill @e[tag=missile,type=armor_stand]
+
 #reset speeds and heal players at "GO!"
 execute if entity @s[scores={gameTime=160}] run scoreboard players set @s[scores={timeRemaining=..50}] timeRemaining 4800
 execute if entity @s[scores={gameTime=160}] run function sprint_racer:reset_speeds

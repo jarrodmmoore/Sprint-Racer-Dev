@@ -1,1 +1,1 @@
-scoreboard players add @e[tag=self] aiBattleBasherDurability 9
+scoreboard players add @e[tag=self] aiBattleBasherDurability 8

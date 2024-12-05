@@ -1,4 +1,4 @@
-tag @e[tag=activeplayer,distance=..4,scores={invisibility=..0}] add checkmyid
+tag @e[tag=activeplayer,distance=..4] add checkmyid
 
 scoreboard players operation @e[tag=checkmyid,distance=..4] dummyID = @s playerID
 execute as @e[tag=checkmyid,distance=..4] run scoreboard players operation @s dummyID -= @s playerID

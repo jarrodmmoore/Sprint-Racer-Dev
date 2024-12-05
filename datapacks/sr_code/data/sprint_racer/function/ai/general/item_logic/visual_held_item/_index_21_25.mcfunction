@@ -1,5 +1,5 @@
 execute if entity @s[scores={aiHoldingItem=21}] run data merge entity @s {HandItems:[{id:"minecraft:fire_charge",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
 execute if entity @s[scores={aiHoldingItem=22}] run data merge entity @s {HandItems:[{id:"minecraft:dropper",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
 execute if entity @s[scores={aiHoldingItem=23}] run data merge entity @s {HandItems:[{id:"minecraft:tnt",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
-execute if entity @s[scores={aiHoldingItem=24}] run data merge entity @s {HandItems:[{id:"minecraft:golden_axe",count:1,components:{"minecraft:damage":31,"minecraft:enchantments":{levels:{"minecraft:knockback":8,"minecraft:fire_aspect":1}}}},{}]}
+execute if entity @s[scores={aiHoldingItem=24}] run data merge entity @s {HandItems:[{id:"minecraft:golden_axe",count:1,components:{"minecraft:max_damage":1,"minecraft:enchantments":{levels:{"minecraft:knockback":8,"minecraft:fire_aspect":1}}}},{}]}
 execute if entity @s[scores={aiHoldingItem=25}] run data merge entity @s {HandItems:[{id:"minecraft:golden_apple",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}

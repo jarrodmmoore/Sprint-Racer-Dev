@@ -1,6 +1,7 @@
 tellraw @s ["",{"text":"\n==\\/== DEV MENU ==\\/==","color":"#6666FF","bold":true}]
 tellraw @s ["",{"text":"[gameplay stuff]","color":"aqua","bold":false,"clickEvent":{"action":"run_command","value":"/function sprint_racer:__dev_tools/menu_gameplay"},"hoverEvent":{"action":"show_text","value":"gameplay stuff"}}]
 tellraw @s ["",{"text":"[lobby stuff]","color":"aqua","bold":false,"clickEvent":{"action":"run_command","value":"/function sprint_racer:__dev_tools/menu_lobby"},"hoverEvent":{"action":"show_text","value":"lobby stuff"}}]
+tellraw @s ["",{"text":"[game options]","color":"aqua","bold":false,"clickEvent":{"action":"run_command","value":"/function sprint_racer:__dev_tools/menu_game_options"},"hoverEvent":{"action":"show_text","value":"game options"}}]
 tellraw @s ["",{"text":"[items]","color":"aqua","bold":false,"clickEvent":{"action":"run_command","value":"/function sprint_racer:__dev_tools/items"},"hoverEvent":{"action":"show_text","value":"Items"}}]
 tellraw @s ["",{"text":"[AI stuff]","color":"aqua","bold":false,"clickEvent":{"action":"run_command","value":"/function sprint_racer:__dev_tools/menu_ai"},"hoverEvent":{"action":"show_text","value":"AI stuff"}}]
 tellraw @s ["",{"text":"[node stuff]","color":"aqua","bold":false,"clickEvent":{"action":"run_command","value":"/function sprint_racer:__dev_tools/menu_nodes"},"hoverEvent":{"action":"show_text","value":"node stuff"}}]

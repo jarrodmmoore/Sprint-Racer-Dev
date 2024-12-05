@@ -14,7 +14,7 @@ execute as @e[tag=itemcontainer,tag=chest3,distance=..7] at @s run function spri
 execute as @e[type=item,distance=..5,nbt={Item:{components:{"minecraft:custom_data":{item:1b}}}}] run function sprint_racer:items/item_destroyed_by_explosion
 
 #blow up targets
-tag @e[distance=..5,tag=taTargetCore] add targetHit
+tag @e[distance=..5,tag=taTargetCore,type=magma_cube] add targetHit
 
 #refund some hp for the wither
 execute as @e[distance=..5,type=wither] run function sprint_racer:ai/general/wither_refund_hp

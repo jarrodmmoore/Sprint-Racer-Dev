@@ -8,7 +8,7 @@ summon snowball ~ ~.5 ~ {Tags:["targetVisual","setlife"],NoGravity:1b,Invulnerab
 #taTargetEnt
 #taTargetCore
 
-#team join colorRed @e[tag=setme,tag=taTargetCore]
+#team join colorRed @e[tag=setme,tag=taTargetCore,type=magma_cube]
 team join colorRed @e[tag=setlife,tag=targetVisual,type=snowball]
 scoreboard players set @e[tag=setme,type=magma_cube] lifespan 50
 scoreboard players set @e[tag=setme,type=magma_cube] targetData 1

@@ -3,6 +3,9 @@ tp @s 2472 100 268 0 0
 execute at @s run function sprint_racer:game_logic/5/set_spawnpoint
 gamerule doDaylightCycle false
 
+#stop ambient noise
+stopsound @s ambient
+
 #no smuggling
 tag @s remove fr_nightvision
 clear @s
