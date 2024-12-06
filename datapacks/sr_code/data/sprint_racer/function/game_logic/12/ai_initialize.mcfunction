@@ -17,7 +17,7 @@ tag @s add agogo
 #do NOT enter "half tick" mode. it makes the camera jerk around!
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=autotick] remove halftick
 
-tag @e[tag=AImaster] remove AImaster
+tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] remove AImaster
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9}] remove playerOrange
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9}] remove playerCyan
 
@@ -31,27 +31,27 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=teamplay] run fun
 function sprint_racer_language:_dlc_2/gameplay/position_display/ai_sidebar_colors
 
 #difficulty
-scoreboard players set @e[tag=AImaster,type=armor_stand,scores={rNumber=1}] aiSkill 2
-scoreboard players set @e[tag=AImaster,type=armor_stand,scores={rNumber=2}] aiSkill 1
-scoreboard players set @e[tag=AImaster,type=armor_stand,scores={rNumber=3}] aiSkill 3
-scoreboard players set @e[tag=AImaster,type=armor_stand,scores={rNumber=4}] aiSkill 2
-scoreboard players set @e[tag=AImaster,type=armor_stand,scores={rNumber=5}] aiSkill 3
-scoreboard players set @e[tag=AImaster,type=armor_stand,scores={rNumber=6}] aiSkill 3
-scoreboard players set @e[tag=AImaster,type=armor_stand,scores={rNumber=7}] aiSkill 2
-scoreboard players set @e[tag=AImaster,type=armor_stand,scores={rNumber=8}] aiSkill 1
-scoreboard players set @e[tag=AImaster,type=armor_stand,scores={rNumber=9}] aiSkill 3
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=1}] aiSkill 2
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=2}] aiSkill 1
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=3}] aiSkill 3
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=4}] aiSkill 2
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=5}] aiSkill 3
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=6}] aiSkill 3
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=7}] aiSkill 2
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=8}] aiSkill 1
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=9}] aiSkill 3
 
 
-scoreboard players set @e[tag=AImaster] check 0
-scoreboard players set @e[tag=AImaster] lap 1
-scoreboard players set @e[tag=AImaster] lastTeleport 0
-execute as @e[tag=AImaster] run function sprint_racer:give_ids2
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] check 0
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] lap 1
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] lastTeleport 0
+execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] run function sprint_racer:give_ids2
 
-execute as @e[tag=AImaster] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] addPoints 1
+execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] addPoints 1
 
-scoreboard players set @e[tag=AImaster] aiJBTime 0
-scoreboard players set @e[tag=AImaster] aiJBIntensity 0
-scoreboard players set @e[tag=AImaster] aiJBDelay 0
-scoreboard players set @e[tag=AImaster] timeSinceCheck 0
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] aiJBTime 0
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] aiJBIntensity 0
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] aiJBDelay 0
+scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] timeSinceCheck 0
 
 tag @e[tag=agogogo] remove agogo

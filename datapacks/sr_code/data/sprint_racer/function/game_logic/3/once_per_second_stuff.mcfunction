@@ -9,7 +9,7 @@ execute if entity @s[tag=!moretick] run function sprint_racer:game_logic/3/fast_
 #scoreboard players set @a[scores={KOs=101..}] KOs 100
 #scoreboard players set @e[scores={KOs=101..}] KOs 100
 #scoreboard players reset @a battlePos
-#scoreboard players reset @e[tag=AImaster,type=armor_stand] battlePos
+#scoreboard players reset @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] battlePos
 #tag @a[tag=ranked] remove ranked
 #tag @e[tag=ranked,type=armor_stand] remove ranked
 #scoreboard players set @s battlePos 1
@@ -38,9 +38,9 @@ execute if entity @s[tag=!moretick] run function sprint_racer:game_logic/3/fast_
 
 #execute as @a[scores={battlePos=1..}] run scoreboard players operation @s battPosDisplay = @s battlePos
 #execute as @a[scores={battlePos=1..}] run scoreboard players operation @s itemPosition = @s battPosDisplay
-#execute as @e[tag=AImaster,type=armor_stand,scores={battlePos=1..}] run scoreboard players operation @s battPosDisplay = @s battlePos
-#execute as @e[tag=AImaster,type=armor_stand,scores={battlePos=1..}] run scoreboard players operation @s itemPosition = @s battPosDisplay
-execute as @e[tag=AImaster,type=armor_stand] run function sprint_racer:game_logic/3/master_send_data_to_entity
+#execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={battlePos=1..}] run scoreboard players operation @s battPosDisplay = @s battlePos
+#execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={battlePos=1..}] run scoreboard players operation @s itemPosition = @s battPosDisplay
+execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] run function sprint_racer:game_logic/3/master_send_data_to_entity
 
 #show one of the current leaders at random
 tag @e[tag=displayViable] remove displayViable

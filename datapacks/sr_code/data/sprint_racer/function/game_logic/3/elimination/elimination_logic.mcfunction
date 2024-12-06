@@ -1,2 +1,2 @@
 execute as @a[tag=playing,tag=!eliminated,scores={playerLives=..0}] run function sprint_racer:game_logic/3/elimination/eliminate_self
-execute as @e[tag=AImaster,tag=!aiDisable,scores={playerLives=..0}] run function sprint_racer:game_logic/3/elimination/eliminate_self
+execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,tag=!aiDisable,scores={playerLives=..0}] run function sprint_racer:game_logic/3/elimination/eliminate_self

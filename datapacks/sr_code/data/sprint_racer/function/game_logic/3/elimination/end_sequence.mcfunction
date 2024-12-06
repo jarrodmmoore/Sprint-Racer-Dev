@@ -15,9 +15,9 @@ execute as @e[tag=ai] run data merge entity @s {Health:"1020b"}
 
 execute if entity @s[scores={gameTime=100000}] run function sprint_racer:clear_bossbars
 execute if entity @s[scores={gameTime=100000}] run scoreboard players set @a gAppleTime 0
-execute if entity @s[scores={gameTime=100000}] run scoreboard players set @e[tag=AImaster,tag=!aiDisable] finishPos 1
+execute if entity @s[scores={gameTime=100000}] run scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,tag=!aiDisable] finishPos 1
 execute if entity @s[scores={gameTime=100000}] run function sprint_racer:music/global/stop_music
-execute if entity @s[scores={gameTime=100000}] as @e[tag=AImaster,tag=!aiDisable] run function sprint_racer:game_logic/3/elimination/ai_survived
+execute if entity @s[scores={gameTime=100000}] as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,tag=!aiDisable] run function sprint_racer:game_logic/3/elimination/ai_survived
 execute if entity @s[scores={gameTime=100000}] as @a at @s run playsound minecraft:entity.iron_golem.death master @s ~ 100000 ~ 100000 1.2
 execute if entity @s[scores={gameTime=100000}] run title @a subtitle [""]
 execute if entity @s[scores={gameTime=100000}] run title @a title [""]
@@ -38,7 +38,7 @@ execute if entity @s[tag=customTesting,scores={gameTime=100110}] run function sp
 
 execute if entity @s[scores={gameTime=100120}] run scoreboard players set @a[tag=playing,tag=!eliminated] finishPos 1
 execute if entity @s[tag=!teamplay,scores={gameTime=100120}] run team join player @a[tag=playing]
-execute if entity @s[scores={gameTime=100120}] as @e[tag=AImaster] run scoreboard players operation @s battlePos = @s finishPos
+execute if entity @s[scores={gameTime=100120}] as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] run scoreboard players operation @s battlePos = @s finishPos
 execute if entity @s[scores={gameTime=100120}] as @a[tag=playing,tag=!eliminated] run scoreboard players operation @s addPoints += @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] addPoints2
 execute if entity @s[tag=!teamplay,scores={gameTime=100120}] run function sprint_racer:load_saved_points
 execute if entity @s[tag=!teamplay,scores={gameTime=100120}] run function sprint_racer_language:gameplay/battle_end/battle_give_points

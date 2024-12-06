@@ -1,7 +1,7 @@
 #aiGetsPoints? make all AI finish immediately
 execute if entity @s[tag=aiGetsPoints] run function sprint_racer:ai/general/ai_silent_finish_all
 
-tag @e[tag=AImaster] add aiDisable
+tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] add aiDisable
 scoreboard objectives remove validAI1
 scoreboard objectives remove validAI2
 scoreboard objectives remove validAI3

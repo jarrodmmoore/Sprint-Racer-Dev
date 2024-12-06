@@ -54,7 +54,7 @@ execute as @e[tag=finishline,type=marker,tag=node,scores={nodeState=1..}] at @s 
 execute as @a[tag=checkIncrement] at @s run function sprint_racer:game_logic/7/increment_checkpoint
 execute as @a[tag=finishLap] at @s run function sprint_racer:game_logic/7/finish_lap
 execute if entity @s[scores={gameTime=160..}] run scoreboard players add @a[tag=playing,gamemode=adventure] timeSinceCheck 1
-execute if entity @s[scores={gameTime=160..}] run scoreboard players add @e[tag=AImaster] timeSinceCheck 1
+execute if entity @s[scores={gameTime=160..}] run scoreboard players add @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] timeSinceCheck 1
 
 #visual checkpoint lines
 function sprint_racer:game_logic/1/checkpoint_visual/draw_timer

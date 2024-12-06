@@ -5,18 +5,18 @@
 
 #OLD CODE, not as efficient
 #execute as @a[tag=playing] run scoreboard players operation @s dummyKOs = @s KOs
-#execute as @e[tag=AImaster,type=armor_stand] run scoreboard players operation @s dummyKOs = @s KOs
+#execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] run scoreboard players operation @s dummyKOs = @s KOs
 #scoreboard players operation @a[tag=playing] dummyKOs -= @s dummyKOs
-#scoreboard players operation @e[tag=AImaster,type=armor_stand] dummyKOs -= @s dummyKOs
+#scoreboard players operation @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] dummyKOs -= @s dummyKOs
 #tag @a[tag=playing,scores={dummyKOs=0}] add thatsme
-#tag @e[tag=AImaster,type=armor_stand,scores={dummyKOs=0}] add thatsme
+#tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={dummyKOs=0}] add thatsme
 
 #NEW CODE, better
 scoreboard players operation #battle_pos math = @s battlePos
 scoreboard players operation #player_count_c math = @s playerCountC
 scoreboard players operation #ko_check math = @s dummyKOs
 execute as @a[tag=playing] if score @s KOs = #ko_check math run tag @s add thatsme
-execute as @e[tag=AImaster,type=armor_stand] if score @s KOs = #ko_check math run tag @s add thatsme
+execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] if score @s KOs = #ko_check math run tag @s add thatsme
 
 #assign battlePos to players
 scoreboard players operation @a[tag=thatsme] battlePos = #battle_pos math
@@ -43,10 +43,10 @@ tag @e[tag=thatsme,type=armor_stand] add ranked
 tag @e[tag=thatsme,type=armor_stand] remove thatsme
 tag @a[tag=thatsme] remove thatsme
 
-#execute unless entity @a[tag=playing,scores={dummyKOs=-1}] unless entity @e[tag=AImaster,type=armor_stand,scores={dummyKOs=-1}] run scoreboard players remove @s dummyKOs 1
+#execute unless entity @a[tag=playing,scores={dummyKOs=-1}] unless entity @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={dummyKOs=-1}] run scoreboard players remove @s dummyKOs 1
 scoreboard players remove @s dummyKOs 1
 
 #using the magic of recursion, keep calculating until every player is accounted for...
 execute if entity @s[scores={dummyKOs=0..}] if entity @a[tag=playing,limit=1,tag=!ranked,scores={KOs=0..100}] run tag @s add loopThisPlease
-execute if entity @s[scores={dummyKOs=0..}] if entity @e[tag=AImaster,limit=1,type=armor_stand,tag=!ranked,scores={KOs=0..100}] run tag @s add loopThisPlease
+execute if entity @s[scores={dummyKOs=0..}] if entity @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,limit=1,type=armor_stand,tag=!ranked,scores={KOs=0..100}] run tag @s add loopThisPlease
 execute if entity @s[tag=loopThisPlease] run function sprint_racer:game_logic/3/rank_calc_looper

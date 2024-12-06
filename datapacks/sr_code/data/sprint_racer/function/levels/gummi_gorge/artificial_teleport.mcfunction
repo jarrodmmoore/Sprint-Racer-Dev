@@ -25,15 +25,15 @@ execute if entity @s[tag=ai] run scoreboard players set @s aiBehavior 1
 execute if entity @s[tag=ai] run scoreboard players set @s aiSubBehavior 0
 execute if entity @s[tag=ai] run scoreboard players set @s aiSubBTimer 0
 
-execute if entity @s[tag=ai1] run tag @e[tag=AImaster,type=armor_stand,scores={rNumber=1}] add dataTarget
-execute if entity @s[tag=ai2] run tag @e[tag=AImaster,type=armor_stand,scores={rNumber=2}] add dataTarget
-execute if entity @s[tag=ai3] run tag @e[tag=AImaster,type=armor_stand,scores={rNumber=3}] add dataTarget
-execute if entity @s[tag=ai4] run tag @e[tag=AImaster,type=armor_stand,scores={rNumber=4}] add dataTarget
-execute if entity @s[tag=ai5] run tag @e[tag=AImaster,type=armor_stand,scores={rNumber=5}] add dataTarget
-execute if entity @s[tag=ai6] run tag @e[tag=AImaster,type=armor_stand,scores={rNumber=6}] add dataTarget
-execute if entity @s[tag=ai7] run tag @e[tag=AImaster,type=armor_stand,scores={rNumber=7}] add dataTarget
-execute if entity @s[tag=ai8] run tag @e[tag=AImaster,type=armor_stand,scores={rNumber=8}] add dataTarget
-execute if entity @s[tag=ai9] run tag @e[tag=AImaster,type=armor_stand,scores={rNumber=9}] add dataTarget
+execute if entity @s[tag=ai1] run tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=1}] add dataTarget
+execute if entity @s[tag=ai2] run tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=2}] add dataTarget
+execute if entity @s[tag=ai3] run tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=3}] add dataTarget
+execute if entity @s[tag=ai4] run tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=4}] add dataTarget
+execute if entity @s[tag=ai5] run tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=5}] add dataTarget
+execute if entity @s[tag=ai6] run tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=6}] add dataTarget
+execute if entity @s[tag=ai7] run tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=7}] add dataTarget
+execute if entity @s[tag=ai8] run tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=8}] add dataTarget
+execute if entity @s[tag=ai9] run tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=9}] add dataTarget
 execute if entity @s[tag=ai] run scoreboard players operation @e[tag=dataTarget,type=armor_stand] lastTeleport = @s lastTeleport
 execute if entity @s[tag=ai] run tag @e[tag=dataTarget,type=armor_stand] remove dataTarget
 

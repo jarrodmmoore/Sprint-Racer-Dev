@@ -175,6 +175,8 @@ tag @a remove eliminated
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove hideLaps
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove noCharity
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove gauntletTrack
+scoreboard players set #useFastCalc value 1
+scoreboard players set #lastRacePosCalc value 1
 
 #the chosen track will run its special initialization function
 function sprint_racer:game_logic/12/_initialize_track

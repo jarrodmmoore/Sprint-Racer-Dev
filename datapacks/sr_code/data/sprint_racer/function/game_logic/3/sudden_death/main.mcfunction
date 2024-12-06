@@ -25,4 +25,4 @@ execute if entity @s[scores={timeRemaining=..-1000}] run effect give @e[tag=acti
 
 #70sec, just eliminate random people regardless of hp, we need to move on already!
 execute if entity @s[scores={timeRemaining=..-1400}] run scoreboard players set @a[limit=1,sort=random,tag=player,tag=!eliminated] playerLives 0
-execute if entity @s[scores={timeRemaining=..-1400}] run scoreboard players set @e[limit=1,sort=random,tag=AImaster,tag=!aiDisable] playerLives 0
+execute if entity @s[scores={timeRemaining=..-1400}] run scoreboard players set @e[limit=1,sort=random,tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,tag=!aiDisable] playerLives 0

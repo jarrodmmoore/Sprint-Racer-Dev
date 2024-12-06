@@ -93,6 +93,9 @@ scoreboard players set @s rateAccel 0
 scoreboard players set @s rateDecel 0
 scoreboard players set @s timeWalked 0
 
+scoreboard players reset @s racePosCalc
+scoreboard players reset @s racePosDisplay2
+
 scoreboard players set @s tacticsStep 1
 
 scoreboard players set @s maturity 1

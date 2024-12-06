@@ -8,9 +8,9 @@ execute as @e[tag=activeplayer] run scoreboard players operation @s math -= @e[t
 execute if entity @e[tag=activeplayer,scores={math=0..}] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lap 1
 
 #reduce everyone's lap count by 1, including the max lap count, if nobody is on lap 1
-execute unless entity @a[tag=playing,scores={lap=..1}] unless entity @e[tag=AImaster,scores={lap=..1}] run tag @s add reduceLap
+execute unless entity @a[tag=playing,scores={lap=..1}] unless entity @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={lap=..1}] run tag @s add reduceLap
 execute if entity @s[tag=reduceLap] run scoreboard players remove @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lap 1
 execute if entity @s[tag=reduceLap] run scoreboard players remove @a[tag=playing] lap 1
 execute if entity @s[tag=reduceLap] run scoreboard players remove @e[tag=ai] lap 1
-execute if entity @s[tag=reduceLap] run scoreboard players remove @e[tag=AImaster] lap 1
+execute if entity @s[tag=reduceLap] run scoreboard players remove @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] lap 1
 tag @s[tag=reduceLap] remove reduceLap

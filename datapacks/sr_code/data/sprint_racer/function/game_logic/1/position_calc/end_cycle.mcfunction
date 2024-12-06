@@ -11,15 +11,15 @@ scoreboard players add @e[tag=activeplayer,scores={racePosCalc=1..}] itemPositio
 #ai transfers score to ai puppet master for display
 scoreboard players reset @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9}] racePosDisplay
 execute as @e[tag=ai,scores={racePosDisplay=1..}] run function sprint_racer:game_logic/1/position_calc/ai_give_puppetmaster_racepos
-execute as @e[tag=AImaster,type=armor_stand,tag=!eliminated,scores={finishPos=1..4}] run scoreboard players operation @s racePosDisplay = @s finishPos
+execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,tag=!eliminated,scores={finishPos=1..4}] run scoreboard players operation @s racePosDisplay = @s finishPos
 
 tag @e[tag=playing,tag=finished,scores={racePosDisplay=1..4}] add top4
 tag @e[tag=activeplayer,scores={racePosDisplay=1..4}] add top4
-tag @e[tag=AImaster,scores={racePosDisplay=1..4}] add top4
+tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={racePosDisplay=1..4}] add top4
 scoreboard players reset @e[tag=!top4,scores={racePosDisplay2=-100..}] racePosDisplay2
 function sprint_racer_language:gameplay/position_display/ai_sidebar_clear
 execute as @e[tag=playing,tag=top4] run function sprint_racer:game_logic/1/position_calc/publish_positions_top_player
-execute as @e[tag=AImaster,type=armor_stand,tag=top4] run function sprint_racer:game_logic/1/position_calc/publish_positions_top_ai
+execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,tag=top4] run function sprint_racer:game_logic/1/position_calc/publish_positions_top_ai
 tag @e[tag=top4] remove top4
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove calcEnd

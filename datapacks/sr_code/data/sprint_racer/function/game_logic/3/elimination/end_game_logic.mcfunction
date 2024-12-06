@@ -24,7 +24,7 @@ execute if entity @s[tag=!suddenDeath,scores={timeOut=..1,timeRemaining=..0,game
 execute if entity @s[tag=suddenDeath,scores={gameTime=200..99999}] run function sprint_racer:game_logic/3/sudden_death/main
 
 #only AI are left? skip to sudden death.
-execute unless entity @s[tag=allowAIfinish] unless entity @a[tag=playing,tag=!eliminated] if entity @e[tag=AImaster,type=armor_stand,tag=!aiDisable] if entity @s[scores={timeRemaining=101..}] run function sprint_racer:game_logic/3/elimination/skip_to_sudden_death
+execute unless entity @s[tag=allowAIfinish] unless entity @a[tag=playing,tag=!eliminated] if entity @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,tag=!aiDisable] if entity @s[scores={timeRemaining=101..}] run function sprint_racer:game_logic/3/elimination/skip_to_sudden_death
 
 #end sequence
 execute if entity @s[scores={timeRemaining=..-9999}] run function sprint_racer:game_logic/3/elimination/end_sequence

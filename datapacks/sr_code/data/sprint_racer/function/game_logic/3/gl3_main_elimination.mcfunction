@@ -43,7 +43,7 @@ execute if entity @s[scores={gameTime=100..}] run function sprint_racer:game_log
 
 #reached KO goal? get an extra life
 execute as @a[tag=playing,gamemode=adventure] if score @s KOs >= @s KOgoal at @s run function sprint_racer:game_logic/3/elimination/1up
-execute as @e[tag=AImaster,type=armor_stand] if score @s KOs >= @s KOgoal at @s run function sprint_racer:game_logic/3/elimination/1up
+execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] if score @s KOs >= @s KOgoal at @s run function sprint_racer:game_logic/3/elimination/1up
 
 #track-specific logic
 execute as @e[limit=1,type=armor_stand,tag=chosenTrack] run function sprint_racer:levels/_index_levels_battle

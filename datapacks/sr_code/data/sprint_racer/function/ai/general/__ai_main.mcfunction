@@ -7,13 +7,13 @@ execute if score #ai_tick value matches 2.. run scoreboard players set #ai_tick 
 #only the stuff essential for smooth movement is run on "lazy" ticks
 
 
-execute if score #ai_tick value matches 1 as @e[type=armor_stand,tag=AImaster,tag=!aiDisable,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9}] run function sprint_racer:ai/general/_ai_master
-execute if score #ai_tick value matches 0 as @e[type=armor_stand,tag=AImaster,tag=!aiDisable,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9}] run function sprint_racer:ai/general/_ai_master_lazy
+execute if score #ai_tick value matches 1 as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,tag=!aiDisable,scores={rNumber=1..9}] run function sprint_racer:ai/general/_ai_master
+execute if score #ai_tick value matches 0 as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,tag=!aiDisable,scores={rNumber=1..9}] run function sprint_racer:ai/general/_ai_master_lazy
 
 #clean up old AI entities that are no longer valid
 execute as @e[type=!player,tag=ai] run function sprint_racer:ai/general/check_if_valid
 
-execute as @e[tag=P_rememberAI] at @s run function sprint_racer:ai/general/ender_pearl_remember
+execute as @e[tag=P_rememberAI,type=ender_pearl] at @s run function sprint_racer:ai/general/ender_pearl_remember
 
 
 #some stuff I want to remember...

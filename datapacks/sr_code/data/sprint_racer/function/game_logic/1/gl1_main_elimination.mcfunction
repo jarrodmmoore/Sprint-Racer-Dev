@@ -14,9 +14,10 @@ execute if score #bbPersonalize value matches 2 if entity @s[scores={gameTime=16
 function sprint_racer:game_logic/1/node_effects/node_effects_main
 
 #position calculator
-execute if entity @s[tag=!moretick,scores={gameTime=100..,lap=..50}] unless entity @s[tag=ignoreCalc] run function sprint_racer:game_logic/1/position_calc/cycle_tick
-execute if entity @s[tag=!moretick,tag=halftick,scores={gameTime=100..,lap=..50}] unless entity @s[tag=ignoreCalc] run function sprint_racer:game_logic/1/position_calc/cycle_tick
-execute if entity @s[tag=moretick,scores={gameTime=160..,lap=..50}] unless entity @s[tag=ignoreCalc] run function sprint_racer:game_logic/1/position_calc/cycle_tick_fast_calc
+execute if score #useFastCalc value matches 1 run function sprint_racer:game_logic/1/position_calc/improved/_tick
+execute if score #useFastCalc value matches 0 if entity @s[tag=!moretick,scores={gameTime=100..,lap=..50}] unless entity @s[tag=ignoreCalc] run function sprint_racer:game_logic/1/position_calc/cycle_tick
+execute if score #useFastCalc value matches 0 if entity @s[tag=!moretick,tag=halftick,scores={gameTime=100..,lap=..50}] unless entity @s[tag=ignoreCalc] run function sprint_racer:game_logic/1/position_calc/cycle_tick
+execute if score #useFastCalc value matches 0 if entity @s[tag=moretick,scores={gameTime=160..,lap=..50}] unless entity @s[tag=ignoreCalc] run function sprint_racer:game_logic/1/position_calc/cycle_tick_fast_calc
 execute unless entity @s[tag=ignoreCalc] if entity @s[scores={gameTime=200..,timeRemaining=1..}] run function sprint_racer:game_logic/1/position_calc/subtitle_display_elimination
 
 #red flash for last place's position display (the HUD will handle the rest of this)
@@ -55,7 +56,7 @@ execute as @e[tag=ai,tag=checkIncrement] at @s run function sprint_racer:game_lo
 execute as @a[tag=finishLap] at @s run function sprint_racer:game_logic/1/finish_lap
 execute as @e[tag=ai,tag=finishLap] at @s run function sprint_racer:game_logic/1/finish_lap_ai
 execute if entity @s[scores={gameTime=160..}] run scoreboard players add @a[tag=playing,gamemode=adventure] timeSinceCheck 1
-execute if entity @s[scores={gameTime=160..}] run scoreboard players add @e[tag=AImaster,type=armor_stand] timeSinceCheck 1
+execute if entity @s[scores={gameTime=160..}] run scoreboard players add @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] timeSinceCheck 1
 
 #visual checkpoint lines
 function sprint_racer:game_logic/1/checkpoint_visual/draw_timer

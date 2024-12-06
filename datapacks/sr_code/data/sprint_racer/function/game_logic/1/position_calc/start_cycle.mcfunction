@@ -10,7 +10,7 @@ scoreboard players reset @e[name=!"w",scores={racePosCalc=-100..}] racePosCalc
 
 #finished players don't need to get calculated, so we'll just give them their finish position value since that isn't going to change
 execute as @e[tag=playing,tag=finished] run scoreboard players operation @s racePosCalc = @s finishPos
-execute as @e[tag=AImaster,tag=finished] run scoreboard players operation @s racePosCalc = @s finishPos
+execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,tag=finished] run scoreboard players operation @s racePosCalc = @s finishPos
 
 #players' lap and checkpoint values can change during calculation which causes problems
 #so we use an extra dummy objective that stays constant throughout each position calculator cycle to avoid these problems

@@ -209,6 +209,28 @@ scoreboard players set #commandBlockCheck value 0
 setblock 1556 78 406 redstone_block
 schedule function sprint_racer:verify_command_blocks_enabled 5t
 
+#some insane scoreboard stuff
+#each array has 26 entries to keep track of what checkpoints are relevant. index [25] is the finish line
+data modify storage sprint_racer:pos_calc check_array_1 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_2 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_3 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_4 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_5 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_6 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_7 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_8 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_9 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_10 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_11 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_12 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_13 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_14 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_15 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_16 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_17 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_18 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_19 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+data modify storage sprint_racer:pos_calc check_array_20 set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 #some gamerules?
 gamerule doVinesSpread false

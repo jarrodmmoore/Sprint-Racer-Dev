@@ -1,4 +1,4 @@
-tag @e[tag=AImaster] remove AImaster
+tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] remove AImaster
 scoreboard objectives remove validAI1
 scoreboard objectives remove validAI2
 scoreboard objectives remove validAI3

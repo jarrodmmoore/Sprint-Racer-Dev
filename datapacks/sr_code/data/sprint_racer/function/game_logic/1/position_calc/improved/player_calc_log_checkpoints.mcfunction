@@ -1,0 +1,2 @@
+$data modify storage sprint_racer:pos_calc check_array_$(lap)[$(check)] set value 1
+$execute if score @s check >= #posCalcCheck value run data modify storage sprint_racer:pos_calc check_array_$(lap)[25] set value 1

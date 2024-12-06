@@ -75,7 +75,7 @@ gamerule fallDamage true
 
 tag @a[limit=1] add spdbump
 
-tag @e[tag=AImaster] remove AImaster
+tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] remove AImaster
 
 #reset title times again just in case somebody's client is on mushrooms
 title @a times 0 45 5

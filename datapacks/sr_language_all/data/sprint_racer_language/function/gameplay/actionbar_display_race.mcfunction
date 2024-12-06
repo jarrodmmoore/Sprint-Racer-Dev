@@ -54,7 +54,7 @@ execute if entity @s[scores={currentTimeMsec=5..}] run title @a[scores={actionba
 
 #state 5, announce finish of most recently finished player
 execute if entity @a[scores={actionbarState=5}] as @e[tag=latestFinish,type=player] run function sprint_racer:game_logic/1/announce_finish
-execute if entity @a[scores={actionbarState=5}] as @e[tag=latestFinish,tag=AImaster] run function sprint_racer:game_logic/1/announce_finish_ai
+execute if entity @a[scores={actionbarState=5}] as @e[tag=latestFinish,tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] run function sprint_racer:game_logic/1/announce_finish_ai
 
 
 #state 6, off course

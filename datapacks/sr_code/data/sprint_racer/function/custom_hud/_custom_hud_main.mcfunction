@@ -32,7 +32,7 @@ execute if score #hudLapA value matches 10.. run scoreboard players set #hudLapA
 #count all players
 scoreboard players set #hudAllPlayers value 0
 execute as @a[gamemode=adventure,tag=playing,tag=!finished] run scoreboard players add #hudAllPlayers value 1
-execute as @e[type=armor_stand,tag=AImaster,tag=!aiDisable] run scoreboard players add #hudAllPlayers value 1
+execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,tag=!aiDisable] run scoreboard players add #hudAllPlayers value 1
 scoreboard players operation #hudAllAlive value = #hudAllPlayers value
 execute if score @s gameState matches 1 run scoreboard players remove #hudAllPlayers value 1
 execute if score @s gameState matches 1 run scoreboard players operation #hudAllPlayers value += @s finishPos

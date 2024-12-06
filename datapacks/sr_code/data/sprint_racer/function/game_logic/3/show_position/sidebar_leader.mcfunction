@@ -20,8 +20,8 @@ execute unless entity @e[tag=displayViable,tag=!this_is_me] run function sprint_
 
 execute if entity @s[tag=playing] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=rank_sidebar_b] run scoreboard players operation @s displayLeaderB = @s KOs
 execute if entity @s[tag=playing] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=rank_sidebar_b] run scoreboard players operation @s displayLeaderA = @s KOs
-execute if entity @s[tag=AImaster] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=rank_sidebar_b] run function sprint_racer_language:gameplay/rank_display/sidebar_ai_name_b
-execute if entity @s[tag=AImaster] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=rank_sidebar_b] run function sprint_racer_language:gameplay/rank_display/sidebar_ai_name
+execute if entity @s[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=rank_sidebar_b] run function sprint_racer_language:gameplay/rank_display/sidebar_ai_name_b
+execute if entity @s[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=rank_sidebar_b] run function sprint_racer_language:gameplay/rank_display/sidebar_ai_name
 
 scoreboard players set @s leadDisplayDelay 1
 execute as @e[tag=displayViable,tag=!this_is_me] run scoreboard players add @e[tag=this_is_me] leadDisplayDelay 1
