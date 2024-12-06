@@ -35,7 +35,7 @@ scoreboard players operation #hudCountdownSec value %= #10 value
 execute if entity @s[scores={timeRemaining=3..4800}] run bossbar set timeremaining players @a[tag=!bbarbump]
 tag @a[tag=bbarbump] remove bbarbump
 execute if entity @s[scores={timeRemaining=..2}] run bossbar set timeremaining players
-execute if score #bbPersonalize value matches 2 run bossbar set minecraft:timeremaining color purple
+execute if score #bbPersonalize value matches 2 run bossbar set minecraft:timeremaining color pink
 execute unless score #bbPersonalize value matches 2 if entity @s[scores={timeRemaining=601..}] run bossbar set minecraft:timeremaining color white
 execute unless score #bbPersonalize value matches 2 if entity @s[scores={timeRemaining=..600}] run bossbar set minecraft:timeremaining color red
 function sprint_racer_language:gameplay/battle_end/bossbar_timer

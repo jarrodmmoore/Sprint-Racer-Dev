@@ -4,7 +4,7 @@ bossbar set minecraft:speedo visible true
 
 execute if entity @s[scores={speedBoost=0,moveState=1}] run bossbar set minecraft:speedo color white
 execute if entity @s[scores={speedBoost=0,moveState=2}] run bossbar set minecraft:speedo color green
-execute if entity @s[scores={speedBoost=0,moveState=3}] run bossbar set minecraft:speedo color pink
+execute if entity @s[scores={speedBoost=0,moveState=3}] run bossbar set minecraft:speedo color purple
 execute if entity @s[scores={speedBoost=1..20}] run bossbar set minecraft:speedo color yellow
 execute if entity @s[scores={speedBoost=31..50}] run bossbar set minecraft:speedo color blue
 execute if entity @s[scores={speedBoost=0,hitstun=2..}] run bossbar set minecraft:speedo color red

@@ -1,6 +1,6 @@
-bossbar set minecraft:lap1 color purple
+bossbar set minecraft:lap1 color pink
 bossbar set minecraft:lap1 name [""]
-bossbar set minecraft:timeremaining color purple
+bossbar set minecraft:timeremaining color pink
 
 scoreboard players set #bbPersonalize value 2
 

@@ -37,6 +37,6 @@ execute if entity @s[scores={gameState=7,timeRemaining2=..2400}] run bossbar set
 tag @a[tag=bbarbump] remove bbarbump
 execute if entity @s[scores={gameState=1,timeRemaining2=1201..}] run bossbar set minecraft:gauntlettime color white
 execute if entity @s[scores={gameState=1,timeRemaining2=..1200}] run bossbar set minecraft:gauntlettime color red
-execute if entity @s[scores={gameState=7}] run bossbar set minecraft:gauntlettime color purple
+execute if entity @s[scores={gameState=7}] run bossbar set minecraft:gauntlettime color pink
 function sprint_racer_language:levels/the_gauntlet/bossbar_timer
 execute store result bossbar minecraft:gauntlettime value run scoreboard players get @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] timeRemaining2
