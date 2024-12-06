@@ -5,7 +5,7 @@
 $execute store result score #test4 value run data get storage sprint_racer:pos_calc check_array_$(lap)[25] 1
 
 #player is approaching finishline if their check >= #posCalcCheck value
-$execute if score #test value matches 1 positioned $(finishline_x) $(finishline_y) $(finishline_z) as @e[type=interaction,tag=playerPosMarker,sort=nearest] if score @s lap >= #relevantLapMax value if score @s check >= #posCalcCheck value run function sprint_racer:game_logic/1/position_calc/improved/get_pos_marker
+$execute if score #test4 value matches 1 positioned $(finishline_x) $(finishline_y) $(finishline_z) as @e[type=interaction,tag=playerPosMarker,sort=nearest] if score @s lap >= #relevantLapMax value if score @s check >= #posCalcCheck value run function sprint_racer:game_logic/1/position_calc/improved/get_pos_marker
 
 #done with this slot
 $data modify storage sprint_racer:pos_calc check_array_$(lap)[25] set value 0

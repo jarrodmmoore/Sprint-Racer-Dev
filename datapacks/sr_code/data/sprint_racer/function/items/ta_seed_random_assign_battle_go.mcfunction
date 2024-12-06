@@ -27,4 +27,6 @@ execute if entity @s[scores={rNumber=40..43}] run scoreboard players set @s item
 execute if entity @s[scores={rNumber=44..47}] run scoreboard players set @s itemchestSeedB 12
 execute if entity @s[scores={rNumber=48..50}] run scoreboard players set @s itemchestSeedB 21
 
+scoreboard players reset @s rNumber
+
 tellraw @a ["",{"text":"[DEV] Assigned Item Chest to itemchestSeedB ","color":"green"},{"score":{"name":"@s","objective":"itemchestSeedB"},"color":"green"}]

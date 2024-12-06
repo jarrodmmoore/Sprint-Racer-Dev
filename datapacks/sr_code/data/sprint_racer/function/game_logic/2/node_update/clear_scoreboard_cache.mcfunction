@@ -6,14 +6,19 @@
 scoreboard players add #clearCacheProgress value 1
 
 
+#rNumber
+execute if score #clearCacheProgress value matches 1 as @e[tag=random,x=1548,y=155,z=406,distance=..1] if score @s rNumber matches -2147483648..2147483647 run scoreboard players operation @s AIBC_dir1 = @s rNumber
+execute if score #clearCacheProgress value matches 1 run scoreboard players reset * rNumber
+execute if score #clearCacheProgress value matches 1 as @e[tag=random,x=1548,y=155,z=406,distance=..1] if score @s AIBC_dir1 matches -2147483648..2147483647 run scoreboard players operation @s rNumber = @s AIBC_dir1
+
 #checkpoint
-execute if score #clearCacheProgress value matches 1 run scoreboard players reset * check_y_min
-execute if score #clearCacheProgress value matches 2 run scoreboard players reset * check_y_max
-execute if score #clearCacheProgress value matches 3 run scoreboard players reset * visualXoffset
-execute if score #clearCacheProgress value matches 4 run scoreboard players reset * visualYoffset
-execute if score #clearCacheProgress value matches 5 run scoreboard players reset * visualZoffset
-execute if score #clearCacheProgress value matches 6 run scoreboard players reset * visualYaw
-execute if score #clearCacheProgress value matches 7 run scoreboard players reset * visualPitch
+execute if score #clearCacheProgress value matches 2 run scoreboard players reset * check_y_min
+execute if score #clearCacheProgress value matches 3 run scoreboard players reset * check_y_max
+execute if score #clearCacheProgress value matches 4 run scoreboard players reset * visualXoffset
+execute if score #clearCacheProgress value matches 5 run scoreboard players reset * visualYoffset
+execute if score #clearCacheProgress value matches 6 run scoreboard players reset * visualZoffset
+execute if score #clearCacheProgress value matches 7 run scoreboard players reset * visualYaw
+execute if score #clearCacheProgress value matches 8 run scoreboard players reset * visualPitch
 execute if score #clearCacheProgress value matches 8 run scoreboard players reset * visualLength
 #w and custom tracks use "check" to store some data, so make sure they hold on to it
 execute if score #clearCacheProgress value matches 9 as @e[type=armor_stand] if score @s check matches -2147483648..2147483647 run scoreboard players operation @s AIBC_id = @s check

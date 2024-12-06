@@ -151,3 +151,5 @@ scoreboard objectives remove tipCycle
 scoreboard objectives remove cheatDetected
 scoreboard objectives remove inGauntlet
 scoreboard objectives remove autoTimer
+
+scoreboard objectives remove spawnDirection

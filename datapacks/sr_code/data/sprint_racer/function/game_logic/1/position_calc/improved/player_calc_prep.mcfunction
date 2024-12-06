@@ -6,10 +6,12 @@ execute unless score @s lap matches 1..20 run return run scoreboard players set 
 scoreboard players operation @s racePosCalc = #lastRacePosCalc value
 
 #summon interaction that will hold a reference back to ourselves via interaction.target
-data modify storage sprint_racer:player_pos_calc uuid set from entity @s UUID
 execute store result storage sprint_racer:player_pos_calc check int 1 run scoreboard players get @s check
 execute store result storage sprint_racer:player_pos_calc lap int 1 run scoreboard players get @s lap
-execute if loaded ~ ~ ~ summon interaction run function sprint_racer:game_logic/1/position_calc/improved/summon_pos_marker_entity
+execute if entity @s[type=player] run data modify storage sprint_racer:player_pos_calc uuid set from entity @s UUID
+execute if entity @s[type=player] if loaded ~ ~ ~ summon interaction run function sprint_racer:game_logic/1/position_calc/improved/summon_pos_marker_entity
+execute if entity @s[type=!player] run scoreboard players operation #setPlayerID value = @s playerID
+execute if entity @s[type=!player] if loaded ~ ~ ~ summon interaction run function sprint_racer:game_logic/1/position_calc/improved/summon_pos_marker_entity_nonplayer
 
 #Q: why are we using an interaction?
 #A: sprint racer doesn't use any other interactions (selectors are efficient), it can hold references to other entities via UUID access them with "execute on", and the hitbox is un-viewable when width and height are 0
