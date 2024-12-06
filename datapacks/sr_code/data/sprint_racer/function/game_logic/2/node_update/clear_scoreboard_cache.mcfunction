@@ -20,6 +20,9 @@ execute if score #clearCacheProgress value matches 9 as @e[type=armor_stand] if 
 execute if score #clearCacheProgress value matches 9 run scoreboard players reset * check
 execute if score #clearCacheProgress value matches 9 as @e[type=armor_stand] if score @s AIBC_id matches -2147483648..2147483647 run scoreboard players operation @s check = @s AIBC_id
 
+#finish line
+execute if score #clearCacheProgress value matches 9 run scoreboard players reset * nCheck
+
 #ai breadcrumb
 execute if score #clearCacheProgress value matches 10 run scoreboard players reset * AIBC_dir1
 execute if score #clearCacheProgress value matches 11 run scoreboard players reset * AIBC_dir2
@@ -31,21 +34,18 @@ execute if score #clearCacheProgress value matches 16 run scoreboard players res
 execute if score #clearCacheProgress value matches 17 run scoreboard players reset * AIBC_condition
 execute if score #clearCacheProgress value matches 18 run scoreboard players reset * AIBC_id
 
-#finish line
-execute if score #clearCacheProgress value matches 19 run scoreboard players reset * nCheck
-
 #item chests
-execute if score #clearCacheProgress value matches 20 run scoreboard players reset * itemchestSeedA
-execute if score #clearCacheProgress value matches 21 run scoreboard players reset * itemchestSeedB
-execute if score #clearCacheProgress value matches 22 run scoreboard players reset * itemchestSeedR
+execute if score #clearCacheProgress value matches 19 run scoreboard players reset * itemchestSeedA
+execute if score #clearCacheProgress value matches 20 run scoreboard players reset * itemchestSeedB
+execute if score #clearCacheProgress value matches 21 run scoreboard players reset * itemchestSeedR
 #playerRequire also needs to be cleared, but now's not a good time. we'll do it at game_logic/0/_initialize instead.
 
 #jump boost
-execute if score #clearCacheProgress value matches 23 run scoreboard players reset * jump
+execute if score #clearCacheProgress value matches 22 run scoreboard players reset * jump
 
 #scripted sequence
-execute if score #clearCacheProgress value matches 24 run scoreboard players reset * scriptMove
-execute if score #clearCacheProgress value matches 24 run scoreboard players set @a scriptMove 0
+execute if score #clearCacheProgress value matches 23 run scoreboard players reset * scriptMove
+execute if score #clearCacheProgress value matches 23 run scoreboard players set @a scriptMove 0
 
 #teleporter
-execute if score #clearCacheProgress value matches 25 run scoreboard players reset * teleport
+execute if score #clearCacheProgress value matches 24 run scoreboard players reset * teleport

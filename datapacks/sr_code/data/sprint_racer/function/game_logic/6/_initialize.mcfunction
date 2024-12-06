@@ -71,6 +71,7 @@ function sprint_racer_language:_dlc_1/gameplay/time_attack_sidebar
 tag @e[tag=noTAmessage] remove noTAmessage
 
 gamemode adventure @a
+execute as @a[scores={kart_model=101..108}] run function sprint_racer:game_logic/0/clear_old_head_model
 
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 6
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameTime 0

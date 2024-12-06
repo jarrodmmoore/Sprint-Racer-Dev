@@ -14,6 +14,7 @@ function sprint_racer:music/global/stop_music
 
 #force everyone into adventure mode right here to prevent a spectator exploit
 gamemode adventure @a
+execute as @a[scores={kart_model=101..108}] run function sprint_racer:game_logic/0/clear_old_head_model
 
 #clear night vision so it doesn't get carried between tracks by mistake
 effect clear @a night_vision
