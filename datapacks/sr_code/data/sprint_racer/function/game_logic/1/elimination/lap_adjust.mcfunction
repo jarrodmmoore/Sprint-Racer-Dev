@@ -13,4 +13,5 @@ execute if entity @s[tag=reduceLap] run scoreboard players remove @e[tag=w,x=156
 execute if entity @s[tag=reduceLap] run scoreboard players remove @a[tag=playing] lap 1
 execute if entity @s[tag=reduceLap] run scoreboard players remove @e[tag=ai] lap 1
 execute if entity @s[tag=reduceLap] run scoreboard players remove @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] lap 1
+execute if entity @s[tag=reduceLap] run function sprint_racer:game_logic/1/checkpoint_time_difference/shift_all_down
 tag @s[tag=reduceLap] remove reduceLap
