@@ -20,8 +20,8 @@ scoreboard players set @e[tag=setLife] lifespan 3
 tag @e[tag=setLife] remove setLife
 
 #particle and sound effect
-execute unless entity @s[scores={speedlevel=7..,moveState=2}] run function sprint_racer:explode_sound_effect {volume:1,pitch:1.5}
-execute if entity @s[scores={speedlevel=7..,moveState=2}] run function sprint_racer:explode_sound_effect {volume:1,pitch:1.7}
+execute unless entity @s[scores={speedlevel=7..,moveState=2}] run function sprint_racer:explode_sound_effect {volume:1.5,pitch:1.5}
+execute if entity @s[scores={speedlevel=7..,moveState=2}] run function sprint_racer:explode_sound_effect {volume:1.5,pitch:1.7}
 particle explosion ^ ^1.5 ^.5 0.2 0.2 0.2 .01 1
 
 #look at target for a moment

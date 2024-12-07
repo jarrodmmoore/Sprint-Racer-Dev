@@ -16,8 +16,8 @@ tag @e[tag=aimMe,limit=1,type=armor_stand,distance=..3] remove aimMe
 scoreboard players set @e[tag=setLife,distance=..3,type=item_display] lifespan 3
 tag @e[tag=setLife,distance=..3,type=item_display] remove setLife
 
-execute unless entity @s[scores={speedlevel=7..,moveState=2}] run function sprint_racer:explode_sound_effect {volume:1,pitch:1.5}
-execute if entity @s[scores={speedlevel=7..,moveState=2}] run function sprint_racer:explode_sound_effect {volume:1,pitch:1.7}
+execute unless entity @s[scores={speedlevel=7..,moveState=2}] run function sprint_racer:explode_sound_effect {volume:1.5,pitch:1.5}
+execute if entity @s[scores={speedlevel=7..,moveState=2}] run function sprint_racer:explode_sound_effect {volume:1.5,pitch:1.7}
 particle explosion ^ ^1.5 ^.5 0.2 0.2 0.2 .01 1 force
 particle explosion ^ ^1.5 ^2 0.2 0.2 0.2 .01 1 force @s
 
