@@ -37,8 +37,8 @@ tag @s remove trackMaster
 $tag @s add $(difficulty)
 #--gauntlet track
 $scoreboard players set #read value $(gauntlet_track)
-execute if score #read value matches 0 run tag @s remove gauntletTrack
-execute if score #read value matches 1 run tag @s add gauntletTrack
+execute if score #read value matches 0 run tag @s remove customGauntlet
+execute if score #read value matches 1 run tag @s add customGauntlet
 #--custom function index
 $scoreboard players set @s customCodePath $(custom_code_index)
 #--custom function macro path?
