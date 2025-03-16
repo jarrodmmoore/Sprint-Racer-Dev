@@ -66,6 +66,7 @@ execute if entity @s[scores={worldmapID=49}] as @e[tag=random,x=1548,y=155,z=406
 execute if entity @s[scores={worldmapID=51}] as @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=51}] run scoreboard players operation @a[tag=dataReturn] medalRace = @s medalRace
 execute if entity @s[scores={worldmapID=52}] as @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=52}] run scoreboard players operation @a[tag=dataReturn] medalRace = @s medalRace
 execute if entity @s[scores={worldmapID=53}] as @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=53}] run scoreboard players operation @a[tag=dataReturn] medalRace = @s medalRace
+execute if entity @s[scores={worldmapID=54}] as @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=54}] run scoreboard players operation @a[tag=dataReturn] medalRace = @s medalRace
 
 #add more here...
 
