@@ -6,14 +6,14 @@ scoreboard players set #success value 0
 $function sprint_racer:game_logic/10/storage/verify_track_data_exists {filename:"$(filename)"}
 
 #error message if storage wasn't found
-$execute if score #success value matches 0 run return run tellraw @a ["",{"translate":"sr.custom_track.import_failed","color":"red","bold":true,"with":[{"text":"command_storage_$(filename).dat","color":"white","bold":false}]}]
+$execute if score #success value matches 0 run return run tellraw @a ["",{translate:"sr.custom_track.import_failed",color:"red",bold:true,with:[{text:"command_storage_$(filename).dat",color:"white",bold:false}]}]
 #=====
 
 #check for duplicate UUID
 scoreboard players set #success value 0
 $function sprint_racer:game_logic/10/storage/verify_unique_uuid {filename:"$(filename)"}
 #kick out if it's a duplicate or bad data
-$execute if score #success value matches 0 run tellraw @a ["",{"translate":"sr.custom_track.import_failed_bad_data","color":"red","bold":true,"with":[{"text":"command_storage_$(filename).dat","color":"white","bold":false}]}]
+$execute if score #success value matches 0 run tellraw @a ["",{translate:"sr.custom_track.import_failed_bad_data",color:"red",bold:true,with:[{text:"command_storage_$(filename).dat",color:"white",bold:false}]}]
 execute if score #success value matches -1..0 run return 0
 #=====
 

@@ -1,1 +1,1 @@
-tellraw @a[tag=!minChat] ["",{"translate":"sr.game.route_open_1","color":"white"},{"translate":"sr.game.route_open_2_emerald","color":"green"},{"translate":"sr.game.route_open_3","color":"white"}]
+tellraw @a[tag=!minChat] ["",{translate:"sr.game.route_open_1",color:"white"},{translate:"sr.game.route_open_2_emerald",color:"green"},{translate:"sr.game.route_open_3",color:"white"}]

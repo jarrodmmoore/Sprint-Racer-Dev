@@ -30,4 +30,4 @@ execute if entity @s[scores={rNumber=50}] run scoreboard players set @s itemches
 #place enchanting tables manually you lazy bum!
 #(their placement require a little extra thought)
 
-tellraw @a ["",{"text":"[DEV] Assigned Item Chest (Battle) to itemchestSeedR ","color":"green"},{"score":{"name":"@s","objective":"itemchestSeedR"},"color":"green"}]
+tellraw @a ["",{text:"[DEV] Assigned Item Chest (Battle) to itemchestSeedR ",color:"green"},{score:{name:"@s",objective:"itemchestSeedR"},color:"green"}]

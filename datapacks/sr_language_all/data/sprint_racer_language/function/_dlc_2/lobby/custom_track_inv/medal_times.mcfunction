@@ -1,1 +1,1 @@
-item replace entity @s hotbar.5 with yellow_stained_glass[custom_name='{"bold":true,"color":"yellow","italic":false,"translate":"sr.lobby.edit_medal_times_item"}',custom_data={trackmedaltime:1b}] 1
+item replace entity @s hotbar.5 with yellow_stained_glass[custom_name={bold:true,color:"yellow",italic:false,translate:"sr.lobby.edit_medal_times_item"},custom_data={trackmedaltime:1b}] 1

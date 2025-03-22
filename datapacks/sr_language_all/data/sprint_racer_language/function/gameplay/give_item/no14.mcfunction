@@ -1,4 +1,4 @@
-give @s minecraft:lingering_potion[custom_name='{"translate":"sr.item.lingering_potion","color":"green","bold":true,"italic":false}',potion_contents={potion:"minecraft:poison"},custom_data={no14:1b,stay:1b,item:1b,normalitem:1b,groundDeploy:1b}] 1
+give @s minecraft:lingering_potion[custom_name={translate:"sr.item.lingering_potion",color:"green",bold:true,italic:false},potion_contents={potion:"minecraft:poison"},custom_data={no14:1b,stay:1b,item:1b,normalitem:1b,groundDeploy:1b}] 1
 
 
 scoreboard players set @s[tag=ai] math 0

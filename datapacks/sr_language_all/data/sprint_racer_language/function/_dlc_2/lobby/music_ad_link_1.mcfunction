@@ -1,4 +1,4 @@
-tellraw @s ["",{"text":" "}]
-tellraw @s ["",{"text":"Argofox on Youtube:\n","bold":true,"color":"white"},{"text":"https://www.youtube.com/user/MMMontageMusic","color":"red","underlined":true,"clickEvent":{"action":"open_url","value":"https://www.youtube.com/user/MMMontageMusic"},"hoverEvent":{"action":"show_text","contents":["",{"text":"Argofox on Youtube"}]}}]
-tellraw @s ["",{"text":"\nArgofox on Spotify:\n","bold":true,"color":"white"},{"text":"https://open.spotify.com/artist/1zALxp5JaVlibKxqBg5MiF?autoplay=true&v=A","color":"dark_green","underlined":true,"clickEvent":{"action":"open_url","value":"https://open.spotify.com/artist/1zALxp5JaVlibKxqBg5MiF?autoplay=true&v=A"},"hoverEvent":{"action":"show_text","contents":["",{"text":"Argofox on Spotify"}]}}]
+tellraw @s ["",{text:" "}]
+tellraw @s ["",{text:"Argofox on Youtube:\n",bold:true,color:"white"},{text:"https://www.youtube.com/user/MMMontageMusic",color:"red","underlined":true,click_event:{action:"open_url",url:"https://www.youtube.com/user/MMMontageMusic"},hover_event:{action:"show_text",value:["",{text:"Argofox on Youtube"}]}}]
+tellraw @s ["",{text:"\nArgofox on Spotify:\n",bold:true,color:"white"},{text:"https://open.spotify.com/artist/1zALxp5JaVlibKxqBg5MiF?autoplay=true&v=A",color:"dark_green","underlined":true,click_event:{action:"open_url",url:"https://open.spotify.com/artist/1zALxp5JaVlibKxqBg5MiF?autoplay=true&v=A"},hover_event:{action:"show_text",value:["",{text:"Argofox on Spotify"}]}}]
 execute at @s run playsound minecraft:entity.firework_rocket.blast master @s

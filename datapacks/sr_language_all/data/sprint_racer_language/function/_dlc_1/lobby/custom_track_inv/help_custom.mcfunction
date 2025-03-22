@@ -1,1 +1,1 @@
-item replace entity @s hotbar.7 with minecraft:paper[custom_name='{"translate":"sr.lobby.help","color":"white","bold":true,"italic":false}',custom_data={helpcustom:1b}] 1
+item replace entity @s hotbar.7 with minecraft:paper[custom_name={translate:"sr.lobby.help",color:"white",bold:true,italic:false},custom_data={helpcustom:1b}] 1

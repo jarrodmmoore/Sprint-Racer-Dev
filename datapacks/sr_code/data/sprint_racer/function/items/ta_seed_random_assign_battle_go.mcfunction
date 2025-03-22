@@ -29,4 +29,4 @@ execute if entity @s[scores={rNumber=48..50}] run scoreboard players set @s item
 
 scoreboard players reset @s rNumber
 
-tellraw @a ["",{"text":"[DEV] Assigned Item Chest to itemchestSeedB ","color":"green"},{"score":{"name":"@s","objective":"itemchestSeedB"},"color":"green"}]
+tellraw @a ["",{text:"[DEV] Assigned Item Chest to itemchestSeedB ",color:"green"},{score:{name:"@s",objective:"itemchestSeedB"},color:"green"}]

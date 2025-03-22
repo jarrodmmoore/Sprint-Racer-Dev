@@ -21,7 +21,7 @@ execute unless score global math matches 1 run kill @e[name="w"]
 #these armor stands are in different chunks to take advantage of chunkLimited selectors
 
 #deal with armor stands, especially "w"
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run summon armor_stand 1560 150 406 {CustomName:'{"text":"w"}',NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["forceGS","w"]}
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run summon armor_stand 1560 150 406 {CustomName:{text:"w"},NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["forceGS","w"]}
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=forceGS] gameState 0
 tag @e[tag=forceGS] remove forceGS
 execute positioned 1548 155 406 run function sprint_racer:random/summon_stands
@@ -96,33 +96,33 @@ gamerule doImmediateRespawn true
 gamerule fallDamage true
 
 #bossbars
-bossbar add speedo {"text":"..."}
+bossbar add speedo {text:"..."}
 bossbar set minecraft:speedo color white
 bossbar set minecraft:speedo style progress
 bossbar set minecraft:speedo max 10000
-bossbar add menutimer {"text":"name"}
+bossbar add menutimer {text:"name"}
 bossbar set minecraft:menutimer color white
 bossbar set minecraft:menutimer style notched_10
 bossbar set minecraft:menutimer max 800
-bossbar add control_openwings {"text":"..."}
+bossbar add control_openwings {text:"..."}
 bossbar set control_openwings color blue
 bossbar set control_openwings max 1
 bossbar set control_openwings value 1
-bossbar add control_holdtosprint {"text":"..."}
+bossbar add control_holdtosprint {text:"..."}
 bossbar set control_holdtosprint color blue
 bossbar set control_holdtosprint max 1
 bossbar set control_holdtosprint value 1
-bossbar add control_daggerattack {"text":"..."}
+bossbar add control_daggerattack {text:"..."}
 bossbar set control_daggerattack color blue
 bossbar set control_daggerattack max 1
 bossbar set control_daggerattack value 1
-bossbar add readyprogress {"text":"..."}
-bossbar add unreadyprogress {"text":"..."}
-bossbar add gauntlettime {"text":"..."}
+bossbar add readyprogress {text:"..."}
+bossbar add unreadyprogress {text:"..."}
+bossbar add gauntlettime {text:"..."}
 bossbar set gauntlettime color white
 bossbar set gauntlettime max 11980
 bossbar set gauntlettime style progress
-bossbar add freeroam {"text":"..."}
+bossbar add freeroam {text:"..."}
 bossbar set freeroam color green
 bossbar set freeroam max 1
 bossbar set freeroam style progress
@@ -434,7 +434,7 @@ scoreboard objectives add bestTime dummy
 scoreboard objectives add bestTimeMin dummy
 scoreboard objectives add bestTimeSec dummy
 scoreboard objectives add bestTimeMsec dummy
-scoreboard objectives add currentTime dummy ["",{"text":"Raw Time","bold":true}]
+scoreboard objectives add currentTime dummy ["",{text:"Raw Time",bold:true}]
 scoreboard objectives add currentTimeMin dummy
 scoreboard objectives add currentTimeMsec dummy
 scoreboard objectives add currentTimeSec dummy
@@ -579,10 +579,10 @@ scoreboard objectives add dropGrayWool minecraft.dropped:minecraft.gray_wool
 scoreboard objectives add dropLimeWool minecraft.dropped:minecraft.lime_wool
 
 #important game function
-scoreboard objectives add hp health ["",{"text":"❤","color":"red"}]
+scoreboard objectives add hp health ["",{text:"❤",color:"red"}]
 scoreboard objectives add lap dummy
 scoreboard objectives add lapFake dummy
-scoreboard objectives add check dummy ["",{"text":"Checkpoint","bold":true}]
+scoreboard objectives add check dummy ["",{text:"Checkpoint",bold:true}]
 scoreboard objectives add nCheck dummy
 scoreboard objectives add storedLap dummy
 scoreboard objectives add storedCheck dummy
@@ -594,11 +594,11 @@ scoreboard objectives add lapCalc dummy
 scoreboard objectives add checkCalc dummy
 scoreboard objectives add racePosCalc dummy
 scoreboard objectives add racePos dummy
-scoreboard objectives add racePosDisplay dummy ["",{"text":"Position","bold":true}]
-scoreboard objectives add racePosDisplay2 dummy ["",{"text":"Position","bold":true}]
+scoreboard objectives add racePosDisplay dummy ["",{text:"Position",bold:true}]
+scoreboard objectives add racePosDisplay2 dummy ["",{text:"Position",bold:true}]
 scoreboard objectives add battlePos dummy
-scoreboard objectives add battPosDisplay dummy ["",{"text":"KO Ranking","bold":true}]
-scoreboard objectives add battPosDisplay2 dummy ["",{"text":"KO Ranking","bold":true}]
+scoreboard objectives add battPosDisplay dummy ["",{text:"KO Ranking",bold:true}]
+scoreboard objectives add battPosDisplay2 dummy ["",{text:"KO Ranking",bold:true}]
 scoreboard objectives add itemPosition dummy
 scoreboard objectives add lapAnimation dummy
 scoreboard objectives add subtitleDelay dummy
@@ -634,17 +634,17 @@ scoreboard objectives add timeUntilElim dummy
 scoreboard objectives add playerLives dummy
 
 #lap display during races
-bossbar add lap1 ["",{"text":"Lap [1/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap2 ["",{"text":"Lap [2/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap3 ["",{"text":"Lap [3/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap4 ["",{"text":"Lap [4/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap5 ["",{"text":"Lap [5/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap6 ["",{"text":"Lap [6/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap7 ["",{"text":"Lap [7/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap8 ["",{"text":"Lap [8/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap9 ["",{"text":"Lap [9/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add lap10 ["",{"text":"Lap [10/","color":"green","bold":true},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"lap"},"color":"green","bold":true},{"text":"]","color":"green","bold":true}]
-bossbar add timeremaining ["",{"text":"Time"}]
+bossbar add lap1 ["",{text:"Lap [1/",color:"green",bold:true},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"lap"},color:"green",bold:true},{text:"]",color:"green",bold:true}]
+bossbar add lap2 ["",{text:"Lap [2/",color:"green",bold:true},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"lap"},color:"green",bold:true},{text:"]",color:"green",bold:true}]
+bossbar add lap3 ["",{text:"Lap [3/",color:"green",bold:true},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"lap"},color:"green",bold:true},{text:"]",color:"green",bold:true}]
+bossbar add lap4 ["",{text:"Lap [4/",color:"green",bold:true},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"lap"},color:"green",bold:true},{text:"]",color:"green",bold:true}]
+bossbar add lap5 ["",{text:"Lap [5/",color:"green",bold:true},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"lap"},color:"green",bold:true},{text:"]",color:"green",bold:true}]
+bossbar add lap6 ["",{text:"Lap [6/",color:"green",bold:true},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"lap"},color:"green",bold:true},{text:"]",color:"green",bold:true}]
+bossbar add lap7 ["",{text:"Lap [7/",color:"green",bold:true},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"lap"},color:"green",bold:true},{text:"]",color:"green",bold:true}]
+bossbar add lap8 ["",{text:"Lap [8/",color:"green",bold:true},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"lap"},color:"green",bold:true},{text:"]",color:"green",bold:true}]
+bossbar add lap9 ["",{text:"Lap [9/",color:"green",bold:true},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"lap"},color:"green",bold:true},{text:"]",color:"green",bold:true}]
+bossbar add lap10 ["",{text:"Lap [10/",color:"green",bold:true},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"lap"},color:"green",bold:true},{text:"]",color:"green",bold:true}]
+bossbar add timeremaining ["",{text:"Time"}]
 bossbar set lap1 style progress
 bossbar set lap2 style progress
 bossbar set lap3 style progress
@@ -722,6 +722,6 @@ execute unless score #clearCacheAllowed value matches ..-1 run scoreboard player
 
 #it worked
 scoreboard players set @a join 1
-tellraw @a ["",{"text":"World setup successful!","color":"aqua"}]
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run tellraw @a ["",{"text":"Critical entity \"w\" is not present.","color":"red"}]
+tellraw @a ["",{text:"World setup successful!",color:"aqua"}]
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run tellraw @a ["",{text:"Critical entity \"w\" is not present.",color:"red"}]
 execute as @a at @s run playsound minecraft:block.note_block.chime master @s ~ 100000 ~ 100000 2 1

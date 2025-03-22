@@ -20,7 +20,7 @@ $execute as @e[tag=customtrack,type=armor_stand,tag=imnew] run function sprint_r
 execute if score #success value matches 0 run kill @e[tag=customtrack,type=armor_stand,tag=imnew]
 execute if score #success value matches 0 run tag @e[tag=customtrack,type=armor_stand,tag=imnew] remove imnew
 #and then exit with error message
-$execute if score #success value matches 0 run return run tellraw @a ["",{"translate":"sr.custom_track.import_failed_bad_data","color":"red","bold":true,"with":[{"text":"command_storage_$(filename).dat","color":"white","bold":false}]}]
+$execute if score #success value matches 0 run return run tellraw @a ["",{translate:"sr.custom_track.import_failed_bad_data",color:"red",bold:true,with:[{text:"command_storage_$(filename).dat",color:"white",bold:false}]}]
 #=====
 
 #successful if we made it down here

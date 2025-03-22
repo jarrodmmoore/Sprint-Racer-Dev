@@ -13,7 +13,7 @@ scoreboard players operation @s lapShowTime = @s lap
 scoreboard players operation @s math = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] lap
 scoreboard players operation @s math -= @s lapShowTime
 
-execute if entity @s[tag=!minChat] unless entity @s[scores={math=..0}] run tellraw @s ["",{"text":" "}]
+execute if entity @s[tag=!minChat] unless entity @s[scores={math=..0}] run tellraw @s ["",{text:" "}]
 execute if entity @s[tag=!minChat] unless entity @s[scores={math=..0}] run function sprint_racer_language:gameplay/show_lap_times/lap_completed
 execute if entity @s[tag=!minChat] unless entity @s[scores={math=..0}] run function sprint_racer:game_logic/1/record_lap/calculate_and_show_lap
-execute if entity @s[tag=!minChat] unless entity @s[scores={math=..0}] run tellraw @s ["",{"text":" "}]
+execute if entity @s[tag=!minChat] unless entity @s[scores={math=..0}] run tellraw @s ["",{text:" "}]

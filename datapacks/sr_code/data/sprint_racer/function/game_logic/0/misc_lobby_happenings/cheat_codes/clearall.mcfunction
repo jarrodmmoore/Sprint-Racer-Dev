@@ -1,7 +1,7 @@
 #announce
-tellraw @a ["",{"text":" "}]
+tellraw @a ["",{text:" "}]
 function sprint_racer_language:_dlc_1/lobby/cheat_room/cheat_found/clearall
-tellraw @a ["",{"text":" "}]
+tellraw @a ["",{text:" "}]
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove cheatdetected
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove cheatdetected1_5

@@ -1,1 +1,1 @@
-item replace entity @s hotbar.3 with minecraft:bow[custom_name='{"translate":"sr.cheats.cheat_entry","color":"light_purple","bold":false,"italic":true}',unbreakable={},enchantments={"minecraft:infinity":1},custom_data={cheatentry:1b}] 1
+item replace entity @s hotbar.3 with minecraft:bow[custom_name={translate:"sr.cheats.cheat_entry",color:"light_purple",bold:false,italic:true},unbreakable={},enchantments={"minecraft:infinity":1},custom_data={cheatentry:1b}] 1

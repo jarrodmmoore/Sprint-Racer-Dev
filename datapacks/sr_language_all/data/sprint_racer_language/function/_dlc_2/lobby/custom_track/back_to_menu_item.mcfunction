@@ -1,1 +1,1 @@
-item replace entity @s hotbar.8 with minecraft:structure_void[custom_name='{"translate":"sr.lobby.return_to_custom_track_manager","color":"aqua","bold":true,"italic":false}',custom_data={exit:1b,notitle:1b}] 1
+item replace entity @s hotbar.8 with minecraft:structure_void[custom_name={translate:"sr.lobby.return_to_custom_track_manager",color:"aqua",bold:true,italic:false},custom_data={exit:1b,notitle:1b}] 1

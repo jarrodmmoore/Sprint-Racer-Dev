@@ -35,4 +35,4 @@ execute positioned 1603 12 450 run function sprint_racer:game_logic/0/props/summ
 execute positioned 1622 18 354 run function sprint_racer:game_logic/0/props/summon_node/capsule
 
 #egg
-execute positioned 1575 19 352 positioned ~.35 ~ ~.35 run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomName:'{"text":"UNDERWORLD","bold":true,"italic":false}'}
+execute positioned 1575 19 352 positioned ~.35 ~ ~.35 run summon minecraft:armor_stand ~ ~-1.4 ~ {Tags:["cheategg","lobbyprop"],NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:dragon_egg",count:1}],CustomName:{text:"UNDERWORLD",bold:true,italic:false}}

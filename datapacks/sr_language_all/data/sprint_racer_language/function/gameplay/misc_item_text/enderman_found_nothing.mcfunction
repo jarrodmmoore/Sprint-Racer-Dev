@@ -1,1 +1,1 @@
-tellraw @s ["",{"translate":"sr.game.enderman_found_nothing","color":"white"}]
+tellraw @s ["",{translate:"sr.game.enderman_found_nothing",color:"white"}]

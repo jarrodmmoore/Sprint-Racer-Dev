@@ -1,8 +1,8 @@
 #announce
-tellraw @a ["",{"text":" "}]
+tellraw @a ["",{text:" "}]
 function sprint_racer_language:_dlc_1/lobby/cheat_room/cheat_found/_cheat_found
 function sprint_racer_language:_dlc_5/lobby/cheat_room/cheat_found/slotlimit
-tellraw @a ["",{"text":" "}]
+tellraw @a ["",{text:" "}]
 
 scoreboard players set #cheatSlotLimit value 1
 

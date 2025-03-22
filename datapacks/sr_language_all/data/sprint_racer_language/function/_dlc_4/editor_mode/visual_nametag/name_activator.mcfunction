@@ -1,1 +1,1 @@
-summon area_effect_cloud ~ ~ ~ {Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:'[{"text":" "},{"translate":"sr.editor.display.activator","color":"white","bold":true,"italic":false},{"text":" "}]'}
+summon area_effect_cloud ~ ~ ~ {Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:[{text:" "},{translate:"sr.editor.display.activator",color:"white",bold:true,italic:false},{text:" "}]}

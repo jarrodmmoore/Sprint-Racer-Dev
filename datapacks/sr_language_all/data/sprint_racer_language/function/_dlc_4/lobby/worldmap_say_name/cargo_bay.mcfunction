@@ -1,1 +1,1 @@
-tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Cargo Bay ==\\/==","bold":true,"color":"light_purple"}]
+tellraw @a[tag=!dontTellMe] ["",{text:"==\\/== Cargo Bay ==\\/==",bold:true,color:"light_purple"}]

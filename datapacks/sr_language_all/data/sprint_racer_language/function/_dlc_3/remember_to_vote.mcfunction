@@ -1,2 +1,2 @@
-tellraw @a[tag=!minChat] ["",{"text":"\uE075 ","bold":true,"color":"yellow"},{"translate":"sr.mid_game_vote.reminder_use_inventory_command_block_to_exit","bold":false,"color":"aqua"}]
+tellraw @a[tag=!minChat] ["",{text:"\uE075 ",bold:true,color:"yellow"},{translate:"sr.mid_game_vote.reminder_use_inventory_command_block_to_exit",bold:false,color:"aqua"}]
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=remind2vote] remove remind2vote

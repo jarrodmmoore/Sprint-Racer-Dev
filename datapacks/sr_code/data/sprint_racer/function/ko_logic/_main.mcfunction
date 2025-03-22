@@ -30,7 +30,7 @@ execute as @e[tag=ai] if score @s playerID = #ded_player attackerID run tag @s a
 
 #test
 #execute as @e[tag=killer] run say killer
-#tellraw @a ["",{"text":" "}]
+#tellraw @a ["",{text:" "}]
 
 #give KO to whoever has the killer tag, provided it is not yourelf
 execute if entity @s[scores={attackTime=1..}] as @a[tag=killer,tag=!killed] at @s run function sprint_racer:ko_logic/got_ko

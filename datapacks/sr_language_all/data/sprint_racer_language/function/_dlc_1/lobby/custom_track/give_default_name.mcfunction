@@ -1,1 +1,1 @@
-data merge entity @s {CustomName:'{"text":"unnamed track","color":"light_purple","bold":false,"italic":false}'}
+data merge entity @s {CustomName:{text:"unnamed track",color:"light_purple",bold:false,italic:false}}

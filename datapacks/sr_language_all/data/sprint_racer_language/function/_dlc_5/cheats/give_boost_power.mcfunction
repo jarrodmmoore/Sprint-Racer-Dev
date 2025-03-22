@@ -1,1 +1,1 @@
-give @s minecraft:blaze_powder[enchantment_glint_override=1b,custom_name='["",{"text":"↑ ","color":"dark_purple","bold":true,"italic":false},{"translate":"sr.cheats.boost_power","color":"aqua","bold":true,"italic":false}]',custom_data={boostPower:1b,rightclick:1b}]
+give @s minecraft:blaze_powder[enchantment_glint_override=1b,custom_name=["",{text:"↑ ",color:"dark_purple",bold:true,italic:false},{translate:"sr.cheats.boost_power",color:"aqua",bold:true,italic:false}],custom_data={boostPower:1b,rightclick:1b}]

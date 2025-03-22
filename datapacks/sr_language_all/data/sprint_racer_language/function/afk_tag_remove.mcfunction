@@ -1,8 +1,8 @@
 tag @s remove afk
 scoreboard players set @s afkTime 0
 
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=1..3}] run tellraw @s[scores={subtitleDelay=..0}] ["",{"translate":"sr.no_longer_idle","color":"aqua","italic":true}]
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=1..3}] run tellraw @s ["",{"translate":"sr.no_longer_idle","color":"aqua"}]
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=1..3}] run tellraw @s[scores={subtitleDelay=..0}] ["",{translate:"sr.no_longer_idle",color:"aqua",italic:true}]
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=1..3}] run tellraw @s ["",{translate:"sr.no_longer_idle",color:"aqua"}]
 
 #misc... don't edit
 tag @s remove readyup

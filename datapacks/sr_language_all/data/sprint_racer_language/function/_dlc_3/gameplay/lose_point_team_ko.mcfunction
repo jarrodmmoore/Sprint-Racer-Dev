@@ -1,1 +1,1 @@
-tellraw @s ["",{"translate":"sr.game.lose_ko_harmed_teammate_1","color":"white"},{"translate":"sr.game.lose_ko_harmed_teammate_2","color":"red"},{"translate":"sr.game.lose_ko_harmed_teammate_3","color":"white"}]
+tellraw @s ["",{translate:"sr.game.lose_ko_harmed_teammate_1",color:"white"},{translate:"sr.game.lose_ko_harmed_teammate_2",color:"red"},{translate:"sr.game.lose_ko_harmed_teammate_3",color:"white"}]

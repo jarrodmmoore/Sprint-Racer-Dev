@@ -1,4 +1,4 @@
-execute if entity @s[tag=!itemBattle,tag=!aiCantSee] run data merge entity @s {CustomName:'{"text":"Item Chest (RACE)","color":"gold","bold":true,"italic":false}'}
-execute if entity @s[tag=itemBattle,tag=!aiCantSee] run data merge entity @s {CustomName:'{"text":"Item Chest (BATTLE)","color":"red","bold":true,"italic":false}'}
-execute if entity @s[tag=!itemBattle,tag=aiCantSee] run data merge entity @s {CustomName:'{"text":"Item Chest (RACE)","color":"white","bold":true,"italic":false}'}
-execute if entity @s[tag=itemBattle,tag=aiCantSee] run data merge entity @s {CustomName:'{"text":"Item Chest (BATTLE)","color":"white","bold":true,"italic":false}'}
+execute if entity @s[tag=!itemBattle,tag=!aiCantSee] run data merge entity @s {CustomName:{text:"Item Chest (RACE)",color:"gold",bold:true,italic:false}}
+execute if entity @s[tag=itemBattle,tag=!aiCantSee] run data merge entity @s {CustomName:{text:"Item Chest (BATTLE)",color:"red",bold:true,italic:false}}
+execute if entity @s[tag=!itemBattle,tag=aiCantSee] run data merge entity @s {CustomName:{text:"Item Chest (RACE)",color:"white",bold:true,italic:false}}
+execute if entity @s[tag=itemBattle,tag=aiCantSee] run data merge entity @s {CustomName:{text:"Item Chest (BATTLE)",color:"white",bold:true,italic:false}}

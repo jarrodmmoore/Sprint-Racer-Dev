@@ -1,1 +1,1 @@
-title @s actionbar ["",{"translate":"sr.game.kos","bold":true},{"score":{"name":"@s","objective":"KOs"},"color":"green","bold":false},{"text":" "},{"text":" "},{"text":" "},{"translate":"sr.game.rank","bold":true},{"score":{"name":"@s","objective":"battPosDisplay"},"color":"white","bold":true}]
+title @s actionbar ["",{translate:"sr.game.kos",bold:true},{score:{name:"@s",objective:"KOs"},color:"green",bold:false},{text:" "},{text:" "},{text:" "},{translate:"sr.game.rank",bold:true},{score:{name:"@s",objective:"battPosDisplay"},color:"white",bold:true}]

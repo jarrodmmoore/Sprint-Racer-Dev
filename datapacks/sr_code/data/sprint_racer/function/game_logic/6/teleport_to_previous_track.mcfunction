@@ -7,7 +7,7 @@ scoreboard objectives add taLastChosen dummy
 #safeguard, prevent curious players from tping themselves
 scoreboard players set @s[type=player] remember_x 1638
 scoreboard players set @s[type=player] remember_z 432
-execute if entity @s[type=player] run tellraw @a ["",{"text":"Silly goose, this function isn't supposed to be run by players!"}]
+execute if entity @s[type=player] run tellraw @a ["",{text:"Silly goose, this function isn't supposed to be run by players!"}]
 
 
 #this needs to be executed by w

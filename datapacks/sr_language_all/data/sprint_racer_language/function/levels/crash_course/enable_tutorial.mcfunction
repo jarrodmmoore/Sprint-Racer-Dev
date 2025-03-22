@@ -1,1 +1,1 @@
-tellraw @s ["",{"translate":"sr.tutorial.mode","color":"white","bold":true},{"translate":"sr.basic.on","bold":true,"color":"green"}]
+tellraw @s ["",{translate:"sr.tutorial.mode",color:"white",bold:true},{translate:"sr.basic.on",bold:true,color:"green"}]

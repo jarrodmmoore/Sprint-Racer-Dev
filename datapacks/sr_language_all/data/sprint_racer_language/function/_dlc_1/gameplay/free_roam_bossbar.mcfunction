@@ -1,4 +1,4 @@
-bossbar set minecraft:freeroam name ["",{"translate":"sr.game.free_roam","color":"green","bold":true}]
+bossbar set minecraft:freeroam name ["",{translate:"sr.game.free_roam",color:"green",bold:true}]
 bossbar set freeroam color green
 bossbar set freeroam max 1
 bossbar set freeroam style progress

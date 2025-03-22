@@ -1,3 +1,3 @@
-execute unless score global loadAttempts matches 4.. run title @a actionbar ["",{"translate":"sr.game.loading","color":"green","bold":true}]
-execute if score global loadAttempts matches 4..11 run title @a actionbar ["",{"translate":"sr.game.waiting_for_chunks","color":"yellow","bold":true}]
-execute if score global loadAttempts matches 12.. run title @a actionbar ["",{"translate":"sr.game.cannot_find_activator_node","color":"red","bold":true}]
+execute unless score global loadAttempts matches 4.. run title @a actionbar ["",{translate:"sr.game.loading",color:"green",bold:true}]
+execute if score global loadAttempts matches 4..11 run title @a actionbar ["",{translate:"sr.game.waiting_for_chunks",color:"yellow",bold:true}]
+execute if score global loadAttempts matches 12.. run title @a actionbar ["",{translate:"sr.game.cannot_find_activator_node",color:"red",bold:true}]

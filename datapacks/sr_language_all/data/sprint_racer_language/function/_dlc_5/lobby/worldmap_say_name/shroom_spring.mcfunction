@@ -1,1 +1,1 @@
-tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Shroom Spring ==\\/==","bold":true,"color":"light_purple"}]
+tellraw @a[tag=!dontTellMe] ["",{text:"==\\/== Shroom Spring ==\\/==",bold:true,color:"light_purple"}]

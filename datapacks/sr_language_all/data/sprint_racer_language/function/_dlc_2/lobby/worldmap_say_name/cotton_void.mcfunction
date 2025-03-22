@@ -1,1 +1,1 @@
-tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Cotton Void ==\\/==","bold":true,"color":"light_purple"}]
+tellraw @a[tag=!dontTellMe] ["",{text:"==\\/== Cotton Void ==\\/==",bold:true,color:"light_purple"}]

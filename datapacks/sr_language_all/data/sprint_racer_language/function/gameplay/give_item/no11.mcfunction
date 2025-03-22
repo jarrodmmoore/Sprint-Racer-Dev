@@ -1,9 +1,9 @@
 #give based on item luck
-give @s[tag=!justOne,tag=!capsuleCollect,scores={itemLuck=..4}] minecraft:ender_pearl[custom_name='{"translate":"sr.item.ender_pearl","color":"aqua","bold":true,"italic":false}',custom_data={no11:1b,stay:1b,item:1b,normalitem:1b}] 1
-give @s[tag=!justOne,tag=!capsuleCollect,scores={itemLuck=5..}] minecraft:ender_pearl[custom_name='{"translate":"sr.item.ender_pearl","color":"aqua","bold":true,"italic":false}',custom_data={no11:1b,stay:1b,item:1b,normalitem:1b}] 2
+give @s[tag=!justOne,tag=!capsuleCollect,scores={itemLuck=..4}] minecraft:ender_pearl[custom_name={translate:"sr.item.ender_pearl",color:"aqua",bold:true,italic:false},custom_data={no11:1b,stay:1b,item:1b,normalitem:1b}] 1
+give @s[tag=!justOne,tag=!capsuleCollect,scores={itemLuck=5..}] minecraft:ender_pearl[custom_name={translate:"sr.item.ender_pearl",color:"aqua",bold:true,italic:false},custom_data={no11:1b,stay:1b,item:1b,normalitem:1b}] 2
 
-give @s[tag=justOne] minecraft:ender_pearl[custom_name='{"translate":"sr.item.ender_pearl","color":"aqua","bold":true,"italic":false}',custom_data={no11:1b,stay:1b,item:1b,normalitem:1b}] 1
-give @s[tag=capsuleCollect] minecraft:ender_pearl[custom_name='{"translate":"sr.item.ender_pearl","color":"aqua","bold":true,"italic":false}',custom_data={no11:1b,stay:1b,item:1b,normalitem:1b}] 1
+give @s[tag=justOne] minecraft:ender_pearl[custom_name={translate:"sr.item.ender_pearl",color:"aqua",bold:true,italic:false},custom_data={no11:1b,stay:1b,item:1b,normalitem:1b}] 1
+give @s[tag=capsuleCollect] minecraft:ender_pearl[custom_name={translate:"sr.item.ender_pearl",color:"aqua",bold:true,italic:false},custom_data={no11:1b,stay:1b,item:1b,normalitem:1b}] 1
 
 
 scoreboard players set @s[tag=ai] math 0

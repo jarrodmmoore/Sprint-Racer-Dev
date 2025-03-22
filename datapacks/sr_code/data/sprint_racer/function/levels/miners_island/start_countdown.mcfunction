@@ -19,4 +19,4 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}
 
 #summon gerald
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run kill @e[type=chicken,tag=gerald]
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run summon minecraft:chicken -15 72 -736 {Invulnerable:1b,CustomNameVisible:1b,Leashed:1b,PersistenceRequired:1b,NoAI:1b,Tags:["gerald","chickenstay"],CustomName:'{"text":"Gerald"}',Leash:{X:-15,Y:67,Z:-736}}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run summon minecraft:chicken -15 72 -736 {Invulnerable:1b,CustomNameVisible:1b,Leashed:1b,PersistenceRequired:1b,NoAI:1b,Tags:["gerald","chickenstay"],CustomName:{text:"Gerald"},Leash:{X:-15,Y:67,Z:-736}}

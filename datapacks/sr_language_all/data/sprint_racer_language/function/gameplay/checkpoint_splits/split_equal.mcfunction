@@ -1,4 +1,4 @@
-title @s subtitle ["",{"text":"+0:00:0","color":"white","bold":true}]
+title @s subtitle ["",{text:"+0:00:0",color:"white",bold:true}]
 title @s title [""]
 
 tag @s add getSplit

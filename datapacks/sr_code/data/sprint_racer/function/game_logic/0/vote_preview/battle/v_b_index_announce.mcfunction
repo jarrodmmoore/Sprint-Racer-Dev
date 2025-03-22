@@ -32,4 +32,4 @@ execute if entity @s[scores={rNumber=19}] run function sprint_racer_language:_dl
 #add more here...
 
 execute as @a[scores={inputCooldown=..0,carrotInput=1..}] if items entity @s weapon.mainhand filled_map[custom_data~{wmPreview:1b}] run function sprint_racer_language:_dlc_1/lobby/player_chose_track
-tellraw @a ["",{"text":" "}]
+tellraw @a ["",{text:" "}]

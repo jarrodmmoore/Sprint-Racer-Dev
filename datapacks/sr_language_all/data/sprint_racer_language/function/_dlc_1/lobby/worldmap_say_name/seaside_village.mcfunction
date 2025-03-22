@@ -1,1 +1,1 @@
-tellraw @a[tag=!dontTellMe] ["",{"text":"==\\/== Seaside Village ==\\/==","bold":true,"color":"light_purple"}]
+tellraw @a[tag=!dontTellMe] ["",{text:"==\\/== Seaside Village ==\\/==",bold:true,color:"light_purple"}]

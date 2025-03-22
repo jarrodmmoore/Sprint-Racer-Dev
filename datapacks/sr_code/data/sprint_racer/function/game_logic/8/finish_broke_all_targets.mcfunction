@@ -6,7 +6,7 @@ scoreboard players set @a[tag=musicDef] BGMtrack 0
 scoreboard players set @a[tag=musicDef] musicTime 40
 
 #DEV, PRINT RAW TIME
-execute if entity @a[tag=dev] run tellraw @a ["",{"text":"[ DEV ] Raw Time: "},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"currentTime"}}]
+execute if entity @a[tag=dev] run tellraw @a ["",{text:"[ DEV ] Raw Time: "},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"currentTime"}}]
 
 scoreboard players operation @s storedTimeMin = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeMin
 scoreboard players operation @s storedTimeSec = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeSec

@@ -1,4 +1,4 @@
-bossbar set minecraft:freeroam name ["",{"translate":"sr.game.editing_custom_tracks","color":"light_purple","bold":true}]
+bossbar set minecraft:freeroam name ["",{translate:"sr.game.editing_custom_tracks",color:"light_purple",bold:true}]
 bossbar set freeroam color purple
 bossbar set freeroam max 1
 bossbar set freeroam style progress

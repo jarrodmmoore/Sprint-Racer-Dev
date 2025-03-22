@@ -24,7 +24,7 @@ execute if entity @e[tag=stealTarget2,scores={aiHasItem20=1..}] run tag @e[tag=r
 scoreboard players set @s rNumber 0
 scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=igotthis,scores={rNumber=1..20}] rNumber
 #DEBUG
-#tellraw @s ["",{"text":"rNumber = "},{"score":{"name":"@s","objective":"rNumber"}}]
+#tellraw @s ["",{text:"rNumber = "},{score:{name:"@s",objective:"rNumber"}}]
 
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,tag=igotthis] remove igotthis
 

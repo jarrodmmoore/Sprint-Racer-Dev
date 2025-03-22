@@ -1,5 +1,5 @@
 #(2021) ok so this message is spammy and I'm removing it
-#tellraw @a[tag=!minChat] ["",{"text":"\uE075 Lobby has been restarted!","color":"red","bold":true}]
+#tellraw @a[tag=!minChat] ["",{text:"\uE075 Lobby has been restarted!",color:"red",bold:true}]
 
 #so instead, let's do a meme easter egg
 scoreboard players operation global math = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..50}] rNumber

@@ -1,1 +1,1 @@
-tellraw @a[tag=!playing] ["",{"text":"CPU_","color":"yellow"},{"score":{"name":"@s","objective":"rNumber"},"color":"yellow"},{"text":" >> ","color":"gray","bold":true},{"translate":"sr.game.finished","color":"gray","bold":true},{"text":" "},{"text":"[2nd]","color":"gray","bold":true}]
+tellraw @a[tag=!playing] ["",{text:"CPU_",color:"yellow"},{score:{name:"@s",objective:"rNumber"},color:"yellow"},{text:" >> ",color:"gray",bold:true},{translate:"sr.game.finished",color:"gray",bold:true},{text:" "},{text:"[2nd]",color:"gray",bold:true}]

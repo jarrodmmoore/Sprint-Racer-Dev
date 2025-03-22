@@ -4,7 +4,7 @@ execute store result storage sprint_racer:func_args num2 int 1 run scoreboard pl
 function sprint_racer_language:_dlc_3/grand_prix/round_number_macro with storage sprint_racer:func_args
 
 #no rounds? error message
-execute unless entity @s[scores={gpNumber=1..}] run data merge entity @e[limit=1,type=armor_stand,tag=gp_round_show] {CustomName:'{"translate":"sr.grand_prix.no_tracks_have_been_added","color":"white","bold":false}',CustomNameVisible:true}
+execute unless entity @s[scores={gpNumber=1..}] run data merge entity @e[limit=1,type=armor_stand,tag=gp_round_show] {CustomName:{translate:"sr.grand_prix.no_tracks_have_been_added",color:"white",bold:false},CustomNameVisible:true}
 
 function sprint_racer:game_logic/11/get_gamemode
 execute if entity @s[tag=read_race] run fill 1598 70 439 1598 73 441 light_blue_concrete

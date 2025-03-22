@@ -1,1 +1,1 @@
-bossbar set minecraft:control_sneakheal name ["",{"translate":"sr.control_tip.sneak_heal_1","color":"white"},{"text":" "},{"keybind":"key.sneak","color":"aqua","bold":true},{"text":" "},{"translate":"sr.control_tip.sneak_heal_2","color":"white"}]
+bossbar set minecraft:control_sneakheal name ["",{translate:"sr.control_tip.sneak_heal_1",color:"white"},{text:" "},{keybind:"key.sneak",color:"aqua",bold:true},{text:" "},{translate:"sr.control_tip.sneak_heal_2",color:"white"}]

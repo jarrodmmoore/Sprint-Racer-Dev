@@ -1,1 +1,1 @@
-title @a actionbar ["",{"translate":"sr.lobby.thanks_for_playing","bold":true,"color":"white"}]
+title @a actionbar ["",{translate:"sr.lobby.thanks_for_playing",bold:true,color:"white"}]

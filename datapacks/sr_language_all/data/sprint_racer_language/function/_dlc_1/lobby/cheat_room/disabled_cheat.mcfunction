@@ -1,2 +1,2 @@
-tellraw @a ["",{"translate":"sr.cheats.cheats_disabled","color":"gray","italic":true},{"selector":"@e[limit=1,tag=cheattext2,type=armor_stand]"}]
+tellraw @a ["",{translate:"sr.cheats.cheats_disabled",color:"gray",italic:true},{selector:"@e[limit=1,tag=cheattext2,type=armor_stand]"}]
 execute as @a at @s run playsound minecraft:block.note_block.didgeridoo master @a ~ 100000 ~ 100000 1

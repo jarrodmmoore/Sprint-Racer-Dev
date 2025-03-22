@@ -1,1 +1,1 @@
-tellraw @a ["",{"translate":"sr.game.switch_pressed","color":"green"}]
+tellraw @a ["",{translate:"sr.game.switch_pressed",color:"green"}]

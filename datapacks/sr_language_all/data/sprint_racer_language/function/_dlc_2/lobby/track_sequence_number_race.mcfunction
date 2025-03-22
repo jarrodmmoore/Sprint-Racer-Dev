@@ -1,2 +1,2 @@
-tellraw @a[tag=!minChat] ["",{"text":" "}]
-tellraw @a[tag=!minChat] ["",{"translate":"sr.lobby.race_track","bold":true},{"text":" "},{"text":"#","color":"aqua"},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]","objective":"trackSequenceR"},"bold":true,"color":"aqua"}]
+tellraw @a[tag=!minChat] ["",{text:" "}]
+tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.race_track",bold:true},{text:" "},{text:"#",color:"aqua"},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"trackSequenceR"},bold:true,color:"aqua"}]

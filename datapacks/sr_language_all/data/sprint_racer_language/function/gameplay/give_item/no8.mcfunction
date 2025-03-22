@@ -1,4 +1,4 @@
-give @s minecraft:totem_of_undying[custom_name='{"translate":"sr.item.totem","color":"yellow","bold":true,"italic":false}',custom_data={no8:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 1
+give @s minecraft:totem_of_undying[custom_name={translate:"sr.item.totem",color:"yellow",bold:true,italic:false},custom_data={no8:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 1
 
 
 scoreboard players set @s[tag=ai] math 0

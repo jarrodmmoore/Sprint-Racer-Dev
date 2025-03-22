@@ -1,2 +1,2 @@
 bossbar set minecraft:menutimer style notched_10
-bossbar set minecraft:menutimer name ["",{"translate":"sr.lobby.vote_for_next_battle_arena","color":"yellow","bold":true},{"text":" [","color":"yellow","bold":true},{"score":{"name":"@e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand]","objective":"voteTime"},"color":"yellow","bold":true},{"text":"s]","color":"yellow","bold":true}]
+bossbar set minecraft:menutimer name ["",{translate:"sr.lobby.vote_for_next_battle_arena",color:"yellow",bold:true},{text:" [",color:"yellow",bold:true},{score:{name:"@e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand]",objective:"voteTime"},color:"yellow",bold:true},{text:"s]",color:"yellow",bold:true}]

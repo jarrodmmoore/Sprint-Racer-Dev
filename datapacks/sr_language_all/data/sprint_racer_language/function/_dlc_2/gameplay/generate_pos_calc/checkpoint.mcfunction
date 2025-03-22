@@ -1,4 +1,4 @@
-tellraw @s ["",{"translate":"sr.lobby.fixed_missing_pos_calc_1","color":"light_purple"},{"score":{"name":"@s","objective":"check"},"color":"light_purple"},{"translate":"sr.lobby.fixed_missing_pos_calc_2","color":"light_purple"}]
+tellraw @s ["",{translate:"sr.lobby.fixed_missing_pos_calc_1",color:"light_purple"},{score:{name:"@s",objective:"check"},color:"light_purple"},{translate:"sr.lobby.fixed_missing_pos_calc_2",color:"light_purple"}]
 
 execute if entity @s[scores={check=1}] at @s run tag @e[limit=1,sort=nearest,type=marker,tag=checkpoint,scores={nodeState=1..,check=1}] add posCalc
 execute if entity @s[scores={check=2}] at @s run tag @e[limit=1,sort=nearest,type=marker,tag=checkpoint,scores={nodeState=1..,check=2}] add posCalc

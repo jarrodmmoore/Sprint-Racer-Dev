@@ -1,1 +1,1 @@
-tellraw @s ["",{"translate":"sr.game.finished","color":"yellow","bold":true}]
+tellraw @s ["",{translate:"sr.game.finished",color:"yellow",bold:true}]

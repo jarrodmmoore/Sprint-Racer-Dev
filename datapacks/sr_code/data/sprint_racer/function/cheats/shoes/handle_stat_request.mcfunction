@@ -6,5 +6,5 @@ execute if score @s cStatRequest matches 4 run function sprint_racer:cheats/shoe
 execute if score @s cStatRequest matches 5 run function sprint_racer:cheats/shoes/5
 scoreboard players operation @s cStatRequest = @s cStatType
 
-tellraw @s[tag=!minChat] ["",{"text":"✔ ","color":"green"},{"translate":"sr.cheats.shoes.stats_updated","italic":true}]
+tellraw @s[tag=!minChat] ["",{text:"✔ ",color:"green"},{translate:"sr.cheats.shoes.stats_updated",italic:true}]
 execute at @s run playsound minecraft:entity.player.breath master @s ~ 100000 ~ 100000 1.3

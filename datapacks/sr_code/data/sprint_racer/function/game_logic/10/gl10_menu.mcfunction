@@ -49,7 +49,7 @@ execute if entity @e[tag=focusT,type=armor_stand,tag=btBlacklist] run tag @s add
 #show if banned or not with text
 execute if entity @e[tag=focusT,type=armor_stand] if entity @s[tag=!focusTrackBan] run function sprint_racer_language:_dlc_1/lobby/track_indicate_allowed
 execute if entity @e[tag=focusT,type=armor_stand] if entity @s[tag=focusTrackBan] run function sprint_racer_language:_dlc_1/lobby/track_indicate_banned
-execute unless entity @e[tag=focusT,type=armor_stand] run execute as @e[tag=trackStatus] run data merge entity @s {CustomName:'{"text":"...","color":"white","bold":false}',CustomNameVisible:0b}
+execute unless entity @e[tag=focusT,type=armor_stand] run execute as @e[tag=trackStatus] run data merge entity @s {CustomName:{text:"...",color:"white",bold:false},CustomNameVisible:0b}
 
 #update difficulty display (unless custom preview is being used)
 #race

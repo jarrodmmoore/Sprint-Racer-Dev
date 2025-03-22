@@ -1,1 +1,1 @@
-tellraw @a ["",{"text":"==\\/==","bold":true,"color":"white"},{"text":" "},{"translate":"sr.grand_prix.random_track","bold":true,"color":"white"},{"text":" "},{"text":"==\\/==","bold":true,"color":"white"}]
+tellraw @a ["",{text:"==\\/==",bold:true,color:"white"},{text:" "},{translate:"sr.grand_prix.random_track",bold:true,color:"white"},{text:" "},{text:"==\\/==",bold:true,color:"white"}]

@@ -1,1 +1,1 @@
-bossbar set minecraft:control_openwings name ["",{"translate":"sr.control_tip.press_open_wings_1","color":"white"},{"text":" "},{"keybind":"key.jump","color":"aqua","bold":true},{"text":" "},{"translate":"sr.control_tip.press_open_wings_2","color":"white"}]
+bossbar set minecraft:control_openwings name ["",{translate:"sr.control_tip.press_open_wings_1",color:"white"},{text:" "},{keybind:"key.jump",color:"aqua",bold:true},{text:" "},{translate:"sr.control_tip.press_open_wings_2",color:"white"}]

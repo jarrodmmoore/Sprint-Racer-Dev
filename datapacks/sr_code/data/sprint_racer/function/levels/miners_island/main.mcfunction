@@ -13,4 +13,4 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gerald=1}] un
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove slimebouncer
 
 #make sure gerald exists
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=180..}] if block -15 72 -736 air unless entity @e[tag=gerald,type=chicken] run summon minecraft:chicken -15 72 -736 {Invulnerable:1b,CustomNameVisible:1b,Leashed:1b,PersistenceRequired:1b,NoAI:1b,Tags:["gerald","chickenstay"],CustomName:'{"text":"Gerald"}',Leash:{X:-15,Y:67,Z:-736}}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=180..}] if block -15 72 -736 air unless entity @e[tag=gerald,type=chicken] run summon minecraft:chicken -15 72 -736 {Invulnerable:1b,CustomNameVisible:1b,Leashed:1b,PersistenceRequired:1b,NoAI:1b,Tags:["gerald","chickenstay"],CustomName:{text:"Gerald"},Leash:{X:-15,Y:67,Z:-736}}

@@ -1,1 +1,1 @@
-tellraw @a ["",{"translate":"sr.error.track_does_not_support_ai","color":"red","bold":true}]
+tellraw @a ["",{translate:"sr.error.track_does_not_support_ai",color:"red",bold:true}]

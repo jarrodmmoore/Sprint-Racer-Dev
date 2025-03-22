@@ -5,11 +5,11 @@ execute if entity @s[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=.
 scoreboard players add @s playerLives 1
 
 #1UP text
-execute if entity @s[type=player,gamemode=adventure] if loaded ~ ~ ~ run summon text_display ~ ~2.2 ~ {alignment:center,text:'{"translate":"sr.game.1up","color":"white","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
-execute if entity @s[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] as @e[tag=show1UP] at @s if loaded ~ ~ ~ run summon text_display ~ ~2.2 ~ {alignment:center,text:'{"translate":"sr.game.1up","color":"white","bold":true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute if entity @s[type=player,gamemode=adventure] if loaded ~ ~ ~ run summon text_display ~ ~2.2 ~ {alignment:center,text:'{translate:"sr.game.1up",color:"white",bold:true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
+execute if entity @s[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] as @e[tag=show1UP] at @s if loaded ~ ~ ~ run summon text_display ~ ~2.2 ~ {alignment:center,text:'{translate:"sr.game.1up",color:"white",bold:true}',Tags:["setscore","health_text"],billboard:"center",teleport_duration:20,shadow:1b,see_through:1b,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},background:0}
 execute if entity @s[type=player,gamemode=adventure] as @e[tag=setscore,distance=..4] run function sprint_racer:damage_logic/damage_number_entity_slow
 execute if entity @s[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] as @e[tag=show1UP] at @s as @e[tag=setscore,distance=..4] run function sprint_racer:damage_logic/damage_number_entity_slow
-tellraw @s[type=player,tag=!minChat] ["",{"translate":"sr.game.reached_ko_goal","color":"green"},{"text":" "},{"text":" "},{"text":"+1","color":"red","bold":true},{"text":"\uE013","color":"red"}]
+tellraw @s[type=player,tag=!minChat] ["",{translate:"sr.game.reached_ko_goal",color:"green"},{text:" "},{text:" "},{text:"+1",color:"red",bold:true},{text:"\uE013",color:"red"}]
 
 #feedback
 execute if entity @s[type=player,gamemode=!adventure] run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1.75 0.75

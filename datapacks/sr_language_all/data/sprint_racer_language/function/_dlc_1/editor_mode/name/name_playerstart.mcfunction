@@ -1,4 +1,4 @@
-execute if entity @s[tag=!psBattle,tag=!psTimeAttack] run data merge entity @s {CustomName:'{"text":"Player Start (RACE)","color":"aqua","bold":true,"italic":false}'}
-execute if entity @s[tag=!psBattle,tag=psTimeAttack] run data merge entity @s {CustomName:'{"text":"Player Start (RACE / TIME ATTACK)","color":"yellow","bold":true,"italic":false}'}
-execute if entity @s[tag=psBattle,tag=!psTimeAttack] run data merge entity @s {CustomName:'{"text":"Player Start (BATTLE)","color":"red","bold":true,"italic":false}'}
-execute if entity @s[tag=psBattle,tag=psTimeAttack] run data merge entity @s {CustomName:'{"text":"Player Start (BATTLE / TIME ATTACK)","color":"yellow","bold":true,"italic":false}'}
+execute if entity @s[tag=!psBattle,tag=!psTimeAttack] run data merge entity @s {CustomName:{text:"Player Start (RACE)",color:"aqua",bold:true,italic:false}}
+execute if entity @s[tag=!psBattle,tag=psTimeAttack] run data merge entity @s {CustomName:{text:"Player Start (RACE / TIME ATTACK)",color:"yellow",bold:true,italic:false}}
+execute if entity @s[tag=psBattle,tag=!psTimeAttack] run data merge entity @s {CustomName:{text:"Player Start (BATTLE)",color:"red",bold:true,italic:false}}
+execute if entity @s[tag=psBattle,tag=psTimeAttack] run data merge entity @s {CustomName:{text:"Player Start (BATTLE / TIME ATTACK)",color:"yellow",bold:true,italic:false}}

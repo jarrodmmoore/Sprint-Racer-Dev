@@ -3,7 +3,7 @@ execute at @s run tag @e[limit=1,sort=nearest,type=armor_stand,tag=trackminimap]
 
 execute at @s run playsound minecraft:block.wood.break master @s ~ ~ ~ 2 .92
 
-tellraw @s ["",{"text":" "}]
+tellraw @s ["",{text:" "}]
 
 tag @s add tellOnlyMe
 tag @a[tag=!tellOnlyMe] add dontTellMe
@@ -13,7 +13,7 @@ execute at @s run function sprint_racer:game_logic/6/worldmap_say_name
 
 
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={trackBestTime2=1..}] run function sprint_racer:game_logic/6/show_times/show_pb_itemless
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={trackBestTime2=1..}] run tellraw @s ["",{"text":"---","bold":true,"color":"green"}]
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={trackBestTime2=1..}] run tellraw @s ["",{text:"---",bold:true,color:"green"}]
 
 
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalRace=4..}] run function sprint_racer:game_logic/6/show_times/show_pb

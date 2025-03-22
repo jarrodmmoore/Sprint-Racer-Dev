@@ -7,7 +7,7 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add randomMode
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gpNumber=50..}] run tag @s add nope_avi
 
 execute unless entity @s[tag=nope_avi] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gpNumber 1
-execute unless entity @s[tag=nope_avi] run tellraw @a ["",{"text":" "}]
+execute unless entity @s[tag=nope_avi] run tellraw @a ["",{text:" "}]
 execute unless entity @s[tag=nope_avi] run function sprint_racer_language:_dlc_3/grand_prix/add_random_3
 execute unless entity @s[tag=nope_avi] run function sprint_racer_language:_dlc_3/grand_prix/number_set
 execute unless entity @s[tag=nope_avi] as @a at @s run playsound minecraft:block.note_block.bell master @s ~ 100000 ~ 100000 1.9

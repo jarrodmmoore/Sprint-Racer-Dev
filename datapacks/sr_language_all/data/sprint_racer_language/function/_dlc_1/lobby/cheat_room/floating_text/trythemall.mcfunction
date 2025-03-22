@@ -1,3 +1,3 @@
-execute as @e[tag=cheattext2] run data merge entity @s {CustomName:'{"text":"00 - TRYTHEMALL!","color":"white","bold":true,"italic":false}'}
-execute as @e[tag=cheattext3] run data merge entity @s {CustomName:'{"text":"--","color":"white","bold":false,"italic":false}',CustomNameVisible:0b}
-execute as @e[tag=cheattext4] run data merge entity @s {CustomName:'{"translate":"sr.cheats.trythemall","color":"white","bold":false,"italic":false}',CustomNameVisible:1b}
+execute as @e[tag=cheattext2] run data merge entity @s {CustomName:{text:"00 - TRYTHEMALL!",color:"white",bold:true,italic:false}}
+execute as @e[tag=cheattext3] run data merge entity @s {CustomName:{text:"--",color:"white",bold:false,italic:false},CustomNameVisible:0b}
+execute as @e[tag=cheattext4] run data merge entity @s {CustomName:{translate:"sr.cheats.trythemall",color:"white",bold:false,italic:false},CustomNameVisible:1b}

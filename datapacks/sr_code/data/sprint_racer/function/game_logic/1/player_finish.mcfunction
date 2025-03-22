@@ -41,7 +41,7 @@ scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand
 
 #update HUD if needed
 scoreboard players operation @s racePosDisplay = @s finishPos
-execute if score @s racePosDisplay2 matches 1..4 run scoreboard players display numberformat @s racePosDisplay2 fixed ["",{"text":"\uE072","color":"white","bold":false}]
+execute if score @s racePosDisplay2 matches 1..4 run scoreboard players display numberformat @s racePosDisplay2 fixed ["",{text:"\uE072",color:"white",bold:false}]
 scoreboard players remove @s lapFake 1
 execute if score #bbPersonalize value matches 2 if score @s hudNode matches 1.. if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!gauntletTrack] run function sprint_racer:custom_hud/_update_index_race
 execute if score #bbPersonalize value matches 2 if score @s hudNode matches 1.. if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=gauntletTrack] run function sprint_racer:custom_hud/_update_index_race_gauntlet

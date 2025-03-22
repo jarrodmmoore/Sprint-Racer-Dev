@@ -1,2 +1,2 @@
-tellraw @s ["",{"translate":"sr.tutorial.tutorial","color":"aqua","bold":true},{"text":" "},{"text":"This is a checkpoint. Use your ","color":"white","bold":false},{"text":"reset item (barrier)","color":"red"},{"text":" to return here if you're ever stuck.","color":"white","bold":false}]
+tellraw @s ["",{translate:"sr.tutorial.tutorial",color:"aqua",bold:true},{text:" "},{text:"This is a checkpoint. Use your ",color:"white",bold:false},{text:"reset item (barrier)",color:"red"},{text:" to return here if you're ever stuck.",color:"white",bold:false}]
 scoreboard players set @s tutorProgress 3

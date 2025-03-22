@@ -1,6 +1,6 @@
-#tellraw @s ["",{"text":" "}]
+#tellraw @s ["",{text:" "}]
 
-#execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=0}] run data merge block 1573 88 383 {Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function sprint_racer:game_logic/0/options_signs/speedometer"}}',Text2:'{"text":"SPEEDOMETER","bold":true,"color":"black"}',Text3:'{"text":"UNITS","bold":true,"color":"black"}'}
+#execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=0}] run data merge block 1573 88 383 {Text1:'{text:"",click_event:{action:"run_command",command:"function sprint_racer:game_logic/0/options_signs/speedometer"}}',Text2:'{text:"SPEEDOMETER",bold:true,color:"black"}',Text3:'{text:"UNITS",bold:true,color:"black"}'}
 
 tag @s remove optSetB
 tag @s add optSetA
@@ -11,8 +11,8 @@ execute if entity @s[tag=optSetB] run tag @s remove kph
 execute if entity @s[tag=optSetB] run tag @s remove mps
 execute if entity @s[tag=optSetB] run tag @s remove mcunits
 execute if entity @s[tag=optSetB] run tag @s remove nounits
-#execute if entity @s[tag=optSetB] run tellraw @s ["",{"text":"MPH","color":"aqua","bold":true}]
-#execute if entity @s[tag=optSetB] run tellraw @s ["",{"text":"Your speedometer now displays in miles per hour","color":"aqua"}]
+#execute if entity @s[tag=optSetB] run tellraw @s ["",{text:"MPH",color:"aqua",bold:true}]
+#execute if entity @s[tag=optSetB] run tellraw @s ["",{text:"Your speedometer now displays in miles per hour",color:"aqua"}]
 execute if entity @s[tag=optSetB] run playsound minecraft:block.note_block.hat master @s
 tag @s[tag=optSetB] remove optSetA
 tag @s[tag=optSetB] remove optSetB
@@ -23,8 +23,8 @@ execute if entity @s[tag=optSetB] run tag @s remove mps
 execute if entity @s[tag=optSetB] run tag @s remove mcunits
 execute if entity @s[tag=optSetB] run tag @s remove nounits
 execute if entity @s[tag=optSetB] run tag @s remove mph
-#execute if entity @s[tag=optSetB] run tellraw @s ["",{"text":"KPH","color":"aqua","bold":true}]
-#execute if entity @s[tag=optSetB] run tellraw @s ["",{"text":"Your speedometer now displays in kilometers per hour","color":"aqua"}]
+#execute if entity @s[tag=optSetB] run tellraw @s ["",{text:"KPH",color:"aqua",bold:true}]
+#execute if entity @s[tag=optSetB] run tellraw @s ["",{text:"Your speedometer now displays in kilometers per hour",color:"aqua"}]
 execute if entity @s[tag=optSetB] run playsound minecraft:block.note_block.hat master @s
 tag @s[tag=optSetB] remove optSetA
 tag @s[tag=optSetB] remove optSetB
@@ -35,8 +35,8 @@ execute if entity @s[tag=optSetB] run tag @s remove mps
 execute if entity @s[tag=optSetB] run tag @s remove kph
 execute if entity @s[tag=optSetB] run tag @s remove nounits
 execute if entity @s[tag=optSetB] run tag @s remove mph
-#execute if entity @s[tag=optSetB] run tellraw @s ["",{"text":"MINECRAFT","color":"aqua","bold":true}]
-#execute if entity @s[tag=optSetB] run tellraw @s ["",{"text":"Your speedometer now displays your speed potion effect","color":"aqua"}]
+#execute if entity @s[tag=optSetB] run tellraw @s ["",{text:"MINECRAFT",color:"aqua",bold:true}]
+#execute if entity @s[tag=optSetB] run tellraw @s ["",{text:"Your speedometer now displays your speed potion effect",color:"aqua"}]
 execute if entity @s[tag=optSetB] run playsound minecraft:block.note_block.hat master @s
 tag @s[tag=optSetB] remove optSetA
 tag @s[tag=optSetB] remove optSetB
@@ -47,8 +47,8 @@ execute if entity @s[tag=optSetB] run tag @s remove mps
 execute if entity @s[tag=optSetB] run tag @s remove kph
 execute if entity @s[tag=optSetB] run tag @s remove mcunits
 execute if entity @s[tag=optSetB] run tag @s remove mph
-#execute if entity @s[tag=optSetB] run tellraw @s ["",{"text":"NONE","color":"red","bold":true}]
-#execute if entity @s[tag=optSetB] run tellraw @s ["",{"text":"Your speedometer will not display any units","color":"red"}]
+#execute if entity @s[tag=optSetB] run tellraw @s ["",{text:"NONE",color:"red",bold:true}]
+#execute if entity @s[tag=optSetB] run tellraw @s ["",{text:"Your speedometer will not display any units",color:"red"}]
 execute if entity @s[tag=optSetB] run playsound minecraft:block.note_block.hat master @s
 tag @s[tag=optSetB] remove optSetA
 tag @s[tag=optSetB] remove optSetB
@@ -59,8 +59,8 @@ execute if entity @s[tag=optSetB] run tag @s remove nounits
 execute if entity @s[tag=optSetB] run tag @s remove kph
 execute if entity @s[tag=optSetB] run tag @s remove mcunits
 execute if entity @s[tag=optSetB] run tag @s remove mph
-#execute if entity @s[tag=optSetB] run tellraw @s ["",{"text":"M\/S","color":"aqua","bold":true}]
-#execute if entity @s[tag=optSetB] run tellraw @s ["",{"text":"Your speedometer now displays in meters (blocks) per second","color":"aqua"}]
+#execute if entity @s[tag=optSetB] run tellraw @s ["",{text:"M\/S",color:"aqua",bold:true}]
+#execute if entity @s[tag=optSetB] run tellraw @s ["",{text:"Your speedometer now displays in meters (blocks) per second",color:"aqua"}]
 execute if entity @s[tag=optSetB] run playsound minecraft:block.note_block.hat master @s
 tag @s[tag=optSetB] remove optSetA
 tag @s[tag=optSetB] remove optSetB

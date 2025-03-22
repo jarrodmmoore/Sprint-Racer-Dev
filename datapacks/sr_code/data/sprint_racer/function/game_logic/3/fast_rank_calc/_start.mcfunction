@@ -35,4 +35,4 @@ execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scor
 execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={battlePos=1..}] run scoreboard players operation @s itemPosition = @s battPosDisplay
 
 #debug
-#tellraw @a ["",{"text":"playerCountC = "},{"score":{"name":"@s","objective":"playerCountC"}}]
+#tellraw @a ["",{text:"playerCountC = "},{score:{name:"@s",objective:"playerCountC"}}]

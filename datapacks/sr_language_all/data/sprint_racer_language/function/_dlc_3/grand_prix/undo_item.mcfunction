@@ -1,1 +1,1 @@
-item replace entity @a[scores={hp=1..},tag=playing,gamemode=!creative,tag=!hasTNT] hotbar.7 with minecraft:tnt[custom_name='{"translate":"sr.grand_prix.undo_previous_track","color":"red","bold":true,"italic":false}',custom_data={gp_undo:1b,itemhastitle:1b}] 1
+item replace entity @a[scores={hp=1..},tag=playing,gamemode=!creative,tag=!hasTNT] hotbar.7 with minecraft:tnt[custom_name={translate:"sr.grand_prix.undo_previous_track",color:"red",bold:true,italic:false},custom_data={gp_undo:1b,itemhastitle:1b}] 1

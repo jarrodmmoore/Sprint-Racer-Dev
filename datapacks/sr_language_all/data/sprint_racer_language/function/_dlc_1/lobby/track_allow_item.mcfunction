@@ -1,1 +1,1 @@
-item replace entity @a[tag=!hasMap1] hotbar.4 with minecraft:lime_dye[custom_name='["",{"translate":"sr.lobby.track_allowed","color":"green","bold":true,"italic":false}]',custom_data={trackAllow:1b}]
+item replace entity @a[tag=!hasMap1] hotbar.4 with minecraft:lime_dye[custom_name=["",{translate:"sr.lobby.track_allowed",color:"green",bold:true,italic:false}],custom_data={trackAllow:1b}]

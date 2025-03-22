@@ -25,4 +25,4 @@ execute if entity @s[tag=mcunits,scores={moveState=1}] run function sprint_racer
 execute if entity @s[tag=mcunits,scores={moveState=2}] run function sprint_racer_language:speedometer/mcunits/sprinting
 execute if entity @s[tag=mcunits,scores={moveState=3}] run function sprint_racer_language:speedometer/mcunits/sneaking
 
-execute if entity @s[scores={moving=..0,moveState=..2,hitstun=..0}] run bossbar set minecraft:speedo name {"text":" "}
+execute if entity @s[scores={moving=..0,moveState=..2,hitstun=..0}] run bossbar set minecraft:speedo name {text:" "}

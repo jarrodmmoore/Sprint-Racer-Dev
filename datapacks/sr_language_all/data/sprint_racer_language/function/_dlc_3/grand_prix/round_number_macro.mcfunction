@@ -1,1 +1,1 @@
-$data merge entity @e[limit=1,type=armor_stand,tag=gp_round_show] {CustomName:'[{"translate":"sr.grand_prix.round","bold":true},{"text":" "},{"text":"[$(num1)/$(num2)]","bold":true}]',CustomNameVisible:true}
+$data merge entity @e[limit=1,type=armor_stand,tag=gp_round_show] {CustomName:[{translate:"sr.grand_prix.round",bold:true},{text:" "},{text:"[$(num1)/$(num2)]",bold:true}],CustomNameVisible:true}

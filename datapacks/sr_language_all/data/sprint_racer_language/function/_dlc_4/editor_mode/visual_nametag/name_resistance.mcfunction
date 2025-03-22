@@ -1,2 +1,2 @@
-execute if entity @s[tag=!resLong] run summon area_effect_cloud ~ ~ ~ {Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:'{"translate":"sr.editor.display.resistance_3s","color":"white","bold":true,"italic":false}'}
-execute if entity @s[tag=resLong] run summon area_effect_cloud ~ ~ ~ {Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:'{"translate":"sr.editor.display.resistance_5s","color":"white","bold":true,"italic":false}'}
+execute if entity @s[tag=!resLong] run summon area_effect_cloud ~ ~ ~ {Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:{translate:"sr.editor.display.resistance_3s",color:"white",bold:true,italic:false}}
+execute if entity @s[tag=resLong] run summon area_effect_cloud ~ ~ ~ {Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:{translate:"sr.editor.display.resistance_5s",color:"white",bold:true,italic:false}}

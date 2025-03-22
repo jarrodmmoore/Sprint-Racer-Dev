@@ -1,1 +1,1 @@
-data merge entity @s {CustomNameVisible:1b,CustomName:'{"text":"CPU_3","color":"gold"}'}
+data merge entity @s {CustomNameVisible:1b,CustomName:{text:"CPU_3",color:"gold"}}

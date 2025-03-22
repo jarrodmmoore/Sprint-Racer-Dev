@@ -1,2 +1,2 @@
-tellraw @s ["",{"text":"<","color":"white"},{"translate":"entity.minecraft.villager","color":"gray"},{"text":"> ","color":"white"},{"translate":"sr.lobby.villager_tip.25","color":"white"}]
+tellraw @s ["",{text:"<",color:"white"},{translate:"entity.minecraft.villager",color:"gray"},{text:"> ",color:"white"},{translate:"sr.lobby.villager_tip.25",color:"white"}]
 playsound minecraft:entity.villager.yes master @s ~ ~ ~ 2 1

@@ -1,1 +1,1 @@
-tellraw @s ["",{"translate":"sr.editor.disabled","color":"gray"}]
+tellraw @s ["",{translate:"sr.editor.disabled",color:"gray"}]

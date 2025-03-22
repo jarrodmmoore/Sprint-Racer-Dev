@@ -1,5 +1,5 @@
 title @a subtitle [""]
-title @a title ["",{"text":"\uE043","color":"#FFCCCC","italic":true}]
+title @a title ["",{text:"\uE043",color:"#FFCCCC",italic:true}]
 
 scoreboard players set @s lap 999999
 scoreboard players set @s check 0

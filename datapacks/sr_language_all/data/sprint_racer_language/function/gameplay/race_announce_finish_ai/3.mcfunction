@@ -1,1 +1,1 @@
-title @a[scores={actionbarState=5}] actionbar ["",{"text":"CPU_","color":"aqua"},{"score":{"name":"@s","objective":"rNumber"},"color":"aqua"},{"text":" >> ","color":"gold","bold":true},{"translate":"sr.game.finished","color":"gold","bold":true},{"text":" "},{"text":"[3rd]","color":"gold","bold":true}]
+title @a[scores={actionbarState=5}] actionbar ["",{text:"CPU_",color:"aqua"},{score:{name:"@s",objective:"rNumber"},color:"aqua"},{text:" >> ",color:"gold",bold:true},{translate:"sr.game.finished",color:"gold",bold:true},{text:" "},{text:"[3rd]",color:"gold",bold:true}]

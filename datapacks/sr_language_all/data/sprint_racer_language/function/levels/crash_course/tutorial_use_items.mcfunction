@@ -1,2 +1,2 @@
-tellraw @s ["",{"translate":"sr.tutorial.tutorial","color":"aqua","bold":true},{"text":" "},{"translate":"sr.tutorial.use_item_by_pressing","color":"white","bold":false},{"keybind":"key.use","color":"yellow","bold":false}]
+tellraw @s ["",{translate:"sr.tutorial.tutorial",color:"aqua",bold:true},{text:" "},{translate:"sr.tutorial.use_item_by_pressing",color:"white",bold:false},{keybind:"key.use",color:"yellow",bold:false}]
 scoreboard players set @s tutorProgress 10

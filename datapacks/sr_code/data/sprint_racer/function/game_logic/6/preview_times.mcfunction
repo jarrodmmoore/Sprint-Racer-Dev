@@ -1,7 +1,7 @@
 function sprint_racer:game_logic/6/worldmap_inspect
 tag @s add checkThisMap
 
-tellraw @a ["",{"text":" "}]
+tellraw @a ["",{text:" "}]
 
 tag @a[tag=dontTellMe] remove dontTellMe
 
@@ -10,7 +10,7 @@ execute at @s run function sprint_racer:game_logic/6/worldmap_say_name
 
 
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={trackBestTime2=1..}] run function sprint_racer:game_logic/6/show_times/show_pb_itemless
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={trackBestTime2=1..}] run tellraw @a ["",{"text":"---","bold":true,"color":"green"}]
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={trackBestTime2=1..}] run tellraw @a ["",{text:"---",bold:true,color:"green"}]
 
 
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalRace=4..}] run function sprint_racer:game_logic/6/show_times/show_pb

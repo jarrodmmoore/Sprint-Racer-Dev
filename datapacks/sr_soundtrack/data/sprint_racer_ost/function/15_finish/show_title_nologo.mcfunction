@@ -1,1 +1,1 @@
-tellraw @s ["",{"text":"♪ Prism - Render","italic":true,"color":"yellow"}]
+tellraw @s ["",{text:"♪ Prism - Render",italic:true,color:"yellow"}]

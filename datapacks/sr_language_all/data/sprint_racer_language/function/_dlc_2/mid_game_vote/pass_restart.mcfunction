@@ -1,7 +1,7 @@
-tellraw @a ["",{"text":" "}]
-tellraw @a ["",{"translate":"sr.mid_game_vote.restart","color":"yellow","bold":true}]
-tellraw @a ["",{"translate":"sr.mid_game_vote.vote_was_passed","color":"yellow","italic":true}]
-tellraw @a ["",{"text":" "}]
+tellraw @a ["",{text:" "}]
+tellraw @a ["",{translate:"sr.mid_game_vote.restart",color:"yellow",bold:true}]
+tellraw @a ["",{translate:"sr.mid_game_vote.vote_was_passed",color:"yellow",italic:true}]
+tellraw @a ["",{text:" "}]
 
 execute as @a at @s run playsound minecraft:entity.ender_dragon.hurt master @s ~ 1000000 ~ 1000000 .5
 

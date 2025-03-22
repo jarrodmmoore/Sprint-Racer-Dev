@@ -1,2 +1,2 @@
-tellraw @s ["",{"translate":"sr.tutorial.tutorial","color":"aqua","bold":true},{"text":" "},{"translate":"sr.tutorial.reset_1","color":"white","bold":false},{"translate":"sr.tutorial.reset_2","color":"red","bold":false},{"translate":"sr.tutorial.reset_3","color":"white","bold":false}]
+tellraw @s ["",{translate:"sr.tutorial.tutorial",color:"aqua",bold:true},{text:" "},{translate:"sr.tutorial.reset_1",color:"white",bold:false},{translate:"sr.tutorial.reset_2",color:"red",bold:false},{translate:"sr.tutorial.reset_3",color:"white",bold:false}]
 tag @s add told2Reset

@@ -1,1 +1,1 @@
-tellraw @a ["",{"translate":"sr.grand_prix.no_tracks_to_undo","color":"red","bold":true}]
+tellraw @a ["",{translate:"sr.grand_prix.no_tracks_to_undo",color:"red",bold:true}]

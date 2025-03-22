@@ -1,1 +1,1 @@
-tellraw @a[tag=!playing] ["",{"selector":"@s","color":"aqua"},{"text":" >> ","color":"yellow","bold":true},{"translate":"sr.game.finished","color":"yellow","bold":true},{"text":" "},{"text":"[1st]","color":"yellow","bold":true}]
+tellraw @a[tag=!playing] ["",{selector:"@s",color:"aqua"},{text:" >> ",color:"yellow",bold:true},{translate:"sr.game.finished",color:"yellow",bold:true},{text:" "},{text:"[1st]",color:"yellow",bold:true}]

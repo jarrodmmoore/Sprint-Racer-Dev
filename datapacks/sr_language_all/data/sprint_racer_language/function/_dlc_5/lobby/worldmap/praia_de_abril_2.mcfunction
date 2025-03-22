@@ -1,1 +1,1 @@
-item replace entity @a[scores={hp=1..},tag=playing,tag=tempTarget] hotbar.0 with minecraft:filled_map[map_id=48,custom_name='{"text":"Praia de Abril (Race)","color":"aqua","bold":true,"italic":false}',map_color=43775,custom_data={wmPreview:1b,itemhastitle:1b}] 1
+item replace entity @a[scores={hp=1..},tag=playing,tag=tempTarget] hotbar.0 with minecraft:filled_map[map_id=48,custom_name={text:"Praia de Abril (Race)",color:"aqua",bold:true,italic:false},map_color=43775,custom_data={wmPreview:1b,itemhastitle:1b}] 1

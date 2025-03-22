@@ -1,1 +1,1 @@
-execute unless entity @s[name="KittyCatElite"] run data merge entity @s {CustomName:'{"text":"KittyCatElite"}'}
+execute unless entity @s[name="KittyCatElite"] run data merge entity @s {CustomName:{text:"KittyCatElite"}}

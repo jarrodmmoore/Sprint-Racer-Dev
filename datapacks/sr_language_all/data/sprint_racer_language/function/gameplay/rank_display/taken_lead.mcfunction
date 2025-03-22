@@ -1,1 +1,1 @@
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=3,gameTime=300..99999}] run tellraw @s ["",{"text":"You've taken the lead!","color":"aqua"}]
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=3,gameTime=300..99999}] run tellraw @s ["",{text:"You've taken the lead!",color:"aqua"}]

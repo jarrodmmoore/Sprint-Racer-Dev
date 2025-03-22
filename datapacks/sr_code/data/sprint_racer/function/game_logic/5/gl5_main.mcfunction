@@ -73,7 +73,7 @@ execute as @a[scores={carrotInput=..999,inputCooldown=..0}] if items entity @s w
 tag @a[tag=hasWarpFR] remove hasWarpFR
 tag @a[gamemode=!creative,nbt={Inventory:[{Slot:7b,id:"minecraft:flint",components:{"minecraft:custom_data":{trackSelectFR:1b}}}]}] add hasWarpFR
 clear @a[gamemode=!creative,tag=!hasWarpFR] flint[custom_data~{trackSelectFR:1b}]
-execute as @a[gamemode=!creative,tag=!hasWarpFR] run item replace entity @s hotbar.7 with minecraft:flint[custom_name='{"translate":"sr.game.free_roam_track_select","bold":true,"italic":false,"color":"aqua"}',custom_data={trackSelectFR:1b,rightclick:1b}] 1
+execute as @a[gamemode=!creative,tag=!hasWarpFR] run item replace entity @s hotbar.7 with minecraft:flint[custom_name={translate:"sr.game.free_roam_track_select",bold:true,italic:false,color:"aqua"},custom_data={trackSelectFR:1b,rightclick:1b}] 1
 
 
 

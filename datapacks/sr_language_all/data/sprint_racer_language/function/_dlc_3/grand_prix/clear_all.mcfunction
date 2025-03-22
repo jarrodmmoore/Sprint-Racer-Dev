@@ -1,1 +1,1 @@
-tellraw @a ["",{"translate":"sr.grand_prix.track_sequence_cleared","color":"gold"}]
+tellraw @a ["",{translate:"sr.grand_prix.track_sequence_cleared",color:"gold"}]

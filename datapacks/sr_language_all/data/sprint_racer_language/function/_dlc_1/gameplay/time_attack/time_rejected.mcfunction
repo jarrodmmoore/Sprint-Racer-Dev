@@ -1,1 +1,1 @@
-tellraw @a ["",{"translate":"sr.game.invalid_time_cheats_detected","color":"red"}]
+tellraw @a ["",{translate:"sr.game.invalid_time_cheats_detected",color:"red"}]

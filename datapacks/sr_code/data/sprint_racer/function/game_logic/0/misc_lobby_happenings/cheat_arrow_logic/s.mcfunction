@@ -2,7 +2,7 @@ function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_arrow_logic/_shif
 
 #IMPORTANT, CHANGE PER CHARACTER
 scoreboard players set @e[tag=cheats,x=1548,y=148,z=422,distance=..1] aiHasItem1 21
-tellraw @a[x=1574,y=97,z=438,dx=20,dy=14,dz=13,gamemode=adventure] ["",{"text":"S","bold":true}]
+tellraw @a[x=1574,y=97,z=438,dx=20,dy=14,dz=13,gamemode=adventure] ["",{text:"S",bold:true}]
 
 execute as @a[x=1574,y=97,z=438,dx=20,dy=14,dz=13,gamemode=adventure] at @s run playsound minecraft:block.dispenser.dispense master @s ~ 100000 ~ 100000
 

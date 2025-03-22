@@ -17,7 +17,7 @@ execute if score #requestSaveState value matches 9 as @e[tag=w,x=1560,y=150,z=40
 execute if score #requestSaveState value matches 10 as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] positioned 1627 80 460 if block 1626 ~ 459 lime_wool run function sprint_racer:game_logic/0/save_state/handle_state_request_valid
 
 #error message if that didn't work
-execute if score #validSave value matches 0 run tellraw @a[tag=!minChat] ["",{"translate":"sr.lobby.save_state.save_state","color":"yellow"},{"translate":"sr.lobby.save_state.cannot_load_empty","color":"red"}]
+execute if score #validSave value matches 0 run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.save_state.save_state",color:"yellow"},{translate:"sr.lobby.save_state.cannot_load_empty",color:"red"}]
 
 #clear state request
 scoreboard players set #requestSaveState value 0

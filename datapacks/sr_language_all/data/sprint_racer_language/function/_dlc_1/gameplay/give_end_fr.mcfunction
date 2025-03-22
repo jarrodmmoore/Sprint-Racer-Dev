@@ -1,1 +1,1 @@
-item replace entity @s hotbar.8 with minecraft:barrier[custom_name='{"translate":"sr.game.return_to_lobby","bold":true,"italic":false,"color":"red"}',custom_data={EndFR:1b,rightclick:1b}] 1
+item replace entity @s hotbar.8 with minecraft:barrier[custom_name={translate:"sr.game.return_to_lobby",bold:true,italic:false,color:"red"},custom_data={EndFR:1b,rightclick:1b}] 1

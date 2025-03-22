@@ -1,5 +1,5 @@
 scoreboard objectives remove medals
-scoreboard objectives add medals dummy ["",{"translate":"sr.game.medals_earned","color":"white","bold":true}]
+scoreboard objectives add medals dummy ["",{translate:"sr.game.medals_earned",color:"white",bold:true}]
 
 function sprint_racer:game_logic/6/count_medals
 

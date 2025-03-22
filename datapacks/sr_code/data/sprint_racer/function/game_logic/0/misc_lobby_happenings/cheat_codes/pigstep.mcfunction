@@ -1,8 +1,8 @@
 #announce
-tellraw @a ["",{"text":" "}]
+tellraw @a ["",{text:" "}]
 function sprint_racer_language:_dlc_1/lobby/cheat_room/cheat_found/_cheat_found
 function sprint_racer_language:_dlc_3/lobby/cheat_room/cheat_found/pigstep
-tellraw @a ["",{"text":" "}]
+tellraw @a ["",{text:" "}]
 
 #stuff
 tag @e[tag=cheats,x=1548,y=148,z=422,distance=..1] add foundacheat

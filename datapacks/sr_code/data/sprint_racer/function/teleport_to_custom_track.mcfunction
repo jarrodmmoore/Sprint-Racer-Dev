@@ -8,7 +8,7 @@ scoreboard players operation @a checkpoint_z = @s coord_z
 #scoreboard players set @s[type=player] checkpoint_x 1638
 #scoreboard players set @s[type=player] checkpoint_y 90
 #scoreboard players set @s[type=player] checkpoint_z 432
-#execute if entity @s[type=player] run tellraw @a ["",{"text":"Silly goose, this function isn't supposed to be run by players!"}]
+#execute if entity @s[type=player] run tellraw @a ["",{text:"Silly goose, this function isn't supposed to be run by players!"}]
 
 
 tag @a remove takeItFromHere

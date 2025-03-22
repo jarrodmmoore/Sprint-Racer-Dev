@@ -1,1 +1,1 @@
-tellraw @a ["",{"translate":"sr.grand_prix.track_will_be_played_in_round"},{"score":{"name":"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand]","objective":"gpNumber"}}]
+tellraw @a ["",{translate:"sr.grand_prix.track_will_be_played_in_round"},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand]",objective:"gpNumber"}}]

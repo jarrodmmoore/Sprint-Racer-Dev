@@ -42,8 +42,8 @@ execute if score @s itemSplitTime >= global timeThreshold6 run scoreboard player
 execute if score @s racePosDisplay matches 2 run scoreboard players operation #1stPlaceLead value = @s itemSplitTime
 
 #DEBUG
-#tellraw @s ["",{"text":"[DEV] Time behind 1st: "},{"score":{"name":"@s","objective":"itemSplitTime"}}]
-#tellraw @s ["",{"text":"[DEV] Item luck is now: "},{"score":{"name":"@s","objective":"itemLuck"}}]
+#tellraw @s ["",{text:"[DEV] Time behind 1st: "},{score:{name:"@s",objective:"itemSplitTime"}}]
+#tellraw @s ["",{text:"[DEV] Item luck is now: "},{score:{name:"@s",objective:"itemLuck"}}]
 
 #rival ai gets slightly better items
 execute if entity @s[tag=ai,tag=ai_rival] run scoreboard players add @s[scores={itemLuck=..5}] itemLuck 1

@@ -1,4 +1,4 @@
-title @a subtitle ["",{"translate":"sr.lobby.lobby_paused","color":"red","bold":true}]
+title @a subtitle ["",{translate:"sr.lobby.lobby_paused",color:"red",bold:true}]
 title @a title [""]
 
 execute as @a at @s run playsound minecraft:entity.chicken.death master @s ~ 100000 ~ 100000 1

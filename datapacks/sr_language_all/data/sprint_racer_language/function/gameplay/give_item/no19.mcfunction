@@ -1,4 +1,4 @@
-give @s minecraft:blue_terracotta[item_model="sr/item/blinding_squid",custom_name='{"translate":"sr.item.squid","color":"light_purple","bold":true,"italic":false}',custom_data={no19:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 1
+give @s minecraft:blue_terracotta[item_model="sr/item/blinding_squid",custom_name={translate:"sr.item.squid",color:"light_purple",bold:true,italic:false},custom_data={no19:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}] 1
 
 #don't give people any more of these for 50 seconds.
 scoreboard players set #squidCooldown value 1000

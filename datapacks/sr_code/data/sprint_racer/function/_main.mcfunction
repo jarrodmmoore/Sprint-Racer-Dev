@@ -98,7 +98,7 @@ scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand
 #attackedID stuff for giving KO points, resets after a while
 execute as @a[scores={hitPlayer=1..}] at @s run function sprint_racer:hit_another_player
 execute as @e[tag=activeplayer] run function sprint_racer:handle_attacker_id
-#DEBUG -- execute as @a run tellraw @s ["",{"text":"attackerID = "},{"score":{"name":"@s","objective":"attackerID"}}]
+#DEBUG -- execute as @a run tellraw @s ["",{text:"attackerID = "},{score:{name:"@s",objective:"attackerID"}}]
 
 #make sure speedometer get placed in the right slot if its active
 execute as @a[tag=spdbump] run function sprint_racer:speedometer/speedo_bump
@@ -124,7 +124,7 @@ execute as @a at @s run function sprint_racer:head_button
 
 #display something forever always
 #scoreboard objectives setdisplay sidebar aiBehavior
-#title @a actionbar ["",{"text":"moveState is "},{"score":{"name":"@e[tag=ai,limit=1,sort=nearest]","objective":"moveState"}}]
+#title @a actionbar ["",{text:"moveState is "},{score:{name:"@e[tag=ai,limit=1,sort=nearest]",objective:"moveState"}}]
 
 #assign random resource control seeds to battle chests
 #(I would recommend running this function manually instead of un-commenting this)

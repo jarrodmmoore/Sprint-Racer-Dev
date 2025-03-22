@@ -1,1 +1,1 @@
-tellraw @s ["",{"text":"♪ custom12.ogg","italic":true,"color":"green"}]
+tellraw @s ["",{text:"♪ custom12.ogg",italic:true,color:"green"}]

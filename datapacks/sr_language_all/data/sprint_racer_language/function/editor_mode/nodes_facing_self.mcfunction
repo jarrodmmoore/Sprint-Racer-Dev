@@ -1,1 +1,1 @@
-tellraw @s ["",{"text":"All selected nodes are now facing you.","color":"aqua"}]
+tellraw @s ["",{text:"All selected nodes are now facing you.",color:"aqua"}]

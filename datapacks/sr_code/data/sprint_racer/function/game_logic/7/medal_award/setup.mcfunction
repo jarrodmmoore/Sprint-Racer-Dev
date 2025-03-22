@@ -29,7 +29,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=customTesting] ru
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=customTesting] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove gotNewPB2
 
 
-tellraw @a ["",{"text":" "}]
+tellraw @a ["",{text:" "}]
 
 #say track name before results
 execute as @e[limit=1,type=armor_stand,tag=chosenTrack,tag=!customtrack] run function sprint_racer:game_logic/7/medal_award/say_track_name
@@ -43,7 +43,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!gotNewPB2,tag=ta
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=taNoItems] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add dotdotdot
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=gotNewPB2] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add dotdotdot
 execute if entity @e[tag=chosenTrack,scores={trackBestTime2=1..}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add dotdotdot
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=dotdotdot] run tellraw @a ["",{"text":"---","bold":true,"color":"green"}]
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=dotdotdot] run tellraw @a ["",{text:"---",bold:true,color:"green"}]
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove dotdotdot
 
 

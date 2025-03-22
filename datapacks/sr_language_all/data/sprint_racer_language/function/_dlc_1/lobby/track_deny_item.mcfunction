@@ -1,1 +1,1 @@
-item replace entity @a[tag=!hasMap2] hotbar.4 with minecraft:gray_dye[custom_name='["",{"translate":"sr.lobby.track_banned","color":"gray","bold":true,"italic":false}]',custom_data={trackDeny:1b}]
+item replace entity @a[tag=!hasMap2] hotbar.4 with minecraft:gray_dye[custom_name=["",{translate:"sr.lobby.track_banned",color:"gray",bold:true,italic:false}],custom_data={trackDeny:1b}]

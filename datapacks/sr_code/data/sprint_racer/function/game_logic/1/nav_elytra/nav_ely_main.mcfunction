@@ -42,10 +42,10 @@ scoreboard players operation #ne_rot_compare value = #ne_rot_check value
 scoreboard players operation #ne_rot_compare value -= #ne_rot_player value
 
 #debug
-#tellraw @s ["",{"text":" "}]
-#tellraw @a ["",{"text":"ne_rot_check="},{"score":{"name":"#ne_rot_check","objective":"value"}}]
-#tellraw @a ["",{"text":"ne_rot_player="},{"score":{"name":"#ne_rot_player","objective":"value"}}]
-#tellraw @a ["",{"text":"ne_rot_compare="},{"score":{"name":"#ne_rot_compare","objective":"value"}}]
+#tellraw @s ["",{text:" "}]
+#tellraw @a ["",{text:"ne_rot_check="},{score:{name:"#ne_rot_check",objective:"value"}}]
+#tellraw @a ["",{text:"ne_rot_player="},{score:{name:"#ne_rot_player",objective:"value"}}]
+#tellraw @a ["",{text:"ne_rot_compare="},{score:{name:"#ne_rot_compare",objective:"value"}}]
 
 function sprint_racer:game_logic/1/nav_elytra/interpret_nav
 execute unless entity @e[limit=1,distance=..5,sort=nearest,tag=n_e_look,type=area_effect_cloud] run scoreboard players set @s navDirection2 -1

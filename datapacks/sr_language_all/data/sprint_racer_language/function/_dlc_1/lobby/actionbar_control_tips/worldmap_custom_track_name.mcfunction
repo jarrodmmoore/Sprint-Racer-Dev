@@ -1,4 +1,4 @@
-title @s actionbar ["",{"translate":"sr.lobby.custom_track","color":"white","bold":true},{"selector":"@e[tag=wmCustomFocus,limit=1]"}]
+title @s actionbar ["",{translate:"sr.lobby.custom_track",color:"white",bold:true},{selector:"@e[tag=wmCustomFocus,limit=1]"}]
 
 #exit out if not free roam mode
 execute unless score global gameState matches 5 run return 0

@@ -1,1 +1,1 @@
-scoreboard objectives add displayLivesB dummy ["",{"translate":"sr.game.lives","color":"white","bold":true}]
+scoreboard objectives add displayLivesB dummy ["",{translate:"sr.game.lives",color:"white",bold:true}]

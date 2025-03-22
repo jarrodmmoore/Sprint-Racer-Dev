@@ -1,2 +1,2 @@
-tellraw @s ["",{"translate":"sr.tutorial.tutorial","color":"aqua","bold":true},{"text":" "},{"translate":"sr.tutorial.resistance_1","color":"gray","bold":false},{"translate":"sr.tutorial.resistance_2","color":"white"}]
+tellraw @s ["",{translate:"sr.tutorial.tutorial",color:"aqua",bold:true},{text:" "},{translate:"sr.tutorial.resistance_1",color:"gray",bold:false},{translate:"sr.tutorial.resistance_2",color:"white"}]
 scoreboard players set @s tutorProgress 4

@@ -1,1 +1,1 @@
-summon armor_stand ~ ~ ~ {CustomName:'{"translate":"sr.gamemode_info.tactics_race_1","color":"white","bold":false}',CustomNameVisible:0b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setme"]}
+summon armor_stand ~ ~ ~ {CustomName:{translate:"sr.gamemode_info.tactics_race_1",color:"white",bold:false},CustomNameVisible:0b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["setme"]}

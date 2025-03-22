@@ -1,1 +1,1 @@
-tellraw @s ["",{"translate":"sr.lobby.team_forced_to_orange","color":"gold"}]
+tellraw @s ["",{translate:"sr.lobby.team_forced_to_orange",color:"gold"}]

@@ -1,2 +1,2 @@
-execute if entity @s[tag=!superSpeed] run summon area_effect_cloud ~ ~ ~ {Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:'{"translate":"sr.editor.display.speedboost_20","color":"yellow","bold":true,"italic":false}'}
-execute if entity @s[tag=superSpeed] run summon area_effect_cloud ~ ~ ~ {Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:'{"translate":"sr.editor.display.speedboost_30","color":"aqua","bold":true,"italic":false}'}
+execute if entity @s[tag=!superSpeed] run summon area_effect_cloud ~ ~ ~ {Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:{translate:"sr.editor.display.speedboost_20",color:"yellow",bold:true,italic:false}}
+execute if entity @s[tag=superSpeed] run summon area_effect_cloud ~ ~ ~ {Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:{translate:"sr.editor.display.speedboost_30",color:"aqua",bold:true,italic:false}}

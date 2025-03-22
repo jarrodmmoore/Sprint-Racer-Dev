@@ -3,7 +3,7 @@ scoreboard players add @a gpPoints 0
 scoreboard players add @a endlessPoints 0
 
 #DEV
-#execute as @e[scores={addPoints=1..}] run tellraw @a ["",{"selector":"@s"},{"text":" has points: "},{"score":{"name":"@s","objective":"addPoints"}}]
+#execute as @e[scores={addPoints=1..}] run tellraw @a ["",{selector:"@s"},{text:" has points: "},{score:{name:"@s",objective:"addPoints"}}]
 
 #load saved points into dummyPoints objective if using gp or endless mode
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=endlessMode,tag=!grandprix] as @a run scoreboard players operation @s dummyPoints = @s endlessPoints

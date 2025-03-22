@@ -1,1 +1,1 @@
-execute as @e[tag=trackStatus] run data merge entity @s {CustomName:'{"translate":"sr.lobby.track_allowed","color":"green","bold":true}',CustomNameVisible:1b}
+execute as @e[tag=trackStatus] run data merge entity @s {CustomName:{translate:"sr.lobby.track_allowed",color:"green",bold:true},CustomNameVisible:1b}
