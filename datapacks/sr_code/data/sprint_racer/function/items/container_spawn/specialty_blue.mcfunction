@@ -1,4 +1,4 @@
-summon armor_stand ~ ~-2 ~ {Tags:["itemcontainer","chest7","cSETME"],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"light_blue_wool",count:1,components:{"minecraft:item_model":"sr/container/blue"}}],HandItems:[{},{}],DisabledSlots:2039583}
+summon armor_stand ~ ~-2 ~ {Tags:["itemcontainer","chest7","cSETME"],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,equipment:{head:{id:"light_blue_wool",count:1,components:{"minecraft:item_model":"sr/container/blue"}}},DisabledSlots:2039583}
 
 scoreboard players set @e[tag=chest7,tag=cSETME] itemBlockState 7
 execute as @e[tag=chest7,type=armor_stand,tag=cSETME] at @s run function sprint_racer:items/container_spawn/random_initial_rotation

@@ -1,5 +1,5 @@
-execute if entity @s[scores={aiHoldingItem=36}] run data merge entity @s {HandItems:[{id:"minecraft:smooth_stone_slab",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
-execute if entity @s[scores={aiHoldingItem=37}] run data merge entity @s {HandItems:[{id:"minecraft:anvil",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
-execute if entity @s[scores={aiHoldingItem=38}] run data merge entity @s {HandItems:[{id:"minecraft:black_terracotta",count:1,components:{"minecraft:item_model":"sr/item/enderman_thief","minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
-execute if entity @s[scores={aiHoldingItem=39}] run data merge entity @s {HandItems:[{id:"minecraft:blue_terracotta",count:1,components:{"minecraft:item_model":"sr/item/blinding_squid","minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
-execute if entity @s[scores={aiHoldingItem=40}] run data merge entity @s {HandItems:[{id:"minecraft:blaze_rod",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
+execute if score @s aiHoldingItem matches 36 run item replace entity @s weapon.mainhand with smooth_stone_slab[enchantment_glint_override=true]
+execute if score @s aiHoldingItem matches 37 run item replace entity @s weapon.mainhand with anvil[enchantment_glint_override=true]
+execute if score @s aiHoldingItem matches 38 run item replace entity @s weapon.mainhand with black_terracotta[item_model="sr/item/enderman_thief",enchantment_glint_override=true]
+execute if score @s aiHoldingItem matches 39 run item replace entity @s weapon.mainhand with blue_terracotta[item_model="sr/item/blinding_squid",enchantment_glint_override=true]
+execute if score @s aiHoldingItem matches 40 run item replace entity @s weapon.mainhand with blaze_rod[enchantment_glint_override=true]

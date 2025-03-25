@@ -2,7 +2,7 @@
 tag @a remove cheatElytra
 execute as @a if items entity @s armor.chest elytra run tag @s add cheatElytra
 
-item replace entity @a[tag=!cheatElytra] armor.chest with minecraft:elytra[unbreakable={},enchantments={"minecraft:binding_curse":1},custom_data={flytra:1b}]
+item replace entity @a[tag=!cheatElytra] armor.chest with minecraft:elytra[unbreakable={},enchantments={binding_curse:1},custom_data={flytra:1b}]
 
 tag @a remove cheatElytra
 

@@ -217,10 +217,6 @@ tag @a[tag=checkWrongWay,scores={playerState=..1}] remove checkWrongWay
 scoreboard players set @a[gamemode=adventure,scores={playerState=2}] playerState 1
 scoreboard players reset @a[scores={carrotInput=..999}] carrotInput
 
-#nodes are visualized if a player is in editor mode
-execute unless entity @a[scores={playerState=2}] if entity @e[tag=node,tag=showing] as @e[tag=node,tag=showing] run function sprint_racer:node_hide
-execute if entity @a[scores={playerState=2}] if entity @e[tag=node,tag=!showing] as @e[tag=node,tag=!showing] run function sprint_racer:node_show
-
 #all items with a lifespan score run this function and count down to death
 execute as @e[scores={lifespan=..99999}] run function sprint_racer:entity_lifespan
 

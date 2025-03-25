@@ -1,5 +1,5 @@
-execute if entity @s[scores={aiHoldingItem=11}] run data merge entity @s {HandItems:[{id:"minecraft:ender_pearl",count:1},{}]}
-execute if entity @s[scores={aiHoldingItem=12}] run data merge entity @s {HandItems:[{id:"minecraft:elytra",count:1},{}]}
-execute if entity @s[scores={aiHoldingItem=13}] run data merge entity @s {HandItems:[{id:"minecraft:slime_block",count:1},{}]}
-execute if entity @s[scores={aiHoldingItem=14}] run data merge entity @s {HandItems:[{id:"minecraft:lingering_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:poison"}}},{}]}
-execute if entity @s[scores={aiHoldingItem=15}] run data merge entity @s {HandItems:[{id:"minecraft:bricks",count:1,components:{"minecraft:item_model":"sr/item/chicken_mine"}},{}]}
+execute if score @s aiHoldingItem matches 11 run item replace entity @s weapon.mainhand with ender_pearl
+execute if score @s aiHoldingItem matches 12 run item replace entity @s weapon.mainhand with elytra
+execute if score @s aiHoldingItem matches 13 run item replace entity @s weapon.mainhand with slime_block
+execute if score @s aiHoldingItem matches 14 run item replace entity @s weapon.mainhand with lingering_potion[potion_contents={potion:"minecraft:poison"}]
+execute if score @s aiHoldingItem matches 15 run item replace entity @s weapon.mainhand with bricks[item_model="sr/item/chicken_mine"]

@@ -1,7 +1,7 @@
 scoreboard players remove @e[scores={invulTime=1..}] invulTime 1
 
 effect give @e[scores={invulTime=2..}] resistance 3 250 true
-execute as @e[tag=ai,scores={invulTime=2..}] run data merge entity @s {Invulnerable:1}
+execute as @e[tag=ai,scores={invulTime=2..}] run data merge entity @s {Invulnerable:1b}
 effect clear @e[scores={invulTime=1,nResist=..0}] resistance
 execute as @e[tag=ai,scores={invulTime=1}] run data merge entity @s {Invulnerable:0}
 

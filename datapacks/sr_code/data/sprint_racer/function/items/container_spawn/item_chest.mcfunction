@@ -1,4 +1,4 @@
-summon armor_stand ~ ~-2 ~ {Tags:["itemcontainer","chest1","cSETME"],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"chest",count:1}],HandItems:[{},{}],DisabledSlots:2039583}
+summon armor_stand ~ ~-2 ~ {Tags:["itemcontainer","chest1","cSETME"],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,equipment:{head:{id:"chest",count:1}},DisabledSlots:2039583}
 
 scoreboard players set @e[tag=chest1,tag=cSETME] itemBlockState 1
 #execute as @e[tag=chest1,type=armor_stand,tag=cSETME] at @s run tp @s ~ ~1 ~

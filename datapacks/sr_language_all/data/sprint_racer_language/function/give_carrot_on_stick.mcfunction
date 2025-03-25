@@ -1,1 +1,1 @@
-item replace entity @s[scores={hp=1..}] weapon.offhand with minecraft:carrot_on_a_stick[hide_tooltip={},custom_name={translate:"sr.input_detector",bold:true,italic:false,color:"light_purple"}] 1
+item replace entity @s[scores={hp=1..}] weapon.offhand with minecraft:carrot_on_a_stick[tooltip_display={hide_tooltip:true},custom_name={translate:"sr.input_detector",bold:true,italic:false,color:"light_purple"}] 1

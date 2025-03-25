@@ -1,4 +1,4 @@
-summon potion ~ ~ ~ {Tags:["setPotionOwner"],Motion:[0.0d,-0.5d,0.0d],Item:{id:"minecraft:lingering_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:poison"}}}}
+summon lingering_potion ~ ~ ~ {Tags:["setPotionOwner"],Motion:[0.0d,-0.5d,0.0d],Item:{id:"minecraft:lingering_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:poison"}}}}
 
 #find our owner and put their UUID into the "Owner" nbt
 scoreboard players operation #findPlayer value = @s playerID

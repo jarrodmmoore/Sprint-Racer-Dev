@@ -1,4 +1,4 @@
-item replace entity @s armor.chest with minecraft:elytra[unbreakable={show_in_tooltip:0b},enchantments={levels:{"minecraft:binding_curse":1,"minecraft:vanishing_curse":1},show_in_tooltip:0b}] 1
+item replace entity @s armor.chest with minecraft:elytra[unbreakable={},enchantments={binding_curse:1,vanishing_curse:1},tooltip_display={hidden_components:[enchantments,unbreakable]},enchantment_glint_override=false] 1
 
 #hopefully this will help bad connection players
 execute if block ~ ~1 ~ #sprint_racer:missile_do_not_explode if block ~ ~2 ~ #sprint_racer:missile_do_not_explode run tp @s ~ ~1 ~

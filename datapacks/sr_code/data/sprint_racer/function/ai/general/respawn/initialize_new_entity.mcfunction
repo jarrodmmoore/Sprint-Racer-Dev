@@ -151,4 +151,4 @@ execute if entity @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,t
 effect give @s resistance 1 200 true
 
 #held item in battle mode
-execute if score global gameState matches 3 run data merge entity @s {HandItems:[{id:"minecraft:wooden_sword",count:1,components:{"minecraft:item_model":"sr/item/battle_bat"}},{}]}
+execute if score global gameState matches 3 run item replace entity @s weapon.mainhand with wooden_sword[item_model="sr/item/battle_bat"]

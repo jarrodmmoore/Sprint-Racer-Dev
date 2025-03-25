@@ -1,5 +1,5 @@
-execute if entity @s[scores={aiHoldingItem=6}] run data merge entity @s {HandItems:[{id:"minecraft:glass",count:1},{}]}
-execute if entity @s[scores={aiHoldingItem=7}] run data merge entity @s {HandItems:[{id:"minecraft:iron_ingot",count:1},{}]}
-execute if entity @s[scores={aiHoldingItem=8}] run data merge entity @s {HandItems:[{id:"minecraft:totem_of_undying",count:1},{}]}
-execute if entity @s[scores={aiHoldingItem=9}] run data merge entity @s {HandItems:[{id:"minecraft:emerald",count:1,components:{"minecraft:max_damage":1,"minecraft:enchantments":{levels:{"minecraft:knockback":10}}}},{}]}
-execute if entity @s[scores={aiHoldingItem=10}] run data merge entity @s {HandItems:[{id:"minecraft:gold_ingot",count:1},{}]}
+execute if score @s aiHoldingItem matches 6 run item replace entity @s weapon.mainhand with glass
+execute if score @s aiHoldingItem matches 7 run item replace entity @s weapon.mainhand with iron_ingot
+execute if score @s aiHoldingItem matches 8 run item replace entity @s weapon.mainhand with totem_of_undying
+execute if score @s aiHoldingItem matches 9 run item replace entity @s weapon.mainhand with emerald
+execute if score @s aiHoldingItem matches 10 run item replace entity @s weapon.mainhand with gold_ingot

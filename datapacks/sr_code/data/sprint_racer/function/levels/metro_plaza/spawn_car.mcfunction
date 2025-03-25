@@ -1,10 +1,10 @@
 #choose one of 4 different car types
 scoreboard players operation #randomcar value = @e[limit=1,type=armor_stand,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..4}] rNumber
-execute if score #randomcar value matches 1 run summon armor_stand 30 70 2036 {ArmorItems:[{},{},{},{id:"stone_button",count:1,components:{"minecraft:item_model":"sr/object/metro_car_1"}}],DisabledSlots:2039583,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["setcar","car1"]}
-execute if score #randomcar value matches 2 run summon armor_stand 30 70 2036 {ArmorItems:[{},{},{},{id:"stone_button",count:1,components:{"minecraft:item_model":"sr/object/metro_car_2"}}],DisabledSlots:2039583,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["setcar","car2"]}
-execute if score #randomcar value matches 3 run summon armor_stand 30 70 2036 {ArmorItems:[{},{},{},{id:"stone_button",count:1,components:{"minecraft:item_model":"sr/object/metro_car_3"}}],DisabledSlots:2039583,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["setcar","car3"]}
-execute if score #randomcar value matches 4 run summon armor_stand 30 70 2036 {ArmorItems:[{},{},{},{id:"stone_button",count:1,components:{"minecraft:item_model":"sr/object/metro_car_4a"}}],DisabledSlots:2039583,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["setcar","car4"]}
-execute if score #randomcar value matches 4 run summon armor_stand 30 70 2036 {ArmorItems:[{},{},{},{id:"stone_button",count:1,components:{"minecraft:item_model":"sr/object/metro_car_4b"}}],DisabledSlots:2039583,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["setcar","setcar2","car4"]}
+execute if score #randomcar value matches 1 run summon armor_stand 30 70 2036 {equipment:{head:{id:"stone_button",count:1,components:{"minecraft:item_model":"sr/object/metro_car_1"}}},DisabledSlots:2039583,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["setcar","car1"]}
+execute if score #randomcar value matches 2 run summon armor_stand 30 70 2036 {equipment:{head:{id:"stone_button",count:1,components:{"minecraft:item_model":"sr/object/metro_car_2"}}},DisabledSlots:2039583,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["setcar","car2"]}
+execute if score #randomcar value matches 3 run summon armor_stand 30 70 2036 {equipment:{head:{id:"stone_button",count:1,components:{"minecraft:item_model":"sr/object/metro_car_3"}}},DisabledSlots:2039583,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["setcar","car3"]}
+execute if score #randomcar value matches 4 run summon armor_stand 30 70 2036 {equipment:{head:{id:"stone_button",count:1,components:{"minecraft:item_model":"sr/object/metro_car_4a"}}},DisabledSlots:2039583,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["setcar","car4"]}
+execute if score #randomcar value matches 4 run summon armor_stand 30 70 2036 {equipment:{head:{id:"stone_button",count:1,components:{"minecraft:item_model":"sr/object/metro_car_4b"}}},DisabledSlots:2039583,Invulnerable:1b,NoGravity:1b,Invisible:1b,Tags:["setcar","setcar2","car4"]}
 
 #choose a random spawnpoint
 scoreboard players operation #randomcar value = @e[limit=1,type=armor_stand,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..4}] rNumber

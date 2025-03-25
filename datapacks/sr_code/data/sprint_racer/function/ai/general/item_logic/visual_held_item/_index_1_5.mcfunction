@@ -1,5 +1,5 @@
-execute if entity @s[scores={aiHoldingItem=1}] run data merge entity @s {HandItems:[{id:"minecraft:snowball",count:1},{}]}
-execute if entity @s[scores={aiHoldingItem=2}] run data merge entity @s {HandItems:[{id:"minecraft:dispenser",count:1},{}]}
-execute if entity @s[scores={aiHoldingItem=3}] run data merge entity @s {HandItems:[{id:"minecraft:tnt",count:1},{}]}
-execute if entity @s[scores={aiHoldingItem=4}] run data merge entity @s {HandItems:[{id:"minecraft:golden_sword",count:1,components:{"minecraft:max_damage":1,"minecraft:enchantments":{levels:{"minecraft:knockback":10}}}},{}]}
-execute if entity @s[scores={aiHoldingItem=5}] run data merge entity @s {HandItems:[{id:"minecraft:apple",count:1},{}]}
+execute if score @s aiHoldingItem matches 1 run item replace entity @s weapon.mainhand with snowball
+execute if score @s aiHoldingItem matches 2 run item replace entity @s weapon.mainhand with dispenser
+execute if score @s aiHoldingItem matches 3 run item replace entity @s weapon.mainhand with tnt
+execute if score @s aiHoldingItem matches 4 run item replace entity @s weapon.mainhand with golden_sword[max_damage=1,enchantments={knockback:10},enchantment_glint_override=false]
+execute if score @s aiHoldingItem matches 5 run item replace entity @s weapon.mainhand with apple

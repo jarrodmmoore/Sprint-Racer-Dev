@@ -1,2 +1,2 @@
 clear @s stick
-give @s minecraft:stick[lore=['{text:"Bonk.",color:"light_purple",bold:false}'],custom_name={translate:"sr.cheats.knockback_stick",color:"red",bold:true,italic:true},enchantments={"minecraft:knockback":5},custom_data={cheatstick:1b,stronk:1b}] 1
+give @s minecraft:stick[lore=[{text:"Bonk.",color:"light_purple",bold:false}],custom_name={translate:"sr.cheats.knockback_stick",color:"red",bold:true,italic:true},enchantments={knockback:5},custom_data={cheatstick:1b,stronk:1b}] 1

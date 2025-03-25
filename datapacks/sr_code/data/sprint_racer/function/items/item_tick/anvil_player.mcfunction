@@ -7,7 +7,7 @@ scoreboard players reset @e[tag=dodge,scores={anvil=3..}] anvil
 tag @e[tag=dodge] remove dodge
 
 execute as @e[scores={anvil=1}] at @s run playsound minecraft:entity.evoker.prepare_attack master @s ~ ~ ~ 2 1.1
-execute as @e[scores={anvil=1}] at @s run summon armor_stand ~ ~3 ~ {Tags:["anvil","lockedon","giveID"],Marker:0b,Invulnerable:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"anvil",count:1}],HandItems:[{},{}],DisabledSlots:2039583}
+execute as @e[scores={anvil=1}] at @s run summon armor_stand ~ ~3 ~ {Tags:["anvil","lockedon","giveID"],Marker:0b,Invulnerable:1b,Invisible:1b,equipment:{head:{id:"anvil",count:1}},DisabledSlots:2039583}
 execute as @e[scores={anvil=1}] at @s positioned ~ ~3 ~ run scoreboard players operation @e[sort=nearest,limit=1,tag=giveID] playerID = @s attackerID
 tag @e[tag=giveID] remove giveID
 execute as @e[scores={anvil=1}] at @s run particle cloud ~ ~4.5 ~ 0.2 0.2 0.2 0 20 force

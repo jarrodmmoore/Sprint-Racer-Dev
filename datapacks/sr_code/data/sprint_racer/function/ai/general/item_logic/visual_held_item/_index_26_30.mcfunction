@@ -1,5 +1,5 @@
-execute if entity @s[scores={aiHoldingItem=26}] run data merge entity @s {HandItems:[{id:"minecraft:white_stained_glass",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
-execute if entity @s[scores={aiHoldingItem=27}] run data merge entity @s {HandItems:[{id:"minecraft:iron_ingot",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
-execute if entity @s[scores={aiHoldingItem=28}] run data merge entity @s {HandItems:[{id:"minecraft:totem_of_undying",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
-execute if entity @s[scores={aiHoldingItem=29}] run data merge entity @s {HandItems:[{id:"minecraft:emerald",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
-execute if entity @s[scores={aiHoldingItem=30}] run data merge entity @s {HandItems:[{id:"minecraft:diamond",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:lure":1}}}},{}]}
+execute if score @s aiHoldingItem matches 26 run item replace entity @s weapon.mainhand with white_stained_glass[enchantment_glint_override=true]
+execute if score @s aiHoldingItem matches 27 run item replace entity @s weapon.mainhand with iron_ingot[enchantment_glint_override=true]
+execute if score @s aiHoldingItem matches 28 run item replace entity @s weapon.mainhand with totem_of_undying[enchantment_glint_override=true]
+execute if score @s aiHoldingItem matches 29 run item replace entity @s weapon.mainhand with emerald[enchantment_glint_override=true]
+execute if score @s aiHoldingItem matches 30 run item replace entity @s weapon.mainhand with diamond[enchantment_glint_override=true]
