@@ -3,6 +3,11 @@ scoreboard players add @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_
 scoreboard players set @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=foundacheat,scores={aiHoldingItem=..-1}] aiHoldingItem 66
 scoreboard players set @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=foundacheat,scores={aiHoldingItem=67..}] aiHoldingItem 0
 
+#dirty hack to keep this working in SNBT world
+execute as @e[tag=cheattext3,type=armor_stand] run data remove entity @s CustomName
+execute as @e[tag=cheattext4,type=armor_stand] run data remove entity @s CustomName
+
+#index. with some of the dumbest code you've ever seen in your life
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,scores={aiHoldingItem=..0}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/00
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,scores={aiHoldingItem=1}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/01
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,scores={aiHoldingItem=2}] run function sprint_racer:game_logic/0/misc_lobby_happenings/cheat_menu/02

@@ -5,7 +5,7 @@ scoreboard players set @a[gamemode=!spectator,x=117,y=55,z=900,dx=90,dy=100,dz=9
 scoreboard players set @a[gamemode=!spectator,x=117,y=50,z=934,dx=10,dy=12,dz=10] mapZone 1
 
 #create effect clouds that will produce particles for the wind tunnel
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={oTimerGlobal=1}] if loaded 142 39 961 run summon area_effect_cloud 142 39 961 {Duration:50,Tags:["risingTrail","randomSpread"]}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={oTimerGlobal=1}] if loaded 142 39 961 run summon area_effect_cloud 142 39 961 {Particle:{type:"block",block_state:{Name:"air"}},Duration:50,Tags:["risingTrail","randomSpread"]}
 spreadplayers 142 961 3 3 false @e[tag=risingTrail,tag=randomSpread,type=area_effect_cloud]
 scoreboard players operation @e[tag=randomSpread,type=area_effect_cloud] lifespan = @e[tag=random,x=1548,y=155,z=406,distance=..1,limit=1,sort=random,scores={rNumber=20..50}] rNumber
 tag @e[tag=randomSpread,type=area_effect_cloud] remove randomSpread
