@@ -4,7 +4,7 @@ tag @e[tag=aiTarget7,tag=secondaryTarget] remove secondaryTarget
 execute if entity @e[tag=aiTarget7,type=!area_effect_cloud] run function sprint_racer:ai/general/clear_old_ai_targets
 
 #no aec target? spawn one
-execute unless entity @e[tag=aiTarget7,type=area_effect_cloud] run summon area_effect_cloud ~ ~ ~ {Tags:["aiTarget7"],Particle:{type:"block",block_state:{Name:"air"}},Duration:6}
+execute unless entity @e[tag=aiTarget7,type=area_effect_cloud] run summon area_effect_cloud ~ ~ ~ {Tags:["aiTarget7"],Particle:{type:"block",block_state:{Name:"air"}},Duration:6,WaitTime:0}
 
 #turn randomly as we move (very similar to squid blindness)
 scoreboard players operation @s math = @e[limit=1,type=armor_stand,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..2}] rNumber
@@ -27,7 +27,7 @@ execute if score @s roamLookBias matches 1 rotated ~ 0 unless block ^ ^1 ^1 #spr
 execute if score @s aiAirTime matches ..4 rotated ~ 0 unless block ^ ^ ^1 #sprint_racer:ai_not_solid unless block ^ ^ ^1 #minecraft:slabs unless block ^ ^ ^1 #minecraft:stairs if block ^ ^1 ^1 #sprint_racer:ai_not_solid if block ^ ^2 ^1 #sprint_racer:ai_not_solid run tag @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] add aijump
 
 #keep aec alive as long as this code is running
-data merge entity @e[limit=1,tag=aiTarget7,type=area_effect_cloud] {Particle:{type:"block",block_state:{Name:"air"}},Duration:6}
+data merge entity @e[limit=1,tag=aiTarget7,type=area_effect_cloud] {Particle:{type:"block",block_state:{Name:"air"}},Duration:6,WaitTime:0}
 
 #teleport aec depending what direction we're going
 execute if entity @s[tag=!inWater] at @s rotated ~ 0 positioned ^ ^ ^5 run tp @e[limit=1,tag=aiTarget7,type=area_effect_cloud] ~ ~ ~

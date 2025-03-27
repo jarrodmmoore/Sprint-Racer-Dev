@@ -1,4 +1,4 @@
-execute unless entity @s[scores={AIBC_id=1..625}] run summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:{Name:"air"}},Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:{text:"AI breadcrumb (ERROR, INVALID NUMBER)",color:"red",bold:true,italic:false}}
+execute unless entity @s[scores={AIBC_id=1..625}] run summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:{Name:"air"}},Duration:3,WaitTime:0,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:{text:"AI breadcrumb (ERROR, INVALID NUMBER)",color:"red",bold:true,italic:false}}
 
 execute if entity @s[scores={AIBC_id=1..25}] run function sprint_racer_language:_dlc_4/editor_mode/visual_nametag/name_breadcrumb_1_25
 execute if entity @s[scores={AIBC_id=26..50}] run function sprint_racer_language:_dlc_4/editor_mode/visual_nametag/name_breadcrumb_26_50

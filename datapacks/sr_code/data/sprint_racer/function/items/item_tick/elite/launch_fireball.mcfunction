@@ -1,7 +1,7 @@
 clear @s fire_charge[custom_data~{elite1:1b}] 1
 
 #spawn fireball (item_display riding an armor stand)
-summon armor_stand ~ ~1 ~ {Tags:["missile","aimMe","fireball"],Marker:1b,Invisible:1b,Invulnerable:1b,Passengers:[{id:"minecraft:item_display",brightness:{sky:10,block:15},Tags:["setLife"],item_display:"head",item:{id:"minecraft:magma_block",count:1b,components:{"item_model":"sr/item/better_fireball"}}}]}
+summon armor_stand ~ ~1 ~ {Tags:["missile","aimMe","fireball"],Marker:1b,Invisible:1b,Invulnerable:1b,Passengers:[{id:"minecraft:item_display",teleport_duration:1,brightness:{sky:10,block:15},Tags:["setLife"],item_display:"head",item:{id:"minecraft:magma_block",count:1b,components:{"item_model":"sr/item/better_fireball"}}}]}
 execute at @s positioned ~ ~1.6 ~ as @e[type=armor_stand,tag=aimMe] run tp @s ~ ~ ~ ~ ~
 
 execute if entity @s[tag=playerCyan] run tag @e[tag=aimMe,limit=1,sort=nearest] add itemCyan

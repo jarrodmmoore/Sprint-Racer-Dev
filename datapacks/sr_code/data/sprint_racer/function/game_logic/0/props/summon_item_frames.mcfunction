@@ -1,3 +1,7 @@
+#output log.
+#oh my god.
+#SHUT UP
+
 #screens in the arcade
 #bliss
 summon item_frame 1604 89 435 {Facing:5b,Invulnerable:1b,Invisible:1b,Fixed:1b,Tags:["fixframe","lobbyprop"],Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":99104}}}

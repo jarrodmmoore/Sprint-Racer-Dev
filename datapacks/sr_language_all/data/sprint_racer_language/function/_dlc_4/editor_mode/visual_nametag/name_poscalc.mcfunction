@@ -1,1 +1,1 @@
-summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:{Name:"air"}},Duration:3,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:{translate:"sr.editor.display.pos_calc_point",color:"#AA55FF",bold:false,italic:true}}
+summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:{Name:"air"}},Duration:3,WaitTime:0,Tags:["node_nametag"],CustomNameVisible:1b,CustomName:{translate:"sr.editor.display.pos_calc_point",color:"#AA55FF",bold:false,italic:true}}

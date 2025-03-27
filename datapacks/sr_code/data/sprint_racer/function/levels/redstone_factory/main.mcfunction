@@ -8,7 +8,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scor
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={mapZone=2}] if entity @e[tag=activeplayer,scores={lapFake=3..}] run function sprint_racer:levels/redstone_factory/open_gold_route
 
 #route 1 wind tunnel
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={oTimerGlobal=1}] if loaded 326 59 275 run summon area_effect_cloud 326 59 275 {Particle:{type:"block",block_state:{Name:"air"}},Duration:50,Tags:["risingTrail","randomSpread"]}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={oTimerGlobal=1}] if loaded 326 59 275 run summon area_effect_cloud 326 59 275 {Particle:{type:"block",block_state:{Name:"air"}},Duration:50,WaitTime:0,Tags:["risingTrail","randomSpread"]}
 spreadplayers 326 275 3 3 false @e[tag=risingTrail,tag=randomSpread,type=area_effect_cloud]
 scoreboard players operation @e[tag=randomSpread,type=area_effect_cloud,limit=1] lifespan = @e[tag=random,x=1548,y=155,z=406,distance=..1,limit=1,sort=random,scores={rNumber=10..40}] rNumber
 execute as @e[tag=randomSpread,type=area_effect_cloud] at @s run tp @s ~ 59 ~

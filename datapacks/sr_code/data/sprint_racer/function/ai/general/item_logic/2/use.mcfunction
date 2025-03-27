@@ -7,7 +7,7 @@ execute if entity @s[scores={rNumber=2}] as @e[tag=looktarget,type=marker] at @s
 
 
 #summon the missile, aimed at the looktarget
-summon armor_stand ~ ~1 ~ {Tags:["missile","aimMe"],Marker:1b,Invisible:1b,Invulnerable:1b,Passengers:[{id:"minecraft:item_display",brightness:{sky:10,block:15},Tags:["setLife"],item_display:"head",item:{id:"minecraft:gray_concrete",count:1b,components:{"item_model":"sr/item/red_rocket"}}}]}
+summon armor_stand ~ ~1 ~ {Tags:["missile","aimMe"],Marker:1b,Invisible:1b,Invulnerable:1b,Passengers:[{id:"minecraft:item_display",teleport_duration:1,brightness:{sky:10,block:15},Tags:["setLife"],item_display:"head",item:{id:"minecraft:gray_concrete",count:1b,components:{"item_model":"sr/item/red_rocket"}}}]}
 
 execute if entity @e[tag=looktarget] as @e[tag=aimMe] at @s run tp @s ~ ~1.6 ~ facing entity @e[limit=1,tag=looktarget] feet
 execute unless entity @e[tag=looktarget] at @s run tp @e[tag=aimMe] ~ ~1.6 ~ ~ ~

@@ -1,5 +1,5 @@
 #shoot a rocket
-summon armor_stand ~ ~ ~ {Tags:["missile","aimMe","touhou"],Marker:1b,Invisible:1b,Invulnerable:1b,Passengers:[{id:"minecraft:item_display",brightness:{sky:10,block:15},Tags:["setLife"],item_display:"head",item:{id:"minecraft:gray_concrete",count:1b,components:{"item_model":"sr/item/red_rocket"}}}]}
+summon armor_stand ~ ~ ~ {Tags:["missile","aimMe","touhou"],Marker:1b,Invisible:1b,Invulnerable:1b,Passengers:[{id:"minecraft:item_display",teleport_duration:1,brightness:{sky:10,block:15},Tags:["setLife"],item_display:"head",item:{id:"minecraft:gray_concrete",count:1b,components:{"item_model":"sr/item/red_rocket"}}}]}
 
 #rocket item_display is temporary
 scoreboard players set @e[tag=setLife,distance=..3] lifespan 3

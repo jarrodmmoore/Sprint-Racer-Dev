@@ -12,7 +12,7 @@ execute as @e[type=armor_stand,tag=trackStandB,tag=!bSortSelect,scores={bSortVal
 #000003e7-0000-03e7-0000-03e700000002
 
 #based on the ID of the lowest rSortValue track returned, set the item that will go in the desired slot.
-execute unless score #bReturnTrack value matches 1..50 run item replace entity 000003e7-0000-03e7-0000-03e700000002 armor.head with air
+item replace entity 000003e7-0000-03e7-0000-03e700000002 armor.head with air
 execute if score #bReturnTrack value matches 1..10 run function sprint_racer:worldmap/battle/return_track_1_10
 execute if score #bReturnTrack value matches 11..20 run function sprint_racer:worldmap/battle/return_track_11_20
 execute if score #bReturnTrack value matches 21..30 run function sprint_racer:worldmap/battle/return_track_21_30

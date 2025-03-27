@@ -1,4 +1,4 @@
-#minute digit + colon
+#decasecond digit + right end
 execute if score #getDigit4 value matches ..-1 run data merge entity 00000000-0000-0328-0000-00000000000c {CustomName:{text:"\uE920\uF001\uE904\uF001",italic:false}}
 execute if score #getDigit4 value matches 0 run data merge entity 00000000-0000-0328-0000-00000000000c {CustomName:{text:"\uE906\uF001\uE904\uF001",italic:false}}
 execute if score #getDigit4 value matches 1 run data merge entity 00000000-0000-0328-0000-00000000000c {CustomName:{text:"\uE907\uF001\uE904\uF001",italic:false}}

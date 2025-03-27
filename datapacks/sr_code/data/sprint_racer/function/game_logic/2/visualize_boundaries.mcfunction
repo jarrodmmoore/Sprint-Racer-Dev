@@ -15,16 +15,3 @@ execute unless score #box_height value matches 0..100 run return run execute if 
 #spawn height
 execute if entity @s[tag=!checkAnyY,tag=!finAnyY] run function sprint_racer:game_logic/2/boundary_edges/get_base_height_recursive
 execute if entity @s[tag=!checkAnyY,tag=!finAnyY] run function sprint_racer:game_logic/2/boundary_edges/get_top_height_recursive
-
-#summon area_effect_cloud ~-5 ~ ~-5 {NoGravity:1b,Particle:{type:"block",block_state:{Name:"air"}},Duration:11,Tags:["edge1"]}
-#summon area_effect_cloud ~-5 ~ ~-5 {NoGravity:1b,Particle:{type:"block",block_state:{Name:"air"}},Duration:11,Tags:["edge2"]}
-#execute if entity @s[tag=!finAnyY,tag=!checkAnyY] run summon area_effect_cloud ~-5 ~ ~-5 {NoGravity:1b,Particle:{type:"block",block_state:{Name:"air"}},Duration:11,Tags:["edge3"]}
-#summon area_effect_cloud ~5 ~ ~5 {NoGravity:1b,Particle:{type:"block",block_state:{Name:"air"}},Duration:11,Tags:["edge4"]}
-#summon area_effect_cloud ~5 ~ ~5 {NoGravity:1b,Particle:{type:"block",block_state:{Name:"air"}},Duration:11,Tags:["edge5"]}
-#execute if entity @s[tag=!finAnyY,tag=!checkAnyY] run summon area_effect_cloud ~5 ~ ~5 {NoGravity:1b,Particle:{type:"block",block_state:{Name:"air"}},Duration:11,Tags:["edge6"]}
-#execute if entity @s[tag=!finAnyY,tag=!checkAnyY] run summon area_effect_cloud ~5 ~ ~-5 {NoGravity:1b,Particle:{type:"block",block_state:{Name:"air"}},Duration:11,Tags:["edge7"]}
-#execute if entity @s[tag=!finAnyY,tag=!checkAnyY] run summon area_effect_cloud ~-5 ~ ~5 {NoGravity:1b,Particle:{type:"block",block_state:{Name:"air"}},Duration:11,Tags:["edge8"]}
-#execute if entity @s[tag=!finAnyY,tag=!checkAnyY] run summon area_effect_cloud ~5 ~10 ~5 {NoGravity:1b,Particle:{type:"block",block_state:{Name:"air"}},Duration:11,Tags:["edge9"]}
-#execute if entity @s[tag=!finAnyY,tag=!checkAnyY] run summon area_effect_cloud ~5 ~10 ~5 {NoGravity:1b,Particle:{type:"block",block_state:{Name:"air"}},Duration:11,Tags:["edge10"]}
-#execute if entity @s[tag=!finAnyY,tag=!checkAnyY] run summon area_effect_cloud ~-5 ~10 ~-5 {NoGravity:1b,Particle:{type:"block",block_state:{Name:"air"}},Duration:11,Tags:["edge11"]}
-#execute if entity @s[tag=!finAnyY,tag=!checkAnyY] run summon area_effect_cloud ~-5 ~10 ~-5 {NoGravity:1b,Particle:{type:"block",block_state:{Name:"air"}},Duration:11,Tags:["edge12"]}
