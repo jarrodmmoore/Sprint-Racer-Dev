@@ -1,5 +1,5 @@
 #replace fake bat with the real one when the time comes
-execute if entity @s[scores={timeSinceDeath=101..120}] if items entity @s inventory.* wooden_sword[custom_data~{battlebat:1b,fakeBat:1b}] run clear @s wooden_sword[custom_data~{fakeBat:1b}]
+execute if entity @s[scores={timeSinceDeath=101..120}] if items entity @s hotbar.* wooden_sword[custom_data~{battlebat:1b,fakeBat:1b}] run clear @s wooden_sword[custom_data~{fakeBat:1b}]
 
 #check for bat
 tag @s[tag=hasBBat] remove hasBBat
