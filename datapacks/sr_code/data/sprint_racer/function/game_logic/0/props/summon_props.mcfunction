@@ -227,7 +227,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=
 #cheat help door opens if 30 eggs are discovered
 scoreboard players set #cheats_discovered value 0
 execute as @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand] run function sprint_racer:cheats/count_discovered_cheats
-execute unless score #cheats_discovered value matches 30.. run setblock 1577 96 452 minecraft:dark_prismarine
+execute unless score #cheats_discovered value matches 30.. run setblock 1577 96 452 minecraft:dark_prismarine destroy
 execute if score #cheats_discovered value matches 30.. run setblock 1577 96 452 minecraft:redstone_torch
 
 #extras and item room stuff

@@ -71,7 +71,7 @@ execute as @e[type=!marker,type=!armor_stand,scores={useEye=..999}] at @s run fu
 bossbar set minecraft:control_openwings players @a[tag=!bbarbump,gamemode=adventure,nbt={FallFlying:0b,OnGround:0b},scores={elytraTimer=50..}]
 
 #elytra (note: this only applies to human players, AI elytra stuff is handled elsewhere)
-execute as @a[nbt={Inventory:[{Slot:102b,id:"minecraft:elytra",count:1,components:{"minecraft:custom_data":{item:1b}}}]}] at @s run function sprint_racer:items/item_tick/elytra_found
+execute as @a if items entity @s armor.chest elytra[custom_data~{item:1b}] at @s run function sprint_racer:items/item_tick/elytra_found
 execute as @a[scores={elytraTimer=1..}] at @s run function sprint_racer:items/item_tick/elytra
 
 #IMPORTANT!!!
