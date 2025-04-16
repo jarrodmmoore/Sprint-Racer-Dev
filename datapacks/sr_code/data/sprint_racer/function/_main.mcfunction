@@ -8,7 +8,6 @@
 #So while you're here, I should clear some things up:
 
 
-
 #GLOBAL VARIABLES:
 #Most of the time (in older code), global variables are stored on entity "w" which sits at world spawn.
 # Storing global variables on an entity is... usually not the best idea.
