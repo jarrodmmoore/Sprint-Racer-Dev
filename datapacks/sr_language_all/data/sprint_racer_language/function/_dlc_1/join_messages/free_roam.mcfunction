@@ -1,6 +1,5 @@
 tellraw @s ["",{text:" "}]
-tellraw @s ["",{text:"Welcome to Sprint Racer!",bold:true,color:"aqua"}]
-tellraw @s ["",{text:"Players are currently in free roam mode.",color:"white"}]
-tellraw @s ["",{text:"Do whatever you want!",color:"white"}]
+tellraw @s ["",{translate:"sr.welcome.welcome_to_sprint_racer",fallback:"Welcome to Sprint Racer!",bold:true,color:"aqua"}]
+tellraw @s ["",{translate:"sr.welcome.players_in_free_roam",fallback:"Players are currently in free roam mode.\nDo whatever you want!",color:"white"}]
 function sprint_racer_language:map_info
 tellraw @s ["",{text:" "}]
