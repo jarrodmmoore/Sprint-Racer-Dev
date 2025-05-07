@@ -126,7 +126,7 @@ tag @a[nbt={Inventory:[{Slot:6b,id:"minecraft:tnt",components:{"minecraft:custom
 clear @a[tag=!hasTNT] tnt
 execute unless entity @e[tag=focusT,type=armor_stand] run clear @a tnt
 execute if entity @e[tag=focusT,type=armor_stand] as @a[gamemode=!creative,tag=!hasTNT] run function sprint_racer_language:_dlc_2/lobby/custom_track_inv/delete_track
-execute as @a[scores={carrotInput=1..,inputCooldown=..0}] if items entity @s weapon.mainhand tnt[custom_data~{deletetrack:1b}] run function sprint_racer:game_logic/10/controls/delete_current
+execute as @a[scores={carrotInput=1..,inputCooldown=..0}] if items entity @s weapon.mainhand tnt[custom_data~{deletetrack:1b}] run function sprint_racer:game_logic/10/controls/delete_current_confirm_message
 
 #help (SLOT 7, paper)
 tag @e[tag=hasPaper] remove hasPaper

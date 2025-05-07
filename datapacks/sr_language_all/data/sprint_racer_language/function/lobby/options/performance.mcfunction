@@ -8,7 +8,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add halftick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove moretick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add autotick
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.map_performance_auto",color:"green"},{text:" "},{text:"[?]",color:"yellow",bold:true,hover_event:{action:"show_text",value:"Datapack performance settings\nadjust automatically depending on\nplayer count."}}]
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.map_performance_auto",color:"green"},{text:" "},{text:"[?]",color:"yellow",bold:true,hover_event:{action:"show_text",value:[{translate:"sr.lobby.info.datapack_performance.auto",color:"yellow"}]}}]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run playsound minecraft:block.note_block.hat master @a
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetA
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetB
@@ -18,7 +18,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove halftick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove moretick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove autotick
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.map_performance_quality",color:"green"},{text:" "},{text:"[?]",color:"yellow",bold:true,hover_event:{action:"show_text",value:"Datapack operates at 20Hz.\nStrikes a good balance between \nperformance and quality."}}]
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.map_performance_quality",color:"green"},{text:" "},{text:"[?]",color:"yellow",bold:true,hover_event:{action:"show_text",value:[{translate:"sr.lobby.info.datapack_performance.quality",color:"yellow"}]}}]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run playsound minecraft:block.note_block.hat master @a
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetA
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetB
@@ -28,7 +28,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add halftick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove moretick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove autotick
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.map_performance_faster",color:"green"},{text:" "},{text:"[?]",color:"yellow",bold:true,hover_event:{action:"show_text",value:"Datapack operates at 10Hz instead of 20Hz.\nThis improves server performance\nat the cost of responsiveness."}}]
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.map_performance_faster",color:"green"},{text:" "},{text:"[?]",color:"yellow",bold:true,hover_event:{action:"show_text",value:[{translate:"sr.lobby.info.datapack_performance.faster",color:"yellow"}]}}]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run playsound minecraft:block.note_block.hat master @a
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetA
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetB
@@ -38,7 +38,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove halftick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove autotick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add moretick
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.map_performance_quality_plus",color:"green"},{text:" "},{text:"[?]",color:"yellow",bold:true,hover_event:{action:"show_text",value:"Datapack operates at 20Hz.\nSome animations are smoothed out \nand position calculation is \ninstantaneous during races. \nThis is more taxing on the server!"}}]
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.map_performance_quality_plus",color:"green"},{text:" "},{text:"[?]",color:"yellow",bold:true,hover_event:{action:"show_text",value:[{translate:"sr.lobby.info.datapack_performance.quality_plus",color:"yellow"}]}}]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run playsound minecraft:block.note_block.hat master @a
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetA
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetB

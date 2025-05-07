@@ -1,0 +1,2 @@
+execute at @s run playsound entity.ghast.hurt master @s ~ 100000 ~ 100000 1.25
+tellraw @s ["",{text:"\n"},{translate:"sr.lobby.confirm_delete_track",color:"red",bold:true},{translate:sr.text_menu.yes,color:"yellow",hover_event:{action:show_text,value:[{translate:"sr.basic.yes"}]},click_event:{action:run_command,command:"/execute if entity @e[tag=focusT,type=armor_stand] run function sprint_racer:game_logic/10/controls/delete_current"}},{text:"\n"}]

@@ -12,3 +12,6 @@ $data modify storage sprint_racer:custom_track_storage_$(id) music_namespace set
 $data modify storage sprint_racer:custom_track_storage_$(id) music_path set value "none"
 
 $data modify storage sprint_racer:custom_track_storage_$(id) kill_plane set value "..0"
+
+#v1.6.7
+$data modify storage sprint_racer:custom_track_storage_$(id) track_group set value "Uncategorized"

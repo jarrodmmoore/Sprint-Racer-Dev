@@ -65,9 +65,8 @@ gamemode adventure @a
 
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 10
 
-#new in v1.6: all custom tracks should have an associated custom tagline
-#so for any old worlds that got datapack-updated, generate that data right now
-execute as @e[type=armor_stand,tag=customtrack] unless score @s customTagLine matches -2147483648..2147483647 run function sprint_racer:game_logic/10/assign_custom_tagline_storage
+#custom tracks from old versions need to be kept up to date with some stuff
+execute as @e[type=armor_stand,tag=customtrack] run function sprint_racer:game_logic/10/track_version_upkeep/_check
 
 #kill lobby props
 kill @e[tag=lobbyprop]
