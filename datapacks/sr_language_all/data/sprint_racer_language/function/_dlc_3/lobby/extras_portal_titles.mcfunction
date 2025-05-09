@@ -1,3 +1,3 @@
 #grand prix
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] run summon armor_stand 1577 93 363 {CustomName:{translate:"sr.lobby.grand_prix_setup",color:"gold",bold:true},CustomNameVisible:0b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["cDisplay2"]}
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] run summon armor_stand 1577 93 363 {CustomName:{translate:"sr.lobby.cancel_grand_prix",color:"red",bold:true,italic:true},CustomNameVisible:0b,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["cDisplay2"]}
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] run summon armor_stand 1577 93 363 {CustomName:{translate:"sr.lobby.grand_prix_setup",color:"gold",bold:true},CustomNameVisible:false,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["cDisplay2"]}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] run summon armor_stand 1577 93 363 {CustomName:{translate:"sr.lobby.cancel_grand_prix",color:"red",bold:true,italic:true},CustomNameVisible:false,Marker:1b,Invulnerable:1b,Invisible:1b,Tags:["cDisplay2"]}

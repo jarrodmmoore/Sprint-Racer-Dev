@@ -1,0 +1,1 @@
+$function sprint_racer:game_logic/0/worldmap_extra/custom/grid_layout/organize_tracks/track_log_group_macro_2 with storage sprint_racer:custom_track_storage_$(id)

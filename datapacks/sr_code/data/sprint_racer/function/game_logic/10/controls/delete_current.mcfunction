@@ -21,6 +21,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMode=1}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMode=1}] unless entity @e[tag=customrace] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolNum=..-1}] tvPoolNum 0
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMode=2}] if entity @e[tag=custombattle] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolNum=..0}] tvPoolNum 1
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMode=2}] unless entity @e[tag=custombattle] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolNum=..-1}] tvPoolNum 0
-function sprint_racer:game_logic/10/update_display/_index
+#function sprint_racer:game_logic/10/update_display/_index
+function sprint_racer:game_logic/10/grid_display/ungrouped_custom/update_display
 
 scoreboard players set @s inputCooldown 15

@@ -143,6 +143,7 @@ scoreboard objectives add customDummyBID dummy
 scoreboard objectives add customTrackTime dummy
 scoreboard objectives add customTWeather dummy
 scoreboard objectives add customTTargets dummy
+scoreboard objectives add customPreview dummy
 
 #TEAMS
 team add player

@@ -51,16 +51,19 @@ kill @e[tag=cDisplay2,type=armor_stand]
 kill @e[tag=itemcontainer]
 
 #summon display frames
-summon minecraft:item_frame 1594 80 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
-summon minecraft:item_frame 1594 80 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
-summon minecraft:item_frame 1594 81 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
-summon minecraft:item_frame 1594 81 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+#summon minecraft:item_frame 1594 80 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+#summon minecraft:item_frame 1594 80 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+#summon minecraft:item_frame 1594 81 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+#summon minecraft:item_frame 1594 81 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
 
 #default display value
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolNum 1
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolMode 1
-function sprint_racer:game_logic/9/update_display/_index
-fill 1595 79 369 1595 82 372 light_blue_concrete
+#function sprint_racer:game_logic/9/update_display/_index
+#fill 1595 79 369 1595 82 372 light_blue_concrete
+execute positioned 1594 79 368 rotated 270 0 run function sprint_racer:game_logic/9/grid_display/_initialize {facing:4}
+function sprint_racer:game_logic/9/grid_display/ungrouped_stock/set_page_0
+function sprint_racer:game_logic/9/grid_display/ungrouped_stock/update_display
 
 
 summon armor_stand 1593 79 370 {Invisible:1b,NoGravity:1b,Invulnerable:1b,Marker:1b,Tags:["lobbyprop","trackStatus"]}

@@ -2,6 +2,7 @@
 #you should also make sure tag=ctQueried is removed from all tracks
 
 #next in the list is the track with lowest ID
+scoreboard players set #min value 2147483647
 scoreboard players operation #min value < @e[type=armor_stand,tag=custombattle,tag=!ctQueried] customTrackBID
 execute as @e[type=armor_stand,tag=custombattle,tag=!ctQueried] if score @s customTrackBID <= #min value run tag @s add ctMin
 

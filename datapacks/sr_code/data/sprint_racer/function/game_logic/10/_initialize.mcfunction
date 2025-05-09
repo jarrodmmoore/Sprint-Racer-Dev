@@ -76,13 +76,15 @@ kill @e[tag=cDisplay2,type=armor_stand]
 kill @e[tag=itemcontainer]
 
 #summon display frames
-summon minecraft:item_frame 1594 80 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
-summon minecraft:item_frame 1594 80 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
-summon minecraft:item_frame 1594 81 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
-summon minecraft:item_frame 1594 81 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+#summon minecraft:item_frame 1594 80 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+#summon minecraft:item_frame 1594 80 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+#summon minecraft:item_frame 1594 81 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+#summon minecraft:item_frame 1594 81 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+execute positioned 1594 79 368 rotated 270 0 run function sprint_racer:game_logic/10/grid_display/_initialize {facing:4}
 
 #update display
-function sprint_racer:game_logic/10/update_display/_index
+#function sprint_racer:game_logic/10/update_display/_index
+function sprint_racer:game_logic/10/grid_display/ungrouped_custom/update_display
 
-summon armor_stand 1593 79 370 {Invisible:1b,NoGravity:1b,Invulnerable:1b,Marker:1b,Tags:["lobbyprop","trackStatus"]}
-execute as @e[tag=trackStatus] at @s run tp @s ~ ~ ~.5
+#summon armor_stand 1593 78.35 370 {Invisible:1b,NoGravity:1b,Invulnerable:1b,Marker:1b,Tags:["lobbyprop","trackStatus"]}
+#execute as @e[tag=trackStatus] at @s run tp @s ~ ~ ~.5

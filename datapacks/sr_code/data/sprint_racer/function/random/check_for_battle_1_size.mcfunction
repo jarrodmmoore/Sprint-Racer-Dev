@@ -7,3 +7,4 @@ $execute unless entity @e[tag=voteViable,type=armor_stand,tag=$(size),scores={ra
 
 #slot 3 will have to be the desired size
 $tag @e[tag=voteViable,type=armor_stand,tag=!$(size)] remove voteViable
+scoreboard players set #random value 100

@@ -47,21 +47,21 @@ execute if entity @e[tag=focusT,type=armor_stand,tag=rtBlacklist] run tag @s add
 execute if entity @e[tag=focusT,type=armor_stand,tag=btBlacklist] run tag @s add focusTrackBan
 
 #show if banned or not with text
-execute if entity @e[tag=focusT,type=armor_stand] if entity @s[tag=!focusTrackBan] run function sprint_racer_language:_dlc_1/lobby/track_indicate_allowed
-execute if entity @e[tag=focusT,type=armor_stand] if entity @s[tag=focusTrackBan] run function sprint_racer_language:_dlc_1/lobby/track_indicate_banned
-execute unless entity @e[tag=focusT,type=armor_stand] run execute as @e[tag=trackStatus] run data merge entity @s {CustomName:{text:"...",color:"white",bold:false},CustomNameVisible:0b}
+#execute if entity @e[tag=focusT,type=armor_stand] if entity @s[tag=!focusTrackBan] run function sprint_racer_language:_dlc_1/lobby/track_indicate_allowed
+#execute if entity @e[tag=focusT,type=armor_stand] if entity @s[tag=focusTrackBan] run function sprint_racer_language:_dlc_1/lobby/track_indicate_banned
+#execute unless entity @e[tag=focusT,type=armor_stand] run execute as @e[tag=trackStatus] run data merge entity @s {CustomName:{text:"...",color:"white",bold:false},CustomNameVisible:false}
 
 #update difficulty display (unless custom preview is being used)
 #race
-execute if entity @s[scores={tvPoolMode=1}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackNovice] run function sprint_racer:game_logic/10/update_display/race_novice
-execute if entity @s[scores={tvPoolMode=1}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackIntermed] run function sprint_racer:game_logic/10/update_display/race_intermediate
-execute if entity @s[scores={tvPoolMode=1}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackExpert] run function sprint_racer:game_logic/10/update_display/race_expert
-execute if entity @s[scores={tvPoolMode=1}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackMaster] run function sprint_racer:game_logic/10/update_display/race_master
+#execute if entity @s[scores={tvPoolMode=1}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackNovice] run function sprint_racer:game_logic/10/update_display/race_novice
+#execute if entity @s[scores={tvPoolMode=1}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackIntermed] run function sprint_racer:game_logic/10/update_display/race_intermediate
+#execute if entity @s[scores={tvPoolMode=1}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackExpert] run function sprint_racer:game_logic/10/update_display/race_expert
+#execute if entity @s[scores={tvPoolMode=1}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackMaster] run function sprint_racer:game_logic/10/update_display/race_master
 #battle
-execute if entity @s[scores={tvPoolMode=2}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackTiny] run function sprint_racer:game_logic/10/update_display/battle_tiny
-execute if entity @s[scores={tvPoolMode=2}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackSmall] run function sprint_racer:game_logic/10/update_display/battle_small
-execute if entity @s[scores={tvPoolMode=2}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackMedium] run function sprint_racer:game_logic/10/update_display/battle_medium
-execute if entity @s[scores={tvPoolMode=2}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackLarge] run function sprint_racer:game_logic/10/update_display/battle_large
+#execute if entity @s[scores={tvPoolMode=2}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackTiny] run function sprint_racer:game_logic/10/update_display/battle_tiny
+#execute if entity @s[scores={tvPoolMode=2}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackSmall] run function sprint_racer:game_logic/10/update_display/battle_small
+#execute if entity @s[scores={tvPoolMode=2}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackMedium] run function sprint_racer:game_logic/10/update_display/battle_medium
+#execute if entity @s[scores={tvPoolMode=2}] if entity @e[tag=focusT,type=armor_stand,tag=!customPreview,tag=trackLarge] run function sprint_racer:game_logic/10/update_display/battle_large
 
 
 #make sure players have the proper inventory stuff

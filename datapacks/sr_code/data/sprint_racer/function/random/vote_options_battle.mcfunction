@@ -12,7 +12,9 @@ tag @e[tag=trackStandB,tag=!btBlacklist,type=armor_stand] add voteViable
 function sprint_racer:random/check_for_options_battle
 
 #assign slot 1 with a random number
-tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,scores={randomCooldown2=..0}] add vote1
+execute if score #random value matches ..35 run tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,tag=!b_1_only,tag=!b_rare_track,scores={randomCooldown2=..0}] add vote1
+execute if score #random value matches 36..70 run tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,tag=!b_rare_track,scores={randomCooldown2=..0}] add vote1
+execute if score #random value matches 71.. run tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,scores={randomCooldown2=..0}] add vote1
 execute as @e[tag=nVote1,type=armor_stand] run scoreboard players operation @s rNumber = @e[tag=vote1,limit=1,type=armor_stand] rNumber
 tag @e[tag=vote1,type=armor_stand] remove voteViable
 execute as @e[limit=1,tag=vote1,type=armor_stand] if entity @s[tag=b_1_only] run function sprint_racer:random/1_only_battle
@@ -20,7 +22,9 @@ execute as @e[limit=1,tag=vote1,type=armor_stand] if entity @s[tag=b_1_only] run
 function sprint_racer:random/check_for_options_battle
 
 #assign slot 2 with a random number
-tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,tag=!vote1,scores={randomCooldown2=..0}] add vote2
+execute if score #random value matches ..35 run tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,tag=!vote1,tag=!b_1_only,tag=!b_rare_track,scores={randomCooldown2=..0}] add vote2
+execute if score #random value matches 36..70 run tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,tag=!vote1,tag=!b_rare_track,scores={randomCooldown2=..0}] add vote2
+execute if score #random value matches 71.. run tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,tag=!vote1,scores={randomCooldown2=..0}] add vote2
 execute as @e[tag=nVote2,type=armor_stand] run scoreboard players operation @s rNumber = @e[tag=vote2,limit=1,type=armor_stand] rNumber
 tag @e[tag=vote2,type=armor_stand] remove voteViable
 execute as @e[limit=1,tag=vote2,type=armor_stand] if entity @s[tag=b_1_only] run function sprint_racer:random/1_only_battle
@@ -43,7 +47,9 @@ execute if score #test value matches 9 run function sprint_racer:random/check_fo
 execute if score #test value matches 10.. run function sprint_racer:random/check_for_battle_1_size {size:"trackLarge"}
 
 #assign slot 3 with a random number
-tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,tag=!vote1,tag=!vote2,scores={randomCooldown2=..0}] add vote3
+execute if score #random value matches ..35 run tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,tag=!vote1,tag=!vote2,tag=!b_1_only,tag=!b_rare_track,scores={randomCooldown2=..0}] add vote3
+execute if score #random value matches 36..70 run tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,tag=!vote1,tag=!vote2,tag=!b_rare_track,scores={randomCooldown2=..0}] add vote3
+execute if score #random value matches 71.. run tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,tag=!vote1,tag=!vote2,scores={randomCooldown2=..0}] add vote3
 execute as @e[tag=nVote3,type=armor_stand] run scoreboard players operation @s rNumber = @e[tag=vote3,limit=1,type=armor_stand] rNumber
 tag @e[tag=vote3,type=armor_stand] remove voteViable
 
