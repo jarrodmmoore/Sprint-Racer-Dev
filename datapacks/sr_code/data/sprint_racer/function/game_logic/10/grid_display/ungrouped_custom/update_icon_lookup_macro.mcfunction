@@ -1,0 +1,1 @@
+$execute store result score #trackGridFetchMap value run data get storage sprint_racer:custom_track_storage_$(id) preview_image 1

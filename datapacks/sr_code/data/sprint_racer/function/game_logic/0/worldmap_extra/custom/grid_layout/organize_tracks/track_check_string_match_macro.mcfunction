@@ -1,0 +1,1 @@
+$data modify storage sprint_racer:func_args track_group set from storage sprint_racer:custom_track_storage_$(id) track_group

@@ -35,7 +35,9 @@ function sprint_racer:random/check_for_options_race
 ####assign slot 1 with a random number
 #unless we want to force it to be the tutorial track
 tag @e[tag=vote1,type=armor_stand] remove vote1
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=forcetutorial] unless entity @e[tag=vote1,type=armor_stand] run tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,scores={randomCooldown=..0}] add vote1
+execute if score #random value matches ..35 unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=forcetutorial] unless entity @e[tag=vote1,type=armor_stand] run tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,tag=!r_1_only,tag=!r_rare_track,scores={randomCooldown=..0}] add vote1
+execute if score #random value matches 36..70 unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=forcetutorial] unless entity @e[tag=vote1,type=armor_stand] run tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,tag=!r_rare_track,scores={randomCooldown=..0}] add vote1
+execute if score #random value matches 71.. unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=forcetutorial] unless entity @e[tag=vote1,type=armor_stand] run tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,scores={randomCooldown=..0}] add vote1
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=forcetutorial,type=armor_stand] run tag @e[limit=1,sort=random,tag=trackTutorial,tag=!rtBlacklist,type=armor_stand] add vote1
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=forcetutorial,type=armor_stand] unless entity @e[tag=vote1,type=armor_stand] run tag @e[limit=1,sort=random,tag=voteViable,type=armor_stand,scores={randomCooldown=..0}] add vote1
 execute as @e[tag=nVote1,type=armor_stand] run scoreboard players operation @s rNumber = @e[tag=vote1,limit=1,type=armor_stand] rNumber
@@ -45,13 +47,15 @@ execute as @e[limit=1,tag=vote1,type=armor_stand] if entity @s[tag=r_1_only] run
 function sprint_racer:random/check_for_options_race
 
 ####assign slot 2 with a random number
-tag @e[limit=1,sort=random,tag=voteViable,tag=!vote1,type=armor_stand,scores={randomCooldown=..0}] add vote2
+execute if score #random value matches ..35 run tag @e[limit=1,sort=random,tag=voteViable,tag=!vote1,type=armor_stand,tag=!r_1_only,tag=!r_rare_track,scores={randomCooldown=..0}] add vote2
+execute if score #random value matches 36..70 run tag @e[limit=1,sort=random,tag=voteViable,tag=!vote1,type=armor_stand,tag=!r_rare_track,scores={randomCooldown=..0}] add vote2
+execute if score #random value matches 71.. run tag @e[limit=1,sort=random,tag=voteViable,tag=!vote1,type=armor_stand,scores={randomCooldown=..0}] add vote2
 execute as @e[tag=nVote2,type=armor_stand] run scoreboard players operation @s rNumber = @e[tag=vote2,limit=1,type=armor_stand] rNumber
 tag @e[tag=vote2,type=armor_stand] remove voteViable
 execute as @e[limit=1,tag=vote2,type=armor_stand] if entity @s[tag=r_1_only] run function sprint_racer:random/1_only_race
 
+#round 2, we might offer an intermediate track in slot 2
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={maturity=2..}] run tag @e[tag=trackStandR,tag=!rtBlacklist,tag=trackIntermed,type=armor_stand] add voteViable
-function sprint_racer:random/check_for_options_race
 
 #are slots 1 and 2 expert+? slot 3 should be something easier, then.
 scoreboard players set #test value 0
@@ -61,8 +65,12 @@ execute if entity @e[tag=vote2,tag=trackExpert,type=armor_stand] run scoreboard 
 execute if entity @e[tag=vote2,tag=trackMaster,type=armor_stand] run scoreboard players add #test value 1
 execute if score #test value matches 2.. if entity @e[tag=voteViable,tag=!trackExpert,tag=!trackMaster,type=armor_stand,scores={randomCooldown=..0}] run tag @e[tag=voteViable,tag=!trackNovice,tag=!trackIntermed,type=armor_stand] remove voteViable
 
+function sprint_racer:random/check_for_options_race
+
 ####assign slot 3 with a random number
-tag @e[limit=1,sort=random,tag=voteViable,tag=!vote1,tag=!vote2,type=armor_stand,scores={randomCooldown=..0}] add vote3
+execute if score #random value matches ..35 run tag @e[limit=1,sort=random,tag=voteViable,tag=!vote1,tag=!vote2,type=armor_stand,tag=!r_1_only,tag=!r_rare_track,scores={randomCooldown=..0}] add vote3
+execute if score #random value matches 36..70 run tag @e[limit=1,sort=random,tag=voteViable,tag=!vote1,tag=!vote2,type=armor_stand,tag=!r_rare_track,scores={randomCooldown=..0}] add vote3
+execute if score #random value matches 71.. run tag @e[limit=1,sort=random,tag=voteViable,tag=!vote1,tag=!vote2,type=armor_stand,scores={randomCooldown=..0}] add vote3
 execute as @e[tag=nVote3,type=armor_stand] run scoreboard players operation @s rNumber = @e[tag=vote3,type=armor_stand,limit=1] rNumber
 tag @e[tag=vote3,type=armor_stand] remove voteViable
 

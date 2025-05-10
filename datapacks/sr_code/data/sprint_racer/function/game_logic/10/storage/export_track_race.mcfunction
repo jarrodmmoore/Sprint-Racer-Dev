@@ -121,6 +121,16 @@ $execute store result storage $(filename):track_data medal_diamond_digit_2 int 1
 $execute store result storage $(filename):track_data medal_diamond_digit_3 int 1 run scoreboard players get @s customMedalD3
 $execute store result storage $(filename):track_data medal_diamond_digit_4 int 1 run scoreboard players get @s customMedalD4
 
+#v1.6.7
+#--track randomization weight (3 = common, 2 = uncommon, 1 = rare, 0 = banned)
+$data modify storage $(filename):track_data track_random_weight set value 3
+$execute if entity @s[tag=r_1_only] run data modify storage $(filename):track_data track_random_weight set value 2
+$execute if entity @s[tag=r_rare_track] run data modify storage $(filename):track_data track_random_weight set value 1
+$execute if entity @s[tag=rtBlacklist] run data modify storage $(filename):track_data track_random_weight set value 0
+#--track group
+$data modify storage $(filename):track_data track_group set from storage sprint_racer:custom_track_storage_$(id) track_group
+#--track sort number
+$execute store result storage $(filename):track_data track_sort_number int 1 run scoreboard players get @s customTrackSortNumber
 
 #now... try read from the storage to verify it worked
 scoreboard players set #test2 value 0

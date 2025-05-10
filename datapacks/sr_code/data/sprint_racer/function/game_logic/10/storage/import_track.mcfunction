@@ -33,8 +33,10 @@ scoreboard players set #success value 0
 
 #race
 $execute if score #ct_version value matches 1 if score #version_created_in value matches ..10603 run function sprint_racer:game_logic/10/storage/import_track_race_lookup_v1_6_3 {filename:"$(filename)"}
-$execute if score #ct_version value matches 1 if score #version_created_in value matches 10604.. run function sprint_racer:game_logic/10/storage/import_track_race_lookup {filename:"$(filename)"}
+$execute if score #ct_version value matches 1 if score #version_created_in value matches 10604..10606 run function sprint_racer:game_logic/10/storage/import_track_race_lookup_v1_6_6 {filename:"$(filename)"}
+$execute if score #ct_version value matches 1 if score #version_created_in value matches 10607.. run function sprint_racer:game_logic/10/storage/import_track_race_lookup {filename:"$(filename)"}
 
 #battle
 $execute if score #ct_version value matches 2 if score #version_created_in value matches ..10603 run function sprint_racer:game_logic/10/storage/import_track_battle_lookup_v1_6_3 {filename:"$(filename)"}
-$execute if score #ct_version value matches 2 if score #version_created_in value matches 10604.. run function sprint_racer:game_logic/10/storage/import_track_battle_lookup {filename:"$(filename)"}
+$execute if score #ct_version value matches 2 if score #version_created_in value matches 10604..10606 run function sprint_racer:game_logic/10/storage/import_track_battle_lookup_v1_6_6 {filename:"$(filename)"}
+$execute if score #ct_version value matches 2 if score #version_created_in value matches 10607.. run function sprint_racer:game_logic/10/storage/import_track_battle_lookup {filename:"$(filename)"}

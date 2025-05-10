@@ -143,6 +143,7 @@ scoreboard objectives add customDummyBID dummy
 scoreboard objectives add customTrackTime dummy
 scoreboard objectives add customTWeather dummy
 scoreboard objectives add customTTargets dummy
+scoreboard objectives add customPreview dummy
 
 #TEAMS
 team add player
@@ -228,6 +229,15 @@ scoreboard objectives add itemchestSeedB dummy
 scoreboard objectives add targetData dummy
 scoreboard objectives add specJoinTime dummy
 scoreboard objectives add specJoin trigger
+scoreboard objectives add finishPos dummy
+scoreboard objectives add aiLevel dummy
+scoreboard objectives add hitsound dummy
+scoreboard objectives add heal_aware dummy
+scoreboard objectives add startCountdown dummy
+scoreboard objectives add tacticsStep dummy
+scoreboard objectives add showCheckNav dummy
+scoreboard objectives add crowdCooldown dummy
+scoreboard objectives add useCustomSoundtrack trigger
 
 #item usage
 scoreboard objectives add age dummy

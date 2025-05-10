@@ -83,7 +83,12 @@ tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=35}] add r_1_o
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=37}] add r_1_only
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=38}] add r_1_only
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=41}] add r_1_only
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=48}] add r_1_only
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=50}] add r_1_only
+
+#rare race tracks
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=24}] add r_rare_track
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=50}] add r_rare_track
 
 #BATTLE TRACKS
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1}] add trackMedium
@@ -114,6 +119,10 @@ tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=14}] add b_1_o
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=15}] add b_1_only
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=17}] add b_1_only
 
+#rare battle tracks
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=13}] add b_rare_track
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=14}] add b_rare_track
+
 #???
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=50}] add rtBlacklist
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=50}] add trackMaster
@@ -135,4 +144,5 @@ tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=51..54}] add t
 #v1.6 battle tracks
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=18}] add trackTiny
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=19}] add trackLarge
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=19}] add b_1_only
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=18..19}] add trackStandB

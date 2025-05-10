@@ -36,6 +36,9 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run play
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetA
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetB
 
+#update custom track manager signs
+function sprint_racer:game_logic/10/clone_sign_data
+
 #missing tags, give new one
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA] add optItems
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA] remove optSetA

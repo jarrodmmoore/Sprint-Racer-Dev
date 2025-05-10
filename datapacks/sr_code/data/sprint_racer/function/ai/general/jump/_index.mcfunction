@@ -1,6 +1,9 @@
 #DEV, testing jump heights to make sure they're accurate
 #scoreboard players set @e[tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] aiJBIntensity 20
 
+tag @s[tag=jump_at_next_ledge] remove jump_at_next_ledge
+tag @s[tag=jump_at_next_ledge_deep] remove jump_at_next_ledge_deep
+
 execute if entity @e[tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={aiJBIntensity=..0}] run function sprint_racer:ai/general/jump/0
 execute if entity @e[tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={aiJBIntensity=1}] run function sprint_racer:ai/general/jump/1
 execute if entity @e[tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={aiJBIntensity=2}] run function sprint_racer:ai/general/jump/2

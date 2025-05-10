@@ -1,8 +1,8 @@
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!choosingTrack] run scoreboard players set @a inputCooldown 150
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!choosingTrack] add choosingTrack
+execute if entity @s[tag=!choosingTrack] run scoreboard players set @a inputCooldown 150
+tag @s[tag=!choosingTrack] add choosingTrack
 
 #reload custom track selector if something was modified in the custom track manager
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=wmCustomReload] if block 2480 98 266 air if block 2485 106 269 barrier if entity @e[tag=wmCustomStand] run function sprint_racer:game_logic/0/worldmap_custom_reload
+execute if entity @s[tag=wmCustomReload] if loaded 2480 98 266 run function sprint_racer:game_logic/0/worldmap_custom_reload
 
 #night vision for all
 effect give @a night_vision 15 5 true

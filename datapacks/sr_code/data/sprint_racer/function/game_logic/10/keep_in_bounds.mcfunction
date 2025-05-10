@@ -17,4 +17,5 @@ scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMo
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMode=2,tvPoolNum=1..}] unless entity @e[tag=custombattle,scores={customDummyBID=..0}] run scoreboard players remove @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolNum 1
 
 #now update the display...
-function sprint_racer:game_logic/10/update_display/_index
+
+function sprint_racer:game_logic/10/grid_display/ungrouped_custom/update_display

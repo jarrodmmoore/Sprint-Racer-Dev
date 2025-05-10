@@ -132,6 +132,13 @@ $scoreboard players set @s customMedalD1 $(medal_diamond_digit_1)
 $scoreboard players set @s customMedalD2 $(medal_diamond_digit_2)
 $scoreboard players set @s customMedalD3 $(medal_diamond_digit_3)
 $scoreboard players set @s customMedalD4 $(medal_diamond_digit_4)
+#v1.6.7 stuff (older tracks won't have this data, so we'll just assign defaults)
+#--track random weight
+#no action needed
+#--track group
+$data modify storage sprint_racer:custom_track_storage_$(temp_id) track_group set value "Uncategorized"
+#--track sort number
+scoreboard players set @s customTrackSortNumber 999
 
 #!!!=====!!!
 #do the remaining string conversions

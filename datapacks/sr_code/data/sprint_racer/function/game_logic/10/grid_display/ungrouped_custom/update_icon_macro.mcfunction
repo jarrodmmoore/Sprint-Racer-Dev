@@ -1,0 +1,1 @@
+$data merge entity @s {Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":$(map_id)}}}

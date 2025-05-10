@@ -43,30 +43,33 @@ execute if entity @s[scores={tvPoolMode=1}] run function sprint_racer:game_logic
 execute if entity @s[scores={tvPoolMode=2}] run function sprint_racer:game_logic/9/battle_access_data
 
 #show if banned or not with text
-execute if entity @s[tag=!focusTrackBan] run function sprint_racer_language:_dlc_1/lobby/track_indicate_allowed
-execute if entity @s[tag=focusTrackBan] run function sprint_racer_language:_dlc_1/lobby/track_indicate_banned
+#execute if entity @s[tag=!focusTrackBan] run function sprint_racer_language:_dlc_1/lobby/track_indicate_allowed
+#execute if entity @s[tag=focusTrackBan] run function sprint_racer_language:_dlc_1/lobby/track_indicate_banned
+
+#individual players can look at tracks to enable or ban them
+execute as @a[gamemode=adventure] at @s run function sprint_racer:game_logic/9/grid_display/player/_player_active_tick
 
 #controls for enabling or banning a track
-tag @e[tag=hasMap1] remove hasMap1
-tag @a[nbt={Inventory:[{Slot:4b,id:"minecraft:lime_dye",components:{"minecraft:custom_data":{trackAllow:1b}}}]}] add hasMap1
-execute if entity @s[tag=!focusTrackBan] run clear @a[tag=!hasMap1] lime_dye
-execute if entity @s[tag=!focusTrackBan] run function sprint_racer_language:_dlc_1/lobby/track_allow_item
-execute if entity @s[tag=!focusTrackBan] if entity @a[scores={carrotInput=1..,inputCooldown=..0},nbt={SelectedItem:{components:{"minecraft:custom_data":{trackAllow:1b}}}}] run function sprint_racer:game_logic/9/ban_track
+#tag @e[tag=hasMap1] remove hasMap1
+#tag @a[nbt={Inventory:[{Slot:4b,id:"minecraft:lime_dye",components:{"minecraft:custom_data":{trackAllow:1b}}}]}] add hasMap1
+#execute if entity @s[tag=!focusTrackBan] run clear @a[tag=!hasMap1] lime_dye
+#execute if entity @s[tag=!focusTrackBan] run function sprint_racer_language:_dlc_1/lobby/track_allow_item
+#execute if entity @s[tag=!focusTrackBan] if entity @a[scores={carrotInput=1..,inputCooldown=..0},nbt={SelectedItem:{components:{"minecraft:custom_data":{trackAllow:1b}}}}] run function sprint_racer:game_logic/9/ban_track
 
-tag @e[tag=hasMap2] remove hasMap2
-tag @a[nbt={Inventory:[{Slot:4b,id:"minecraft:gray_dye",components:{"minecraft:custom_data":{trackDeny:1b}}}]}] add hasMap2
-execute if entity @s[tag=focusTrackBan] run clear @a[tag=!hasMap2] gray_dye
-execute if entity @s[tag=focusTrackBan] run function sprint_racer_language:_dlc_1/lobby/track_deny_item
-execute if entity @s[tag=focusTrackBan] if entity @a[scores={carrotInput=1..,inputCooldown=..0},nbt={SelectedItem:{components:{"minecraft:custom_data":{trackDeny:1b}}}}] run function sprint_racer:game_logic/9/enable_track
+#tag @e[tag=hasMap2] remove hasMap2
+#tag @a[nbt={Inventory:[{Slot:4b,id:"minecraft:gray_dye",components:{"minecraft:custom_data":{trackDeny:1b}}}]}] add hasMap2
+#execute if entity @s[tag=focusTrackBan] run clear @a[tag=!hasMap2] gray_dye
+#execute if entity @s[tag=focusTrackBan] run function sprint_racer_language:_dlc_1/lobby/track_deny_item
+#execute if entity @s[tag=focusTrackBan] if entity @a[scores={carrotInput=1..,inputCooldown=..0},nbt={SelectedItem:{components:{"minecraft:custom_data":{trackDeny:1b}}}}] run function sprint_racer:game_logic/9/enable_track
 
 #control tips
-execute if entity @s[tag=focusTrackBan] as @a if items entity @s weapon.mainhand gray_dye[custom_data~{trackDeny:1b}] run function sprint_racer_language:_dlc_1/actionbar_control_tips/allow
-execute if entity @s[tag=focusTrackBan] as @a unless items entity @s weapon.mainhand gray_dye[custom_data~{trackDeny:1b}] run title @s actionbar [""]
-execute if entity @s[tag=!focusTrackBan] as @a if items entity @s weapon.mainhand lime_dye[custom_data~{trackAllow:1b}] run function sprint_racer_language:_dlc_1/actionbar_control_tips/ban
-execute if entity @s[tag=!focusTrackBan] as @a unless items entity @s weapon.mainhand lime_dye[custom_data~{trackAllow:1b}] run title @s actionbar [""]
+#execute if entity @s[tag=focusTrackBan] as @a if items entity @s weapon.mainhand gray_dye[custom_data~{trackDeny:1b}] run function sprint_racer_language:_dlc_1/actionbar_control_tips/allow
+#execute if entity @s[tag=focusTrackBan] as @a unless items entity @s weapon.mainhand gray_dye[custom_data~{trackDeny:1b}] run title @s actionbar [""]
+#execute if entity @s[tag=!focusTrackBan] as @a if items entity @s weapon.mainhand lime_dye[custom_data~{trackAllow:1b}] run function sprint_racer_language:_dlc_1/actionbar_control_tips/ban
+#execute if entity @s[tag=!focusTrackBan] as @a unless items entity @s weapon.mainhand lime_dye[custom_data~{trackAllow:1b}] run title @s actionbar [""]
 
-tag @e[tag=focusT] remove focusT
-tag @s remove focusTrackBan
+#tag @e[tag=focusT] remove focusT
+#tag @s remove focusTrackBan
 
 #back to lobby
 execute as @a[scores={carrotInput=1..}] if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{exit:1b}}}}] run function sprint_racer:game_logic/9/exit

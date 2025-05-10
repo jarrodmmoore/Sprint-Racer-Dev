@@ -9,3 +9,4 @@ execute if entity @s[scores={gamemodePresetA=3}] run function sprint_racer:game_
 
 #editor mode stuff...
 execute if entity @s[tag=customTesting,scores={gameTime=100..}] as @a[tag=playing,gamemode=adventure] at @s unless entity @e[type=marker,tag=activator,scores={nodeState=1..}] run function sprint_racer_language:_dlc_2/editor_mode/warn_missing_activator
+execute if entity @s[tag=customTesting] run scoreboard players set @a afkTime 0

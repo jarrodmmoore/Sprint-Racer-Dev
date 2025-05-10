@@ -19,4 +19,7 @@ playsound minecraft:block.note_block.hat master @a
 #update zombies
 function sprint_racer:game_logic/0/props/update_jail_zombies
 
+#update custom track manager signs
+function sprint_racer:game_logic/10/clone_sign_data
+
 tag @s remove clickSign

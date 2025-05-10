@@ -81,7 +81,7 @@ function sprint_racer_language:_dlc_3/grand_prix/undo_item
 execute as @a[sort=random,limit=5,gamemode=!creative] at @s run function sprint_racer:game_logic/0/find_nearest_track
 
 #reload custom track selector if something was modified in the custom track manager
-execute if entity @s[tag=wmCustomReload] if block 2480 98 266 air if block 2485 106 269 air if entity @e[tag=wmCustomStand] run function sprint_racer:game_logic/0/worldmap_custom_reload
+execute if entity @s[tag=wmCustomReload] if loaded 2480 98 266 run function sprint_racer:game_logic/0/worldmap_custom_reload
 
 #subtitle thing
 function sprint_racer_language:_dlc_3/grand_prix/round_number_subtitle

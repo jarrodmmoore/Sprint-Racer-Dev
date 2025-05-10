@@ -118,6 +118,16 @@ $scoreboard players set @s customMedalD1 $(medal_diamond_digit_1)
 $scoreboard players set @s customMedalD2 $(medal_diamond_digit_2)
 $scoreboard players set @s customMedalD3 $(medal_diamond_digit_3)
 $scoreboard players set @s customMedalD4 $(medal_diamond_digit_4)
+#v1.6.7 stuff
+#--track random weight (3 = common, 2 = uncommon, 1 = rare, 0 = banned)
+$scoreboard players set #read value $(track_random_weight)
+execute if score #read value matches 0 run tag @s add rtBlacklist
+execute if score #read value matches 1 run tag @s add r_rare_track
+execute if score #read value matches 1..2 run tag @s add r_1_only
+#--track group
+$data modify storage sprint_racer:custom_track_storage_$(temp_id) track_group set from storage $(file_name):track_data track_group
+#--track sort number
+$scoreboard players set @s customTrackSortNumber $(track_sort_number)
 
 #we did it
 scoreboard players set #success value 1

@@ -43,6 +43,9 @@ scoreboard players set @a invisibility 0
 scoreboard players set @a resistTime 0
 scoreboard players set @a invulTime 0
 
+#don't let players die from previous fall!
+effect give @a resistance 5 200 true
+
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemBlockState 0
 
 tag @e[tag=finished] remove finished
@@ -65,9 +68,8 @@ gamemode adventure @a
 
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 10
 
-#new in v1.6: all custom tracks should have an associated custom tagline
-#so for any old worlds that got datapack-updated, generate that data right now
-execute as @e[type=armor_stand,tag=customtrack] unless score @s customTagLine matches -2147483648..2147483647 run function sprint_racer:game_logic/10/assign_custom_tagline_storage
+#custom tracks from old versions need to be kept up to date with some stuff
+execute as @e[type=armor_stand,tag=customtrack] run function sprint_racer:game_logic/10/track_version_upkeep/_check
 
 #kill lobby props
 kill @e[tag=lobbyprop]
@@ -77,13 +79,15 @@ kill @e[tag=cDisplay2,type=armor_stand]
 kill @e[tag=itemcontainer]
 
 #summon display frames
-summon minecraft:item_frame 1594 80 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
-summon minecraft:item_frame 1594 80 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
-summon minecraft:item_frame 1594 81 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
-summon minecraft:item_frame 1594 81 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+#summon minecraft:item_frame 1594 80 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+#summon minecraft:item_frame 1594 80 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+#summon minecraft:item_frame 1594 81 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+#summon minecraft:item_frame 1594 81 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+execute positioned 1594 79 368 rotated 270 0 run function sprint_racer:game_logic/10/grid_display/_initialize {facing:4}
 
 #update display
-function sprint_racer:game_logic/10/update_display/_index
 
-summon armor_stand 1593 79 370 {Invisible:1b,NoGravity:1b,Invulnerable:1b,Marker:1b,Tags:["lobbyprop","trackStatus"]}
-execute as @e[tag=trackStatus] at @s run tp @s ~ ~ ~.5
+function sprint_racer:game_logic/10/grid_display/ungrouped_custom/update_display
+
+#summon armor_stand 1593 78.35 370 {Invisible:1b,NoGravity:1b,Invulnerable:1b,Marker:1b,Tags:["lobbyprop","trackStatus"]}
+#execute as @e[tag=trackStatus] at @s run tp @s ~ ~ ~.5

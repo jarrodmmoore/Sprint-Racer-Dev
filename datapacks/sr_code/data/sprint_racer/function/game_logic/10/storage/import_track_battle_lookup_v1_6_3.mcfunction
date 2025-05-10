@@ -41,4 +41,5 @@ execute unless score global gameState matches 10 run return 0
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolMode 2
 fill 1595 79 369 1595 82 372 red_concrete
 scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolNum = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] customDummyBID
-function sprint_racer:game_logic/10/update_display/_index
+
+function sprint_racer:game_logic/10/grid_display/ungrouped_custom/update_display

@@ -54,4 +54,4 @@ execute if entity @s[scores={creditsCycle=481}] run tp @e[tag=creditcycle,type=a
 execute if entity @s[scores={creditsCycle=480}] run tp @e[tag=creditcycle,type=armor_stand,tag=cc13] 1658 89 418
 
 execute as @e[type=armor_stand,tag=creditcycle,x=1658,y=89,z=418,distance=..1] run data merge entity @s {CustomNameVisible:1b}
-execute as @e[type=armor_stand,tag=creditcycle,x=1658,y=89,z=418,distance=2..6] run data merge entity @s {CustomNameVisible:0b}
+execute as @e[type=armor_stand,tag=creditcycle,x=1658,y=89,z=418,distance=2..6] run data merge entity @s {CustomNameVisible:false}

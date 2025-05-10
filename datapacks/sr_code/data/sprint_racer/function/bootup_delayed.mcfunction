@@ -40,6 +40,7 @@ function sprint_racer_config:secret_lobby
 ##################################
 
 #add some objectives if they aren't here
+scoreboard objectives add gameState dummy
 scoreboard objectives add value dummy
 scoreboard objectives add loadAttempts dummy
 scoreboard objectives add resetAttempts dummy
@@ -200,6 +201,8 @@ scoreboard objectives add aiFaceDirTime dummy
 scoreboard objectives add aiFaceDirYaw dummy
 scoreboard objectives add aiFaceDirPitch dummy
 scoreboard players set #vel10 value 10
+#v1.6.7
+scoreboard objectives add customTrackSortNumber dummy
 
 
 #make sure command blocks are enabled
@@ -259,6 +262,9 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove taNoItems
 #realms and options signs
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms] run function sprint_racer:bootup_realms
 execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms] run function sprint_racer_language:_dlc_4/lobby/options/restore_options_signs
+
+#custom tracks from old versions need to be kept up to date with some stuff
+execute as @e[type=armor_stand,tag=customtrack] run function sprint_racer:game_logic/10/track_version_upkeep/_check
 
 #make sure dlc 6 options signs exist
 function sprint_racer_language:_dlc_6/lobby/options/restore_options_signs

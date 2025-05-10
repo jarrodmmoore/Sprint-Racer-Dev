@@ -14,4 +14,4 @@ tag @s remove hasPreview
 
 execute as @e[limit=1,sort=nearest,type=armor_stand,tag=trackminimap] run function sprint_racer:game_logic/0/worldmap_index
 
-tag @e[tag=tempTarget] remove tempTarget
+tag @a[tag=tempTarget] remove tempTarget

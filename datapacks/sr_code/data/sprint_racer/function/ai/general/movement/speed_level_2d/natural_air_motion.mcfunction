@@ -1,3 +1,7 @@
+#if we were instructed to jump at next ledge, do that
+execute if entity @s[tag=jump_at_next_ledge,tag=!jump_at_next_ledge_deep] if block ~ ~-.7 ~ #sprint_racer:ai_not_solid run function sprint_racer:ai/general/jump/_index
+execute if entity @s[tag=jump_at_next_ledge,tag=jump_at_next_ledge_deep] if block ~ ~-1.7 ~ #sprint_racer:ai_not_solid run function sprint_racer:ai/general/jump/_index
+
 #instead of setting velocity directly, let's try adding to it to mimic minecraft air acceleration
 #(note: lower scale on the data get Motion[X] means bot will have higher air mobility)
 #x
