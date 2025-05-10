@@ -43,6 +43,9 @@ scoreboard players set @a invisibility 0
 scoreboard players set @a resistTime 0
 scoreboard players set @a invulTime 0
 
+#don't let players die from previous fall!
+effect give @a resistance 5 200 true
+
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemBlockState 0
 
 tag @e[tag=finished] remove finished
@@ -83,7 +86,7 @@ kill @e[tag=itemcontainer]
 execute positioned 1594 79 368 rotated 270 0 run function sprint_racer:game_logic/10/grid_display/_initialize {facing:4}
 
 #update display
-#function sprint_racer:game_logic/10/update_display/_index
+
 function sprint_racer:game_logic/10/grid_display/ungrouped_custom/update_display
 
 #summon armor_stand 1593 78.35 370 {Invisible:1b,NoGravity:1b,Invulnerable:1b,Marker:1b,Tags:["lobbyprop","trackStatus"]}

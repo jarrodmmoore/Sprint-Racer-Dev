@@ -50,11 +50,8 @@ kill @e[tag=cDisplay,type=armor_stand]
 kill @e[tag=cDisplay2,type=armor_stand]
 kill @e[tag=itemcontainer]
 
-#summon display frames
-#summon minecraft:item_frame 1594 80 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
-#summon minecraft:item_frame 1594 80 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
-#summon minecraft:item_frame 1594 81 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
-#summon minecraft:item_frame 1594 81 371 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}
+#no options signs in here, please
+fill 1581 77 366 1581 78 375 air
 
 #default display value
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolNum 1

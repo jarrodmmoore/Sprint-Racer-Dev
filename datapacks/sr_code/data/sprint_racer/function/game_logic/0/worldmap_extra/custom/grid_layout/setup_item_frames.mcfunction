@@ -6,6 +6,9 @@ kill @e[type=item_frame,tag=trackGridFrameCustom]
 #kill other item frames that may be left over from a previous era
 execute positioned ~-1 ~-1 ~-1 run kill @e[type=item_frame,dx=5,dy=10,dz=10]
 
+#kill this old fart
+kill @e[type=armor_stand,tag=wmCustomStand]
+
 #row 1 (top)
 $summon minecraft:item_frame ^ ^2 ^ {Facing:$(facing),Invulnerable:1b,Silent:1b,Fixed:1b,Invisible:1b,Tags:["trackGridFrameCustom"],UUID:[I;113,121,211,1]}
 $summon minecraft:item_frame ^-1 ^2 ^ {Facing:$(facing),Invulnerable:1b,Silent:1b,Fixed:1b,Invisible:1b,Tags:["trackGridFrameCustom"],UUID:[I;113,121,211,2]}

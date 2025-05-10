@@ -12,7 +12,7 @@ scoreboard players set #test2 value -1
 
 #raycast to see what we're looking at
 scoreboard players set #recursions value 20
-execute anchored eyes run function sprint_racer:game_logic/9/grid_display/player/raycast_phase_1
+execute positioned ~ ~1.65 ~ run function sprint_racer:game_logic/9/grid_display/player/raycast_phase_1
 #read the data of the track we're looking at
 execute if score #test value matches 1.. if score #trackGridMode value matches 1 as @e[tag=trackStandR,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..}] if score @s rNumber = #test value run function sprint_racer:game_logic/9/grid_display/player/interpret_track_data
 execute if score #test value matches 1.. if score #trackGridMode value matches 2 as @e[tag=trackStandB,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..}] if score @s rNumber = #test value run function sprint_racer:game_logic/9/grid_display/player/interpret_track_data

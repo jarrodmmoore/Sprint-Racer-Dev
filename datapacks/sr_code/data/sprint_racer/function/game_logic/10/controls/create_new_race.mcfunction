@@ -17,5 +17,5 @@ scoreboard players set @s inputCooldown 20
 
 #show the new track we made
 scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolNum = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] customDummyID
-#function sprint_racer:game_logic/10/update_display/_index
+
 function sprint_racer:game_logic/10/grid_display/ungrouped_custom/update_display

@@ -16,8 +16,15 @@ scoreboard players operation #trackGridIterate value = #trackGridStartCustom val
 execute if score #trackGridMode value matches 1 run fill 2483 99 264 2483 103 271 light_blue_concrete
 execute if score #trackGridMode value matches 2 run fill 2483 99 264 2483 103 271 red_concrete
 
+#particles based on mode
+execute if score #trackGridMode value matches 1 positioned 2482 101 267 positioned ~ ~.5 ~.5 run particle dust{color:[0.6,0.6,1.0],scale:2} ~ ~ ~ 0 1 2 1 20
+execute if score #trackGridMode value matches 2 positioned 2482 101 267 positioned ~ ~.5 ~.5 run particle dust{color:[1.0,0.3,0.3],scale:2} ~ ~ ~ 0 1 2 1 20
+
 #store what page we're on. we'll need that
 execute store result storage sprint_racer:func_args track_group int 1 run scoreboard players get #trackGridPage value
+
+#update the text for what page we're on
+execute positioned 2480 99 267 positioned ~2.4 ~.6 ~.5 run function sprint_racer:game_logic/0/worldmap_extra/custom/grid_layout/grouped_custom/update_group_text with storage sprint_racer:func_args
 
 #run through all rows in order
 execute as 00000071-0000-0079-0000-00d300000001 at @s run function sprint_racer:game_logic/0/worldmap_extra/custom/grid_layout/grouped_custom/update_icon

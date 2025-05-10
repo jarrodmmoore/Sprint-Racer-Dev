@@ -2,7 +2,7 @@ execute if entity @s[type=player] run scoreboard players operation @s worldmapID
 #worldmapID is overridden is specific places
 execute if entity @s[type=player] at @s if block ~ 0 ~ yellow_wool run function sprint_racer:worldmap/special_worldmap_override
 
-execute if entity @s[tag=!chosenTrack,scores={worldmapID=..0}] as @e[tag=wmCustomFocus,type=armor_stand,limit=1] run function sprint_racer:levels/_custom_general/medal_times
+execute if entity @s[tag=!chosenTrack,scores={worldmapID=..0}] run function sprint_racer:game_logic/6/worldmap_inspect_custom
 execute if entity @s[tag=chosenTrack,scores={worldmapID=..0}] run function sprint_racer:levels/_custom_general/medal_times
 
 execute if entity @s[scores={worldmapID=50}] run function sprint_racer:levels/cotton_void/medal_times

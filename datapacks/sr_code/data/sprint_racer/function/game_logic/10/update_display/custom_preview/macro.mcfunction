@@ -1,1 +1,0 @@
-$function sprint_racer:game_logic/10/update_display/custom_preview/macro_2 with storage sprint_racer:custom_track_storage_$(id)

@@ -12,5 +12,5 @@ function sprint_racer:game_logic/0/worldmap_extra/custom/grid_layout/organize_tr
 execute store result score #math value run data get storage sprint_racer:custom_track_list groups
 #count how many Uncategorized tracks there are
 execute store result score #math2 value run data get storage sprint_racer:custom_track_list groups[0]
-#if there's 2+ groups and nothing in Uncategorized, start on page 2
-execute if score #math value matches 2.. if score #math2 value matches ..1 run scoreboard players set #trackGridPage value 2
+#if there's 2+ groups and nothing in Uncategorized, start on page 1 (the second one)
+execute if score #math value matches 2.. if score #math2 value matches ..1 run scoreboard players set #trackGridPage value 1

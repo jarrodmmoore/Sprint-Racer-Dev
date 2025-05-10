@@ -23,6 +23,10 @@ execute unless score @s hitsound matches -999.. run tag @s[tag=admin] remove adm
 scoreboard players set #hitsound value -1000
 execute if score @s hitsound matches -999.. run scoreboard players operation #hitsound value = @s hitsound
 
+#remember aiLevel
+scoreboard players set #aiLevel value -1000
+execute if score @s aiLevel matches 0.. run scoreboard players operation #aiLevel value = @s aiLevel
+
 #swim fastly always
 attribute @s minecraft:water_movement_efficiency base set 1
 
@@ -145,6 +149,9 @@ execute unless entity @e[limit=1,type=armor_stand,tag=currentBGM] run scoreboard
 execute unless score #hitsound value matches -1000 run scoreboard players operation @s hitsound = #hitsound value
 execute unless entity @s[scores={hitsound=0..}] run scoreboard players set @s hitsound 1
 
+#aiLevel
+execute if score #aiLevel value matches 0.. run scoreboard players operation @s aiLevel = #aiLevel value
+
 #sync up with global join value
 scoreboard players operation @s join = #join_tick value
 
@@ -152,14 +159,7 @@ scoreboard players operation @s join = #join_tick value
 #and
 #i just wanna say that this code is HIDEOUS
 tag @s add self
-execute unless entity @a[tag=!self] run scoreboard players set @e[scores={randomCooldown=1..}] randomCooldown 0
-execute unless entity @a[tag=!self] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
-execute unless entity @a[tag=!self] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber2 1
-execute unless entity @a[tag=!self] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] readyState 0
-execute unless entity @a[tag=!self] run scoreboard players set global aiLevel 6
-execute unless entity @a[tag=!self] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=,scores={difficultyRamp=..0}] run scoreboard players set global aiLevel 10
-execute unless entity @a[tag=!self] run scoreboard players set #seasideJoyrideTime value 1
-execute unless entity @a[tag=!self] run function sprint_racer:game_logic/0/clear_points
+execute unless entity @a[tag=!self] run function sprint_racer:join_solo
 execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=..999}] run function sprint_racer:join_logic/error
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=0,readyState=1..}] run function sprint_racer:join_logic/in_lobby
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=0,readyState=..0}] run function sprint_racer:join_logic/in_lobby_not_started

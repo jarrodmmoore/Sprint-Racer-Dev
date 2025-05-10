@@ -2,7 +2,7 @@ execute if entity @s[tag=!choosingTrack] run scoreboard players set @a inputCool
 tag @s[tag=!choosingTrack] add choosingTrack
 
 #reload custom track selector if something was modified in the custom track manager
-execute if entity @s[tag=wmCustomReload] if loaded 2480 98 266 if entity @e[tag=wmCustomStand,type=armor_stand] run function sprint_racer:game_logic/0/worldmap_custom_reload
+execute if entity @s[tag=wmCustomReload] if loaded 2480 98 266 run function sprint_racer:game_logic/0/worldmap_custom_reload
 
 #night vision for all
 effect give @a night_vision 15 5 true

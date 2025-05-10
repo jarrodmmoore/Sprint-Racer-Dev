@@ -2,7 +2,8 @@ execute if entity @s[type=player,tag=!qsDirectChoose] run scoreboard players ope
 #worldmapID is overridden is specific places
 execute if entity @s[type=player,tag=!qsDirectChoose] at @s if block ~ 0 ~ yellow_wool run function sprint_racer:worldmap/special_worldmap_override
 
-execute if entity @s[scores={worldmapID=..0}] run function sprint_racer_language:_dlc_1/lobby/worldmap_say_name/_custom_general
+execute if entity @s[scores={worldmapID=..0}] run function sprint_racer:game_logic/6/worldmap_say_name_custom
+
 execute if entity @s[scores={worldmapID=50}] run function sprint_racer_language:_dlc_2/lobby/worldmap_say_name/cotton_void
 
 execute if entity @s[scores={worldmapID=1}] run function sprint_racer_language:_dlc_1/lobby/worldmap_say_name/river_valley

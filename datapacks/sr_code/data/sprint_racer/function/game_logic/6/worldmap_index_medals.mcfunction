@@ -1,5 +1,4 @@
-execute if entity @s[scores={worldmapID=..0}] as @e[tag=wmCustomFocus,tag=customrace,limit=1] run scoreboard players operation @a[tag=dataReturn] medalRace = @s medalRace
-execute if entity @s[scores={worldmapID=..0}] as @e[tag=wmCustomFocus,tag=custombattle,limit=1] run scoreboard players operation @a[tag=dataReturn] medalRace = @s medalBattle
+execute if entity @s[scores={worldmapID=..0}] run function sprint_racer:game_logic/6/worldmap_index_medals_custom
 
 execute if entity @s[scores={worldmapID=50}] as @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=50}] run scoreboard players operation @a[tag=dataReturn] medalRace = @s medalRace
 
