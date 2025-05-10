@@ -25,7 +25,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=240}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=240}] run setblock 571 66 394 gray_wool
 
 #make sure switch is off when race starts
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run setblock 550 73 300 air
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run setblock 547 73 300 air
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run setblock 550 73 300 air destroy
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run setblock 547 73 300 air destroy
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run fill 519 73 253 519 73 255 red_wool
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove switchON

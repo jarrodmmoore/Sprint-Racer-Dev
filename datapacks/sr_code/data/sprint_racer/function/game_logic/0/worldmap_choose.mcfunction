@@ -1,3 +1,7 @@
+#kick out if we lost input due to somebody else running this on the same tick
+execute unless score @s carrotInput matches 1.. run return 0
+#=====
+
 #get nearest worldmapID
 execute if entity @s[type=player] run scoreboard players operation @s worldmapID = @e[limit=1,sort=nearest,type=armor_stand,tag=trackminimap] worldmapID
 #worldmapID is overridden is specific places
@@ -145,3 +149,6 @@ execute unless entity @s[tag=gpOrderSet] if entity @s[tag=doinTimeAttack] run fu
 
 execute if entity @s[tag=gpOrderSet] run function sprint_racer:game_logic/11/add_track
 tag @s[type=player,tag=qsDirectChoose] remove qsDirectChoose
+
+#cancel all other players' inputs now!
+execute unless entity @s[tag=gpOrderSet] run scoreboard players reset @a carrotInput

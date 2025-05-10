@@ -36,9 +36,9 @@ execute if entity @s[scores={customTWeather=2..3}] run tag @e[tag=w,x=1560,y=150
 scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] targetData = @s customTTargets
 
 #MUSIC
-execute as @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..}] run scoreboard players operation @s math = @s rNumber
-scoreboard players operation @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1] math -= @s BGMtrack
-tag @e[type=armor_stand,limit=1,tag=random,x=1548,y=155,z=406,distance=..1,scores={math=0}] add setBGM
+#execute as @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..}] run scoreboard players operation @s math = @s rNumber
+#scoreboard players operation @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1] math -= @s BGMtrack
+#tag @e[type=armor_stand,limit=1,tag=random,x=1548,y=155,z=406,distance=..1,scores={math=0}] add setBGM
 
 #CUSTOM CODE? RUN IT
 execute if entity @s[tag=usingMacroCodePath] store result storage sprint_racer:func_args id int 1 run scoreboard players get @s customTagLine
