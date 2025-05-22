@@ -35,3 +35,9 @@ scoreboard players remove @s[tag=!showCheckNav,scores={showCheckNav=1..}] showCh
 
 tag @s[tag=poisoned] remove poisoned
 execute if entity @s[nbt={active_effects:[{id:"minecraft:poison"}]}] run tag @s add poisoned
+
+#handle triggers, too
+scoreboard players enable @s triggerOption
+execute if score @s triggerOption matches -2147483648..2147483647 run function sprint_racer:boq/trigger_option
+execute if entity @s[gamemode=creative] run scoreboard players enable @s triggerEditor
+execute if score @s triggerEditor matches -2147483648..2147483647 run function sprint_racer:boq/trigger_editor

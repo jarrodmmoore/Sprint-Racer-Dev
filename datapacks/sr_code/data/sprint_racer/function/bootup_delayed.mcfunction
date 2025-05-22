@@ -203,6 +203,9 @@ scoreboard objectives add aiFaceDirPitch dummy
 scoreboard players set #vel10 value 10
 #v1.6.7
 scoreboard objectives add customTrackSortNumber dummy
+#v1.6.8 (the boq update)
+scoreboard objectives add triggerOption trigger
+scoreboard objectives add triggerEditor trigger
 
 
 #make sure command blocks are enabled

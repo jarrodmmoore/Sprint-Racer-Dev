@@ -126,7 +126,7 @@ bossbar add freeroam {text:"..."}
 bossbar set freeroam color green
 bossbar set freeroam max 1
 bossbar set freeroam style progress
-
+bossbar add minecraft:control_sneakheal [""]
 
 
 #SCOREBOARD
@@ -238,6 +238,9 @@ scoreboard objectives add tacticsStep dummy
 scoreboard objectives add showCheckNav dummy
 scoreboard objectives add crowdCooldown dummy
 scoreboard objectives add useCustomSoundtrack trigger
+scoreboard objectives add playerKO totalKillCount
+scoreboard objectives add playerCountM dummy
+scoreboard objectives add timeSinceDeath dummy
 
 #item usage
 scoreboard objectives add age dummy
