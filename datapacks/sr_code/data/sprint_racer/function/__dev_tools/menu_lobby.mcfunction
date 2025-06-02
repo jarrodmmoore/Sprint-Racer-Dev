@@ -3,5 +3,5 @@ tellraw @s ["",{text:"[set to 5s]",color:"#009988",bold:false,click_event:{actio
 tellraw @s ["",{text:"[resummon props]",color:"#009988",bold:false,click_event:{action:"suggest_command",command:"/function sprint_racer:game_logic/0/props/summon_props"},hover_event:{action:"show_text",value:"resummon props"}}]
 tellraw @s ["",{text:"[prepare map for release]",color:"#009988",bold:false,click_event:{action:"suggest_command",command:"/function sprint_racer:__dev_tools/prepare_map_to_ship"},hover_event:{action:"show_text",value:"prepare map to ship"}}]
 
-tellraw @s ["",{text:"[down please]",color:"#FFFF44",bold:false,click_event:{action:"run_command",command:"/function sprint_racer:__dev_tools/menu_lobby"},hover_event:{action:"show_text",value:"down please"}}]
-tellraw @s ["",{text:"[Back]",color:"#FF7777",bold:false,click_event:{action:"run_command",command:"/function sprint_racer:__dev_tools/_menu"},hover_event:{action:"show_text",value:"Back"}}]
+tellraw @s ["",{text:"[down please]",color:"#FFFF44",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1001"},hover_event:{action:"show_text",value:"down please"}}]
+tellraw @s ["",{text:"[Back]",color:"#FF7777",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1027"},hover_event:{action:"show_text",value:"Back"}}]

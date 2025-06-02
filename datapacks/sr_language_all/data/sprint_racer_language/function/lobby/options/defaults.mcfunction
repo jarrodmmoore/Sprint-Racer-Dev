@@ -1,11 +1,11 @@
 tellraw @a[tag=!minChat] ["",{text:" "}]
 
-data merge block 1581 89 451 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"function sprint_racer:game_logic/0/options_signs/defaults"}},{text:"RESTORE",bold:true,color:"black"},{text:"DEFAULTS",bold:true,color:"black"},{text:""}]},is_waxed:1b}
-data merge block 1581 89 450 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"function sprint_racer:game_logic/0/options_signs/items"}},{text:"ITEMS",bold:true,color:"black"},{text:"[ALWAYS ON]",color:"dark_blue"},{text:""}]},is_waxed:1b}
-data merge block 1595 79 433 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"function sprint_racer:game_logic/0/options_signs/items"}},{text:"ITEMS",bold:true,color:"black"},{text:"[ALWAYS ON]",color:"dark_blue"},{text:""}]},is_waxed:1b}
-data merge block 1581 89 449 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"function sprint_racer:game_logic/0/options_signs/tracks"}},{text:"TRACKS",bold:true,color:"black"},{text:"[VOTE]",color:"dark_blue"},{text:""}]},is_waxed:1b}
-data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"function sprint_racer:game_logic/0/options_signs/gamemodes"}},{text:"GAMEMODES",bold:true,color:"black"},{text:"[RACE & BATTLE]",color:"dark_blue"},{text:""}]},is_waxed:1b}
-data merge block 1594 79 433 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"function sprint_racer:game_logic/0/options_signs/item_balancing"}},{text:"ITEM BALANCE",bold:true,color:"black"},{text:"[ON--TIME]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+data merge block 1581 89 451 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1004"}},{text:"RESTORE",bold:true,color:"black"},{text:"DEFAULTS",bold:true,color:"black"},{text:""}]},is_waxed:1b}
+data merge block 1581 89 450 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1005"}},{text:"ITEMS",bold:true,color:"black"},{text:"[ALWAYS ON]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+data merge block 1595 79 433 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1005"}},{text:"ITEMS",bold:true,color:"black"},{text:"[ALWAYS ON]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+data merge block 1581 89 449 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1006"}},{text:"TRACKS",bold:true,color:"black"},{text:"[VOTE]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1007"}},{text:"GAMEMODES",bold:true,color:"black"},{text:"[RACE & BATTLE]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+data merge block 1594 79 433 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1008"}},{text:"ITEM BALANCE",bold:true,color:"black"},{text:"[ON--TIME]",color:"dark_blue"},{text:""}]},is_waxed:1b}
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optRnB
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optRace

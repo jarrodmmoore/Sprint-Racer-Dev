@@ -226,6 +226,7 @@ scoreboard objectives add gamemodePresetA dummy
 scoreboard objectives add gamemodePresetB dummy
 scoreboard objectives add itemchestSeedA dummy
 scoreboard objectives add itemchestSeedB dummy
+scoreboard objectives add itemchestSeedR dummy
 scoreboard objectives add targetData dummy
 scoreboard objectives add specJoinTime dummy
 scoreboard objectives add specJoin trigger
@@ -241,6 +242,27 @@ scoreboard objectives add useCustomSoundtrack trigger
 scoreboard objectives add playerKO totalKillCount
 scoreboard objectives add playerCountM dummy
 scoreboard objectives add timeSinceDeath dummy
+
+#custom grand prix editor
+scoreboard objectives add gpMenu1 trigger
+scoreboard objectives add gpMenu2 trigger
+scoreboard objectives add gpRound dummy
+
+#custom ai settings
+scoreboard objectives add ca_trigger trigger
+scoreboard objectives add customAIset dummy
+scoreboard objectives add customAIdiff dummy
+scoreboard objectives add customAIteam dummy
+scoreboard objectives add customAInumber dummy
+
+#custom lap cheat
+scoreboard objectives add cl_trigger trigger
+scoreboard objectives add customLapOffset dummy
+scoreboard objectives add customLapType dummy
+scoreboard objectives add customLapMult dummy
+
+#slot limit cheat
+scoreboard objectives add csl_trigger trigger
 
 #item usage
 scoreboard objectives add age dummy
@@ -590,6 +612,9 @@ scoreboard objectives add dropOrangeDye minecraft.dropped:minecraft.orange_dye
 scoreboard objectives add dropWhiteDye minecraft.dropped:minecraft.white_dye
 scoreboard objectives add dropGrayWool minecraft.dropped:minecraft.gray_wool
 scoreboard objectives add dropLimeWool minecraft.dropped:minecraft.lime_wool
+scoreboard objectives add dropStick minecraft.dropped:minecraft.stick
+scoreboard objectives add settingPath dummy
+scoreboard objectives add dropChickEgg minecraft.dropped:minecraft.chicken_spawn_egg
 
 #important game function
 scoreboard objectives add hp health ["",{text:"❤",color:"red"}]

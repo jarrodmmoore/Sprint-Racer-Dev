@@ -37,7 +37,9 @@ tag @s[tag=poisoned] remove poisoned
 execute if entity @s[nbt={active_effects:[{id:"minecraft:poison"}]}] run tag @s add poisoned
 
 #handle triggers, too
-scoreboard players enable @s triggerOption
-execute if score @s triggerOption matches -2147483648..2147483647 run function sprint_racer:boq/trigger_option
-execute if entity @s[gamemode=creative] run scoreboard players enable @s triggerEditor
-execute if score @s triggerEditor matches -2147483648..2147483647 run function sprint_racer:boq/trigger_editor
+scoreboard players enable @s tOption
+execute if score @s tOption matches -2147483648..2147483647 run function sprint_racer:boq/trigger_option
+execute if entity @s[gamemode=creative] run scoreboard players enable @s tEditor
+execute if score @s tEditor matches -2147483648..2147483647 run function sprint_racer:boq/trigger_editor
+execute if score global gameState matches 10 if entity @s[gamemode=!spectator] run scoreboard players enable @s tTrackEditor
+execute if score @s tTrackEditor matches -2147483648..2147483647 run function sprint_racer:boq/trigger_track_editor

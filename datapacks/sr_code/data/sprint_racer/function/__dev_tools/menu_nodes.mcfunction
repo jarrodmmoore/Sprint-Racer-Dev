@@ -2,4 +2,4 @@ tellraw @s ["",{text:"\nnodes",color:"#005544",bold:true}]
 tellraw @s ["",{text:"[give Time Attack seed to chests]",color:"#009988",bold:false,click_event:{action:"suggest_command",command:"/function sprint_racer:items/ta_seed_random_assign"},hover_event:{action:"show_text",value:"Assign Time Attack seeds to all loaded chests that don't have one."}}]
 tellraw @s ["",{text:"[give Resource Control seed to chests]",color:"#009988",bold:false,click_event:{action:"suggest_command",command:"/function sprint_racer:items/rc_seed_random_assign"},hover_event:{action:"show_text",value:"Assing a resource control seed to all loaded chests that don't have one."}}]
 
-tellraw @s ["",{text:"[Back]",color:"#FF7777",bold:false,click_event:{action:"run_command",command:"/function sprint_racer:__dev_tools/_menu"},hover_event:{action:"show_text",value:"Back"}}]
+tellraw @s ["",{text:"[Back]",color:"#FF7777",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1027"},hover_event:{action:"show_text",value:"Back"}}]

@@ -1,8 +1,8 @@
 tellraw @a[tag=!minChat] ["",{text:" "}]
 
-data merge block 1595 88 356 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"function sprint_racer:game_logic/0/options_signs/def_time_add"}},{text:"DEFAULT TIME:",bold:true,color:"black"},{text:"[ADD 5s]",color:"dark_blue"},{text:""}]},is_waxed:1b}
-data merge block 1596 88 356 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"function sprint_racer:game_logic/0/options_signs/def_time"}},{text:"DEFAULT TIME:",bold:true,color:"black"},{text:"[SET TO 30s]",color:"dark_blue"},{text:""}]},is_waxed:1b}
-data merge block 1597 88 356 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"function sprint_racer:game_logic/0/options_signs/def_time_remove"}},{text:"DEFAULT TIME:",bold:true,color:"black"},{text:"[REMOVE 5s]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+data merge block 1595 88 356 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1029"}},{text:"DEFAULT TIME:",bold:true,color:"black"},{text:"[ADD 5s]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+data merge block 1596 88 356 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1030"}},{text:"DEFAULT TIME:",bold:true,color:"black"},{text:"[SET TO 30s]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+data merge block 1597 88 356 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1031"}},{text:"DEFAULT TIME:",bold:true,color:"black"},{text:"[REMOVE 5s]",color:"dark_blue"},{text:""}]},is_waxed:1b}
 
 scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={defLobbyTime=..235}] defLobbyTime 5
 tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.lobby_time_set_to",color:"green"},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"defLobbyTime"},color:"green"},{text:"s",color:"green"}]

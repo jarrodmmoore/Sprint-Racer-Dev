@@ -16,7 +16,6 @@ tellraw @s ["",{text:"[items]",color:"#009988",bold:false,click_event:{action:"s
 tellraw @s ["",{text:"[teams]",color:"#009988",bold:false,click_event:{action:"suggest_command",command:"/function sprint_racer:game_logic/0/options_signs/teams"},hover_event:{action:"show_text",value:"teams"}},{text:"  "},{text:"[auto balance]",color:"#009988",bold:false,click_event:{action:"suggest_command",command:"/function sprint_racer:game_logic/0/options_signs/auto_balance"},hover_event:{action:"show_text",value:"auto balance"}}]
 
 
-function sprint_racer:game_logic/0/options_signs/
 
-tellraw @s ["",{text:"[down please]",color:"#FFFF44",bold:false,click_event:{action:"run_command",command:"/function sprint_racer:__dev_tools/menu_game_options"},hover_event:{action:"show_text",value:"down please"}}]
-tellraw @s ["",{text:"[Back]",color:"#FF7777",bold:false,click_event:{action:"run_command",command:"/function sprint_racer:__dev_tools/_menu"},hover_event:{action:"show_text",value:"Back"}}]
+tellraw @s ["",{text:"[down please]",color:"#FFFF44",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1002"},hover_event:{action:"show_text",value:"down please"}}]
+tellraw @s ["",{text:"[Back]",color:"#FF7777",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1027"},hover_event:{action:"show_text",value:"Back"}}]

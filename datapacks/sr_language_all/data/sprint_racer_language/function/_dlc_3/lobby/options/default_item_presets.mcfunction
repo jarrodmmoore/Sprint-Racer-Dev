@@ -1,6 +1,6 @@
 tellraw @a[tag=!minChat] ["",{text:" "}]
 
-data merge block 1598 80 422 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"function sprint_racer:game_logic/0/options_signs/default_item_presets"}},{text:"RESTORE",bold:true,color:"dark_blue"},{text:"DEFAULTS",bold:true,color:"dark_red"},{text:""}]},is_waxed:1b}
+data merge block 1598 80 422 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1014"}},{text:"RESTORE",bold:true,color:"dark_blue"},{text:"DEFAULTS",bold:true,color:"dark_red"},{text:""}]},is_waxed:1b}
 
 
 tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.restored_default_item_rules",color:"green"}]

@@ -8,4 +8,4 @@ tellraw @s ["",{text:"[disable halftick]",color:"#009988",bold:false,click_event
 tellraw @s ["",{text:"[restart]",color:"#009988",bold:false,click_event:{action:"suggest_command",command:"/function sprint_racer_language:_dlc_2/mid_game_vote/pass_restart"},hover_event:{action:"show_text",value:"restart"}}]
 tellraw @s ["",{text:"[back to lobby]",color:"#009988",bold:false,click_event:{action:"suggest_command",command:"/function sprint_racer_language:_dlc_2/mid_game_vote/pass_lobby"},hover_event:{action:"show_text",value:"back to lobby"}}]
 
-tellraw @s ["",{text:"[Back]",color:"#FF7777",bold:false,click_event:{action:"run_command",command:"/function sprint_racer:__dev_tools/_menu"},hover_event:{action:"show_text",value:"Back"}}]
+tellraw @s ["",{text:"[Back]",color:"#FF7777",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1027"},hover_event:{action:"show_text",value:"Back"}}]

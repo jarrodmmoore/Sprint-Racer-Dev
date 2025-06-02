@@ -1,6 +1,6 @@
 tellraw @a[tag=!minChat] ["",{text:" "}]
 
-data merge block 1588 98 440 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"function sprint_racer:game_logic/0/options_signs/disable_all_cheats"}},{text:"CHEATS",bold:true,color:"black"},{text:"[DISABLE ALL]",color:"gray"},{text:""}]},is_waxed:1b}
+data merge block 1588 98 440 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1010"}},{text:"CHEATS",bold:true,color:"black"},{text:"[DISABLE ALL]",color:"gray"},{text:""}]},is_waxed:1b}
 
 tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.cheats_disabled",color:"green"}]
 playsound minecraft:block.note_block.hat master @a
