@@ -1,25 +1,25 @@
-execute if score #AIBC_visualize value matches 1 if entity @s[scores={AIBC_dir1=1..}] run summon area_effect_cloud ~ ~ ~-1 {Particle:{type:"block",block_state:{Name:"air"}},Duration:100,WaitTime:0,Tags:["BCtrail","setDir","dir1"]}
+execute if score #AIBC_visualize value matches 1 if entity @s[scores={AIBC_dir1=1..}] run summon area_effect_cloud ~ ~ ~-1 {custom_particle:{type:"block",block_state:{Name:"air"}},Duration:100,WaitTime:0,Tags:["BCtrail","setDir","dir1"]}
 scoreboard players operation @e[tag=BCtrail,tag=setDir,type=area_effect_cloud] AIBC_dir1 = @s AIBC_dir1
 tag @e[tag=setDir,type=area_effect_cloud] remove setDir
 
-execute if score #AIBC_visualize value matches 1 if entity @s[scores={AIBC_dir2=1..}] run summon area_effect_cloud ~ ~ ~-1 {Particle:{type:"block",block_state:{Name:"air"}},Duration:100,WaitTime:0,Tags:["BCtrail","setDir","dir2"]}
+execute if score #AIBC_visualize value matches 1 if entity @s[scores={AIBC_dir2=1..}] run summon area_effect_cloud ~ ~ ~-1 {custom_particle:{type:"block",block_state:{Name:"air"}},Duration:100,WaitTime:0,Tags:["BCtrail","setDir","dir2"]}
 scoreboard players operation @e[tag=BCtrail,tag=setDir,type=area_effect_cloud] AIBC_dir1 = @s AIBC_dir2
 tag @e[tag=setDir,type=area_effect_cloud] remove setDir
 
-execute if score #AIBC_visualize value matches 1 if entity @s[scores={AIBC_dir3=1..}] run summon area_effect_cloud ~ ~ ~-1 {Particle:{type:"block",block_state:{Name:"air"}},Duration:100,WaitTime:0,Tags:["BCtrail","setDir","dir3"]}
+execute if score #AIBC_visualize value matches 1 if entity @s[scores={AIBC_dir3=1..}] run summon area_effect_cloud ~ ~ ~-1 {custom_particle:{type:"block",block_state:{Name:"air"}},Duration:100,WaitTime:0,Tags:["BCtrail","setDir","dir3"]}
 scoreboard players operation @e[tag=BCtrail,tag=setDir,type=area_effect_cloud] AIBC_dir1 = @s AIBC_dir3
 tag @e[tag=setDir,type=area_effect_cloud] remove setDir
 
-execute if score #AIBC_visualize value matches 1 if entity @s[scores={AIBC_dir4=1..}] run summon area_effect_cloud ~ ~ ~-1 {Particle:{type:"block",block_state:{Name:"air"}},Duration:100,WaitTime:0,Tags:["BCtrail","setDir","dir4"]}
+execute if score #AIBC_visualize value matches 1 if entity @s[scores={AIBC_dir4=1..}] run summon area_effect_cloud ~ ~ ~-1 {custom_particle:{type:"block",block_state:{Name:"air"}},Duration:100,WaitTime:0,Tags:["BCtrail","setDir","dir4"]}
 scoreboard players operation @e[tag=BCtrail,tag=setDir,type=area_effect_cloud] AIBC_dir1 = @s AIBC_dir4
 tag @e[tag=setDir,type=area_effect_cloud] remove setDir
 
-execute if score #AIBC_visualize value matches 1 if entity @s[scores={AIBC_event=3..6,AIBC_condition=1..}] run summon area_effect_cloud ~ ~ ~-1 {Particle:{type:"block",block_state:{Name:"air"}},Duration:100,WaitTime:0,Tags:["BCtrail","setDir","dir5"]}
-execute if score #AIBC_visualize value matches 1 if entity @s[scores={AIBC_event=10..12,AIBC_condition=1..}] run summon area_effect_cloud ~ ~ ~-1 {Particle:{type:"block",block_state:{Name:"air"}},Duration:100,WaitTime:0,Tags:["BCtrail","setDir","dir5"]}
+execute if score #AIBC_visualize value matches 1 if entity @s[scores={AIBC_event=3..6,AIBC_condition=1..}] run summon area_effect_cloud ~ ~ ~-1 {custom_particle:{type:"block",block_state:{Name:"air"}},Duration:100,WaitTime:0,Tags:["BCtrail","setDir","dir5"]}
+execute if score #AIBC_visualize value matches 1 if entity @s[scores={AIBC_event=10..12,AIBC_condition=1..}] run summon area_effect_cloud ~ ~ ~-1 {custom_particle:{type:"block",block_state:{Name:"air"}},Duration:100,WaitTime:0,Tags:["BCtrail","setDir","dir5"]}
 scoreboard players operation @e[tag=BCtrail,tag=setDir,type=area_effect_cloud] AIBC_dir1 = @s AIBC_condition
 tag @e[tag=setDir,type=area_effect_cloud] remove setDir
 
-execute if entity @s[scores={AIBC_event=2,AIBC_condition=1..}] run summon area_effect_cloud ~ ~ ~-1 {Particle:{type:"block",block_state:{Name:"air"}},Duration:100,WaitTime:0,Tags:["BCtrail","setDir","pearllook"]}
+execute if entity @s[scores={AIBC_event=2,AIBC_condition=1..}] run summon area_effect_cloud ~ ~ ~-1 {custom_particle:{type:"block",block_state:{Name:"air"}},Duration:100,WaitTime:0,Tags:["BCtrail","setDir","pearllook"]}
 scoreboard players operation @e[tag=BCtrail,tag=setDir,type=area_effect_cloud] AIBC_dir1 = @s AIBC_condition
 tag @e[tag=setDir,type=area_effect_cloud] remove setDir
 
