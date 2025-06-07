@@ -26,9 +26,9 @@ execute if entity @s[scores={gameTime=167}] run title @a subtitle ["",{text:"-",
 execute if entity @s[scores={gameTime=168}] run title @a subtitle [""]
 
 #sound effects
-execute if entity @s[scores={gameTime=100}] as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~100000 ~ 100000 .5
-execute if entity @s[scores={gameTime=120}] as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~100000 ~ 100000 .5
-execute if entity @s[scores={gameTime=140}] as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~100000 ~ 100000 .5
+execute if entity @s[scores={gameTime=100}] as @a at @s run playsound minecraft:block.note_block.pling master @s ~ 100000 ~ 100000 .5
+execute if entity @s[scores={gameTime=120}] as @a at @s run playsound minecraft:block.note_block.pling master @s ~ 100000 ~ 100000 .5
+execute if entity @s[scores={gameTime=140}] as @a at @s run playsound minecraft:block.note_block.pling master @s ~ 100000 ~ 100000 .5
 execute if entity @s[scores={gameTime=160}] as @a at @s run playsound minecraft:entity.firework_rocket.large_blast master @s ~ ~ ~ 100000 1
 
 #title animation

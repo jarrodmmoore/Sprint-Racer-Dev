@@ -9,7 +9,9 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=cheatdetected] ru
 
 #load up time data for track
 execute as @e[tag=chosenTrack] run scoreboard players operation @s worldmapID = @s rNumber
+tag @e[tag=chosenTrack,type=armor_stand,tag=customtrack] add wmCustomFocus
 execute as @e[tag=chosenTrack] run function sprint_racer:game_logic/6/worldmap_inspect
+tag @e[tag=chosenTrack,type=armor_stand,tag=customtrack] remove wmCustomFocus
 execute as @e[tag=chosenTrack] run scoreboard players reset @s worldmapID
 
 scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] currentTime

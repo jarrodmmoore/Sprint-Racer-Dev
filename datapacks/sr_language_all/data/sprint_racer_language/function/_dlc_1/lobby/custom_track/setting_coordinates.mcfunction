@@ -21,5 +21,5 @@ tellraw @a ["",{text:" "}]
 tellraw @a ["",{text:" "}]
 tellraw @a ["",{translate:"sr.lobby.choose_coordinates_for_track",color:"light_purple",bold:true}]
 tellraw @a ["",{translate:"sr.lobby.this_is_where_players_are_teleported",color:"white",bold:false}]
-execute as @a at @s run playsound minecraft:block.piston.extend master @s ~ 10000 ~ 10000 1
+execute as @a at @s run playsound minecraft:block.piston.extend master @s ~ 100000 ~ 100000 1
 tellraw @a ["",{text:" "}]
