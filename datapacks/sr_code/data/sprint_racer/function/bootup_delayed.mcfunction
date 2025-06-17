@@ -243,6 +243,7 @@ data modify storage sprint_racer:pos_calc check_array_20 set value [0,0,0,0,0,0,
 gamerule doVinesSpread false
 gamerule spawnChunkRadius 10
 gamerule disablePlayerMovementCheck true
+gamerule locatorBar false
 
 #constants
 scoreboard players set #100 value 100
