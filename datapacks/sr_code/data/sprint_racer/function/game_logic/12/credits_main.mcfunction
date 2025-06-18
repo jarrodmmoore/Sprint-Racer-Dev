@@ -7,15 +7,15 @@ scoreboard players set @s[scores={creditsSeq1=27..}] creditsSeq1 1
 execute if entity @s[scores={gameTime=200..}] run scoreboard players set @a[tag=musicDef,scores={musicTime=..50}] musicTime 1000
 
 #keep camera nodes alive
-execute unless entity @s[scores={creditsSeq2=92..}] run scoreboard players set @e[tag=c_life,type=armor_stand] lifespan 20
+execute unless entity @s[scores={creditsSeq2=94..}] run scoreboard players set @e[tag=c_life,type=armor_stand] lifespan 30
 
 #make sure we're focused on something
-execute if entity @s[scores={creditsSeq2=8..82}] unless entity @e[tag=cam_focus,tag=ai] run tag @e[limit=1,sort=random,tag=ai] add cam_focus
+execute if entity @s[scores={creditsSeq2=8..88}] unless entity @e[tag=cam_focus,tag=ai] run tag @e[limit=1,sort=random,tag=ai] add cam_focus
 
 #camera...
 execute if entity @s[scores={creditsSeq2=..7}] run function sprint_racer:game_logic/12/camera/start
-execute if entity @s[scores={creditsSeq2=8..86}] as @e[tag=cam_focus,tag=ai,limit=1] at @s run function sprint_racer:game_logic/12/camera/random
-execute if entity @s[scores={creditsSeq2=87..}] run function sprint_racer:game_logic/12/camera/end
+execute if entity @s[scores={creditsSeq2=8..88}] as @e[tag=cam_focus,tag=ai,limit=1] at @s run function sprint_racer:game_logic/12/camera/random
+execute if entity @s[scores={creditsSeq2=89..}] run function sprint_racer:game_logic/12/camera/end
 
 #end game only when credits stop
 execute if entity @s[scores={creditsSeq2=..94}] run scoreboard players set @s timeRemaining 10000
