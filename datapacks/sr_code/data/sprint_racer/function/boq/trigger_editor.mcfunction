@@ -14,6 +14,7 @@ execute unless entity @s[gamemode=creative] run return run scoreboard players re
 
 execute if score @s tEditor matches 1000..1099 run function sprint_racer:boq/trigger_editor_0_99
 execute if score @s tEditor matches 1100..1199 run function sprint_racer:boq/trigger_editor_100_199
+execute if score @s tEditor matches 1200..1299 run function sprint_racer:boq/trigger_editor_200_299
 
 #clean input
 scoreboard players reset @s tEditor
