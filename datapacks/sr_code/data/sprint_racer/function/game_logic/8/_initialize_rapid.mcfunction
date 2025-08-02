@@ -157,6 +157,7 @@ title @a actionbar [""]
 clear @a
 function sprint_racer:reset_speeds
 effect clear @a night_vision
+effect clear @a absorption
 scoreboard objectives setdisplay sidebar
 
 #DEFAULTS, these can be overwritten by a specific track's initialization function

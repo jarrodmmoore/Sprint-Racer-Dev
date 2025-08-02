@@ -25,8 +25,12 @@ tag @s remove optChoose
 tag @s remove optRoulette
 execute if block 1617 ~ 460 white_wool run tag @s add optVote
 execute if block 1617 ~ 460 orange_wool run tag @s add optRandom
+#note: [in order] requires both optRandom and optInOrder tags
+execute if block 1617 ~ 460 magenta_wool run tag @s add optRandom
 execute if block 1617 ~ 460 magenta_wool run tag @s add optInOrder
 execute if block 1617 ~ 460 light_blue_wool run tag @s add optChoose
+#node: [roulette] requires both optVote and optRoulette tags
+execute if block 1617 ~ 460 yellow_wool run tag @s add optVote
 execute if block 1617 ~ 460 yellow_wool run tag @s add optRoulette
 
 #items
