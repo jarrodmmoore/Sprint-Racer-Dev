@@ -1,3 +1,4 @@
+execute if entity @s[tag=ipBB] run function sprint_racer_language:lobby/item_names/battle_bat
 execute if entity @s[tag=ip1] run function sprint_racer_language:lobby/item_names/1
 execute if entity @s[tag=ip2] run function sprint_racer_language:lobby/item_names/2
 execute if entity @s[tag=ip3] run function sprint_racer_language:lobby/item_names/3

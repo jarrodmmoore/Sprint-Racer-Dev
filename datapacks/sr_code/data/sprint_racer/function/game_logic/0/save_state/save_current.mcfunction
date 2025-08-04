@@ -219,6 +219,8 @@ execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=tr
 #################################
 #BANNED ITEMS
 
+setblock 1619 ~ 443 lime_wool
+execute if entity @s[tag=banBattleBat] run setblock 1619 ~ 443 red_wool
 fill 1609 ~ 442 1618 ~ 443 lime_wool
 execute if entity @s[tag=banNo1] run setblock 1618 ~ 443 red_wool
 execute if entity @s[tag=banNo2] run setblock 1617 ~ 443 red_wool

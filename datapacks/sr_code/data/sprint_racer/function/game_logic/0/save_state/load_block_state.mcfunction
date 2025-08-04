@@ -376,6 +376,7 @@ execute if block 1609 ~ 445 red_wool run tag @e[limit=1,tag=trackStandB,tag=rand
 #BANNED ITEMS
 
 #first we un-ban all items
+tag @s remove banBattleBat
 tag @s remove banNo1
 tag @s remove banNo2
 tag @s remove banNo3
@@ -398,10 +399,11 @@ tag @s remove banNo19
 tag @s remove banNo20
 
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..20}] remove capsuleBan
-fill 1603 79 422 1621 79 433 oak_log replace dark_oak_log
+fill 1601 79 422 1621 79 433 oak_log replace dark_oak_log
 
 #now we do bans based on the new data we be reading
 scoreboard players set #no_cat_check value 1
+execute if block 1619 ~ 443 red_wool positioned 1601 78 422 run function sprint_racer:game_logic/0/toggle_item/0
 execute if block 1618 ~ 443 red_wool positioned 1603 78 422 run function sprint_racer:game_logic/0/toggle_item/1
 execute if block 1617 ~ 443 red_wool positioned 1605 78 422 run function sprint_racer:game_logic/0/toggle_item/2
 execute if block 1616 ~ 443 red_wool positioned 1607 78 422 run function sprint_racer:game_logic/0/toggle_item/3

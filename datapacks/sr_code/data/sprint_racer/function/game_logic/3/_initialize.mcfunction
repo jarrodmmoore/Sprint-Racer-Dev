@@ -165,6 +165,9 @@ scoreboard players set #hudCountdownSec value 0
 #re-calculate this please :)
 scoreboard players set #hudAliveAtStart value 0
 
+#variable. helps us quickly read if battle bat is banned or not without doing @e
+execute store result score #battleBatBanned value run execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banBattleBat]
+
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove initFailed
 bossbar set minecraft:menutimer players
 title @a times 0 45 5

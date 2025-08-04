@@ -28,6 +28,16 @@ execute if entity @e[tag=aiTargetG,distance=..3] if entity @s[scores={aiSkill=2,
 execute if entity @e[tag=aiTargetG,distance=..2] if entity @s[scores={aiSkill=3..,rNumber=45..50}] run tag @s add goAway
 execute unless entity @e[tag=aiTargetG,distance=..40] run tag @s add goAway
 
+#if we're a higher skill bot and within range, switch to a melee weapon
+execute if entity @s[scores={aiSkill=3..,aiBattleBasherDurability=1..}] if entity @e[tag=aiTargetG,tag=!ai_rival,distance=..4] run scoreboard players set @s aiHoldingItem 0
+execute if entity @s[scores={aiSkill=3..}] unless score #battleBatBanned value matches 1.. if entity @e[tag=aiTargetG,tag=!ai_rival,distance=..4] run scoreboard players set @s aiHoldingItem 0
+execute if entity @s[scores={aiSkill=3..,aiHasItem4=1..}] if entity @e[tag=aiTargetG,distance=..9] run scoreboard players set @s aiHoldingItem 4
+execute if entity @s[scores={aiSkill=3..,aiHasItem24=1..}] if entity @e[tag=aiTargetG,distance=..8] run scoreboard players set @s aiHoldingItem 24
+execute if entity @s[scores={aiSkill=2..,aiHasDagger=1..}] if entity @e[tag=aiTargetG,distance=..7] run scoreboard players set @s aiHoldingItem 41
+
+#battle bat banned? don't chase for too long
+execute if score #battleBatBanned value matches 1.. unless entity @s[tag=aiStronk] if entity @e[tag=aiTargetG,distance=..4] if entity @s[scores={rNumber=15..50}] run tag @s add goAway
+
 
 execute if entity @e[tag=runAway,tag=!goAway] run scoreboard players set @s aiRunAwayTime 0
 execute if entity @e[tag=runAway,tag=!goAway] run scoreboard players set @s aiRotSet 180

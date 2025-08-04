@@ -17,7 +17,7 @@ execute if entity @s[scores={oTimerGlobal=0}] run function sprint_racer:game_log
 execute if entity @s[tag=moretick,scores={oTimerGlobal=1}] run function sprint_racer:game_logic/0/misc_lobby_happenings/preview_chest_spin_extra_frames/_index
 execute if entity @s[tag=halftick,scores={oTimerGlobal=1}] run function sprint_racer:game_logic/0/misc_lobby_happenings/preview_chest_spin/_index
 
-execute as @a[x=1588,y=78,z=420,dx=36,dy=8,dz=15,gamemode=!spectator] at @s as @e[distance=..4,limit=1,sort=nearest,tag=itempreview] at @s run function sprint_racer:game_logic/0/misc_lobby_happenings/show_item_names
+execute as @a[x=1588,y=78,z=420,dx=36,dy=8,dz=15,gamemode=!spectator] at @s as @e[distance=..4,limit=1,sort=nearest,tag=itempreview,type=item] at @s run function sprint_racer:game_logic/0/misc_lobby_happenings/show_item_names
 
 #jailbirds need to exist
 execute unless entity @s[tag=optRAInever] if block 1620 88 353 air if block 1620 88 363 air unless entity @e[limit=1,sort=nearest,type=zombie,tag=jailz1] run function sprint_racer:game_logic/0/props/update_jail_zombies

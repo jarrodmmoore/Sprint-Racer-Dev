@@ -99,6 +99,8 @@ summon item_display 1596 90 356 {Tags:["lobbyprop"],UUID:[I;2345,54670,3450,1230
 execute as 00000929-0000-d58e-0000-0d7a000004ce at @s run tp @s ~ ~.5 ~ 180 0
 
 #preview items
+summon item 1601 80 422 {Tags:["lobbyprop","itempreview","ipBB"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:wooden_sword",count:1,components:{"minecraft:item_model":"sr/item/battle_bat_drop","minecraft:custom_data":{stay:1b}}}}
+
 summon item 1603 80 422 {Tags:["lobbyprop","itempreview","ip1"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:snowball",count:3,components:{"minecraft:custom_data":{stay:1b}}}}
 summon item 1605 80 422 {Tags:["lobbyprop","itempreview","ip2"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:dispenser",count:3,components:{"minecraft:custom_data":{stay:1b}}}}
 summon item 1607 80 422 {Tags:["lobbyprop","itempreview","ip3"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:tnt",count:3,components:{"minecraft:custom_data":{stay:1b}}}}

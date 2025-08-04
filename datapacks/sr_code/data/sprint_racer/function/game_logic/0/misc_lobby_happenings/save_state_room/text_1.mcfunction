@@ -12,6 +12,7 @@ execute positioned 1615 89 458 positioned ~.5 ~ ~.5 run function sprint_racer_la
 #saved state
 scoreboard players set global value 1
 scoreboard players set global math 0
+execute if block 1619 ~ 443 red_wool run scoreboard players add global math 1
 execute if block 1618 ~ 443 red_wool run scoreboard players add global math 1
 execute if block 1617 ~ 443 red_wool run scoreboard players add global math 1
 execute if block 1616 ~ 443 red_wool run scoreboard players add global math 1
