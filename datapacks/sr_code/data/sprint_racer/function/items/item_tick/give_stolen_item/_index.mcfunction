@@ -9,3 +9,4 @@ execute if entity @s[scores={giveItem=111..115}] run function sprint_racer:items
 execute if entity @s[scores={giveItem=116..120}] run function sprint_racer:items/item_tick/give_stolen_item/_index_116_120
 execute if entity @s[scores={giveItem=121}] run function sprint_racer:items/item_tick/give_stolen_item/elite_fishing_rod
 execute if entity @s[scores={giveItem=122}] run function sprint_racer:items/item_tick/give_stolen_item/battle_basher
+execute if entity @s[scores={giveItem=123}] run function sprint_racer:items/item_tick/give_stolen_item/obliterator

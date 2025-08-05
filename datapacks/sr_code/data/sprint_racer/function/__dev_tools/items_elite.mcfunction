@@ -26,6 +26,7 @@ tellraw @s ["",{text:"[elite19]",color:"#EE22EE",bold:false,click_event:{action:
 tellraw @s ["",{text:"[elite20]",color:"#EE22EE",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1025"},hover_event:{action:"show_text",value:"thunder storm"}}]
 
 tellraw @s ["",{text:"[fishing_rod]",color:"#FF4444",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1026"},hover_event:{action:"show_text",value:"fishing rod"}}]
+tellraw @s ["",{text:"[obliterator]",color:"#FF4444",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1287"},hover_event:{action:"show_text",value:"obliterator"}}]
 
 tellraw @s ["",{text:"[Normal Items]",color:"aqua",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1003"},hover_event:{action:"show_text",value:"Normal Items"}}]
 

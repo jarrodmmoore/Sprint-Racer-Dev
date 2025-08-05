@@ -14,3 +14,5 @@ execute if items entity @s weapon.mainhand *[custom_data~{elite17:1b}] run funct
 execute if items entity @s weapon.mainhand *[custom_data~{elite18:1b}] run function sprint_racer:items/item_tick/elite/deploy_enderman_stronk
 execute if items entity @s weapon.mainhand *[custom_data~{elite19:1b}] run function sprint_racer:items/item_tick/elite/deploy_squid_angry
 execute if items entity @s weapon.mainhand *[custom_data~{elite20:1b}] run function sprint_racer:items/item_tick/elite/cast_storm
+
+execute if items entity @s weapon.mainhand *[custom_data~{eliteObliterator:1b}] run function sprint_racer:items/item_tick/elite/shoot_obliterator

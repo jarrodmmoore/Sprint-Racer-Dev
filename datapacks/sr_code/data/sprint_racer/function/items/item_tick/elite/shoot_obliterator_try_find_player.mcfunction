@@ -1,0 +1,2 @@
+execute positioned ^ ^ ^-2 if entity @e[tag=activeplayer,tag=!beamIgnore,distance=..6] positioned ^ ^ ^-2 run function sprint_racer:items/item_tick/elite/shoot_obliterator_try_find_player_go
+scoreboard players set #test value 0
