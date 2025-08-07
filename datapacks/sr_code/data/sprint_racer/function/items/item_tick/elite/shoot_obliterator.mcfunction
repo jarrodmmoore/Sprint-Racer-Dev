@@ -17,7 +17,7 @@ execute as @e[tag=getBeamed] run function sprint_racer:items/item_tick/elite/sho
 
 #feedback
 playsound minecraft:entity.wither.hurt master @a ~ ~ ~ 1.5 0.8
-playsound minecraft:block.beacon.activate master @a ~ ~ ~ 1.5 0.6
+playsound minecraft:block.beacon.activate master @a ~ ~ ~ 1.5 0.9
 
 #cleanup
 tag @e[tag=beamIgnore] remove beamIgnore
