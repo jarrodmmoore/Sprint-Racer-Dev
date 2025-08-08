@@ -77,6 +77,7 @@ scoreboard objectives add validEntity dummy
 
 #prevent invalid roundNumber stuff
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optBattle,scores={roundNumber=6..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optBattle,tag=optChoose,scores={roundNumber=6..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optBattle,tag=!optChoose] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 5
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optRace,scores={roundNumber=5..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optRace,scores={roundNumber2=4..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber2 1

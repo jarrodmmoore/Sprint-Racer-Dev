@@ -1,4 +1,4 @@
-#clear @s observer[custom_data~{eliteObliterator:1b}] 1
+clear @s observer[custom_data~{eliteObliterator:1b}] 1
 
 #pick targets
 tag @s add beamIgnore
@@ -13,7 +13,7 @@ execute if entity @s[tag=playerCyan] positioned ~ ~1.8 ~ positioned ^ ^ ^1 run f
 
 #damage anyone hit by the raycast
 scoreboard players operation #checkID value = @s playerID
-execute as @e[tag=getBeamed] run function sprint_racer:items/item_tick/elite/shoot_obliterator_hit_player
+execute as @e[tag=getBeamed] at @s run function sprint_racer:items/item_tick/elite/shoot_obliterator_hit_player
 
 #feedback
 playsound minecraft:entity.wither.hurt master @a ~ ~ ~ 1.5 0.8

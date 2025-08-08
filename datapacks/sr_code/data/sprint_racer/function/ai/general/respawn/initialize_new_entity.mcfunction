@@ -113,6 +113,7 @@ scoreboard players set @s aiHasItem39 0
 scoreboard players set @s aiHasItem40 0
 scoreboard players set @s aiHasDagger 0
 scoreboard players set @s aiHasFirework 0
+scoreboard players set @s aiHasObliterator 0
 
 scoreboard players operation @s playerLives = @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] playerLives
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=3,gamemodePresetB=2}] if score @s playerLives matches ..2 run tag @s add ai_fearful

@@ -27,6 +27,7 @@ execute if entity @s[scores={rNumber=20}] if entity @e[tag=w,x=1560,y=150,z=406,
 execute if entity @s[scores={rNumber=1..20}] run function sprint_racer:items/container_spawn/capsule_seeded_resource_control
 execute if entity @s[scores={rNumber=21}] run function sprint_racer:items/container_spawn/enchanting_table
 execute if entity @s[scores={rNumber=22}] run function sprint_racer:items/container_spawn/cake
+execute if entity @s[scores={rNumber=23}] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=banNo2] run function sprint_racer:items/container_spawn/capsule_seeded_resource_control
 
 #item is banned, don't try to respawn
 execute if entity @s[scores={rNumber=0}] run scoreboard players set @s itemBlockState 0

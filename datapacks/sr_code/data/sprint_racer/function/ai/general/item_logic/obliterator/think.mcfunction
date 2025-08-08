@@ -11,10 +11,10 @@ scoreboard players set @s[tag=!good2throw,scores={aiHasObliterator=1..}] aiHoldi
 scoreboard players set @s[tag=!good2throw,scores={aiHasObliterator=1..}] aiActICooldown 10
 
 #lower difficulty bots more likely to put away if no shot happened
-execute store result score #test value run random value 1..10
-execute if entity @s[tag=good2throw,scores={aiSkill=3..}] if score #test value matches 10 run scoreboard players set @s aiHoldingItem 0
-execute if entity @s[tag=good2throw,scores={aiSkill=2}] if score #test value matches 8..10 run scoreboard players set @s aiHoldingItem 0
-execute if entity @s[tag=good2throw,scores={aiSkill=..1}] if score #test value matches 6..10 run scoreboard players set @s aiHoldingItem 0
+#execute store result score #test value run random value 1..10
+#execute if entity @s[tag=good2throw,scores={aiSkill=3..}] if score #test value matches 10 run scoreboard players set @s aiHoldingItem 0
+#execute if entity @s[tag=good2throw,scores={aiSkill=2}] if score #test value matches 8..10 run scoreboard players set @s aiHoldingItem 0
+#execute if entity @s[tag=good2throw,scores={aiSkill=..1}] if score #test value matches 6..10 run scoreboard players set @s aiHoldingItem 0
 
 tag @s remove good2throw
 tag @e[tag=projectTarget] remove projectTarget

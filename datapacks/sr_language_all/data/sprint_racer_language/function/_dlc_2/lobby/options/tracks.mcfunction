@@ -41,6 +41,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag 
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optRandom
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.track_selection_player_choice",color:"green"},{text:" "},{text:"[?]",color:"yellow",bold:true,hover_event:{action:"show_text",value:[{translate:"sr.lobby.info.choose",color:"yellow"}]}}]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run clear @a written_book[custom_data={notitle:1b}]
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optChoose,tag=optBattle] roundNumber = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optChoose,tag=optBattle] roundNumber2
 #execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
 #execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber2 1
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run playsound minecraft:block.note_block.hat master @a
@@ -57,6 +58,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag 
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optChoose
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.track_selection_roulette",color:"green"},{text:" "},{text:"[?]",color:"yellow",bold:true,hover_event:{action:"show_text",value:[{translate:"sr.lobby.info.roulette",color:"yellow"}]}}]
 #execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optBattle,scores={roundNumber2=4..}] roundNumber2 3
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB,scores={gameState=0}] run function sprint_racer:game_logic/0/_initialize
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB,scores={gameState=0}] run function sprint_racer_language:lobby/reset_lobby
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run playsound minecraft:block.note_block.hat master @a

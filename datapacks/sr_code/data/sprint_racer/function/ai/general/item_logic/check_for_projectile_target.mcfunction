@@ -1,4 +1,6 @@
 tag @s add self
+execute if entity @s[tag=playerCyan] run tag @e[tag=activeplayer,tag=playerCyan] add self
+execute if entity @s[tag=playerOrange] run tag @e[tag=activeplayer,tag=playerOrange] add self
 
 tag @s remove good2throw
 scoreboard players set #good2throw value 0
@@ -27,4 +29,6 @@ scoreboard players set #LOS_range value 61
 execute if entity @e[tag=projectTarget] facing entity @e[tag=projectTarget] eyes run function sprint_racer:ai/general/item_logic/check_for_projectile_target_recursive
 execute if score #good2throw value matches 1 run tag @s add good2throw
 
+execute if entity @s[tag=playerCyan] run tag @e[tag=activeplayer,tag=playerCyan] remove self
+execute if entity @s[tag=playerOrange] run tag @e[tag=activeplayer,tag=playerOrange] remove self
 tag @s remove self

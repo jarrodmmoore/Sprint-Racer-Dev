@@ -168,6 +168,10 @@ scoreboard players set #hudAliveAtStart value 0
 #variable. helps us quickly read if battle bat is banned or not without doing @e
 execute store result score #battleBatBanned value run execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banBattleBat]
 
+#another variable. helps us quickly read if we should give all players the obliterator
+#(this is an easter egg side mode kind of thing. happens when you play a battle with no items and no battle bat)
+execute store result score #battleGiveObliterator value run execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banBattleBat,tag=optNoItems]
+
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove initFailed
 bossbar set minecraft:menutimer players
 title @a times 0 45 5

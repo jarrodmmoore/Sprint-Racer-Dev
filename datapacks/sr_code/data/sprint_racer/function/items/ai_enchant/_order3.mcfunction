@@ -3,7 +3,7 @@ execute if entity @s[tag=!enchDone,scores={aiHasItem17=1..}] run function sprint
 execute if entity @s[tag=!enchDone,scores={aiHasItem18=1..}] run function sprint_racer:items/ai_enchant/18
 execute if entity @s[tag=!enchDone,scores={aiHasItem19=1..}] run function sprint_racer:items/ai_enchant/19
 execute if entity @s[tag=!enchDone,scores={aiHasItem20=1..}] run function sprint_racer:items/ai_enchant/20
-execute if score global gameState matches 3 if entity @s[tag=!enchDone] unless score @s aiBattleBasherDurability matches 1.. run function sprint_racer:items/ai_enchant/battle_bat
+execute if score global gameState matches 3 unless score #battleBatBanned value matches 1.. if entity @s[tag=!enchDone] unless score @s aiBattleBasherDurability matches 1.. run function sprint_racer:items/ai_enchant/battle_bat
 execute if entity @s[tag=!enchDone,scores={aiHasItem1=1..}] run function sprint_racer:items/ai_enchant/1
 execute if entity @s[tag=!enchDone,scores={aiHasItem2=1..}] run function sprint_racer:items/ai_enchant/2
 execute if entity @s[tag=!enchDone,scores={aiHasItem3=1..}] run function sprint_racer:items/ai_enchant/3

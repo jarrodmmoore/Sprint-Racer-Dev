@@ -113,7 +113,7 @@ scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optBattle,tag=optChoose,scores={roundNumber=6..}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add ceremony
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!optBattle,scores={roundNumber=6..}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add ceremony
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optBattle,tag=!optChoose,scores={roundNumber2=4..}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add ceremony
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optRace,scores={roundNumber=5..}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add ceremony
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optRace,tag=!optChoose,scores={roundNumber=5..}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add ceremony
 execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix,limit=1] if score @s gpRound > @s gpNumber run tag @s add ceremony
 
 #random track mode will skip the lobby unless everyone went spectator for some reason

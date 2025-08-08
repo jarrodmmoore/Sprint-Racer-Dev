@@ -16,6 +16,8 @@ execute if score @s lastCatPicked matches 4 if score #catTotal value matches 2..
 #pick a random number, ignoring any banned item types
 scoreboard players set @s rNumber 0
 scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=!tempBan,scores={rNumber=1..50}] rNumber
+#battle bat banned? re-roll if we didn't get an offensive item
+execute if score #battleBatbanned value matches 1.. unless score @s rNumber matches 1..23 run scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=!tempBan,scores={rNumber=1..50}] rNumber
 
 execute if entity @s[scores={rNumber=0}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banRedItem,tag=banYelItem,tag=banGreItem,tag=banBluItem,tag=!banPurItem] run scoreboard players set @s rNumber 51
 

@@ -28,3 +28,5 @@ execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{no19:1b}}}}
 execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{no20:1b}}}}] run return run execute as @e[tag=capsuleCollect,distance=..5] run function sprint_racer_language:gameplay/give_item/no20
 
 execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{fishing_rod:1b}}}}] run return run execute as @e[tag=capsuleCollect,distance=..5] run function sprint_racer_language:gameplay/give_item/fishing_rod
+
+execute if entity @s[nbt={Item:{components:{"minecraft:custom_data":{eliteObliterator:1b}}}}] run return run execute as @e[tag=capsuleCollect,distance=..5] run function sprint_racer_language:_dlc_6/gameplay/give_obliterator {count:3}

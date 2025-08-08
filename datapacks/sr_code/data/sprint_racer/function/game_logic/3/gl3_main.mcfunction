@@ -9,3 +9,5 @@ execute if entity @s[tag=customTesting] run scoreboard players set @a afkTime 0
 #give battle bat item
 execute unless score #battleBatBanned value matches 1.. if entity @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=allowPVP] run effect give @a minecraft:strength 10 0 true
 execute unless score #battleBatBanned value matches 1.. unless entity @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=allowPVP] as @a[gamemode=adventure,tag=playing] at @s run function sprint_racer:game_logic/3/player_check_for_battle_bat
+#or obliterator if no items and battle bat banned
+execute if score #battleGiveObliterator value matches 1.. as @a[gamemode=adventure,tag=playing] at @s run function sprint_racer:game_logic/3/player_check_for_obliterator
