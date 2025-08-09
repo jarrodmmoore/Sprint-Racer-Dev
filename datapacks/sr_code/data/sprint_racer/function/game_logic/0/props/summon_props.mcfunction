@@ -99,8 +99,6 @@ summon item_display 1596 90 356 {Tags:["lobbyprop"],UUID:[I;2345,54670,3450,1230
 execute as 00000929-0000-d58e-0000-0d7a000004ce at @s run tp @s ~ ~.5 ~ 180 0
 
 #preview items
-summon item 1601 80 422 {Tags:["lobbyprop","itempreview","ipBB"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:wooden_sword",count:1,components:{"minecraft:item_model":"sr/item/battle_bat_drop","minecraft:custom_data":{stay:1b}}}}
-
 summon item 1603 80 422 {Tags:["lobbyprop","itempreview","ip1"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:snowball",count:3,components:{"minecraft:custom_data":{stay:1b}}}}
 summon item 1605 80 422 {Tags:["lobbyprop","itempreview","ip2"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:dispenser",count:3,components:{"minecraft:custom_data":{stay:1b}}}}
 summon item 1607 80 422 {Tags:["lobbyprop","itempreview","ip3"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:tnt",count:3,components:{"minecraft:custom_data":{stay:1b}}}}
@@ -123,6 +121,11 @@ summon item 1617 80 433 {Tags:["lobbyprop","itempreview","ip18"],PickupDelay:327
 summon item 1619 80 433 {Tags:["lobbyprop","itempreview","ip19"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:blue_terracotta",count:1,components:{"minecraft:item_model":"sr/item/blinding_squid","minecraft:custom_data":{stay:1b}}}}
 summon item 1621 80 433 {Tags:["lobbyprop","itempreview","ip20"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:blaze_rod",count:1,components:{"minecraft:custom_data":{stay:1b}}}}
 
+#v1.6.9: item stand for Battle Bat was added. make sure it's there!
+execute unless block 1601 78 422 command_block run setblock 1601 79 422 oak_log
+execute unless block 1601 78 422 command_block run setblock 1601 79 423 oak_button[face=wall,facing=south]
+execute unless block 1601 78 422 command_block run setblock 1601 78 422 command_block{Command:"function sprint_racer:game_logic/0/toggle_item/0"}
+summon item 1601 80 422 {Tags:["lobbyprop","itempreview","ipBB"],PickupDelay:32767,Age:-32768,NoGravity:0b,Invulnerable:1b,Item:{id:"minecraft:wooden_sword",count:1,components:{"minecraft:item_model":"sr/item/battle_bat_drop","minecraft:custom_data":{stay:1b}}}}
 
 #summon random lookin villagers to walk around
 scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] rNumber = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,type=armor_stand,scores={rNumber=1..4}] rNumber
