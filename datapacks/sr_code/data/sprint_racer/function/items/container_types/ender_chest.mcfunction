@@ -3,7 +3,7 @@ execute as @e[tag=chestTarget,type=armor_stand,distance=..3] at @s run playsound
 execute as @e[tag=chestTarget,type=armor_stand,distance=..3] at @s run playsound minecraft:block.stone.break master @a ~ ~ ~ 2 .75
 execute as @e[tag=chestTarget,type=armor_stand,distance=..3] at @s run particle block{block_state:"minecraft:ender_chest"} ~ ~1.5 ~ .2 .2 .2 1 20
 execute as @e[tag=chestTarget,tag=!homer,type=armor_stand,distance=..3] at @s positioned ~ ~1 ~ run scoreboard players set @e[limit=1,sort=nearest,tag=itemchest,tag=node] itemBlockState 1000
-kill @e[tag=chestTarget,type=armor_stand,distance=..3]
+execute as @e[tag=chestTarget,type=armor_stand,distance=..3] run function sprint_racer:items/container_types/destroy_chest_target
 
 function sprint_racer:items/pick_item/random_elite/_main
 #cheat 15 enabled? get an extra random item

@@ -6,6 +6,8 @@ kill @e[type=tnt]
 
 bossbar set minecraft:menutimer players
 
+#clear displays and stuff
+execute if entity @s[scores={gameTime=100000}] run function sprint_racer:speedometer/enable_xp_bar
 execute if entity @s[scores={gameTime=100000}] run function sprint_racer:clear_bossbars
 execute if entity @s[scores={gameTime=100000}] run gamemode spectator @a
 execute if entity @s[scores={gameTime=100000..100010}] run bossbar set timeremaining players

@@ -1,2 +1,2 @@
-scoreboard players operation global math2 = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..20}] rNumber
-execute if score global math2 matches 1 run scoreboard players set @e[tag=cSETME] itemBlockState 12
+execute store result score global math2 run random value 1..20
+execute if score global math2 matches 1 run scoreboard players set @e[tag=cSETME,type=armor_stand] itemBlockState 12

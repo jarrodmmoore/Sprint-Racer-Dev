@@ -168,6 +168,7 @@ scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand
 bossbar set gauntlettime max 11980
 scoreboard players set #gauntletTimeMins value 10
 gamerule doDaylightCycle false
+function sprint_racer:speedometer/enable_xp_bar
 tag @a remove darkHUD
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove hideLaps
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add noCharity

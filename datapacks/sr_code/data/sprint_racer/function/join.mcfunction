@@ -27,8 +27,12 @@ execute if score @s hitsound matches -999.. run scoreboard players operation #hi
 scoreboard players set #aiLevel value -1000
 execute if score @s aiLevel matches 0.. run scoreboard players operation #aiLevel value = @s aiLevel
 
-#swim fastly always
+#swim fast always
 attribute @s minecraft:water_movement_efficiency base set 1
+
+#waypoint transmit range
+attribute @s minecraft:waypoint_transmit_range base reset
+waypoint modify @s style set minecraft:battle_player
 
 #RESET ALL SCORES
 scoreboard players reset @s
@@ -36,6 +40,9 @@ scoreboard players reset @s
 scoreboard players set @s playerID 0
 scoreboard players set @s attackerID 0
 scoreboard players set @s attackTime 0
+
+xp set @s 0 levels
+xp set @s 0 points
 
 #set stats to default
 function sprint_racer:cheats/shoes/0

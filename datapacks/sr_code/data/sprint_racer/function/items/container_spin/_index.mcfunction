@@ -1,3 +1,6 @@
+#man, look at this graveyard of old code...
+
+
 #all chests rotate together
 #global rotation is tracked by "w" via itemBlockState
 
@@ -20,4 +23,7 @@
 #execute if score #chestSpin value matches 3.. as @e[tag=itemcontainer,type=armor_stand] at @s run tp @s ~ ~ ~ ~18 ~
 #execute if score #chestSpin value matches 3.. run scoreboard players remove #chestSpin value 3
 
-execute as @e[tag=itemcontainer,type=armor_stand] at @s run rotate @s ~6 ~
+#execute as @e[tag=itemcontainer,type=armor_stand] at @s run rotate @s ~6 ~
+
+
+execute as @e[tag=itemcontainer,type=armor_stand] on passengers if entity @s[type=item_display] run function sprint_racer:items/container_spin/display_spin

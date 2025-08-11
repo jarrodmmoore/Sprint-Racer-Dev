@@ -176,7 +176,7 @@ execute as @a[tag=playing,gamemode=!spectator] run scoreboard players add @e[tag
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=speedo,tag=!nospeedo] as @a[limit=1,tag=playing] at @s run function sprint_racer:speedometer/speedo_main
 
 #xp-bar speedometer
-function sprint_racer:speedometer/xp_bar_main
+execute unless score #xpBarEnabled value matches 0 run function sprint_racer:speedometer/xp_bar_main
 
 
 #potion effects

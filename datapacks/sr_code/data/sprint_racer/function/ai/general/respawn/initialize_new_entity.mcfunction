@@ -151,5 +151,12 @@ execute if entity @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,t
 
 effect give @s resistance 1 200 true
 
+#waypoint stuff for battle mode
+attribute @s waypoint_transmit_range base set 60000000
+waypoint modify @s style set minecraft:battle_player
+#waypoint modify @s color red
+#waypoint modify @s[tag=playerOrange] color gold
+#waypoint modify @s[tag=playerCyan] color dark_aqua
+
 #held item in battle mode
 execute if score global gameState matches 3 unless score #battleBatBanned value matches 1.. run item replace entity @s weapon.mainhand with wooden_sword[item_model="sr/item/battle_bat"]

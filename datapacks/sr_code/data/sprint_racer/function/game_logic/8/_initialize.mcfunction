@@ -166,6 +166,7 @@ scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] check 3
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 5009
 gamerule doDaylightCycle false
+function sprint_racer:speedometer/enable_xp_bar
 tag @a remove darkHUD
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove hideLaps
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add noCharity

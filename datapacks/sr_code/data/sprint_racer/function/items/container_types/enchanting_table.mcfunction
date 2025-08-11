@@ -12,7 +12,7 @@ execute as @e[tag=chestTarget,type=armor_stand,limit=1,sort=nearest,distance=..3
 execute as @e[tag=chestTarget,type=armor_stand,limit=1,sort=nearest,distance=..3] at @s positioned ~ ~1 ~ run scoreboard players set @e[limit=1,sort=nearest,tag=itemchest,tag=node] itemBlockState 1000
 #execute as @e[tag=chestTarget,type=armor_stand,limit=1,sort=nearest,distance=..3] at @s run kill @e[limit=1,sort=nearest,type=item,tag=enchantBook,distance=..3]
 #execute as @e[type=item,tag=enchantBook] at @s unless entity @e[type=armor_stand,tag=itemcontainer,distance=..2] run kill @s
-kill @e[tag=chestTarget,type=armor_stand,limit=1,sort=nearest]
+execute as @e[tag=chestTarget,type=armor_stand,distance=..3] run function sprint_racer:items/container_types/destroy_chest_target
 
 execute if entity @s[tag=!ai,tag=holdingNitem] run function sprint_racer:items/enchant_index
 execute if entity @s[tag=ai,tag=holdingNitem] run function sprint_racer:items/ai_enchant/__index

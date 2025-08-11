@@ -69,6 +69,9 @@ execute if entity @s[scores={gameTime=160}] run tag @a[limit=1] add spdbump
 execute if entity @s[scores={gameTime=160}] as @a run function sprint_racer:save_coordinates
 execute if entity @s[scores={gameTime=160}] as @a unless score @s cStatRequest = @s cStatType at @s run function sprint_racer:cheats/shoes/handle_stat_request
 
+#show locator bar after "GO!"
+execute if entity @s[scores={gameTime=160}] run function sprint_racer:speedometer/disable_xp_bar
+
 #start music after "GO!"
 execute if entity @s[scores={gameTime=160}] run function sprint_racer:music/global/pick_track
 

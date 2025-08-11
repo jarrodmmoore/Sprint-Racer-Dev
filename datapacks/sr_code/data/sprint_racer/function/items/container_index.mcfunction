@@ -1,4 +1,4 @@
-clear @s book[custom_data~{enchbook:1b}]
+#clear @s book[custom_data~{enchbook:1b}]
 
 execute if entity @s[scores={itemBlockState=1,itemCooldown=..0}] run function sprint_racer:items/container_types/item_chest
 execute if entity @s[scores={itemBlockState=2,itemCooldown=..0}] run function sprint_racer:items/container_types/enchanting_table

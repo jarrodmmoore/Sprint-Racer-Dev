@@ -13,6 +13,8 @@ function sprint_racer:game_logic/3/fast_rank_calc/_start
 
 execute if entity @s[scores={gameTime=100000}] run scoreboard players set @s specJoinTime 0
 
+#clear displays and stuff
+execute if entity @s[scores={gameTime=100000}] run function sprint_racer:speedometer/enable_xp_bar
 execute if entity @s[scores={gameTime=100000}] run function sprint_racer:clear_bossbars
 execute if entity @s[scores={gameTime=100000}] run scoreboard players set @a gAppleTime 0
 execute if entity @s[scores={gameTime=100000}] run function sprint_racer:ai/general/ai_disable_all

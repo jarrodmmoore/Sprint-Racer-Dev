@@ -11,8 +11,10 @@ kill @e[tag=trap]
 kill @e[type=tnt]
 effect clear @a wither
 effect give @a instant_health 1 10 true
-execute as @e[tag=ai] run data merge entity @s {Health:"1020b"}
+execute as @e[tag=ai] run data merge entity @s {Health:1020}
 
+#clear displays and stuff
+execute if entity @s[scores={gameTime=100000}] run function sprint_racer:speedometer/enable_xp_bar
 execute if entity @s[scores={gameTime=100000}] run function sprint_racer:clear_bossbars
 execute if entity @s[scores={gameTime=100000}] run scoreboard players set @a gAppleTime 0
 execute if entity @s[scores={gameTime=100000}] run scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,tag=!aiDisable] finishPos 1

@@ -4,6 +4,7 @@ execute unless entity @a[tag=musicDef,scores={BGMtrack=1..2}] run function sprin
 
 worldborder warning distance 0
 gamerule fallDamage true
+function sprint_racer:speedometer/enable_xp_bar
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove customTesting
 
