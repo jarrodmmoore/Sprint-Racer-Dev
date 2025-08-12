@@ -1,5 +1,5 @@
-summon armor_stand ~ ~-2 ~ {Tags:["itemcontainer","chest3","cSETME"],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,equipment:{head:{id:"glass",count:1,components:{"minecraft:item_model":"sr/container/glass"}}},DisabledSlots:2039583,Passengers:[ \
-    {id:"minecraft:item_display",Tags:["setChestDisplay"],item:{id:"minecraft:glass",count:1,components:{"minecraft:item_model":"sr/container/glass"}},item_display:"head",teleport_duration:10,interpolation_duration:0} \
+summon armor_stand ~ ~-2 ~ {Tags:["itemcontainer","chest3","cSETME"],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,DisabledSlots:2039583,Passengers:[ \
+    {id:"minecraft:item_display",Tags:["setChestDisplay"],item:{id:"minecraft:glass",count:1,components:{"minecraft:item_model":"sr/container/glass"}},item_display:"head",teleport_duration:10,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.3f,0f],scale:[0.6f,0.6f,0.6f]}} \
 ]}
 
 #visual display setup

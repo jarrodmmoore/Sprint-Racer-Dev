@@ -4,9 +4,10 @@ scoreboard players set @s attackTime 100
 tag @a remove kaboom
 
 execute as @e[tag=kaboom,distance=..10,limit=1] at @s positioned ~ ~1.1 ~ run kill @e[type=item,distance=..2,tag=itemcontainer]
-execute as @e[tag=kaboom,distance=..10,limit=1] at @s positioned ~ ~1.1 ~ run kill @e[distance=..2,tag=itemcontainer,tag=!kaboom,scores={itemBlockState=10}]
+execute as @e[tag=kaboom,distance=..10,limit=1] at @s positioned ~ ~1.1 ~ as @e[distance=..2,tag=itemcontainer,tag=!kaboom,scores={itemBlockState=10}] run function sprint_racer:items/container_types/destroy_chest_target
 execute as @e[tag=kaboom,tag=land_mine,distance=..10,limit=1] at @s positioned ~ ~2.2 ~ run function sprint_racer:explode
 execute as @e[tag=kaboom,distance=..10,limit=1] at @s positioned ~ ~1.1 ~ run function sprint_racer:explode
-kill @e[tag=kaboom,distance=..15]
+execute as @e[tag=kaboom,distance=..15] run function sprint_racer:items/container_types/destroy_chest_target
+#kill @e[tag=kaboom,distance=..15]
 
 scoreboard players set @s itemBlockState 0
