@@ -8,4 +8,4 @@
 #kill any invalid chests from previous rounds
 tag @e[tag=cValid] remove cValid
 #tag @e[tag=itemcontainer,scores={itemBlockState=..999}] add cValid
-kill @e[tag=itemcontainer,tag=!cValid]
+execute as @e[tag=itemcontainer,tag=!cValid] at @s run function sprint_racer:items/container_delete

@@ -2,7 +2,7 @@ function sprint_racer:levels/crash_course/map
 
 #slow on the first lap to absorb information better... just kidding I commented that out nevermind
 #execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=160..}] run effect give @a[tag=playing,gamemode=adventure,scores={lapFake=..1}] slowness 1 1 false
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1}] unless entity @a[scores={lapFake=2..}] run kill @e[tag=itemcontainer,type=armor_stand]
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1}] unless entity @a[scores={lapFake=2..}] as @e[tag=itemcontainer] at @s run function sprint_racer:items/container_delete
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1}] if score #halftick value matches 1 unless entity @a[scores={lapFake=2..}] run scoreboard players set @e[tag=node,tag=itemchest,scores={nodeState=1..}] itemBlockState 10
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1}] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=halftick] unless entity @a[scores={lapFake=2..}] run scoreboard players set @e[tag=node,tag=itemchest,scores={nodeState=1..}] itemBlockState 5
 

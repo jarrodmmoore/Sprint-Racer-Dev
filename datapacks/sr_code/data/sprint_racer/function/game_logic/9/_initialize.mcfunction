@@ -48,7 +48,7 @@ kill @e[tag=lobbyprop]
 kill @e[tag=roundDisplay,type=armor_stand]
 kill @e[tag=cDisplay,type=armor_stand]
 kill @e[tag=cDisplay2,type=armor_stand]
-kill @e[tag=itemcontainer]
+execute as @e[tag=itemcontainer] at @s run function sprint_racer:items/container_delete
 
 #no options signs in here, please
 fill 1581 77 366 1581 78 375 air

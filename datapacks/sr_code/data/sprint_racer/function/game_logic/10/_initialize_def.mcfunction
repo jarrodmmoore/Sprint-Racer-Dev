@@ -89,7 +89,7 @@ kill @e[tag=lobbyprop]
 kill @e[tag=roundDisplay,type=armor_stand]
 kill @e[tag=cDisplay,type=armor_stand]
 kill @e[tag=cDisplay2,type=armor_stand]
-kill @e[tag=itemcontainer]
+execute as @e[tag=itemcontainer] at @s run function sprint_racer:items/container_delete
 
 #clone sign data
 function sprint_racer:game_logic/10/clone_sign_data

@@ -16,7 +16,7 @@ execute if entity @s[scores={gameTime=51..55}] run title @a title [""]
 execute if score #getOnWithIt value matches 1 if score @s gameTime matches 0 run scoreboard players set @s gameTime 40
 
 #kill any old item containers and traps that might be knocking about
-execute if entity @s[scores={gameTime=40}] run kill @e[tag=itemcontainer]
+execute if entity @s[scores={gameTime=40}] as @e[tag=itemcontainer] at @s run function sprint_racer:items/container_delete
 execute if entity @s[scores={gameTime=40}] run kill @e[tag=trap]
 execute if entity @s[scores={gameTime=40}] run kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{item:1b}}}}]
 

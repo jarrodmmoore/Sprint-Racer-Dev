@@ -68,7 +68,7 @@ kill @e[tag=lobbyprop]
 kill @e[tag=roundDisplay,type=armor_stand]
 kill @e[tag=cDisplay,type=armor_stand]
 kill @e[tag=cDisplay2,type=armor_stand]
-kill @e[tag=itemcontainer]
+execute as @e[tag=itemcontainer] at @s run function sprint_racer:items/container_delete
 
 #summon some props
 summon armor_stand 1595 68 440 {Tags:["lobbyprop","gp_round_show"],DisabledSlots:4144959,NoGravity:1b,Invulnerable:1b,Invisible:1b}

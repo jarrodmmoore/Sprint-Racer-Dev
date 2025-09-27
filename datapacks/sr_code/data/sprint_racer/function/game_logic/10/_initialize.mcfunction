@@ -76,7 +76,7 @@ kill @e[tag=lobbyprop]
 kill @e[tag=roundDisplay,type=armor_stand]
 kill @e[tag=cDisplay,type=armor_stand]
 kill @e[tag=cDisplay2,type=armor_stand]
-kill @e[tag=itemcontainer]
+execute as @e[tag=itemcontainer] at @s run function sprint_racer:items/container_delete
 
 #summon display frames
 #summon minecraft:item_frame 1594 80 370 {Facing:4b,Invulnerable:1b,Silent:1b,Tags:["fixframe","lobbyprop"]}

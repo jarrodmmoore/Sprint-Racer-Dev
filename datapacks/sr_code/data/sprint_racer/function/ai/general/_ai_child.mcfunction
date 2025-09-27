@@ -127,7 +127,7 @@ execute if entity @s[nbt={OnGround:1b}] if entity @e[limit=1,tag=currentMaster,x
 execute if entity @s[nbt={OnGround:1b}] run tag @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] remove aijump
 scoreboard players operation @s aiJBIntensity = @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] aiJBIntensity
 scoreboard players operation @s aiJBTime = @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] aiJBTime
-#^ hey. i'm from the future. this code is unfathomably bad. i can't believe they gave me a degree. should've stuck to engineering. or retail.
+#^ hey. i'm from the future. this code is unfathomably bad. i can't believe they gave me a degree. should've stuck to engineering.
 
 #movement state calculation
 scoreboard players set @s moveState 0

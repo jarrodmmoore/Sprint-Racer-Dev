@@ -22,7 +22,7 @@ function sprint_racer:game_logic/0/props/summon_nodes
 #item chests
 execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=halftick] run scoreboard players set @e[tag=node,tag=itemchest,x=1610,y=87,z=406,distance=..125] itemBlockState 100
 execute if score #halftick value matches 1 run schedule function sprint_racer:game_logic/0/props/halftick_item_chest_spawn 60t
-kill @e[tag=itemcontainer]
+execute as @e[tag=itemcontainer] at @s run function sprint_racer:items/container_delete
 
 
 #floating texts

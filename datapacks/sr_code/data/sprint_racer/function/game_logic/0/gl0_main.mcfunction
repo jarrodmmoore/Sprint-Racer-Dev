@@ -32,7 +32,7 @@ execute as @a[gamemode=spectator,tag=eliminated] run scoreboard players set @s j
 execute as @a if score @s hp < @s cStatHP run effect give @s instant_health 1 10 true
 
 #item stuff
-execute if entity @s[tag=optNoItems] run kill @e[tag=itemcontainer]
+execute if entity @s[tag=optNoItems] as @e[tag=itemcontainer] at @s run function sprint_racer:items/container_delete
 execute if entity @s[tag=optNoItems] run scoreboard players set @e[tag=node,tag=itemchest,scores={nodeState=1..}] itemBlockState 5
 execute if entity @s[tag=optItems,scores={itemBlockState=30}] run function sprint_racer:game_logic/0/item_stuff
 function sprint_racer:items/container_tick_lobby

@@ -15,7 +15,7 @@ execute if entity @s[scores={gameTime=51..55}] run title @a subtitle [""]
 execute if entity @s[scores={gameTime=51..55}] run title @a title [""]
 
 #kill any old item containers and traps that might be knocking about
-execute if entity @s[scores={gameTime=40}] run kill @e[tag=itemcontainer]
+execute if entity @s[scores={gameTime=40}] as @e[tag=itemcontainer] at @s run function sprint_racer:items/container_delete
 execute if entity @s[scores={gameTime=40}] run kill @e[tag=trap]
 execute if entity @s[scores={gameTime=40}] run kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{item:1b}}}}]
 execute if entity @s[scores={gameTime=160}] run kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{item:1b}}}}]

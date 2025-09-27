@@ -23,3 +23,6 @@ tag @s[tag=aiHealing,scores={aiChaseTime=40..}] remove aiHealing
 
 #never heal in water
 tag @s[tag=aiHealing,tag=inWater] remove aiHealing
+
+#don't heal if we were told not to
+tag @s[tag=aiHealing,tag=avoid_healing_until_airborne] remove aiHealing
