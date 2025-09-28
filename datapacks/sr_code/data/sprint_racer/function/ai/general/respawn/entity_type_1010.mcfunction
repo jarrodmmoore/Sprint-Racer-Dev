@@ -1,0 +1,2 @@
+#kittycat
+summon mannequin ~ ~ ~ {profile:{name:"KittyCatElite"},Health:1020.0f,Tags:["ai","set_ai_no","tryhard","sa_credits","bot_credit10","special_ai","sa_kitty","can_wear_hat"],attributes:[{id:"max_health",base:1020}]}

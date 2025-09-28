@@ -1,3 +1,3 @@
 #types 1001-1009 are for the credits sequence
-#zeta
-summon minecraft:zombie ~ ~ ~ {Silent:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Health:1020.0f,CanBreakDoors:0b,Tags:["ai","set_ai_no","undead","special_ai","sa_credits","bot_credit9","can_wear_hat"],equipment:{head:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;617087203,1529626644,-2047121487,936452648],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWVmY2FkOWE0NDY3ODJhMTgwYmM5YWYxODYzZTQyOWU0MWE2NjdmNWJjNjNlYTFmOWEzMDllN2FhNzJlY2RmMyJ9fX0="}]},"minecraft:enchantments":{depth_strider:3,binding_curse:1,vanishing_curse:1}}}},drop_chances:{head:0.0,chest:0.0,legs:0.0,feet:0.0,mainhand:0.0,offhand:0.0,body:0.0},attributes:[{id:"max_health",base:1020},{id:"attack_damage",base:4}]}
+#alyssonjac6
+summon mannequin ~ ~ ~ {profile:{name:"alyssonjac6"},Health:1020.0f,Tags:["ai","set_ai_no","sa_credits","bot_credit9","can_wear_hat","special_ai"],attributes:[{id:"max_health",base:1020}]}

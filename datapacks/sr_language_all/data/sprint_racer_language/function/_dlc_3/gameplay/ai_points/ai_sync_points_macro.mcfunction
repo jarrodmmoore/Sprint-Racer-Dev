@@ -1,0 +1,1 @@
+$scoreboard players operation $(name) points = @s aiPoints

@@ -19,3 +19,7 @@ tellraw @s ["",{text:"[teams]",color:"#009988",bold:false,click_event:{action:"s
 
 tellraw @s ["",{text:"[down please]",color:"#FFFF44",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1002"},hover_event:{action:"show_text",value:"down please"}}]
 tellraw @s ["",{text:"[Back]",color:"#FF7777",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1027"},hover_event:{action:"show_text",value:"Back"}}]
+
+
+#player needs to be in creative mode if they manually run this dev function
+gamemode creative @s[type=player]

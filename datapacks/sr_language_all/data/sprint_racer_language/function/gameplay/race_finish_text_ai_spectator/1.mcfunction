@@ -1,1 +1,1 @@
-tellraw @a[tag=!playing] ["",{text:"CPU_",color:"yellow"},{score:{name:"@s",objective:"rNumber"},color:"yellow"},{text:" >> ",color:"yellow",bold:true},{translate:"sr.game.finished",color:"yellow",bold:true},{text:" "},{text:"[1st]",color:"yellow",bold:true}]
+tellraw @a[tag=!playing] ["",{storage:"sprint_racer:func_args",nbt:"ai_name",interpret:false,color:"yellow"},{text:" >> ",color:"yellow",bold:true},{translate:"sr.game.finished",color:"yellow",bold:true},{text:" "},{text:"[1st]",color:"yellow",bold:true}]

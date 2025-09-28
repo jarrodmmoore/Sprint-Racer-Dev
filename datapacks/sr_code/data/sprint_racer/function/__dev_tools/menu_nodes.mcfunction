@@ -3,3 +3,7 @@ tellraw @s ["",{text:"[give Time Attack seed to chests]",color:"#009988",bold:fa
 tellraw @s ["",{text:"[give Resource Control seed to chests]",color:"#009988",bold:false,click_event:{action:"suggest_command",command:"/function sprint_racer:items/rc_seed_random_assign"},hover_event:{action:"show_text",value:"Assing a resource control seed to all loaded chests that don't have one."}}]
 
 tellraw @s ["",{text:"[Back]",color:"#FF7777",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1027"},hover_event:{action:"show_text",value:"Back"}}]
+
+
+#player needs to be in creative mode if they manually run this dev function
+gamemode creative @s[type=player]

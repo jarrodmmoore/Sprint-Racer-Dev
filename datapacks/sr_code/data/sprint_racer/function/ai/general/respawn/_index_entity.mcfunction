@@ -1,26 +1,11 @@
-#cheat code overrides for parameters
-execute if entity @e[limit=1,type=armor_stand,tag=54a,tag=cheats,x=1548,y=148,z=422,distance=..1] run function sprint_racer:ai/general/respawn/_custom_ai_type
+#executed by the armor stand corresponding to an ai player
 
-execute if entity @s[scores={aiEntity=1001..1009}] run function sprint_racer:ai/general/respawn/entity_type_1000s
-execute unless entity @s[scores={aiEntity=2..}] run function sprint_racer:ai/general/respawn/entity_type_1
-execute if entity @s[scores={aiEntity=2}] run function sprint_racer:ai/general/respawn/entity_type_2
-execute if entity @s[scores={aiEntity=3}] run function sprint_racer:ai/general/respawn/entity_type_3
-execute if entity @s[scores={aiEntity=4}] run function sprint_racer:ai/general/respawn/entity_type_4
-execute if entity @s[scores={aiEntity=5}] run function sprint_racer:ai/general/respawn/entity_type_5
-execute if entity @s[scores={aiEntity=6}] run function sprint_racer:ai/general/respawn/entity_type_6
-execute if entity @s[scores={aiEntity=7}] run function sprint_racer:ai/general/respawn/entity_type_7
-execute if entity @s[scores={aiEntity=8}] run function sprint_racer:ai/general/respawn/entity_type_8
-execute if entity @s[scores={aiEntity=9}] run function sprint_racer:ai/general/respawn/entity_type_9
-execute if entity @s[scores={aiEntity=10}] run function sprint_racer:ai/general/respawn/entity_type_10
-execute if entity @s[scores={aiEntity=11}] run function sprint_racer:ai/general/respawn/entity_type_11
-execute if entity @s[scores={aiEntity=12}] run function sprint_racer:ai/general/respawn/entity_type_12
-execute if entity @s[scores={aiEntity=13}] run function sprint_racer:ai/general/respawn/entity_type_13
-execute if entity @s[scores={aiEntity=14}] run function sprint_racer:ai/general/respawn/entity_type_14
-execute if entity @s[scores={aiEntity=15}] run function sprint_racer:ai/general/respawn/entity_type_15
-execute if entity @s[scores={aiEntity=16}] run function sprint_racer:ai/general/respawn/entity_type_16
-execute if entity @s[scores={aiEntity=17}] run function sprint_racer:ai/general/respawn/entity_type_17
-#insert more here...
+#####
+#spawn a thing
+function sprint_racer:ai/general/respawn/_index_entity_spawn
+#####
 
+#any drowned lingering in the world? get rid of them
 kill @e[tag=!cminezombie,type=drowned]
 
 execute if entity @s[scores={rNumber=1}] run function sprint_racer:ai/general/respawn/number_specific/1
@@ -32,6 +17,9 @@ execute if entity @s[scores={rNumber=6}] run function sprint_racer:ai/general/re
 execute if entity @s[scores={rNumber=7}] run function sprint_racer:ai/general/respawn/number_specific/7
 execute if entity @s[scores={rNumber=8}] run function sprint_racer:ai/general/respawn/number_specific/8
 execute if entity @s[scores={rNumber=9}] run function sprint_racer:ai/general/respawn/number_specific/9
+
+#a very special name override :)
+execute if score @s aiEntity matches 18 as @e[tag=set_ai_no] run data modify entity @s CustomName set value {text:"\uE093",color:white}
 
 #inherit values from AImaster
 scoreboard players operation @e[tag=set_ai_no,limit=1] check = @s check

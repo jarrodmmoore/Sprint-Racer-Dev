@@ -1,2 +1,9 @@
-execute if entity @s[scores={aiPoints=1}] run tellraw @a ["",{text:"CPU_",color:"aqua"},{score:{name:"@s",objective:"rNumber"},color:"aqua"},{text:" >> ",color:"yellow",bold:true},{translate:"sr.lobby.1st_with",color:"yellow",bold:true},{score:{name:"@s",objective:"aiPoints"},color:"yellow",bold:true},{translate:"sr.lobby.point",color:"yellow",bold:true}]
-execute unless entity @s[scores={aiPoints=1}] run tellraw @a ["",{text:"CPU_",color:"aqua"},{score:{name:"@s",objective:"rNumber"},color:"aqua"},{text:" >> ",color:"yellow",bold:true},{translate:"sr.lobby.1st_with",color:"yellow",bold:true},{score:{name:"@s",objective:"aiPoints"},color:"yellow",bold:true},{translate:"sr.lobby.points",color:"yellow",bold:true}]
+execute if score @s rNumber matches 1 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_first_macro with storage sprint_racer:ai_storage_1
+execute if score @s rNumber matches 2 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_first_macro with storage sprint_racer:ai_storage_2
+execute if score @s rNumber matches 3 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_first_macro with storage sprint_racer:ai_storage_3
+execute if score @s rNumber matches 4 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_first_macro with storage sprint_racer:ai_storage_4
+execute if score @s rNumber matches 5 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_first_macro with storage sprint_racer:ai_storage_5
+execute if score @s rNumber matches 6 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_first_macro with storage sprint_racer:ai_storage_6
+execute if score @s rNumber matches 7 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_first_macro with storage sprint_racer:ai_storage_7
+execute if score @s rNumber matches 8 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_first_macro with storage sprint_racer:ai_storage_8
+execute if score @s rNumber matches 9 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_first_macro with storage sprint_racer:ai_storage_9

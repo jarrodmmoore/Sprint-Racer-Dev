@@ -1,0 +1,2 @@
+#redstonebattery
+summon mannequin ~ ~ ~ {profile:{texture:"custom_objects/skins/redstonebattery",model:wide},Health:1020.0f,Tags:["ai","set_ai_no","sa_credits","bot_credit15","can_wear_hat"],attributes:[{id:"max_health",base:1020}]}

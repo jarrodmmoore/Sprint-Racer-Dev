@@ -11,6 +11,6 @@ scoreboard players set @s aiStuckTime 0
 scoreboard players set @s aiStuckTime2 0
 
 playsound minecraft:entity.illusioner.mirror_move master @a ~ ~ ~ 3 .8
-particle flash ~ ~1 ~ 0 0 0 1 3
+particle flash{color:[1,1,1,1]} ~ ~1 ~ 0 0 0 1 3
 
 tag @s add aiDontFace

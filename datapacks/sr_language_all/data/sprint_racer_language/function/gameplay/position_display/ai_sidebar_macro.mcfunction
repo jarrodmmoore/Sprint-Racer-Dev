@@ -1,0 +1,1 @@
+$scoreboard players operation $(name) racePosDisplay2 = @s racePosDisplay

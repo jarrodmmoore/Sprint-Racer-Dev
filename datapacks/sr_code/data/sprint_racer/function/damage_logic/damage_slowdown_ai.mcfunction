@@ -24,5 +24,7 @@ execute if entity @s[scores={damage=200..}] run function sprint_racer:damage_log
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=25a] if entity @s[tag=ai,scores={attackerID=1..}] run data merge entity @s {Health:999.0f}
 execute if entity @s[tag=sa_villager,scores={hitboxHP=1001..,attackerID=1..}] at @s if entity @a[distance=..25] run function sprint_racer_language:_dlc_3/gameplay/villager_ai/chat_hurt
 
+execute if entity @s[tag=cat_png] run playsound minecraft:sr_hitsounds/hit5 master @a ~ ~ ~ 1 1
+
 scoreboard players set @s speedBoost 0
 scoreboard players set @s damage 0

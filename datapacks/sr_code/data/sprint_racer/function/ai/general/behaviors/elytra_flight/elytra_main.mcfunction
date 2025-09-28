@@ -1,5 +1,7 @@
 execute if entity @s[scores={elytraTimer=1}] run function sprint_racer:ai/general/clear_old_ai_targets
-execute if entity @s[scores={elytraTimer=1}] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,DisabledSlots:4144959,Tags:["elytraGuide","gimmeTag","needsDirection"],equipment:{chest:{id:"minecraft:elytra",count:1,components:{"minecraft:unbreakable":{},"minecraft:enchantments":{vanishing_curse:1},"minecraft:enchantment_glint_override":false}}}}
+execute if entity @s[scores={elytraTimer=1},tag=!sa_credits] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,DisabledSlots:4144959,Tags:["elytraGuide","gimmeTag","needsDirection"],equipment:{chest:{id:"minecraft:elytra",count:1,components:{"minecraft:unbreakable":{},"minecraft:enchantments":{vanishing_curse:1},"minecraft:enchantment_glint_override":false}}}}
+execute if entity @s[scores={elytraTimer=1},tag=sa_credits] run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,DisabledSlots:4144959,Tags:["elytraGuide","gimmeTag","needsDirection"],equipment:{head:{id:"minecraft:stone_button",count:1,components:{"minecraft:glider":{},"minecraft:equippable":{slot:"head"},"item_model":"sr/cosmetic/invisible_button","minecraft:enchantments":{vanishing_curse:1},"minecraft:enchantment_glint_override":false}}}}
+execute if entity @s[scores={elytraTimer=1},tag=sa_credits] run item replace entity @s armor.chest with elytra[unbreakable={}]
 execute if entity @s[scores={elytraTimer=1}] run function sprint_racer:ai/general/behaviors/elytra_flight/give_elytra_tag
 
 scoreboard players set @s aiStuckTime 0
@@ -59,6 +61,7 @@ tag @s[tag=elytra_new_dir] remove elytra_new_dir
 execute if entity @s[tag=removeElytra] run scoreboard players set @s aiSubBehavior 0
 execute if entity @s[tag=removeElytra] run scoreboard players set @s aiSubBTimer 0
 execute if entity @s[tag=removeElytra] run scoreboard players set @s aiBehavior 1
+execute if entity @s[tag=removeElytra] if items entity @s armor.chest elytra run item replace entity @s armor.chest with air
 execute if entity @s[tag=removeElytra] run kill @e[tag=myElytra]
 tag @s[tag=removeElytra] remove removeElytra
 

@@ -1,0 +1,1 @@
+$scoreboard players reset $(name) racePosDisplay2

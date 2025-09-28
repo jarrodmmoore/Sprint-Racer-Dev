@@ -1,3 +1,11 @@
+#make sure there's at least 1 player that has points. if none, skip sequence
+execute store result score #success value run execute if entity @a[scores={dummyPoints=1..}]
+execute if entity @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..,aiPoints=1..}] run scoreboard players add #success value 1
+execute if score Orange teamPointsShow matches 1.. if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run scoreboard players add #success value 1
+execute if score Cyan teamPointsShow matches 1.. if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run scoreboard players add #success value 1
+execute if score #success value matches 0 run return run function sprint_racer:game_logic/4/end
+#=====
+
 #this teleport will get overridden, but we need it here anyway because relative TPs don't cancel player velocity
 tp @a 1636 88 406 facing 1653 92 406
 
@@ -14,6 +22,7 @@ tag @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumb
 function sprint_racer:music/global/pick_track
 ######
 
+#recall saved points
 function sprint_racer:load_saved_points
 
 kill @e[tag=lobbyprop]
@@ -46,7 +55,11 @@ scoreboard objectives setdisplay sidebar points
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=teamplay] run scoreboard objectives setdisplay sidebar teamPointsShow
 scoreboard objectives setdisplay list
 
-function sprint_racer_language:gameplay/position_display/ai_sidebar_colors
+#update entity types for AI, in case we want to spawn them
+function sprint_racer:ai/general/set_entity_type
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9}] run function sprint_racer:ai/general/update_bot_name
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9}] run function sprint_racer_language:_dlc_2/gameplay/position_display/ai_sidebar_colors
+
 
 team modify playerCyan color dark_aqua
 team modify playerOrange color gold

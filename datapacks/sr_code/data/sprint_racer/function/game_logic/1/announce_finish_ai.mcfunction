@@ -1,3 +1,5 @@
+function sprint_racer:ai/general/store_name
+
 execute if entity @s[scores={finishPos=1}] run function sprint_racer_language:gameplay/race_announce_finish_ai/1
 execute if entity @s[scores={finishPos=2}] run function sprint_racer_language:gameplay/race_announce_finish_ai/2
 execute if entity @s[scores={finishPos=3}] run function sprint_racer_language:gameplay/race_announce_finish_ai/3

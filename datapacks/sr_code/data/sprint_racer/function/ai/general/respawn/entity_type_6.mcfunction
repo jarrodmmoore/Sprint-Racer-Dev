@@ -1,3 +1,5 @@
+#de-referenced function
+
 #type 6 is a zombie with darkbrine (or kitty) (or endermity)'s head
 
 #use kitty when items are disabled

@@ -1,12 +1,10 @@
-#you can replace "CPU_1", "CPU_2" etc with whatever text you want, it's purely aesthetic
-#warning: do not use spaces or this will break
-
-execute if entity @s[tag=ai1] run scoreboard players operation CPU_1 displayLivesA = @s playerLives
-execute if entity @s[tag=ai2] run scoreboard players operation CPU_2 displayLivesA = @s playerLives
-execute if entity @s[tag=ai3] run scoreboard players operation CPU_3 displayLivesA = @s playerLives
-execute if entity @s[tag=ai4] run scoreboard players operation CPU_4 displayLivesA = @s playerLives
-execute if entity @s[tag=ai5] run scoreboard players operation CPU_5 displayLivesA = @s playerLives
-execute if entity @s[tag=ai6] run scoreboard players operation CPU_6 displayLivesA = @s playerLives
-execute if entity @s[tag=ai7] run scoreboard players operation CPU_7 displayLivesA = @s playerLives
-execute if entity @s[tag=ai8] run scoreboard players operation CPU_8 displayLivesA = @s playerLives
-execute if entity @s[tag=ai9] run scoreboard players operation CPU_9 displayLivesA = @s playerLives
+#no longer translatable. sorry ;(
+execute if entity @s[tag=ai1] run function sprint_racer_language:_dlc_1/gameplay/lives_sidebar/ai_sidebar_a_macro with storage sprint_racer:ai_storage_1
+execute if entity @s[tag=ai2] run function sprint_racer_language:_dlc_1/gameplay/lives_sidebar/ai_sidebar_a_macro with storage sprint_racer:ai_storage_2
+execute if entity @s[tag=ai3] run function sprint_racer_language:_dlc_1/gameplay/lives_sidebar/ai_sidebar_a_macro with storage sprint_racer:ai_storage_3
+execute if entity @s[tag=ai4] run function sprint_racer_language:_dlc_1/gameplay/lives_sidebar/ai_sidebar_a_macro with storage sprint_racer:ai_storage_4
+execute if entity @s[tag=ai5] run function sprint_racer_language:_dlc_1/gameplay/lives_sidebar/ai_sidebar_a_macro with storage sprint_racer:ai_storage_5
+execute if entity @s[tag=ai6] run function sprint_racer_language:_dlc_1/gameplay/lives_sidebar/ai_sidebar_a_macro with storage sprint_racer:ai_storage_6
+execute if entity @s[tag=ai7] run function sprint_racer_language:_dlc_1/gameplay/lives_sidebar/ai_sidebar_a_macro with storage sprint_racer:ai_storage_7
+execute if entity @s[tag=ai8] run function sprint_racer_language:_dlc_1/gameplay/lives_sidebar/ai_sidebar_a_macro with storage sprint_racer:ai_storage_8
+execute if entity @s[tag=ai9] run function sprint_racer_language:_dlc_1/gameplay/lives_sidebar/ai_sidebar_a_macro with storage sprint_racer:ai_storage_9

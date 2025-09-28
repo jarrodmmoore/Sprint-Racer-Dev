@@ -2,7 +2,7 @@
 data merge entity @s {Tags:["respawnWheel"],billboard:"center",start_interpolation:-1,alignment:"center",brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.5f,2.5f,2.5f]},background:0}
 
 #we are temporary
-scoreboard players set @s lifespan 5
+scoreboard players set @s lifespan 6
 #kind of like a particle but dumber and less efficient
 
 #apply the correct sprite

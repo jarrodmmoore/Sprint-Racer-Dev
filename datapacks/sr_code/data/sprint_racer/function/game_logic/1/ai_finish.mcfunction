@@ -1,4 +1,4 @@
-execute at @s run particle flash ~ ~1 ~ 0 0 0 1 1 force
+execute at @s run particle flash{color:[1,1,1,1]} ~ ~1 ~ 0 0 0 1 1 force
 
 execute if entity @s[tag=ai1] run tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=1}] add AIdaddy
 execute if entity @s[tag=ai2] run tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=2}] add AIdaddy

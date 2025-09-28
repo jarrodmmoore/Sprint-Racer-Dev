@@ -29,8 +29,8 @@ tag @s remove self
 #particles
 particle flame ~ ~.5 ~ 0.5 0.5 0.5 0.01 10 force
 particle flame ~ ~.5 ~ 0.5 0.5 0.5 0.01 20
-particle poof ~ ~.5 ~ 1.4 1.4 1.4 0 10 force
-particle poof ~ ~.5 ~ 1.4 1.4 1.4 0 40
+particle poof ~ ~.5 ~ 1.4 1.4 1.4 0 5 force
+particle poof ~ ~.5 ~ 1.4 1.4 1.4 0 10
 
 scoreboard players set @e[tag=setme,tag=explosion] lifespan 5
 tag @e[tag=setme] remove setme

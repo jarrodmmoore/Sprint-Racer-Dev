@@ -1,0 +1,9 @@
+function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_1
+function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_2
+function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_3
+function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_4
+function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_5
+function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_6
+function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_7
+function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_8
+function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_9

@@ -1,0 +1,9 @@
+execute if score @s rNumber matches 1 run data modify storage sprint_racer:func_args ai_name set from storage sprint_racer:ai_storage_1 name
+execute if score @s rNumber matches 2 run data modify storage sprint_racer:func_args ai_name set from storage sprint_racer:ai_storage_2 name
+execute if score @s rNumber matches 3 run data modify storage sprint_racer:func_args ai_name set from storage sprint_racer:ai_storage_3 name
+execute if score @s rNumber matches 4 run data modify storage sprint_racer:func_args ai_name set from storage sprint_racer:ai_storage_4 name
+execute if score @s rNumber matches 5 run data modify storage sprint_racer:func_args ai_name set from storage sprint_racer:ai_storage_5 name
+execute if score @s rNumber matches 6 run data modify storage sprint_racer:func_args ai_name set from storage sprint_racer:ai_storage_6 name
+execute if score @s rNumber matches 7 run data modify storage sprint_racer:func_args ai_name set from storage sprint_racer:ai_storage_7 name
+execute if score @s rNumber matches 8 run data modify storage sprint_racer:func_args ai_name set from storage sprint_racer:ai_storage_8 name
+execute if score @s rNumber matches 9 run data modify storage sprint_racer:func_args ai_name set from storage sprint_racer:ai_storage_9 name

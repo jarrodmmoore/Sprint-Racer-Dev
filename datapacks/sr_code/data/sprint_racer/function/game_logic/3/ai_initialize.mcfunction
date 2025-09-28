@@ -11,6 +11,10 @@ kill @e[type=marker,tag=!node]
 #what entity are we using?
 function sprint_racer:ai/general/set_entity_type
 
+#set bot username
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9}] run function sprint_racer:ai/general/update_bot_name
+
+#clean up some tags
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,tag=eliminated,type=armor_stand] remove eliminated
 
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,tag=aiDisable,type=armor_stand] remove aiDisable
@@ -60,7 +64,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=
 
 #assign AI to teams if needed
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=teamplay,type=armor_stand] run function sprint_racer:teams/assemble_teams_ai
-function sprint_racer_language:_dlc_2/gameplay/position_display/ai_sidebar_colors
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9}] run function sprint_racer_language:_dlc_2/gameplay/position_display/ai_sidebar_colors
 
 #adopt race difficulty setting
 execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run scoreboard players operation @s optAIdiff = @s optBAIdiff

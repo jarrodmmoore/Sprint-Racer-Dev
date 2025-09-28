@@ -1,3 +1,7 @@
+#make sure spawn chunks are force loaded before we do anything
+execute store result score #forceLoadTest value run forceload query 1552 400
+execute unless score #forceLoadTest value matches 1 run function sprint_racer:_force_load_chunks
+
 #1.17 chunk loading is responsible for world hunger
 execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run schedule function sprint_racer:bootup 10t
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:bootup_delayed

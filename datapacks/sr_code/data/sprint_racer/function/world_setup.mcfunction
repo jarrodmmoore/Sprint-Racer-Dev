@@ -88,12 +88,13 @@ gamerule naturalRegeneration false
 gamerule randomTickSpeed 0
 gamerule sendCommandFeedback false
 gamerule spawnRadius 0
-gamerule spawnChunkRadius 10
+#gamerule spawnChunkRadius 10
 gamerule spectatorsGenerateChunks true
 gamerule disableRaids true
 gamerule doInsomnia false
 gamerule doImmediateRespawn true
 gamerule fallDamage true
+gamerule commandBlocksEnabled true
 
 #bossbars
 bossbar add speedo {text:"..."}

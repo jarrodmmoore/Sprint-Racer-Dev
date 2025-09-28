@@ -142,12 +142,15 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=
 
 #team
 team join player @s
+execute on passengers run team join player @s
 
 #assign to team
 execute if entity @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=playerOrange] run tag @s add playerOrange
 execute if entity @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=playerOrange] run team join playerOrange @s
+execute if entity @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=playerOrange] on passengers run team join playerOrange @s
 execute if entity @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=playerCyan] run tag @s add playerCyan
 execute if entity @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=playerCyan] run team join playerCyan @s
+execute if entity @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=playerCyan] on passengers run team join playerCyan @s
 
 effect give @s resistance 1 200 true
 
@@ -157,6 +160,10 @@ waypoint modify @s style set minecraft:battle_player
 #waypoint modify @s color red
 #waypoint modify @s[tag=playerOrange] color gold
 #waypoint modify @s[tag=playerCyan] color dark_aqua
+
+#bots go hard with TRYHARD cheat enabled!
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=42a] run tag @s add rb_ahead
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=42a] run scoreboard players set @s aiSkill 3
 
 #held item in battle mode
 execute if score global gameState matches 3 unless score #battleBatBanned value matches 1.. run item replace entity @s weapon.mainhand with wooden_sword[item_model="sr/item/battle_bat"]

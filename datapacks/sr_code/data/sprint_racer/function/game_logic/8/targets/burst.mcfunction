@@ -1,7 +1,7 @@
 effect give @a[distance=..2] resistance 1 5 true
 particle totem_of_undying ~ ~1 ~ 0 0 0 .6 33
 particle block{block_state:"minecraft:red_concrete"} ~ ~.5 ~ 0.5 0.5 0.5 1 20 force
-particle flash ~ ~ ~ 0 0 0 1 1 force @a
+particle flash{color:[1,1,1,1]} ~ ~ ~ 0 0 0 1 1 force @a
 scoreboard players remove @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] targetData 1
 
 playsound minecraft:item.shield.break master @a ~ ~ ~ 3 .7 .1

@@ -1,6 +1,5 @@
 #boy i sure hope that this code doesn't get run before entities are loaded at worldspawn
 #but that would never happen... right?
-#(nervous laughter)
 
 
 #SPAWN IS AT 1550 88 406
@@ -34,6 +33,8 @@ attribute @s minecraft:water_movement_efficiency base set 1
 attribute @s minecraft:waypoint_transmit_range base reset
 waypoint modify @s style set minecraft:battle_player
 
+#make sure no AIs have the same name as us
+function sprint_racer:ai/general/check_player_usernames
 #RESET ALL SCORES
 scoreboard players reset @s
 

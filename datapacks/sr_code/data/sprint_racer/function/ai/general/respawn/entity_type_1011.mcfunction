@@ -1,0 +1,2 @@
+#endermity
+summon mannequin ~ ~ ~ {profile:{name:"Endermity"},Health:1020.0f,Tags:["ai","set_ai_no","tryhard","sa_credits","bot_credit11","special_ai","sa_endermity","can_wear_hat"],attributes:[{id:"max_health",base:1020}]}

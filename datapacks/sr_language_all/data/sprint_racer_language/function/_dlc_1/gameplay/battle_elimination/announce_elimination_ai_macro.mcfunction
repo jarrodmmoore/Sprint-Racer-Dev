@@ -1,0 +1,7 @@
+tellraw @a ["",{text:" "}]
+$execute if entity @s[scores={finishPos=1}] run tellraw @a ["",{text:"$(name)",color:"red",bold:false},{text:" >> ",color:"white",bold:true},{translate:"sr.game.eliminated",color:"white",bold:true},{text:" [1st]",color:"white",bold:true}]
+$execute if entity @s[scores={finishPos=2}] run tellraw @a ["",{text:"$(name)",color:"red",bold:false},{text:" >> ",color:"white",bold:true},{translate:"sr.game.eliminated",color:"white",bold:true},{text:" [2nd]",color:"white",bold:true}]
+$execute if entity @s[scores={finishPos=3}] run tellraw @a ["",{text:"$(name)",color:"red",bold:false},{text:" >> ",color:"white",bold:true},{translate:"sr.game.eliminated",color:"white",bold:true},{text:" [3rd]",color:"white",bold:true}]
+$execute if entity @s[scores={finishPos=4..20}] run tellraw @a ["",{text:"$(name)",color:"red",bold:false},{text:" >> ",color:"white",bold:true},{translate:"sr.game.eliminated",color:"white",bold:true},{text:" [",color:"white",bold:true},{score:{name:"@s",objective:"finishPos"},color:"white",bold:true},{text:"th]",color:"white",bold:true}]
+$execute unless entity @s[scores={finishPos=1..20}] run tellraw @a ["",{text:"$(name)",color:"red",bold:false},{text:" >> ",color:"white",bold:true},{translate:"sr.game.eliminated",color:"white",bold:true},{text:" [",color:"white",bold:true},{score:{name:"@s",objective:"finishPos"},color:"white",bold:true},{text:"]",color:"white",bold:true}]
+tellraw @a ["",{text:" "}]

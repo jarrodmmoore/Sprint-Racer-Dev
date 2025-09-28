@@ -1,0 +1,2 @@
+#type 18 is a png of my cat
+summon mannequin ~ ~ ~ {profile:{texture:"custom_objects/skins/cat"},hide_description:true,Health:1020.0f,Tags:["ai","set_ai_no","cat_png"],attributes:[{id:"max_health",base:1020}]}

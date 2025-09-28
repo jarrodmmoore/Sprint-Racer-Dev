@@ -1,2 +1,9 @@
-execute if entity @s[scores={aiPoints=1}] run tellraw @a ["",{text:"CPU_",color:"aqua"},{score:{name:"@s",objective:"rNumber"},color:"aqua"},{text:" >> ",color:"gold",bold:true},{translate:"sr.lobby.3rd_with",color:"gold",bold:true},{score:{name:"@s",objective:"aiPoints"},color:"gold",bold:true},{translate:"sr.lobby.point",color:"gold",bold:true}]
-execute unless entity @s[scores={aiPoints=1}] run tellraw @a ["",{text:"CPU_",color:"aqua"},{score:{name:"@s",objective:"rNumber"},color:"aqua"},{text:" >> ",color:"gold",bold:true},{translate:"sr.lobby.3rd_with",color:"gold",bold:true},{score:{name:"@s",objective:"aiPoints"},color:"gold",bold:true},{translate:"sr.lobby.points",color:"gold",bold:true}]
+execute if score @s rNumber matches 1 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_third_macro with storage sprint_racer:ai_storage_1
+execute if score @s rNumber matches 2 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_third_macro with storage sprint_racer:ai_storage_2
+execute if score @s rNumber matches 3 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_third_macro with storage sprint_racer:ai_storage_3
+execute if score @s rNumber matches 4 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_third_macro with storage sprint_racer:ai_storage_4
+execute if score @s rNumber matches 5 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_third_macro with storage sprint_racer:ai_storage_5
+execute if score @s rNumber matches 6 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_third_macro with storage sprint_racer:ai_storage_6
+execute if score @s rNumber matches 7 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_third_macro with storage sprint_racer:ai_storage_7
+execute if score @s rNumber matches 8 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_third_macro with storage sprint_racer:ai_storage_8
+execute if score @s rNumber matches 9 run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_third_macro with storage sprint_racer:ai_storage_9

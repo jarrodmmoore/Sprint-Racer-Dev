@@ -4,6 +4,10 @@ execute if entity @s[scores={aiHasItem9=1..,inputCooldown=..0}] run tag @s add d
 scoreboard players set @s rNumber 0
 scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..50}] rNumber
 
+#hard bot: hold off if there's a mega alternative nearby
+execute if entity @s[tag=!megaShortcut,tag=doIt,scores={aiSkill=3..}] at @s if entity @e[distance=..70,type=marker,tag=AIBC,scores={AIBC_event=6},tag=megaShortcut] run return run tag @s remove doIt
+#=====
+
 #mega shortcut
 #SKILL LV 1 = 0% CHANCE
 #SKILL LV 2 = 10% CHANCE

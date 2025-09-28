@@ -9,3 +9,7 @@ tellraw @s ["",{text:"[restart]",color:"#009988",bold:false,click_event:{action:
 tellraw @s ["",{text:"[back to lobby]",color:"#009988",bold:false,click_event:{action:"suggest_command",command:"/function sprint_racer_language:_dlc_2/mid_game_vote/pass_lobby"},hover_event:{action:"show_text",value:"back to lobby"}}]
 
 tellraw @s ["",{text:"[Back]",color:"#FF7777",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1027"},hover_event:{action:"show_text",value:"Back"}}]
+
+
+#player needs to be in creative mode if they manually run this dev function
+gamemode creative @s[type=player]

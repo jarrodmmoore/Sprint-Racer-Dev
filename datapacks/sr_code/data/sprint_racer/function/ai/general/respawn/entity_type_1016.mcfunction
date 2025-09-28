@@ -1,0 +1,2 @@
+#circlek
+summon mannequin ~ ~ ~ {profile:{name:"CircleK"},Health:1020.0f,Tags:["ai","set_ai_no","sa_credits","bot_credit16","tryhard","special_ai","can_wear_hat"],attributes:[{id:"max_health",base:1020}]}

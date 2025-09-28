@@ -1,6 +1,6 @@
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add taValidFinish
 
-execute at @s run particle flash ~ ~1 ~ 0 0 0 1 1 force
+execute at @s run particle flash{color:[1,1,1,1]} ~ ~1 ~ 0 0 0 1 1 force
 
 #finish music
 stopsound @a[tag=musicDef] record

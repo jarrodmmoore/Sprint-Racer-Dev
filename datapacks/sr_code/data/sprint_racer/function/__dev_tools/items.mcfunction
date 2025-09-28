@@ -30,3 +30,7 @@ tellraw @s ["",{text:"[fishing_rod]",color:"#FF4444",bold:false,click_event:{act
 tellraw @s ["",{text:"[Elite Items]",color:"aqua",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1049"},hover_event:{action:"show_text",value:"Elite Items"}}]
 
 tellraw @s ["",{text:"[Back]",color:"#FF7777",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1027"},hover_event:{action:"show_text",value:"Back"}}]
+
+
+#player needs to be in creative mode if they manually run this dev function
+gamemode creative @s[type=player]

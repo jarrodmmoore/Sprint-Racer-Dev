@@ -1,0 +1,2 @@
+#tari
+summon mannequin ~ ~ ~ {profile:{name:"tari_cat"},Health:1020.0f,Tags:["ai","set_ai_no","tryhard","sa_credits","bot_credit12","special_ai","can_wear_hat"],attributes:[{id:"max_health",base:1020}]}

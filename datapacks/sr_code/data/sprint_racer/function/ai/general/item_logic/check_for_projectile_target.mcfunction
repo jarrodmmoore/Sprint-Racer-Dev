@@ -10,8 +10,8 @@ scoreboard players set #aiTDistance value 0
 
 #higher skill AI have bigger areas of vision
 #AI with skill level 3 can even shoot behind themselves-- scary!
-execute if entity @s[scores={aiSkill=..1}] at @s facing entity @e[limit=1,sort=nearest,tag=myCHILDtarget] feet rotated ~ 0 positioned ^ ^ ^30 run tag @e[limit=1,sort=random,distance=..25,tag=activeplayer,tag=!self] add projectTarget
-execute if entity @s[scores={aiSkill=2}] at @s facing entity @e[limit=1,sort=nearest,tag=myCHILDtarget] feet rotated ~ 0 positioned ^ ^ ^30 run tag @e[limit=1,sort=random,distance=..30,tag=activeplayer,tag=!self] add projectTarget
+execute if entity @s[scores={aiSkill=..1}] at @s facing entity @e[limit=1,sort=nearest,tag=myCHILDtarget] feet rotated ~ 0 positioned ^ ^ ^30 run tag @e[limit=1,sort=random,distance=..25,tag=activeplayer,tag=!self,scores={invisibility=..0}] add projectTarget
+execute if entity @s[scores={aiSkill=2}] at @s facing entity @e[limit=1,sort=nearest,tag=myCHILDtarget] feet rotated ~ 0 positioned ^ ^ ^30 run tag @e[limit=1,sort=random,distance=..30,tag=activeplayer,tag=!self,scores={invisibility=..0}] add projectTarget
 execute if entity @s[scores={aiSkill=3..}] at @s facing entity @e[limit=1,sort=nearest,tag=myCHILDtarget] feet rotated ~ 0 positioned ^ ^ ^22 run tag @e[limit=1,sort=random,distance=..38,tag=activeplayer,tag=!self] add projectTarget
 
 #DEBUG

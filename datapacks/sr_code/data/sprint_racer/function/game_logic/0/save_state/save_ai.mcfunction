@@ -1,6 +1,8 @@
 #executed by @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=X}]
 #corresponds to 1 of 9 AI controller armor stand
 
+execute if entity @s[scores={customAIset=0}] run setblock ~ ~ ~ end_stone
+
 execute if entity @s[scores={customAIset=1}] run setblock ~ ~ ~ white_wool
 execute if entity @s[scores={customAIset=2}] run setblock ~ ~ ~ orange_wool
 execute if entity @s[scores={customAIset=3}] run setblock ~ ~ ~ magenta_wool
@@ -28,6 +30,12 @@ execute if entity @s[scores={customAIset=24}] run setblock ~ ~ ~ gray_terracotta
 execute if entity @s[scores={customAIset=25}] run setblock ~ ~ ~ light_gray_terracotta
 execute if entity @s[scores={customAIset=26}] run setblock ~ ~ ~ cyan_terracotta
 execute if entity @s[scores={customAIset=27}] run setblock ~ ~ ~ purple_terracotta
+execute if entity @s[scores={customAIset=28}] run setblock ~ ~ ~ blue_terracotta
+execute if entity @s[scores={customAIset=29}] run setblock ~ ~ ~ brown_terracotta
+execute if entity @s[scores={customAIset=30}] run setblock ~ ~ ~ green_terracotta
+execute if entity @s[scores={customAIset=31}] run setblock ~ ~ ~ red_terracotta
+execute if entity @s[scores={customAIset=32}] run setblock ~ ~ ~ black_terracotta
+execute if entity @s[scores={customAIset=33}] run setblock ~ ~ ~ white_concrete
 
 execute if entity @s[scores={customAIteam=0}] run setblock ~ ~ ~-1 white_wool
 execute if entity @s[scores={customAIteam=1}] run setblock ~ ~ ~-1 orange_wool

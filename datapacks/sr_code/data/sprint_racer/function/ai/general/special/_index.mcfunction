@@ -10,8 +10,4 @@ execute if entity @s[tag=sa_enderman] run function sprint_racer:ai/general/speci
 execute if entity @s[tag=sa_wither] run function sprint_racer:ai/general/special/wither
 execute if entity @s[tag=sa_villager] run function sprint_racer:ai/general/special/villager
 
-execute if entity @s[tag=sa_endermity] run function sprint_racer:ai/general/special/endermity
-execute if entity @s[tag=sa_darkbrine] run function sprint_racer:ai/general/special/darkbrine
-execute if entity @s[tag=sa_kitty] run function sprint_racer:ai/general/special/kittycatelite
-
-execute if entity @s[tag=sa_credits] run function sprint_racer:ai/general/special/credits
+execute if entity @s[tag=sa_credits] run function sprint_racer:ai/general/special/mannequin

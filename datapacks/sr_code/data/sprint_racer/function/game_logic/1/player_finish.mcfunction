@@ -2,7 +2,7 @@ scoreboard players operation @s storedTimeMin = @e[tag=w,x=1560,y=150,z=406,dist
 scoreboard players operation @s storedTimeSec = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeSec
 scoreboard players operation @s storedTimeMsec = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeMsec
 
-execute at @s run particle flash ~ ~1 ~ 0 0 0 1 1 force
+execute at @s run particle flash{color:[1,1,1,1]} ~ ~1 ~ 0 0 0 1 1 force
 
 #show all previous lap times and total time
 scoreboard players set @s lapShowDelay 60

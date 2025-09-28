@@ -1,0 +1,1 @@
+$scoreboard players operation $(name) displayLeaderB = @s KOs
