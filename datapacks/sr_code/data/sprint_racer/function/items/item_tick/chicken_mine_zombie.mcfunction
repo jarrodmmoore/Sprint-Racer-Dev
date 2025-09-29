@@ -1,6 +1,5 @@
-kill @s[nbt={OnGround:1b}]
-execute unless entity @e[tag=chickenmine,distance=..2] run kill @s
-execute if block ~ ~ ~ water run kill @s
+execute on vehicle if entity @s[type=chicken,tag=chickenmine] on passengers if entity @s[tag=cminezombie] run scoreboard players set @s lifespan 6
+scoreboard players add @s lifespan 0
 
 #chicken mine zombies pick who they're angry at once in a while
 scoreboard players remove @s age 1

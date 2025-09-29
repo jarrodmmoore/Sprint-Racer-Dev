@@ -86,4 +86,7 @@ execute if score @s tEditor matches 1284 run execute as @s[gamemode=creative] ru
 execute if score @s tEditor matches 1285 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/checkpoint_menu_edit/disable_checktext
 execute if score @s tEditor matches 1286 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/checkpoint_menu_edit/enable_checktext
 execute if score @s tEditor matches 1287 run function sprint_racer_language:_dlc_6/gameplay/give_obliterator {count:1}
+execute if score @s tEditor matches 1288 run gamemode adventure @s
+execute if score @s tEditor matches 1288 run clear @s gray_wool
+execute if score @s tEditor matches 1288 run tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 #...

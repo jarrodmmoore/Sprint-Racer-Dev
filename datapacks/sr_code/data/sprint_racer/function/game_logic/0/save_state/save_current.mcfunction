@@ -204,6 +204,14 @@ execute if entity @s[scores={optBAIdiff=3}] run setblock 1618 ~ 457 yellow_wool
 execute if entity @s[tag=BAIautocount] run setblock 1617 ~ 457 white_wool
 execute if entity @s[tag=!BAIautocount] run setblock 1617 ~ 457 orange_wool
 
+#battle locator bar
+execute if entity @s[tag=!optNoLocatorBar] run setblock 1616 ~ 457 white_wool
+execute if entity @s[tag=optNoLocatorBar] run setblock 1616 ~ 457 orange_wool
+
+#mannequin ais
+execute if entity @s[tag=!optMannequinAI] run setblock 1615 ~ 457 white_wool
+execute if entity @s[tag=optMannequinAI] run setblock 1615 ~ 457 orange_wool
+
 #################################
 #BANNED RACE TRACKS
 

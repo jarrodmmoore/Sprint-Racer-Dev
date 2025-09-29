@@ -21,6 +21,6 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!halftick,scores=
 execute if score #halftick value matches 1 as @a[nbt={RootVehicle:{Entity:{id:"minecraft:pig"}}}] at @s run function sprint_racer:cheats/drive_kart
 
 #prevent zombie pigmen due to lightning
-kill @e[type=zombified_piglin]
+kill @e[type=zombified_piglin,tag=!cminezombie]
 
 tag @e[tag=ejectkart] remove ejectkart

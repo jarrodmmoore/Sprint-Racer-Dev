@@ -47,5 +47,7 @@ execute if score @s tOption matches 1045 run function sprint_racer:game_logic/0/
 execute if score @s tOption matches 1046 run function sprint_racer:game_logic/0/options_signs/ai_difficulty_battle
 execute if score @s tOption matches 1047 run function sprint_racer:game_logic/0/options_signs/ai_difficulty_race
 execute if score @s tOption matches 1048 run function sprint_racer:game_logic/0/options_signs/ai_rival
+execute if score @s tOption matches 1049 run function sprint_racer:game_logic/0/options_signs/locator_bar
+execute if score @s tOption matches 1050 run function sprint_racer:game_logic/0/options_signs/ai_mannequins
 #...
 execute if score @s tOption matches 1099 run function sprint_racer:game_logic/0/options_signs/reset_all_ta_data

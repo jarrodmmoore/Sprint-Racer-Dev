@@ -1,9 +1,9 @@
 #if we were instructed to jump at next ledge, do that
-execute if entity @s[tag=jump_at_next_ledge,tag=!jump_at_next_ledge_deep] if block ~ ~-.7 ~ #sprint_racer:ai_not_solid run function sprint_racer:ai/general/jump/_index
-execute if entity @s[tag=jump_at_next_ledge,tag=jump_at_next_ledge_deep] if block ~ ~-1.7 ~ #sprint_racer:ai_not_solid run function sprint_racer:ai/general/jump/_index
+execute if entity @s[tag=jump_at_next_ledge,tag=!jump_at_next_ledge_deep,tag=!wait_until_not_airborne] if block ~ ~-.7 ~ #sprint_racer:ai_not_solid run function sprint_racer:ai/general/jump/_index
+execute if entity @s[tag=jump_at_next_ledge,tag=jump_at_next_ledge_deep,tag=!wait_until_not_airborne] if block ~ ~-1.7 ~ #sprint_racer:ai_not_solid run function sprint_racer:ai/general/jump/_index
 
 #we might try to heal again next time we touch the ground
-tag @s[tag=avoid_healing_until_airborne] remove avoid_healing_until_airborne
+tag @s[tag=avoid_healing_until_airborne,tag=!wait_until_not_airborne] remove avoid_healing_until_airborne
 
 #instead of setting velocity directly, let's try adding to it to mimic minecraft air acceleration
 #(note: lower scale on the data get Motion[X] means bot will have higher air mobility)

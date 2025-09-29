@@ -209,6 +209,7 @@ scoreboard objectives add tEditor trigger
 scoreboard objectives add tTrackEditor trigger
 #v1.6.9
 scoreboard objectives add aiHasObliterator dummy
+scoreboard objectives add aiEntityRandomized dummy
 
 
 #make sure command blocks are enabled

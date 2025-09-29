@@ -13,6 +13,7 @@ execute if score @s rNumber matches 8 as @e[tag=set_ai_no] run function sprint_r
 execute if score @s rNumber matches 9 as @e[tag=set_ai_no] run function sprint_racer_language:gameplay/ai_nametag/aqua with storage sprint_racer:ai_storage_9
 
 #a very special name override :)
+execute if score @s aiEntity matches 6 as @e[tag=set_ai_no] run data modify entity @s CustomName set value {text:"\uE710",color:white}
 execute if score @s aiEntity matches 18 as @e[tag=set_ai_no] run data modify entity @s CustomName set value {text:"\uE093",color:white}
 
 #meddle with tags

@@ -134,6 +134,7 @@ scoreboard players set @s moveState 0
 scoreboard players set @s[scores={aiBehavior=..4},tag=!aiHealing,nbt={OnGround:1b}] moveState 2
 scoreboard players set @s[scores={aiBehavior=..4},tag=inWater] moveState 2
 scoreboard players set @s[tag=aiHealing,tag=!inWater] moveState 3
+tag @s[tag=wait_until_not_airborne,scores={moveState=2}] remove wait_until_not_airborne
 
 #air time calculation
 scoreboard players add @s[nbt={OnGround:0b}] aiAirTime 1

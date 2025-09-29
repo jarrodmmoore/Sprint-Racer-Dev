@@ -1,3 +1,17 @@
+#randoms
+execute if entity @s[scores={customAIset=-11..-10}] run scoreboard players operation @s aiEntity = @s aiEntityRandomized
+
+#default mannequins
+execute if entity @s[scores={customAIset=-9}] run scoreboard players set @s aiEntity -9
+execute if entity @s[scores={customAIset=-8}] run scoreboard players set @s aiEntity -8
+execute if entity @s[scores={customAIset=-7}] run scoreboard players set @s aiEntity -7
+execute if entity @s[scores={customAIset=-6}] run scoreboard players set @s aiEntity -6
+execute if entity @s[scores={customAIset=-5}] run scoreboard players set @s aiEntity -5
+execute if entity @s[scores={customAIset=-4}] run scoreboard players set @s aiEntity -4
+execute if entity @s[scores={customAIset=-3}] run scoreboard players set @s aiEntity -3
+execute if entity @s[scores={customAIset=-2}] run scoreboard players set @s aiEntity -2
+execute if entity @s[scores={customAIset=-1}] run scoreboard players set @s aiEntity -1
+
 #jokes
 execute if entity @s[scores={customAIset=0}] run scoreboard players set @s aiEntity 18
 

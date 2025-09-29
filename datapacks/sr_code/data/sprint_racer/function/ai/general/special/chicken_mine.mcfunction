@@ -2,6 +2,9 @@ execute at @s run particle smoke ~ ~1.4 ~ 0 0 0 0.03 1
 
 execute if block ~ ~-.1 ~ water run tag @s add chicken_water
 
+#keep passenger alive
+execute on passengers if entity @s[tag=cminezombie] run scoreboard players set @s lifespan 6
+
 #fast fall if above target
 execute store result score @s math run data get entity @s Motion[1] 100000
 execute if entity @s[tag=!inWater,nbt={OnGround:0b}] if entity @s[scores={aiStuckTime2=6..,math=-20000..-1}] run function sprint_racer:ai/general/fast_fall

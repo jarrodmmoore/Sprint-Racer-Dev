@@ -5,4 +5,4 @@ execute if entity @s[scores={aiSpecial=170}] run function sprint_racer:ai/genera
 scoreboard players set @s[scores={aiSpecial=170..}] aiSpecial 0
 
 #no zombies from lightning please
-kill @e[type=zombified_piglin]
+kill @e[type=zombified_piglin,tag=!cminezombie]

@@ -1,5 +1,7 @@
 scoreboard players set @s customAIset 1
+
 execute if block ~ ~ ~ end_stone run scoreboard players set @s customAIset 0
+#...
 execute if block ~ ~ ~ orange_wool run scoreboard players set @s customAIset 2
 execute if block ~ ~ ~ magenta_wool run scoreboard players set @s customAIset 3
 execute if block ~ ~ ~ light_blue_wool run scoreboard players set @s customAIset 4
@@ -32,6 +34,22 @@ execute if block ~ ~ ~ green_terracotta run scoreboard players set @s customAIse
 execute if block ~ ~ ~ red_terracotta run scoreboard players set @s customAIset 31
 execute if block ~ ~ ~ black_terracotta run scoreboard players set @s customAIset 32
 execute if block ~ ~ ~ white_concrete run scoreboard players set @s customAIset 33
+#
+execute if block ~ ~ ~ orange_concrete run scoreboard players set @s customAIset -1
+execute if block ~ ~ ~ magenta_concrete run scoreboard players set @s customAIset -2
+execute if block ~ ~ ~ light_blue_concrete run scoreboard players set @s customAIset -3
+execute if block ~ ~ ~ yellow_concrete run scoreboard players set @s customAIset -4
+execute if block ~ ~ ~ lime_concrete run scoreboard players set @s customAIset -5
+execute if block ~ ~ ~ pink_concrete run scoreboard players set @s customAIset -6
+execute if block ~ ~ ~ gray_concrete run scoreboard players set @s customAIset -7
+execute if block ~ ~ ~ light_gray_concrete run scoreboard players set @s customAIset -8
+execute if block ~ ~ ~ cyan_concrete run scoreboard players set @s customAIset -9
+#random any
+execute if block ~ ~ ~ purple_concrete run scoreboard players set @s customAIset -10
+#random player
+execute if block ~ ~ ~ blue_concrete run scoreboard players set @s customAIset -11
+
+
 
 scoreboard players set @s customAIteam 0
 execute if block ~ ~ ~-1 orange_wool run scoreboard players set @s customAIteam 1

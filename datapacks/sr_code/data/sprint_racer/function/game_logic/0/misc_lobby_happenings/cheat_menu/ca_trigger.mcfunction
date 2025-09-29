@@ -13,9 +13,16 @@ execute if entity @s[scores={ca_trigger=22}] run scoreboard players add @e[tag=c
 execute if entity @s[scores={ca_trigger=31}] run scoreboard players remove @e[tag=ca_focus,type=armor_stand] customAIteam 1
 execute if entity @s[scores={ca_trigger=32}] run scoreboard players add @e[tag=ca_focus,type=armor_stand] customAIteam 1
 
+#set to 0
+execute if entity @s[scores={ca_trigger=100}] run scoreboard players set @e[tag=ca_focus,type=armor_stand] customAIset 1
+
+#if set to random, randomize entity now
+execute if entity @s[scores={ca_trigger=11..12}] as @e[tag=ca_focus,type=armor_stand,scores={customAIset=-10}] run function sprint_racer:ai/general/pick_random_entity_any
+execute if entity @s[scores={ca_trigger=11..12}] as @e[tag=ca_focus,type=armor_stand,scores={customAIset=-11}] run function sprint_racer:ai/general/pick_random_entity_human
+
 #value limits
-scoreboard players set @e[tag=ca_focus,type=armor_stand,scores={customAIset=..-1}] customAIset 33
-scoreboard players set @e[tag=ca_focus,type=armor_stand,scores={customAIset=34..}] customAIset 0
+scoreboard players set @e[tag=ca_focus,type=armor_stand,scores={customAIset=..-12}] customAIset 33
+scoreboard players set @e[tag=ca_focus,type=armor_stand,scores={customAIset=34..}] customAIset -11
 
 scoreboard players set @e[tag=ca_focus,type=armor_stand,scores={customAIdiff=..-1}] customAIdiff 5
 scoreboard players set @e[tag=ca_focus,type=armor_stand,scores={customAIdiff=6..}] customAIdiff 0

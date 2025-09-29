@@ -7,4 +7,8 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=0}]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=0}] run tellraw @s ["",{translate:"sr.admin_menu.force_unready",color:"red",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1068"},hover_event:{action:"show_text",value:"Force Un-ready"}}]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=0}] run tellraw @s ["",{translate:"sr.admin_menu.set_time_to_5s",color:"yellow",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1069"},hover_event:{action:"show_text",value:"Set Lobby time to 5 sec"}}]
 tellraw @s ["",{translate:"sr.admin_menu.full_restart",color:"light_purple",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1070"},hover_event:{action:"show_text",value:"Full Restart"}}]
-tellraw @s ["",{translate:"sr.admin_menu.dev_menu",color:"blue",bold:false,click_event:{action:"suggest_command",command:"/trigger tEditor set 1027"},hover_event:{action:"show_text",value:"dev menu"}}]
+tellraw @s ["",{translate:"sr.admin_menu.dev_menu",color:"blue",bold:false,click_event:{action:"suggest_command",command:"/function sprint_racer:__dev_tools/_menu"},hover_event:{action:"show_text",value:"dev menu"}}]
+tellraw @s ["",{translate:"sr.admin_menu.exit",color:"yellow",bold:false,click_event:{action:"run_command",command:"/trigger tEditor set 1288"},hover_event:{action:"show_text",value:"Exit"}}]
+
+#put player in creative so they can use the menu
+gamemode creative @s[type=player]

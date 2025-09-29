@@ -239,6 +239,14 @@ execute if block 1618 ~ 457 yellow_wool run scoreboard players set @s optBAIdiff
 tag @s remove BAIautocount
 execute if block 1617 ~ 457 white_wool run tag @s add BAIautocount
 
+#battle locator bar
+tag @s remove optNoLocatorBar
+execute if block 1616 ~ 457 orange_wool run tag @s add optNoLocatorBar
+
+#ai mannequins
+tag @s remove optMannequinAI
+execute if block 1615 ~ 457 orange_wool run tag @s add optMannequinAI
+
 #################################
 #BANNED RACE TRACKS
 execute as @e[tag=trackStandR,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1] run tag @s remove rtBlacklist

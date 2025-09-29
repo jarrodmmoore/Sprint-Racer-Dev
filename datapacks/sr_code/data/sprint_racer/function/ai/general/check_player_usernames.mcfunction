@@ -1,9 +1,1 @@
-function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_1
-function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_2
-function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_3
-function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_4
-function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_5
-function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_6
-function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_7
-function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_8
-function sprint_racer:ai/general/check_player_username_go with storage sprint_racer:ai_storage_9
+execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9}] run function sprint_racer:ai/general/check_player_usernames_index
