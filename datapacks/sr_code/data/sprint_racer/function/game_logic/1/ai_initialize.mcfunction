@@ -91,6 +91,9 @@ execute if score global aiLevel matches 7 if entity @e[tag=w,x=1560,y=150,z=406,
 execute if score global aiLevel matches 8..9 if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={optAIdiff=-1}] run scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={aiSkill=3..}] aiSkill 2
 execute if score global aiLevel matches 13.. if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={optAIdiff=-1}] run scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=1}] aiSkill 3
 
+#one AI might become the rival if it has the most points
+function sprint_racer:ai/general/choose_rival_ai
+
 #bossfight, rNumber 1 only, max difficulty only
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=19a,tag=!43a] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=2..9}] remove AImaster
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=19a,tag=!43a] run scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=1}] aiSkill 3

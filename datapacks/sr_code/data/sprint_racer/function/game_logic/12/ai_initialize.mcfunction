@@ -45,6 +45,8 @@ scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,dista
 scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=8}] aiSkill 1
 scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={rNumber=9}] aiSkill 3
 
+#no rival
+tag @e[tag=rivalAImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] remove rivalAImaster
 
 scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] check 0
 scoreboard players set @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] lap 1

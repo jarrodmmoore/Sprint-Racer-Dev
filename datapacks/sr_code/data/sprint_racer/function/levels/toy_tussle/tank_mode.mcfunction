@@ -13,5 +13,5 @@ execute if score #battleGiveObliterator value matches 1.. run return 0
 #=====
 
 #free missile once respawned
-execute as @a[gamemode=adventure,scores={invisibility=..0,timeSinceDeath=40..999}] run function sprint_racer:levels/toy_tussle/player_get_free_missile
-execute as @e[tag=ai,scores={invisibility=..0,timeSinceDeath=40..999}] run function sprint_racer:levels/toy_tussle/player_get_free_missile
+execute as @a[gamemode=adventure,scores={invisibility=..0,timeSinceDeath=110..999}] run function sprint_racer:levels/toy_tussle/player_get_free_missile
+execute as @e[tag=ai,scores={invisibility=..0,timeSinceDeath=110..999}] run function sprint_racer:levels/toy_tussle/player_get_free_missile
