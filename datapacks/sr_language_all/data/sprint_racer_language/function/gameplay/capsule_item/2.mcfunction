@@ -1,2 +1,2 @@
 summon item ~ ~.3 ~ {Tags:["capsuleItem","capsuleSummon","itemcontainer"],PickupDelay:32767,Age:-32768,NoGravity:1b,Invulnerable:1b,Item:{id:"minecraft:dispenser",count:3,components:{"minecraft:custom_name":{translate:"sr.item.missile",color:"red",bold:true,italic:false},"minecraft:custom_data":{no2:1b,stay:1b,item:1b,normalitem:1b,rightclick:1b}}}}
-data merge entity @e[limit=1,tag=cSETM,type=armor_stand,distance=..2] {CustomNameVisible:1b,CustomName:{translate:"sr.item.missile",color:"red",bold:false,italic:false}}
+data merge entity @e[limit=1,tag=cSETME,type=armor_stand,distance=..2] {CustomNameVisible:1b,CustomName:{translate:"sr.item.missile",color:"red",bold:false,italic:false}}
