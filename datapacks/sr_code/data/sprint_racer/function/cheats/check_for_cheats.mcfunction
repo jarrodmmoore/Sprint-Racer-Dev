@@ -105,8 +105,8 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=cheatdetected61_65] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add cheatdetected
 #
 
-gamerule naturalRegeneration false
-execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=52a] run gamerule naturalRegeneration true
+gamerule natural_health_regeneration false
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=52a] run gamerule natural_health_regeneration true
 
 scoreboard players set #cheatMusic value 0
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=33a] run scoreboard players set #cheatMusic value 1

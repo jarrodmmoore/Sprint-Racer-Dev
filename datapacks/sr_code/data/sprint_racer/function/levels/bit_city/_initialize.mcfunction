@@ -1,6 +1,6 @@
 tp @a[tag=!dontWarp] -2227 173 -1905
 
-gamerule doDaylightCycle false
+gamerule advance_time false
 time set 16000
 
 #night vision if we're playing in free roam mode

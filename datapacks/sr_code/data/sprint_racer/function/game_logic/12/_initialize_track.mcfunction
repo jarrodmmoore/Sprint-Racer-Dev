@@ -1,6 +1,6 @@
 tp @a 1082 75 834
 
-gamerule doDaylightCycle false
+gamerule advance_time false
 time set 6000
 
 

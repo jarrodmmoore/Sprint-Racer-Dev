@@ -59,7 +59,7 @@ team modify playerCyan color aqua
 team modify playerOrange color aqua
 
 time set 6000
-gamerule doDaylightCycle false
+gamerule advance_time false
 weather clear
 
 effect clear @a night_vision

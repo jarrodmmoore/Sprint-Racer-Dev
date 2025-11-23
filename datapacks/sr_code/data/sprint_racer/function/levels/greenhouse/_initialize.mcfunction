@@ -1,6 +1,6 @@
 tp @a[tag=!dontWarp] -338 195 -383
 
-gamerule doDaylightCycle true
+gamerule advance_time true
 time set 22800
 
 ######

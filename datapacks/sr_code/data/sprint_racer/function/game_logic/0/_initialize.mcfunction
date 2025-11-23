@@ -72,7 +72,7 @@ scoreboard players set @a[scores={itemLuck=..0}] itemLuck 1
 function sprint_racer:items/reset_global_cooldowns
 
 #update gamerules
-gamerule fallDamage true
+gamerule fall_damage true
 function sprint_racer:speedometer/enable_xp_bar
 
 tag @a[limit=1] add spdbump

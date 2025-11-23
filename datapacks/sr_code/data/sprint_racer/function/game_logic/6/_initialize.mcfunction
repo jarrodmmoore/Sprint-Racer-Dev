@@ -3,7 +3,7 @@ scoreboard players reset @a[scores={pressJump=1}] pressJump
 execute unless entity @a[tag=musicDef,scores={BGMtrack=1..2}] run function sprint_racer:game_logic/6/start_music
 
 worldborder warning distance 0
-gamerule fallDamage true
+gamerule fall_damage true
 function sprint_racer:speedometer/enable_xp_bar
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove customTesting
@@ -48,7 +48,7 @@ scoreboard objectives add killPlayer minecraft.killed:minecraft.player
 scoreboard objectives add killedByPlayer minecraft.killed_by:minecraft.player
 
 time set 6000
-gamerule doDaylightCycle false
+gamerule advance_time false
 weather clear
 scoreboard players reset @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] storm
 

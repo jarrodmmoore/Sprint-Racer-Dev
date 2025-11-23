@@ -75,26 +75,25 @@ scoreboard objectives add randomizerTime dummy
 
 #gamerules
 difficulty normal
-gamerule doMobSpawning false
-gamerule commandBlockOutput false
-gamerule doDaylightCycle false
-gamerule doFireTick false
-gamerule doMobLoot false
-gamerule doWeatherCycle false
-gamerule keepInventory false
-gamerule logAdminCommands false
-gamerule mobGriefing false
-gamerule naturalRegeneration false
-gamerule randomTickSpeed 0
-gamerule sendCommandFeedback false
-gamerule spawnRadius 0
+gamerule spawn_mobs false
+gamerule command_block_output false
+gamerule advance_time false
+gamerule advance_weather false
+gamerule fire_spread_radius_around_player 0
+gamerule mob_drops false
+gamerule keep_inventory false
+gamerule log_admin_commands false
+gamerule mob_griefing false
+gamerule natural_health_regeneration false
+gamerule random_tick_speed 0
+gamerule send_command_feedback false
+gamerule respawn_radius 0
 #gamerule spawnChunkRadius 10
-gamerule spectatorsGenerateChunks true
-gamerule disableRaids true
-gamerule doInsomnia false
-gamerule doImmediateRespawn true
-gamerule fallDamage true
-gamerule commandBlocksEnabled true
+gamerule spectators_generate_chunks true
+gamerule raids false
+gamerule spawn_phantoms false
+gamerule immediate_respawn true
+gamerule fall_damage true
 
 #bossbars
 bossbar add speedo {text:"..."}

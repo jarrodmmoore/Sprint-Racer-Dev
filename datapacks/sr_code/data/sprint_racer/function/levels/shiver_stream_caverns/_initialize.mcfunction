@@ -2,7 +2,7 @@ tp @a[tag=!dontWarp] 1361 21 559
 
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] startType 1
 
-gamerule doDaylightCycle false
+gamerule advance_time false
 time set 18000
 
 setblock 1507 116 417 obsidian

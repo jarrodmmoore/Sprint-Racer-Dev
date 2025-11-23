@@ -1,3 +1,3 @@
 time set 6000
-gamerule doDaylightCycle false
+gamerule advance_time false
 weather clear

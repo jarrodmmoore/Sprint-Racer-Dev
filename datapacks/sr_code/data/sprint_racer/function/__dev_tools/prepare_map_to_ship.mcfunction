@@ -7,4 +7,4 @@ scoreboard players set #clearCacheAllowed value 1
 function sprint_racer:game_logic/2/node_update/clear_unused_scoreboards
 
 #just in case we forget...
-gamerule sendCommandFeedback false
+gamerule send_command_feedback false

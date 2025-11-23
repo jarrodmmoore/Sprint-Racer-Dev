@@ -28,7 +28,7 @@ scoreboard players reset * points
 scoreboard players reset * KOs
 
 time set 6000
-gamerule doDaylightCycle false
+gamerule advance_time false
 weather clear
 
 #removing "nodeState" so ALL activated nodes are forgotten between games, even ones in unloaded chunks

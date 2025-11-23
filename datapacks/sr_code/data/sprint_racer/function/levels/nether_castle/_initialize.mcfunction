@@ -2,7 +2,7 @@ tp @a[tag=!dontWarp] 2120 118 3039
 
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lap 3
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] check 4
-gamerule doDaylightCycle false
+gamerule advance_time false
 time set 18000
 weather rain
 

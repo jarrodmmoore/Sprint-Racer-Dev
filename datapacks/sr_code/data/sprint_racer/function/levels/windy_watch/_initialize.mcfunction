@@ -1,6 +1,6 @@
 tp @a[tag=!dontWarp] 1550 102 799
 
-gamerule doDaylightCycle false
+gamerule advance_time false
 time set 6000
 
 setblock 1507 116 417 obsidian

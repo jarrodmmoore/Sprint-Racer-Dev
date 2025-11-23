@@ -2,7 +2,7 @@ tp @a[tag=!dontWarp] -749 190 -724
 
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] startType 2
 
-gamerule doDaylightCycle false
+gamerule advance_time false
 time set 1500
 
 ######

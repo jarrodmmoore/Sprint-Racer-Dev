@@ -69,7 +69,7 @@ scoreboard objectives add killPlayer minecraft.killed:minecraft.player
 scoreboard objectives add killedByPlayer minecraft.killed_by:minecraft.player
 
 time set 6000
-gamerule doDaylightCycle false
+gamerule advance_time false
 weather clear
 scoreboard players reset @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] storm
 

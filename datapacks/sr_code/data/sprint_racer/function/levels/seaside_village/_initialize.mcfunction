@@ -1,7 +1,7 @@
 tp @a[tag=!dontWarp] 231 93 573
 
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lap 3
-gamerule doDaylightCycle true
+gamerule advance_time true
 time set 10500
 
 

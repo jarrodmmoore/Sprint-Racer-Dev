@@ -198,8 +198,8 @@ scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] countTimeMsec 9
 bossbar set timeremaining max 4800
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gamemodePresetB=2}] run bossbar set timeremaining max 7200
-gamerule doDaylightCycle false
-gamerule fallDamage true
+gamerule advance_time false
+gamerule fall_damage true
 function sprint_racer:speedometer/enable_xp_bar
 tag @a remove darkHUD
 tag @a remove eliminated

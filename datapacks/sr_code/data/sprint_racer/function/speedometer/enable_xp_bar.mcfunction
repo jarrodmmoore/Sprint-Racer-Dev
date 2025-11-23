@@ -1,2 +1,2 @@
 scoreboard players set #xpBarEnabled value 1
-gamerule locatorBar false
+gamerule locator_bar false

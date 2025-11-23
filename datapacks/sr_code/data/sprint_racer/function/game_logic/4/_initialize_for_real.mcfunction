@@ -65,7 +65,7 @@ team modify playerCyan color dark_aqua
 team modify playerOrange color gold
 
 time set 6000
-gamerule doDaylightCycle false
+gamerule advance_time false
 weather clear
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] scriptMove 1
 

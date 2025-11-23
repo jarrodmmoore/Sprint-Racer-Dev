@@ -5,7 +5,7 @@ scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand
 
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lap 1
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] check 10
-gamerule doDaylightCycle false
+gamerule advance_time false
 time set 12800
 
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining2 11980

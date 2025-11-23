@@ -1,5 +1,5 @@
 #27a
-execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=27a] run gamerule fallDamage false
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=27a] run gamerule fall_damage false
 
 #28a
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=28a] run scoreboard players set @a afkTime 0

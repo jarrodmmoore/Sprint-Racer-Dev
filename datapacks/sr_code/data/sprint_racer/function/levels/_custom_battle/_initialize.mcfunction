@@ -16,7 +16,7 @@ execute unless score @s startType matches 0 run scoreboard players operation @e[
 execute if entity @s[tag=nightVision] run tag @a[tag=dontSetGamemode] add fr_nightvision
 
 #DAYLIGHT CYCLE
-execute if entity @s[tag=daylightCycle] run gamerule doDaylightCycle true
+execute if entity @s[tag=daylightCycle] run gamerule advance_time true
 
 #AI?
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove noAItrack
