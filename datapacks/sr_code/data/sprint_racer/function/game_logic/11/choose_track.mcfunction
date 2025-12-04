@@ -2,6 +2,7 @@ tag @s add gpOrderSet
 tag @s remove dontSetGamemode
 
 scoreboard players set @a inputCooldown 20
+scoreboard players set @s carrotInput 1
 
 tag @e[tag=chosenTrack] remove chosenTrack
 

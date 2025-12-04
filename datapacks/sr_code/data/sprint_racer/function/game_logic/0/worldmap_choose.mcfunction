@@ -147,8 +147,9 @@ execute unless entity @s[tag=gpOrderSet] unless entity @s[tag=doinTimeAttack] if
 execute unless entity @s[tag=gpOrderSet] unless entity @s[tag=doinTimeAttack] if score global gameState matches 3.. unless score global gameState matches 5 run function sprint_racer:game_logic/3/_initialize
 execute unless entity @s[tag=gpOrderSet] if entity @s[tag=doinTimeAttack] run function sprint_racer:game_logic/6/set_gamestate_without_ruining_everything
 
-execute if entity @s[tag=gpOrderSet] run function sprint_racer:game_logic/11/add_track
-tag @s[type=player,tag=qsDirectChoose] remove qsDirectChoose
-
 #cancel all other players' inputs now!
 execute unless entity @s[tag=gpOrderSet] run scoreboard players reset @a carrotInput
+
+#grand prix: add track
+execute if entity @s[tag=gpOrderSet] run function sprint_racer:game_logic/11/add_track
+tag @s[type=player,tag=qsDirectChoose] remove qsDirectChoose
