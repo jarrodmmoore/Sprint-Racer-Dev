@@ -21,6 +21,7 @@ tag @s[tag=newbehave] remove newbehave
 #flying with elytra
 execute if entity @s[scores={elytraTimer=1..,aiSubBehavior=..4}] run tag @s add newbehave
 scoreboard players set @s[tag=newbehave] aiSubBehavior 5
+execute if entity @s[tag=newbehave,type=mannequin] run data merge entity @s {FallFlying:1b}
 scoreboard players set @s[tag=newbehave] aiSubBTimer 40
 tag @s[tag=newbehave] remove newbehave
 
