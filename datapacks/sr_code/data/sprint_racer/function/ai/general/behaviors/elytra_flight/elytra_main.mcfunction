@@ -44,7 +44,7 @@ execute if entity @s[tag=removeElytra] run scoreboard players set @s rateAccel 3
 execute if entity @s[tag=removeElytra] run scoreboard players set @s rateDecel 0
 execute if entity @s[tag=removeElytra] run scoreboard players set @s aiHasFirework 0
 execute if entity @s[tag=removeElytra] run tag @s remove elytra_specific_2
-execute if entity @s[tag=removeElytra,nbt={OnGround:1b}] run effect clear @s minecraft:slow_falling
+execute if entity @s[tag=removeElytra] run effect clear @s minecraft:slow_falling
 
 #set direction... be precise!
 execute if entity @s[scores={elytraTimer=40..}] run tag @s add elytra_new_dir
