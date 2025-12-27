@@ -14,4 +14,4 @@ tag @e[tag=ctMin,type=armor_stand] remove ctMin
 scoreboard players add #ctQueryID value 1
 
 #recursion if there's still more
-execute if entity @e[type=armor_stand,tag=custombattle,tag=!ctQueried] run function sprint_racer:game_logic/10/custom_config/sort_battle_ids_recursive
+execute if entity @e[type=armor_stand,tag=custombattle,tag=!ctQueried] run schedule function sprint_racer:game_logic/10/custom_config/sort_battle_ids_recursive 1t

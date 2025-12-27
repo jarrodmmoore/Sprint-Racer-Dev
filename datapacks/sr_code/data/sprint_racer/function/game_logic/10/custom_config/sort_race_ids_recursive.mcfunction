@@ -13,5 +13,5 @@ tag @e[tag=ctMin,type=armor_stand] remove ctMin
 #next track gets next highest id
 scoreboard players add #ctQueryID value 1
 
-#recursion if there's still more
-execute if entity @e[type=armor_stand,tag=customrace,tag=!ctQueried] run function sprint_racer:game_logic/10/custom_config/sort_race_ids_recursive
+#keep sorting if there's still more
+execute if entity @e[type=armor_stand,tag=customrace,tag=!ctQueried] run schedule function sprint_racer:game_logic/10/custom_config/sort_race_ids_recursive 1t
