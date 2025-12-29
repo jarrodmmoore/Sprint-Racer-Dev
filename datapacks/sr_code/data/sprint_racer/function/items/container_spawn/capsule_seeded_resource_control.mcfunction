@@ -20,8 +20,11 @@ execute if entity @s[scores={rNumber=1..5}] run function sprint_racer:items/cont
 execute if entity @s[scores={rNumber=6..10}] run function sprint_racer:items/container_spawn/summon_item_capsule/index_6_10
 execute if entity @s[scores={rNumber=11..15}] run function sprint_racer:items/container_spawn/summon_item_capsule/index_11_15
 execute if entity @s[scores={rNumber=16..20}] run function sprint_racer:items/container_spawn/summon_item_capsule/index_16_20
+#21..22 not handled here!
+execute if score @s rNumber matches 23..49 run function sprint_racer:items/container_spawn/summon_item_capsule/index_extra
 #...
-execute if entity @s[scores={rNumber=23}] run function sprint_racer_language:gameplay/capsule_item/obliterator
+execute if score @s rNumber matches 61.. run tag @s add custom_item_spawn
+
 
 scoreboard players set @e[tag=capsuleSummon,type=item,distance=..3] itemBlockState 99
 execute as @e[tag=capsuleSummon,type=item,distance=..3] at @s run particle cloud ~ ~.22 ~ 0 0 0 0 3

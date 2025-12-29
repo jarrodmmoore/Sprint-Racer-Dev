@@ -89,4 +89,8 @@ execute if score @s tEditor matches 1287 run function sprint_racer_language:_dlc
 execute if score @s tEditor matches 1288 run gamemode adventure @s
 execute if score @s tEditor matches 1288 run clear @s gray_wool
 execute if score @s tEditor matches 1288 run tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+execute if score @s tEditor matches 1289 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/itemchest_menu/increment_seed_g
+execute if score @s tEditor matches 1290 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/itemchest_menu/decrement_seed_g
+execute if score @s tEditor matches 1291 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/itemchest_menu_edit/increment_seed_g
+execute if score @s tEditor matches 1292 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/itemchest_menu_edit/decrement_seed_g
 #...

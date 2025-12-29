@@ -14,13 +14,18 @@ execute as @e[tag=chest3,type=armor_stand,tag=cSETME,distance=..3] at @s run fun
 
 #spawn item based on seed
 scoreboard players set @s rNumber 0
-execute if score global gameState matches ..7 run scoreboard players operation @s rNumber = @s itemchestSeedA
-execute if score global gameState matches 8.. run scoreboard players operation @s rNumber = @s itemchestSeedB
+scoreboard players operation @s rNumber = @s itemchestSeedG
+execute if score global gameState matches 7 run scoreboard players operation @s rNumber = @s itemchestSeedA
+execute if score global gameState matches 8 run scoreboard players operation @s rNumber = @s itemchestSeedB
 
 execute if entity @s[scores={rNumber=0..5}] run function sprint_racer:items/container_spawn/summon_item_capsule/index_0_5
 execute if entity @s[scores={rNumber=6..10}] run function sprint_racer:items/container_spawn/summon_item_capsule/index_6_10
 execute if entity @s[scores={rNumber=11..15}] run function sprint_racer:items/container_spawn/summon_item_capsule/index_11_15
 execute if entity @s[scores={rNumber=16..20}] run function sprint_racer:items/container_spawn/summon_item_capsule/index_16_20
+#21..22 not handled here!
+execute if score @s rNumber matches 23..49 run function sprint_racer:items/container_spawn/summon_item_capsule/index_extra
+#...
+execute if score @s rNumber matches 61.. run tag @s add custom_item_spawn
 
 #DEBUG
 #function sprint_racer_language:gameplay/capsule_item/1

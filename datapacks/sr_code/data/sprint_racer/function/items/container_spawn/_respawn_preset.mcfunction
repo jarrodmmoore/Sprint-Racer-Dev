@@ -2,6 +2,9 @@ scoreboard players operation @s rNumber = @s itemchestSeedA
 #no ender chests in the lobby when 6+ players are present
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=0,playerCount=6..}] run scoreboard players set @s rNumber 1
 
+#clean up
+tag @s remove custom_item_spawn
+
 #DEBUG
 #scoreboard players set @s rNumber 38
 

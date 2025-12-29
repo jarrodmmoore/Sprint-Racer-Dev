@@ -1,0 +1,2 @@
+#replace the model
+execute as @e[limit=1,tag=cSETME,type=armor_stand,distance=..2] on passengers run item replace entity @s[type=item_display] container.0 with ender_chest[item_model="sr/container/glass_enchanted",enchantment_glint_override=true]

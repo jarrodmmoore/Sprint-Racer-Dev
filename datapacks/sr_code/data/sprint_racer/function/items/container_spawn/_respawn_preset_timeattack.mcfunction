@@ -1,8 +1,23 @@
 scoreboard players set @s rNumber 0
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=..7}] run scoreboard players operation @s rNumber = @s itemchestSeedA
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=8..}] run scoreboard players operation @s rNumber = @s itemchestSeedB
+execute if score global gameState matches 7 run scoreboard players operation @s rNumber = @s itemchestSeedA
+execute if score global gameState matches 8 run scoreboard players operation @s rNumber = @s itemchestSeedB
+
+#clean up
+tag @s remove custom_item_spawn
 
 #capsules and enchanting only
-execute if entity @s[scores={rNumber=1..20}] run function sprint_racer:items/container_spawn/capsule_seeded_timeattack
-execute if entity @s[scores={rNumber=21}] run function sprint_racer:items/container_spawn/enchanting_table
-execute if entity @s[scores={rNumber=22}] run function sprint_racer:items/container_spawn/cake
+execute if entity @s[scores={rNumber=1..20}] run return run function sprint_racer:items/container_spawn/capsule_seeded_timeattack
+
+#special containers
+execute if entity @s[scores={rNumber=21}] run return run function sprint_racer:items/container_spawn/enchanting_table
+execute if entity @s[scores={rNumber=22}] run return run function sprint_racer:items/container_spawn/cake
+
+#obliterator
+#fishing rod
+#fishing rod 2
+#battle bat
+#battle basher
+#potato
+#elite potato
+#custom
+execute if entity @s[scores={rNumber=23..}] run return run function sprint_racer:items/container_spawn/capsule_seeded_timeattack

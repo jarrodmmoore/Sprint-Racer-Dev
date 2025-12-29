@@ -4,14 +4,10 @@
 #next in the list is the track with lowest ID
 scoreboard players set #min value 2147483647
 scoreboard players operation #min value < @e[type=armor_stand,tag=customrace,tag=!ctQueried] customTrackID
-execute as @e[type=armor_stand,tag=customrace,tag=!ctQueried] if score @s customTrackID <= #min value run tag @s add ctMin
 
-#select an arbitrary track with min ID to be next
-execute as @e[type=armor_stand,tag=ctMin,limit=1,sort=arbitrary] run function sprint_racer:game_logic/10/custom_config/sort_race_get_id
-tag @e[tag=ctMin,type=armor_stand] remove ctMin
-
-#next track gets next highest id
-scoreboard players add #ctQueryID value 1
+#select an arbitrary track with min ID to be next (using macro to avoid command branching)
+execute store result storage sprint_racer:func_args id int 1 run scoreboard players get #min value
+function sprint_racer:game_logic/10/custom_config/sort_race_ids_min_macro with storage sprint_racer:func_args
 
 #keep sorting if there's still more
-execute if entity @e[type=armor_stand,tag=customrace,tag=!ctQueried] run schedule function sprint_racer:game_logic/10/custom_config/sort_race_ids_recursive 1t
+execute if entity @e[type=armor_stand,tag=customrace,tag=!ctQueried] run function sprint_racer:game_logic/10/custom_config/sort_race_ids_recursive

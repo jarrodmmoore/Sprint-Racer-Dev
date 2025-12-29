@@ -11,3 +11,5 @@ execute store result score @s itemchestSeedB run data get entity @s data.NodeDat
 execute store result score @s itemchestSeedR run data get entity @s data.NodeData[2] 1
 #playerRequire
 execute store result score @s playerRequire run data get entity @s data.NodeData[3] 1
+#itemchestSeedG
+execute store result score @s itemchestSeedG run data get entity @s data.NodeData[4] 1

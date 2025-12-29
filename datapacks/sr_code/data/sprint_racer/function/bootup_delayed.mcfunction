@@ -210,6 +210,8 @@ scoreboard objectives add tTrackEditor trigger
 #v1.6.9
 scoreboard objectives add aiHasObliterator dummy
 scoreboard objectives add aiEntityRandomized dummy
+#v1.6.11
+scoreboard objectives add itemchestSeedG dummy
 
 
 #make sure command blocks are enabled
@@ -248,6 +250,8 @@ gamerule spread_vines false
 #gamerule spawnChunkRadius 10
 gamerule player_movement_check false
 gamerule command_blocks_work true
+gamerule max_command_forks 900000
+gamerule max_command_sequence_length 900000
 
 #constants
 scoreboard players set #100 value 100

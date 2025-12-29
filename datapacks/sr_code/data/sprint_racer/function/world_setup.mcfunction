@@ -670,6 +670,7 @@ scoreboard objectives add difficultyRamp dummy
 scoreboard objectives add dropSVoid minecraft.dropped:minecraft.structure_void
 scoreboard objectives add timeUntilElim dummy
 scoreboard objectives add playerLives dummy
+scoreboard objectives add playerRequire dummy
 
 #lap display during races
 bossbar add lap1 ["",{text:"Lap [1/",color:"green",bold:true},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"lap"},color:"green",bold:true},{text:"]",color:"green",bold:true}]

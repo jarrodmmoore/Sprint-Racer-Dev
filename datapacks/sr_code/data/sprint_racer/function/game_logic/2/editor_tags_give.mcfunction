@@ -42,6 +42,7 @@ scoreboard players set @s scriptMove 4
 scoreboard players set @s itemchestSeedA 0
 scoreboard players set @s itemchestSeedB 0
 scoreboard players set @s itemchestSeedR 0
+scoreboard players set @s itemchestSeedG 0
 
 scoreboard players set @s AIBC_id 1
 scoreboard players set @s AIBC_dir1 0

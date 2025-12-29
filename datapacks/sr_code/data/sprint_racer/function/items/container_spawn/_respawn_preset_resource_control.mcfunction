@@ -1,6 +1,9 @@
 scoreboard players set @s rNumber 0
 scoreboard players operation @s rNumber = @s itemchestSeedR
 
+#clean up
+tag @s remove custom_item_spawn
+
 #don't spawn if we're banned
 execute if entity @s[scores={rNumber=1}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=banNo1] run scoreboard players set @s rNumber 0
 execute if entity @s[scores={rNumber=2}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=banNo2] run scoreboard players set @s rNumber 0
@@ -23,11 +26,23 @@ execute if entity @s[scores={rNumber=18}] if entity @e[tag=w,x=1560,y=150,z=406,
 execute if entity @s[scores={rNumber=19}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=banNo19] run scoreboard players set @s rNumber 0
 execute if entity @s[scores={rNumber=20}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=banNo20] run scoreboard players set @s rNumber 0
 
-#capsules and enchanting only
-execute if entity @s[scores={rNumber=1..20}] run function sprint_racer:items/container_spawn/capsule_seeded_resource_control
-execute if entity @s[scores={rNumber=21}] run function sprint_racer:items/container_spawn/enchanting_table
-execute if entity @s[scores={rNumber=22}] run function sprint_racer:items/container_spawn/cake
-execute if entity @s[scores={rNumber=23}] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1,tag=banNo2] run function sprint_racer:items/container_spawn/capsule_seeded_resource_control
+#normal items
+execute if entity @s[scores={rNumber=1..20}] run return run function sprint_racer:items/container_spawn/capsule_seeded_resource_control
+
+#non-rng tables
+execute if entity @s[scores={rNumber=21}] run return run function sprint_racer:items/container_spawn/enchanting_table
+execute if entity @s[scores={rNumber=22}] run return run function sprint_racer:items/container_spawn/cake
+
+#obliterator
+#fishing rod
+#fishing rod 2
+#battle bat
+#battle basher
+#potato
+#elite potato
+#custom
+execute if entity @s[scores={rNumber=23..}] run return run function sprint_racer:items/container_spawn/capsule_seeded_resource_control
+
 
 #item is banned, don't try to respawn
 execute if entity @s[scores={rNumber=0}] run scoreboard players set @s itemBlockState 0

@@ -1,0 +1,4 @@
+summon item ~ ~.3 ~ {Tags:["capsuleItem","capsuleSummon","itemcontainer"],PickupDelay:32767,Age:-32768,NoGravity:1b,Invulnerable:1b,Item:{id:"minecraft:totem_of_undying",count:1,components:{"minecraft:custom_name":{translate:"sr.item_elite.totem",color:"yellow",bold:true,italic:false},"minecraft:enchantment_glint_override":true,"minecraft:custom_data":{elite8:1b,stay:1b,item:1b,eliteitem:1b}}}}
+data merge entity @e[limit=1,tag=cSETME,type=armor_stand,distance=..2] {CustomNameVisible:1b,CustomName:{translate:"sr.item_elite.totem",color:"yellow",bold:false,italic:false}}
+#enchanted item!
+function sprint_racer_language:gameplay/capsule_item/apply_enchantment_glint_chest

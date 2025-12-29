@@ -6,6 +6,7 @@ execute if entity @s[tag=aiCantSee] run tag @e[limit=1,tag=node,tag=setup,tag=it
 scoreboard players operation @e[limit=1,tag=node,tag=setup,tag=itemchest,type=marker] itemchestSeedA = @s itemchestSeedA
 scoreboard players operation @e[limit=1,tag=node,tag=setup,tag=itemchest,type=marker] itemchestSeedB = @s itemchestSeedB
 scoreboard players operation @e[limit=1,tag=node,tag=setup,tag=itemchest,type=marker] itemchestSeedR = @s itemchestSeedR
+scoreboard players operation @e[limit=1,tag=node,tag=setup,tag=itemchest,type=marker] itemchestSeedG = @s itemchestSeedG
 scoreboard players set @e[limit=1,tag=node,tag=setup,tag=itemchest,type=marker] playerRequire 5
 
 execute as @e[limit=1,tag=node,tag=setup,tag=itemchest,type=marker] run function sprint_racer_language:editor_mode/name/name_itemchest

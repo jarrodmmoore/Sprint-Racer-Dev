@@ -43,6 +43,7 @@ execute if score #clearCacheProgress value matches 18 run scoreboard players res
 execute if score #clearCacheProgress value matches 19 run scoreboard players reset * itemchestSeedA
 execute if score #clearCacheProgress value matches 20 run scoreboard players reset * itemchestSeedB
 execute if score #clearCacheProgress value matches 21 run scoreboard players reset * itemchestSeedR
+execute if score #clearCacheProgress value matches 21 run scoreboard players reset * itemchestSeedG
 #playerRequire also needs to be cleared, but now's not a good time. we'll do it at game_logic/0/_initialize instead.
 
 #jump boost

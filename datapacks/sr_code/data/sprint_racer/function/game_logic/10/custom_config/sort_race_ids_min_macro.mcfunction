@@ -1,0 +1,1 @@
+$execute as @e[type=armor_stand,tag=customrace,tag=!ctQueried,scores={customTrackID=..$(id)},sort=arbitrary] run function sprint_racer:game_logic/10/custom_config/sort_race_get_id
