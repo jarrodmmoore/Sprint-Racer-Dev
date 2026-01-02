@@ -1,4 +1,9 @@
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!banBattleBat,tag=!banEnchantBattleBat] run return \
+    run function sprint_racer:game_logic/0/toggle_item/enchant_ban_bat
+#=====
+
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=banBattleBat] add unban
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=banBattleBat] remove banEnchantBattleBat
 
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!unban] add banBattleBat

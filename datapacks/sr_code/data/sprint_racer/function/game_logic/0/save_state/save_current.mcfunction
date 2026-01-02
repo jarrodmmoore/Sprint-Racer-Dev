@@ -229,6 +229,7 @@ execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=tr
 
 setblock 1619 ~ 443 lime_wool
 execute if entity @s[tag=banBattleBat] run setblock 1619 ~ 443 red_wool
+execute if entity @s[tag=banEnchantBattleBat] run setblock 1619 ~ 443 yellow_wool
 fill 1609 ~ 442 1618 ~ 443 lime_wool
 execute if entity @s[tag=banNo1] run setblock 1618 ~ 443 red_wool
 execute if entity @s[tag=banNo2] run setblock 1617 ~ 443 red_wool
@@ -250,6 +251,27 @@ execute if entity @s[tag=banNo17] run setblock 1612 ~ 442 red_wool
 execute if entity @s[tag=banNo18] run setblock 1611 ~ 442 red_wool
 execute if entity @s[tag=banNo19] run setblock 1610 ~ 442 red_wool
 execute if entity @s[tag=banNo20] run setblock 1609 ~ 442 red_wool
+
+execute if entity @s[tag=banEnchant1] run setblock 1618 ~ 443 yellow_wool
+execute if entity @s[tag=banEnchant2] run setblock 1617 ~ 443 yellow_wool
+execute if entity @s[tag=banEnchant3] run setblock 1616 ~ 443 yellow_wool
+execute if entity @s[tag=banEnchant4] run setblock 1615 ~ 443 yellow_wool
+execute if entity @s[tag=banEnchant5] run setblock 1614 ~ 443 yellow_wool
+execute if entity @s[tag=banEnchant6] run setblock 1613 ~ 443 yellow_wool
+execute if entity @s[tag=banEnchant7] run setblock 1612 ~ 443 yellow_wool
+execute if entity @s[tag=banEnchant8] run setblock 1611 ~ 443 yellow_wool
+execute if entity @s[tag=banEnchant9] run setblock 1610 ~ 443 yellow_wool
+execute if entity @s[tag=banEnchant10] run setblock 1609 ~ 443 yellow_wool
+execute if entity @s[tag=banEnchant11] run setblock 1618 ~ 442 yellow_wool
+execute if entity @s[tag=banEnchant12] run setblock 1617 ~ 442 yellow_wool
+execute if entity @s[tag=banEnchant13] run setblock 1616 ~ 442 yellow_wool
+execute if entity @s[tag=banEnchant14] run setblock 1615 ~ 442 yellow_wool
+execute if entity @s[tag=banEnchant15] run setblock 1614 ~ 442 yellow_wool
+execute if entity @s[tag=banEnchant16] run setblock 1613 ~ 442 yellow_wool
+execute if entity @s[tag=banEnchant17] run setblock 1612 ~ 442 yellow_wool
+execute if entity @s[tag=banEnchant18] run setblock 1611 ~ 442 yellow_wool
+execute if entity @s[tag=banEnchant19] run setblock 1610 ~ 442 yellow_wool
+execute if entity @s[tag=banEnchant20] run setblock 1609 ~ 442 yellow_wool
 
 #################################
 #CHEATS

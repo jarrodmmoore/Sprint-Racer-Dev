@@ -1,5 +1,5 @@
 scoreboard objectives add capsuleState dummy
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] capsuleState 1
+scoreboard players set @s capsuleState 1
 
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..50}] remove specialOddBan
 

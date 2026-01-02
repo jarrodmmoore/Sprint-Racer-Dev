@@ -406,11 +406,57 @@ tag @s remove banNo18
 tag @s remove banNo19
 tag @s remove banNo20
 
+tag @s remove banEnchantBattleBat
+tag @s remove banEnchant1
+tag @s remove banEnchant2
+tag @s remove banEnchant3
+tag @s remove banEnchant4
+tag @s remove banEnchant5
+tag @s remove banEnchant6
+tag @s remove banEnchant7
+tag @s remove banEnchant8
+tag @s remove banEnchant9
+tag @s remove banEnchant10
+tag @s remove banEnchant11
+tag @s remove banEnchant12
+tag @s remove banEnchant13
+tag @s remove banEnchant14
+tag @s remove banEnchant15
+tag @s remove banEnchant16
+tag @s remove banEnchant17
+tag @s remove banEnchant18
+tag @s remove banEnchant19
+tag @s remove banEnchant20
+
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..20}] remove capsuleBan
+fill 1601 79 422 1621 79 433 oak_log replace spruce_log
 fill 1601 79 422 1621 79 433 oak_log replace dark_oak_log
 
 #now we do bans based on the new data we be reading
+#(toggle once for enchant ban, toggle twice for full ban)
 scoreboard players set #no_cat_check value 1
+execute unless block 1619 ~ 443 lime_wool positioned 1601 78 422 run function sprint_racer:game_logic/0/toggle_item/0
+execute unless block 1618 ~ 443 lime_wool positioned 1603 78 422 run function sprint_racer:game_logic/0/toggle_item/1
+execute unless block 1617 ~ 443 lime_wool positioned 1605 78 422 run function sprint_racer:game_logic/0/toggle_item/2
+execute unless block 1616 ~ 443 lime_wool positioned 1607 78 422 run function sprint_racer:game_logic/0/toggle_item/3
+execute unless block 1615 ~ 443 lime_wool positioned 1609 78 422 run function sprint_racer:game_logic/0/toggle_item/4
+execute unless block 1614 ~ 443 lime_wool positioned 1611 78 422 run function sprint_racer:game_logic/0/toggle_item/5
+execute unless block 1613 ~ 443 lime_wool positioned 1613 78 422 run function sprint_racer:game_logic/0/toggle_item/6
+execute unless block 1612 ~ 443 lime_wool positioned 1615 78 422 run function sprint_racer:game_logic/0/toggle_item/7
+execute unless block 1611 ~ 443 lime_wool positioned 1617 78 422 run function sprint_racer:game_logic/0/toggle_item/8
+execute unless block 1610 ~ 443 lime_wool positioned 1619 78 422 run function sprint_racer:game_logic/0/toggle_item/9
+execute unless block 1609 ~ 443 lime_wool positioned 1621 78 422 run function sprint_racer:game_logic/0/toggle_item/10
+execute unless block 1618 ~ 442 lime_wool positioned 1603 78 433 run function sprint_racer:game_logic/0/toggle_item/11
+execute unless block 1617 ~ 442 lime_wool positioned 1605 78 433 run function sprint_racer:game_logic/0/toggle_item/12
+execute unless block 1616 ~ 442 lime_wool positioned 1607 78 433 run function sprint_racer:game_logic/0/toggle_item/13
+execute unless block 1615 ~ 442 lime_wool positioned 1609 78 433 run function sprint_racer:game_logic/0/toggle_item/14
+execute unless block 1614 ~ 442 lime_wool positioned 1611 78 433 run function sprint_racer:game_logic/0/toggle_item/15
+execute unless block 1613 ~ 442 lime_wool positioned 1613 78 433 run function sprint_racer:game_logic/0/toggle_item/16
+execute unless block 1612 ~ 442 lime_wool positioned 1615 78 433 run function sprint_racer:game_logic/0/toggle_item/17
+execute unless block 1611 ~ 442 lime_wool positioned 1617 78 433 run function sprint_racer:game_logic/0/toggle_item/18
+execute unless block 1610 ~ 442 lime_wool positioned 1619 78 433 run function sprint_racer:game_logic/0/toggle_item/19
+execute unless block 1609 ~ 442 lime_wool positioned 1621 78 433 run function sprint_racer:game_logic/0/toggle_item/20
+
 execute if block 1619 ~ 443 red_wool positioned 1601 78 422 run function sprint_racer:game_logic/0/toggle_item/0
 execute if block 1618 ~ 443 red_wool positioned 1603 78 422 run function sprint_racer:game_logic/0/toggle_item/1
 execute if block 1617 ~ 443 red_wool positioned 1605 78 422 run function sprint_racer:game_logic/0/toggle_item/2
