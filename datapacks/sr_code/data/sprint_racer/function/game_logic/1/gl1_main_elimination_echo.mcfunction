@@ -10,8 +10,8 @@ scoreboard players add #lastPlaceFlash value 1
 execute if score #lastPlaceFlash value matches 21.. run scoreboard players set #lastPlaceFlash value 1
 
 #item stuff
-execute if entity @s[tag=optItems,scores={oTimer=0,currentTimeMsec=0,gameTime=160..,timeRemaining=1..}] run function sprint_racer:game_logic/1/item_stuff
-execute if entity @s[tag=!optItems,scores={oTimer=0,currentTimeMsec=0,gameTime=10..,timeRemaining=1..}] run function sprint_racer:items/container_check_itemless
+execute if entity @s[tag=!optNoItems,tag=!optItemsB,scores={oTimer=0,currentTimeMsec=0,gameTime=160..,timeRemaining=1..}] run function sprint_racer:game_logic/1/item_stuff
+execute if entity @s[tag=!optItems,tag=!optItemsR,scores={oTimer=0,currentTimeMsec=0,gameTime=10..,timeRemaining=1..}] run function sprint_racer:items/container_check_itemless
 function sprint_racer:items/container_tick
 
 #starting countdown

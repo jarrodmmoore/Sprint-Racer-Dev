@@ -8,6 +8,10 @@ tag @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,tag=musicViab
 function sprint_racer:music/global/stop_music
 ######
 
+#clear any old forceloaded chunks
+forceload remove all
+function sprint_racer:_force_load_chunks
+
 #always play in 20Hz mode no matter what! otherwise the camera will look jerky
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=autotick] remove halftick
 

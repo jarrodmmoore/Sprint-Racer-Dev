@@ -8,8 +8,8 @@ scoreboard players remove @a[scores={lapShowDelay=1..}] lapShowDelay 1
 execute as @a[tag=finished,scores={lapShowDelay=1}] at @s run function sprint_racer:game_logic/1/record_lap/show_final_results_delayed
 
 #item stuff
-execute if entity @s[tag=optItems,scores={oTimer=0,currentTimeMsec=0,gameTime=160..,timeRemaining=1..}] run function sprint_racer:game_logic/1/item_stuff
-execute if entity @s[tag=!optItems,scores={oTimer=0,currentTimeMsec=0,gameTime=10..,timeRemaining=1..}] run function sprint_racer:items/container_check_itemless
+execute if entity @s[tag=!optNoItems,tag=!optItemsB,scores={oTimer=0,currentTimeMsec=0,gameTime=160..,timeRemaining=1..}] run function sprint_racer:game_logic/1/item_stuff
+execute if entity @s[tag=!optItems,tag=!optItemsR,scores={oTimer=0,currentTimeMsec=0,gameTime=10..,timeRemaining=1..}] run function sprint_racer:items/container_check_itemless
 execute unless entity @s[scores={gamemodePresetA=3}] run function sprint_racer:items/container_tick
 execute if entity @s[scores={gamemodePresetA=3}] run function sprint_racer:items/container_tick_tactics
 

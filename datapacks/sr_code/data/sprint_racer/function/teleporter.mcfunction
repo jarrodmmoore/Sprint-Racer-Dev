@@ -57,6 +57,8 @@ execute if entity @s[tag=ai9] run tag @e[tag=AImaster,type=armor_stand,x=1548,y=
 execute if entity @s[tag=ai] run scoreboard players operation @e[tag=dataTarget,type=armor_stand] lastTeleport = @s lastTeleport
 execute if entity @s[tag=ai] run tag @e[tag=dataTarget,type=armor_stand] remove dataTarget
 
+#forceload this in case it gets used again
+execute unless score global gameState matches 5 as @e[tag=itpedtou,type=marker] at @s run forceload add ~ ~
 
 tag @e[tag=itpedtou,type=marker] remove itpedtou
 tag @e[tag=ugonnatpme,type=marker,distance=..10] remove ugonnatpme

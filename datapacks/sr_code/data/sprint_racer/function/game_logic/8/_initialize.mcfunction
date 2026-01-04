@@ -12,6 +12,10 @@ tag @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,tag=musicViab
 function sprint_racer:music/global/stop_music
 ######
 
+#clear any old forceloaded chunks
+forceload remove all
+function sprint_racer:_force_load_chunks
+
 scoreboard objectives remove specJoin
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] specJoinTime 0
 scoreboard players set global loadAttempts 0
@@ -21,7 +25,7 @@ scoreboard players set global resetAttempts 0
 execute as @a unless score @s cStatRequest = @s cStatType at @s run function sprint_racer:cheats/shoes/handle_stat_request
 
 #sent from lobby (gamestate 0), adopt whatever item setting was defined in the lobby
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=return2lobby,tag=!optItems] add taNoItems
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=return2lobby] add taNoItems
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=return2lobby,tag=optItems] remove taNoItems
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=return2lobby,tag=optItemsB] remove taNoItems
 

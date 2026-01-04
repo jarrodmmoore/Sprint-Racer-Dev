@@ -9,4 +9,5 @@ scoreboard players set @s cStatHP 16
 scoreboard players set @s cStatHeal 15
 scoreboard players set @s cStatHitstun 100
 scoreboard players set @s cStatCPHeal 4
+scoreboard players set @s cStatMoveEfficient 1
 function sprint_racer:speed_attribute

@@ -25,13 +25,11 @@ scoreboard players add #lastPlaceFlash value 1
 execute if score #lastPlaceFlash value matches 21.. run scoreboard players set #lastPlaceFlash value 1
 
 #node loading stuff, staggered a bit for performance concerns
-scoreboard players add @s nodeTimeCycle 1
-scoreboard players set @s[scores={nodeTimeCycle=21..}] nodeTimeCycle 1
-execute if entity @s[scores={nodeTimeCycle=1}] as @e[tag=node,tag=activator,scores={nodeState=1..}] at @s run scoreboard players set @e[tag=node,distance=..100] nodeState 1
+function sprint_racer:game_logic/1/node_loading/node_activation_tick
 
 #item stuff
-execute if entity @s[tag=optItems,scores={oTimer=0,currentTimeMsec=0,gameTime=160..,timeRemaining=1..}] run function sprint_racer:game_logic/1/item_stuff
-execute if entity @s[tag=!optItems,scores={oTimer=0,currentTimeMsec=0,gameTime=10..,timeRemaining=1..}] run function sprint_racer:items/container_check_itemless
+execute if entity @s[tag=!optNoItems,tag=!optItemsB,scores={oTimer=0,currentTimeMsec=0,gameTime=160..,timeRemaining=1..}] run function sprint_racer:game_logic/1/item_stuff
+execute if entity @s[tag=!optItems,tag=!optItemsR,scores={oTimer=0,currentTimeMsec=0,gameTime=10..,timeRemaining=1..}] run function sprint_racer:items/container_check_itemless
 function sprint_racer:items/container_tick
 
 #starting countdown
@@ -84,7 +82,7 @@ execute if score #nextItemIsAnvil value matches 0 run scoreboard players remove 
 execute if score #anvilLeadCheck value matches ..0 run function sprint_racer:game_logic/1/anvil_lead_check
 
 #keep spectators from flying away
-execute if entity @s[scores={gameTime=100..}] as @a[gamemode=spectator] at @s unless entity @e[tag=activator,distance=..120,scores={nodeState=1..}] run function sprint_racer:spectators_keep_in_bounds
+execute if entity @s[scores={gameTime=100..}] as @a[gamemode=spectator] at @s unless entity @e[tag=activator,type=marker,distance=..200,scores={nodeState=1..}] run function sprint_racer:spectators_keep_in_bounds
 
 #reset
 scoreboard players remove @a[scores={resetCooldown=1..}] resetCooldown 1

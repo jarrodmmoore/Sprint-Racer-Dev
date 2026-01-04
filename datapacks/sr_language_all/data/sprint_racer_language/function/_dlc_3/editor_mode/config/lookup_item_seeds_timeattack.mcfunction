@@ -63,4 +63,5 @@ execute if score #math value matches 48 run return run data modify storage sprin
 execute if score #math value matches 49 run return run data modify storage sprint_racer:item_name lookup set value {color:light_purple,translate:"sr.item_elite.storm"}
 
 #custom
-execute if score #math value matches 61.. run return run data modify storage sprint_racer:item_name lookup set value {color:white,text:"tag=custom_item_spawn"}
+execute if score #math value matches 61..99 run return run data modify storage sprint_racer:item_name lookup set value {color:white,translate:"sr.item_spawner.custom_capsule"}
+execute if score #math value matches 100.. run return run data modify storage sprint_racer:item_name lookup set value {color:white,translate:"sr.item_spawner.custom_no_capsule"}

@@ -33,6 +33,7 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optChoose
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optRandom
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optItems
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optItemsB
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optItemsR
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optNoItems
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optBalance
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add nospeedo
@@ -340,6 +341,10 @@ scoreboard objectives add aiRunAwayTime dummy
 scoreboard objectives add aiChaseTime dummy
 scoreboard objectives add aiHitCooldown dummy
 scoreboard objectives add aiSpreadBias dummy
+scoreboard objectives add aiOwchTime dummy
+scoreboard objectives add aiAirTime dummy
+scoreboard objectives add aiBiasTime dummy
+scoreboard objectives add hitboxHP dummy
 
 #AI breadcrumb data
 scoreboard objectives add AIBC_id dummy

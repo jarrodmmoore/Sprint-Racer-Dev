@@ -28,9 +28,7 @@ execute if entity @s[scores={gameTime=200..,timeRemaining=1..}] run title @a[tag
 execute if entity @s[scores={gameTime=200..,timeRemaining=1..}] run title @a[tag=!playing] title [""]
 
 #node loading stuff, staggered a bit for performance concerns
-scoreboard players add @s nodeTimeCycle 1
-scoreboard players set @s[scores={nodeTimeCycle=21..}] nodeTimeCycle 1
-execute if entity @s[scores={nodeTimeCycle=1}] as @e[tag=node,tag=activator,scores={nodeState=1..}] at @s run scoreboard players set @e[tag=node,distance=..100] nodeState 1
+function sprint_racer:game_logic/1/node_loading/node_activation_tick
 
 #item stuff
 execute if entity @s[scores={oTimer=0,currentTimeMsec=0,gameTime=160..,timeRemaining=1..}] run function sprint_racer:game_logic/8/item_stuff
@@ -57,7 +55,7 @@ execute as @e[type=ender_pearl] at @s if block ~ 0 ~ black_wool run kill @s
 execute if entity @s[tag=halftick,scores={gameState=8}] run function sprint_racer:game_logic/8/gl8_main_echo
 
 #keep spectators from flying away
-execute if entity @s[scores={gameTime=100..}] as @a[gamemode=spectator] at @s unless entity @e[tag=activator,distance=..120,scores={nodeState=1..}] run function sprint_racer:spectators_keep_in_bounds
+execute if entity @s[scores={gameTime=100..}] as @a[gamemode=spectator] at @s unless entity @e[tag=activator,type=marker,distance=..200,scores={nodeState=1..}] run function sprint_racer:spectators_keep_in_bounds
 
 
 #reset

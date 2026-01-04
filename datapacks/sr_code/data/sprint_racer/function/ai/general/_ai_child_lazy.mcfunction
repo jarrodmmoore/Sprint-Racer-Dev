@@ -8,6 +8,8 @@ scoreboard players add @s aiLifetime 1
 execute if entity @s[tag=aiGotOwie] run function sprint_racer:ai/general/owch_logic
 scoreboard players set @s[tag=!aiGotOwie,scores={aiOwchTime=1..}] aiOwchTime 0
 
+#lazy tick bonus: let's forceload the chunks around ourselves
+function sprint_racer:ai/general/load_nearby_chunks
 
 #ai loses aiAirBoost tag when on ground
 tag @s[tag=slowAir] remove slowAir

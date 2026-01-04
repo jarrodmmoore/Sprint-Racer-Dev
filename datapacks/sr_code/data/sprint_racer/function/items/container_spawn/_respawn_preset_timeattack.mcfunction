@@ -20,4 +20,7 @@ execute if entity @s[scores={rNumber=22}] run return run function sprint_racer:i
 #potato
 #elite potato
 #custom
-execute if entity @s[scores={rNumber=23..}] run return run function sprint_racer:items/container_spawn/capsule_seeded_timeattack
+execute if entity @s[scores={rNumber=23..99}] run return run function sprint_racer:items/container_spawn/capsule_seeded_timeattack
+
+#custom, no capsule
+execute if entity @s[scores={rNumber=100..}] run return run tag @s add custom_item_spawn

@@ -23,6 +23,7 @@ execute if entity @s[tag=optRoulette] run setblock 1617 ~ 460 yellow_wool
 execute if entity @s[tag=optItems] run setblock 1616 ~ 460 white_wool
 execute if entity @s[tag=optItemsB] run setblock 1616 ~ 460 orange_wool
 execute if entity @s[tag=optNoItems] run setblock 1616 ~ 460 magenta_wool
+execute if entity @s[tag=optItemsR] run setblock 1616 ~ 460 light_blue_wool
 
 #item balance
 execute if entity @s[tag=timeBalance,tag=optBalance] run setblock 1615 ~ 460 white_wool

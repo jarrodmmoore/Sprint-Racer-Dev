@@ -14,8 +14,10 @@ execute if score global aiHasItem40 matches 1 if entity @s[tag=itemCyan] run tag
 execute if score global aiHasItem40 matches 1 if entity @s[tag=!itemCyan] run tag @e[tag=activeplayer,tag=!playerOrange] add chickenTarget
 
 #go at nearest target
-execute if entity @e[tag=chickenTarget,limit=1] run data modify entity @s AngryAt set from entity @e[tag=chickenTarget,limit=1,sort=nearest] UUID
-data modify entity @s AngerTime set value 300
+execute if entity @e[tag=chickenTarget,limit=1] run data modify entity @s angry_at set from entity @e[tag=chickenTarget,limit=1,sort=nearest] UUID
+execute store result score #time value run time query gametime
+scoreboard players add #time value 300
+execute store result entity @s anger_end_time long 1 run scoreboard players get #time value
 
 #clear tags
 tag @e[tag=chickenParent,type=chicken] remove chickenParent

@@ -10,9 +10,7 @@ execute if entity @s[scores={gameTime=220..99999}] run function sprint_racer:gam
 function sprint_racer:game_logic/3/node_effects/node_effects_main
 
 #node loading stuff, staggered a bit for performance concerns
-scoreboard players add @s nodeTimeCycle 1
-scoreboard players set @s[scores={nodeTimeCycle=21..}] nodeTimeCycle 1
-execute if entity @s[scores={nodeTimeCycle=1}] as @e[tag=node,tag=activator,scores={nodeState=1..}] at @s run scoreboard players set @e[tag=node,distance=..100] nodeState 1
+function sprint_racer:game_logic/1/node_loading/node_activation_tick
 
 #item stuff and score displays
 execute if entity @s[scores={oTimer=0,currentTimeMsec=0,gameTime=160..99999}] run function sprint_racer:game_logic/3/elimination/once_per_second_stuff
@@ -53,7 +51,7 @@ execute if entity @s[scores={gameTime=160..}] as @e[tag=activeplayer] at @s run 
 execute as @e[type=ender_pearl] at @s if block ~ 0 ~ black_wool run kill @s
 
 #keep spectators from flying away
-execute if entity @s[scores={gameTime=100..}] as @a[gamemode=spectator] at @s unless entity @e[tag=activator,distance=..120,scores={nodeState=1..}] run function sprint_racer:spectators_keep_in_bounds
+execute if entity @s[scores={gameTime=100..}] as @a[gamemode=spectator] at @s unless entity @e[tag=activator,type=marker,distance=..200,scores={nodeState=1..}] run function sprint_racer:spectators_keep_in_bounds
 
 #repeat a few functions in half tick speed mode is enabled
 execute if entity @s[tag=halftick,scores={gameState=3}] run function sprint_racer:game_logic/3/gl3_main_elimination_echo

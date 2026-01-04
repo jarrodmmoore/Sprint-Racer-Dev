@@ -37,9 +37,11 @@ execute if block 1617 ~ 460 yellow_wool run tag @s add optRoulette
 tag @s remove optItems
 tag @s remove optItemsB
 tag @s remove optNoItems
+tag @s remove optItemsR
 execute if block 1616 ~ 460 white_wool run tag @s add optItems
 execute if block 1616 ~ 460 orange_wool run tag @s add optItemsB
 execute if block 1616 ~ 460 magenta_wool run tag @s add optNoItems
+execute if block 1616 ~ 460 light_blue_wool run tag @s add optItemsR
 
 #item balance
 tag @s add optBalance

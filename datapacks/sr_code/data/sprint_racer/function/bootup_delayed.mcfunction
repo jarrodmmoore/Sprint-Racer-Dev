@@ -212,6 +212,7 @@ scoreboard objectives add aiHasObliterator dummy
 scoreboard objectives add aiEntityRandomized dummy
 #v1.6.11
 scoreboard objectives add itemchestSeedG dummy
+scoreboard objectives add cStatMoveEfficient dummy
 
 
 #make sure command blocks are enabled

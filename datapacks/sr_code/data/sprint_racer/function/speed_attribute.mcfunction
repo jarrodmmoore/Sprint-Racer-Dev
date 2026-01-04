@@ -31,6 +31,13 @@ execute as @a if score @s cStatHP matches 20 run attribute @s minecraft:max_heal
 execute as @a unless score @s cStatHP matches 20 run function sprint_racer:cheats/shoes/modified_max_hp
 execute if entity @s[type=player] run effect give @s instant_health 1 100 true
 
+#let's also handle other movement_efficiency here
+execute as @a unless score @s cStatMoveEfficient matches 1..4 run attribute @s movement_efficiency base reset
+execute as @a if score @s cStatMoveEfficient matches 1 run attribute @s movement_efficiency base set 0.25
+execute as @a if score @s cStatMoveEfficient matches 2 run attribute @s movement_efficiency base set 0.5
+execute as @a if score @s cStatMoveEfficient matches 3 run attribute @s movement_efficiency base set 0.75
+execute as @a if score @s cStatMoveEfficient matches 4 run attribute @s movement_efficiency base set 1
+
 #let's also handle attributes for various cheats while in here
 scoreboard players set #getOnWithIt value 0
 execute as @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,limit=1] run function sprint_racer:cheats/update_player_attributes

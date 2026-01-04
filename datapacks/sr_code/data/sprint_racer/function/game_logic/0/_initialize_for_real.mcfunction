@@ -35,6 +35,11 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={readyDummy=0.
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={readyDummy=..-1,readyState=1..}] run function sprint_racer:game_logic/0/set_mode_not_ready
 #######################
 
+#clear any old forceloaded chunks
+forceload remove all
+function sprint_racer:_force_load_chunks
+
+
 scoreboard players set @a subtitleDelay 20
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove needAnnounce

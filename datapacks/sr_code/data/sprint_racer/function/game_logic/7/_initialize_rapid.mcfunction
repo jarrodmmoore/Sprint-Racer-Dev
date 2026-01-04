@@ -15,8 +15,9 @@ scoreboard players set global resetAttempts 0
 execute as @a unless score @s cStatRequest = @s cStatType at @s run function sprint_racer:cheats/shoes/handle_stat_request
 
 #sent from lobby (gamestate 0), adopt whatever item setting was defined in the lobby
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=return2lobby,tag=!optItems] add taNoItems
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=return2lobby] add taNoItems
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=return2lobby,tag=optItems] remove taNoItems
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=return2lobby,tag=optItemsR] remove taNoItems
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove taValidFinish
 

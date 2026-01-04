@@ -26,9 +26,7 @@ execute if score #useFastCalc value matches 0 if entity @s[tag=moretick,scores={
 
 #node loading stuff, staggered a bit for performance concerns
 #execute if entity @s[scores={gameTime=-20..40}] as @a[limit=1,sort=nearest,x=1090,y=64,z=828] at @s run scoreboard players set @e[limit=1,sort=nearest,tag=node,tag=activator,distance=..200] nodeState 5
-scoreboard players add @s nodeTimeCycle 1
-scoreboard players set @s[scores={nodeTimeCycle=21..}] nodeTimeCycle 1
-execute if entity @s[scores={nodeTimeCycle=1}] as @e[tag=node,tag=activator,scores={nodeState=1..}] at @s run scoreboard players set @e[tag=node,distance=..100] nodeState 1
+function sprint_racer:game_logic/1/node_loading/node_activation_tick
 
 #item stuff
 execute if entity @s[scores={oTimer=0,currentTimeMsec=0,gameTime=160..,timeRemaining=1..}] run function sprint_racer:game_logic/1/item_stuff
@@ -78,7 +76,7 @@ scoreboard players remove @a[scores={wrongWayBuffer=1..}] wrongWayBuffer 1
 execute if entity @s[tag=halftick,scores={gameState=12}] run function sprint_racer:game_logic/12/gl12_main_echo
 
 #keep spectators from flying away
-execute if entity @s[scores={gameTime=100..}] as @a[gamemode=spectator] at @s unless entity @e[tag=activator,distance=..120,scores={nodeState=1..}] run function sprint_racer:spectators_keep_in_bounds
+execute if entity @s[scores={gameTime=100..}] as @a[gamemode=spectator] at @s unless entity @e[tag=activator,type=marker,distance=..200,scores={nodeState=1..}] run function sprint_racer:spectators_keep_in_bounds
 
 #reset
 scoreboard players remove @a[scores={resetCooldown=1..}] resetCooldown 1

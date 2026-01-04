@@ -23,13 +23,11 @@ execute if score #useFastCalc value matches 0 if entity @s[tag=moretick,scores={
 execute unless entity @s[tag=ignoreCalc] if entity @s[scores={gameTime=200..,timeRemaining=1..}] run function sprint_racer:game_logic/1/position_calc/subtitle_display
 
 #node loading stuff, staggered a bit for performance concerns
-scoreboard players add @s nodeTimeCycle 1
-scoreboard players set @s[scores={nodeTimeCycle=21..}] nodeTimeCycle 1
-execute if entity @s[scores={nodeTimeCycle=1}] as @e[tag=node,tag=activator,scores={nodeState=1..}] at @s run scoreboard players set @e[tag=node,distance=..100] nodeState 1
+function sprint_racer:game_logic/1/node_loading/node_activation_tick
 
 #item stuff
-execute if entity @s[tag=optItems,scores={oTimer=0,currentTimeMsec=0,gameTime=160..,timeRemaining=1..}] run function sprint_racer:game_logic/1/item_stuff
-execute if entity @s[tag=!optItems,scores={oTimer=0,currentTimeMsec=0,gameTime=10..,timeRemaining=1..}] run function sprint_racer:items/container_check_itemless
+execute if entity @s[tag=!optNoItems,tag=!optItemsB,scores={oTimer=0,currentTimeMsec=0,gameTime=160..,timeRemaining=1..}] run function sprint_racer:game_logic/1/item_stuff
+execute if entity @s[tag=!optItems,tag=!optItemsR,scores={oTimer=0,currentTimeMsec=0,gameTime=10..,timeRemaining=1..}] run function sprint_racer:items/container_check_itemless
 execute unless entity @s[scores={gamemodePresetA=3}] run function sprint_racer:items/container_tick
 execute if entity @s[scores={gamemodePresetA=3}] run function sprint_racer:items/container_tick_tactics
 
@@ -83,7 +81,7 @@ execute if score #anvilLeadCheck value matches ..0 run function sprint_racer:gam
 execute if entity @s[tag=halftick,scores={gameState=1}] run function sprint_racer:game_logic/1/gl1_main_standard_race_echo
 
 #keep spectators from flying away
-execute if entity @s[scores={gameTime=100..}] as @a[gamemode=spectator] at @s unless entity @e[tag=activator,distance=..120,scores={nodeState=1..}] run function sprint_racer:spectators_keep_in_bounds
+execute if entity @s[scores={gameTime=100..}] as @a[gamemode=spectator] at @s unless entity @e[tag=activator,type=marker,distance=..200,scores={nodeState=1..}] run function sprint_racer:spectators_keep_in_bounds
 
 #reset
 scoreboard players remove @a[scores={resetCooldown=1..}] resetCooldown 1

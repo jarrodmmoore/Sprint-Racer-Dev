@@ -8,6 +8,10 @@ tag @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumb
 function sprint_racer:music/global/pick_track
 ######
 
+#clear any old forceloaded chunks
+forceload remove all
+function sprint_racer:_force_load_chunks
+
 tag @a remove fr_nightvision
 effect clear @a
 function sprint_racer:ai/general/ai_stop_all
