@@ -3,10 +3,6 @@ summon armor_stand ~ ~-2 ~ {Tags:["itemcontainer","chest3","cSETME"],Invisible:1
 ]}
 
 
-#visual display setup
-execute as @e[type=item_display,distance=..3,tag=setChestDisplay] run function sprint_racer:items/container_spawn/setup_geneic_chest_item_display
-
-
 #armor stand setup
 
 scoreboard players set @e[tag=chest3,tag=cSETME,type=armor_stand,distance=..3] itemBlockState 3
@@ -30,13 +26,21 @@ execute if score @s rNumber matches 61.. run tag @s add custom_item_spawn
 #DEBUG
 #function sprint_racer_language:gameplay/capsule_item/1
 
-scoreboard players set @e[tag=capsuleSummon,type=item,distance=..3] itemBlockState 99
-execute as @e[tag=capsuleSummon,type=item,distance=..3] at @s run particle cloud ~ ~.22 ~ 0 0 0 0 3
-tag @e[tag=capsuleSummon,type=item,distance=..3] remove capsuleSummon
+#scoreboard players set @e[tag=capsuleSummon,type=item,distance=..3] itemBlockState 99
+execute as @e[tag=capsuleSummon,type=item_display,distance=..3] at @s run particle cloud ~ ~.22 ~ 0 0 0 0 3
+execute as @e[tag=capsuleSummon,type=item_display,distance=..3] run ride @s mount @e[limit=1,type=item_display,distance=..3,tag=setChestDisplay]
+tag @e[tag=capsuleSummon,type=item_display,distance=..3] remove capsuleSummon
 
+#visual display setup
+execute as @e[type=item_display,distance=..3,tag=setChestDisplay] run function sprint_racer:items/container_spawn/setup_geneic_chest_item_display
+
+#trapped chest stuff
 execute if entity @s[type=item,nbt={Item:{components:{"minecraft:custom_data":{groundDeploy:1b}}}}] run scoreboard players set @e[tag=chest3,tag=cSETME,type=armor_stand,distance=..3] itemBlockState 10
 execute if entity @s[type=item,nbt={Item:{components:{"minecraft:custom_data":{groundDeploy:1b}}}}] run tag @e[tag=chest3,tag=cSETME,type=armor_stand,distance=..3] add trap
 execute if entity @s[type=item,nbt={Item:{components:{"minecraft:custom_data":{groundDeploy:1b}}}}] run scoreboard players operation @e[tag=cSETME,type=armor_stand,distance=..3] playerID = @s playerID
+
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=11a] run function sprint_racer:items/container_spawn/homing_cheat
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=41a] run function sprint_racer:items/container_spawn/prank_cheat
 
 execute if entity @s[tag=aiCantSee] run tag @e[tag=cSETME,type=armor_stand,distance=..3] add aiCantSee
 

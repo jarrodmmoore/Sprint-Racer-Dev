@@ -17,4 +17,6 @@ execute if entity @s[scores={rNumber=2}] run function sprint_racer:items/ai_ench
 execute if entity @s[scores={rNumber=3}] run function sprint_racer:items/ai_enchant/_order3
 execute if entity @s[scores={rNumber=4..}] run function sprint_racer:items/ai_enchant/_order4
 
+execute if entity @s[tag=!enchDone] run tag @s add enchanted_something_custom
+
 tag @s remove enchDone

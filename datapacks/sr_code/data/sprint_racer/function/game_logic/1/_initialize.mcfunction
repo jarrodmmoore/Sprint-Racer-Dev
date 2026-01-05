@@ -235,6 +235,7 @@ gamerule fall_damage true
 function sprint_racer:speedometer/enable_xp_bar
 tag @a remove darkHUD
 tag @a remove eliminated
+tag @a[tag=enchanted_something_custom] remove enchanted_something_custom
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove hideLaps
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove noCharity
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove gauntletTrack

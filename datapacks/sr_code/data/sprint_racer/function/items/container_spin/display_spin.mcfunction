@@ -11,11 +11,12 @@ scoreboard players set @s lifespan 3
 #spin. looks cool. makes modified clients s*** themselves but they were warned to play vanilla so sorry not sorry
 scoreboard players add @s AIBC_dir3 1
 execute if score @s AIBC_dir3 matches 82.. run scoreboard players set @s AIBC_dir3 1
-execute if score @s AIBC_dir3 matches 1 run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.707f,0.0f,0.707f],translation:[0.0f,-0.21f,0.0f],scale:[0.6f,0.6f,0.6f]}}
-execute if score @s AIBC_dir3 matches 21 run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,1.0f,0.0f,0.0f],translation:[0.0f,-0.3f,0.0f],scale:[0.6f,0.6f,0.6f]}}
-execute if score @s AIBC_dir3 matches 41 run data merge entity @s {start_interpolation:0,interpolation_duration:0,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,-1.0f,0.0f,0.0f],translation:[0.0f,-0.3f,0.0f],scale:[0.6f,0.6f,0.6f]}}
-execute if score @s AIBC_dir3 matches 41 run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,-0.707f,0.0f,0.707f],translation:[0.0f,-0.39f,0.0f],scale:[0.6f,0.6f,0.6f]}}
-execute if score @s AIBC_dir3 matches 61 run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,-0.3f,0.0f],scale:[0.6f,0.6f,0.6f]}}
+scoreboard players operation #test3 value = @s AIBC_dir3
+execute if score #test3 value matches 1 run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.707f,0.0f,0.707f],translation:[0.0f,-0.21f,0.0f],scale:[0.6f,0.6f,0.6f]}}
+execute if score #test3 value matches 21 run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,1.0f,0.0f,0.0f],translation:[0.0f,-0.3f,0.0f],scale:[0.6f,0.6f,0.6f]}}
+execute if score #test3 value matches 41 run data merge entity @s {start_interpolation:0,interpolation_duration:0,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,-1.0f,0.0f,0.0f],translation:[0.0f,-0.3f,0.0f],scale:[0.6f,0.6f,0.6f]}}
+execute if score #test3 value matches 41 run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,-0.707f,0.0f,0.707f],translation:[0.0f,-0.39f,0.0f],scale:[0.6f,0.6f,0.6f]}}
+execute if score #test3 value matches 61 run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,-0.3f,0.0f],scale:[0.6f,0.6f,0.6f]}}
 
 #old heights
 #0.19
@@ -23,3 +24,7 @@ execute if score @s AIBC_dir3 matches 61 run data merge entity @s {start_interpo
 #0.1
 #0.01
 #0.1
+
+#passengers do it, too
+execute on passengers if entity @s[type=item_display,tag=!capsule_lower_model] run function sprint_racer:items/container_spin/display_spin_passenger
+execute on passengers if entity @s[type=item_display,tag=capsule_lower_model] run function sprint_racer:items/container_spin/display_spin_passenger_low_model

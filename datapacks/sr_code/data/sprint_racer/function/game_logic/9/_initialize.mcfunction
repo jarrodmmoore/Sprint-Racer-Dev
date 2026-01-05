@@ -17,6 +17,9 @@ tag @e[tag=aiMaster] remove AImaster
 #clear bossbars!
 function sprint_racer:clear_bossbars
 
+#remove fast scrolling buttons from custom track manager
+fill 1591 78 369 1591 78 372 air replace pale_oak_button
+
 scoreboard players set @a invisibility 0
 scoreboard players set @a resistTime 0
 scoreboard players set @a invulTime 0

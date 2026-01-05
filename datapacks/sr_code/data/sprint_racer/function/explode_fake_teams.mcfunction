@@ -15,7 +15,7 @@ execute if entity @s[tag=!itemCyan] run tag @e[tag=checkmyid,tag=playerCyan,dist
 tag @e[tag=checkmyid,distance=..4] remove checkmyid
 
 #blow up item capsules to prevent a bug
-execute as @e[tag=itemcontainer,tag=chest3,distance=..7] at @s run function sprint_racer:items/container_types/capsule_broken_by_explosion
+#execute as @e[tag=itemcontainer,tag=chest3,distance=..7] at @s run function sprint_racer:items/container_types/capsule_broken_by_explosion
 
 #blow up targets
 tag @e[distance=..4,tag=taTargetCore,type=magma_cube] add targetHit

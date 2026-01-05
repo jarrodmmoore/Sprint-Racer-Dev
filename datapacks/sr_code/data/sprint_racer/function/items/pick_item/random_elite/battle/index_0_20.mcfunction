@@ -1,5 +1,9 @@
 #giving multiple of some items
-execute if entity @s[scores={rNumber=0}] run function sprint_racer_language:gameplay/give_item/elite0
+
+#potato if everything was banned
+execute if entity @s[scores={rNumber=0}] unless score global gameState matches 3 run function sprint_racer_language:gameplay/give_item/elite0
+#obliterator if everthing was banned and we're in battle mode
+execute if entity @s[scores={rNumber=0}] if score global gameState matches 3 run function sprint_racer_language:_dlc_6/gameplay/give_obliterator {count:3}
 
 execute if entity @s[scores={rNumber=1..6}] run function sprint_racer_language:gameplay/give_item/elite1
 execute if entity @s[scores={rNumber=1..6}] run function sprint_racer_language:gameplay/give_item/elite1

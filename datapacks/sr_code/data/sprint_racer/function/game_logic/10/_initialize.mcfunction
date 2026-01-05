@@ -39,6 +39,10 @@ tag @e[tag=aiMaster] remove AImaster
 #clear bossbars!
 function sprint_racer:clear_bossbars
 
+#add extra buttons for fast scrolling
+setblock 1591 78 369 pale_oak_button[face=floor,facing=east,powered=false]
+setblock 1591 78 369 pale_oak_button[face=floor,facing=east,powered=false]
+
 scoreboard players set @a invisibility 0
 scoreboard players set @a resistTime 0
 scoreboard players set @a invulTime 0

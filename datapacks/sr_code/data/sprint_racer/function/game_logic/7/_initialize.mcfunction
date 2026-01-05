@@ -139,6 +139,7 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove calcEnd
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove allowPVP
 tag @e[tag=finallap] remove finallap
 tag @e[tag=finished] remove finished
+tag @a[tag=enchanted_something_custom] remove enchanted_something_custom
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeOut 0
 tag @a add noInventory
 tag @e[tag=noInventory2] remove noInventory2

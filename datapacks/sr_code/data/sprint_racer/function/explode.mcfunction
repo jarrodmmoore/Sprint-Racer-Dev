@@ -8,7 +8,7 @@ execute at @s run tag @e[distance=..3,tag=slimetrap] add dissolve
 execute at @s run tag @e[distance=..3,tag=magmatrap] add dissolve
 
 #blow up item capsules to prevent a bug
-execute as @e[tag=itemcontainer,tag=chest3,distance=..7] at @s run function sprint_racer:items/container_types/capsule_broken_by_explosion
+#execute as @e[tag=itemcontainer,tag=chest3,distance=..7] at @s run function sprint_racer:items/container_types/capsule_broken_by_explosion
 
 #kill dropped items
 execute as @e[type=item,distance=..5,nbt={Item:{components:{"minecraft:custom_data":{item:1b}}}}] run function sprint_racer:items/item_destroyed_by_explosion
@@ -29,7 +29,7 @@ tag @s remove self
 #particles
 particle flame ~ ~.5 ~ 0.5 0.5 0.5 0.01 10 force
 particle flame ~ ~.5 ~ 0.5 0.5 0.5 0.01 20
-particle poof ~ ~.5 ~ 1.4 1.4 1.4 0 5 force
+#particle poof ~ ~.5 ~ 1.4 1.4 1.4 0 5 force
 
 scoreboard players set @e[tag=setme,tag=explosion] lifespan 5
 tag @e[tag=setme] remove setme

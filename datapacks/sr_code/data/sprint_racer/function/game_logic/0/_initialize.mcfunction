@@ -93,6 +93,7 @@ scoreboard players set @a invulTime 0
 scoreboard players reset @a villagerTalk
 scoreboard players set @a[scores={heal_aware=1..}] heal_aware 1
 tag @a[tag=assassin] remove assassin
+tag @a[tag=enchanted_something_custom] remove enchanted_something_custom
 
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemBlockState 0
 

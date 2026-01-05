@@ -9,8 +9,9 @@ tag @s remove custom_item_spawn
 execute if score @s itemchestSeedG matches 1.. run return run function sprint_racer:items/container_spawn/_respawn_general_override
 #====
 
-#can't spawn capsules in water
-execute if entity @s[scores={rNumber=31..37}] at @s if block ~ ~ ~ water run scoreboard players set @s rNumber 0
+#don't spawn enchanting table in a battle with only obliterators
+execute if score #catTotal value matches 0 if score global gameState matches 3 if entity @s[scores={rNumber=28..30}] if entity @e[limit=1,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,tag=!banChest,scores={rNumber=31..50}] run scoreboard players operation @s rNumber = @e[sort=random,limit=1,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,tag=!banChest,scores={rNumber=31..50}] rNumber
+execute if score #catTotal value matches 0 if score global gameState matches 3 if entity @s[scores={rNumber=28..30}] if entity @e[limit=1,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,tag=!banChest,scores={rNumber=1..27}] run scoreboard players set @s rNumber 1
 
 #don't spawn 5plus chests when player count is below the requirement
 execute if entity @s[tag=5plus] unless score global playerRequire >= @s playerRequire run scoreboard players set @s rNumber 0
