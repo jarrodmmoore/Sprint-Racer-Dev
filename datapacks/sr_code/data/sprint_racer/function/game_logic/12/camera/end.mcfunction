@@ -1,1 +1,1 @@
-execute as @a[gamemode=spectator] run spectate @e[limit=1,sort=nearest,tag=c_cam_end,type=armor_stand] @s
+execute as @a[gamemode=spectator] run spectate @e[limit=1,sort=nearest,tag=c_cam_end,type=item_display] @s

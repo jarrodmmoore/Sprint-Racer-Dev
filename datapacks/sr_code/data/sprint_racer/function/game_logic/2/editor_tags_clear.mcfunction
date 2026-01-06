@@ -13,6 +13,8 @@ tag @s remove elytraMed
 tag @s remove elytraHigh
 tag @s remove resLong
 tag @s remove psBattle
+tag @s remove psTeamOrange
+tag @s remove psTeamCyan
 tag @s remove teledest
 tag @s remove teleparticle
 tag @s remove telesound
@@ -36,6 +38,7 @@ scoreboard players set @s scriptMove 0
 scoreboard players reset @s itemchestSeedA
 scoreboard players reset @s itemchestSeedB
 scoreboard players reset @s itemchestSeedR
+scoreboard players set @s itemchestSeedG 0
 
 scoreboard players reset @s dropCowEgg
 scoreboard players reset @s dropDrownedEgg

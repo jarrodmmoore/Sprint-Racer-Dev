@@ -18,6 +18,8 @@ tag @s remove resLong
 tag @s remove psBattle
 execute if score global gameState matches 3 run tag @s add psBattle
 execute if score global gameState matches 8 run tag @s add psBattle
+tag @s remove psTeamOrange
+tag @s remove psTeamCyan
 execute if score global gameState matches 10 if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={tvPoolMode=2}] run tag @s add psBattle
 tag @s remove teledest
 tag @s add teleparticle

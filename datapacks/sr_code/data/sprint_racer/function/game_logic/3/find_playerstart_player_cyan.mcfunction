@@ -1,0 +1,3 @@
+#go to a playerstart not affiliated with orange
+execute if entity @e[tag=playerstart,tag=node,type=marker,tag=psBattle,tag=!psTeamOrange,tag=!spawnOccupy,scores={nodeState=1..}] run function sprint_racer:game_logic/3/find_playerstart_player_goto_cyan
+execute unless entity @e[tag=playerstart,tag=node,type=marker,tag=psBattle,tag=!psTeamOrange,tag=!spawnOccupy,scores={nodeState=1..}] run tp @s @e[limit=1,sort=random,tag=node,tag=playerstart,tag=psBattle,scores={nodeState=1..}]

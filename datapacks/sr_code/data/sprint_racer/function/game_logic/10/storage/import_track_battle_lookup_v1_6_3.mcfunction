@@ -43,3 +43,4 @@ fill 1595 79 369 1595 82 372 red_concrete
 scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolNum = @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] customDummyBID
 
 function sprint_racer:game_logic/10/grid_display/ungrouped_custom/update_display
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add wmCustomReload

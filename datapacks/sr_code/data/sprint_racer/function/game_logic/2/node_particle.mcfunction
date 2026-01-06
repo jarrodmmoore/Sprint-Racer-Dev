@@ -1,4 +1,6 @@
 execute if entity @s[tag=playerstart] run particle dust{color:[0.0,1.0,1.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
+execute if entity @s[tag=playerstart,tag=psTeamOrange] run particle dust{color:[1.0,0.5,0.0],scale:1.2} ~ ~.5 ~ 0.2 0.5 0.2 0 2 force @a[scores={playerState=2}]
+execute if entity @s[tag=playerstart,tag=psTeamCyan] run particle dust{color:[0.0,0.66,0.66],scale:1.2} ~ ~.5 ~ 0.2 0.5 0.2 0 2 force @a[scores={playerState=2}]
 execute if entity @s[tag=finishline] run particle dust{color:[1.0,1.0,1.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
 execute if entity @s[tag=finishline] run particle dust{color:[0.0,0.0,0.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]
 execute if entity @s[tag=checkpoint] run particle dust{color:[1.0,1.0,1.0],scale:1} ~ ~.25 ~ 0 0 0 0 1 force @a[scores={playerState=2}]

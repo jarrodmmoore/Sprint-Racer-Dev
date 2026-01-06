@@ -4,7 +4,7 @@ tp @s @e[limit=1,sort=nearest,tag=playerstart,tag=psBattle]
 
 scoreboard players set @s hitstun 0
 scoreboard players set @s moveSpeed 0
-scoreboard players set @s raceAccel 10
+scoreboard players set @s rateAccel 10
 scoreboard players set @s rateDecel 500
 scoreboard players reset @s burn
 scoreboard players reset @s electrocute

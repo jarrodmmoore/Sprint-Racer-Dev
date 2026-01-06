@@ -93,4 +93,7 @@ execute if score @s tEditor matches 1289 run execute as @s[gamemode=creative] ru
 execute if score @s tEditor matches 1290 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/itemchest_menu/decrement_seed_g
 execute if score @s tEditor matches 1291 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/itemchest_menu_edit/increment_seed_g
 execute if score @s tEditor matches 1292 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/itemchest_menu_edit/decrement_seed_g
+execute if score @s tEditor matches 1293 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/playerstart_menu/team_any
+execute if score @s tEditor matches 1294 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/playerstart_menu/team_orange
+execute if score @s tEditor matches 1295 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/playerstart_menu/team_cyan
 #...

@@ -177,6 +177,8 @@ team add colorGray
 team modify colorGray color gray
 team add colorGold
 team modify colorGold color gold
+team add playerOrange
+team add playerCyan
 
 #mote teams stuff
 scoreboard objectives add teamCount dummy
@@ -345,6 +347,9 @@ scoreboard objectives add aiOwchTime dummy
 scoreboard objectives add aiAirTime dummy
 scoreboard objectives add aiBiasTime dummy
 scoreboard objectives add hitboxHP dummy
+scoreboard objectives add AIBC_engagemt dummy
+scoreboard objectives add aiTacticsA dummy
+scoreboard objectives add aiTacticsB dummy
 
 #AI breadcrumb data
 scoreboard objectives add AIBC_id dummy
@@ -676,6 +681,7 @@ scoreboard objectives add dropSVoid minecraft.dropped:minecraft.structure_void
 scoreboard objectives add timeUntilElim dummy
 scoreboard objectives add playerLives dummy
 scoreboard objectives add playerRequire dummy
+scoreboard objectives add damageMultiply dummy
 
 #lap display during races
 bossbar add lap1 ["",{text:"Lap [1/",color:"green",bold:true},{score:{name:"@e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1]",objective:"lap"},color:"green",bold:true},{text:"]",color:"green",bold:true}]
@@ -738,6 +744,8 @@ scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand
 scoreboard objectives add pressJump minecraft.custom:minecraft.jump
 scoreboard objectives add lastGamemode dummy
 scoreboard objectives add creditsCycle dummy
+scoreboard objectives add cameraMode dummy
+scoreboard objectives add cameraTime dummy
 scoreboard objectives add villagerTalk minecraft.custom:minecraft.talked_to_villager
 scoreboard objectives add villagerTip dummy
 scoreboard objectives add trackSequenceR dummy

@@ -18,7 +18,7 @@ execute if entity @s[scores={rNumber=7}] run function sprint_racer:ai/general/re
 execute if entity @s[scores={rNumber=8}] run function sprint_racer:ai/general/respawn/number_specific/8
 execute if entity @s[scores={rNumber=9}] run function sprint_racer:ai/general/respawn/number_specific/9
 
-#a very special name override :)
+#some very special name overrides :)
 execute if score @s aiEntity matches 6 as @e[tag=set_ai_no] run data modify entity @s CustomName set value {text:"\uE710",color:white}
 execute if score @s aiEntity matches 18 as @e[tag=set_ai_no] run data modify entity @s CustomName set value {text:"\uE093",color:white}
 

@@ -1,4 +1,4 @@
-tag @e[limit=1,sort=random,tag=node,tag=playerstart,tag=psBattle,tag=!spawnOccupy,scores={nodeState=1..}] add targetlol
+tag @e[limit=1,sort=random,tag=node,type=marker,tag=playerstart,tag=psBattle,tag=!spawnOccupy,scores={nodeState=1..}] add targetlol
 
 tp @s @e[limit=1,tag=targetlol]
 
