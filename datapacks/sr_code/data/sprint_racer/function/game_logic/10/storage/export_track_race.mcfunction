@@ -21,8 +21,7 @@ $data modify storage $(filename):track_data track_name set from entity @s Custom
 #--version this track was created in
 $execute store result storage $(filename):track_data version_created_in int 1 run scoreboard players get @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] mapVersion
 #--throw a warning if this track is getting imported into an older version that's missing some features
-#(none in v1.6.0)
-$data modify storage $(filename):track_data version_needs_warning set value 10603
+$data modify storage $(filename):track_data version_needs_warning set value 10610
 
 #--junk... for now
 $data modify storage $(filename):track_data temp_id set value -1
@@ -131,6 +130,92 @@ $execute if entity @s[tag=rtBlacklist] run data modify storage $(filename):track
 $data modify storage $(filename):track_data track_group set from storage sprint_racer:custom_track_storage_$(id) track_group
 #--track sort number
 $execute store result storage $(filename):track_data track_sort_number int 1 run scoreboard players get @s customTrackSortNumber
+
+#v1.6.11
+#items override (-1 = unset, 0 = off, 1 = on)
+$data modify storage $(filename):settings_overrides items set value -1
+$execute if entity @s[tag=o_itemsOff] run data modify storage $(filename):settings_overrides items set value 0
+$execute if entity @s[tag=o_itemsOn] run data modify storage $(filename):settings_overrides items set value 1
+#item bans (-1 = unset, 0 = banned, 1 = enchant banned, 2 = enabled)
+$data modify storage $(filename):settings_overrides item_bans set value [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]
+$execute if entity @s[tag=forceNo1] run data modify storage $(filename):settings_overrides item_bans[0] set value 2
+$execute if entity @s[tag=banEnchant1] run data modify storage $(filename):settings_overrides item_bans[0] set value 1
+$execute if entity @s[tag=banNo1] run data modify storage $(filename):settings_overrides item_bans[0] set value 0
+$execute if entity @s[tag=forceNo2] run data modify storage $(filename):settings_overrides item_bans[1] set value 2
+$execute if entity @s[tag=banEnchant2] run data modify storage $(filename):settings_overrides item_bans[1] set value 1
+$execute if entity @s[tag=banNo2] run data modify storage $(filename):settings_overrides item_bans[1] set value 0
+$execute if entity @s[tag=forceNo3] run data modify storage $(filename):settings_overrides item_bans[2] set value 2
+$execute if entity @s[tag=banEnchant3] run data modify storage $(filename):settings_overrides item_bans[2] set value 1
+$execute if entity @s[tag=banNo3] run data modify storage $(filename):settings_overrides item_bans[2] set value 0
+$execute if entity @s[tag=forceNo4] run data modify storage $(filename):settings_overrides item_bans[3] set value 2
+$execute if entity @s[tag=banEnchant4] run data modify storage $(filename):settings_overrides item_bans[3] set value 1
+$execute if entity @s[tag=banNo4] run data modify storage $(filename):settings_overrides item_bans[3] set value 0
+$execute if entity @s[tag=forceNo5] run data modify storage $(filename):settings_overrides item_bans[4] set value 2
+$execute if entity @s[tag=banEnchant5] run data modify storage $(filename):settings_overrides item_bans[4] set value 1
+$execute if entity @s[tag=banNo5] run data modify storage $(filename):settings_overrides item_bans[4] set value 0
+$execute if entity @s[tag=forceNo6] run data modify storage $(filename):settings_overrides item_bans[5] set value 2
+$execute if entity @s[tag=banEnchant6] run data modify storage $(filename):settings_overrides item_bans[5] set value 1
+$execute if entity @s[tag=banNo6] run data modify storage $(filename):settings_overrides item_bans[5] set value 0
+$execute if entity @s[tag=forceNo7] run data modify storage $(filename):settings_overrides item_bans[6] set value 2
+$execute if entity @s[tag=banEnchant7] run data modify storage $(filename):settings_overrides item_bans[6] set value 1
+$execute if entity @s[tag=banNo7] run data modify storage $(filename):settings_overrides item_bans[6] set value 0
+$execute if entity @s[tag=forceNo8] run data modify storage $(filename):settings_overrides item_bans[7] set value 2
+$execute if entity @s[tag=banEnchant8] run data modify storage $(filename):settings_overrides item_bans[7] set value 1
+$execute if entity @s[tag=banNo8] run data modify storage $(filename):settings_overrides item_bans[7] set value 0
+$execute if entity @s[tag=forceNo9] run data modify storage $(filename):settings_overrides item_bans[8] set value 2
+$execute if entity @s[tag=banEnchant9] run data modify storage $(filename):settings_overrides item_bans[8] set value 1
+$execute if entity @s[tag=banNo9] run data modify storage $(filename):settings_overrides item_bans[8] set value 0
+$execute if entity @s[tag=forceNo10] run data modify storage $(filename):settings_overrides item_bans[9] set value 2
+$execute if entity @s[tag=banEnchant10] run data modify storage $(filename):settings_overrides item_bans[9] set value 1
+$execute if entity @s[tag=banNo10] run data modify storage $(filename):settings_overrides item_bans[9] set value 0
+$execute if entity @s[tag=forceNo11] run data modify storage $(filename):settings_overrides item_bans[10] set value 2
+$execute if entity @s[tag=banEnchant11] run data modify storage $(filename):settings_overrides item_bans[10] set value 1
+$execute if entity @s[tag=banNo11] run data modify storage $(filename):settings_overrides item_bans[10] set value 0
+$execute if entity @s[tag=forceNo12] run data modify storage $(filename):settings_overrides item_bans[11] set value 2
+$execute if entity @s[tag=banEnchant12] run data modify storage $(filename):settings_overrides item_bans[11] set value 1
+$execute if entity @s[tag=banNo12] run data modify storage $(filename):settings_overrides item_bans[11] set value 0
+$execute if entity @s[tag=forceNo13] run data modify storage $(filename):settings_overrides item_bans[12] set value 2
+$execute if entity @s[tag=banEnchant13] run data modify storage $(filename):settings_overrides item_bans[12] set value 1
+$execute if entity @s[tag=banNo13] run data modify storage $(filename):settings_overrides item_bans[12] set value 0
+$execute if entity @s[tag=forceNo14] run data modify storage $(filename):settings_overrides item_bans[13] set value 2
+$execute if entity @s[tag=banEnchant14] run data modify storage $(filename):settings_overrides item_bans[13] set value 1
+$execute if entity @s[tag=banNo14] run data modify storage $(filename):settings_overrides item_bans[13] set value 0
+$execute if entity @s[tag=forceNo15] run data modify storage $(filename):settings_overrides item_bans[14] set value 2
+$execute if entity @s[tag=banEnchant15] run data modify storage $(filename):settings_overrides item_bans[14] set value 1
+$execute if entity @s[tag=banNo15] run data modify storage $(filename):settings_overrides item_bans[14] set value 0
+$execute if entity @s[tag=forceNo16] run data modify storage $(filename):settings_overrides item_bans[15] set value 2
+$execute if entity @s[tag=banEnchant16] run data modify storage $(filename):settings_overrides item_bans[15] set value 1
+$execute if entity @s[tag=banNo16] run data modify storage $(filename):settings_overrides item_bans[15] set value 0
+$execute if entity @s[tag=forceNo17] run data modify storage $(filename):settings_overrides item_bans[16] set value 2
+$execute if entity @s[tag=banEnchant17] run data modify storage $(filename):settings_overrides item_bans[16] set value 1
+$execute if entity @s[tag=banNo17] run data modify storage $(filename):settings_overrides item_bans[16] set value 0
+$execute if entity @s[tag=forceNo18] run data modify storage $(filename):settings_overrides item_bans[17] set value 2
+$execute if entity @s[tag=banEnchant18] run data modify storage $(filename):settings_overrides item_bans[17] set value 1
+$execute if entity @s[tag=banNo18] run data modify storage $(filename):settings_overrides item_bans[17] set value 0
+$execute if entity @s[tag=forceNo19] run data modify storage $(filename):settings_overrides item_bans[18] set value 2
+$execute if entity @s[tag=banEnchant19] run data modify storage $(filename):settings_overrides item_bans[18] set value 1
+$execute if entity @s[tag=banNo19] run data modify storage $(filename):settings_overrides item_bans[18] set value 0
+$execute if entity @s[tag=forceNo20] run data modify storage $(filename):settings_overrides item_bans[19] set value 2
+$execute if entity @s[tag=banEnchant20] run data modify storage $(filename):settings_overrides item_bans[19] set value 1
+$execute if entity @s[tag=banNo20] run data modify storage $(filename):settings_overrides item_bans[19] set value 0
+#item rule (-1 = unset, 1.. = something)
+$data modify storage $(filename):settings_overrides item_rule set value -1
+$execute if score @s itemPresetA matches 0.. store result storage $(filename):settings_overrides item_rule int 1 run scoreboard players get @s itemPresetA
+#teams mode (-1 = unset, 0 = off, 1 = on)
+$data modify storage $(filename):settings_overrides teams set value -1
+$execute if entity @s[tag=o_teamsOff] run data modify storage $(filename):settings_overrides teams set value 0
+$execute if entity @s[tag=o_teamsOn] run data modify storage $(filename):settings_overrides teams set value 1
+#nearby player invisibility (-1 = unset, 0 = never, 1 = always, 2 = 5plus players)
+$data modify storage $(filename):settings_overrides player_invisibility set value -1
+$execute if entity @s[tag=o_neabyInvis_never] run data modify storage $(filename):settings_overrides player_invisibility set value 0
+$execute if entity @s[tag=o_neabyInvis_always] run data modify storage $(filename):settings_overrides player_invisibility set value 1
+$execute if entity @s[tag=o_neabyInvis_5plus] run data modify storage $(filename):settings_overrides player_invisibility set value 2
+#absorption at race start (-1 = unset, 0 = never, 1 = always, 2 = 5plus players)
+$data modify storage $(filename):settings_overrides absorption set value -1
+$execute if entity @s[tag=o_absorption_never] run data modify storage $(filename):settings_overrides absorption set value 0
+$execute if entity @s[tag=o_absorption_always] run data modify storage $(filename):settings_overrides absorption set value 1
+$execute if entity @s[tag=o_absorption_5plus] run data modify storage $(filename):settings_overrides absorption set value 2
+
 
 #now... try read from the storage to verify it worked
 scoreboard players set #test2 value 0

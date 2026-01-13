@@ -245,6 +245,13 @@ scoreboard objectives add useCustomSoundtrack trigger
 scoreboard objectives add playerKO totalKillCount
 scoreboard objectives add playerCountM dummy
 scoreboard objectives add timeSinceDeath dummy
+scoreboard objectives add kart_model dummy
+scoreboard objectives add gpNumber dummy
+scoreboard objectives add gpModifier dummy
+scoreboard objectives add gamePresetA_save dummy
+scoreboard objectives add gamePresetB_save dummy
+scoreboard objectives add forcePlayerTeam dummy
+scoreboard objectives add endlessPoints dummy
 
 #custom grand prix editor
 scoreboard objectives add gpMenu1 trigger
@@ -751,6 +758,7 @@ scoreboard objectives add villagerTip dummy
 scoreboard objectives add trackSequenceR dummy
 scoreboard objectives add trackSequenceB dummy
 scoreboard objectives add itemRainTimer dummy
+scoreboard objectives add allowSecretLob dummy
 
 #level specific
 scoreboard objectives add tutorProgress dummy

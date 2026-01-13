@@ -1,3 +1,5 @@
+#executed by each player that is in editor mode
+
 #bring up extra hotbar options when things are selected
 execute if entity @e[tag=selected,sort=nearest,type=marker] run tag @s add selecting
 
@@ -36,9 +38,9 @@ execute if entity @s[scores={dropBatEgg=1..}] run function sprint_racer_language
 execute if entity @s[scores={dropEndermanEgg=1..}] run function sprint_racer_language:editor_mode/config/config_teleporter
 execute if entity @s[scores={dropEndermiteEgg=1..}] run function sprint_racer_language:editor_mode/config/config_scriptmove
 execute if entity @s[scores={dropPigEgg=1..}] run function sprint_racer_language:_dlc_3/editor_mode/config/config_breadcrumb
-execute if entity @s[scores={dropRedDye=1..}] run function sprint_racer_language:_dlc_3/editor_mode/config/edit_breadcrumb
-execute if entity @s[scores={dropOrangeDye=1..}] run function sprint_racer_language:_dlc_3/editor_mode/config/edit_itemchest
-execute if entity @s[scores={dropWhiteDye=1..}] at @s run function sprint_racer:game_logic/2/index_checkpoint_edit
+execute if entity @s[tag=executor,scores={dropRedDye=1..}] run function sprint_racer_language:_dlc_3/editor_mode/config/edit_breadcrumb
+execute if entity @s[tag=executor,scores={dropOrangeDye=1..}] run function sprint_racer_language:_dlc_3/editor_mode/config/edit_itemchest
+execute if entity @s[tag=executor,scores={dropWhiteDye=1..}] at @s run function sprint_racer:game_logic/2/index_checkpoint_edit
 execute if entity @s[scores={dropStick=1..}] at @s run function sprint_racer_language:_dlc_3/editor_mode/config/config_connector
 execute if entity @s[scores={dropChickEgg=1..}] at @s run function sprint_racer_language:_dlc_3/editor_mode/config/config_target
 

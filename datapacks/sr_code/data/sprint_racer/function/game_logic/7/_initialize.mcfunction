@@ -56,8 +56,6 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=needAnnounce] remove needAnnoun
 scoreboard objectives remove nodeState
 scoreboard objectives add nodeState dummy
 
-function sprint_racer:items/item_presets/_index_race
-
 #boiler-plate stuff for starting a race (TIME ATTACK)
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 7
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameTime -50
@@ -182,6 +180,9 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove noRapidSta
 
 #the chosen track will run its special initialization function
 execute as @e[limit=1,tag=chosenTrack,type=armor_stand] at @s run function sprint_racer:game_logic/1/_initialize_index
+
+#item presets (probably not relevant here? i can't remember.)
+function sprint_racer:items/item_presets/_index_race
 
 #cheat that offsets lap count
 execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=55a] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] unless entity @s[scores={gamemodePresetA=2}] run function sprint_racer:cheats/offset_lap_count

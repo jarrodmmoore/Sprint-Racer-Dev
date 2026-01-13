@@ -1,0 +1,2 @@
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMode=1}] run return run function sprint_racer_language:_dlc_6/lobby/custom_track/track_config_race_2
+function sprint_racer_language:_dlc_6/lobby/custom_track/track_config_battle_2

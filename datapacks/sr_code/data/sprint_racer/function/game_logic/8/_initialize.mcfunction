@@ -59,8 +59,6 @@ scoreboard objectives add targetData dummy
 scoreboard objectives remove nodeState
 scoreboard objectives add nodeState dummy
 
-function sprint_racer:items/item_presets/_index_battle
-
 #boiler-plate stuff for starting a battle (TIME ATTACK)
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 8
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameTime -50
@@ -179,6 +177,9 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove noRapidSta
 
 #the chosen track will run its special initialization function
 execute as @e[limit=1,tag=chosenTrack,type=armor_stand] at @s run function sprint_racer:game_logic/3/_initialize_index
+
+#is this relevant in time attack mode? i have no idea
+function sprint_racer:items/item_presets/_index_battle
 
 #initialize bossbar lap display based on the set amt of laps
 scoreboard players set #bbPersonalize value 2

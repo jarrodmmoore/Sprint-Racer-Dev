@@ -63,8 +63,6 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=needAnnounce] 
 scoreboard objectives remove nodeState
 scoreboard objectives add nodeState dummy
 
-function sprint_racer:items/item_presets/_index_race
-
 #boiler-plate stuff for starting a race
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 1
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameTime -50
@@ -88,9 +86,6 @@ team join player @a[tag=playing]
 team join spectator @a[tag=forcespectate]
 execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gamemodePresetA=2}] run team modify playerFinished color yellow
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gamemodePresetA=2}] run team modify playerFinished color dark_gray
-
-#TEAMS
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run function sprint_racer:teams/assemble_teams
 
 scoreboard players set @a actionbarState 1
 scoreboard players set @a actionbarState2 0
@@ -261,6 +256,12 @@ execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand
 #execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms,tag=optRAIalways,tag=!noAItrack] run function sprint_racer:game_logic/1/ai_count_reduce
 
 #======================================
+
+#TEAMS
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run function sprint_racer:teams/assemble_teams
+
+#item presets
+function sprint_racer:items/item_presets/_index_race
 
 #elimination mode, max lap count always starts at 1, adjusts as the game proceeds
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1,gamemodePresetA=2}] lap 3

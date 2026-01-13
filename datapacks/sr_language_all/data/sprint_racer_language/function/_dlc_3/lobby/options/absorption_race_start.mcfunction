@@ -2,7 +2,6 @@ tellraw @a[tag=!minChat] ["",{text:" "}]
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optSetB
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optSetA
-scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] allowInvis 0
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA,tag=absorpNever] add optSetB
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1609 80 365 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1013"}},{text:"ABSORPTION",bold:true,color:"black"},{text:"@ RACE START?",bold:true,color:"black"},{text:"[ALWAYS]",color:"dark_blue"}]},is_waxed:1b}

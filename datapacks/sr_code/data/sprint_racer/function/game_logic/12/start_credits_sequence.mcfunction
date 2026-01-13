@@ -10,11 +10,11 @@ execute as @e[tag=c_cam_start,type=item_display] at @s positioned ~ ~1.8 ~ run t
 summon item_display 1054 91 836 {CustomNameVisible:false,teleport_duration:2,Tags:["setup","c_life","c_cam","c_cam_end"]}
 execute as @e[tag=c_cam_end,type=item_display] at @s positioned ~ ~1.8 ~ run tp @s ~ ~ ~ facing ~5 ~-4 ~
 
-summon item_display 1037 63 819 {CustomNameVisible:false,teleport_duration:2,Tags:["setup","c_life","c_cam","c_cam_dynamic"]}
-summon item_display 1091 83 791 {CustomNameVisible:false,teleport_duration:2,Tags:["setup","c_life","c_cam","c_cam_dynamic"]}
-summon item_display 1060 64 867 {CustomNameVisible:false,teleport_duration:2,Tags:["setup","c_life","c_cam","c_cam_dynamic"]}
-summon item_display 1117 86 859 {CustomNameVisible:false,teleport_duration:2,Tags:["setup","c_life","c_cam","c_cam_dynamic"]}
-summon item_display 1154 73 887 {CustomNameVisible:false,teleport_duration:2,Tags:["setup","c_life","c_cam","c_cam_dynamic"]}
+summon item_display 1037 63 819 {CustomNameVisible:false,teleport_duration:3,Tags:["setup","c_life","c_cam","c_cam_dynamic"]}
+summon item_display 1091 83 791 {CustomNameVisible:false,teleport_duration:3,Tags:["setup","c_life","c_cam","c_cam_dynamic"]}
+summon item_display 1060 64 867 {CustomNameVisible:false,teleport_duration:3,Tags:["setup","c_life","c_cam","c_cam_dynamic"]}
+summon item_display 1117 86 859 {CustomNameVisible:false,teleport_duration:3,Tags:["setup","c_life","c_cam","c_cam_dynamic"]}
+summon item_display 1154 73 887 {CustomNameVisible:false,teleport_duration:3,Tags:["setup","c_life","c_cam","c_cam_dynamic"]}
 
 summon item_display 1090 65 828 {CustomNameVisible:false,teleport_duration:2,Tags:["setup","c_life","c_cam","c_cam_follow"]}
 

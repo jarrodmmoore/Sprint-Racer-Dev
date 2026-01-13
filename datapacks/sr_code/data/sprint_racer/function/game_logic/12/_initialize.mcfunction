@@ -65,9 +65,6 @@ team modify playerCyan color aqua
 team modify playerOrange color aqua
 team join player @a
 
-#TEAMS
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run function sprint_racer:teams/assemble_teams
-
 scoreboard players set @a actionbarState 1
 scoreboard players set @a actionbarState2 0
 scoreboard players set @a lap 1
@@ -186,6 +183,9 @@ scoreboard players set #lastRacePosCalc value 1
 function sprint_racer:game_logic/12/_initialize_track
 
 #======================================
+
+#TEAMS
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run function sprint_racer:teams/assemble_teams
 
 #number of players at the start is used for certain item chests that may or may not spawn
 scoreboard players set global playerRequire 0

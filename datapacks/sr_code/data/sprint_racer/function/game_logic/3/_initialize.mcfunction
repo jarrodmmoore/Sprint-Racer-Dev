@@ -63,10 +63,6 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=needAnnounce] 
 scoreboard objectives remove nodeState
 scoreboard objectives add nodeState dummy
 
-function sprint_racer:items/item_presets/_index_battle
-#resource control, set item preset to capsules only so Trapped Chests can at least slightly convincing
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gamemodePresetB=3}] run function sprint_racer:items/item_presets/capsules_only
-
 #boiler-plate stuff for starting a battle
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 3
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameTime -50
@@ -99,9 +95,6 @@ team join player @a[tag=playing]
 team join spectator @a[tag=forcespectate]
 execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gamemodePresetB=2}] run team modify playerFinished color yellow
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gamemodePresetB=2}] run team modify playerFinished color dark_gray
-
-#TEAMS
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run function sprint_racer:teams/assemble_teams
 
 scoreboard players set @a actionbarState 1
 scoreboard players set @a actionbarState2 0
@@ -142,10 +135,8 @@ tag @e[tag=noInventory2] remove noInventory2
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerCountB 0
 execute as @a[tag=playing] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerCountB 1
 scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] addPoints = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] playerCountB
-scoreboard players set @a givePoints 0
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] addPoints2 1
 
-scoreboard players reset * KOs2
 scoreboard objectives remove itemBlockState
 scoreboard objectives add itemBlockState dummy
 
@@ -218,6 +209,14 @@ execute as @e[limit=1,tag=chosenTrack,type=armor_stand] at @s run function sprin
 #execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms,tag=optBAIalways,tag=!noAItrack] run function sprint_racer:game_logic/3/ai_count_reduce
 
 #======================================
+
+#TEAMS
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run function sprint_racer:teams/assemble_teams
+
+#item rule
+function sprint_racer:items/item_presets/_index_battle
+#resource control, set item preset to capsules only so Trapped Chests can at least slightly convincing
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gamemodePresetB=3}] run function sprint_racer:items/item_presets/capsules_only
 
 #if no chosen track exists, this function failed and we'll go back to the lobby (game logic 0)
 execute unless entity @e[tag=chosenTrack,tag=trackStandB] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add initFailed

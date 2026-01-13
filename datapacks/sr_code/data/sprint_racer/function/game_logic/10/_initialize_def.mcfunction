@@ -1,3 +1,7 @@
+#restore game settings if some stuff got overridden by a custom track
+execute if score #settingsWereOverridden value matches 1.. run function sprint_racer:game_logic/0/save_state/remove_temporary_state_custom
+
+
 scoreboard players reset @a[scores={pressJump=1}] pressJump
 
 ######
@@ -90,6 +94,10 @@ kill @e[tag=roundDisplay,type=armor_stand]
 kill @e[tag=cDisplay,type=armor_stand]
 kill @e[tag=cDisplay2,type=armor_stand]
 execute as @e[tag=itemcontainer] at @s run function sprint_racer:items/container_delete
+
+#add extra buttons for fast scrolling
+setblock 1591 78 369 pale_oak_button[face=floor,facing=east,powered=false]
+setblock 1591 78 372 pale_oak_button[face=floor,facing=east,powered=false]
 
 #clone sign data
 function sprint_racer:game_logic/10/clone_sign_data

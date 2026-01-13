@@ -1,1 +1,1 @@
-data modify storage sprint_racer:custom_track_storage_1 track_group set value "Uncategorized"
+$data modify storage sprint_racer:custom_track_storage_$(id) track_group set value "Uncategorized"

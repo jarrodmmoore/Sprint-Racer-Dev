@@ -1,5 +1,7 @@
 #clear temporary save state if one was active
 execute if score #temporarySave value matches 1.. run function sprint_racer:game_logic/0/save_state/remove_temporary_state
+#similar thing for custom tracks
+execute if score #settingsWereOverridden value matches 1.. run function sprint_racer:game_logic/0/save_state/remove_temporary_state_custom
 
 
 scoreboard players reset @a[scores={pressJump=1}] pressJump

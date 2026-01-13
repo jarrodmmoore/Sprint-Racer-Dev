@@ -7,6 +7,7 @@ execute if entity @s[gamemode=spectator] run return run scoreboard players reset
 
 execute if score @s tTrackEditor matches 1000..1099 run function sprint_racer:boq/trigger_track_editor_0_99
 execute if score @s tTrackEditor matches 1100..1199 run function sprint_racer:boq/trigger_track_editor_100_199
+execute if score @s tTrackEditor matches 1200..1299 run function sprint_racer:boq/trigger_track_editor_200_299
 
 #clean input
 scoreboard players reset @s tTrackEditor

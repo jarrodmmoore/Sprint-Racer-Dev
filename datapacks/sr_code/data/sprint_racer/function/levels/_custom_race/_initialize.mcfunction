@@ -4,6 +4,9 @@ function sprint_racer:teleport_to_custom_track
 #STORAGE SETUP
 execute store result storage sprint_racer:func_args custom_uid int 1 run scoreboard players get @s customTagLine
 
+#CHECK FOR SETTINGS OVERRIDES
+function sprint_racer:levels/_custom_race/apply_settings_overrides
+
 ######
 #MUSIC
 function sprint_racer:levels/_custom_general/set_music

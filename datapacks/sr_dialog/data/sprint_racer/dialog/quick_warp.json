@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "translate": "sr.dialog.quick_warp"
+  },
+  "external_title": {
+    "translate": "sr.dialog.quick_warp",
+    "color": "aqua"
+  },
+  "after_action": "none",
+  "pause": false,
+  "actions": [
+    {
+      "label": {
+        "translate": "sr.dialog.quick_warp.spawn"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger tOption set 1051"
+      }
+    },
+    {
+      "label": {
+        "translate": "sr.dialog.quick_warp.game_structure"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger tOption set 1052"
+      }
+    },
+    {
+      "label": {
+        "translate": "sr.dialog.quick_warp.hud_settings"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger tOption set 1053"
+      }
+    },
+    {
+      "label": {
+        "translate": "sr.dialog.quick_warp.ai_settings"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger tOption set 1054"
+      }
+    },
+    {
+      "label": {
+        "translate": "sr.dialog.quick_warp.save_states"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger tOption set 1055"
+      }
+    },
+    {
+      "label": {
+        "translate": "sr.dialog.quick_warp.items"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger tOption set 1056"
+      }
+    },
+    {
+      "label": {
+        "translate": "sr.dialog.quick_warp.extras"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger tOption set 1057"
+      }
+    },
+    {
+      "label": {
+        "translate": "sr.dialog.quick_warp.cheats"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger tOption set 1058"
+      }
+    }
+  ]
+}

@@ -128,6 +128,110 @@ execute if score #read value matches 1..2 run tag @s add r_1_only
 $data modify storage sprint_racer:custom_track_storage_$(temp_id) track_group set from storage $(file_name):track_data track_group
 #--track sort number
 $scoreboard players set @s customTrackSortNumber $(track_sort_number)
+#v1.6.11 stuff
+#--items override
+$execute store result score #read value run data get storage $(file_name):settings_overrides items 1
+execute if score #read value matches 0 run tag @s add o_itemsOff
+execute if score #read value matches 1 run tag @s add o_itemsOn
+#--item bans overrides
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[0] 1
+execute if score #read value matches 0 run tag @s add banNo1
+execute if score #read value matches 1 run tag @s add banEnchant1
+execute if score #read value matches 2 run tag @s add forceNo1
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[1] 1
+execute if score #read value matches 0 run tag @s add banNo2
+execute if score #read value matches 1 run tag @s add banEnchant2
+execute if score #read value matches 2 run tag @s add forceNo2
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[2] 1
+execute if score #read value matches 0 run tag @s add banNo3
+execute if score #read value matches 1 run tag @s add banEnchant3
+execute if score #read value matches 2 run tag @s add forceNo3
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[3] 1
+execute if score #read value matches 0 run tag @s add banNo4
+execute if score #read value matches 1 run tag @s add banEnchant4
+execute if score #read value matches 2 run tag @s add forceNo4
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[4] 1
+execute if score #read value matches 0 run tag @s add banNo5
+execute if score #read value matches 1 run tag @s add banEnchant5
+execute if score #read value matches 2 run tag @s add forceNo5
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[5] 1
+execute if score #read value matches 0 run tag @s add banNo6
+execute if score #read value matches 1 run tag @s add banEnchant6
+execute if score #read value matches 2 run tag @s add forceNo6
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[6] 1
+execute if score #read value matches 0 run tag @s add banNo7
+execute if score #read value matches 1 run tag @s add banEnchant7
+execute if score #read value matches 2 run tag @s add forceNo7
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[7] 1
+execute if score #read value matches 0 run tag @s add banNo8
+execute if score #read value matches 1 run tag @s add banEnchant8
+execute if score #read value matches 2 run tag @s add forceNo8
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[8] 1
+execute if score #read value matches 0 run tag @s add banNo9
+execute if score #read value matches 1 run tag @s add banEnchant9
+execute if score #read value matches 2 run tag @s add forceNo9
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[9] 1
+execute if score #read value matches 0 run tag @s add banNo10
+execute if score #read value matches 1 run tag @s add banEnchant10
+execute if score #read value matches 2 run tag @s add forceNo10
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[10] 1
+execute if score #read value matches 0 run tag @s add banNo11
+execute if score #read value matches 1 run tag @s add banEnchant11
+execute if score #read value matches 2 run tag @s add forceNo11
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[11] 1
+execute if score #read value matches 0 run tag @s add banNo12
+execute if score #read value matches 1 run tag @s add banEnchant12
+execute if score #read value matches 2 run tag @s add forceNo12
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[12] 1
+execute if score #read value matches 0 run tag @s add banNo13
+execute if score #read value matches 1 run tag @s add banEnchant13
+execute if score #read value matches 2 run tag @s add forceNo13
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[13] 1
+execute if score #read value matches 0 run tag @s add banNo14
+execute if score #read value matches 1 run tag @s add banEnchant14
+execute if score #read value matches 2 run tag @s add forceNo14
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[14] 1
+execute if score #read value matches 0 run tag @s add banNo15
+execute if score #read value matches 1 run tag @s add banEnchant15
+execute if score #read value matches 2 run tag @s add forceNo15
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[15] 1
+execute if score #read value matches 0 run tag @s add banNo16
+execute if score #read value matches 1 run tag @s add banEnchant16
+execute if score #read value matches 2 run tag @s add forceNo16
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[16] 1
+execute if score #read value matches 0 run tag @s add banNo17
+execute if score #read value matches 1 run tag @s add banEnchant17
+execute if score #read value matches 2 run tag @s add forceNo17
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[17] 1
+execute if score #read value matches 0 run tag @s add banNo18
+execute if score #read value matches 1 run tag @s add banEnchant18
+execute if score #read value matches 2 run tag @s add forceNo18
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[18] 1
+execute if score #read value matches 0 run tag @s add banNo19
+execute if score #read value matches 1 run tag @s add banEnchant19
+execute if score #read value matches 2 run tag @s add forceNo19
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans[19] 1
+execute if score #read value matches 0 run tag @s add banNo20
+execute if score #read value matches 1 run tag @s add banEnchant20
+execute if score #read value matches 2 run tag @s add forceNo20
+#--item rule override
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_rule 1
+execute if score #read value matches 0.. run scoreboard players operation @s itemPresetA = #read value
+#--teams mode override
+$execute store result score #read value run data get storage $(file_name):settings_overrides teams 1
+execute if score #read value matches 0 run tag @s add o_teamsOff
+execute if score #read value matches 1 run tag @s add o_teamsOn
+#--nearby player invisibility override
+$execute store result score #read value run data get storage $(file_name):settings_overrides player_invisibility 1
+execute if score #read value matches 0 run tag @s add o_neabyInvis_never
+execute if score #read value matches 1 run tag @s add o_neabyInvis_always
+execute if score #read value matches 2 run tag @s add o_neabyInvis_5plus
+#--absorption at race start override
+$execute store result score #read value run data get storage $(file_name):settings_overrides absorption 1
+execute if score #read value matches 0 run tag @s add o_absorption_never
+execute if score #read value matches 1 run tag @s add o_absorption_always
+execute if score #read value matches 2 run tag @s add o_absorption_5plus
+
 
 #we did it
 scoreboard players set #success value 1

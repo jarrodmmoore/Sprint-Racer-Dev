@@ -49,5 +49,13 @@ execute if score @s tOption matches 1047 run function sprint_racer:game_logic/0/
 execute if score @s tOption matches 1048 run function sprint_racer:game_logic/0/options_signs/ai_rival
 execute if score @s tOption matches 1049 run function sprint_racer:game_logic/0/options_signs/locator_bar
 execute if score @s tOption matches 1050 run function sprint_racer:game_logic/0/options_signs/ai_mannequins
+execute if score @s tOption matches 1051 run function sprint_racer:game_logic/0/quick_warp/warp_macro {teleport:"tp @s 1556 88 406 90 0"}
+execute if score @s tOption matches 1052 run function sprint_racer:game_logic/0/quick_warp/warp_macro {teleport:"tp @s 1577 88 448 -60 10"}
+execute if score @s tOption matches 1053 run function sprint_racer:game_logic/0/quick_warp/warp_macro {teleport:"tp @s 1583 88 375 180 0"}
+execute if score @s tOption matches 1054 run function sprint_racer:game_logic/0/quick_warp/warp_macro {teleport:"tp @s 1615 88 365 180 0"}
+execute if score @s tOption matches 1055 run function sprint_racer:game_logic/0/quick_warp/warp_macro {teleport:"tp @s 1611 88 452 0 0"}
+execute if score @s tOption matches 1056 run function sprint_racer:game_logic/0/quick_warp/warp_macro_require_admin {teleport:"tp @s 1599 79 432 180 0"}
+execute if score @s tOption matches 1057 run function sprint_racer:game_logic/0/quick_warp/warp_macro_require_admin {teleport:"tp @s 1628 80 366 90 0"}
+execute if score @s tOption matches 1058 run function sprint_racer:game_logic/0/quick_warp/warp_macro_require_admin {teleport:"tp @s 1585 97 449 180 0"}
 #...
 execute if score @s tOption matches 1099 run function sprint_racer:game_logic/0/options_signs/reset_all_ta_data

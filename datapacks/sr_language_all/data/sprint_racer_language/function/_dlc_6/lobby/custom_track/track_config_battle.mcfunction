@@ -19,7 +19,7 @@ tellraw @a ["",{text:" "}]
 tellraw @a ["",{text:"===\\/=== ",color:"red"},{selector:"@e[limit=1,tag=focusT,type=armor_stand]"},{text:" ===\\/===",color:"red"}]
 
 #name
-tellraw @a ["",{translate:"sr.custom_track.track_name",color:"white",bold:true},{translate:"sr.custom_track.change_name",color:"light_purple",click_event:{action:"suggest_command",command:"/execute as @e[tag=focusT] run data merge entity @s {CustomName:{color:\"light_purple\",text:\"TRACKNAME\"}}"},hover_event:{action:"show_text",value:"Rename track (replace \"TRACKNAME\")"}}]
+tellraw @a ["",{translate:"sr.custom_track.track_name",color:"white",bold:true},{translate:"sr.custom_track.change_name",color:"light_purple",click_event:{action:"suggest_command",command:"/execute as @e[tag=focusT] run data merge entity @s {CustomName:{color:\"light_purple\",bold:false,text:\"TRACKNAME\"}}"},hover_event:{action:"show_text",value:"Rename track (replace \"TRACKNAME\")"}}]
 
 #tagline (macro)
 execute as @e[tag=focusT,type=armor_stand] store result storage sprint_racer:func_args id int 1 run scoreboard players get @s customTagLine
