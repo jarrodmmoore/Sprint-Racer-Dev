@@ -74,6 +74,7 @@ execute if entity @s[scores={gameTime=160}] run effect give @a resistance 1 100 
 execute if entity @s[scores={gameTime=160}] run tag @a[tag=noInventory] remove noInventory
 execute if entity @s[scores={gameTime=160}] run tag @a[limit=1] add spdbump
 execute if entity @s[scores={gameTime=160}] as @a run function sprint_racer:save_coordinates
+execute if entity @s[scores={gameTime=160}] run scoreboard players add @e[type=text_display,tag=respawnWheel] lifespan 0
 execute if entity @s[scores={gameTime=160}] as @a unless score @s cStatRequest = @s cStatType at @s run function sprint_racer:cheats/shoes/handle_stat_request
 
 
