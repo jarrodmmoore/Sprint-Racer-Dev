@@ -1,3 +1,5 @@
+#executed by "w"
+
 scoreboard players set #settingsWereOverridden value 1
 
 #save our current settings into a hidden 12th slot that will be restored later

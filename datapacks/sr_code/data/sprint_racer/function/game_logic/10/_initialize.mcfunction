@@ -1,6 +1,7 @@
 #restore game settings if some stuff got overridden by a custom track
 execute if score #settingsWereOverridden value matches 1.. run function sprint_racer:game_logic/0/save_state/remove_temporary_state_custom
-
+gamerule fall_damage true
+function sprint_racer:speedometer/enable_xp_bar
 
 scoreboard players reset @a[scores={pressJump=1}] pressJump
 

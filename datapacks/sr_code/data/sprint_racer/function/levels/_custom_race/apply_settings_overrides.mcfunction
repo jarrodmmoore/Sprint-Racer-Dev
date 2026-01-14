@@ -81,20 +81,20 @@ execute if entity @s[tag=banObliterator] as @e[tag=w,x=1560,y=150,z=406,distance
 execute if entity @s[tag=forceObliterator] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"w",add2:"w",remove1:"banObliterator",remove2:"dummy",remove3:"dummy"}
 
 #item rule
-execute if score @s itemPresetA matches 1.. run scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemPresetA = @s itemPresetA
 execute if score @s itemPresetA matches 1.. as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting
+execute if score @s itemPresetA matches 1.. run scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemPresetA = @s itemPresetA
 
 #teams
 execute if entity @s[tag=o_teamsOn] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"teamplay",add2:"w",remove1:"dummy",remove2:"dummy",remove3:"dummy"}
 execute if entity @s[tag=o_teamsOff] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"w",add2:"w",remove1:"teamplay",remove2:"dummy",remove3:"dummy"}
 
 #nearby invis
-execute if entity @s[tag=o_neabyInvis_never] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] allowInvis 0
 execute if entity @s[tag=o_neabyInvis_never] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting
-execute if entity @s[tag=o_neabyInvis_always] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] allowInvis 1
+execute if entity @s[tag=o_neabyInvis_never] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] allowInvis 0
 execute if entity @s[tag=o_neabyInvis_always] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting
-execute if entity @s[tag=o_neabyInvis_5plus] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] allowInvis 2
+execute if entity @s[tag=o_neabyInvis_always] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] allowInvis 1
 execute if entity @s[tag=o_neabyInvis_5plus] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting
+execute if entity @s[tag=o_neabyInvis_5plus] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] allowInvis 2
 scoreboard players operation global allowInvis = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] allowInvis
 
 #absorption at race start
