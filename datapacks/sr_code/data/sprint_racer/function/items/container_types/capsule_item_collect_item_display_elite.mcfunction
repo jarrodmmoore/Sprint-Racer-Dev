@@ -24,7 +24,7 @@ execute if entity @s[tag=capsule_e20] run return run execute as @e[tag=capsuleCo
 
 #oddball items
 #obliterator
-execute if entity @s[tag=capsule_obliterator] run return run execute as @e[tag=capsuleCollect,distance=..5] run function sprint_racer_language:_dlc_6/gameplay/give_obliterator {count:3}
+execute if entity @s[tag=capsule_obliterator] run return run execute as @e[tag=capsuleCollect,distance=..5] run function sprint_racer_language:_dlc_6/gameplay/give_obliterator {count:1}
 #fishing rod
 execute if entity @s[tag=capsule_fishing_rod_elite] run return run execute as @e[tag=capsuleCollect,distance=..5] run function sprint_racer_language:gameplay/give_item/elite_fishing_rod
 #battle basher
