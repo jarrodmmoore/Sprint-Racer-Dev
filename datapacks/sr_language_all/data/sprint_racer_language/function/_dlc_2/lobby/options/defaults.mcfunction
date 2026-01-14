@@ -80,6 +80,10 @@ tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumb
 fill 1601 79 422 1621 79 433 oak_log replace spruce_log
 fill 1601 79 422 1621 79 433 oak_log replace dark_oak_log
 
+#also reset item presets...
+scoreboard players set @s itemPresetA 2
+scoreboard players set @s itemPresetB 6
+
 #check chest categories for voids
 scoreboard players set #no_cat_check value 1
 function sprint_racer:game_logic/0/toggle_item/check_color_red
@@ -93,6 +97,10 @@ function sprint_racer:game_logic/0/toggle_item/check_color_purple
 
 #update all signs (this is overkill since we're only dealing with game structure and items, but whatever)
 function sprint_racer_language:_dlc_4/lobby/options/update_all_options_signs
+
+#extras and item room stuff
+execute if score global gameState matches 0 run function sprint_racer:game_logic/0/props/spawn_preview_chest_a
+execute if score global gameState matches 0 run function sprint_racer:game_logic/0/props/spawn_preview_chest_b
 
 #feedback
 execute as @a at @s run playsound minecraft:block.note_block.hat master @s
