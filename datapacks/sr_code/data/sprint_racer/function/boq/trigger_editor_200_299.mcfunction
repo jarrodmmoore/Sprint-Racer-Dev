@@ -96,4 +96,5 @@ execute if score @s tEditor matches 1292 run execute as @s[gamemode=creative] ru
 execute if score @s tEditor matches 1293 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/playerstart_menu/team_any
 execute if score @s tEditor matches 1294 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/playerstart_menu/team_orange
 execute if score @s tEditor matches 1295 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/playerstart_menu/team_cyan
+execute if score @s tEditor matches 1296 run execute as @s[gamemode=creative] run function sprint_racer:game_logic/2/playerstart_menu/team_neither
 #...

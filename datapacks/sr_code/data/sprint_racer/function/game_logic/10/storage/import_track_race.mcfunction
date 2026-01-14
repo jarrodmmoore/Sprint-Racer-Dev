@@ -214,6 +214,14 @@ $execute store result score #read value run data get storage $(file_name):settin
 execute if score #read value matches 0 run tag @s add banNo20
 execute if score #read value matches 1 run tag @s add banEnchant20
 execute if score #read value matches 2 run tag @s add forceNo20
+#--extra item ban overrides
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans_extra[0] 1
+execute if score #read value matches 0 run tag @s add banBattleBat
+execute if score #read value matches 1 run tag @s add banEnchantBattleBat
+execute if score #read value matches 2 run tag @s add forceBattleBat
+$execute store result score #read value run data get storage $(file_name):settings_overrides item_bans_extra[1] 1
+execute if score #read value matches 0 run tag @s add banObliterator
+execute if score #read value matches 1..2 run tag @s add forceObliterator
 #--item rule override
 $execute store result score #read value run data get storage $(file_name):settings_overrides item_rule 1
 execute if score #read value matches 0.. run scoreboard players operation @s itemPresetA = #read value

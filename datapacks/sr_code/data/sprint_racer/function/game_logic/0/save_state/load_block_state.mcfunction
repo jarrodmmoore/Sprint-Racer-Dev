@@ -481,6 +481,10 @@ execute if block 1611 ~ 442 red_wool positioned 1617 78 433 run function sprint_
 execute if block 1610 ~ 442 red_wool positioned 1619 78 433 run function sprint_racer:game_logic/0/toggle_item/19
 execute if block 1609 ~ 442 red_wool positioned 1621 78 433 run function sprint_racer:game_logic/0/toggle_item/20
 
+#weird hidden item ban used by custom tracks
+tag @s remove banObliterator
+execute if block 1619 ~ 442 red_wool run tag @s add banObliterator
+
 #check chest categories for voids
 function sprint_racer:game_logic/0/toggle_item/check_color_red
 function sprint_racer:game_logic/0/toggle_item/check_color_yellow

@@ -29,7 +29,8 @@ execute if entity @s[tag=!itemGetType,scores={rNumber=42..50}] run function spri
 execute if entity @s[tag=!itemGetType,scores={rNumber=51}] run function sprint_racer:items/pick_item/global/luck2
 
 #obliterator if all items banned
-execute if entity @s[tag=!itemGetType,scores={rNumber=52}] run function sprint_racer_language:_dlc_6/gameplay/give_obliterator {count:1}
+execute if entity @s[tag=!itemGetType,scores={rNumber=52}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!banObliterator] run function sprint_racer_language:_dlc_6/gameplay/give_obliterator {count:1}
+execute if entity @s[tag=!itemGetType,scores={rNumber=52}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=banObliterator] run function sprint_racer_language:gameplay/give_item/elite0
 
 tag @s remove itemGetType
 tag @e[tag=tempBan,type=armor_stand] remove tempBan

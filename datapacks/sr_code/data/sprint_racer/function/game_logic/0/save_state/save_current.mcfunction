@@ -274,6 +274,9 @@ execute if entity @s[tag=banEnchant18] run setblock 1611 ~ 442 yellow_wool
 execute if entity @s[tag=banEnchant19] run setblock 1610 ~ 442 yellow_wool
 execute if entity @s[tag=banEnchant20] run setblock 1609 ~ 442 yellow_wool
 
+setblock 1619 ~ 442 lime_wool
+execute if entity @s[tag=banObliterator] run setblock 1619 ~ 442 red_wool
+
 #################################
 #CHEATS
 

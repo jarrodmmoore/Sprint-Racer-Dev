@@ -1,3 +1,5 @@
+#reminder: there is a seperate version of this function for race and battle mode
+
 #keep track of whether anything's been modified. if so, we'll need to record a temporary save state that we can return to later
 scoreboard players set #settingsWereOverridden value 0
 
@@ -70,6 +72,14 @@ execute if entity @s[tag=forceNo18] as @e[tag=w,x=1560,y=150,z=406,distance=..1,
 execute if entity @s[tag=forceNo19] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"w",add2:"w",remove1:"banNo19",remove2:"banEnchant19",remove3:"dummy"}
 execute if entity @s[tag=forceNo20] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"w",add2:"w",remove1:"banNo20",remove2:"banEnchant20",remove3:"dummy"}
 
+#extra item bans
+execute if entity @s[tag=banBattleBat] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"banBattleBat",add2:"banEnchantBattleBat",remove1:"dummy",remove2:"dummy",remove3:"dummy"}
+execute if entity @s[tag=banEnchantBattleBat] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"w",add2:"banEnchantBattleBat",remove1:"banBattleBat",remove2:"dummy",remove3:"dummy"}
+execute if entity @s[tag=forceBattleBat] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"w",add2:"w",remove1:"banBattleBat",remove2:"banEnchantBattleBat",remove3:"dummy"}
+
+execute if entity @s[tag=banObliterator] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"w",add2:"banObliterator",remove1:"dummy",remove2:"dummy",remove3:"dummy"}
+execute if entity @s[tag=forceObliterator] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"w",add2:"w",remove1:"banObliterator",remove2:"dummy",remove3:"dummy"}
+
 #item rule
 execute if score @s itemPresetA matches 1.. run scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemPresetA = @s itemPresetA
 execute if score @s itemPresetA matches 1.. as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting
@@ -91,3 +101,22 @@ scoreboard players operation global allowInvis = @e[tag=w,x=1560,y=150,z=406,dis
 execute if entity @s[tag=o_absorption_never] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"absorpNever",add2:"w",remove1:"absorpAlways",remove2:"dummy",remove3:"dummy"}
 execute if entity @s[tag=o_absorption_always] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"absorpAlways",add2:"w",remove1:"absorpNever",remove2:"dummy",remove3:"dummy"}
 execute if entity @s[tag=o_absorption_5plus] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"w",add2:"w",remove1:"absorpAlways",remove2:"absorpNever",remove3:"dummy"}
+
+
+
+
+#recalc chest category stuff, but ONLY IF we messed with settings
+execute if score #settingsWereOverridden value matches 0 run return 0
+#=====
+
+#check chest categories for voids
+scoreboard players set #no_cat_check value 1
+function sprint_racer:game_logic/0/toggle_item/check_color_red
+function sprint_racer:game_logic/0/toggle_item/check_color_yellow
+function sprint_racer:game_logic/0/toggle_item/check_color_blue
+function sprint_racer:game_logic/0/toggle_item/check_color_green
+scoreboard players set #no_cat_check value 0
+function sprint_racer:game_logic/0/toggle_item/check_color_purple
+
+#we modified stuff!
+return 1

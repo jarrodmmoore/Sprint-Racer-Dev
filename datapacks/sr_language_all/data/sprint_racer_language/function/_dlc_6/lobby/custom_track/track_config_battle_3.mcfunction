@@ -40,5 +40,5 @@ execute as @e[tag=focusT,type=armor_stand] run tellraw @a ["",{text:"  "},{trans
 #export track?
 tellraw @a ["",{translate:"sr.custom_track.export_track_settings",color:"light_purple",click_event:{action:"suggest_command",command:"/function sprint_racer:game_logic/10/storage/export_track {filename:\"trackname\"}"},hover_event:{action:"show_text",value:"Export track settings to saves/.../data (replace \"trackname\", must be all lower-case and no spaces)"}}]
 
-tellraw @a ["",{text:"[<<]",color:"yellow",click_event:{action:"run_command",command:"/trigger tTrackEditor set 1014"},hover_event:{action:"show_text",value:[{translate:"sr.basic.previous"}]}},{text:"  "},{text:"p. 3/3",italic:true},{text:"  "},{text:"[>>]",color:"yellow",click_event:{action:"run_command",command:"/trigger tTrackEditor set 1013"},hover_event:{action:"show_text",value:[{translate:"sr.basic.next"}]}}]
+tellraw @a ["",{text:"[<<]",color:"yellow",click_event:{action:"run_command",command:"/trigger tTrackEditor set 1014"},hover_event:{action:"show_text",value:[{translate:"sr.basic.previous"}]}},{text:"  "},{text:"p. 3/3",italic:true},{text:"  "},{text:"[>>]",color:"dark_gray"}]
 tellraw @a ["",{text:"===/\\=== ",color:"red"},{selector:"@e[limit=1,tag=focusT,type=armor_stand]"},{text:" ===/\\===",color:"red"}]

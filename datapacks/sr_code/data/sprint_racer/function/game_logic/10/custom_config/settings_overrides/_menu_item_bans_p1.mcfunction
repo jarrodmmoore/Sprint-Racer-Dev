@@ -16,7 +16,7 @@ tellraw @a [{nbt:"item_3",storage:"sprint_racer:custom_track_text",interpret:tru
 tellraw @a [{nbt:"item_4",storage:"sprint_racer:custom_track_text",interpret:true}]
 
 #page select
-tellraw @a ["",{text:"[<<]",color:"dark_gray"},{text:"  "},{text:"p. 1/5",italic:true},{text:"  "},{text:"[>>]",color:"yellow",click_event:{action:"run_command",command:"/trigger tTrackEditor set 1237"},hover_event:{action:"show_text",value:[{translate:"sr.basic.next"}]}}]
+tellraw @a ["",{text:"[<<]",color:"dark_gray"},{text:"  "},{text:"p. 1/6",italic:true},{text:"  "},{text:"[>>]",color:"yellow",click_event:{action:"run_command",command:"/trigger tTrackEditor set 1237"},hover_event:{action:"show_text",value:[{translate:"sr.basic.next"}]}}]
 
 #return to settings overrides
 tellraw @a [{translate:"sr.basic.bracket_button",color:"light_purple",with:[{translate:"sr.custom_track.back"}],click_event:{action:"run_command",command:"/trigger tTrackEditor set 1125"},hover_event:{action:"show_text",value:{translate:"sr.basic.bracket_button",color:"light_purple",with:[{translate:"sr.custom_track.back"}]}}}]

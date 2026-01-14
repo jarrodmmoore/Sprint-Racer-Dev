@@ -49,3 +49,13 @@ execute if score @s tTrackEditor matches 1237 run function sprint_racer:game_log
 execute if score @s tTrackEditor matches 1238 run function sprint_racer:game_logic/10/custom_config/settings_overrides/open_page_with_sound {command:"function sprint_racer:game_logic/10/custom_config/settings_overrides/_menu_item_bans_p3"}
 execute if score @s tTrackEditor matches 1239 run function sprint_racer:game_logic/10/custom_config/settings_overrides/open_page_with_sound {command:"function sprint_racer:game_logic/10/custom_config/settings_overrides/_menu_item_bans_p4"}
 execute if score @s tTrackEditor matches 1240 run function sprint_racer:game_logic/10/custom_config/settings_overrides/open_page_with_sound {command:"function sprint_racer:game_logic/10/custom_config/settings_overrides/_menu_item_bans_p5"}
+execute if score @s tTrackEditor matches 1241 run function sprint_racer:game_logic/10/custom_config/settings_overrides/open_page_with_sound {command:"function sprint_racer:game_logic/10/custom_config/settings_overrides/_menu_item_bans_p6"}
+
+execute if score @s tTrackEditor matches 1242 run function sprint_racer:game_logic/10/custom_config/settings_overrides/item_battle_bat {page:"6",1:"tag @e[tag=focusT,type=armor_stand] remove forceBattleBat"}
+execute if score @s tTrackEditor matches 1243 run function sprint_racer:game_logic/10/custom_config/settings_overrides/item_battle_bat {page:"6",1:"tag @e[tag=focusT,type=armor_stand] add forceBattleBat"}
+execute if score @s tTrackEditor matches 1244 run function sprint_racer:game_logic/10/custom_config/settings_overrides/item_battle_bat {page:"6",1:"tag @e[tag=focusT,type=armor_stand] add banBattleBat"}
+execute if score @s tTrackEditor matches 1245 run function sprint_racer:game_logic/10/custom_config/settings_overrides/item_battle_bat {page:"6",1:"tag @e[tag=focusT,type=armor_stand] add banEnchantBattleBat"}
+
+execute if score @s tTrackEditor matches 1246 run function sprint_racer:game_logic/10/custom_config/settings_overrides/item_obliterator {page:"6",1:"tag @e[tag=focusT,type=armor_stand] remove forceObliterator"}
+execute if score @s tTrackEditor matches 1247 run function sprint_racer:game_logic/10/custom_config/settings_overrides/item_obliterator {page:"6",1:"tag @e[tag=focusT,type=armor_stand] add forceObliterator"}
+execute if score @s tTrackEditor matches 1248 run function sprint_racer:game_logic/10/custom_config/settings_overrides/item_obliterator {page:"6",1:"tag @e[tag=focusT,type=armor_stand] add banObliterator"}

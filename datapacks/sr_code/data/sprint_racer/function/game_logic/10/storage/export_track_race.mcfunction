@@ -198,6 +198,13 @@ $execute if entity @s[tag=banNo19] run data modify storage $(filename):settings_
 $execute if entity @s[tag=forceNo20] run data modify storage $(filename):settings_overrides item_bans[19] set value 2
 $execute if entity @s[tag=banEnchant20] run data modify storage $(filename):settings_overrides item_bans[19] set value 1
 $execute if entity @s[tag=banNo20] run data modify storage $(filename):settings_overrides item_bans[19] set value 0
+#extra item bans (-1 = unset, 0 = banned, 1 = enchant banned, 2 = enabled)
+$data modify storage $(filename):settings_overrides item_bans_extra set value [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]
+$execute if entity @s[tag=forceBattleBat] run data modify storage $(filename):settings_overrides item_bans_extra[0] set value 2
+$execute if entity @s[tag=banEnchantBattleBat] run data modify storage $(filename):settings_overrides item_bans_extra[0] set value 1
+$execute if entity @s[tag=banBattleBat] run data modify storage $(filename):settings_overrides item_bans_extra[0] set value 0
+$execute if entity @s[tag=forceObliterator] run data modify storage $(filename):settings_overrides item_bans_extra[1] set value 2
+$execute if entity @s[tag=banObliterator] run data modify storage $(filename):settings_overrides item_bans_extra[1] set value 0
 #item rule (-1 = unset, 1.. = something)
 $data modify storage $(filename):settings_overrides item_rule set value -1
 $execute if score @s itemPresetA matches 0.. store result storage $(filename):settings_overrides item_rule int 1 run scoreboard players get @s itemPresetA
