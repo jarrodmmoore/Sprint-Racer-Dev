@@ -3,4 +3,6 @@ execute if loaded ~ ~ ~ run summon text_display ~ ~1.6 ~ {alignment:center,text:
 execute if entity @a[tag=playing,tag=killed] run tellraw @a[tag=killer] ["",{translate:"sr.game.you_got_a_ko",color:"green",bold:true},{text:" >> ",color:"green",bold:true},{selector:"@a[tag=killed]"}]
 execute if entity @e[tag=ai,tag=killed] run tellraw @a[tag=killer] ["",{translate:"sr.game.you_got_a_ko",color:"green",bold:true},{text:" >> ",color:"green",bold:true},{selector:"@e[tag=killed]"}]
 
+tellraw @a[tag=killed] ["",{translate:"sr.game.got_kod_by",color:"red",bold:true,with:[{selector:"@s"}]}]
+
 execute as @e[tag=setscore,distance=..3] run function sprint_racer:damage_logic/damage_number_entity_slow
