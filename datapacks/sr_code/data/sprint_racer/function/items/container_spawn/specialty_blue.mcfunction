@@ -4,7 +4,7 @@ summon armor_stand ~ ~-2 ~ {Tags:["itemcontainer","chest7","cSETME"],Invisible:1
 
 
 #visual display setup
-execute as @e[type=item_display,distance=..3,tag=setChestDisplay] run function sprint_racer:items/container_spawn/setup_geneic_chest_item_display
+execute as @e[type=item_display,distance=..3,tag=setChestDisplay] run function sprint_racer:items/container_spawn/setup_generic_chest_item_display
 
 
 #armor stand stuff

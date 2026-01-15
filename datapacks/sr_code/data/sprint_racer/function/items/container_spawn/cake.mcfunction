@@ -3,7 +3,7 @@ summon armor_stand ~ ~-2 ~ {Tags:["itemcontainer","chest11","cSETME"],Invisible:
 ]}
 
 #visual display setup
-execute as @e[type=item_display,distance=..3,tag=setChestDisplay] run function sprint_racer:items/container_spawn/setup_geneic_chest_item_display
+execute as @e[type=item_display,distance=..3,tag=setChestDisplay] run function sprint_racer:items/container_spawn/setup_generic_chest_item_display
 
 #armor_stand setup
 scoreboard players set @e[tag=chest11,tag=cSETME,type=armor_stand,distance=..3] itemBlockState 11

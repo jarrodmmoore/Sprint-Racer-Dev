@@ -29,4 +29,7 @@ execute if score @s rNumber matches 57 run return run function sprint_racer:item
 execute if score @s rNumber matches 58 run return run function sprint_racer:items/container_spawn/specialty_purple
 
 #custom
-execute if entity @s[scores={rNumber=61..}] run return run function sprint_racer:items/container_spawn/capsule_seeded_timeattack
+execute if entity @s[scores={rNumber=61..99}] run return run function sprint_racer:items/container_spawn/capsule_seeded_timeattack
+
+#custom, no capsule
+execute if entity @s[scores={rNumber=100..}] run return run tag @s add custom_item_spawn

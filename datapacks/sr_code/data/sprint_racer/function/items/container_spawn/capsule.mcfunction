@@ -27,7 +27,7 @@ execute as @e[tag=capsuleSummon,type=item_display,distance=..3] run ride @s moun
 tag @e[tag=capsuleSummon,type=item_display,distance=..3] remove capsuleSummon
 
 #visual display setup
-execute as @e[type=item_display,distance=..3,tag=setChestDisplay] run function sprint_racer:items/container_spawn/setup_geneic_chest_item_display
+execute as @e[type=item_display,distance=..3,tag=setChestDisplay] run function sprint_racer:items/container_spawn/setup_generic_chest_item_display
 
 #trapped chest stuff
 execute if entity @s[type=item,nbt={Item:{components:{"minecraft:custom_data":{groundDeploy:1b}}}}] run scoreboard players set @e[tag=chest3,tag=cSETME,type=armor_stand,distance=..3] itemBlockState 10
