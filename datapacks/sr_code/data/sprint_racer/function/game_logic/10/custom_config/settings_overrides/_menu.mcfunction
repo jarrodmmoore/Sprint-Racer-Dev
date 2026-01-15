@@ -21,11 +21,14 @@ tellraw @a ["  ",{translate:"sr.basic.bracket_button",color:"light_purple",with:
 #item rule
 tellraw @a [{nbt:"item_rule",storage:"sprint_racer:custom_track_text",interpret:true}]
 
+#gamemode variant
+tellraw @a [{nbt:"gamemode",storage:"sprint_racer:custom_track_text",interpret:true}]
+
 #teams mode
 tellraw @a [{nbt:"teams",storage:"sprint_racer:custom_track_text",interpret:true}]
 
-#nearby players invisibility
-tellraw @a [{nbt:"nearby_invisibility",storage:"sprint_racer:custom_track_text",interpret:true}]
+#(race only) nearby players invisibility
+execute if score #test value matches 1 run tellraw @a [{nbt:"nearby_invisibility",storage:"sprint_racer:custom_track_text",interpret:true}]
 
 #(race only) absorption at race start
 execute if score #test value matches 1 run tellraw @a [{nbt:"absorption",storage:"sprint_racer:custom_track_text",interpret:true}]

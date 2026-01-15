@@ -84,6 +84,12 @@ execute if entity @s[tag=forceObliterator] as @e[tag=w,x=1560,y=150,z=406,distan
 execute if score @s itemPresetA matches 1.. as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting
 execute if score @s itemPresetA matches 1.. run scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemPresetA = @s itemPresetA
 
+#gamemode
+execute if score @s gamemodePresetA matches 1.. as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting
+execute if score @s gamemodePresetA matches 1.. run scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gamemodePresetA = @s gamemodePresetA
+execute if score @s gamemodePresetA matches 1.. run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove randomPresetA
+execute if entity @s[tag=randomPresetA] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"w",add2:"randomPresetA",remove1:"dummy",remove2:"dummy",remove3:"dummy"}
+
 #teams
 execute if entity @s[tag=o_teamsOn] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"teamplay",add2:"w",remove1:"dummy",remove2:"dummy",remove3:"dummy"}
 execute if entity @s[tag=o_teamsOff] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:levels/_custom_general/override_a_setting_macro {add1:"w",add2:"w",remove1:"teamplay",remove2:"dummy",remove3:"dummy"}
@@ -118,5 +124,27 @@ function sprint_racer:game_logic/0/toggle_item/check_color_green
 scoreboard players set #no_cat_check value 0
 function sprint_racer:game_logic/0/toggle_item/check_color_purple
 
+
+
+
+#nothing further if time attack
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=7..8}] run return 1
+#=====
+
+#random gamemode preset, pick one at random
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=randomPresetA] run scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gamemodePresetA = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..3}] rNumber
+
+#hud stuff
+scoreboard players set #hudMode value 1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gamemodePresetA=2}] run scoreboard players set #hudMode value 2
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gamemodePresetA=2}] run function sprint_racer:game_logic/1/lap_bossbar/setup
+
+#team name colors
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gamemodePresetA=2}] run team modify playerFinished color yellow
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gamemodePresetA=2}] run team modify playerFinished color dark_gray
+
+
+
+
 #we modified stuff!
-return 1
+return 2

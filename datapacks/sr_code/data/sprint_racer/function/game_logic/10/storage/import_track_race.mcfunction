@@ -225,6 +225,10 @@ execute if score #read value matches 1..2 run tag @s add forceObliterator
 #--item rule override
 $execute store result score #read value run data get storage $(file_name):settings_overrides item_rule 1
 execute if score #read value matches 0.. run scoreboard players operation @s itemPresetA = #read value
+#--gamemode override
+$execute store result score #read value run data get storage $(file_name):settings_overrides gamemode 1
+execute if score #read value matches 0 run tag @s add randomPresetA
+execute if score #read value matches 1.. run scoreboard players operation @s gamemodePresetA = #read value
 #--teams mode override
 $execute store result score #read value run data get storage $(file_name):settings_overrides teams 1
 execute if score #read value matches 0 run tag @s add o_teamsOff

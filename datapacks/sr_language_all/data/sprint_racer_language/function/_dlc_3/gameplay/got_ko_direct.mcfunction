@@ -3,6 +3,6 @@ execute if loaded ~ ~ ~ run summon text_display ~ ~1.6 ~ {alignment:center,text:
 execute if entity @a[tag=last_death] run tellraw @s ["",{translate:"sr.game.you_got_a_ko",color:"green",bold:true},{text:" >> ",color:"green",bold:true},{selector:"@a[tag=last_death,limit=1,sort=nearest]"}]
 execute unless entity @a[tag=last_death] run tellraw @s ["",{translate:"sr.game.you_got_a_ko",color:"green",bold:true}]
 
-tellraw @a[tag=last_death,limit=1,sort=nearest] ["",{translate:"sr.game.got_kod_by",color:"red",bold:true,with:[{selector:"@s"}]}]
+tellraw @a[tag=last_death,limit=1,sort=nearest,tag=!minChat] ["",{translate:"sr.game.got_kod_by",color:"gray",bold:true},{selector:"@s"}]
 
 execute as @e[tag=setscore,distance=..3] run function sprint_racer:damage_logic/damage_number_entity_slow

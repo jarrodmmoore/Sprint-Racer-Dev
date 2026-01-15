@@ -59,3 +59,17 @@ execute if score @s tTrackEditor matches 1245 run function sprint_racer:game_log
 execute if score @s tTrackEditor matches 1246 run function sprint_racer:game_logic/10/custom_config/settings_overrides/item_obliterator {page:"6",1:"tag @e[tag=focusT,type=armor_stand] remove forceObliterator"}
 execute if score @s tTrackEditor matches 1247 run function sprint_racer:game_logic/10/custom_config/settings_overrides/item_obliterator {page:"6",1:"tag @e[tag=focusT,type=armor_stand] add forceObliterator"}
 execute if score @s tTrackEditor matches 1248 run function sprint_racer:game_logic/10/custom_config/settings_overrides/item_obliterator {page:"6",1:"tag @e[tag=focusT,type=armor_stand] add banObliterator"}
+
+execute if score @s tTrackEditor matches 1249 run function sprint_racer:game_logic/10/custom_config/settings_overrides/generic_2 {1:"tag @e[tag=focusT,type=armor_stand] remove randomPresetA",2:"scoreboard players reset @e[tag=focusT,type=armor_stand] gamemodePresetA"}
+execute if score @s tTrackEditor matches 1250 run function sprint_racer:game_logic/10/custom_config/settings_overrides/generic_2 {1:"tag @e[tag=focusT,type=armor_stand] remove randomPresetA",2:"scoreboard players set @e[tag=focusT,type=armor_stand] gamemodePresetA 1"}
+execute if score @s tTrackEditor matches 1251 run function sprint_racer:game_logic/10/custom_config/settings_overrides/generic_2 {1:"tag @e[tag=focusT,type=armor_stand] remove randomPresetA",2:"scoreboard players set @e[tag=focusT,type=armor_stand] gamemodePresetA 2"}
+execute if score @s tTrackEditor matches 1252 run function sprint_racer:game_logic/10/custom_config/settings_overrides/generic_2 {1:"tag @e[tag=focusT,type=armor_stand] remove randomPresetA",2:"scoreboard players set @e[tag=focusT,type=armor_stand] gamemodePresetA 3"}
+execute if score @s tTrackEditor matches 1253 run function sprint_racer:game_logic/10/custom_config/settings_overrides/generic_2 {1:"tag @e[tag=focusT,type=armor_stand] add randomPresetA",2:"scoreboard players reset @e[tag=focusT,type=armor_stand] gamemodePresetA"}
+
+execute if score @s tTrackEditor matches 1254 run function sprint_racer:game_logic/10/custom_config/settings_overrides/generic_2 {1:"tag @e[tag=focusT,type=armor_stand] remove randomPresetB",2:"scoreboard players reset @e[tag=focusT,type=armor_stand] gamemodePresetB"}
+execute if score @s tTrackEditor matches 1255 run function sprint_racer:game_logic/10/custom_config/settings_overrides/generic_2 {1:"tag @e[tag=focusT,type=armor_stand] remove randomPresetB",2:"scoreboard players set @e[tag=focusT,type=armor_stand] gamemodePresetB 1"}
+execute if score @s tTrackEditor matches 1256 run function sprint_racer:game_logic/10/custom_config/settings_overrides/generic_2 {1:"tag @e[tag=focusT,type=armor_stand] remove randomPresetB",2:"scoreboard players set @e[tag=focusT,type=armor_stand] gamemodePresetB 2"}
+execute if score @s tTrackEditor matches 1257 run function sprint_racer:game_logic/10/custom_config/settings_overrides/generic_2 {1:"tag @e[tag=focusT,type=armor_stand] remove randomPresetB",2:"scoreboard players set @e[tag=focusT,type=armor_stand] gamemodePresetB 3"}
+execute if score @s tTrackEditor matches 1258 run function sprint_racer:game_logic/10/custom_config/settings_overrides/generic_2 {1:"tag @e[tag=focusT,type=armor_stand] add randomPresetB",2:"scoreboard players reset @e[tag=focusT,type=armor_stand] gamemodePresetB"}
+
+#...

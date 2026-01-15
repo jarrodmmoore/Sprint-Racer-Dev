@@ -201,15 +201,14 @@ $execute if entity @s[tag=banObliterator] run data modify storage $(filename):se
 #item rule (-1 = unset, 1.. = something)
 $data modify storage $(filename):settings_overrides item_rule set value -1
 $execute if score @s itemPresetA matches 0.. store result storage $(filename):settings_overrides item_rule int 1 run scoreboard players get @s itemPresetA
+#gamemode preset
+$data modify storage $(filename):settings_overrides gamemode set value -1
+$execute if score @s gamemodePresetB matches 1.. store result storage $(filename):settings_overrides gamemode int 1 run scoreboard players get @s gamemodePresetB
+$execute if entity @s[tag=randomPresetB] run data modify storage $(filename):settings_overrides gamemode set value 0
 #teams mode (-1 = unset, 0 = off, 1 = on)
 $data modify storage $(filename):settings_overrides teams set value -1
 $execute if entity @s[tag=o_teamsOff] run data modify storage $(filename):settings_overrides teams set value 0
 $execute if entity @s[tag=o_teamsOn] run data modify storage $(filename):settings_overrides teams set value 1
-#nearby player invisibility (-1 = unset, 0 = never, 1 = always, 2 = 5plus players)
-$data modify storage $(filename):settings_overrides player_invisibility set value -1
-$execute if entity @s[tag=o_neabyInvis_never] run data modify storage $(filename):settings_overrides player_invisibility set value 0
-$execute if entity @s[tag=o_neabyInvis_always] run data modify storage $(filename):settings_overrides player_invisibility set value 1
-$execute if entity @s[tag=o_neabyInvis_5plus] run data modify storage $(filename):settings_overrides player_invisibility set value 2
 #locator bar (-1 = unset, 0 = off, 1 = on)
 $data modify storage $(filename):settings_overrides locator_bar set value -1
 $execute if entity @s[tag=o_locatorBarOff] run data modify storage $(filename):settings_overrides locator_bar set value 0

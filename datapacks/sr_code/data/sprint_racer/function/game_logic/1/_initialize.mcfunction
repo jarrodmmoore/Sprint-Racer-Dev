@@ -241,16 +241,16 @@ scoreboard players set #lastRacePosCalc value 1
 execute as @e[limit=1,tag=chosenTrack,type=armor_stand] at @s run function sprint_racer:game_logic/1/_initialize_index
 
 #cheat that offsets lap count
-execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=55a] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] unless entity @s[scores={gamemodePresetA=2}] run function sprint_racer:cheats/offset_lap_count
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=55a] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:cheats/offset_lap_count
 
 #grand prix lap modifier, if applicable
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix,scores={gpModifier=1..}] unless entity @s[scores={gamemodePresetA=2}] run function sprint_racer:game_logic/1/apply_gp_lap_modifier
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix,scores={gpModifier=1..}] run function sprint_racer:game_logic/1/apply_gp_lap_modifier
 
 #cheat that allows 1 checkpoint skip
 execute if entity @e[type=armor_stand,tag=50a,tag=cheats,x=1548,y=148,z=422,distance=..1] run tag @a add skip_available
 
 #cheat that doubles lap count
-execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=39a] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] unless entity @s[scores={gamemodePresetA=2}] run function sprint_racer:cheats/double_lap_count
+execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=39a] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:cheats/double_lap_count
 
 #reduce number of AI in certain circumstances (CUT)
 #execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms,tag=optRAIalways,tag=!noAItrack] run function sprint_racer:game_logic/1/ai_count_reduce

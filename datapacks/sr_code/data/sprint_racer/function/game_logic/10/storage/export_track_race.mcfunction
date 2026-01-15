@@ -208,6 +208,10 @@ $execute if entity @s[tag=banObliterator] run data modify storage $(filename):se
 #item rule (-1 = unset, 1.. = something)
 $data modify storage $(filename):settings_overrides item_rule set value -1
 $execute if score @s itemPresetA matches 0.. store result storage $(filename):settings_overrides item_rule int 1 run scoreboard players get @s itemPresetA
+#gamemode preset
+$data modify storage $(filename):settings_overrides gamemode set value -1
+$execute if score @s gamemodePresetA matches 1.. store result storage $(filename):settings_overrides gamemode int 1 run scoreboard players get @s gamemodePresetA
+$execute if entity @s[tag=randomPresetA] run data modify storage $(filename):settings_overrides gamemode set value 0
 #teams mode (-1 = unset, 0 = off, 1 = on)
 $data modify storage $(filename):settings_overrides teams set value -1
 $execute if entity @s[tag=o_teamsOff] run data modify storage $(filename):settings_overrides teams set value 0
