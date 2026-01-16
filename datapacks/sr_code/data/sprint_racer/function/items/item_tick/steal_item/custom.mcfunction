@@ -11,4 +11,4 @@ $function $(active_namespace):$(active_path)/custom_items/_steal_item_player
 scoreboard players set @e[tag=stealTargetCustom] itemStolen 8
 tag @a[tag=stealTargetCustom] remove stealTargetCustom
 
-scoreboard players set @s giveItem -1
+scoreboard players set @s giveItem 999
