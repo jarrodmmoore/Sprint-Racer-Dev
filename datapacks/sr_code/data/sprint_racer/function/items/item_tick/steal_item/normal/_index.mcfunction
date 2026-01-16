@@ -22,6 +22,7 @@ execute unless entity @s[tag=gotEm] if entity @e[tag=stealTarget2,nbt={SelectedI
 execute unless entity @s[tag=gotEm] if entity @e[tag=stealTarget2,nbt={SelectedItem:{components:{"minecraft:custom_data":{no19:1b}}}}] run function sprint_racer:items/item_tick/steal_item/normal/no19
 execute unless entity @s[tag=gotEm] if entity @e[tag=stealTarget2,nbt={SelectedItem:{components:{"minecraft:custom_data":{no20:1b}}}}] run function sprint_racer:items/item_tick/steal_item/normal/no20
 execute unless entity @s[tag=gotEm] if entity @e[tag=stealTarget2,nbt={SelectedItem:{components:{"minecraft:custom_data":{fishing_rod:1b}}}}] run function sprint_racer:items/item_tick/steal_item/normal/fishing_rod
+execute unless entity @s[tag=gotEm] if entity @e[tag=stealTarget2,nbt={SelectedItem:{components:{"minecraft:custom_data":{custom_item:1b}}}}] run function sprint_racer:items/item_tick/steal_item/custom with storage sprint_racer:func_args
 
 execute if entity @s[tag=gotEm] run function sprint_racer_language:gameplay/misc_item_text/stolen_item_normal
 

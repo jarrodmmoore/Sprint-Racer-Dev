@@ -1,6 +1,6 @@
 #pick an item category (assuming we have an item from that category)
 
-tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..50}] remove improvPick
+tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..54}] remove improvPick
 
 execute if entity @s[scores={aiHasProjectile=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..3}] add improvPick
 execute if entity @s[scores={aiHasMelee=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=4}] add improvPick
@@ -23,6 +23,9 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scor
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=41..50}] add improvPick
 execute if entity @s[tag=aggressive] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=41..45}] remove improvPick
 execute if entity @s[tag=tryhard] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=41..47}] remove improvPick
+
+#if we have custom items, factor them in!
+execute if score @s aiHasCustomItem matches 1.. run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=51..54}] add improvPick
 
 #insert more functions here...
 
@@ -48,6 +51,7 @@ execute if entity @s[tag=31warp] run function sprint_racer:ai/general/item_logic
 execute if entity @s[tag=improvBattle] run function sprint_racer:ai/general/item_logic/improvise/battle_only_items
 execute if entity @s[tag=!gotCategory,scores={rNumber=13..16}] run function sprint_racer:ai/general/item_logic/improvise/trap
 execute if entity @s[tag=!gotCategory,scores={rNumber=17..20}] run function sprint_racer:ai/general/item_logic/improvise/global
+execute if entity @s[tag=!gotCategory,scores={rNumber=51..54}] run function sprint_racer:ai/general/item_logic/improvise/custom with storage sprint_racer:func_args
 tag @s remove gotCategory
 
 tag @e[tag=31warp] remove 31warp

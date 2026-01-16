@@ -423,6 +423,7 @@ scoreboard objectives add aiHasItem39 dummy
 scoreboard objectives add aiHasItem40 dummy
 scoreboard objectives add aiHasDagger dummy
 scoreboard objectives add aiHasFirework dummy
+scoreboard objectives add aiHasCustomItem dummy
 
 #time/timer stuff
 scoreboard objectives add actionbarState dummy

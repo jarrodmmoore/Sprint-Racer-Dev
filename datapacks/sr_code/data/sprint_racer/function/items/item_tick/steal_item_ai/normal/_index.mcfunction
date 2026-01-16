@@ -20,9 +20,10 @@ execute if entity @e[tag=stealTarget2,scores={aiHasItem17=1..}] run tag @e[tag=r
 execute if entity @e[tag=stealTarget2,scores={aiHasItem18=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=18}] add igotthis
 execute if entity @e[tag=stealTarget2,scores={aiHasItem19=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=19}] add igotthis
 execute if entity @e[tag=stealTarget2,scores={aiHasItem20=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=20}] add igotthis
+execute if entity @e[tag=stealTarget2,scores={aiHasCustomItem=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=21}] add igotthis
 
 scoreboard players set @s rNumber 0
-scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=igotthis,scores={rNumber=1..20}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=igotthis,scores={rNumber=1..21}] rNumber
 #DEBUG
 #tellraw @s ["",{text:"rNumber = "},{score:{name:"@s",objective:"rNumber"}}]
 
@@ -50,6 +51,7 @@ execute if entity @s[tag=!gotEm,scores={rNumber=17}] run function sprint_racer:i
 execute if entity @s[tag=!gotEm,scores={rNumber=18}] run function sprint_racer:items/item_tick/steal_item_ai/normal/no18
 execute if entity @s[tag=!gotEm,scores={rNumber=19}] run function sprint_racer:items/item_tick/steal_item_ai/normal/no19
 execute if entity @s[tag=!gotEm,scores={rNumber=20}] run function sprint_racer:items/item_tick/steal_item_ai/normal/no20
+execute if entity @s[tag=!gotEm,scores={rNumber=21}] run function sprint_racer:items/item_tick/steal_item_ai/custom with storage sprint_racer:func_args
 
 execute if entity @s[tag=gotEm] run function sprint_racer_language:gameplay/misc_item_text/stolen_item_normal
 

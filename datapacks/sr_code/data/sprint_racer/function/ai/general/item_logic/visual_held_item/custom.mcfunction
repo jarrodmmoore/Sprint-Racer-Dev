@@ -1,0 +1,1 @@
+$function $(active_namespace):$(active_path)/custom_items/_ai_visual_held_item

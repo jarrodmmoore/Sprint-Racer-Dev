@@ -164,6 +164,8 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=showroundnum] 
 #======================================
 #DEFAULTS, these can be overwritten by a specific track's initialization function
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove noAItrack
+data modify storage sprint_racer:func_args active_namespace set value "_"
+data modify storage sprint_racer:func_args active_path set value "_"
 #scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=RAIautocount] optRAIcount 4
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] startType 0
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lap 5
