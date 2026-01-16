@@ -30,10 +30,10 @@ execute if score @s aiHasCustomItem matches 1.. run tag @e[tag=random,x=1548,y=1
 #insert more functions here...
 
 scoreboard players set @s rNumber 50
-scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=improvPick,type=armor_stand,scores={rNumber=1..50}] rNumber
+scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=improvPick,type=armor_stand,scores={rNumber=1..54}] rNumber
 #very_easy_ai will re-roll for lower chance of item usage
-execute if entity @s[tag=very_easy_ai,scores={rNumber=1..40}] run scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=improvPick,type=armor_stand,scores={rNumber=1..50}] rNumber
-execute if entity @s[tag=very_easy_ai,scores={rNumber=1..40}] run scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=improvPick,type=armor_stand,scores={rNumber=1..50}] rNumber
+execute if entity @s[tag=very_easy_ai,scores={rNumber=1..40}] run scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=improvPick,type=armor_stand,scores={rNumber=1..54}] rNumber
+execute if entity @s[tag=very_easy_ai,scores={rNumber=1..40}] run scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=improvPick,type=armor_stand,scores={rNumber=1..54}] rNumber
 tag @s[scores={rNumber=9}] add improvBattle
 tag @s[scores={rNumber=11}] add improvBattle
 tag @s[scores={rNumber=12}] add improvBattle
