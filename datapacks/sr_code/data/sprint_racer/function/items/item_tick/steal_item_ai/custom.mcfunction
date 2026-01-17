@@ -8,7 +8,7 @@ tag @e[tag=stealTarget2] add stealTargetCustom
 #might do recursion to grab multiple, idk
 $function $(active_namespace):$(active_path)/custom_items/_steal_item_ai
 
-scoreboard players set @e[tag=stealTargetCustom] itemStolen 8
+scoreboard players set @e[tag=stealTargetCustom] itemStolen 16
 tag @e[tag=stealTargetCustom] remove stealTargetCustom
 
 scoreboard players set @s giveItem -1

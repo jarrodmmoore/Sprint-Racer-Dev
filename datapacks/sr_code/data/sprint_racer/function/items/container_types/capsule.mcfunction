@@ -1,7 +1,7 @@
 tag @e[limit=1,sort=nearest,tag=itemcontainer,tag=chest3,type=armor_stand,distance=..3] add chestTarget
 execute as @e[tag=chestTarget,type=armor_stand,distance=..3] at @s run playsound minecraft:block.glass.break master @a ~ ~ ~ 2 1
 execute as @e[tag=chestTarget,type=armor_stand,distance=..3] at @s run particle block{block_state:"minecraft:white_stained_glass"} ~ ~1.5 ~ .2 .2 .2 1 20
-execute as @e[tag=chestTarget,type=armor_stand,distance=..3] at @s positioned ~ ~1 ~ run scoreboard players set @e[limit=1,sort=nearest,tag=itemchest,tag=node] itemBlockState 1000
+execute as @e[tag=chestTarget,type=armor_stand,distance=..3,tag=!homer] at @s positioned ~ ~1 ~ run scoreboard players set @e[limit=1,sort=nearest,tag=itemchest,tag=node] itemBlockState 1000
 
 #"get" the item from the capsule (read the tags on the item_display and give ourselves the proper item)
 tag @s add capsuleCollect

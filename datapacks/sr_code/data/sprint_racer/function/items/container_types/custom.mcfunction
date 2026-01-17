@@ -1,0 +1,1 @@
+$function $(active_namespace):$(active_path)/custom_items/_open_custom_item_chest

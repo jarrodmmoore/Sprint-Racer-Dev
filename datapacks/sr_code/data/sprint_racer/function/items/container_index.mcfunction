@@ -15,5 +15,8 @@ execute if entity @s[scores={itemBlockState=11,itemCooldown=..0}] run function s
 execute if entity @s[scores={invisibility=..0,itemBlockState=10}] run function sprint_racer:items/item_tick/explosive_trap
 execute if entity @s[scores={invisibility=..0,itemBlockState=12}] run function sprint_racer:items/item_tick/explosive_trap_prank
 
+#custom chests
+execute if entity @s[scores={itemBlockState=20..,itemCooldown=..0}] run function sprint_racer:items/container_types/custom with storage sprint_racer:func_args
+
 scoreboard players set @s itemBlockState 0
 execute if score global gameState matches 3 run scoreboard players set @s[scores={itemCooldown=6..}] itemCooldown 5
