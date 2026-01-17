@@ -1,4 +1,8 @@
 tag @e[limit=1,sort=nearest,tag=itemcontainer,tag=chest3,type=armor_stand,distance=..3] add chestTarget
+#if there's nothing in the capsule, exit out
+execute at @e[tag=chestTarget,type=armor_stand,distance=..3,limit=1] unless entity @e[distance=..2,limit=1,sort=nearest,type=item_display,tag=capsuleItemDisplay] run return run tag @e[tag=chestTarget,type=armor_stand,distance=..2] remove chestTarget
+#=====
+#if there IS something in the capsule, break it and give the item
 execute as @e[tag=chestTarget,type=armor_stand,distance=..3] at @s run playsound minecraft:block.glass.break master @a ~ ~ ~ 2 1
 execute as @e[tag=chestTarget,type=armor_stand,distance=..3] at @s run particle block{block_state:"minecraft:white_stained_glass"} ~ ~1.5 ~ .2 .2 .2 1 20
 execute as @e[tag=chestTarget,type=armor_stand,distance=..3,tag=!homer] at @s positioned ~ ~1 ~ run scoreboard players set @e[limit=1,sort=nearest,tag=itemchest,tag=node] itemBlockState 1000
