@@ -38,7 +38,7 @@ scoreboard players set @s scriptMove 0
 scoreboard players reset @s itemchestSeedA
 scoreboard players reset @s itemchestSeedB
 scoreboard players reset @s itemchestSeedR
-scoreboard players set @s itemchestSeedG 0
+scoreboard players reset @s itemchestSeedG
 
 scoreboard players reset @s dropCowEgg
 scoreboard players reset @s dropDrownedEgg
