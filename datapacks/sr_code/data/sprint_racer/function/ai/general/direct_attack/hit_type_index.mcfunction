@@ -19,6 +19,11 @@ execute if entity @s[tag=tryhard,scores={aiSkill=3..}] run scoreboard players op
 scoreboard players set #setTime value 4
 execute facing entity @e[limit=1,tag=hit_target,distance=..3] feet run function sprint_racer:ai/general/movement/face_direction_temporarily
 
+#swing your arms
+#from side to side
+#come on it's time to do the mario
+swing @s mainhand
+
 tag @s remove hit1
 tag @s remove hit2
 tag @s remove hit3

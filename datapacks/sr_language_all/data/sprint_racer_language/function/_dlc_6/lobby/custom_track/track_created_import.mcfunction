@@ -1,6 +1,6 @@
 tellraw @a ["",{text:" "}]
 $tellraw @a ["",$(track_name)]
-$tellraw @a ["",{translate:"sr.custom_track.import_success",color:"green",with:[{text:"command_storage_$(file_name).dat",color:"white"}]}]
+$tellraw @a ["",{translate:"sr.custom_track.import_success",color:"green",with:[{text:"data/$(file_name)/command_storage.dat",color:"white"}]}]
 execute if score global gameState matches 10 as @a at @s run playsound minecraft:ui.stonecutter.take_result master @s ~ 100000 ~ 100000 1.7
 
 #warn about version if track was intended for a later version of sprint racer

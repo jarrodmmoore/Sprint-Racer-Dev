@@ -21,7 +21,7 @@ $data modify storage $(filename):track_data track_name set from entity @s Custom
 #--version this track was created in
 $execute store result storage $(filename):track_data version_created_in int 1 run scoreboard players get @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] mapVersion
 #--throw a warning if this track is getting imported into an older version that's missing some features
-$data modify storage $(filename):track_data version_needs_warning set value 10610
+$data modify storage $(filename):track_data version_needs_warning set value 10611
 
 #--junk... for now
 $data modify storage $(filename):track_data temp_id set value -1
