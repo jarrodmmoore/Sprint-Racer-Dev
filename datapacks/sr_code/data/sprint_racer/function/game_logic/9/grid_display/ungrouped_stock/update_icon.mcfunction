@@ -15,6 +15,7 @@ function sprint_racer:game_logic/10/grid_display/ungrouped_custom/update_icon_ma
 #this item frame should save its id number on itself
 scoreboard players operation @s customDummyID = #trackGridIterate value
 execute if score #trackGridFetchMap value matches 404 run scoreboard players set @s customDummyID 404
+execute if score #trackGridFetchMap value matches 405 run scoreboard players set @s customDummyID 405
 
 #indicator for banned track
 execute if score #trackGridFetchBanned value matches 1 on passengers if entity @s[tag=trackGridItemDisplay,type=item_display] run item replace entity @s container.0 with barrier

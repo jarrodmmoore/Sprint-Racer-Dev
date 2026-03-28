@@ -2,6 +2,10 @@
 
 #figure out what map_id should represent us
 
+
+#? sign by default
+scoreboard players set #trackGridFetchMap value 405
+
 #-----
 #exit out and show nothing if we're a custom track that's hidden
 
