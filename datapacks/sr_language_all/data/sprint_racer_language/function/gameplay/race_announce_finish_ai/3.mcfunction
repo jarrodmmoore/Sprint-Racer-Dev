@@ -1,1 +1,1 @@
-title @a[scores={actionbarState=5}] actionbar ["",{storage:"sprint_racer:func_args",nbt:"ai_name",interpret:false,color:"aqua"},{text:" >> ",color:"gold",bold:true},{translate:"sr.game.finished",color:"gold",bold:true},{text:" "},{text:"[3rd]",color:"gold",bold:true}]
+title @a[scores={actionbarState=5}] actionbar ["",{storage:"sprint_racer:func_args",nbt:"ai_name",interpret:true,color:"aqua"},{text:" >> ",color:"gold",bold:true},{translate:"sr.game.finished",color:"gold",bold:true},{text:" "},{text:"[3rd]",color:"gold",bold:true}]
