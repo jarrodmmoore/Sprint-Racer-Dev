@@ -1,6 +1,10 @@
 #spawn the thing!
 function sprint_racer:ai/general/respawn/_index_entity_spawn
 
+#make sure it can't hurt anyone
+execute as @e[tag=set_ai_no] run attribute @s attack_damage base set 0.0
+execute as @e[tag=set_ai_no] run attribute @s follow_range base set 0.0
+
 #show name
 execute if score @s rNumber matches 1 as @e[tag=set_ai_no] run function sprint_racer_language:gameplay/ai_nametag/aqua with storage sprint_racer:ai_storage_1
 execute if score @s rNumber matches 2 as @e[tag=set_ai_no] run function sprint_racer_language:gameplay/ai_nametag/aqua with storage sprint_racer:ai_storage_2
