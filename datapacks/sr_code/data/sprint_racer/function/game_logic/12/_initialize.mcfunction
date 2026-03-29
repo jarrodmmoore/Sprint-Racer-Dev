@@ -42,6 +42,8 @@ weather clear
 tag @e[tag=chosenTrack] remove chosenTrack
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1}] add chosenTrack
 
+tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove choosingTrack
+
 scoreboard objectives remove nodeState
 scoreboard objectives add nodeState dummy
 

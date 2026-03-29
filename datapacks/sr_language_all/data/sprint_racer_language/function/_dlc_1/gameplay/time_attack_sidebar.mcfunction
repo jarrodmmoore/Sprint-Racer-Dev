@@ -17,4 +17,6 @@ scoreboard players operation Silver medals = @e[tag=w,x=1560,y=150,z=406,distanc
 scoreboard players operation Gold medals = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] medalGold
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalDiamond=1..}] run scoreboard players operation Diamond medals = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] medalDiamond
 
+execute unless score #specialCredits value matches 1.. if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalGold=74..}] run scoreboard players set #specialCredits value 1
+
 scoreboard objectives setdisplay sidebar medals

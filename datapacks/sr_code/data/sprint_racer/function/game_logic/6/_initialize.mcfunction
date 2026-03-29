@@ -1,3 +1,8 @@
+#skip menu and go straight to credits movie if we just got our 74th gold medal
+execute if score #specialCredits value matches 1 unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=customTesting] run return run function sprint_racer:game_logic/12/_initialize
+#=====
+
+
 scoreboard players reset @a[scores={pressJump=1}] pressJump
 
 execute unless entity @a[tag=musicDef,scores={BGMtrack=1..2}] run function sprint_racer:game_logic/6/start_music

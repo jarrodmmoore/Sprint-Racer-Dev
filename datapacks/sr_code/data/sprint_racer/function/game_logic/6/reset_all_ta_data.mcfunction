@@ -10,4 +10,6 @@ scoreboard players set @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNu
 scoreboard players set @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..}] medalRace 0
 scoreboard players set @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..}] medalBattle 0
 
+scoreboard players set #specialCredits value 0
+
 function sprint_racer_language:_dlc_1/reset_ta_data

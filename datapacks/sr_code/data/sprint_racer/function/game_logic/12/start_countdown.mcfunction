@@ -22,7 +22,11 @@ execute if entity @s[scores={gameTime=-40}] run gamemode adventure @a
 execute if entity @s[scores={gameTime=-40}] as @a at @s run spawnpoint @s ~ ~ ~
 execute if entity @s[scores={gameTime=-40..49}] run function sprint_racer:hold_players_in_place
 
+#specialized start countdown stuff for individual tracks
+execute if entity @s[scores={gameTime=0..240}] as @e[tag=chosenTrack,type=armor_stand,limit=1] run function sprint_racer:levels/_index_levels_race_start_countdown
 
+
+#set up ai, scoreboard, and visual stuff
 execute if entity @s[scores={gameTime=45}] as @s run function sprint_racer:game_logic/12/ai_initialize
 execute if entity @s[scores={gameTime=50}] run scoreboard players set @e[tag=ai] invisibility 1000
 execute if entity @s[scores={gameTime=50}] run team modify player seeFriendlyInvisibles true

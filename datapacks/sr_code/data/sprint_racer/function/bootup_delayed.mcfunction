@@ -216,6 +216,7 @@ scoreboard objectives add cStatMoveEfficient dummy
 scoreboard objectives add aiHasCustomItem dummy
 
 
+
 #make sure command blocks are enabled
 #(no longer needed)
 #setblock 1555 78 406 minecraft:repeating_command_block[conditional=false,facing=west]{Command:"setblock ~1 ~ ~ air",LastExecution:113428853L,SuccessCount:1,TrackOutput:0b,UpdateLastExecution:1b,auto:0b,conditionMet:1b,powered:0b}

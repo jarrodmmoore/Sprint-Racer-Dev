@@ -65,7 +65,7 @@ execute if entity @s[scores={startType=5,gameTime=90..}] run function sprint_rac
 execute if entity @s[scores={startType=6..,gameTime=90..}] run function sprint_racer_language:_dlc_3/gameplay/start_countdown/6
 
 #specialized start countdown stuff for individual tracks
-execute if entity @s[scores={gameTime=0..240}] as @e[tag=chosenTrack] run function sprint_racer:levels/_index_levels_race_start_countdown
+execute if entity @s[scores={gameTime=0..240}] as @e[tag=chosenTrack,type=armor_stand,limit=1] run function sprint_racer:levels/_index_levels_race_start_countdown
 
 
 #reset speeds and heal players at "GO!"
