@@ -112,6 +112,5 @@ execute if score #current_mode_display value matches 3 run summon armor_stand 15
 execute if score #current_mode_display value matches 4 run summon armor_stand 1549 85 406 {Tags:["roundDisplay","roundText2"],CustomName:["",{translate:"sr.lobby.gamemode",color:"white",bold:false},{translate:"sr.lobby.choice",color:"yellow",bold:false}],NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,CustomNameVisible:1b}
 
 #it looks cool if these get tp'd upward from the same spot
-execute if score #round_max_number value matches ..5 as @e[type=armor_stand,tag=roundDisplay] at @s run function sprint_racer:game_logic/0/round_sequence/move_numbers_into_place
-execute if score #round_max_number value matches 6..10 as @e[type=armor_stand,tag=roundDisplay] at @s run function sprint_racer:game_logic/0/round_sequence/move_numbers_into_place_compressed
+execute if score #round_max_number value matches ..10 as @e[type=armor_stand,tag=roundDisplay] at @s run function sprint_racer:game_logic/0/round_sequence/move_numbers_into_place
 execute if score #round_max_number value matches 11.. as @e[type=armor_stand,tag=roundDisplay] at @s run function sprint_racer:game_logic/0/round_sequence/move_numbers_into_place_hacked

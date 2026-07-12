@@ -36,7 +36,7 @@ execute if entity @s[scores={gameTime=100120}] run function sprint_racer:ai/gene
 execute if entity @s[scores={gameTime=100160}] run function sprint_racer_language:_dlc_2/gameplay/race_end/increment_points
 execute if score #getOnWithIt value matches 1 if score @s gameTime matches 100180 run scoreboard players set @s gameTime 100258
 
-execute if entity @s[scores={gameTime=100259}] run tag @s[tag=optChoose] add skiptochoose
+execute if entity @s[scores={gameTime=100259}] run tag @s[tag=optChoose,tag=!grandprix] add skiptochoose
 execute if entity @s[scores={gameTime=100259}] run scoreboard players add @s roundNumber 1
 execute if entity @s[scores={gameTime=100259}] run scoreboard players add @a maturity 1
 execute if entity @s[scores={gameTime=100260..}] run function sprint_racer:game_logic/0/_initialize
