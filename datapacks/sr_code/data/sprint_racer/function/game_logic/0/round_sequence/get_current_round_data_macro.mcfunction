@@ -1,0 +1,1 @@
+$execute store result score #round_game_type value run data get storage sprint_racer:round_sequence active[$(num1)] 1

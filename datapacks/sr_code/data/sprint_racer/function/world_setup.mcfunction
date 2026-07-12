@@ -742,9 +742,7 @@ scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand
 scoreboard objectives add defVoteTime dummy
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] defVoteTime 25
 scoreboard objectives add roundNumber dummy
-scoreboard objectives add roundNumber2 dummy
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 0
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber2 0
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] readyState 0
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemPresetA 1
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemPresetB 1

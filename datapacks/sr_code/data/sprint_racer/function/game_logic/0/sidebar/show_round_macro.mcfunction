@@ -1,0 +1,1 @@
+$scoreboard objectives add lobbyDisplay dummy ["",{translate:"sr.lobby.round_n_of_n",color:"white",bold:true,with:[{text:"$(num1)"},{text:"$(num2)"}]}]

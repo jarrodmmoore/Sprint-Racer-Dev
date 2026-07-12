@@ -1,6 +1,30 @@
 {
   "stats": {
+    "minecraft:broken": {
+      "minecraft:golden_axe": 7,
+      "minecraft:golden_sword": 41,
+      "minecraft:wooden_sword": 3
+    },
+    "minecraft:picked_up": {
+      "minecraft:golden_axe": 2,
+      "minecraft:anvil": 3,
+      "minecraft:dropper": 8,
+      "minecraft:totem_of_undying": 1,
+      "minecraft:fire_charge": 10,
+      "minecraft:glass": 5,
+      "minecraft:bricks": 22,
+      "minecraft:snowball": 212,
+      "minecraft:dispenser": 189,
+      "minecraft:iron_ingot": 16,
+      "minecraft:apple": 23,
+      "minecraft:ender_pearl": 6,
+      "minecraft:golden_sword": 34,
+      "minecraft:blaze_rod": 2,
+      "minecraft:emerald": 5,
+      "minecraft:elytra": 11
+    },
     "minecraft:dropped": {
+      "minecraft:shulker_shell": 1,
       "minecraft:filled_map": 10,
       "minecraft:observer": 6,
       "minecraft:white_dye": 15,
@@ -24,62 +48,46 @@
       "minecraft:golden_sword": 7,
       "minecraft:coal": 2
     },
-    "minecraft:picked_up": {
-      "minecraft:golden_axe": 2,
-      "minecraft:anvil": 3,
-      "minecraft:dropper": 8,
-      "minecraft:totem_of_undying": 1,
-      "minecraft:fire_charge": 10,
-      "minecraft:glass": 5,
-      "minecraft:bricks": 22,
-      "minecraft:snowball": 212,
-      "minecraft:dispenser": 189,
-      "minecraft:iron_ingot": 16,
-      "minecraft:apple": 23,
-      "minecraft:ender_pearl": 6,
-      "minecraft:golden_sword": 34,
-      "minecraft:blaze_rod": 2,
-      "minecraft:emerald": 5,
-      "minecraft:elytra": 11
-    },
     "minecraft:custom": {
       "minecraft:trigger_trapped_chest": 3,
-      "minecraft:talked_to_villager": 10,
-      "minecraft:time_since_rest": 161279,
-      "minecraft:leave_game": 85,
+      "minecraft:talked_to_villager": 11,
+      "minecraft:time_since_rest": 193426,
+      "minecraft:leave_game": 88,
       "minecraft:damage_taken": 63955,
       "minecraft:mob_kills": 72,
       "minecraft:damage_absorbed": 3010,
-      "minecraft:time_since_death": 161278,
+      "minecraft:time_since_death": 193425,
       "minecraft:aviate_one_cm": 1426096,
       "minecraft:inspect_dispenser": 29,
-      "minecraft:total_world_time": 4325596,
+      "minecraft:total_world_time": 4548298,
       "minecraft:swim_one_cm": 198969,
-      "minecraft:crouch_one_cm": 111040,
+      "minecraft:crouch_one_cm": 111365,
       "minecraft:deaths": 149,
       "minecraft:climb_one_cm": 2101,
       "minecraft:damage_dealt_resisted": 714,
       "minecraft:damage_resisted": 93561,
       "minecraft:inspect_dropper": 11,
-      "minecraft:walk_one_cm": 4765225,
+      "minecraft:walk_one_cm": 4883332,
       "minecraft:horse_one_cm": 18632,
       "minecraft:walk_under_water_one_cm": 65604,
-      "minecraft:play_time": 1741906,
+      "minecraft:play_time": 1774053,
       "minecraft:damage_dealt": 9636,
-      "minecraft:jump": 2870,
-      "minecraft:drop": 373,
-      "minecraft:sprint_one_cm": 12101121,
+      "minecraft:jump": 2945,
+      "minecraft:drop": 374,
+      "minecraft:sprint_one_cm": 12340109,
       "minecraft:open_chest": 170,
       "minecraft:inspect_hopper": 88,
-      "minecraft:fall_one_cm": 498568,
-      "minecraft:fly_one_cm": 12734208,
-      "minecraft:walk_on_water_one_cm": 85656,
-      "minecraft:sneak_time": 48068
+      "minecraft:fall_one_cm": 499008,
+      "minecraft:fly_one_cm": 12751524,
+      "minecraft:walk_on_water_one_cm": 85688,
+      "minecraft:sneak_time": 48157
     },
-    "minecraft:broken": {
-      "minecraft:golden_axe": 7,
-      "minecraft:golden_sword": 41,
-      "minecraft:wooden_sword": 3
+    "minecraft:killed_by": {
+      "minecraft:wither": 1,
+      "minecraft:skeleton": 1,
+      "minecraft:creeper": 27,
+      "minecraft:mannequin": 19,
+      "minecraft:zombie": 17
     },
     "minecraft:used": {
       "minecraft:white_terracotta": 11,
@@ -98,7 +106,7 @@
       "minecraft:lantern": 19,
       "minecraft:command_block": 1,
       "minecraft:black_terracotta": 72,
-      "minecraft:carrot_on_a_stick": 8452,
+      "minecraft:carrot_on_a_stick": 8602,
       "minecraft:soul_lantern": 8,
       "minecraft:smooth_stone": 9,
       "minecraft:bricks": 2,
@@ -160,14 +168,7 @@
       "minecraft:sandstone": 20,
       "minecraft:ender_pearl": 37,
       "minecraft:smooth_stone_slab": 43
-    },
-    "minecraft:killed_by": {
-      "minecraft:wither": 1,
-      "minecraft:skeleton": 1,
-      "minecraft:creeper": 27,
-      "minecraft:mannequin": 19,
-      "minecraft:zombie": 17
     }
   },
-  "DataVersion": 4786
+  "DataVersion": 4903
 }

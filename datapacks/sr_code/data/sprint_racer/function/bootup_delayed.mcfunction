@@ -214,7 +214,9 @@ scoreboard objectives add aiEntityRandomized dummy
 scoreboard objectives add itemchestSeedG dummy
 scoreboard objectives add cStatMoveEfficient dummy
 scoreboard objectives add aiHasCustomItem dummy
-
+#v1.6.13
+execute unless data storage sprint_racer:round_sequence race_and_battle run function sprint_racer:game_logic/0/round_sequence/_setup_defaults
+scoreboard objectives remove roundNumber2
 
 
 #make sure command blocks are enabled

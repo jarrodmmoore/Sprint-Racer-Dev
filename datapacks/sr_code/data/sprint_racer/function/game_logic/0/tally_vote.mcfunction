@@ -47,8 +47,8 @@ execute as @a at @s run playsound minecraft:block.note_block.bell master @s ~ ~ 
 tag @e[sort=random,limit=1,scores={voteCount=0..},tag=voteOption,tag=!invalidtrack,type=armor_stand] add chosenTrack
 #if no valid track was chosen, force choose the error handler track
 execute unless entity @e[tag=chosenTrack] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=50}] add chosenTrack
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={roundNumber=..4}] as @e[limit=1,tag=chosenTrack] run function sprint_racer:game_logic/0/vote_preview/race/v_r_index_announce
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={roundNumber=5..}] as @e[limit=1,tag=chosenTrack] run function sprint_racer:game_logic/0/vote_preview/battle/v_b_index_announce
+execute if score #round_game_type value matches 1 as @e[limit=1,tag=chosenTrack] run function sprint_racer:game_logic/0/vote_preview/race/v_r_index_announce
+execute if score #round_game_type value matches 2 as @e[limit=1,tag=chosenTrack] run function sprint_racer:game_logic/0/vote_preview/battle/v_b_index_announce
 
 tag @e[tag=voteOption] remove voteOption
 tag @e[tag=invalidtrack] remove invalidtrack

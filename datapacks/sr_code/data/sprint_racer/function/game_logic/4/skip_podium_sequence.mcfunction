@@ -3,7 +3,6 @@ scoreboard objectives setdisplay sidebar
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove ceremony
 
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber2 1
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gpRound 1
 
 execute as @a at @s run function sprint_racer:game_logic/0/goto_spawn

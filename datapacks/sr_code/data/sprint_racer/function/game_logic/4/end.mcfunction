@@ -23,7 +23,7 @@ execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9,cu
 execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9,customAIset=-11}] run function sprint_racer:ai/general/pick_random_entity_human
 
 #clean up tags
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber2 1
+scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
 
 tag @e[name=,type=armor_stand] remove ceremony
 

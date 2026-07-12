@@ -6,6 +6,7 @@ tellraw @a[tag=!minChat] ["",{text:" "}]
 tag @s add optRnB
 tag @s remove optRace
 tag @s remove optBattle
+tag @s remove optCustomRounds
 
 tag @s add optVote
 tag @s remove optChoose
@@ -109,7 +110,6 @@ tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.restored_defaults",col
 tag @a[tag=clickSign] remove clickSign
 
 scoreboard players set @s roundNumber 1
-scoreboard players set @s roundNumber2 1
 
 #CLEAR POINTS
 function sprint_racer:game_logic/0/clear_points

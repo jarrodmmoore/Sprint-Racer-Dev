@@ -29,7 +29,6 @@ tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.restored_defaults",col
 tag @s remove clickSign
 
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber2 1
 
 #CLEAR POINTS
 function sprint_racer:game_logic/0/clear_points

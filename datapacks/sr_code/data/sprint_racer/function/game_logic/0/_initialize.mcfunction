@@ -77,6 +77,7 @@ function sprint_racer:items/reset_global_cooldowns
 gamerule fall_damage true
 function sprint_racer:speedometer/enable_xp_bar
 
+#speedometer shouldn't be on top bossbar
 tag @a[limit=1] add spdbump
 
 tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] remove AImaster
@@ -111,14 +112,16 @@ scoreboard objectives remove killPlayer
 scoreboard objectives add killPlayer minecraft.killed:minecraft.player
 scoreboard objectives add killedByPlayer minecraft.killed_by:minecraft.player
 
+#in grand prix mode we don't use roundNumber, so just force it to be 1
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] roundNumber 1
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] roundNumber2 1
+
+#get data on current round and round number
+scoreboard players set #round_number value 1
+scoreboard players set #round_game_type value 1
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!grandprix] run function sprint_racer:game_logic/0/round_sequence/get_current_round_data
 
 #determine whether or not we gonna run the award ceremony
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optBattle,tag=optChoose,scores={roundNumber=6..}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add ceremony
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!optBattle,scores={roundNumber=6..}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add ceremony
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optBattle,tag=!optChoose,scores={roundNumber2=4..}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add ceremony
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optRace,tag=!optChoose,scores={roundNumber=5..}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add ceremony
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!grandprix] if score @s gpRound > #round_max_number value run tag @s add ceremony
 execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix,limit=1] if score @s gpRound > @s gpNumber run tag @s add ceremony
 
 #random track mode will skip the lobby unless everyone went spectator for some reason

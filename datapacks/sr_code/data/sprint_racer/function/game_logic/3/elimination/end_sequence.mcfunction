@@ -52,6 +52,5 @@ execute if score #getOnWithIt value matches 1 if score @s gameTime matches 10018
 
 execute if entity @s[scores={gameTime=100259}] run tag @s[tag=optChoose] add skiptochoose
 execute if entity @s[scores={gameTime=100259}] run scoreboard players add @s roundNumber 1
-execute if entity @s[scores={gameTime=100259}] run scoreboard players add @s roundNumber2 1
 execute if entity @s[scores={gameTime=100259}] run scoreboard players add @a maturity 1
 execute if entity @s[scores={gameTime=100260..}] run function sprint_racer:game_logic/0/_initialize

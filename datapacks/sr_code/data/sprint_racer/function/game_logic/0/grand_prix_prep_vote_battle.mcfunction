@@ -1,4 +1,4 @@
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 5
+scoreboard players set #round_game_type value 2
 
 bossbar set minecraft:menutimer style notched_10
 execute store result bossbar minecraft:menutimer max run scoreboard players get @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] voteTime

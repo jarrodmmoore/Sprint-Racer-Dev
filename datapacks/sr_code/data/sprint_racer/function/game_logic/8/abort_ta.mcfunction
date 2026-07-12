@@ -6,7 +6,6 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!return2lobby,tag
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!return2lobby,tag=!customTesting] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:game_logic/6/_initialize
 
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=return2lobby,tag=!customTesting] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=return2lobby,tag=!customTesting] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber2 1
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=return2lobby,tag=!customTesting] run scoreboard players add @a maturity 1
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=return2lobby,tag=!customTesting] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:game_logic/0/_initialize
 

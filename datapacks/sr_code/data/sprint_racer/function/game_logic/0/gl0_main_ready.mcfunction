@@ -22,9 +22,10 @@ scoreboard players set @s[scores={gameTime=10000..}] gameTime 40
 scoreboard players set @s[tag=choosingTrack,scores={gameTime=1..}] gameTime 0
 
 tag @s[scores={oTimer=20,voteTime=1..},tag=!clearImpulse] add clearImpulse
-execute if entity @s[tag=!grandprix,tag=optVote] run function sprint_racer:game_logic/0/lobby_vote
-execute if entity @s[tag=!grandprix,tag=optRandom] run function sprint_racer:game_logic/0/lobby_random
+execute if entity @s[tag=!grandprix,tag=optVote] unless score #round_game_type value matches 4 run function sprint_racer:game_logic/0/lobby_vote
+execute if entity @s[tag=!grandprix,tag=optRandom] unless score #round_game_type value matches 4 run function sprint_racer:game_logic/0/lobby_random
 execute if entity @s[tag=!grandprix,tag=optChoose,tag=!choosingTrack] run function sprint_racer:game_logic/0/lobby_choose
+execute if entity @s[tag=!grandprix,tag=!optChoose,tag=!choosingTrack] if score #round_game_type value matches 4 run function sprint_racer:game_logic/0/lobby_choose
 execute if entity @s[tag=grandprix] unless score #gpTrackSelect value matches 3.. run function sprint_racer:game_logic/0/lobby_grand_prix
 execute if entity @s[tag=grandprix] if score #gpTrackSelect value matches 3..4 run function sprint_racer:game_logic/0/lobby_vote
 execute if entity @s[tag=grandprix,tag=!choosingTrack] if score #gpTrackSelect value matches 5.. run function sprint_racer:game_logic/0/lobby_choose
@@ -46,10 +47,11 @@ execute if entity @s[tag=halftick] run function sprint_racer:game_logic/0/gl0_ma
 
 
 #time's up, start gameplay
-execute if entity @s[tag=!grandprix,tag=optRandom,scores={gameTime=0,roundNumber=..4}] run function sprint_racer:random/random_track_race
-execute if entity @s[tag=!grandprix,tag=optRandom,scores={gameTime=0,roundNumber=5..}] run function sprint_racer:random/random_track_battle
-execute if entity @s[tag=!grandprix,tag=!optChoose,scores={gameTime=0,roundNumber=..4}] run function sprint_racer:game_logic/1/_initialize
-execute if entity @s[tag=!grandprix,tag=!optChoose,scores={gameTime=0,roundNumber=5}] run function sprint_racer:game_logic/3/_initialize
+execute if entity @s[tag=!grandprix,tag=optRandom,scores={gameTime=0}] if score #round_game_type value matches 1 run function sprint_racer:random/random_track_race
+execute if entity @s[tag=!grandprix,tag=optRandom,scores={gameTime=0}] if score #round_game_type value matches 2 run function sprint_racer:random/random_track_battle
+execute if entity @s[tag=!grandprix,tag=!optChoose,scores={gameTime=0}] if score #round_game_type value matches 1 run function sprint_racer:game_logic/1/_initialize
+execute if entity @s[tag=!grandprix,tag=!optChoose,scores={gameTime=0}] if score #round_game_type value matches 2 run function sprint_racer:game_logic/3/_initialize
+execute if entity @s[tag=!grandprix,tag=!optChoose,scores={gameTime=0}] if score #round_game_type value matches 4 run function sprint_racer:game_logic/0/choose_track
 execute if entity @s[tag=!grandprix,tag=optChoose,scores={gameTime=0}] run function sprint_racer:game_logic/0/choose_track
 execute if entity @s[tag=grandprix,scores={gameTime=0}] unless score #gpTrackSelect value matches 5.. run function sprint_racer:game_logic/0/grand_prix_round_start
 execute if entity @s[tag=grandprix,scores={gameTime=0}] if score #gpTrackSelect value matches 5.. run function sprint_racer:game_logic/0/choose_track

@@ -80,13 +80,6 @@ scoreboard objectives add nodeState dummy
 scoreboard objectives remove validEntity
 scoreboard objectives add validEntity dummy
 
-#prevent invalid roundNumber stuff
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optBattle,scores={roundNumber=6..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optBattle,tag=optChoose,scores={roundNumber=6..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optBattle,tag=!optChoose] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 5
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optRace,scores={roundNumber=5..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optRace,scores={roundNumber2=4..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber2 1
-
 #sidebar display for next round
 function sprint_racer:game_logic/0/sidebar/__index_main
 
@@ -142,17 +135,17 @@ scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={defLobby
 
 bossbar set minecraft:menutimer style notched_10
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optVote] store result bossbar minecraft:menutimer max run scoreboard players get @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] voteTime
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optVote,scores={roundNumber=..4}] run function sprint_racer_language:lobby/bossbar_voting_race
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optVote,scores={roundNumber=..4}] run function sprint_racer:random/vote_options_race
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optVote,scores={roundNumber=5}] run function sprint_racer_language:lobby/bossbar_voting_battle
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optVote,scores={roundNumber=5}] run function sprint_racer:random/vote_options_battle
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optVote] if score #round_game_type value matches 1 run function sprint_racer_language:lobby/bossbar_voting_race
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optVote] if score #round_game_type value matches 1 run function sprint_racer:random/vote_options_race
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optVote] if score #round_game_type value matches 2 run function sprint_racer_language:lobby/bossbar_voting_battle
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optVote] if score #round_game_type value matches 2 run function sprint_racer:random/vote_options_battle
 
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optChoose,scores={roundNumber=..4}] run team modify playerCyan color aqua
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optChoose,scores={roundNumber=..4}] run team modify playerOrange color aqua
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optChoose,scores={roundNumber=..4}] run team modify player color aqua
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optChoose,scores={roundNumber=5}] run team modify playerCyan color red
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optChoose,scores={roundNumber=5}] run team modify playerOrange color red
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optChoose,scores={roundNumber=5}] run team modify player color red
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optChoose] unless score #round_game_type value matches 2 run team modify playerCyan color aqua
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optChoose] unless score #round_game_type value matches 2 run team modify playerOrange color aqua
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optChoose] unless score #round_game_type value matches 2 run team modify player color aqua
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optChoose] if score #round_game_type value matches 2 run team modify playerCyan color red
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optChoose] if score #round_game_type value matches 2 run team modify playerOrange color red
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optChoose] if score #round_game_type value matches 2 run team modify player color red
 
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!optVote] store result bossbar minecraft:menutimer max run scoreboard players get @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] defLobbyTime
 

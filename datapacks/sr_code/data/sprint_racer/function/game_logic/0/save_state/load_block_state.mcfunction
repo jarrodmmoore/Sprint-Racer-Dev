@@ -13,9 +13,11 @@ execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1
 tag @s remove optRnB
 tag @s remove optRace
 tag @s remove optBattle
+tag @s remove optCustomRounds
 execute if block 1618 ~ 460 white_wool run tag @s add optRnB
 execute if block 1618 ~ 460 orange_wool run tag @s add optRace
 execute if block 1618 ~ 460 magenta_wool run tag @s add optBattle
+execute if block 1618 ~ 460 light_blue_wool run tag @s add optCustomRounds
 
 #tracks
 tag @s remove optVote
@@ -542,7 +544,6 @@ execute unless block 1627 ~ 441 yellow_wool run function sprint_racer:game_logic
 #now... restart the lobby!
 
 execute unless score #noLobbyReload value matches 1 run scoreboard players set @s roundNumber 1
-execute unless score #noLobbyReload value matches 1 run scoreboard players set @s roundNumber2 1
 execute unless score #noLobbyReload value matches 1 run function sprint_racer:game_logic/0/clear_points
 execute unless score #noLobbyReload value matches 1 if entity @s[scores={gameState=0}] run tag @s add noskip2next
 execute unless score #noLobbyReload value matches 1 if entity @s[type=armor_stand,scores={gameState=0}] run function sprint_racer_language:lobby/reset_lobby

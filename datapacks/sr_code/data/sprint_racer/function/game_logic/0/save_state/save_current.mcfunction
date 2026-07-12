@@ -11,6 +11,7 @@ fill 1620 ~ 441 1624 ~ 460 red_wool
 execute if entity @s[tag=optRnB] run setblock 1618 ~ 460 white_wool
 execute if entity @s[tag=optRace] run setblock 1618 ~ 460 orange_wool
 execute if entity @s[tag=optBattle] run setblock 1618 ~ 460 magenta_wool
+execute if entity @s[tag=optCustomRounds] run setblock 1618 ~ 460 light_blue_wool
 
 #tracks
 execute if entity @s[tag=optVote] run setblock 1617 ~ 460 white_wool

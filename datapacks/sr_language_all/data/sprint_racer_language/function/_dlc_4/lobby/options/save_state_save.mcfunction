@@ -16,3 +16,15 @@ execute positioned 1608 91 461 positioned ~.5 ~-.4 ~-.5 run function sprint_race
 #function sprint_racer:game_logic/0/misc_lobby_happenings/save_state_room/scrolling_text_restart
 
 function sprint_racer:game_logic/0/save_state/update_save_state_screen
+
+#also save custom round sequence
+execute if score global saveState matches 1 run data modify storage sprint_racer:round_sequence custom_save_1 set from storage sprint_racer:round_sequence custom
+execute if score global saveState matches 2 run data modify storage sprint_racer:round_sequence custom_save_2 set from storage sprint_racer:round_sequence custom
+execute if score global saveState matches 3 run data modify storage sprint_racer:round_sequence custom_save_3 set from storage sprint_racer:round_sequence custom
+execute if score global saveState matches 4 run data modify storage sprint_racer:round_sequence custom_save_4 set from storage sprint_racer:round_sequence custom
+execute if score global saveState matches 5 run data modify storage sprint_racer:round_sequence custom_save_5 set from storage sprint_racer:round_sequence custom
+execute if score global saveState matches 6 run data modify storage sprint_racer:round_sequence custom_save_6 set from storage sprint_racer:round_sequence custom
+execute if score global saveState matches 7 run data modify storage sprint_racer:round_sequence custom_save_7 set from storage sprint_racer:round_sequence custom
+execute if score global saveState matches 8 run data modify storage sprint_racer:round_sequence custom_save_8 set from storage sprint_racer:round_sequence custom
+execute if score global saveState matches 9 run data modify storage sprint_racer:round_sequence custom_save_9 set from storage sprint_racer:round_sequence custom
+execute if score global saveState matches 10 run data modify storage sprint_racer:round_sequence custom_save_10 set from storage sprint_racer:round_sequence custom

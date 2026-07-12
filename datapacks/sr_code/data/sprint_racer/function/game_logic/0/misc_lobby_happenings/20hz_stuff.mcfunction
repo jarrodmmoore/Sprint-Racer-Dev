@@ -35,9 +35,7 @@ execute if entity @e[type=fishing_bobber,limit=1] run scoreboard players set #fi
 execute if score #fishingBobberTime value matches 1.. as @e[type=item] unless entity @s[nbt={Item:{components:{"minecraft:custom_data":{stay:1b}}}}] if entity @s[tag=!stay] unless entity @s[nbt={Item:{components:{"minecraft:custom_data":{notitle:1b}}}}] at @s if block ~ ~-.2 ~ water run tag @s add stay
 
 #particles for the round display to indicate the current round
-execute as @e[tag=roundDisplay,tag=roundCurrent,tag=particleA] at @s run particle dust{color:[0.0,1.0,1.0],scale:0.5} ~ ~.4 ~ 0 .12 .12 0 1
-execute as @e[tag=roundDisplay,tag=roundCurrent,tag=particleB] at @s run particle dust{color:[1.0,0.0,0.0],scale:0.5} ~ ~.4 ~ 0 .12 .12 0 1
-execute as @e[tag=roundDisplay,tag=roundCurrent,tag=particleC] at @s run particle dust{color:[1.0,1.0,0.0],scale:0.5} ~ ~.4 ~ 0 .12 .12 0 1
+execute as @e[type=armor_stand,tag=roundDisplay,tag=roundCurrent] run function sprint_racer:game_logic/0/misc_lobby_happenings/current_round_particle
 
 #particles in the extras room
 execute if entity @a[x=1608,y=79,z=357,dx=23,dy=8,dz=17] run function sprint_racer:game_logic/0/misc_lobby_happenings/extras_room_particles
