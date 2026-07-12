@@ -77,5 +77,8 @@ execute if entity @a[x=1574,y=97,z=438,dx=20,dy=14,dz=13,gamemode=adventure] run
 execute unless entity @a[x=1574,y=97,z=438,dx=20,dy=14,dz=13,gamemode=adventure] run clear @a bow[custom_data~{cheatentry:1b}]
 execute unless entity @a[x=1574,y=97,z=438,dx=20,dy=14,dz=13,gamemode=adventure] run clear @a arrow[custom_data~{cheatarrow:1b}]
 
+#check for players pressing buttons to set a custom round sequence
+execute if entity @s[tag=optCustomRounds] if entity @a[x=1572,y=88,z=443,dx=12,dy=8,dz=12] as @e[type=interaction,tag=customRoundButton] at @s if data entity @s interaction run function sprint_racer:game_logic/0/round_sequence/handle_button_press
+
 #lobby only, check if players are looking around to mark them not AFK
 execute as @a run function sprint_racer:game_logic/0/misc_lobby_happenings/afk_rotation_check

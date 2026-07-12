@@ -235,6 +235,9 @@ execute as @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand] run f
 execute unless score #cheats_discovered value matches 30.. run setblock 1577 96 452 minecraft:dark_prismarine destroy
 execute if score #cheats_discovered value matches 30.. run setblock 1577 96 452 minecraft:redstone_torch
 
+#custom controls for custom round sequence (if active)
+function sprint_racer:game_logic/0/round_sequence/manage_custom_controls
+
 #extras and item room stuff
 function sprint_racer:game_logic/0/props/spawn_preview_chest_a
 function sprint_racer:game_logic/0/props/spawn_preview_chest_b

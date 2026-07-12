@@ -62,6 +62,8 @@ tag @s remove clickSign
 
 function sprint_racer:game_logic/0/sidebar/__index_main
 
+function sprint_racer:game_logic/0/round_sequence/manage_custom_controls
+
 #CLEAR POINTS
 function sprint_racer:game_logic/0/clear_points
 

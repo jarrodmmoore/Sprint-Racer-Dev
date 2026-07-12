@@ -121,7 +121,7 @@ scoreboard players set #round_game_type value 1
 execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!grandprix] run function sprint_racer:game_logic/0/round_sequence/get_current_round_data
 
 #determine whether or not we gonna run the award ceremony
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!grandprix] if score @s gpRound > #round_max_number value run tag @s add ceremony
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!grandprix] if score @s roundNumber > #round_max_number value run tag @s add ceremony
 execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix,limit=1] if score @s gpRound > @s gpNumber run tag @s add ceremony
 
 #random track mode will skip the lobby unless everyone went spectator for some reason

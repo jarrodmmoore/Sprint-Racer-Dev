@@ -26,3 +26,6 @@ execute unless score #round_game_type value matches 1..4 run scoreboard players 
 
 #if round_game_type is 3 (random), pick race or battle at random
 execute if score #round_game_type value matches 3 run function sprint_racer:game_logic/0/round_sequence/pick_random_mode
+
+#no skip2next if we're in optRandom mode
+execute if entity @s[tag=optRandom] if score #round_game_type value matches 4 run tag @s add noskip2next

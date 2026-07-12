@@ -80,6 +80,11 @@ scoreboard objectives add nodeState dummy
 scoreboard objectives remove validEntity
 scoreboard objectives add validEntity dummy
 
+#get data on current round and round number
+scoreboard players set #round_number value 1
+scoreboard players set #round_game_type value 1
+execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!grandprix] run function sprint_racer:game_logic/0/round_sequence/get_current_round_data
+
 #sidebar display for next round
 function sprint_racer:game_logic/0/sidebar/__index_main
 
