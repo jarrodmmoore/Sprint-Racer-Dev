@@ -1,10 +1,10 @@
 tp @a[tag=!dontWarp] -66 78 1590
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lap 4
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] lap 4
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=7}] lap 3
 
 weather rain
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add raining
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add raining
 gamerule advance_time false
 time set 6000
 

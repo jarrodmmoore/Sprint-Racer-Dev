@@ -111,7 +111,7 @@ scoreboard players reset @s racePosDisplay2
 scoreboard players set @s tacticsStep 1
 
 scoreboard players set @s maturity 1
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={difficultyRamp=..0}] run scoreboard players set @s maturity 100
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={difficultyRamp=..0}] run scoreboard players set @s maturity 100
 
 #item luck stat
 scoreboard players set @s itemLuck 3
@@ -168,26 +168,26 @@ scoreboard players operation @s join = #join_tick value
 #i just wanna say that this code is HIDEOUS
 tag @s add self
 execute unless entity @a[tag=!self] run function sprint_racer:join_solo
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=..999}] run function sprint_racer:join_logic/error
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=0,readyState=1..}] run function sprint_racer:join_logic/in_lobby
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=0,readyState=..0}] run function sprint_racer:join_logic/in_lobby_not_started
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1..3}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_game_players
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1..3}] unless entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_game_no_players
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=4}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_lobby_podium
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=4}] unless entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_lobby_not_started
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=5}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/free_roam
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=5}] unless entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_lobby_not_started
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=6}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/time_attack_menu
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=6}] unless entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_lobby_not_started
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=7..8}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_game_players
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=7..8}] unless entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_game_no_players
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=9}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_lobby_track_pool
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=10}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_track_editor
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=11}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_grand_prix_setup
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=12}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_credits
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=9..12}] unless entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_game_no_players
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=..999}] run function sprint_racer:join_logic/error
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=0,readyState=1..}] run function sprint_racer:join_logic/in_lobby
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=0,readyState=..0}] run function sprint_racer:join_logic/in_lobby_not_started
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=1..3}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_game_players
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=1..3}] unless entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_game_no_players
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=4}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_lobby_podium
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=4}] unless entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_lobby_not_started
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=5}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/free_roam
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=5}] unless entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_lobby_not_started
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=6}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/time_attack_menu
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=6}] unless entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_lobby_not_started
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=7..8}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_game_players
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=7..8}] unless entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_game_no_players
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=9}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_lobby_track_pool
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=10}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_track_editor
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=11}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_grand_prix_setup
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=12}] if entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_credits
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=9..12}] unless entity @a[tag=playing,tag=!self] run function sprint_racer:join_logic/in_game_no_players
 scoreboard players enable @s viewCheats
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=cheatdetected] run function sprint_racer_language:_dlc_2/cheats_found
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=cheatdetected] run function sprint_racer_language:_dlc_2/cheats_found
 tag @s remove self
 
 #need id? get one
@@ -200,4 +200,4 @@ scoreboard players add @s dummyPoints 0
 
 tag @s remove readyup
 #if the lobby is already in "ready" mode, newly joined players are declared ready by default
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={readyState=1..}] run tag @s add readyup
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={readyState=1..}] run tag @s add readyup

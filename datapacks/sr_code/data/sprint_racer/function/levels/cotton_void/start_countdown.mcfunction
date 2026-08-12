@@ -17,8 +17,8 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=206}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=208}] run fill 1592 154 2946 1597 154 2946 minecraft:air
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=210}] run fill 1592 153 2946 1597 153 2946 minecraft:air
 
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=210}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add noskip2next
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=210}] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add noskip2next
 
 
 #check if we need to make changes to accomodate time attack or modified lap counts
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameTime=0,lap=2..}] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] run function sprint_racer:levels/cotton_void/added_laps
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=0,lap=2..}] as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,limit=1] run function sprint_racer:levels/cotton_void/added_laps

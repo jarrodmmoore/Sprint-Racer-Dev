@@ -28,4 +28,4 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=240}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run setblock 550 73 300 air destroy
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run setblock 547 73 300 air destroy
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run fill 519 73 253 519 73 255 red_wool
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove switchON
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove switchON

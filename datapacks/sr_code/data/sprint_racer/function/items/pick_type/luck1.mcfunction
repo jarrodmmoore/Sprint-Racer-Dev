@@ -17,8 +17,8 @@ execute if score @s lastCatPicked matches 4 if score #catTotal value matches 4..
 scoreboard players set @s rNumber 0
 scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=!tempBan,scores={rNumber=1..50}] rNumber
 
-execute if entity @s[scores={rNumber=0}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banRedItem,tag=banYelItem,tag=banGreItem,tag=!banPurItem] run scoreboard players set @s rNumber 52
-execute if entity @s[scores={rNumber=0}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banRedItem,tag=banYelItem,tag=banGreItem,tag=!banBluItem] run scoreboard players set @s rNumber 51
+execute if entity @s[scores={rNumber=0}] if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=banRedItem,tag=banYelItem,tag=banGreItem,tag=!banPurItem] run scoreboard players set @s rNumber 52
+execute if entity @s[scores={rNumber=0}] if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=banRedItem,tag=banYelItem,tag=banGreItem,tag=!banBluItem] run scoreboard players set @s rNumber 51
 
 execute if entity @s[tag=!itemGetType,scores={rNumber=1..13}] run function sprint_racer:items/pick_item/offense/luck1
 execute if entity @s[tag=!itemGetType,scores={rNumber=14..31}] run function sprint_racer:items/pick_item/defense/luck1

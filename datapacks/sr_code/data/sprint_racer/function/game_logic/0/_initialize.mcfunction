@@ -22,7 +22,7 @@ execute as @a[scores={kart_model=101..108}] run function sprint_racer:game_logic
 effect clear @a night_vision
 
 #decide if we should skip lobby or not in gp mode
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix,limit=1] run function sprint_racer:game_logic/0/grand_prix_decide_if_skip
+execute as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=grandprix,limit=1] run function sprint_racer:game_logic/0/grand_prix_decide_if_skip
 
 #reset speeds
 function sprint_racer:speed_attribute
@@ -37,10 +37,10 @@ scoreboard players set #nextItemIsAnvil value 0
 scoreboard players set #clearCacheProgress value 0
 
 #no longer testing a custom track
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove customTesting
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove customTesting
 
 scoreboard objectives remove specJoin
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] specJoinTime 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] specJoinTime 0
 
 scoreboard players enable @a useCustomSoundtrack
 
@@ -50,22 +50,22 @@ scoreboard players set global playerRequire 0
 
 function sprint_racer:mid_game_vote/disable
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove timeattack
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove return2lobby
-scoreboard players reset @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] capsuleState
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove timeattack
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove return2lobby
+scoreboard players reset @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] capsuleState
 
 function sprint_racer:ai/general/ai_stop_all
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=autotick] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add halftick
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=autotick] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add halftick
 
 #scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=realms,tag=optVote] defLobbyTime 30
 #scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=realms,tag=optRandom] defLobbyTime 25
 #scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=realms,tag=optChoose] defLobbyTime 20
 
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] gamemodePresetA = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] gamePresetA_save
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] gamemodePresetB = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] gamePresetB_save
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=grandprix] gamemodePresetA = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,limit=1] gamePresetA_save
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=grandprix] gamemodePresetB = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,limit=1] gamePresetB_save
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=randomPresetA] gamemodePresetA 2
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=randomPresetB] gamemodePresetB 2
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=randomPresetA] gamemodePresetA 2
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=randomPresetB] gamemodePresetB 2
 
 scoreboard players set @a itemLuck 3
 execute as @a run scoreboard players operation @s itemLuck += @s cStatLuck
@@ -80,7 +80,7 @@ function sprint_racer:speedometer/enable_xp_bar
 #speedometer shouldn't be on top bossbar
 tag @a[limit=1] add spdbump
 
-tag @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] remove AImaster
+tag @e[type=armor_stand,tag=AImaster,x=1548,y=155,z=406,distance=..1] remove AImaster
 
 #reset title times again just in case somebody's client is on mushrooms
 title @a times 0 45 5
@@ -98,7 +98,7 @@ scoreboard players set @a[scores={heal_aware=1..}] heal_aware 1
 tag @a[tag=assassin] remove assassin
 tag @a[tag=enchanted_something_custom] remove enchanted_something_custom
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemBlockState 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] itemBlockState 0
 
 tag @e[tag=finished] remove finished
 tag @e[tag=noInventory2] remove noInventory2
@@ -113,30 +113,30 @@ scoreboard objectives add killPlayer minecraft.killed:minecraft.player
 scoreboard objectives add killedByPlayer minecraft.killed_by:minecraft.player
 
 #in grand prix mode we don't use roundNumber, so just force it to be 1
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] roundNumber 1
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=grandprix] roundNumber 1
 
 #get data on current round and round number
 scoreboard players set #round_number value 1
 scoreboard players set #round_game_type value 1
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!grandprix] run function sprint_racer:game_logic/0/round_sequence/get_current_round_data
+execute as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=!grandprix] run function sprint_racer:game_logic/0/round_sequence/get_current_round_data
 
 #determine whether or not we gonna run the award ceremony
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!grandprix] if score @s roundNumber > #round_max_number value run tag @s add ceremony
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix,limit=1] if score @s gpRound > @s gpNumber run tag @s add ceremony
+execute as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=!grandprix] if score @s roundNumber > #round_max_number value run tag @s add ceremony
+execute as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=grandprix,limit=1] if score @s gpRound > @s gpNumber run tag @s add ceremony
 
 #random track mode will skip the lobby unless everyone went spectator for some reason
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={readyState=1..}] unless entity @a[tag=playing] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] readyState 0
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={readyState=1..}] unless entity @a[tag=playing] run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] readyState 0
 
-#execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=ceremony] run function sprint_racer:game_logic/4/_initialize
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=ceremony] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optRandom,tag=!noskip2next,scores={readyState=1..}] run function sprint_racer:game_logic/0/_initialize_for_real
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=ceremony] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optRandom,tag=!noskip2next,scores={readyState=1..}] run function sprint_racer:game_logic/0/_initialize_skip_to_next
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=ceremony] run function sprint_racer:game_logic/4/_initialize
+#execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=ceremony] run function sprint_racer:game_logic/4/_initialize
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=grandprix] unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=ceremony] unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=optRandom,tag=!noskip2next,scores={readyState=1..}] run function sprint_racer:game_logic/0/_initialize_for_real
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=grandprix] unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=ceremony] if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=optRandom,tag=!noskip2next,scores={readyState=1..}] run function sprint_racer:game_logic/0/_initialize_skip_to_next
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=ceremony] run function sprint_racer:game_logic/4/_initialize
 
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix,tag=gp_skip2next,tag=!noskip2next] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=ceremony] run function sprint_racer:game_logic/0/_initialize_skip_to_next
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] unless entity @a[limit=1,tag=gp_no_lobby_return] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix,tag=gp_skip2next,tag=!noskip2next] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=ceremony] run function sprint_racer:game_logic/0/_initialize_for_real
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=grandprix,tag=gp_skip2next,tag=!noskip2next] unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=ceremony] run function sprint_racer:game_logic/0/_initialize_skip_to_next
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=grandprix] unless entity @a[limit=1,tag=gp_no_lobby_return] unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=grandprix,tag=gp_skip2next,tag=!noskip2next] unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=ceremony] run function sprint_racer:game_logic/0/_initialize_for_real
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove gp_no_lobby_return
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove noskip2next
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove gp_skip2next
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove gp_no_lobby_return
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove noskip2next
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove gp_skip2next
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove ceremony
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove ceremony

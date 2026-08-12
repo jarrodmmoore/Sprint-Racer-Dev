@@ -1,8 +1,8 @@
 #=======================
 #item odds depend on whether we're in battle mode or not
 #(lobby and free-roam are considered "race" here)
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=3}] run function sprint_racer:items/pick_item/random_elite/odds/race
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=3}] run function sprint_racer:items/pick_item/random_elite/odds/battle
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=3}] run function sprint_racer:items/pick_item/random_elite/odds/race
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=3}] run function sprint_racer:items/pick_item/random_elite/odds/battle
 #=======================
 
 #DISABLED, REBALANCED ABOVE

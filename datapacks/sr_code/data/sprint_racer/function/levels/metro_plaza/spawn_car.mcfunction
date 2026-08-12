@@ -18,10 +18,10 @@ execute as @e[tag=setcar2,type=armor_stand,tag=carMoveA] at @e[limit=1,tag=setca
 execute as @e[tag=setcar2,type=armor_stand,tag=carMoveB] at @e[limit=1,tag=setcar,type=armor_stand] positioned ~7.5 ~ ~ run tp @s ~ ~ ~
 
 #randomize the delay between car spawns
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] carCooldown = @e[limit=1,type=armor_stand,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=10..30}] rNumber
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math 10
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] carCooldown *= @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={carCooldown=..100}] carCooldown 100
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] carCooldown = @e[limit=1,type=armor_stand,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=10..30}] rNumber
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] math 10
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] carCooldown *= @e[limit=1,type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] math
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={carCooldown=..100}] carCooldown 100
 
 scoreboard players set @e[tag=setcar,type=armor_stand] lifespan 115
 scoreboard players set @e[tag=setcar,type=armor_stand] carCooldown 115

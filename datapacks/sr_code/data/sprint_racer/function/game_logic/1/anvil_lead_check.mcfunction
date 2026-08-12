@@ -25,4 +25,4 @@ execute if score #math value matches 5 run scoreboard players set #anvilLeadChec
 execute if score #math value matches 6 run scoreboard players set #anvilLeadCheck value 380
 
 #anvil is banned? don't ever force it
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banNo17] run scoreboard players set #nextItemIsAnvil value 0
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=banNo17] run scoreboard players set #nextItemIsAnvil value 0

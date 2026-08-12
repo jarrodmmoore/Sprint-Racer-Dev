@@ -1,7 +1,7 @@
 #the number of checkpoints is the number of times we'll need to run check_logic for this lap
 #adding 1 also to make things less confusing later
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] checkCalc = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] check
-scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] checkCalc 1
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] checkCalc = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] check
+scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] checkCalc 1
 
 #this makes sure only players on the lap we're currently testing will be tested and given positions
 tag @e[tag=pCalcTarget] remove pCalcTarget

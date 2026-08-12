@@ -1,6 +1,6 @@
 scoreboard players set #setspeed value -1
-scoreboard players add @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,limit=1] speedlevel 0
-execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=01a] run scoreboard players operation #setspeed value = @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand] speedlevel
+scoreboard players add @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,limit=1] speedlevel 0
+execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=01a] run scoreboard players operation #setspeed value = @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1] speedlevel
 scoreboard players operation #speedoSpeed value = #setspeed value
 
 #default
@@ -40,4 +40,4 @@ execute as @a if score @s cStatMoveEfficient matches 4 run attribute @s movement
 
 #let's also handle attributes for various cheats while in here
 scoreboard players set #getOnWithIt value 0
-execute as @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,limit=1] run function sprint_racer:cheats/update_player_attributes
+execute as @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,limit=1] run function sprint_racer:cheats/update_player_attributes

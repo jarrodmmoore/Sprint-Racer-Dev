@@ -34,8 +34,8 @@ execute if entity @e[scores={voteCount=1..}] run scoreboard players remove @e[sc
 execute if entity @e[scores={voteCount=1..}] run scoreboard players remove @e[scores={voteCount=..9999}] voteCount 1
 
 #roulette mode on? only 1 player (chosen at random) determines the track
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optRoulette,tag=!grandprix] as @a[tag=playing,limit=1,sort=random] run function sprint_racer:game_logic/0/roulette_rocks_the_vote
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] if score #gpTrackSelect value matches 4 as @a[tag=playing,limit=1,sort=random] run function sprint_racer:game_logic/0/roulette_rocks_the_vote
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=optRoulette,tag=!grandprix] as @a[tag=playing,limit=1,sort=random] run function sprint_racer:game_logic/0/roulette_rocks_the_vote
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=grandprix] if score #gpTrackSelect value matches 4 as @a[tag=playing,limit=1,sort=random] run function sprint_racer:game_logic/0/roulette_rocks_the_vote
 
 #clear tags
 tag @a remove playerVote1

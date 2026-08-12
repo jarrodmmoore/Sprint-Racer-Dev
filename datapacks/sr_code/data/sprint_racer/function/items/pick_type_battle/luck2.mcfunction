@@ -19,7 +19,7 @@ scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=15
 #battle bat banned? re-roll if we didn't get an offensive item
 execute if score #battleBatbanned value matches 1.. unless score @s rNumber matches 1..24 run scoreboard players operation @s rNumber = @e[limit=1,sort=random,tag=random,x=1548,y=155,z=406,distance=..1,tag=!tempBan,scores={rNumber=1..50}] rNumber
 
-execute if entity @s[scores={rNumber=0}] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banRedItem,tag=banYelItem,tag=banGreItem,tag=banBluItem,tag=!banPurItem] run scoreboard players set @s rNumber 51
+execute if entity @s[scores={rNumber=0}] if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=banRedItem,tag=banYelItem,tag=banGreItem,tag=banBluItem,tag=!banPurItem] run scoreboard players set @s rNumber 51
 execute if score @s rNumber matches 0 if score #catTotal value matches 0 run scoreboard players set @s rNumber 52
 
 execute if entity @s[tag=!itemGetType,scores={rNumber=1..24}] run function sprint_racer:items/pick_item/offense/luck2

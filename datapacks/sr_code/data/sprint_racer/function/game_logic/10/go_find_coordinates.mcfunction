@@ -1,5 +1,5 @@
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add findLocation
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove editingTrack
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add findLocation
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove editingTrack
 effect clear @a
 clear @a
 

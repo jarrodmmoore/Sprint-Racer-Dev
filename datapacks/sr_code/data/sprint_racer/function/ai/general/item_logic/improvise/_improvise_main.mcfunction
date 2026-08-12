@@ -17,7 +17,7 @@ execute if entity @s[scores={aiHasItem31=1..}] run tag @e[tag=random,x=1548,y=15
 execute if entity @s[scores={aiHasTrap=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=33..36}] add improvPick
 execute if entity @s[scores={aiHasGlobal=1..}] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=37..40}] add improvPick
 
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=3}] run function sprint_racer:ai/general/item_logic/improvise/battle_improv_items
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=3}] run function sprint_racer:ai/general/item_logic/improvise/battle_improv_items
 
 #aggressive or tryhard tag means use items more aggressively
 tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=41..50}] add improvPick

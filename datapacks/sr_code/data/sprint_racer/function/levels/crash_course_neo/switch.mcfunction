@@ -6,7 +6,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run f
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run fill 426 60 109 430 60 111 lime_glazed_terracotta
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] as @e[tag=ccneo_pad1,type=marker] at @s run tp @s ~ 61 ~
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run fill 442 60 87 442 60 89 lime_wool
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add switchON
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add switchON
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run function sprint_racer_language:levels/switch_pressed_on
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run scoreboard players set @e[tag=ccneo_bc1,type=marker] AIBC_event 1
 
@@ -16,8 +16,8 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run fi
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run fill 426 60 109 430 60 111 gray_concrete
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] as @e[tag=ccneo_pad1,type=marker] at @s run tp @s ~ 51 ~
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run fill 442 60 87 442 60 89 red_wool
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove switchON
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove switchON
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run function sprint_racer_language:levels/switch_pressed_off
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run scoreboard players set @e[tag=ccneo_bc1,type=marker] AIBC_event 0
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove turnItOff
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove turnItOff

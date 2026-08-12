@@ -14,7 +14,7 @@ scoreboard players set #trackGridFetchMap value 405
 execute if score #trackGridMode value matches 1 if score #trackGridIterate value matches 37 unless entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=56] run return 0
 
 #casino chase (don't show if COPPA mode is on)
-execute if score #trackGridMode value matches 1 if score #trackGridIterate value matches 46 unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!COPPA] run return 0
+execute if score #trackGridMode value matches 1 if score #trackGridIterate value matches 46 unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=!COPPA] run return 0
 
 #cotton void (requires cheat code)
 execute if score #trackGridMode value matches 1 if score #trackGridIterate value matches 50 unless entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=38] run return 0

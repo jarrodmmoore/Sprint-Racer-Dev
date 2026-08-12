@@ -18,4 +18,4 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=240}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=140}] run fill 96 47 1730 96 49 1733 minecraft:air
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=140}] run fill 96 50 1731 96 50 1732 minecraft:air
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=140}] run fill 107 60 1733 107 60 1735 lime_wool
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=140}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add switchON
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=140}] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add switchON

@@ -106,7 +106,7 @@ scoreboard players set @s[scores={readyRequired=..0}] readyRequired 1
 
 #calculate ready players
 scoreboard players set @s readyDummy 0
-execute as @a[tag=playing,tag=readyup] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] readyDummy 1
+execute as @a[tag=playing,tag=readyup] run scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] readyDummy 1
 scoreboard players operation @s readyCount = @s readyDummy
 
 #take (ready players) - (required ready players)

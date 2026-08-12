@@ -3,7 +3,7 @@
 tag @s remove updatePoints
 
 #only update level if an AI played in this round
-execute if entity @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] run tag @s add updatePoints
+execute if entity @e[type=armor_stand,tag=AImaster,x=1548,y=155,z=406,distance=..1] run tag @s add updatePoints
 
 #human player got first, +3 level
 execute if entity @s[tag=updatePoints] if entity @a[tag=playing,scores={finishPos=1}] run scoreboard players add global aiLevel 3
@@ -14,7 +14,7 @@ execute if entity @s[tag=updatePoints] run scoreboard players remove global aiLe
 #human lost to all AI, -1 point
 #find the worst AI placement
 scoreboard players set #math value 0
-scoreboard players operation #math value > @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,scores={finishPos=1..}] finishPos
+scoreboard players operation #math value > @e[type=armor_stand,tag=AImaster,x=1548,y=155,z=406,distance=..1,scores={finishPos=1..}] finishPos
 #a player lost to everyone? do the -1
 execute as @a[tag=playing,scores={finishPos=1..}] if score @s finishPos > #math value run tag @s add lost2ai
 execute if entity @s[tag=updatePoints] if entity @a[tag=lost2ai] run scoreboard players remove global aiLevel 1

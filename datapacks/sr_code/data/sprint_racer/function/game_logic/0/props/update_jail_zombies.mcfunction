@@ -1,22 +1,22 @@
 kill @e[tag=jailtext]
 
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optRAInever] run kill @e[tag=lobbyprop,tag=jailz1]
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optBAInever] run kill @e[tag=lobbyprop,tag=jailz2]
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=optRAInever] run kill @e[tag=lobbyprop,tag=jailz1]
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=optBAInever] run kill @e[tag=lobbyprop,tag=jailz2]
 
 #zombie
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!optRAInever,tag=!optMannequinAI] unless entity @e[tag=lobbyprop,tag=jail,tag=jailz1] positioned 1620 88 361 run summon zombie ~ ~ ~ {NoGravity:1b,NoAI:1b,Invulnerable:1b,Silent:1b,Tags:["lobbyprop","jail","jailz1"]}
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!optBAInever,tag=!optMannequinAI] unless entity @e[tag=lobbyprop,tag=jail,tag=jailz2] positioned 1620 88 354 run summon zombie ~ ~ ~ {NoGravity:1b,NoAI:1b,Invulnerable:1b,Silent:1b,Tags:["lobbyprop","jail","jailz2"]}
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=!optRAInever,tag=!optMannequinAI] unless entity @e[tag=lobbyprop,tag=jail,tag=jailz1] positioned 1620 88 361 run summon zombie ~ ~ ~ {NoGravity:1b,NoAI:1b,Invulnerable:1b,Silent:1b,Tags:["lobbyprop","jail","jailz1"]}
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=!optBAInever,tag=!optMannequinAI] unless entity @e[tag=lobbyprop,tag=jail,tag=jailz2] positioned 1620 88 354 run summon zombie ~ ~ ~ {NoGravity:1b,NoAI:1b,Invulnerable:1b,Silent:1b,Tags:["lobbyprop","jail","jailz2"]}
 
 #mannequin
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!optRAInever,tag=optMannequinAI] unless entity @e[tag=lobbyprop,tag=jail,tag=jailz1] positioned 1620 88 361 run summon mannequin ~ ~ ~ {NoGravity:1b,immovable:true,Invulnerable:1b,Silent:1b,Tags:["lobbyprop","jail","jailz1"],profile:{texture:"entity/player/wide/steve",model:wide}}
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!optBAInever,tag=optMannequinAI] unless entity @e[tag=lobbyprop,tag=jail,tag=jailz2] positioned 1620 88 354 run summon mannequin ~ ~ ~ {NoGravity:1b,immovable:true,Invulnerable:1b,Silent:1b,Tags:["lobbyprop","jail","jailz2"],profile:{texture:"entity/player/wide/steve",model:wide}}
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=!optRAInever,tag=optMannequinAI] unless entity @e[tag=lobbyprop,tag=jail,tag=jailz1] positioned 1620 88 361 run summon mannequin ~ ~ ~ {NoGravity:1b,immovable:true,Invulnerable:1b,Silent:1b,Tags:["lobbyprop","jail","jailz1"],profile:{texture:"entity/player/wide/steve",model:wide}}
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=!optBAInever,tag=optMannequinAI] unless entity @e[tag=lobbyprop,tag=jail,tag=jailz2] positioned 1620 88 354 run summon mannequin ~ ~ ~ {NoGravity:1b,immovable:true,Invulnerable:1b,Silent:1b,Tags:["lobbyprop","jail","jailz2"],profile:{texture:"entity/player/wide/steve",model:wide}}
 
 execute as @e[tag=jailz1] at @s run tp @s ~ ~ ~ 90 ~
 execute as @e[tag=jailz2] at @s run tp @s ~ ~ ~ 90 ~
 
 #macro args
-execute store result storage sprint_racer:func_args arg1 int 1 run scoreboard players get @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] optRAIcount
-execute store result storage sprint_racer:func_args arg2 int 1 run scoreboard players get @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] optBAIcount
+execute store result storage sprint_racer:func_args arg1 int 1 run scoreboard players get @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,limit=1] optRAIcount
+execute store result storage sprint_racer:func_args arg2 int 1 run scoreboard players get @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,limit=1] optBAIcount
 
 #update ai settings
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer_language:_dlc_6/lobby/ai_settings with storage sprint_racer:func_args
+execute as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] run function sprint_racer_language:_dlc_6/lobby/ai_settings with storage sprint_racer:func_args

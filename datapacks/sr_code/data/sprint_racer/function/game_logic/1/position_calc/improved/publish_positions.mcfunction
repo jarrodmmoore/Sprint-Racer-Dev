@@ -12,7 +12,7 @@ execute as @e[tag=activeplayer,scores={racePosCalc=1..}] run function sprint_rac
 
 #ai armor stands do stuff (publish top 4 on sidebar)
 function sprint_racer_language:gameplay/position_display/ai_sidebar_clear
-execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] run function sprint_racer:game_logic/1/position_calc/improved/puppet_master_get_data
+execute as @e[type=armor_stand,tag=AImaster,x=1548,y=155,z=406,distance=..1] run function sprint_racer:game_logic/1/position_calc/improved/puppet_master_get_data
 
 #publish top 4 players on sidebar
 execute as @a[scores={racePosDisplay2=-2147483648..2147483647}] unless score @s racePosDisplay matches 1..4 run scoreboard players reset @s racePosDisplay2

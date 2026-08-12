@@ -3,14 +3,14 @@ scoreboard players set @s lastCatPicked 3
 tag @s add itemGetType
 tag @e[tag=tempBan,type=armor_stand] remove tempBan
 
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banNo9] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..6}] add tempBan
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banNo10] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=7..20}] add tempBan
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banNo11] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=21..30}] add tempBan
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banNo12] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=31..40}] add tempBan
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=banNo9] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..6}] add tempBan
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=banNo10] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=7..20}] add tempBan
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=banNo11] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=21..30}] add tempBan
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=banNo12] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=31..40}] add tempBan
 
 #don't let players have more than 1 elytra
 execute store result score #test value run clear @s elytra[custom_data~{item:1b}] 0
-execute if score #test value matches 1.. unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=banNo9,tag=banNo10,tag=banNo11] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=31..40}] add tempBan
+execute if score #test value matches 1.. unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=banNo9,tag=banNo10,tag=banNo11] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=31..40}] add tempBan
 
 #pick a random number, ignoring any banned item types
 scoreboard players set @s rNumber 0

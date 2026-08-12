@@ -1,5 +1,5 @@
 tag @e[tag=counted] remove counted
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] math 0
 
 function sprint_racer:game_logic/1/elimination/find_last_place_recursive
 tag @e[tag=counted] remove counted

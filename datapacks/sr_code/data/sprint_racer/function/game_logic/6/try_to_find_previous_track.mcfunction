@@ -1,4 +1,4 @@
-scoreboard players remove @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] taLastChosen 1
+scoreboard players remove @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] taLastChosen 1
 
 effect give @a blindness 3 13 true
 

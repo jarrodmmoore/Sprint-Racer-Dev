@@ -1,10 +1,10 @@
 tp @a[tag=!dontWarp] 30 123 2024
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lap 3
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] lap 3
 gamerule advance_time false
 time set 6000
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] carCooldown 300
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] carCooldown 300
 
 
 

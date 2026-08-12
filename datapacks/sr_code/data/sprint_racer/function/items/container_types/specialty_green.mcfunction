@@ -7,7 +7,7 @@ execute as @e[tag=chestTarget,type=armor_stand,distance=..3] run function sprint
 
 function sprint_racer:items/pick_item/trap/_main
 #cheat 15 enabled? get an extra random item
-execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=15a] run function sprint_racer:items/pick_item/trap/_main
+execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=15a] run function sprint_racer:items/pick_item/trap/_main
 
 scoreboard players set @s itemCooldown2 0
 scoreboard players set @s itemCooldown 80

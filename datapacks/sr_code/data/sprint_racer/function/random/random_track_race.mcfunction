@@ -1,8 +1,8 @@
 #calculating overall "maturity" of players
 #this determines what tracks will be offered
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] maturity 0
-execute as @a[tag=playing] run scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] maturity += @s maturity
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] maturity /= @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] playerCountB
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] maturity 0
+execute as @a[tag=playing] run scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] maturity += @s maturity
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] maturity /= @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] playerCountB
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={difficultyRamp=..0}] maturity 100
 
 #harder tracks will not be chosen if the average player is new
@@ -36,7 +36,7 @@ scoreboard players remove @e[tag=trackStandR,scores={randomCooldown=1..}] random
 scoreboard players set @e[limit=1,tag=chosenTrack] randomCooldown 12
 
 #"in order" track mode overrides random
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optInOrder,limit=1,tag=!grandprix] if entity @e[type=armor_stand,tag=!rtBlacklist,tag=trackStandR,limit=1] run function sprint_racer:random/in_order_race
+execute as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=optInOrder,limit=1,tag=!grandprix] if entity @e[type=armor_stand,tag=!rtBlacklist,tag=trackStandR,limit=1] run function sprint_racer:random/in_order_race
 
 execute as @a at @s run playsound minecraft:block.note_block.bell master @s ~ 100000 ~ 100000 2
 execute as @e[tag=chosenTrack] run function sprint_racer:game_logic/0/vote_preview/race/v_r_index_announce

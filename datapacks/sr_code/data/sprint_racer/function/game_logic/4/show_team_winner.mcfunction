@@ -1,6 +1,6 @@
 #bup
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={teamPoints=1..}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add winOrange
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={teamPoints=..-1}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add winCyan
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={teamPoints=1..}] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add winOrange
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={teamPoints=..-1}] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add winCyan
 
 #you da winner
 scoreboard players set #varyTeleport value 0
@@ -23,5 +23,5 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=winOrange] run fu
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=winCyan] run function sprint_racer_language:_dlc_2/lobby/award_ceremony/announce_win_cyan
 execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=winOrange] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=winCyan] run function sprint_racer_language:_dlc_2/lobby/award_ceremony/announce_team_tie
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove winOrange
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove winCyan
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove winOrange
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove winCyan

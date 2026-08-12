@@ -17,7 +17,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalRace=4..
 
 #show diamond (only if beaten)
 function sprint_racer:game_logic/6/show_times/reset_values
-scoreboard players operation @s lapTimeMsec = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] diamondTR
+scoreboard players operation @s lapTimeMsec = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] diamondTR
 function sprint_racer:game_logic/6/show_times/number_cruncher
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalRace=4..}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/diamond_time_beaten
 
@@ -25,7 +25,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalRace=3}]
 
 #show gold
 function sprint_racer:game_logic/6/show_times/reset_values
-scoreboard players operation @s lapTimeMsec = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] goldTR
+scoreboard players operation @s lapTimeMsec = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] goldTR
 function sprint_racer:game_logic/6/show_times/number_cruncher
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalRace=..2}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/gold_time_not_beaten
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalRace=3..}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/gold_time_beaten
@@ -34,7 +34,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalRace=2}]
 
 #show silver
 function sprint_racer:game_logic/6/show_times/reset_values
-scoreboard players operation @s lapTimeMsec = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] silverTR
+scoreboard players operation @s lapTimeMsec = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] silverTR
 function sprint_racer:game_logic/6/show_times/number_cruncher
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalRace=..1}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/silver_time_not_beaten
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalRace=2..}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/silver_time_beaten
@@ -43,7 +43,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalRace=1}]
 
 #show bronze
 function sprint_racer:game_logic/6/show_times/reset_values
-scoreboard players operation @s lapTimeMsec = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] bronzeTR
+scoreboard players operation @s lapTimeMsec = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] bronzeTR
 function sprint_racer:game_logic/6/show_times/number_cruncher
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalRace=..0}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/bronze_time_not_beaten
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalRace=1..}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/bronze_time_beaten

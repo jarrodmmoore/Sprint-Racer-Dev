@@ -1,10 +1,10 @@
 #relevant stuff:
 # #trackGridStart value 1
-# @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolMode 1
-# @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolNum 1
+# @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] tvPoolMode 1
+# @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] tvPoolNum 1
 
-scoreboard players operation #trackGridMode value = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolMode
-scoreboard players operation #trackGridSelected value = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolNum
+scoreboard players operation #trackGridMode value = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] tvPoolMode
+scoreboard players operation #trackGridSelected value = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] tvPoolNum
 
 #always start at "selected"
 scoreboard players operation #trackGridStart value = #trackGridSelected value

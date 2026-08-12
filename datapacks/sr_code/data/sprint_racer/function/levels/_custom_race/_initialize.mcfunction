@@ -13,13 +13,13 @@ function sprint_racer:levels/_custom_general/set_music
 ######
 
 #LAPS
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lap = @s lap
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] lap = @s lap
 
 #CHECKPOINTS
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] check = @s check
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] check = @s check
 
 #START COUNTDOWN
-execute unless score @s startType matches 0 run scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] startType = @s startType
+execute unless score @s startType matches 0 run scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] startType = @s startType
 
 #NIGHT VISION -- night vision if we're playing in free roam mode
 execute if entity @s[tag=nightVision] run tag @a[tag=dontSetGamemode] add fr_nightvision
@@ -28,8 +28,8 @@ execute if entity @s[tag=nightVision] run tag @a[tag=dontSetGamemode] add fr_nig
 execute if entity @s[tag=daylightCycle] run gamerule advance_time true
 
 #AI?
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove noAItrack
-execute if entity @s[tag=noAItrack] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add noAItrack
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove noAItrack
+execute if entity @s[tag=noAItrack] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add noAItrack
 
 #TIME OF DAY
 execute store result storage sprint_racer:func_args time int 1 run scoreboard players get @s customTrackTime
@@ -39,18 +39,18 @@ function sprint_racer:levels/_custom_general/set_time_macro with storage sprint_
 execute if entity @s[scores={customTWeather=1}] run weather clear
 execute if entity @s[scores={customTWeather=2}] run weather rain
 execute if entity @s[scores={customTWeather=3}] run weather thunder
-execute if entity @s[scores={customTWeather=2..3}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add raining
+execute if entity @s[scores={customTWeather=2..3}] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add raining
 
 #TIME LIMIT
 #should have base of 209 ticks with an added 1200 for each additional minute
 scoreboard players set #math value 1200
 scoreboard players operation #math value *= @s timeRemaining
 execute if score #math value matches ..1199 run scoreboard players set #math value 1200
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 209
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining += #math value
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] timeRemaining 209
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] timeRemaining += #math value
 #default is 4 minutes, or 5009
 #hard minimum of 1509
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={timeRemaining=..1508}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 1509
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={timeRemaining=..1508}] run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] timeRemaining 1509
 
 #GAUNTLET?
 execute if entity @s[tag=customGauntlet] run function sprint_racer:levels/_custom_race/gauntlet_mode

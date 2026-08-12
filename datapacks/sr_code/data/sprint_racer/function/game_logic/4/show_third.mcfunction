@@ -13,7 +13,7 @@ execute as @a[tag=dasMe] run function sprint_racer_language:lobby/award_ceremony
 execute as @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={finishPos=3,aiPoints=1..}] run function sprint_racer_language:_dlc_3/gameplay/ai_points/announce_third
 execute as @a[tag=dasMe] run function sprint_racer_language:_dlc_3/lobby/award_ceremony/give_trophy_3rd
 
-execute if entity @a[tag=dasMe] if score grandprix gameState matches 1 if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=!noCrowdSFX,limit=1] as @a at @s run function sprint_racer:grand_prix/crowd_claps
+execute if entity @a[tag=dasMe] if score grandprix gameState matches 1 if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=!noCrowdSFX,limit=1] as @a at @s run function sprint_racer:grand_prix/crowd_claps
 
 execute unless entity @a[tag=dasMe] unless entity @e[limit=1,tag=3rd_ai] run function sprint_racer_language:lobby/award_ceremony/nobody_third
 execute unless entity @a[tag=dasMe] unless entity @e[limit=1,tag=3rd_ai] run particle large_smoke 1653 91 399 0.5 0.5 0.5 0 20 force

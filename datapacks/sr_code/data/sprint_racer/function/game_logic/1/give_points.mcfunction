@@ -16,4 +16,4 @@ execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores
 execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=1..9,addPoints=1..}] run function sprint_racer_language:_dlc_3/gameplay/ai_points/increment_x1
 
 #this will loop as long as players exist who haven't gotten their points
-execute if entity @a[tag=playing,scores={addPoints=1..}] run scoreboard players remove @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameTime 4
+execute if entity @a[tag=playing,scores={addPoints=1..}] run scoreboard players remove @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameTime 4

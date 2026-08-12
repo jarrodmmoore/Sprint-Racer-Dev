@@ -26,8 +26,8 @@ execute if score #good2throw value matches 1 if entity @s[tag=leadprojectile] ru
 execute if entity @s[tag=good2throw,tag=!leadprojectile] run tag @e[tag=projectTarget] add looktarget
 execute if entity @s[tag=good2throw,tag=leadprojectile] run tag @e[tag=projectedtarget] add looktarget
 execute if entity @s[tag=good2throw] facing entity @e[tag=looktarget,limit=1,sort=nearest] eyes run function sprint_racer:ai/general/item_logic/23/use
-execute if entity @s[tag=!good2throw] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=3}] run function sprint_racer:ai/general/item_logic/23/think_alt_race
-execute if entity @s[tag=!good2throw] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=3}] run function sprint_racer:ai/general/item_logic/23/think_alt_battle
+execute if entity @s[tag=!good2throw] unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=3}] run function sprint_racer:ai/general/item_logic/23/think_alt_race
+execute if entity @s[tag=!good2throw] if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=3}] run function sprint_racer:ai/general/item_logic/23/think_alt_battle
 
 #if a throw did NOT happen, keep holding the item and maybe try checking again soon
 scoreboard players set @s[tag=!good2throw,scores={aiHasItem23=1..}] aiHoldingItem 23

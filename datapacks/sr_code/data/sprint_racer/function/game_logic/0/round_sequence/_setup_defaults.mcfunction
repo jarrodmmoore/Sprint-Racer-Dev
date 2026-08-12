@@ -23,4 +23,4 @@ data modify storage sprint_racer:round_sequence custom_save_8 set value [1,1,1,1
 data modify storage sprint_racer:round_sequence custom_save_9 set value [1,1,1,1,2]
 data modify storage sprint_racer:round_sequence custom_save_10 set value [1,1,1,1,2]
 
-execute as @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:game_logic/0/round_sequence/load_active_sequence
+execute as @e[limit=1,type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] run function sprint_racer:game_logic/0/round_sequence/load_active_sequence

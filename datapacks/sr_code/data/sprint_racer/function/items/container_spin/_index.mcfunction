@@ -4,7 +4,7 @@
 #all chests rotate together
 #global rotation is tracked by "w" via itemBlockState
 
-#scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemBlockState 1
+#scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] itemBlockState 1
 #scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={itemBlockState=37..}] itemBlockState 1
 
 #data merge to rotate

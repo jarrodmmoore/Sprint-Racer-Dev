@@ -1,6 +1,6 @@
 scoreboard players set #vote_possible value 0
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=1}] run scoreboard players set #vote_possible value 1
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=3}] run scoreboard players set #vote_possible value 1
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=1}] run scoreboard players set #vote_possible value 1
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=3}] run scoreboard players set #vote_possible value 1
 
 #play/spectate
 item replace entity @s[tag=!forcespectate] inventory.10 with minecraft:shulker_shell[item_model="sr/inventory/1a",custom_name={translate:"sr.inventory.play_or_spectate",bold:true,italic:false},lore=[{translate:"sr.inventory.play",color:"yellow",italic:false},{translate:"sr.inventory.spectate",color:"gray",italic:false}],custom_data={invControl:1b,invPlay:1b}]
@@ -43,7 +43,7 @@ execute if score #vote_possible value matches 0 run item replace entity @s inven
 execute if score #vote_possible value matches 1 run item replace entity @s inventory.16 with minecraft:shulker_shell[item_model="sr/inventory/7a",custom_name={translate:"sr.inventory.call_vote",bold:true,italic:false,color:"white"},lore=[{translate:"sr.inventory.click_to_call_a_vote",color:"yellow",italic:false}],custom_data={invControl:1b,invVote:1b}]
 
 #admin mode
-execute if entity @s[tag=admin] if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=requireAdmin] run item replace entity @s inventory.26 with minecraft:shulker_shell[item_model="sr/inventory/8",custom_name={translate:"sr.inventory.admin_menu",bold:true,italic:false,color:"white"},lore=[{translate:"sr.inventory.click_to_open_the",color:"yellow",italic:false},{translate:"sr.inventory.control_panel_for_admins",color:"yellow",italic:false}],custom_data={invControl:1b,invAdmin:1b}]
+execute if entity @s[tag=admin] if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=requireAdmin] run item replace entity @s inventory.26 with minecraft:shulker_shell[item_model="sr/inventory/8",custom_name={translate:"sr.inventory.admin_menu",bold:true,italic:false,color:"white"},lore=[{translate:"sr.inventory.click_to_open_the",color:"yellow",italic:false},{translate:"sr.inventory.control_panel_for_admins",color:"yellow",italic:false}],custom_data={invControl:1b,invAdmin:1b}]
 
 #shoes cheat code
 execute if entity @s[tag=needShoeButton] run function sprint_racer_language:_dlc_5/cheats/shoes_inventory

@@ -1,5 +1,5 @@
 #round number
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] run function sprint_racer_language:_dlc_3/lobby/round_display/gp_round_number
+execute as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,limit=1] run function sprint_racer_language:_dlc_3/lobby/round_display/gp_round_number
 
 #"Grand Prix"
 summon armor_stand 1546 85 406 {Tags:["roundDisplay","roundText1"],CustomName:{translate:"sr.grand_prix",color:"gold",bold:true},NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,CustomNameVisible:1}

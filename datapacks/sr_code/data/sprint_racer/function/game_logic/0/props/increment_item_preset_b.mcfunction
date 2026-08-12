@@ -1,4 +1,4 @@
-scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemPresetB 1
+scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] itemPresetB 1
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={itemPresetB=12..}] itemPresetB 1
 
 execute unless score global gameState matches 0 run return 0

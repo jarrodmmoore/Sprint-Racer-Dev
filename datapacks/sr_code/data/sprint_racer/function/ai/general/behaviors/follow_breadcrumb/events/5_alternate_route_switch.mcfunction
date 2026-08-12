@@ -28,7 +28,7 @@ execute if entity @s[tag=megaShortcut,tag=tryhard,scores={rNumber=13..50}] run t
 tag @s[tag=very_easy_ai] remove doIt
 
 #the switch is off? -> we cancel the alternate route
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=switchON] run tag @s remove doIt
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=switchON] run tag @s remove doIt
 
 execute if entity @s[tag=doIt] unless score @s AIBC_id = @s AIBC_condition run scoreboard players operation @s AIBC_id = @s AIBC_condition
 

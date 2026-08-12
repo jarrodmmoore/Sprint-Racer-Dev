@@ -1,7 +1,7 @@
 kill @e[type=item_display,tag=c_cam]
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] creditsSeq1 1
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] creditsSeq2 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] creditsSeq1 1
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] creditsSeq2 0
 
 #summon camera points
 

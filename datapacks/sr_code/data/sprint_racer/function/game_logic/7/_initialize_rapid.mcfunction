@@ -7,7 +7,7 @@ function sprint_racer:music/global/stop_music
 ######
 
 scoreboard objectives remove specJoin
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] specJoinTime 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] specJoinTime 0
 scoreboard players set global loadAttempts 0
 scoreboard players set global resetAttempts 0
 
@@ -19,7 +19,7 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=return2lobby] add taNoItems
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=return2lobby,tag=optItems] remove taNoItems
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=return2lobby,tag=optItemsR] remove taNoItems
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove taValidFinish
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove taValidFinish
 
 scoreboard objectives remove dropSVoid
 scoreboard objectives add dropSVoid minecraft.dropped:minecraft.structure_void
@@ -32,11 +32,11 @@ kill @e[tag=cDisplay2,type=armor_stand]
 kill @e[type=ender_pearl]
 
 #halftick mode in realms when we have 6 or more players
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerCount 0
-execute as @a[tag=playing] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerCount 1
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] playerCount 0
+execute as @a[tag=playing] run scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] playerCount 1
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=autotick,scores={playerCount=6..}] add halftick
 
-scoreboard players reset @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] storm
+scoreboard players reset @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] storm
 weather clear
 
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=needAnnounce] as @e[tag=chosenTrack] run function sprint_racer:game_logic/0/vote_preview/race/v_r_index_announce
@@ -49,16 +49,16 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=needAnnounce] remove needAnnoun
 function sprint_racer:items/item_presets/_index_race
 
 #boiler-plate stuff for starting a race (TIME ATTACK)
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 7
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameTime 80
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeMin 0
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeSec 0
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTime 0
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeMsec 0
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] oTimer 0
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] finishPos 1
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] checkCalc 0
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lapCalc 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameState 7
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameTime 80
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] currentTimeMin 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] currentTimeSec 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] currentTime 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] currentTimeMsec 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] oTimer 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] finishPos 1
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] checkCalc 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] lapCalc 0
 
 team modify player seeFriendlyInvisibles false
 team modify player color yellow
@@ -126,19 +126,19 @@ function sprint_racer:clear_bossbars
 
 bossbar set minecraft:timeremaining style progress
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove ignoreCalc
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove calcStart
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove calcRunning
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove calcEnd
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove allowPVP
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove ignoreCalc
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove calcStart
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove calcRunning
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove calcEnd
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove allowPVP
 tag @e[tag=finallap] remove finallap
 tag @e[tag=finished] remove finished
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeOut 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] timeOut 0
 tag @a add noInventory
 tag @e[tag=noInventory2] remove noInventory2
 
 #players get points depending on how many other players they beat out
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] addPoints = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] playerCountB
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] addPoints = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] playerCountB
 scoreboard players set @a addPoints 0
 
 scoreboard players reset * racePosDisplay
@@ -147,7 +147,7 @@ scoreboard objectives remove itemBlockState
 scoreboard objectives add itemBlockState dummy
 
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove initFailed
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove initFailed
 bossbar set minecraft:menutimer players
 title @a times 0 45 5
 title @a subtitle [""]
@@ -160,27 +160,27 @@ effect clear @a absorption
 scoreboard objectives setdisplay sidebar
 
 #DEFAULTS, these can be overwritten by a specific track's initialization function
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove noAItrack
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] startType 0
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lap 3
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] check 3
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] timeRemaining 5009
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove noAItrack
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] startType 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] lap 3
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] check 3
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] timeRemaining 5009
 gamerule advance_time false
 tag @a remove darkHUD
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove hideLaps
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add noCharity
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove hideLaps
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add noCharity
 
 #the chosen track will run its special initialization function
 execute as @e[limit=1,tag=chosenTrack,type=armor_stand] at @s run function sprint_racer:game_logic/1/_initialize_index
 
 #cheat that offsets lap count
-execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=55a] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] unless entity @s[scores={gamemodePresetA=2}] run function sprint_racer:cheats/offset_lap_count
+execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=55a] as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] unless entity @s[scores={gamemodePresetA=2}] run function sprint_racer:cheats/offset_lap_count
 
 #cheat that allows 1 checkpoint skip
 execute if entity @e[type=armor_stand,tag=50a,tag=cheats,x=1548,y=148,z=422,distance=..1] run tag @a add skip_available
 
 #cheat that doubles lap count
-execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=39a] as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] unless entity @s[scores={gamemodePresetA=2}] run function sprint_racer:cheats/double_lap_count
+execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=39a] as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] unless entity @s[scores={gamemodePresetA=2}] run function sprint_racer:cheats/double_lap_count
 
 #initialize bossbar lap display based on the set amt of laps
 scoreboard players set #bbPersonalize value 2
@@ -188,19 +188,19 @@ scoreboard players set #hudMode value 3
 function sprint_racer:game_logic/1/lap_bossbar/setup
 
 #if no chosen track exists, this function failed and we'll go back to the lobby (game logic 0)
-execute unless entity @e[tag=chosenTrack,tag=trackStandR] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add initFailed
+execute unless entity @e[tag=chosenTrack,tag=trackStandR] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add initFailed
 
 tag @a remove 1_lap_only
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={lap=..1}] run tag @a add 1_lap_only
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={lap=..1}] run tag @a add 1_lap_only
 
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=initFailed] run effect give @a blindness 1 1 true
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=initFailed] run effect give @a slow_falling 7 1 true
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=initFailed] run effect give @a invisibility 30 1 true
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=initFailed] run effect give @a resistance 30 255 true
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=initFailed] run effect give @a weakness 30 20 true
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=initFailed] run gamemode adventure @a[tag=playing]
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=initFailed] run gamemode spectator @a[tag=!playing]
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=initFailed] run effect give @a blindness 1 1 true
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=initFailed] run effect give @a slow_falling 7 1 true
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=initFailed] run effect give @a invisibility 30 1 true
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=initFailed] run effect give @a resistance 30 255 true
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=initFailed] run effect give @a weakness 30 20 true
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=initFailed] run gamemode adventure @a[tag=playing]
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=initFailed] run gamemode spectator @a[tag=!playing]
 
 #failed to load a valid track? back to lobby
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=initFailed] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add noskip2next
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=initFailed] run function sprint_racer:game_logic/6/_initialize
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=initFailed] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add noskip2next
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=initFailed] run function sprint_racer:game_logic/6/_initialize

@@ -14,21 +14,21 @@ execute as @e[tag=chosenTrack] run function sprint_racer:game_logic/6/worldmap_i
 tag @e[tag=chosenTrack,type=armor_stand,tag=customtrack] remove wmCustomFocus
 execute as @e[tag=chosenTrack] run scoreboard players reset @s worldmapID
 
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] currentTime
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math -= @e[tag=chosenTrack,limit=1] trackBestTime
-execute if entity @e[tag=chosenTrack,scores={trackBestTime=..0}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math -1
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] math = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] currentTime
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] math -= @e[tag=chosenTrack,limit=1] trackBestTime
+execute if entity @e[tag=chosenTrack,scores={trackBestTime=..0}] run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] math -1
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={math=..-1}] add gotNewPB
 
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] currentTime
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math -= @e[tag=chosenTrack,limit=1] trackBestTime2
-execute if entity @e[tag=chosenTrack,scores={trackBestTime2=..0}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math -1
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] math = @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] currentTime
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] math -= @e[tag=chosenTrack,limit=1] trackBestTime2
+execute if entity @e[tag=chosenTrack,scores={trackBestTime2=..0}] run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] math -1
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=taNoItems,scores={math=..-1}] add gotNewPB2
 
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=cheatdetected] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove gotNewPB
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=cheatdetected] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove gotNewPB2
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!taNoItems] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove gotNewPB2
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=customTesting] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove gotNewPB
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=customTesting] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove gotNewPB2
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=cheatdetected] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove gotNewPB
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=cheatdetected] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove gotNewPB2
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!taNoItems] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove gotNewPB2
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=customTesting] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove gotNewPB
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=customTesting] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove gotNewPB2
 
 
 tellraw @a ["",{text:" "}]
@@ -42,11 +42,11 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=gotNewPB2] run fu
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!gotNewPB2] if entity @e[tag=chosenTrack,scores={trackBestTime2=1..}] run function sprint_racer:game_logic/6/show_times/show_pb_itemless_no_dot_race
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!gotNewPB2,tag=taNoItems] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/show_your_time_itemless
 
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=taNoItems] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add dotdotdot
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=gotNewPB2] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add dotdotdot
-execute if entity @e[tag=chosenTrack,scores={trackBestTime2=1..}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add dotdotdot
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=taNoItems] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add dotdotdot
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=gotNewPB2] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add dotdotdot
+execute if entity @e[tag=chosenTrack,scores={trackBestTime2=1..}] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add dotdotdot
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=dotdotdot] run tellraw @a ["",{text:"---",bold:true,color:"green"}]
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove dotdotdot
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove dotdotdot
 
 
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=gotNewPB,scores={medalWon=4..}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/new_pb
@@ -56,7 +56,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!gotNewPB,scores=
 
 #DIAMOND TIME (only show if beaten)
 function sprint_racer:game_logic/6/show_times/reset_values
-scoreboard players operation @s lapTimeMsec = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] diamondTR
+scoreboard players operation @s lapTimeMsec = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] diamondTR
 function sprint_racer:game_logic/6/show_times/number_cruncher
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalWon=4..}] if entity @e[tag=chosenTrack,scores={medalRace=4..}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/diamond_time_beaten
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={medalWon=4..}] unless entity @e[tag=chosenTrack,scores={medalRace=4..}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/diamond_time
@@ -69,7 +69,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!gotNewPB,scores=
 
 #GOLD TIME
 function sprint_racer:game_logic/6/show_times/reset_values
-scoreboard players operation @s lapTimeMsec = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] goldTR
+scoreboard players operation @s lapTimeMsec = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] goldTR
 function sprint_racer:game_logic/6/show_times/number_cruncher
 execute if entity @e[tag=chosenTrack,scores={medalRace=3..}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/gold_time_beaten
 execute unless entity @e[tag=chosenTrack,scores={medalRace=3..}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/gold_time
@@ -82,7 +82,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!gotNewPB,scores=
 
 #SILVER TIME
 function sprint_racer:game_logic/6/show_times/reset_values
-scoreboard players operation @s lapTimeMsec = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] silverTR
+scoreboard players operation @s lapTimeMsec = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] silverTR
 function sprint_racer:game_logic/6/show_times/number_cruncher
 execute if entity @e[tag=chosenTrack,scores={medalRace=2..}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/silver_time_beaten
 execute unless entity @e[tag=chosenTrack,scores={medalRace=2..}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/silver_time
@@ -95,7 +95,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!gotNewPB,scores=
 
 #BRONZE TIME
 function sprint_racer:game_logic/6/show_times/reset_values
-scoreboard players operation @s lapTimeMsec = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] bronzeTR
+scoreboard players operation @s lapTimeMsec = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] bronzeTR
 function sprint_racer:game_logic/6/show_times/number_cruncher
 execute if entity @e[tag=chosenTrack,scores={medalRace=1..}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/bronze_time_beaten
 execute unless entity @e[tag=chosenTrack,scores={medalRace=1..}] run function sprint_racer_language:_dlc_1/gameplay/show_record_times/bronze_time

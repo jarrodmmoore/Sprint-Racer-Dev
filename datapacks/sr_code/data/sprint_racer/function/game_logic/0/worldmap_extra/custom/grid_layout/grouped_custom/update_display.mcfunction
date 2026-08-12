@@ -6,8 +6,8 @@ execute if loaded 2482 100 265 unless entity 00000071-0000-0079-0000-00d30000000
 # #trackGridEnd value
 # #trackGridPage value
 
-scoreboard players operation #trackGridMode value = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] wmCustomMode
-#scoreboard players operation #trackGridSelected value = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] wmCustomNum
+scoreboard players operation #trackGridMode value = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] wmCustomMode
+#scoreboard players operation #trackGridSelected value = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] wmCustomNum
 
 #start trying to render previews at the grid start index
 scoreboard players operation #trackGridIterate value = #trackGridStartCustom value

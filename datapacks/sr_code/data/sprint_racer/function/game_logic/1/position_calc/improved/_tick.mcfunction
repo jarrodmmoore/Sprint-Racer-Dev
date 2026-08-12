@@ -20,7 +20,7 @@ scoreboard players operation #racePosCalc value = @s finishPos
 
 #finished players don't need to get calculated, so we'll just give them their finish position value since that isn't going to change
 execute as @a[tag=playing,tag=finished] run scoreboard players operation @s racePosCalc = @s finishPos
-execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1,tag=finished] run scoreboard players operation @s racePosCalc = @s finishPos
+execute as @e[type=armor_stand,tag=AImaster,x=1548,y=155,z=406,distance=..1,tag=finished] run scoreboard players operation @s racePosCalc = @s finishPos
 
 #all active players summon a interaction entity that we'll use to track their position, also log relevant checkpoint + lap combos
 scoreboard players operation #posCalcCheck value = @s check

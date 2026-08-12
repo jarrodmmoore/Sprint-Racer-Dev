@@ -7,8 +7,8 @@ scoreboard players set #wHasScore value 100
 
 #fix duplicate w problem that may happen with bad worldspawn or fussy plugins
 scoreboard players set global math 0
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run scoreboard players add global math 1
-execute unless score global math matches 1 run kill @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand]
+execute as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] run scoreboard players add global math 1
+execute unless score global math matches 1 run kill @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1]
 execute unless score global math matches 1 run kill @e[name="w"]
 
 #important armor stand locations
@@ -21,38 +21,38 @@ execute unless score global math matches 1 run kill @e[name="w"]
 #these armor stands are in different chunks to take advantage of chunkLimited selectors
 
 #deal with armor stands, especially "w"
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run summon armor_stand 1560 150 406 {CustomName:{text:"w"},NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["forceGS","w"]}
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] run summon armor_stand 1560 150 406 {CustomName:{text:"w"},NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b,Tags:["forceGS","w"]}
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=forceGS] gameState 0
 tag @e[tag=forceGS] remove forceGS
 execute positioned 1548 155 406 run function sprint_racer:random/summon_stands
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optRnB
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optRace
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optBattle
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optVote
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optChoose
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optRandom
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optItems
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optItemsB
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optItemsR
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optNoItems
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optBalance
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add nospeedo
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optRAIsingle
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optRAInever
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optRAIalways
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optBAIsingle
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optBAIalways
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optBAInever
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optRnB
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optRace
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optBattle
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optVote
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optChoose
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optRandom
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optItems
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optItemsB
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optItemsR
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optNoItems
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optBalance
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add nospeedo
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optRAIsingle
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optRAInever
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optRAIalways
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optBAIsingle
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optBAIalways
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optBAInever
 
 #more options stuff
 scoreboard objectives add optAIdiff dummy
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] optAIdiff 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] optAIdiff 0
 scoreboard objectives add optRAIcount dummy
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] optRAIcount 4
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] optRAIcount 4
 scoreboard objectives add optBAIcount dummy
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] optBAIcount 4
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] optBAIcount 4
 scoreboard objectives add allowInvis dummy
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] allowInvis 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] allowInvis 0
 scoreboard players set global allowInvis 0
 
 #music stuff
@@ -738,14 +738,14 @@ scoreboard objectives add gameTime dummy
 scoreboard objectives add voteTime dummy
 scoreboard objectives add voteCount dummy
 scoreboard objectives add defLobbyTime dummy
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] defLobbyTime 30
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] defLobbyTime 30
 scoreboard objectives add defVoteTime dummy
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] defVoteTime 25
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] defVoteTime 25
 scoreboard objectives add roundNumber dummy
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 0
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] readyState 0
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemPresetA 1
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemPresetB 1
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] roundNumber 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] readyState 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] itemPresetA 1
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] itemPresetB 1
 scoreboard objectives add pressJump minecraft.custom:minecraft.jump
 scoreboard objectives add lastGamemode dummy
 scoreboard objectives add creditsCycle dummy
@@ -781,5 +781,5 @@ execute unless score #clearCacheAllowed value matches ..-1 run scoreboard player
 #it worked
 scoreboard players set @a join 1
 tellraw @a ["",{text:"World setup successful!",color:"aqua"}]
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run tellraw @a ["",{text:"Critical entity \"w\" is not present.",color:"red"}]
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] run tellraw @a ["",{text:"Critical entity \"w\" is not present.",color:"red"}]
 execute as @a at @s run playsound minecraft:block.note_block.chime master @s ~ 100000 ~ 100000 2 1

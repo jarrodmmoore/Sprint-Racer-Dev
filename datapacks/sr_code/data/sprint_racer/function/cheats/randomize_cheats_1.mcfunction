@@ -199,7 +199,7 @@ tag @e[tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,tag=rChtViabl
 scoreboard players operation @s math = @e[limit=1,sort=random,type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..41}] rNumber
 scoreboard players set @s math2 222
 scoreboard players operation @s math *= @s math2
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] randomizerTime = @s math
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] randomizerTime = @s math
 
 #say what's enabled
 execute as @a[tag=!minChat] run function sprint_racer_language:_dlc_6/join_messages/cheats_are_enabled

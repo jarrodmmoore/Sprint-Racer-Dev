@@ -13,7 +13,7 @@ function sprint_racer:levels/_custom_general/set_music
 ######
 
 #START COUNTDOWN
-execute unless score @s startType matches 0 run scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] startType = @s startType
+execute unless score @s startType matches 0 run scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] startType = @s startType
 
 #NIGHT VISION -- night vision if we're playing in free roam mode
 execute if entity @s[tag=nightVision] run tag @a[tag=dontSetGamemode] add fr_nightvision
@@ -22,8 +22,8 @@ execute if entity @s[tag=nightVision] run tag @a[tag=dontSetGamemode] add fr_nig
 execute if entity @s[tag=daylightCycle] run gamerule advance_time true
 
 #AI?
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove noAItrack
-execute if entity @s[tag=noAItrack] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add noAItrack
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove noAItrack
+execute if entity @s[tag=noAItrack] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add noAItrack
 
 #TIME OF DAY
 execute store result storage sprint_racer:func_args time int 1 run scoreboard players get @s customTrackTime
@@ -33,10 +33,10 @@ function sprint_racer:levels/_custom_general/set_time_macro with storage sprint_
 execute if entity @s[scores={customTWeather=1}] run weather clear
 execute if entity @s[scores={customTWeather=2}] run weather rain
 execute if entity @s[scores={customTWeather=3}] run weather thunder
-execute if entity @s[scores={customTWeather=2..3}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add raining
+execute if entity @s[scores={customTWeather=2..3}] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add raining
 
 #TARGET COUNT
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] targetData = @s customTTargets
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] targetData = @s customTTargets
 
 #MUSIC
 #execute as @e[type=armor_stand,tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..}] run scoreboard players operation @s math = @s rNumber

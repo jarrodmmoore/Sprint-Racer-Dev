@@ -6,7 +6,7 @@ execute unless entity @s[tag=!optNoItems,tag=!optItemsR] run function sprint_rac
 function sprint_racer:game_logic/3/fast_rank_calc/_start
 
 #ai data transfer
-execute as @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] run function sprint_racer:game_logic/3/master_send_data_to_entity
+execute as @e[type=armor_stand,tag=AImaster,x=1548,y=155,z=406,distance=..1] run function sprint_racer:game_logic/3/master_send_data_to_entity
 
 #show lives remaining for 4 players at random
 scoreboard players operation @s math = @s currentTimeSec

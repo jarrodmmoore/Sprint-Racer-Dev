@@ -1,7 +1,7 @@
 #set initial value to 1:00:9
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={timeRemaining=1220}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] countTimeMin 1
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={timeRemaining=1220}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] countTimeSec 0
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={timeRemaining=1220}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] countTimeMsec 9
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={timeRemaining=1220}] run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] countTimeMin 1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={timeRemaining=1220}] run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] countTimeSec 0
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={timeRemaining=1220}] run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] countTimeMsec 9
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={timeRemaining=1220}] run bossbar set minecraft:timeremaining max 1200
 
 #decrement Msec every 10th of a second

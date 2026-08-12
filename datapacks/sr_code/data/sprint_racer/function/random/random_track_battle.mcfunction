@@ -20,7 +20,7 @@ scoreboard players remove @e[tag=trackStandB,scores={randomCooldown2=1..}] rando
 scoreboard players set @e[limit=1,tag=chosenTrack] randomCooldown2 4
 
 #"in order" track mode overrides random
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optInOrder,tag=!grandprix] if entity @e[type=armor_stand,limit=1,tag=!btBlacklist,tag=trackStandB] run function sprint_racer:random/in_order_battle
+execute as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=optInOrder,tag=!grandprix] if entity @e[type=armor_stand,limit=1,tag=!btBlacklist,tag=trackStandB] run function sprint_racer:random/in_order_battle
 
 execute as @a at @s run playsound minecraft:block.note_block.bell master @s ~ 100000 ~ 100000 2
 execute as @e[tag=chosenTrack] run function sprint_racer:game_logic/0/vote_preview/battle/v_b_index_announce

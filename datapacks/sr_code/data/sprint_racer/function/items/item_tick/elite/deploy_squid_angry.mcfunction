@@ -27,8 +27,8 @@ tag @s remove self
 
 
 #don't blind teammates
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] if entity @s[tag=playerOrange] run tag @e[tag=squidTarget,tag=playerOrange] remove squidTarget
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] if entity @s[tag=playerCyan] run tag @e[tag=squidTarget,tag=playerCyan] remove squidTarget
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=teamplay] if entity @s[tag=playerOrange] run tag @e[tag=squidTarget,tag=playerOrange] remove squidTarget
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=teamplay] if entity @s[tag=playerCyan] run tag @e[tag=squidTarget,tag=playerCyan] remove squidTarget
 
 
 execute as @e[tag=squidTarget] at @s run summon squid ^ ^1.5 ^4 {Invulnerable:1b,NoGravity:1b,Tags:["setme","squirt"]}

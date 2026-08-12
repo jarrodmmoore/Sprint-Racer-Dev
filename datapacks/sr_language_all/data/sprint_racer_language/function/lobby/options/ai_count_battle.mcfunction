@@ -3,7 +3,7 @@ tellraw @a[tag=!minChat] ["",{text:" "}]
 #scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=BAIautocount] optBAIcount 0
 #tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=BAIautocount] remove BAIautocount
 
-scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] optBAIcount 1
+scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] optBAIcount 1
 #tag @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={optBAIcount=10..}] add BAIautocount
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={optBAIcount=10..}] optBAIcount 1
 

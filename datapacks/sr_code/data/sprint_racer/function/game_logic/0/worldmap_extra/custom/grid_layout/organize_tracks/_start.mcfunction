@@ -15,13 +15,13 @@
 #-----
 
 #1 = race, 2 = battle. you know the drill.
-scoreboard players operation #trackGridMode value = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] wmCustomMode
+scoreboard players operation #trackGridMode value = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] wmCustomMode
 
 #we need some markers that we can store tags on
 kill 00000065-0000-038d-0000-022b00000045
 kill 00000065-0000-038d-0000-022b00000046
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] at @s if loaded ~ ~ ~ run summon marker ~ ~ ~ {UUID:[I;101,909,555,69]}
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] at @s if loaded ~ ~ ~ run summon marker ~ ~ ~ {UUID:[I;101,909,555,70]}
+execute as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] at @s if loaded ~ ~ ~ run summon marker ~ ~ ~ {UUID:[I;101,909,555,69]}
+execute as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] at @s if loaded ~ ~ ~ run summon marker ~ ~ ~ {UUID:[I;101,909,555,70]}
 
 #here's a start:
 tag 00000065-0000-038d-0000-022b00000045 add Uncategorized

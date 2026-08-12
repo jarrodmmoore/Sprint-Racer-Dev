@@ -22,16 +22,16 @@ function sprint_racer:_check_lang_folder_version
 #FROM CONFIG FILES
 
 function sprint_racer_config:realms_mode
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={realmsMode=1..}] run setblock 1550 83 406 redstone_block
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={realmsMode=1..}] run setblock 1550 83 406 air
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={realmsMode=1..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] adminMode 0
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={realmsMode=1..}] run setblock 1550 83 406 redstone_block
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={realmsMode=1..}] run setblock 1550 83 406 air
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={realmsMode=1..}] run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] adminMode 0
 
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={realmsMode=1..}] run function sprint_racer_config:admin_mode
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={realmsMode=..0,adminMode=1..}] add requireAdmin
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={adminMode=1..}] run function sprint_racer_config:admin_player_list
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={realmsMode=1..}] run function sprint_racer_config:admin_mode
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={realmsMode=..0,adminMode=1..}] add requireAdmin
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={adminMode=1..}] run function sprint_racer_config:admin_player_list
 
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={COPPA=1}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add COPPA
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={COPPA=1}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove COPPA
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={COPPA=1}] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add COPPA
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={COPPA=1}] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove COPPA
 
 #this one is now a setting in the lobby
 #function sprint_racer_config:difficulty_ramp
@@ -194,8 +194,8 @@ scoreboard objectives add COPPA dummy
 scoreboard objectives add customTagLine dummy
 scoreboard objectives add optRAIdiff dummy
 scoreboard objectives add optBAIdiff dummy
-scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] optRAIdiff 0
-scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] optBAIdiff 0
+scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] optRAIdiff 0
+scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] optBAIdiff 0
 scoreboard objectives add aiBattleBasherDurability dummy
 scoreboard objectives add aiFaceDirTime dummy
 scoreboard objectives add aiFaceDirYaw dummy
@@ -270,16 +270,16 @@ scoreboard players add #lightningCooldown value 0
 #make sure cheats armor stand is updated to use tags
 tag @e[type=armor_stand,name="cheats",tag=!cheats] add cheats
 
-scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] difficultyRamp 0
+scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] difficultyRamp 0
 
-execute if block 1550 83 406 redstone_block run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add realms
-execute unless block 1550 83 406 redstone_block run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove realms
+execute if block 1550 83 406 redstone_block run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add realms
+execute unless block 1550 83 406 redstone_block run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove realms
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove taNoItems
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove taNoItems
 
 #realms and options signs
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms] run function sprint_racer:bootup_realms
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=realms] run function sprint_racer_language:_dlc_4/lobby/options/restore_options_signs
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=realms] run function sprint_racer:bootup_realms
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=realms] run function sprint_racer_language:_dlc_4/lobby/options/restore_options_signs
 
 #custom tracks from old versions need to be kept up to date with some stuff
 execute as @e[type=armor_stand,tag=customtrack] run function sprint_racer:game_logic/10/track_version_upkeep/_check
@@ -288,6 +288,6 @@ execute as @e[type=armor_stand,tag=customtrack] run function sprint_racer:game_l
 function sprint_racer_language:_dlc_6/lobby/options/restore_options_signs
 
 #in compliance with COPPA, "Casino Chase" track is banned on Minecraft Realms!
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=COPPA] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=46}] add rtBlacklist
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=COPPA] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=46}] add rtBlacklist
 
 worldborder set 20000000 0

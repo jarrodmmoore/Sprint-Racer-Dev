@@ -1,7 +1,7 @@
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove settingTracks
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove settingTracks
 effect clear @a
 clear @a
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove choosingTrack
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove choosingTrack
 
 scoreboard players set @a inputCooldown 50
 

@@ -1,13 +1,13 @@
 tp @a[tag=!dontWarp,tag=!dontSetGamemode] 821 225 2858
 tp @a[tag=!dontWarp,tag=dontSetGamemode] 794 168 2858
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] startType 2
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] startType 2
 
 scoreboard players set @a mapZone 0
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] mapZone 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] mapZone 0
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lap 3
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] check 3
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] lap 3
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] check 3
 time set 22000
 
 #night vision if we're playing in free roam mode

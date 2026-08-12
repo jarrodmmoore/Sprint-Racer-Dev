@@ -1,4 +1,4 @@
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add s1
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add s1
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=rank_sidebar_b,tag=s1] add s2
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=s2] remove rank_sidebar_b
@@ -10,7 +10,7 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=s2] add rank_sidebar_b
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=s2] remove s1
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=s2] remove s2
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove s1
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove s1
 
 
 

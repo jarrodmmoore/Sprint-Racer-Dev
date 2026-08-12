@@ -7,32 +7,32 @@ data merge block 1581 89 449 {front_text:{has_glowing_text:0b,messages:[{text:""
 data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1007"}},{text:"GAMEMODES",bold:true,color:"black"},{text:"[RACE & BATTLE]",color:"dark_blue"},{text:""}]},is_waxed:1b}
 data merge block 1594 79 433 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1008"}},{text:"ITEM BALANCE",bold:true,color:"black"},{text:"[ON--TIME]",color:"dark_blue"},{text:""}]},is_waxed:1b}
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optRnB
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optRace
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optBattle
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optRnB
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optRace
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optBattle
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optVote
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optChoose
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optRandom
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optVote
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optChoose
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optRandom
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optItems
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optItemsB
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove optNoItems
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optItems
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optItemsB
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optNoItems
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add optBalance
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optBalance
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove choosingTrack
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove choosingTrack
 
 playsound minecraft:block.note_block.hat master @a
 tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.restored_defaults",color:"green"}]
 
 tag @s remove clickSign
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] roundNumber 1
 
 #CLEAR POINTS
 function sprint_racer:game_logic/0/clear_points
 
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=0}] run function sprint_racer_language:lobby/reset_lobby
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=0}] run function sprint_racer:game_logic/0/_initialize
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=0}] run function sprint_racer:game_logic/0/sidebar/__index_main
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=0}] run function sprint_racer_language:lobby/reset_lobby
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=0}] run function sprint_racer:game_logic/0/_initialize
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=0}] run function sprint_racer:game_logic/0/sidebar/__index_main

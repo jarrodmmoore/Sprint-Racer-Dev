@@ -2,8 +2,8 @@ scoreboard players set #trackGridPage value 0
 scoreboard players set #trackGridStartCustom value 1
 scoreboard players set #trackGridSelected value 1
 scoreboard players set #trackGridEnd value 18
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] wmCustomMode 2
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] wmCustomNum 1
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] wmCustomMode 2
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] wmCustomNum 1
 
 #need to re-generate tracks list. race and battle mode have entirely seperate ones!
 function sprint_racer:game_logic/0/worldmap_extra/custom/grid_layout/organize_tracks/_start

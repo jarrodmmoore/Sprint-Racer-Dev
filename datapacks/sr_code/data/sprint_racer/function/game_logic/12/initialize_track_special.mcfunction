@@ -1,5 +1,5 @@
 tp @a -1510 222 -1022
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] check 4
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] check 4
 time set 18000
 scoreboard players set #creditsTrack value 2
 

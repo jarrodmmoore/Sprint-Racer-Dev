@@ -13,22 +13,22 @@ execute if entity @s[tag=qsDirectChoose,scores={worldmapID=0..999}] run scoreboa
 execute if entity @s[tag=qsDirectChoose,scores={worldmapID=1000..}] run scoreboard players set global gameState 3
 
 execute if score global gameState matches 6 run scoreboard players set @s taLastChosen 1
-execute if score global gameState matches 6 run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] taLastChosen 80
+execute if score global gameState matches 6 run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] taLastChosen 80
 
 #remember previous coordinates when in time attack so we can go back here when we return
-execute if score global gameState matches 6 as @s store result score @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remember_x run data get entity @s Pos[0] 1
-execute if score global gameState matches 6 as @s store result score @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remember_z run data get entity @s Pos[2] 1
+execute if score global gameState matches 6 as @s store result score @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remember_x run data get entity @s Pos[0] 1
+execute if score global gameState matches 6 as @s store result score @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remember_z run data get entity @s Pos[2] 1
 
 #time attack, only one player can play at a time!
 execute if score global gameState matches 6 as @a[limit=1,sort=random,scores={inputCooldown=..0,carrotInput=1..}] if items entity @s weapon.mainhand filled_map[custom_data~{wmPreview:1b}] at @s run function sprint_racer:game_logic/6/this_player_only
 
 #set gamemode
-execute if entity @s[tag=!dontSetGamemode,scores={worldmapID=-29..-20}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 3
-execute if entity @s[tag=!dontSetGamemode,scores={worldmapID=-19..-10}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 1
-execute if entity @s[tag=!dontSetGamemode,scores={worldmapID=0..999}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 1
-execute if entity @s[tag=!dontSetGamemode,scores={worldmapID=1000..}] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 3
+execute if entity @s[tag=!dontSetGamemode,scores={worldmapID=-29..-20}] run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameState 3
+execute if entity @s[tag=!dontSetGamemode,scores={worldmapID=-19..-10}] run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameState 1
+execute if entity @s[tag=!dontSetGamemode,scores={worldmapID=0..999}] run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameState 1
+execute if entity @s[tag=!dontSetGamemode,scores={worldmapID=1000..}] run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameState 3
 #sync it
-execute if entity @s[tag=!dontSetGamemode] run scoreboard players operation global gameState = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] gameState
+execute if entity @s[tag=!dontSetGamemode] run scoreboard players operation global gameState = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,limit=1] gameState
 
 #free roam mode? don't *really* set the gamemode, just fake it
 execute if entity @s[tag=dontSetGamemode,scores={worldmapID=-29..-20}] run scoreboard players set global gameState 3

@@ -39,7 +39,7 @@ execute if entity @s[tag=!read_rtrack,tag=read_battle,tag=oops_an_accident] as @
 tag @s remove oops_an_accident
 
 #get this party started
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=needAnnounce] remove needAnnounce
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=needAnnounce] remove needAnnounce
 execute if entity @s[tag=read_race] run function sprint_racer:game_logic/1/_initialize
 execute if entity @s[tag=read_battle] run function sprint_racer:game_logic/3/_initialize
 

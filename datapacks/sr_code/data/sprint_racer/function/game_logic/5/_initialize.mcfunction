@@ -22,11 +22,11 @@ kill @e[tag=cDisplay2,type=armor_stand]
 kill @e[type=ender_pearl]
 
 #halftick mode in realms when we have 6 or more players
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerCount 0
-execute as @a[tag=playing] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] playerCount 1
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] playerCount 0
+execute as @a[tag=playing] run scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] playerCount 1
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=autotick,scores={playerCount=6..}] add halftick
 
-scoreboard players reset @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] storm
+scoreboard players reset @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] storm
 weather clear
 
 scoreboard objectives remove nodeState
@@ -36,8 +36,8 @@ scoreboard objectives remove itemBlockState
 scoreboard objectives add itemBlockState dummy
 scoreboard players set @a itemBlockState 0
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 5
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameTime 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameState 5
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameTime 0
 
 team modify player seeFriendlyInvisibles false
 team modify player color green

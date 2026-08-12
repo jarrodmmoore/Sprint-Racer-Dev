@@ -2,5 +2,5 @@
 scoreboard players remove @s lap 1
 scoreboard players remove @a[tag=playing] lap 1
 scoreboard players remove @e[tag=ai] lap 1
-scoreboard players remove @e[tag=AImaster,type=armor_stand,x=1548,y=155,z=406,distance=..1] lap 1
+scoreboard players remove @e[type=armor_stand,tag=AImaster,x=1548,y=155,z=406,distance=..1] lap 1
 function sprint_racer:game_logic/1/checkpoint_time_difference/shift_all_down

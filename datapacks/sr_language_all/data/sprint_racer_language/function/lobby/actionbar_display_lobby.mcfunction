@@ -2,8 +2,8 @@
 #each higher state number takes priority over lower ones
 
 
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!halftick,scores={oTimerGlobal=1}] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeMsec 1
-execute if score #halftick value matches 1 run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] currentTimeMsec 1
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!halftick,scores={oTimerGlobal=1}] run scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] currentTimeMsec 1
+execute if score #halftick value matches 1 run scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] currentTimeMsec 1
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={currentTimeMsec=10..}] currentTimeMsec 0
 
 

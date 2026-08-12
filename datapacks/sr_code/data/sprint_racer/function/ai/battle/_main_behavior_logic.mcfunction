@@ -32,4 +32,4 @@ execute if entity @e[tag=activeplayer,distance=1..5] run scoreboard players add 
 execute if entity @e[tag=activeplayer,distance=1..5] run scoreboard players add @s[scores={AIBC_engagemt=..500}] AIBC_engagemt 8
 
 #get a free obliterator in battle mode when enabled
-execute if score #battleGiveObliterator value matches 1.. if score @s aiLifetime matches 20.. unless score @s aiHasObliterator matches 2.. if score @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] gameTime matches 170.. run function sprint_racer_language:_dlc_6/gameplay/give_obliterator {count:3}
+execute if score #battleGiveObliterator value matches 1.. if score @s aiLifetime matches 20.. unless score @s aiHasObliterator matches 2.. if score @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,limit=1] gameTime matches 170.. run function sprint_racer_language:_dlc_6/gameplay/give_obliterator {count:3}

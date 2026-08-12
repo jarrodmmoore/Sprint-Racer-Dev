@@ -11,7 +11,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run s
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run setblock 35 56 -714 lime_concrete
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run fill 31 59 -713 34 59 -711 air
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run function sprint_racer_language:levels/switch_pressed_on
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add switchON
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add switchON
 
 #TURN OFF (RED)
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run fill 42 69 -726 42 69 -724 red_wool
@@ -24,8 +24,8 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run se
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run setblock 41 61 -686 red_concrete
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run fill 31 59 -713 34 59 -711 red_stained_glass
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run function sprint_racer_language:levels/switch_pressed_off
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove switchON
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove switchON
 
 setblock 31 59 -713 grass_block
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove turnItOff
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove turnItOff

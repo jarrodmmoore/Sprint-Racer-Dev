@@ -1,7 +1,7 @@
-scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gpRound 1
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] run function sprint_racer_language:_dlc_3/grand_prix/round_number
+scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gpRound 1
+execute as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,limit=1] run function sprint_racer_language:_dlc_3/grand_prix/round_number
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math2 2
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] math2 2
 
 scoreboard players remove @e[type=item_frame,tag=gpFrame] aiEntity 1
 scoreboard players set @e[type=item_frame,tag=gpFrame,scores={aiEntity=..0}] aiEntity 7

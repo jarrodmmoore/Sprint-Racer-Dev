@@ -1,10 +1,10 @@
 #calculating overall "maturity" of players
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] maturity 0
-execute as @a[tag=playing] run scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] maturity += @s maturity
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] maturity /= @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] playerCountB
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] maturity 0
+execute as @a[tag=playing] run scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] maturity += @s maturity
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] maturity /= @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1] playerCountB
 
 #pick a random number between 1 and 50
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] rNumber = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,scores={rNumber=1..50}] rNumber
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] rNumber = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,scores={rNumber=1..50}] rNumber
 
 #override of previous, easier to grasp item settings are picked when most players are new
 scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={maturity=..2}] rNumber = @e[limit=1,tag=random,x=1548,y=155,z=406,distance=..1,sort=random,scores={rNumber=1..10}] rNumber

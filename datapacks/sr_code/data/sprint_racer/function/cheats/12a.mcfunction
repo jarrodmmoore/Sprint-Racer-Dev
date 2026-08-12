@@ -1,4 +1,4 @@
-execute if entity @a[team=!player,tag=eliminated] unless entity @a[team=!player,tag=eliminated,scores={revengeMine=1}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add resetRev
+execute if entity @a[team=!player,tag=eliminated] unless entity @a[team=!player,tag=eliminated,scores={revengeMine=1}] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add resetRev
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=resetRev] run scoreboard objectives remove revengeMine
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=resetRev] run scoreboard objectives add revengeMine dummy
 scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=resetRev] revengeMine 1

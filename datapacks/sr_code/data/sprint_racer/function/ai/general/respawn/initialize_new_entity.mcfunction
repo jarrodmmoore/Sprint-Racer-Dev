@@ -116,7 +116,7 @@ scoreboard players set @s aiHasFirework 0
 scoreboard players set @s aiHasObliterator 0
 
 scoreboard players operation @s playerLives = @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] playerLives
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=3,gamemodePresetB=2}] if score @s playerLives matches ..2 run tag @s add ai_fearful
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=3,gamemodePresetB=2}] if score @s playerLives matches ..2 run tag @s add ai_fearful
 
 scoreboard players operation @s tacticsSequence = @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] aiTacticsA
 scoreboard players operation @s tacticsStep = @e[limit=1,tag=currentMaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] aiTacticsB
@@ -126,10 +126,10 @@ tag @s[scores={aiSkill=0}] add very_easy_ai
 scoreboard players set @s[scores={aiSkill=0}] aiSkill 1
 
 #assing ai as the "rival" if parent is rival (aiLevel > 8)
-execute store result score #test value run execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=noAIrival,limit=1]
-execute if score #test value matches ..0 if score global aiLevel matches 5.. unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={optAIdiff=0..2}] if entity @e[limit=1,tag=currentMaster,tag=rivalAImaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] run tag @s add ai_rival
-execute if score #test value matches ..0 if score global aiLevel matches 8.. unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={optAIdiff=0..1}] if entity @e[limit=1,tag=currentMaster,tag=rivalAImaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] run scoreboard players add @s[tag=!very_easy_ai,scores={aiSkill=..2}] aiSkill 1
-execute if score #test value matches ..0 if score global aiLevel matches 11.. unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={optAIdiff=0..2}] if entity @e[limit=1,tag=currentMaster,tag=rivalAImaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] run tag @s[scores={aiSkill=3}] add tryhard
+execute store result score #test value run execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=noAIrival,limit=1]
+execute if score #test value matches ..0 if score global aiLevel matches 5.. unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={optAIdiff=0..2}] if entity @e[limit=1,tag=currentMaster,tag=rivalAImaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] run tag @s add ai_rival
+execute if score #test value matches ..0 if score global aiLevel matches 8.. unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={optAIdiff=0..1}] if entity @e[limit=1,tag=currentMaster,tag=rivalAImaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] run scoreboard players add @s[tag=!very_easy_ai,scores={aiSkill=..2}] aiSkill 1
+execute if score #test value matches ..0 if score global aiLevel matches 11.. unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={optAIdiff=0..2}] if entity @e[limit=1,tag=currentMaster,tag=rivalAImaster,x=1548,y=155,z=406,distance=..1,type=armor_stand] run tag @s[scores={aiSkill=3}] add tryhard
 
 #cheat code overrides difficulty at the last possible second...
 execute if entity @e[limit=1,type=armor_stand,tag=54a,tag=cheats,x=1548,y=148,z=422,distance=..1] run function sprint_racer:ai/general/respawn/_custom_ai_difficulty
@@ -138,7 +138,7 @@ execute if entity @e[limit=1,type=armor_stand,tag=54a,tag=cheats,x=1548,y=148,z=
 function sprint_racer:explosion_knockback_resistance
 
 #attributes related to cheat codes
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=cheatdetected] run function sprint_racer:cheats/update_player_attributes_ai
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=cheatdetected] run function sprint_racer:cheats/update_player_attributes_ai
 
 #team
 team join player @s
@@ -162,8 +162,8 @@ waypoint modify @s style set minecraft:battle_player
 #waypoint modify @s[tag=playerCyan] color dark_aqua
 
 #bots go hard with TRYHARD cheat enabled!
-execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=42a] run tag @s add rb_ahead
-execute if entity @e[tag=cheats,x=1548,y=148,z=422,distance=..1,type=armor_stand,tag=42a] run scoreboard players set @s aiSkill 3
+execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=42a] run tag @s add rb_ahead
+execute if entity @e[type=armor_stand,tag=cheats,x=1548,y=148,z=422,distance=..1,tag=42a] run scoreboard players set @s aiSkill 3
 
 #held item in battle mode
 execute if score global gameState matches 3 unless score #battleBatBanned value matches 1.. run item replace entity @s weapon.mainhand with wooden_sword[item_model="sr/item/battle_bat"]

@@ -6,7 +6,7 @@ execute as @e[tag=ai,tag=can_wear_hat] unless score @s kart_model matches 10.. r
 execute unless score global gameState matches 3 run return 0
 
 #no free missile with no items
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=optNoItems] run return 0
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=optNoItems] run return 0
 
 #no free missiles in obliterator mode
 execute if score #battleGiveObliterator value matches 1.. run return 0

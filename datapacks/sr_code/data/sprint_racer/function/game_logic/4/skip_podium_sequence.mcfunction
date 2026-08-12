@@ -1,18 +1,18 @@
 scoreboard objectives setdisplay sidebar
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove ceremony
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove ceremony
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gpRound 1
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] roundNumber 1
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gpRound 1
 
 execute as @a at @s run function sprint_racer:game_logic/0/goto_spawn
 #tag @a remove readyup
-#scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] readyState 0
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] maturity 4
+#scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] readyState 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] maturity 4
 
 #reminder that players can use the command block to vote back to lobby (relevant if not choosing or voting)
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add remind2vote
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add gp_no_lobby_return
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add remind2vote
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add gp_no_lobby_return
 
 #re-randomize ai
 execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9,customAIset=-11..-10}] run scoreboard players set @s aiEntity 0
@@ -21,4 +21,4 @@ execute as @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..9,cu
 
 #party keeps going
 #function sprint_racer:game_logic/0/_initialize_for_real
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=grandprix] run function sprint_racer:game_logic/0/_initialize
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=grandprix] run function sprint_racer:game_logic/0/_initialize

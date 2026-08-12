@@ -15,20 +15,20 @@ worldborder warning distance 0
 function sprint_racer:mid_game_vote/disable
 
 scoreboard objectives remove specJoin
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] specJoinTime 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] specJoinTime 0
 
 tag @e[type=armor_stand,tag=chosenTrack] remove chosenTrack
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add wmCustomReload
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add wmCustomReload
 clear @a
 
 scoreboard objectives setdisplay sidebar
 
 function sprint_racer:ai/general/ai_stop_all
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=autotick] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove halftick
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=autotick] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove halftick
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove findLocation
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove editingTrack
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove findLocation
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove editingTrack
 
 scoreboard players set @a itemLuck 3
 execute as @a run scoreboard players operation @s itemLuck += @s cStatLuck
@@ -63,7 +63,7 @@ scoreboard players set @a invisibility 0
 scoreboard players set @a resistTime 0
 scoreboard players set @a invulTime 0
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] itemBlockState 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] itemBlockState 0
 
 tag @e[tag=finished] remove finished
 tag @e[tag=noInventory2] remove noInventory2
@@ -76,14 +76,14 @@ scoreboard objectives add killedByPlayer minecraft.killed_by:minecraft.player
 time set 6000
 gamerule advance_time false
 weather clear
-scoreboard players reset @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] storm
+scoreboard players reset @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] storm
 
 function sprint_racer_language:_dlc_1/gameplay/custom_manage_bossbar
 function sprint_racer_language:_dlc_1/gameplay/custom_manage_enabled
 
 gamemode adventure @a
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 10
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameState 10
 
 #new in v1.6: all custom tracks should have an associated custom tagline
 #so for any old worlds that got datapack-updated, generate that data right now
@@ -109,8 +109,8 @@ function sprint_racer:game_logic/10/grid_display/ungrouped_custom/set_page_0
 function sprint_racer:game_logic/10/grid_display/ungrouped_custom/update_display
 
 #default display value
-execute unless entity @e[tag=customrace] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolNum 0
-execute if entity @e[tag=customrace] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolNum 1
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolMode 1
+execute unless entity @e[tag=customrace] run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] tvPoolNum 0
+execute if entity @e[tag=customrace] run scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] tvPoolNum 1
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] tvPoolMode 1
 
 function sprint_racer:game_logic/10/grid_display/ungrouped_custom/update_display

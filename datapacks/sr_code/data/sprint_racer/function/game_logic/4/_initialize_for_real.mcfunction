@@ -1,8 +1,8 @@
 #make sure there's at least 1 player that has points. if none, skip sequence
 execute store result score #success value run execute if entity @a[scores={dummyPoints=1..}]
 execute if entity @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=1..,aiPoints=1..}] run scoreboard players add #success value 1
-execute if score Orange teamPointsShow matches 1.. if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run scoreboard players add #success value 1
-execute if score Cyan teamPointsShow matches 1.. if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=teamplay] run scoreboard players add #success value 1
+execute if score Orange teamPointsShow matches 1.. if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=teamplay] run scoreboard players add #success value 1
+execute if score Cyan teamPointsShow matches 1.. if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=teamplay] run scoreboard players add #success value 1
 execute if score #success value matches 0 run return run function sprint_racer:game_logic/4/end
 #=====
 
@@ -28,9 +28,9 @@ function sprint_racer:load_saved_points
 kill @e[tag=lobbyprop]
 kill @e[tag=roundDisplay]
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove clearImpulse
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove allowPVP
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove raining
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove clearImpulse
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove allowPVP
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove raining
 
 #change the lobby for the sequence
 clone 1644 73 392 1661 81 420 1644 87 392
@@ -67,7 +67,7 @@ team modify playerOrange color gold
 time set 6000
 gamerule advance_time false
 weather clear
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] scriptMove 1
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] scriptMove 1
 
 tag @a add noInventory
 clear @a
@@ -88,10 +88,10 @@ scoreboard players set @a invisibility 0
 scoreboard players set @a resistTime 0
 scoreboard players set @a invulTime 0
 
-scoreboard players reset @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] storm
+scoreboard players reset @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] storm
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameTime 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameTime 0
 
 bossbar set minecraft:speedo players
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 4
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameState 4

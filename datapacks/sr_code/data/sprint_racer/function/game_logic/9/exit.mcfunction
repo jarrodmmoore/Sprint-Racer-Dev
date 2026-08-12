@@ -6,7 +6,7 @@ execute as @a run function sprint_racer:game_logic/0/goto_spawn
 
 effect clear @a
 gamemode adventure @a
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 0
-execute as @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:game_logic/0/props/summon_props
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameState 0
+execute as @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] run function sprint_racer:game_logic/0/props/summon_props
 
 tp @s[type=player] 1629 80 365 90 0

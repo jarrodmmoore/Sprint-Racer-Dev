@@ -15,4 +15,4 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=60}]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=60}] run fill -2231 68 -1507 -2228 71 -1507 minecraft:glass
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=60}] run fill -2267 68 -1456 -2265 70 -1456 minecraft:glass
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=60}] run fill -2255 65 -1434 -2253 65 -1434 red_wool
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=60}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove switchON
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=60}] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove switchON

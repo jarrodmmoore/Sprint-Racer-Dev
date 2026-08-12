@@ -1,5 +1,5 @@
 #race or battle?
-execute store result score #test value run execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={tvPoolMode=1}]
+execute store result score #test value run execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMode=1}]
 
 #load text before showing it
 execute as @e[tag=focusT,type=armor_stand,limit=1] run function sprint_racer:game_logic/10/custom_config/settings_overrides/_load_text

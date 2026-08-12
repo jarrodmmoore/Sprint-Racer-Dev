@@ -1,4 +1,4 @@
-#scoreboard players remove @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] wmCustomNum 1
+#scoreboard players remove @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] wmCustomNum 1
 
 #before moving, let's figure out how many total entries the current group has.
 execute store result storage sprint_racer:func_args track_group int 1 run scoreboard players get #trackGridPage value

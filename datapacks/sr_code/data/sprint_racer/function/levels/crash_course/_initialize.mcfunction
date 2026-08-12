@@ -1,7 +1,7 @@
 tp @a[tag=!dontWarp] 1088 72 297
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lap 4
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] check 2
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] lap 4
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] check 2
 gamerule advance_time false
 time set 1000
 

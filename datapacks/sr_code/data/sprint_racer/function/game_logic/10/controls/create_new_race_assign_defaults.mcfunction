@@ -45,4 +45,4 @@ scoreboard players set @s customTrackSortNumber 1
 tag @s add ctHasSortData
 
 #same mapVersion as w
-scoreboard players operation @s mapVersion = @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,limit=1] mapVersion
+scoreboard players operation @s mapVersion = @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,limit=1] mapVersion

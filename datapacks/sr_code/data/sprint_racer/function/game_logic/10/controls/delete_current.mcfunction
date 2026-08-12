@@ -16,7 +16,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMode=1}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMode=2}] run scoreboard players remove @e[tag=custombattle,scores={customDummyBID=..-1}] customTrackBID 1
 
 #next track down is the focus, now
-scoreboard players remove @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] tvPoolNum 1
+scoreboard players remove @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] tvPoolNum 1
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMode=1}] if entity @e[tag=customrace] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolNum=..0}] tvPoolNum 1
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMode=1}] unless entity @e[tag=customrace] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolNum=..-1}] tvPoolNum 0
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolMode=2}] if entity @e[tag=custombattle] run scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={tvPoolNum=..0}] tvPoolNum 1

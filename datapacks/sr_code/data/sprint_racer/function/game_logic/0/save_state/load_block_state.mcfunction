@@ -1,4 +1,4 @@
-#executed by @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand]
+#executed by @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1]
 #(this function is BANANAS)
 
 #################################
@@ -323,7 +323,7 @@ execute if block 1610 ~ 450 red_wool run tag @e[limit=1,tag=trackStandR,tag=rand
 execute if block 1609 ~ 450 red_wool run tag @e[limit=1,tag=trackStandR,tag=random,x=1548,y=155,z=406,distance=..1,type=armor_stand,scores={rNumber=60}] add rtBlacklist
 
 #COPPA mode: Casino Chase always banned no matter what
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=COPPA] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=46}] add rtBlacklist
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=COPPA] run tag @e[tag=random,x=1548,y=155,z=406,distance=..1,scores={rNumber=46}] add rtBlacklist
 
 #################################
 #BANNED BATTLE TRACKS
@@ -554,6 +554,6 @@ function sprint_racer_language:_dlc_4/lobby/options/update_all_options_signs
 function sprint_racer_language:_dlc_6/lobby/options/update_all_options_signs
 
 #say what's enabled
-execute if score #noLobbyReload value matches 1 if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,tag=cheatdetected] as @a[tag=!minChat] run function sprint_racer_language:_dlc_6/join_messages/cheats_are_enabled
+execute if score #noLobbyReload value matches 1 if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=cheatdetected] as @a[tag=!minChat] run function sprint_racer_language:_dlc_6/join_messages/cheats_are_enabled
 
 scoreboard players set #noLobbyReload value 0

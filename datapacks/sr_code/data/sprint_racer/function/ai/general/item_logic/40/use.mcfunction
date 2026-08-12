@@ -1,12 +1,12 @@
 #cast a thunderstorm
 scoreboard players add @s[scores={lightningSafe=..400}] lightningSafe 600
-scoreboard players operation @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] attackerID = @s playerID
+scoreboard players operation @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] attackerID = @s playerID
 
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={storm=..9999}] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=12}] run function sprint_racer_language:gameplay/misc_item_text/storm_incoming
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={storm=..9999}] unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={gameState=12}] run function sprint_racer_language:gameplay/misc_item_text/storm_extended
-scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] storm 600
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand,scores={storm=1001..}] storm 1000
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lightningSafe 100
+execute unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={storm=..9999}] unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=12}] run function sprint_racer_language:gameplay/misc_item_text/storm_incoming
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={storm=..9999}] unless entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={gameState=12}] run function sprint_racer_language:gameplay/misc_item_text/storm_extended
+scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] storm 600
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,scores={storm=1001..}] storm 1000
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] lightningSafe 100
 
 weather thunder
 

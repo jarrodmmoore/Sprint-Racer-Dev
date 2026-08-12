@@ -1,6 +1,6 @@
 scoreboard players set @e[scores={randomCooldown=1..}] randomCooldown 0
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] roundNumber 1
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] readyState 0
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] roundNumber 1
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] readyState 0
 scoreboard players set global aiLevel 6
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=,scores={difficultyRamp=..0}] run scoreboard players set global aiLevel 10
 

@@ -15,7 +15,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run setblock 41 61 -686 red_concrete
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run fill 31 59 -713 34 59 -711 red_stained_glass
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run setblock 31 59 -713 grass_block
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove switchON
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove switchON
 
 #summon gerald
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gameTime=160}] run kill @e[type=chicken,tag=gerald]

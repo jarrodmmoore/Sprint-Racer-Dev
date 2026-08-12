@@ -1,5 +1,5 @@
 #make sure race capsule randomization table is loaded
-execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand,scores={capsuleState=3}] as @e[limit=1,tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] run function sprint_racer:items/container_spawn/capsule_category_odds/load_battle_odds
+execute unless entity @e[tag=w,x=1560,y=150,z=406,distance=..1,limit=1,type=armor_stand,scores={capsuleState=3}] as @e[limit=1,type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] run function sprint_racer:items/container_spawn/capsule_category_odds/load_battle_odds
 
 #summon random item, provided it isn't banned
 scoreboard players set @s rNumber 0

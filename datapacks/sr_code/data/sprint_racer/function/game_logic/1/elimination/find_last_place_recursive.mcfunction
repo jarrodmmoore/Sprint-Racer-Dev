@@ -1,7 +1,7 @@
 tag @e[tag=notInRange] remove notInRange
 
 #check the race position value
-scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] math 1
+scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] math 1
 
 #find players who's race position matches the value we're checking
 scoreboard players set @e[tag=activeplayer,tag=!eliminated,tag=!counted] math2 0

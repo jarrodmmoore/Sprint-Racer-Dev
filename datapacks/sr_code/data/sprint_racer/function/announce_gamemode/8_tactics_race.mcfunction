@@ -1,4 +1,4 @@
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] lastGamemode 8
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] lastGamemode 8
 
 scoreboard players add @a lastGamemode 0
 scoreboard players set @a math 0

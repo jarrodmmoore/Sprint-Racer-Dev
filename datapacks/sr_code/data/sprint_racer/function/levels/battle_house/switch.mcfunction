@@ -13,7 +13,7 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run f
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run fill -2267 68 -1456 -2265 70 -1456 minecraft:air destroy
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run fill -2255 65 -1434 -2253 65 -1434 lime_wool
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run function sprint_racer_language:levels/switch_pressed_on
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add switchON
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=!turnItOff] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add switchON
 
 #TURN OFF (RED)
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run fill -2273 68 -1499 -2273 70 -1497 minecraft:glass
@@ -28,6 +28,6 @@ execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run fi
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run fill -2267 68 -1456 -2265 70 -1456 minecraft:glass
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run fill -2255 65 -1434 -2253 65 -1434 red_wool
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run function sprint_racer_language:levels/switch_pressed_off
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove switchON
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=turnItOff] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove switchON
 
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] remove turnItOff
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove turnItOff

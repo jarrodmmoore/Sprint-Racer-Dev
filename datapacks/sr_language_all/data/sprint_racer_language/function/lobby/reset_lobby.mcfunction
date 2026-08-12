@@ -7,7 +7,7 @@ scoreboard players operation global math2 = @e[limit=1,sort=random,tag=random,x=
 execute if score global math matches 1 if score global math2 matches 1 as @a at @s run playsound minecraft:sr_horns/honk2 master @s ~ ~ ~ 1 1.2
 execute if score global math matches 1 if score global math2 matches 2 as @a at @s run playsound minecraft:sr_horns/honk5 master @s ~ ~ ~ 1 0.9
 
-#scoreboard players reset @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] teamPoints
+#scoreboard players reset @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] teamPoints
 #scoreboard players reset * teamPointsShow
 #scoreboard players reset * teamPoints
 #scoreboard players reset * points

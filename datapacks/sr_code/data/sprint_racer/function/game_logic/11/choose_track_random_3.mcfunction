@@ -1,12 +1,12 @@
 scoreboard players set @a inputCooldown 20
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 1
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add randomTrack
-tag @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] add randomMode
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameState 1
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add randomTrack
+tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add randomMode
 
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,scores={gpNumber=50..}] run tag @s add nope_avi
 
-execute unless entity @s[tag=nope_avi] run scoreboard players add @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gpNumber 1
+execute unless entity @s[tag=nope_avi] run scoreboard players add @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gpNumber 1
 execute unless entity @s[tag=nope_avi] run tellraw @a ["",{text:" "}]
 execute unless entity @s[tag=nope_avi] run function sprint_racer_language:_dlc_3/grand_prix/add_random_3
 execute unless entity @s[tag=nope_avi] run function sprint_racer_language:_dlc_3/grand_prix/number_set
@@ -19,5 +19,5 @@ execute if entity @s[tag=nope_avi] run function sprint_racer_language:_dlc_3/gra
 tag @s remove nope_avi
 
 
-scoreboard players set @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand] gameState 11
+scoreboard players set @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] gameState 11
 tag @e[tag=chosenTrack] remove chosenTrack

@@ -1,4 +1,4 @@
-#executed by @e[tag=w,x=1560,y=150,z=406,distance=..1,type=armor_stand]
+#executed by @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1]
 
 #need to fill everything with stone to make sure command blocks get placed with the new settings stored in them
 fill 1609 ~ 441 1627 ~ 460 light_gray_terracotta
