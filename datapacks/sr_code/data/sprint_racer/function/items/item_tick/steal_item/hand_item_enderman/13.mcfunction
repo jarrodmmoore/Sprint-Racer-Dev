@@ -1,1 +1,1 @@
-execute as @e[tag=enderHolder] run data merge entity @s {carriedBlockState:{Name:"minecraft:slime_block"}}
+execute as @e[tag=enderHolder] run data merge entity @s {carriedBlockState:{id:"minecraft:slime_block"}}

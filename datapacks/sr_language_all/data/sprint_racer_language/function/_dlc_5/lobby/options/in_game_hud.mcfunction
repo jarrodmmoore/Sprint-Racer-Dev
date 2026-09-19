@@ -4,7 +4,7 @@ tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optSetB
 tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optSetA
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA,tag=!classicHUD] add optSetB
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1585 88 370 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1026"}},{text:"IN-GAME HUD",bold:true,color:"black"},{text:"[CLASSIC]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1585 88 370 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1026"}},{text:"IN-GAME HUD",bold:true,color:"black"},{text:"[CLASSIC]",color:"dark_blue"},{text:""}]},is_waxed:1b,allow_op_features:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add classicHUD
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.hud_classic",color:"green"}]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run playsound minecraft:block.note_block.hat master @a
@@ -12,7 +12,7 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetA
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetB
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA,tag=classicHUD] add optSetB
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1585 88 370 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1026"}},{text:"IN-GAME HUD",bold:true,color:"black"},{text:"[MODERN]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1585 88 370 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1026"}},{text:"IN-GAME HUD",bold:true,color:"black"},{text:"[MODERN]",color:"dark_blue"},{text:""}]},is_waxed:1b,allow_op_features:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove classicHUD
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.hud_modern",color:"green"}]
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run playsound minecraft:block.note_block.hat master @a

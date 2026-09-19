@@ -4,7 +4,7 @@ tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optSetB
 tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optSetA
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA,tag=optRace] add optSetB
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1007"}},{text:"GAMEMODES",bold:true,color:"black"},{text:"[BATTLE ONLY]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1007"}},{text:"GAMEMODES",bold:true,color:"black"},{text:"[BATTLE ONLY]",color:"dark_blue"},{text:""}]},is_waxed:1b,allow_op_features:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optBattle
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optRace
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optRnB
@@ -16,7 +16,7 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetA
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetB
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA,tag=optBattle] add optSetB
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1007"}},{text:"GAMEMODES",bold:true,color:"black"},{text:"[CUSTOM]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1007"}},{text:"GAMEMODES",bold:true,color:"black"},{text:"[CUSTOM]",color:"dark_blue"},{text:""}]},is_waxed:1b,allow_op_features:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optRace
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optRnB
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optBattle
@@ -28,7 +28,7 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetA
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetB
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA,tag=optCustomRounds] add optSetB
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1007"}},{text:"GAMEMODES",bold:true,color:"black"},{text:"[RACE & BATTLE]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1007"}},{text:"GAMEMODES",bold:true,color:"black"},{text:"[RACE & BATTLE]",color:"dark_blue"},{text:""}]},is_waxed:1b,allow_op_features:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optRnB
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optBattle
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optRace
@@ -40,7 +40,7 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetA
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetB
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA,tag=optRnB] add optSetB
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1007"}},{text:"GAMEMODES",bold:true,color:"black"},{text:"[RACE ONLY]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1581 89 448 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1007"}},{text:"GAMEMODES",bold:true,color:"black"},{text:"[RACE ONLY]",color:"dark_blue"},{text:""}]},is_waxed:1b,allow_op_features:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optRace
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optRnB
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optBattle

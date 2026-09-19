@@ -9,7 +9,7 @@ execute if entity @s[scores={enderman=500}] run tag @e[limit=1,sort=nearest,tag=
 execute if entity @s[scores={enderman=450,giveItem=0..}] run function sprint_racer:items/item_tick/steal_item/hand_item_enderman/_index_give
 
 #give the item our enderman friend stole for us
-execute if entity @s[scores={enderman=470}] as @e[tag=myEndie4] run data merge entity @s {carriedBlockState:{Name:"minecraft:air"}}
+execute if entity @s[scores={enderman=470}] as @e[tag=myEndie4] run data merge entity @s {carriedBlockState:{id:"minecraft:air"}}
 execute if entity @s[scores={enderman=470}] run function sprint_racer:items/item_tick/give_stolen_item/_index
 execute if entity @s[scores={enderman=470}] run scoreboard players set @s giveItem -1
 execute if entity @s[scores={enderman=470}] run scoreboard players set @s giveQty 0

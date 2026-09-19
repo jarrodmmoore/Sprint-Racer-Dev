@@ -1,6 +1,6 @@
-particle block_marker{block_state:{Name:"minecraft:light",Properties:{level:"15"}}} ~ ~1 ~ 0 0 0 1 1 force @a[gamemode=!spectator,tag=playing,scores={check=1}]
-execute if entity @s[tag=checkWarn] run particle block_marker{block_state:{Name:"minecraft:light",Properties:{level:"0"}}} ~ ~1 ~ 0 0 0 1 1 normal @a[gamemode=!spectator,tag=playing,scores={check=..0}]
-execute if entity @s[tag=checkWrongWay] run particle block_marker{block_state:{Name:"minecraft:light",Properties:{level:"0"}}} ~ ~1 ~ 0 0 0 1 1 normal @a[gamemode=!spectator,tag=playing,scores={check=3..}]
+particle block_marker{block_state:{id:"minecraft:light",properties:{level:"15"}}} ~ ~1 ~ 0 0 0 1 1 force @a[gamemode=!spectator,tag=playing,scores={check=1}]
+execute if entity @s[tag=checkWarn] run particle block_marker{block_state:{id:"minecraft:light",properties:{level:"0"}}} ~ ~1 ~ 0 0 0 1 1 normal @a[gamemode=!spectator,tag=playing,scores={check=..0}]
+execute if entity @s[tag=checkWrongWay] run particle block_marker{block_state:{id:"minecraft:light",properties:{level:"0"}}} ~ ~1 ~ 0 0 0 1 1 normal @a[gamemode=!spectator,tag=playing,scores={check=3..}]
 
 scoreboard players remove #temp2 visualLength 1
 

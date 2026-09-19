@@ -4,7 +4,7 @@ tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optSetB
 tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add optSetA
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA,tag=!moretick,tag=!halftick,tag=!autotick] add optSetB
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1024"}},{text:"PERFORMANCE",bold:true,color:"black"},{text:"[AUTO]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1024"}},{text:"PERFORMANCE",bold:true,color:"black"},{text:"[AUTO]",color:"dark_blue"},{text:""}]},is_waxed:1b,allow_op_features:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add halftick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove moretick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add autotick
@@ -14,7 +14,7 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetA
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetB
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA,tag=moretick] add optSetB
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1024"}},{text:"PERFORMANCE",bold:true,color:"black"},{text:"[QUALITY]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1024"}},{text:"PERFORMANCE",bold:true,color:"black"},{text:"[QUALITY]",color:"dark_blue"},{text:""}]},is_waxed:1b,allow_op_features:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove halftick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove moretick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove autotick
@@ -24,7 +24,7 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetA
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetB
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA,tag=autotick] add optSetB
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1024"}},{text:"PERFORMANCE",bold:true,color:"black"},{text:"[FASTER]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1024"}},{text:"PERFORMANCE",bold:true,color:"black"},{text:"[FASTER]",color:"dark_blue"},{text:""}]},is_waxed:1b,allow_op_features:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add halftick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove moretick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove autotick
@@ -34,7 +34,7 @@ tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetA
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] remove optSetB
 
 tag @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetA,tag=halftick] add optSetB
-execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1024"}},{text:"PERFORMANCE",bold:true,color:"black"},{text:"[QUALITY+]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run data merge block 1606 97 452 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1024"}},{text:"PERFORMANCE",bold:true,color:"black"},{text:"[QUALITY+]",color:"dark_blue"},{text:""}]},is_waxed:1b,allow_op_features:1b}
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove halftick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove autotick
 execute if entity @e[tag=w,x=1560,y=150,z=406,distance=..1,tag=optSetB] run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] add moretick

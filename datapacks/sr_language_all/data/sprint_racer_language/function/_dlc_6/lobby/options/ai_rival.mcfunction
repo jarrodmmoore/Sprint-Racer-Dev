@@ -6,8 +6,8 @@ execute if score #test value matches ..0 run tag @e[type=armor_stand,tag=w,x=156
 execute if score #test value matches 1.. run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove noAIrival
 
 #sign
-execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=!noAIrival] run data merge block 1615 89 353 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1048"}},{text:"RIVAL AI",bold:true,color:"black"},{text:"[ON]",color:"dark_blue"},{text:""}]},is_waxed:1b}
-execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=noAIrival] run data merge block 1615 89 353 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1048"}},{text:"RIVAL AI",bold:true,color:"black"},{text:"[OFF]",color:"dark_blue"},{text:""}]},is_waxed:1b}
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=!noAIrival] run data merge block 1615 89 353 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1048"}},{text:"RIVAL AI",bold:true,color:"black"},{text:"[ON]",color:"dark_blue"},{text:""}]},is_waxed:1b,allow_op_features:1b}
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=noAIrival] run data merge block 1615 89 353 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1048"}},{text:"RIVAL AI",bold:true,color:"black"},{text:"[OFF]",color:"dark_blue"},{text:""}]},is_waxed:1b,allow_op_features:1b}
 
 #feedback text
 execute if score #test value matches ..0 run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.ai_rival_off",color:"green"}]

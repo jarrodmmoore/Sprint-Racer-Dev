@@ -6,8 +6,8 @@ execute if score #test value matches ..0 run tag @e[type=armor_stand,tag=w,x=156
 execute if score #test value matches 1.. run tag @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1] remove optMannequinAI
 
 #sign
-execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=!optMannequinAI] run data merge block 1617 88 368 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1050"}},{text:"AI PLAYERS",bold:true,color:"white"},{text:"[ZOMBIES]",color:"aqua"},{text:""}]},is_waxed:1b}
-execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=optMannequinAI] run data merge block 1617 88 368 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1050"}},{text:"AI PLAYERS",bold:true,color:"white"},{text:"[MANNEQUINS]",color:"aqua"},{text:""}]},is_waxed:1b}
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=!optMannequinAI] run data merge block 1617 88 368 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1050"}},{text:"AI PLAYERS",bold:true,color:"white"},{text:"[ZOMBIES]",color:"aqua"},{text:""}]},is_waxed:1b,allow_op_features:1b}
+execute if entity @e[type=armor_stand,tag=w,x=1560,y=150,z=406,distance=..1,tag=optMannequinAI] run data merge block 1617 88 368 {front_text:{has_glowing_text:0b,messages:[{text:"",click_event:{action:"run_command",command:"trigger tOption set 1050"}},{text:"AI PLAYERS",bold:true,color:"white"},{text:"[MANNEQUINS]",color:"aqua"},{text:""}]},is_waxed:1b,allow_op_features:1b}
 
 #feedback text
 execute if score #test value matches ..0 run tellraw @a[tag=!minChat] ["",{translate:"sr.lobby.options.ai_mannequins_on",color:"green"}]
